@@ -1,0 +1,393 @@
+    /*! Typebase.less v0.1.0 | MIT License */
+    /* Setup */
+html {
+    font-size: 126%;
+    /* Change default typefaces here */
+    -webkit-font-smoothing: antialiased;
+    font-family: /*Georgia,/*monospace,*/'Roboto Slab', serif;
+    font-weight:800;/* 300*/;
+
+}
+
+#container{
+    display: flex;
+    width:100%;
+    height:100%;
+}
+
+.Arabic{
+    font-size: 24px;
+    font-family: 'ScheherazadeRegOT', 'Roboto Slab', serif;
+    text-align:right;
+}
+
+@font-face{
+	font-family: 'ScheherazadeRegOT';
+	src: url(ScheherazadeRegOT.ttf);
+}
+    /* Copy & Lists */
+p {
+    line-height: 2.0rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+li {
+    line-height: 2.0rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+div:second-child p:first-letter{
+    color: #111;
+    font-size: 135%;
+    font-weight : bold;
+}
+    /* Headings */
+h1,h2{
+      /* Change heading typefaces here */
+	font-weight: 400;
+}
+h1{
+	font-size: 1.5rem;
+	line-height: 4.5rem;
+	margin-top: 1rem;
+	text-align: center;
+	padding-top: 0.1rem;
+}
+
+h2{
+	font-size: 1.5rem;
+	line-height: 4.5rem;
+	text-align: center;
+	background:  #fff url("endsection.gif") bottom center no-repeat;
+	/*background:  #fff url("endsection.gif") top center no-repeat;*/
+	/*border-bottom: 1px solid #555;*/
+}
+
+
+main {
+	font-weight:300;/* 300*/;
+    background:  #fff url("bottom_right.jpg") bottom right no-repeat;
+    background:  #111;
+	width: 80%; /*width: 40em;*/
+	margin: 3em auto 2em;
+	padding: 2em 3em;
+	border: 1px solid #d9d2ba;
+	border-top: none;
+	color:#111;
+	color:#fff;
+}
+
+main{
+	padding-bottom:1.5em;
+	position:relative;
+	/*background:#f6f5f1;*/
+	border-top:5px solid darkorange;
+	-webkit-border-radius:.15em .15em .15em .15em;
+	-moz-border-radius:.15em .15em .15em .15em;
+	border-radius:.15em .15em .15em .15em;
+	/*-webkit-box-shadow:0 0 30px rgba(0,0,0,0.1);
+	-moz-box-shadow:0 0 30px rgba(0,0,0,0.1);
+	/*box-shadow:0 0 30px rgba(0,0,0,0.1)*/
+}
+
+a {
+	text-decoration: none;
+}
+.English a:hover, a:active { 
+	text-decoration: underline darkorange; 
+	color: #111;
+	color: #fff;
+}
+
+.tooltip{
+	position: relative;
+	display: inline;
+	outline: none;
+}
+
+.tooltip .tooltiptext{
+	font-size: 32px;
+	font-family: 'ScheherazadeRegOT', 'Roboto Slab', serif;
+	visibility: hidden;
+	background-color: #ffffbf;/*#90ee90;/*#FFFFAA*/;
+	color: #111;
+	text-align: right;
+	padding: 5px 5px 5px 5px;
+	border-radius: 6px;
+	border: 1px solid #FFAD33;
+	position: absolute;
+	z-index: 1;
+}
+.tooltip:hover .tooltiptext{
+	visibility: visible;
+}
+
+.tooltip .tooltiptext{
+	width: 160px;
+	bottom: 100%; /*origine top*/
+	left : 50%;
+	margin-left: -80px; 
+}
+
+.tooltip .tooltiptext::after{
+	content: " ";
+	position: absolute;
+	top: 100%; /* At the bottom of the tooltip */
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+}
+.tooltip .tooltiptext {
+	opacity: 0;
+	transition: opacity .05s;
+}
+
+.tooltip:hover .tooltiptext {
+	opacity: 1;
+}
+
+
+/*style of the the header*/
+a {text-decoration:none;}
+.center {text-align:center;}
+a:hover {color:#ab5a3b;}
+
+header {
+    background-color:#fff; /*#f9d623; /*#3d3a37;/*#3d3a37;*/
+	-moz-box-shadow: 0 0 12px -2px #000;
+	-webkit-box-shadow: 0 0 12px -2px #000;
+	box-shadow: 0 0 12px -2px #000;
+	position:relative;
+	top:0px;
+	left:0px;
+	width:100%;
+	min-height:60px;
+	z-index:50;
+	display:block;
+}
+header .center {padding-top:8px;}
+
+nav a {color:#111;}
+nav a.current {color:#f9d623;}
+nav a:hover {color:darkorange; border-bottom:1px solid #111;}
+nav a.current:hover {color:orange; border-bottom:1px solid #111;}
+
+nav {
+	width:380px;
+	float:right;
+	margin:24px 0px 19px 0px;
+	z-index:70;
+	text-align:right;
+	text-transform:uppercase;
+	font-size:75%;
+	font-weight: normal;}
+
+nav a {
+	line-height:15px;
+	color:green;
+	margin-left:10px; padding-bottom:4px;}
+
+
+.header1 a {
+	width:380px;
+	float:left;
+	margin:24px 0px 19px 0px;
+	z-index:70;
+	text-align:left;
+	font-size:99%;
+	font-weight: normal;}
+
+.header1 a {
+	line-height:15px;
+	color:#fff;
+	margin-left:10px; padding-bottom:4px;}
+
+#zipper {
+	color: #111;
+	font-weight: bold;
+	letter-spacing: 6px;
+	/*background-color: #111;*/
+	padding: 2px;
+}
+
+body {
+	padding:0px;
+	margin:0px;}
+
+
+#logo {
+	margin:19px 0px 19px 0px;}
+
+.page{
+	width:960px; 
+	margin:0px auto 0px auto;}
+
+.header1{
+	float:left;
+	margin:0px 10px 0px 10px;
+	width:380px;} 
+.header3 {
+	float:right;
+	margin:0px 10px 0px 10px;
+	width:380px;}	
+#myBtn {
+	display: none; /*Hidden by default*/
+	position: fixed; /*Fixed/sticky position*/
+	bottom: 20px; /*Place the buttun at the bottom of the page*/
+	right: 10px;/*Place the button 30px from the right*/
+	z-index: 99;/*Make sure it does not overlap*/
+	border:none;/*Romove borders*/
+	outline: none;/*Remove outline*/
+	background-color: #f9d623; /*Set a Background color*/
+	color: black;/*Text color*/
+	cursor: pointer;/*Add a mouse pointer on hover*/
+	padding: 10px;/*Some padding*/
+	border-radius: 10px;/*Rounded corners*/
+	font-size: 18px;/*Increase font size*/
+}
+#myBtn:hover{
+	background-color: #555;/*Add a dark-gray background on hover*/
+}
+html {
+    /*background:white; */
+    background: #fcf4dc;
+    /*font-size:1.25em;*/
+    /*background: url("natural-wooden-background_24837-269.jpg");*/
+}
+.requirements {
+	width: 40em;
+	margin: 2em auto 1em;
+}
+.title{
+    font: 25px 'Roboto Slab', serif;
+	text-align: center;
+	margin-top: 6rem;
+}
+/*.speaker,.speaker_title{
+    font: 25px 'Roboto Slab', serif;
+	text-align: center;
+	/*margin-top: 6rem;
+}*/
+
+/*.description{
+	text-align: center;
+}*/
+
+.description{
+	text-align: center;
+	background-color: #fff;
+}
+
+
+.more_info{
+	text-align: left;
+}
+
+#speaker_name {
+	color: darkorange;
+	text-align: center;
+}
+#speaker_description, #title {
+	color: blue;
+	text-align: center;
+}
+#slogan {
+	color: #111;
+	font-size:90%;
+}
+
+
+#why_read_this{
+	color: gold;
+	text-align: center;
+}
+#small_image{
+	display: none; /*Hidden by default*/
+	position: fixed; /*Fixed/sticky position*/
+	bottom: 20px; /*Place the buttun at the bottom of the page*/
+	left: 20px;/*Place the button 30px from the right*/
+	z-index: 99;/*Make sure it does not overlap*/
+	border:none;/*Romove borders*/
+	outline: none;/*Remove outline*/
+	padding: 10px;/*Some padding*/
+	border-radius: 10px;/*Rounded corners*/
+	font-size: 18px;/*Increase font size*/
+	height: 130px;
+	width:130px;
+	-webkit-shape-outside: circle(125px);
+	shape-outside: circle(125px);
+	border-radius: 999em;
+}
+#image{
+	-webkit-shape-outside: circle(125px);
+	shape-outside: circle(125px);
+	border-radius: 999em;
+	float: left;
+	margin-right: 12px;
+	height: 200px;
+	width:200px;
+	border: 10px solid #000;
+}
+
+.description{
+	text-align: left;
+}
+
+.talk_summary{
+	padding-top:0.1em;
+}
+
+.description, .more_resources, .about{
+	font-weight:300;/* 300*/
+	width: 80%; /*width: 40em;*/
+	margin: 3em auto 2em;
+	padding: 0em 3em;
+	border: 1px solid #d9d2ba;
+	border-top: none;
+	color:#111;
+
+	padding-bottom:1.5em;
+	position:relative;
+	border-top:5px solid green;
+	-webkit-border-radius:.15em .15em .15em .15em;
+	-moz-border-radius:.15em .15em .15em .15em;
+	border-radius:.15em .15em .15em .15em;
+}
+.description{
+	font-weight:400;
+}
+
+li{
+	/*display: block;*/
+	padding: 5px 0px 5px 25px; 
+	margin: 5px 0;
+	list-style-type: disc;
+	/*background: transparent url(bullet.gif) no-repeat 0px 7px;*/
+}
+
+.justArabic {
+	font-size: 32px;
+	font-family: 'ScheherazadeRegOT', 'Roboto Slab', serif;
+	color: #111;
+	text-align: right;
+}
+
+.donate{
+	background-color: lightgreen;
+	font-weight:300;/* 300*/
+	width: 80%; /*width: 40em;*/
+	margin: 3em auto 2em;
+	padding: 0em 3em;
+	border: 1px solid #d9d2ba;
+	border-top: none;
+	color:#111;
+
+	padding-bottom:1.5em;
+	position:relative;
+	border:5px solid lightgreen;
+	-webkit-border-radius:.15em .15em .15em .15em;
+	-moz-border-radius:.15em .15em .15em .15em;
+	border-radius:.15em .15em .15em .15em;
+}
