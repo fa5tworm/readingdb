@@ -1,0 +1,483 @@
+/* Navbar Styles */
+
+body {
+  font-size: 18px;
+   -webkit-font-smoothing: antialiased;
+   font-family: 'Roboto Slab', serif;
+   font-weight: 300;
+  color: #e6e6e6;
+  background-color: #0d1117;
+  background: linear-gradient(to bottom, rgba(30, 67, 137, 0.7), rgba(14, 22, 56, 0.9));
+  background: linear-gradient(to bottom, #0a0e2c, #1e1638, #292339, #2f2b3a, #332f3c);
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.navbar {
+    background-color: #306997; /* Dark blue background */
+    background-color: #111;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; /* Space items evenly */
+    flex-wrap: wrap; /* Allow items to wrap */
+    max-width: 600px; /* Limit width for smaller screens */
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f2f2f2; /* Lighter shade on hover */
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center; /* Center everything vertically */
+    }
+
+    .navbar-nav {
+        justify-content: center; /* Center nav items horizontally */
+        max-width: none; /* Remove max-width */
+    }
+
+    .nav-item {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .navbar-brand {
+        margin-bottom: 10px; /* Add space below navbar brand */
+    }
+}
+
+/*li container*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/*    height: 100vh; /* Adjust the height as needed */*/
+
+}
+
+.centered-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centered-list li {
+  margin-bottom: 10px; /* Adjust spacing between list items */
+}
+
+.centered-list li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.centered-list li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Blog Title Styles */
+.talk {
+    text-align: center; /* Center the blog title */
+    font-size: 28px;
+    margin-top: 20px; /* Add space above the blog title */
+}
+
+/*my ad*/
+
+.myad {
+    text-align: center; /* Center the blog title */
+    font-size: 20px;
+    margin-top: 20px; /* Add space above the blog title */
+    margin-bottom: 30px;
+}
+
+
+/* Books Styles */
+.amazon h2 {
+    text-align: center; /* Center the blog title */
+    font-size: 28px;
+    margin-top: 20px; /* Add space above the blog title */
+}
+
+/*.amazon {
+    display: flex;
+}*/
+
+/*.book-image {
+    margin-bottom: 10px;
+}*/
+
+
+/*.book-image {
+  margin: 0 10px;
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}*/
+
+.amazon {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    align-items: center; /* Center items horizontally */
+}
+
+.book-image {
+    margin: 10px; /* Add some space around images */
+    margin-top: 50px;
+    width: 150px;
+    height: 200px;
+}
+
+@media (max-width: 600px) { /* Adjust for small devices */
+    .amazon {
+        flex-direction: column; /* Display items in a column */
+        align-items: center; /* Center items horizontally */
+    }
+}
+
+/* Blog Subtitle Styles */
+.speaker {
+    text-align: center; /* Center the blog subtitle */
+    font-size: 20px;
+    margin-top: 10px; /* Add space above the blog subtitle */
+}
+
+/* Blog Description Styles */
+.affiliate {
+    text-align: center; /* Center the blog description */
+    font-size: 16px;
+    margin-top: 20px; /* Add space above the blog description */
+/*    margin-bottom: 30px; /* Larger margin for description */
+    color: #fff; /* Light gray color for description */
+    width: 80%; /*width: 40em;*/
+    margin: 3em auto 2em;
+}
+
+/* Transcript Styles */
+.transcript {
+    text-align: left; /* Center the transcript */
+    font-size: 20px;
+    margin-top: 10px; /* Add space above the transcript */
+    margin-bottom: 20px; /* Smaller margin for transcript */
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #fff;
+    line-height: 2.0rem;
+
+}
+
+.transcript {
+    width: 80%; /*width: 40em;*/
+    margin: 3em auto 2em;
+    padding: 1em 2em;
+    border: 1px solid #d9d2ba;
+    border:3px solid darkorange;
+    border-radius: 2px 2px;
+    background: #fcf4dc;
+    color: #111;
+} 
+
+ /* Pagination Styles */
+#pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Add margin to create space between table and pagination */
+    margin-right: 20px;
+}
+
+#pagination ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+#pagination ul li {
+    color: #fff;
+    display: flex;
+}
+
+#pagination ul li a {
+    background-color: #444b6e;
+    background-color: white;
+    padding: 5px 10px;
+    border: 2px solid #3d315b;
+    border: 2px solid pink;
+    border-right: 0;
+    text-decoration: none; 
+}
+
+#pagination ul li.active a {
+    background-color: #9ab87a;
+    background-color: white;
+}
+
+#pagination ul li.hover a {
+    background-color: green;
+}
+
+#pagination ul li:first-child a {
+    border-radius: 5px 0 0 5px;
+}
+
+#pagination ul li:last-child a {
+    border-radius: 0 5px 5px 0;
+    border-right: 2px solid #3d315b;
+}
+
+/* Add margin to the left, right, and top of the table */
+.container {
+    max-width: 1200px;
+    margin: 20px auto; /* Add margin to the top and auto for horizontal centering */
+    padding: 0 20px;
+}
+
+.table {
+    margin: 0 auto; /* Center the table horizontally within its container */
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+
+    .table th,
+    .table td {
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+
+    #pagination {
+        margin-top: 10px; /* Adjust margin for smaller screens */
+    }
+}
+
+/* Table Styles */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #306997;
+    color: #fff;
+}
+
+.table tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .table th, .table td {
+        padding: 10px;
+    }
+}
+
+/* Tooltip container */
+/*.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}*/
+
+/* Tooltip text */
+/*.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: #ffffbf;
+    color: #111;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border: 1px solid #FFAD33
+}*/
+
+/* Tooltip text show */
+/*.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}*/
+
+/* Tooltip arrow */
+/*.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}*/
+
+/* Underline text when hovering */
+/*.tooltip:hover {
+    text-decoration: underline;
+}*/
+
+.transcript a:hover, a:active { 
+    text-decoration: underline #111; 
+    color: #111;
+}
+
+.tooltip{
+    position: relative;
+    display: inline;
+    outline: none;
+}
+
+.tooltip .tooltiptext{
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    visibility: hidden;
+    background-color: #ffffbf;/*#90ee90;/*#FFFFAA*/;
+    color: #111;
+    text-align: left;
+    padding: 5px 5px 5px 5px;
+    border-radius: 6px;
+    border: 1px solid #FFAD33;
+    position: absolute;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+}
+
+.tooltip .tooltiptext{
+    width: 160px;
+    bottom: 100%; /*origine top*/
+    left : 50%;
+    margin-left: -80px; 
+}
+
+.tooltip .tooltiptext::after{
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+.tooltip .tooltiptext {
+    opacity: 0;
+    transition: opacity .05s;
+}
+
+.tooltip:hover .tooltiptext {
+    opacity: 1;
+}
+
+.footer-container {
+  position: fixed;
+  flex-wrap: wrap;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+/*  background: linear-gradient(45deg, rgba(118, 28, 250, 0.9), rgba(90, 174, 251, 0.9));*/
+  background-color: #3b5998;
+  align-items: center;
+}
+
+.footer-elem-1 {
+  margin-left: 1ch;
+  margin-right: 1ch;
+  color: #5aaefb;
+}
+
+.footer-elem-2 {
+  margin-left: 1ch;
+  margin-right: 1ch;
+  color: #1bf2d3;
+}
+
+.footer-p {
+  margin-bottom: 40px;
+}
+
+kbd a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 400px) {
+  .footer-p {
+    margin-bottom: 10px;
+  }
+}
