@@ -407,12 +407,9 @@ kbd a {
     .tooltiptext {
         font-size: 16px;
     }
-    .centered-list {
-        list-style: none;
-        padding: 0;
+    .container {
         display: flex;
-        flex-direction: column;
+        justify-content: left;
         align-items: left;
-        color: #111;
     }
 }
