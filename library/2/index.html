@@ -136,34 +136,25 @@
 		</section>
 
 </div>
-<!-- <button onclick='topFunction()' id='myBtn' title='Go to top'>[↑]</button> -->
 <span onclick='topFunction()' id='gotop' title='Go to top'><svg width="32" height="32" viewBox="0 0 100 100">
        <path fill="white" d="m50 0c-13.262 0-25.98 5.2695-35.355 14.645s-14.645 22.094-14.645 35.355 5.2695 25.98 14.645 35.355 22.094 14.645 35.355 14.645 25.98-5.2695 35.355-14.645 14.645-22.094 14.645-35.355-5.2695-25.98-14.645-35.355-22.094-14.645-35.355-14.645zm20.832 62.5-20.832-22.457-20.625 22.457c-1.207 0.74219-2.7656 0.57812-3.7891-0.39844-1.0273-0.98047-1.2695-2.5273-0.58594-3.7695l22.918-25c0.60156-0.61328 1.4297-0.96094 2.2891-0.96094 0.86328 0 1.6914 0.34766 2.293 0.96094l22.918 25c0.88672 1.2891 0.6875 3.0352-0.47266 4.0898-1.1562 1.0508-2.9141 1.0859-4.1133 0.078125z"></path>
      </svg></span>
 
-     <div>
-       <div class='footer-container'>
-     	<kbd>
-     	  <a class='footer-elem-1' href='../../index.html' target='_blank'>Readingdb</a>
-     	</kbd>
-     	<kbd>
-     	  <a class='footer-elem-2' id="year"></a>
-     	</kbd>
-     	<kbd>
-     	<kbd>
-     	  <a class='footer-elem-3' href='../1/index.html' target='_blank'>library</a>
-     	</kbd>
-       </div>
-     </div>
-     </div>
-
-			</div>
-
-		</div>
-
+	<footer>
+	<div class='footer-container'>
+	  <kbd>
+	    <a class='footer-elem-1' href='../../../index.html'>ReadingDB</a>
+	  </kbd>
+	  <kbd>
+	    <a class='footer-elem-2' id="year"></a>
+	  </kbd>
+	  <kbd>
+	    <a class='footer-elem-3' href='../../../library/1/index.html'>Library</a>
+	  </kbd>
+	</div>
 	</footer>
 
-	<script type='text/javascript'>
+	<script>
 
 		var mybutton = document.getElementById('gotop');
 		window.onscroll = function() {scrollFunction()};
@@ -180,78 +171,78 @@
 		}
 	</script>
 	<script>
-	 let pages = 2;
+let pages = 10;
 
-	document.getElementById('pagination').innerHTML = createPagination(pages, 1);
+document.getElementById('pagination').innerHTML = createPagination(pages, 1);
 
-	function createPagination(pages, page) {
-	  let str = '<ul>';
-	  let active;
-	  let pageCutLow = page - 1;
-	  let pageCutHigh = page + 1;
-	  // Show the Previous button only if you are on a page other than the first
-	  if (page > 1) {
-	    str += '<li class="page-item previous no"><a href="../'+ page +'/index.html" onclick="createPagination(pages, '+(page-1)+')">previous</a></li>';
-	  }
-	  // Show all the pagination elements if there are less than 6 pages total
-	  if (pages < 6) {
-	    for (let p = 1; p <= pages; p++) {
-	      active = page == p ? "active" : "no";
-	      str += '<li class="'+active+'"><a href="../'+p+'/index.html" onclick="createPagination(pages, '+p+')">'+ p +'</a></li>';
-	    }
-	  }
-	  // Use "..." to collapse pages outside of a certain range
-	  else {
-	    // Show the very first page followed by a "..." at the beginning of the
-	    // pagination section (after the Previous button)
-	    if (page > 2) {
-	      str += '<li class="no page-item"><a href="../1/index.html" onclick="createPagination(pages, 1)">1</a></li>';
-	      if (page > 3) {
-	          str += '<li class="out-of-range"><a href="../'+(page-2)+'/index.html" onclick="createPagination(pages,'+(page-2)+')">...</a></li>';
-	      }
-	    }
-	    // Determine how many pages to show after the current page index
-	    if (page === 1) {
-	      pageCutHigh += 2;
-	    } else if (page === 2) {
-	      pageCutHigh += 1;
-	    }
-	    // Determine how many pages to show before the current page index
-	    if (page === pages) {
-	      pageCutLow -= 2;
-	    } else if (page === pages-1) {
-	      pageCutLow -= 1;
-	    }
-	    // Output the indexes for pages that fall inside the range of pageCutLow
-	    // and pageCutHigh
-	    for (let p = pageCutLow; p <= pageCutHigh; p++) {
-	      if (p === 0) {
-	        p += 1;
-	      }
-	      if (p > pages) {
-	        continue
-	      }
-	      active = page == p ? "active" : "no";
-	      str += '<li class="page-item '+active+'"><a href="../'+p+'/index.html" onclick="createPagination(pages, '+p+')">'+ p +'</a></li>';
-	    }
-	    // Show the very last page preceded by a "..." at the end of the pagination
-	    // section (before the Next button)
-	    if (page < pages-1) {
-	      if (page < pages-2) {
-	        str += '<li class="out-of-range"><a href="../'+(page+2)+'/index.html" onclick="createPagination(pages,'+(page+2)+')">...</a></li>';
-	      }
-	      str += '<li class="page-item no"><a href="../'+pages+'/index.html" onclick="createPagination(pages, pages)">'+pages+'</a></li>';
-	    }
-	  }
-	  // Show the Next button only if you are on a page other than the last
-	  if (page < pages) {
-	    str += '<li class="page-item next no"><a href="../'+(page+1)+'/index.html" onclick="createPagination(pages, '+(page+1)+')">next</a></li>';
-	  }
-	  str += '</ul>';
-	  // Return the pagination string to be outputted in the pug templates
-	  document.getElementById('pagination').innerHTML = str;
-	  return str;
-	}
+function createPagination(pages, page) {
+    let str = '<ul>';
+    let active;
+    let pageCutLow = page - 1;
+    let pageCutHigh = page + 1;
+    // Show the Previous button only if you are on a page other than the first
+    if (page > 1) {
+        str += '<li class="page-item previous no"><a href="../'+ page +'/index.html" onclick="createPagination(pages, '+(page-1)+')">previous</a></li>';
+    }
+    // Show all the pagination elements if there are less than 6 pages total
+    if (pages < 6) {
+        for (let p = 1; p <= pages; p++) {
+            active = page == p ? "active" : "no";
+            str += '<li class="'+active+'"><a href="../'+p+'/index.html" onclick="createPagination(pages, '+p+')">'+ p +'</a></li>';
+        }
+    }
+    // Use "..." to collapse pages outside of a certain range
+    else {
+        // Show the very first page followed by a "..." at the beginning of the
+        // pagination section (after the Previous button)
+        if (page > 2) {
+            str += '<li class="no page-item"><a href="../1/index.html" onclick="createPagination(pages, 1)">1</a></li>';
+            if (page > 3) {
+                str += '<li class="out-of-range"><a href="../'+(page-2)+'/index.html" onclick="createPagination(pages,'+(page-2)+')">...</a></li>';
+            }
+        }
+        // Determine how many pages to show after the current page index
+        if (page === 1) {
+            pageCutHigh += 2;
+        } else if (page === 2) {
+            pageCutHigh += 1;
+        }
+        // Determine how many pages to show before the current page index
+        if (page === pages) {
+            pageCutLow -= 2;
+        } else if (page === pages-1) {
+            pageCutLow -= 1;
+        }
+        // Output the indexes for pages that fall inside the range of pageCutLow
+        // and pageCutHigh
+        for (let p = pageCutLow; p <= pageCutHigh; p++) {
+            if (p === 0) {
+                p += 1;
+            }
+            if (p > pages) {
+                continue;
+            }
+            active = page == p ? "active" : "no";
+            str += '<li class="page-item '+active+'"><a href="../'+p+'/index.html" onclick="createPagination(pages, '+p+')">'+ p +'</a></li>';
+        }
+        // Show the very last page preceded by a "..." at the end of the pagination
+        // section (before the Next button)
+        if (page < pages-1) {
+            if (page < pages-2) {
+                str += '<li class="out-of-range"><a href="../'+(page+2)+'/index.html" onclick="createPagination(pages,'+(page+2)+')">...</a></li>';
+            }
+            str += '<li class="page-item no"><a href="../'+pages+'/index.html" onclick="createPagination(pages, pages)">'+pages+'</a></li>';
+        }
+    }
+    // Show the Next button only if you are on a page other than the last
+    if (page < pages && page !== pages) {
+        str += '<li class="page-item next no"><a href="../'+(page+1)+'/index.html" onclick="createPagination(pages, '+(page+1)+')">next</a></li>';
+    }
+    str += '</ul>';
+    // Return the pagination string to be outputted in the pug templates
+    document.getElementById('pagination').innerHTML = str;
+    return str;
+}
 
 	</script>
   <script src="../../static/scripts/script.js"></script>

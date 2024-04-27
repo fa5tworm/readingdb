@@ -54,38 +54,22 @@
 
   <div id="pagination"></div>
 
-  <footer class="site-footer h-card">
-
-      <div class="wrapper">
-
-          <div class="footer-col-wrapper">
-
-              <div class="footer-col">
-  <div>
-    <div class='footer-container'>
-    <kbd>
-      <a class='footer-elem-1' href='../../index.html'>Readingdb</a>
-    </kbd>
-
-    <kbd>
-      <a class='footer-elem-2' id="year"></a>
-    </kbd>
-    <kbd>
-    <kbd>
-      <a class='footer-elem-3' href='../../library/1/index.html'>library</a>
-    </kbd>
-    </div>
-  </div>
-  </div>
-
-          </div>
-
-      </div>
-
-  </footer>
+		<footer>
+		<div class='footer-container'>
+		  <kbd>
+		    <a class='footer-elem-1' href='../../../index.html'>ReadingDB</a>
+		  </kbd>
+		  <kbd>
+		    <a class='footer-elem-2' id="year"></a>
+		  </kbd>
+		  <kbd>
+		    <a class='footer-elem-3' href='../../../library/1/index.html'>Library</a>
+		  </kbd>
+		</div>
+		</footer>
 
   <script>
-   let pages = 28;
+   let pages = 14;
 
   document.getElementById('pagination').innerHTML = createPagination(pages, 1);
 
@@ -98,6 +82,7 @@
     if (page > 1) {
       str += '<li class="page-item previous no"><a href="../'+ page +'/index.html" onclick="createPagination(pages, '+(page-1)+')">previous</a></li>';
     }
+    // Show all the pagination elements if there are less than 6 pages total
     if (pages < 6) {
       for (let p = 1; p <= pages; p++) {
         active = page == p ? "active" : "no";
@@ -152,6 +137,7 @@
       str += '<li class="page-item next no"><a href="../'+(page+1)+'/index.html" onclick="createPagination(pages, '+(page+1)+')">next</a></li>';
     }
     str += '</ul>';
+    // Return the pagination string to be outputted in the pug templates
     document.getElementById('pagination').innerHTML = str;
     return str;
   }
