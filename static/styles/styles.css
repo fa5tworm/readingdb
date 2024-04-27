@@ -128,7 +128,7 @@ body {
 
 /*my ad*/
 
-.ad-text{
+.ad-text {
     font-family: "Courier Prime", monospace;
     font-weight: 400;
     font-style: normal;
@@ -411,49 +411,6 @@ kbd a {
 #gotop:hover{
     cursor: pointer;
 }
-
-/* Styles for the popup */
-/*#signup-popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #ffe84d;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    z-index: 9999;
-    text-align: center;
-}*/
-/* Close button styles */
-/*.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-}*/
-/* Signup button styles */
-/*#signup-btn {
-    background-color: #421983;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}*/
-/* Center-align h1 and p tags */
-/*#signup-popup h1, #signup-popup p {
-    margin: 10 auto;
-    text-align: center;
-}
-
-#signup-popup a {
-    text-decoration: none;
-    color: #fff;
-}*/
 
 .disclaimer {
     text-align: center;
