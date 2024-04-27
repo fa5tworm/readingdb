@@ -141,22 +141,6 @@ body {
     color: #fff;
 }
 
-/*.books td a {
-    text-decoration: none;
-    font-size: 16px;
-}*/
-
-
-/* Blog Description Styles */
-/*.affiliate {
-    text-align: center;
-    font-size: 16px;
-    margin-top: 20px;
-    color: #fff;
-    width: 80%;
-    margin: 3em auto 2em;
-}*/
-
 /* Transcript Styles */
 .transcript {
     text-align: left; /* Center the transcript */
@@ -242,30 +226,6 @@ body {
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .container {
-        padding: 0 10px; /* Adjust padding for smaller screens */
-    }
-
-    .table th,
-    .table td {
-        padding: 8px; /* Adjust padding for smaller screens */
-    }
-
-    #pagination {
-        margin-top: 10px; /* Adjust margin for smaller screens */
-    }
-
-    .transcript {
-        font-size: 16px;
-        width: 100%;
-    }
-    .pagination li {
-        font-size: 16px;
-    }
 }
 
 /* Table Styles */
@@ -362,10 +322,8 @@ body {
 .tooltip:hover .tooltiptext {
     opacity: 1;
 }
-
 .footer-container {
   position: fixed;
-  flex-wrap: wrap;
   left: 0;
   right: 0;
   bottom: 0;
@@ -373,20 +331,11 @@ body {
   justify-content: space-between;
   background-color: #4b4b4b;
   align-items: center;
+  width: 100%;
 }
 
-.footer-elem-1 {
-  margin-left: 1ch;
-  margin-right: 1ch;
-  color: #fff;
-}
-
-.footer-elem-2 {
-  margin-left: 1ch;
-  margin-right: 1ch;
-  color: #fff;
-}
-
+.footer-elem-1,
+.footer-elem-2,
 .footer-elem-3 {
   margin-left: 1ch;
   margin-right: 1ch;
@@ -407,6 +356,7 @@ kbd a {
     margin-bottom: 10px;
   }
 }
+
 
 #gotop {
    display: none;
@@ -431,4 +381,30 @@ kbd a {
 }
 .field-content a {
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+
+    .table th,
+    .table td {
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+
+    #pagination {
+        margin-top: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .transcript {
+        font-size: 16px;
+        width: 90%;
+    }
+    .pagination li {
+        font-size: 12px;
+    }
+    .tooltiptext {
+        font-size: 16px;
+    }
 }
