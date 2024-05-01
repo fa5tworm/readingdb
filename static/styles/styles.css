@@ -54,7 +54,6 @@ body {
 }
 
 .tooltip .tooltiptext{
-    font-size: 20px;
     font-family: 'Roboto Slab', serif;
     visibility: hidden;
     background-color: #4b4b4b;
@@ -98,6 +97,9 @@ body {
 @media (max-width: 768px) {
     .transcript  {
         font-size: 12px;
+        padding: 5px 5px;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 }
 
