@@ -1,279 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
-  font-size: 18px;
-   -webkit-font-smoothing: antialiased;
-   font-family: 'Roboto Slab', serif;
-   font-weight: 300;
-  color: #e6e6e6;
-  color: #111;
-  background: linear-gradient(-40deg,#9a326b 0,#42668a 100%);
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.line {
-    border-top: 1px solid black;
-    width: 100%;
-}
-
-.navbar {
-    background-color: #306997;
-    background-color: #111;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar-brand {
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.navbar-nav {
-    list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 600px;
+    background: linear-gradient(-40deg,#9a326b 0,#42668a 100%);
 }
 
-.nav-item {
-    margin-left: 20px;
-}
-
-.nav-link {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-    color: #f2f2f2; /* Lighter shade on hover */
-}
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center; /* Center everything vertically */
-    }
-
-    .navbar-nav {
-        justify-content: center; /* Center nav items horizontally */
-        max-width: none; /* Remove max-width */
-    }
-
-    .nav-item {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-    .navbar-brand {
-        margin-bottom: 10px; /* Add space below navbar brand */
-    }
-}
-
-/*li container*/
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.centered-list {
-    list-style: none;
-    padding: 0;
+.flex-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    color: #111;
-}
-
-.centered-list li {
-  margin-bottom: 10px; /* Adjust spacing between list items */
-}
-
-.centered-list li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.centered-list li a:hover {
-    text-decoration: underline;
-}
-
-
-/* Blog Title Styles */
-.talk {
-    text-align: center; /* Center the blog title */
-    font-size: 28px;
-    margin-top: 20px; /* Add space above the blog title */
-    color: #fff;
-}
-
-/* Blog Subtitle Styles */
-.speaker {
-    text-align: center; /* Center the blog subtitle */
-    font-size: 20px;
-    margin-top: 10px; /* Add space above the blog subtitle */
-    color: #fff;
-}
-
-/*my ad*/
-
-.ad-container {
-    text-align: center;
-}
-
-.ad-text {
-    font-family: "Courier Prime", monospace;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    margin: 0 auto;
-    width: 50%;
-    color: #fff;
-}
-
-/* Transcript Styles */
-.transcript {
-    text-align: left; /* Center the transcript */
-    font-size: 20px;
-    margin-top: 10px; /* Add space above the transcript */
-    margin-bottom: 20px; /* Smaller margin for transcript */
-    margin-left: 50px;
-    margin-right: 50px;
-    color: #fff;
-    line-height: 2.0rem;
-
+    min-height: 100vh;
 }
 
 .transcript {
-    width: 80%; /*width: 40em;*/
-    margin: 3em auto 2em;
-    padding: 1em 2em;
-    border: 1px solid #d9d2ba;
-    border-radius: 10px;
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.footer {
+    padding: 5px 5px;
+    background-color: #f9f9f9;
+}
+
+.article,
+.footer {
+    width: 100%;
+}
+
+.transcript {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
     background-color: #fbf4ea;
-    color: #111;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Drop shadow */
-} 
-
- /* Pagination Styles */
-#pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px; /* Add margin to create space between table and pagination */
-    margin-right: 20px;
-}
-
-#pagination ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    margin-bottom: 50px;
-}
-
-#pagination ul li {
-    color: #fff;
-    display: flex;
-}
-
-#pagination ul li a {
-    background-color: #f5f5f7;
-    padding: 5px 10px;
-    border: 2px solid #eaebf0;
-    border-right: 0;
-    text-decoration: none; 
-    color: #111;
-}
-
-#pagination ul li a:active {
-    background-color: #9AB87A;
-}
-
-#pagination ul li a:hover {
-    background-color: #d8dae5;
-}
-
-#pagination ul li:first-child a {
-    border-radius: 5px 0 0 5px;
-}
-
-#pagination ul li:last-child a {
-    border-radius: 0 5px 5px 0;
-}
-
-/* Add margin to the left, right, and top of the table */
-.container {
-    max-width: 1200px;
-    margin: 20px auto; /* Add margin to the top and auto for horizontal centering */
-    padding: 0 20px;
-}
-
-.table {
-    margin: 0 auto; /* Center the table horizontally within its container */
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #fff;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Table Styles */
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #fff;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.table th,
-.table td {
-    padding: 12px 15px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-.table th {
-    background-color: #306997;
-    color: #fff;
-}
-
-.table tbody tr:hover {
-    background-color: #f2f2f2;
-}
-
-@media (max-width: 768px) {
-    .table th, .table td {
-        padding: 10px;
-    }
+    line-height: 2.0rem;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .transcript span.tooltip:hover { 
@@ -329,42 +95,68 @@ body {
 .tooltip:hover .tooltiptext {
     opacity: 1;
 }
-.footer-container {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: space-between;
-  background-color: #4b4b4b;
-  align-items: center;
-  width: 100%;
+@media (max-width: 768px) {
+    .transcript  {
+        font-size: 12px;
+    }
 }
 
-.footer-elem-1,
-.footer-elem-2,
-.footer-elem-3 {
-  margin-left: 1ch;
-  margin-right: 1ch;
-  color: #fff;
+.footer {
+    margin-top: auto;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.footer-p {
-  margin-bottom: 40px;
+.center{
+    flex: 1;
+    text-align: center;
+}
+.right {
+    flex: 1;
+    text-align: right;
+    margin-right: 40px;
+}
+.left {
+    flex: 1;
+    text-align: left;
+    margin-left: 40px;
 }
 
-kbd a {
+.footer a {
     color: #fff;
     text-decoration: none;
 }
 
-@media screen and (min-width: 400px) {
-  .footer-p {
-    margin-bottom: 10px;
-  }
+.footer a:hover {
+    color: orange;
 }
 
+@media screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .left,
+    .center,
+    .right {
+        flex: none;
+        margin-bottom: 5px;
+    }
+}
+.title, .speaker {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+.line {
+    border-top: 1px solid black;
+    width: 100%;
+}
 #gotop {
    display: none;
     position: fixed;
@@ -377,57 +169,167 @@ kbd a {
     cursor: pointer;
 }
 
-.disclaimer {
-    text-align: center;
-    font-size: 10px;
+/*library*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 70px;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 20px 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fbf4ea;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-.field-content {
-    text-align: center;
-    font-size: 14px;
+.book {
+  padding: 2px;
+  text-align: left;
 }
-.field-content a {
-    text-decoration: none;
+
+/*list*/
+#pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+#pagination ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+#pagination ul li {
+    color: #fff;
+    display: flex;
+}
+
+#pagination ul li a {
+    background-color: #f5f5f7;
+    padding: 5px 10px;
+    border: 2px solid #eaebf0;
+    border-right: 0;
+    text-decoration: none; 
+    color: #111;
+}
+
+#pagination ul li a:active {
+    background-color: #9AB87A;
+}
+
+#pagination ul li a:hover {
+    background-color: #d8dae5;
+}
+
+#pagination ul li:first-child a {
+    border-radius: 5px 0 0 5px;
+}
+
+#pagination ul li:last-child a {
+    border-radius: 0 5px 5px 0;
+}
+
+.container {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #111;
+}
+
+.centered-list li {
+  margin-bottom: 10px;
+}
+
+.centered-list li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.centered-list li a:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
-    .container {
-        padding: 0 10px; /* Adjust padding for smaller screens */
-    }
-
-    .table th,
-    .table td {
-        padding: 8px; /* Adjust padding for smaller screens */
-    }
-
-    #pagination {
-        margin-top: 10px; /* Adjust margin for smaller screens */
-    }
-
-    .transcript {
-        font-size: 16px;
-        width: 90%;
-    }
-    .pagination li {
+    .container  {
         font-size: 12px;
     }
-    .tooltiptext {
-        font-size: 16px;
-    }
-    .container {
-        display: flex;
-        justify-content: left;
-        align-items: left;
-        font-size: 16px;
-    }
-    .transcript {
-        width: 100%; /*width: 40em;*/
-        margin: 0;
-        padding: 5px 5px;
-        border: 1px solid #d9d2ba;
-        border-radius: 10px;
-        background-color: #fbf4ea;
-        color: #111;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Drop shadow */
-    } 
+}
+
+/*landing*/
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.ad-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ad-text {
+    margin-top: 20%;
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 30%;
+}
+
+.title, .speaker {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+/* Style the SVG icon */
+.twitter-icon {
+    fill: #1DA1F2; /* Twitter brand color */
+    width: 20px;
+    height: 20px;
+}
+
+.twitter-link {
+    display: inline-block;
+}
+
+.disclaimer {
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
 }
