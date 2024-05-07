@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+	<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<meta name="description" content="Desbloquea la competencia en inglés con nuestra plataforma innovadora basada en las transcripciones de TED Talks. Sumérgete en un contenido cautivador, accede a traducciones instantáneas y únete a una comunidad global de estudiantes. ¡Comienza tu aventura de lectura hoy mismo! | Unlock English proficiency with our innovative platform powered by TED Talk transcripts. Dive into captivating content, access instant translations, and join a global community of learners. Start your reading adventure today!">
+		<meta name="keywords" content="lectura en inglés, transcripciones de TED Talks, aprendizaje de idiomas, traducciones instantáneas, comunidad global, aventura de lectura, mejorar inglés, mejorar habilidades de lectura, plataforma educativa, recursos de lectura, educación en línea, English reading, TED Talks transcripts, language learning, instant translations, global community, reading adventure, improve English, improve reading skills, educational platform, reading resources, online education, English proficiency, learn English, English learning resources, bilingual education, language exchange, study English online">
+		<link rel="apple-touch-icon" sizes="180x180" href="../../../static/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../../../static/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../../../static/favicons/favicon-16x16.png">
+		<link rel="manifest" href="../../../static/favicons/site.webmanifest">
+		<title>Massimo Banzi : How Arduino is open-sourcing imagination</title>
+		<link rel='stylesheet' href='../../../static/styles/styles.css'>
+	</head>
+	<body>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-R5SK82H490"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-R5SK82H490');
+	</script>
+
+	<h1 class='title'>How Arduino is open-sourcing imagination</h1>
+	<h2 class='speaker'>Massimo Banzi</h2>
+	<div class='transcript books'>
+	<p>Are you ready to improve your English speaking skills, check <a href='https://referral.lingoda.com/6Dztrv'>Lingoda</a> today!</p>
+		<p>
+		<span class="tooltip">So a few weeks ago, a friend<span class="tooltiptext">Hace unas semanas, un amigo mío</span></span>
+		<span class="tooltip">of mine gave this toy car to his<span class="tooltiptext">le dio este auto de juguete</span></span>
+		<span class="tooltip">8-year-old son.<span class="tooltiptext">a su hijo de 8 años.</span></span>
+		<span class="tooltip">But instead of going into a store and buying one,<span class="tooltiptext">Pero en vez de ir a una tienda y comprarlo,</span></span>
+		<span class="tooltip">like we do normally, he went to this<span class="tooltiptext">como es lo usual, él visitó</span></span>
+		<span class="tooltip">website and he downloaded<span class="tooltiptext">este sitio web, descargó</span></span>
+		<span class="tooltip">a file, and then he printed it<span class="tooltiptext">un archivo y luego lo imprimió</span></span>
+		<span class="tooltip">on this printer.<span class="tooltiptext">en esta impresora.</span></span>
+		<span class="tooltip">So this idea that you can<span class="tooltiptext">Así que la idea de que se puede</span></span>
+		<span class="tooltip">manufacture objects<span class="tooltiptext">fabricar objetos digitalmente</span></span>
+		<span class="tooltip">digitally using these machines<span class="tooltiptext">usando estas máquinas</span></span>
+		<span class="tooltip">is something that The Economist magazine<span class="tooltiptext">es algo que la revista «The Economist»</span></span>
+		<span class="tooltip">defined as the Third Industrial Revolution.<span class="tooltiptext">define como la «Tercera Revolución Industrial».</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Actually, I argue that there is another revolution<span class="tooltiptext">En realidad, sostengo que está ocurriendo</span></span>
+		<span class="tooltip">going on, and it&#39;s the one that has to do with<span class="tooltiptext">otra revolución, relacionada con el hardware libre</span></span>
+		<span class="tooltip">open-source hardware and the maker&#39;s movement,<span class="tooltiptext">y con el movimiento de creadores,</span></span>
+		<span class="tooltip">because the printer that my friend used<span class="tooltiptext">ya que la impresora que mi amigo usó</span></span>
+		<span class="tooltip">to print the toy is actually open-source.<span class="tooltiptext">para imprimir el juguete es de código abierto.</span></span>
+		<span class="tooltip">So you go to the same website, you can download all the files<span class="tooltiptext">Así que se puede visitar el mismo sitio web y descargar todos los archivos</span></span>
+		<span class="tooltip">that you need in order to make that printer:<span class="tooltiptext">necesarios para fabricar la impresora:</span></span>
+		<span class="tooltip">the construction files, the hardware, the software,<span class="tooltiptext">los archivos de construcción, los componentes físicos,</span></span>
+		<span class="tooltip">all the instruction is there.<span class="tooltiptext">los programas; toda la información se encuentra ahí.</span></span>
+		<span class="tooltip">And also this is part of a large<span class="tooltiptext">Esto es parte de una gran comunidad</span></span>
+		<span class="tooltip">community where there are thousands of people<span class="tooltiptext">formada por miles de personas</span></span>
+		<span class="tooltip">around the world that are actually<span class="tooltiptext">en todo el mundo</span></span>
+		<span class="tooltip">making these kinds of printers,<span class="tooltiptext">que fabrican este tipo de impresoras</span></span>
+		<span class="tooltip">and there&#39;s a lot of innovation<span class="tooltiptext">y están innovando,</span></span>
+		<span class="tooltip">happening because it&#39;s all open-source.<span class="tooltiptext">ya que todo es de código abierto.</span></span>
+		<span class="tooltip">You don&#39;t need anybody&#39;s permission to create something great.<span class="tooltiptext">No se necesita el permiso de nadie</span></span>
+		<span class="tooltip">And that space is like<span class="tooltiptext">Ese espacio se asemeja</span></span>
+		<span class="tooltip">the personal computer in 1976,<span class="tooltiptext">al de la computadora personal en 1976</span></span>
+		<span class="tooltip">like the Apples with the other companies are fighting,<span class="tooltiptext">cuando Apple y las otras compañías estaban peleando,</span></span>
+		<span class="tooltip">and we will see in a few years,<span class="tooltiptext">y en unos años veremos</span></span>
+		<span class="tooltip">there will be the Apple of this kind of market come out.<span class="tooltiptext">que surgirá la versión Apple de este tipo de mercado.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Well, there&#39;s also another interesting thing.<span class="tooltiptext">Bueno, hay otro punto interesante.</span></span>
+		<span class="tooltip">I said the electronics are open-source, because at the heart<span class="tooltiptext">Los componentes electrónicos son de código abierto</span></span>
+		<span class="tooltip">of this printer there is something I&#39;m really attached to:<span class="tooltiptext">porque en el centro de esta impresora hay algo a lo que estoy muy apegado:</span></span>
+		<span class="tooltip">these Arduino boards, the motherboard that sort of<span class="tooltiptext">estas tarjetas Arduino, la tarjeta madre que de cierta forma</span></span>
+		<span class="tooltip">powers this printer, is a project<span class="tooltiptext">hace funcionar a la impresora, es un proyecto</span></span>
+		<span class="tooltip">I&#39;ve been working on for the past seven years.<span class="tooltiptext">en el que he trabajado durante los últimos 7 años.</span></span>
+		<span class="tooltip">It&#39;s an open-source project.<span class="tooltiptext">Es un proyecto de código abierto.</span></span>
+		<span class="tooltip">I worked with these friends of mine that I have here.<span class="tooltiptext">He trabajado con mis amigos que ven aquí.</span></span>
+		<span class="tooltip">So the five of us, two Americans, two Italians<span class="tooltiptext">Nosotros 5, 2 estadounidenses, 2 italianos</span></span>
+		<span class="tooltip">and a Spaniard, we — (Laughter)<span class="tooltiptext">y un español, nosotros… (Risas)</span></span>
+		<span class="tooltip">You know, it&#39;s a worldwide project. (Laughter)<span class="tooltiptext">Ya saben, es un proyecto mundial. (Risas)</span></span>
+		<span class="tooltip">So we came together in this<span class="tooltiptext">Nos encontramos en este instituto de diseño</span></span>
+		<span class="tooltip">design institute called the Interaction Design Institute<span class="tooltiptext">llamado Instituto de Diseño Interactivo Ivrea,</span></span>
+		<span class="tooltip">Ivrea, which was teaching<span class="tooltiptext">donde se enseña diseño interactivo.</span></span>
+		<span class="tooltip">interaction design, this idea that you can take<span class="tooltiptext">Esta idea de tomar el diseño</span></span>
+		<span class="tooltip">design from the simple shape<span class="tooltiptext">más allá de la simple forma</span></span>
+		<span class="tooltip">of an object and you can move it<span class="tooltiptext">de un objeto y de ahí dar un paso adelante</span></span>
+		<span class="tooltip">forward to design the way you interact with things.<span class="tooltiptext">y diseñar la manera en que uno interactúa con las cosas.</span></span>
+		<span class="tooltip">Well, when you design an object that&#39;s supposed to interact<span class="tooltiptext">Al diseñar un objeto que se supone va a interactuar</span></span>
+		<span class="tooltip">with a human being, if you make a foam model<span class="tooltiptext">con un ser humano, si uno fabrica un modelo</span></span>
+		<span class="tooltip">of a mobile phone, it doesn&#39;t make any sense.<span class="tooltiptext">de teléfono celular de gomaespuma, no tiene ningún sentido.</span></span>
+		<span class="tooltip">You have to have something that<span class="tooltiptext">Hay que tener algo</span></span>
+		<span class="tooltip">actually interacts with people.<span class="tooltiptext">que de verdad interactúe con la gente.</span></span>
+		<span class="tooltip">So, we worked on Arduino and<span class="tooltiptext">Así que trabajamos en Arduino</span></span>
+		<span class="tooltip">a lot of other projects there to<span class="tooltiptext">y en muchos otros proyectos</span></span>
+		<span class="tooltip">create platforms that would be<span class="tooltiptext">para crear plataformas que fueran</span></span>
+		<span class="tooltip">simple for our students to use,<span class="tooltiptext">fáciles de usar para nuestros alumnos,</span></span>
+		<span class="tooltip">so that our students could just build things that worked,<span class="tooltiptext">para que ellos pudieran fabricar cosas que funcionaran,</span></span>
+		<span class="tooltip">but they don&#39;t have five years to become an electronics engineer. We have one month.<span class="tooltiptext">ya que no disponen de 5 años para
+volverse ingenieros en electrónica. Tienen 1 mes.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So how do I make something that even a kid can use?<span class="tooltiptext">Así que ¿cómo hago algo que incluso un niño pueda usar?</span></span>
+		<span class="tooltip">And actually, with Arduino,<span class="tooltiptext">Y de hecho, con Arduino,</span></span>
+		<span class="tooltip">we have kids like Sylvia that you see here,<span class="tooltiptext">tenemos niños como Sylvia, a quien ven aquí,</span></span>
+		<span class="tooltip">that actually make projects with Arduino.<span class="tooltiptext">que fabrica proyectos con Arduino.</span></span>
+		<span class="tooltip">I have 11-year-old kids stop me and show me<span class="tooltiptext">Hay niños de 11 años que me muestran</span></span>
+		<span class="tooltip">stuff they built for Arduino that&#39;s really<span class="tooltiptext">cosas que han construido con Arduino,</span></span>
+		<span class="tooltip">scary to see the capabilities<span class="tooltiptext">y asusta darse cuenta de la capacidad</span></span>
+		<span class="tooltip">that kids have when you give them the tools.<span class="tooltiptext">de estos niños cuando se les dan las herramientas.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So let&#39;s look at what happens when you make a tool<span class="tooltiptext">Veamos qué es lo que sucede cuando se fabrica una herramienta</span></span>
+		<span class="tooltip">that anybody can just pick up and build something quickly,<span class="tooltiptext">que cualquiera puede usar para construir algo rápido.</span></span>
+		<span class="tooltip">so one of the examples that I like to sort of<span class="tooltiptext">Uno de los ejemplos con los que quiero</span></span>
+		<span class="tooltip">kick off this discussion is this<span class="tooltiptext">empezar esta discusión es</span></span>
+		<span class="tooltip">example of this cat feeder.<span class="tooltiptext">este alimentador para gatos.</span></span>
+		<span class="tooltip">The gentleman who made this project had two cats.<span class="tooltiptext">El caballero que fabricó este proyecto tenía 2 gatos.</span></span>
+		<span class="tooltip">One was sick and the other one<span class="tooltiptext">Uno estaba enfermo y el otro sano,</span></span>
+		<span class="tooltip">was healthy, so he had to make<span class="tooltiptext">así que debía asegurarse</span></span>
+		<span class="tooltip">sure they ate the proper food.<span class="tooltiptext">de que comieran la comida adecuada.</span></span>
+		<span class="tooltip">So he made this thing that recognizes the cat<span class="tooltiptext">Fabricó este aparato que reconoce al gato</span></span>
+		<span class="tooltip">from a chip mounted inside<span class="tooltiptext">por un chip instalado en su collar,</span></span>
+		<span class="tooltip">on the collar of the cat, and opens the door<span class="tooltiptext">le abre la puerta</span></span>
+		<span class="tooltip">and the cat can eat the food.<span class="tooltiptext">y el gato puede alimentarse.</span></span>
+		<span class="tooltip">This is made by recycling an old CD player<span class="tooltiptext">Para fabricarlo recicló un viejo reproductor de CD</span></span>
+		<span class="tooltip">that you can get from an old computer,<span class="tooltiptext">que se puede obtener de una computadora vieja,</span></span>
+		<span class="tooltip">some cardboard, tape, couple of sensors, a few blinking LEDs,<span class="tooltiptext">un poco de cartón, cinta adhesiva, un par de sensores, unos cuantos ledes intermitentes</span></span>
+		<span class="tooltip">and then suddenly you have a tool. You build something<span class="tooltiptext">y de repente se tiene una herramienta. Se ha construido algo</span></span>
+		<span class="tooltip">that you cannot find on the market.<span class="tooltiptext">que no es posible encontrar en el mercado.</span></span>
+		<span class="tooltip">And I like this phrase: &quot;Scratch your own itch.&quot;<span class="tooltiptext">Me gusta esta frase: «Rásquese con sus propias uñas».</span></span>
+		<span class="tooltip">If you have an idea, you just go and you make it.<span class="tooltiptext">Si Ud. tiene una idea, solo vaya y constrúyala.</span></span>
+		<span class="tooltip">This is the equivalent of sketching on paper<span class="tooltiptext">Es el equivalente de bosquejar en un papel,</span></span>
+		<span class="tooltip">done with electronics.<span class="tooltiptext">pero hecho con componentes electrónicos.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So one of the features that I<span class="tooltiptext">Así que una de las características</span></span>
+		<span class="tooltip">think is important about our work<span class="tooltiptext">que creo que es importante en nuestro trabajo</span></span>
+		<span class="tooltip">is that our hardware, on top of<span class="tooltiptext">es que nuestros componentes físicos,</span></span>
+		<span class="tooltip">being made with love in Italy —<span class="tooltiptext">además de estar hechos con amor en Italia,</span></span>
+		<span class="tooltip">as you can see from the<span class="tooltiptext">como pueden ver</span></span>
+		<span class="tooltip">back of the circuit — (Laughter)<span class="tooltiptext">en el dorso del circuito
+(Risas)</span></span>
+		<span class="tooltip">is that it&#39;s open,<span class="tooltiptext">son abiertos,</span></span>
+		<span class="tooltip">so we publish all the design<span class="tooltiptext">así que publicamos en la red</span></span>
+		<span class="tooltip">files for the circuit online,<span class="tooltiptext">todos los archivos de diseño del circuito</span></span>
+		<span class="tooltip">so you can download it and<span class="tooltiptext">y Ud. puede descargarlos</span></span>
+		<span class="tooltip">you can actually use it to<span class="tooltiptext">y usarlos para fabricar algo,</span></span>
+		<span class="tooltip">make something, or to modify, to learn.<span class="tooltiptext">o para modificar y aprender.</span></span>
+		<span class="tooltip">You know, when I was learning about programming,<span class="tooltiptext">Cuando yo estudiaba programación,</span></span>
+		<span class="tooltip">I learned by looking at other people&#39;s code,<span class="tooltiptext">aprendí observando los códigos de otras personas,</span></span>
+		<span class="tooltip">or looking at other people&#39;s circuits in magazines.<span class="tooltiptext">o sus circuitos en las revistas.</span></span>
+		<span class="tooltip">And this is a good way to learn,<span class="tooltiptext">Y esta es una buena manera de aprender,</span></span>
+		<span class="tooltip">by looking at other people&#39;s work.<span class="tooltiptext">observando el trabajo de otros.</span></span>
+		<span class="tooltip">So the different elements of the project are all open,<span class="tooltiptext">Así que todos los diversos elementos del proyecto</span></span>
+		<span class="tooltip">so the hardware is released<span class="tooltiptext">son abiertos, los componentes se publican</span></span>
+		<span class="tooltip">with a Creative Commons license.<span class="tooltiptext">bajo una licencia de bienes comunes creativos (Creative Commons).</span></span>
+		<span class="tooltip">So, you know, I like this idea that hardware becomes<span class="tooltiptext">¿Saben? Me gusta esta ida de que el hardware</span></span>
+		<span class="tooltip">like a piece of culture that you share<span class="tooltiptext">se convierta en un pedazo de cultura que se puede</span></span>
+		<span class="tooltip">and you build upon, like it was<span class="tooltiptext">compartir y desarrollar, como si fuera</span></span>
+		<span class="tooltip">a song or a poem with Creative Commons.<span class="tooltiptext">una canción o un poema mediante bienes comunes creativos.</span></span>
+		<span class="tooltip">Or, the software is GPL, so it&#39;s open-source as well.<span class="tooltiptext">Y los programas son de Licencia Pública General,
+así que son también de código abierto.</span></span>
+		<span class="tooltip">The documentation and the hands-on teaching<span class="tooltiptext">La documentación y la metodología práctica de trabajo</span></span>
+		<span class="tooltip">methodology is also open-source and released as the Creative Commons.<span class="tooltiptext">también son de código abierto y se publican como bienes comunes creativos.</span></span>
+		<span class="tooltip">Just the name is protected so<span class="tooltiptext">Solo el nombre está protegido</span></span>
+		<span class="tooltip">that we can make sure that we can tell people<span class="tooltiptext">para asegurarnos de poder decir a la gente</span></span>
+		<span class="tooltip">what is Arduino and what isn&#39;t.<span class="tooltiptext">qué es Arduino y qué no es.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Now, Arduino itself is made of<span class="tooltiptext">Arduino mismo está formado</span></span>
+		<span class="tooltip">a lot of different open-source components<span class="tooltiptext">por muchos componentes de código abierto diferentes</span></span>
+		<span class="tooltip">that maybe individually are hard to use for<span class="tooltiptext">que separadamente tal vez sean difíciles de usar</span></span>
+		<span class="tooltip">a 12-year-old kid, so Arduino<span class="tooltiptext">para un niño de 12 años, así que Arduino</span></span>
+		<span class="tooltip">wraps everything together into<span class="tooltiptext">reúne todo en una mezcla</span></span>
+		<span class="tooltip">a mashup of open-source technologies<span class="tooltiptext">de tecnologías de código abierto</span></span>
+		<span class="tooltip">where we try to give them the<span class="tooltiptext">donde tratamos de dar la mejor experiencia</span></span>
+		<span class="tooltip">best user experience to get something done quickly.<span class="tooltiptext">al usuario para fabricar algo con rapidez.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So you have situations like this,<span class="tooltiptext">Tenemos situaciones como esta,</span></span>
+		<span class="tooltip">where some people in Chile<span class="tooltiptext">en que unas personas en Chile</span></span>
+		<span class="tooltip">decided to make their own boards instead of buying them,<span class="tooltiptext">decidieron fabricar sus propias tarjetas en vez de comprarlas,</span></span>
+		<span class="tooltip">to organize a workshop and<span class="tooltiptext">para organizar un taller y</span></span>
+		<span class="tooltip">to save money. Or there are<span class="tooltiptext">ahorrar dinero. También hay</span></span>
+		<span class="tooltip">companies that make their own<span class="tooltiptext">compañías que fabrican sus propias</span></span>
+		<span class="tooltip">variations of Arduino that fit<span class="tooltiptext">variaciones de Arduino que se ajustan</span></span>
+		<span class="tooltip">in a certain market, and there&#39;s<span class="tooltiptext">a un mercado particular,</span></span>
+		<span class="tooltip">probably, maybe like a 150 of them<span class="tooltiptext">hay probablemente cerca de 150,</span></span>
+		<span class="tooltip">or something at the moment.<span class="tooltiptext">o algo así, hasta ahora.</span></span>
+		<span class="tooltip">This one is made by a company<span class="tooltiptext">Esta tarjeta se fabrica en una compañía</span></span>
+		<span class="tooltip">called Adafruit, which is run by<span class="tooltiptext">llamada “«Adafruit», que dirige</span></span>
+		<span class="tooltip">this woman called Limor Fried,<span class="tooltiptext">esta mujer de nombre Limor Fried,</span></span>
+		<span class="tooltip">also known as Ladyada, who is<span class="tooltiptext">también conocida como Ladyada, que es una de las heroínas</span></span>
+		<span class="tooltip">one of the heroes of the open-source hardware movement<span class="tooltiptext">del movimiento de hardware libre</span></span>
+		<span class="tooltip">and the maker movement.<span class="tooltiptext">y del movimiento de creadores.</span></span>
+		<span class="tooltip">So, this idea that you have a new, sort of<span class="tooltiptext">Esta idea de tener una nueva comunidad «hazlo tú mismo» (DIY)</span></span>
+		<span class="tooltip">turbo-charged DIY community<span class="tooltiptext">por así decirlo turbopropulsada</span></span>
+		<span class="tooltip">that believes in open-source,<span class="tooltiptext">que apoya el código abierto</span></span>
+		<span class="tooltip">in collaboration, collaborates<span class="tooltiptext">y la cooperación, colabora en línea,</span></span>
+		<span class="tooltip">online, collaborates in different spaces.<span class="tooltiptext">participa en diferentes espacios.</span></span>
+		<span class="tooltip">There is this magazine called Make that sort of gathered<span class="tooltiptext">Esta revista llamada «Make» atrajo a todas estas personas</span></span>
+		<span class="tooltip">all these people and sort of put them together<span class="tooltiptext">y de cierta forma las reunió</span></span>
+		<span class="tooltip">as a community, and you see<span class="tooltiptext">en comunidad, y se puede encontrar</span></span>
+		<span class="tooltip">a very technical project explained in a<span class="tooltiptext">un proyecto muy técnico explicado</span></span>
+		<span class="tooltip">very simple language, beautifully typeset.<span class="tooltiptext">en un lenguaje muy simple y con un diseño muy atractivo.</span></span>
+		<span class="tooltip">Or you have websites,<span class="tooltiptext">Además hay sitios web,</span></span>
+		<span class="tooltip">like this one, like Instructables,<span class="tooltiptext">como este, «Instructables»,</span></span>
+		<span class="tooltip">where people actually teach each other about anything.<span class="tooltiptext">donde la gente se enseña entre sí acerca de cualquier cosa.</span></span>
+		<span class="tooltip">So this one is about Arduino projects,<span class="tooltiptext">Esta es sobre proyectos Arduino,</span></span>
+		<span class="tooltip">the page you see on the screen, but effectively here you can<span class="tooltiptext">la página que ven en pantalla, pero, en efecto, pueden aprender</span></span>
+		<span class="tooltip">learn how to make a cake and everything else.<span class="tooltiptext">a hacer un pastel y cualquier otra cosa.</span></span>
+		<span class="tooltip">So let&#39;s look at some projects.<span class="tooltiptext">Veamos algunos proyectos.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So this one is a quadcopter.<span class="tooltiptext">Este es un cuadricóptero.</span></span>
+		<span class="tooltip">It&#39;s a small model helicopter.<span class="tooltiptext">Es un pequeño modelo de helicóptero.</span></span>
+		<span class="tooltip">In a way, it&#39;s a toy, no?<span class="tooltiptext">Es como un juguete, ¿no es así?</span></span>
+		<span class="tooltip">And so this one was military technology<span class="tooltiptext">Este era tecnología militar</span></span>
+		<span class="tooltip">a few years ago, and now it&#39;s<span class="tooltiptext">hace unos años, y ahora</span></span>
+		<span class="tooltip">open-source, easy to use, you can buy it online.<span class="tooltiptext">es código abierto, fácil de usar, se puede adquirir en línea.</span></span>
+		<span class="tooltip">DIY Drones is the community; they do this thing called ArduCopter.<span class="tooltiptext">La comunidad DIY Drones fabrica el llamado «ArduCopter».</span></span>
+		<span class="tooltip">But then somebody actually launched this start-up called<span class="tooltiptext">Y luego alguien lanzó una empresa emergente llamada</span></span>
+		<span class="tooltip">Matternet, where they figured out that you could<span class="tooltiptext">«Matternet», donde se dieron cuenta</span></span>
+		<span class="tooltip">use this to actually transport<span class="tooltiptext">de que podían usarlo para transportar</span></span>
+		<span class="tooltip">things from one village to another in Africa,<span class="tooltiptext">cosas de un pueblo a otro en África,</span></span>
+		<span class="tooltip">and the fact that this was easy to find,<span class="tooltiptext">y el hecho de que haya sido fácil de encontrar,</span></span>
+		<span class="tooltip">open-source, easy to hack, enabled them<span class="tooltiptext">de código abierto, fácil de manipular, les permitió</span></span>
+		<span class="tooltip">to prototype their company really quickly.<span class="tooltiptext">desarrollar rápido un prototipo para la compañía.</span></span>
+		<span class="tooltip">Or, other projects. Matt Richardson: I&#39;m getting a little sick<span class="tooltiptext">O bien, veamos otros proyectos. Matt Richardson: Estaba harto</span></span>
+		<span class="tooltip">of hearing about the same people on TV over and over and over<span class="tooltiptext">de oír hablar siempre de la misma gente en la TV una y otra vez,</span></span>
+		<span class="tooltip">again, so I decided to do something about it.<span class="tooltiptext">así que decidí hacer algo al respecto.</span></span>
+		<span class="tooltip">This Arduino project,<span class="tooltiptext">Este proyecto Arduino,</span></span>
+		<span class="tooltip">which I call the Enough Already, will mute the TV anytime<span class="tooltiptext">al que llamo «Enough Already» (Ya basta), silencia la TV cada vez</span></span>
+		<span class="tooltip">any of these over-exposed<span class="tooltiptext">que se menciona a una de estas</span></span>
+		<span class="tooltip">personalities is mentioned. (Laughter)<span class="tooltiptext">personalidades sobreexpuestas.
+(Risas)</span></span>
+		<span class="tooltip">I&#39;ll show you how I made it. (Applause)<span class="tooltiptext">Les mostraré cómo lo hice. (Aplausos)</span></span>
+		<span class="tooltip">MB: Check this out.<span class="tooltiptext">MB: Miren esto.</span></span>
+		<span class="tooltip">MR: Our producers caught up with Kim Kardashian earlier<span class="tooltiptext">MR: Nuestros productores se encontraron con Kim Kardashian hoy</span></span>
+		<span class="tooltip">today to find out what she was planning on wearing to her —<span class="tooltiptext">para averiguar lo que planea ponerse para…</span></span>
+		<span class="tooltip">MB: Eh? (Laughter)<span class="tooltiptext">MB: ¿Qué tal? (Risas)</span></span>
+		<span class="tooltip">MR: It should do a pretty good<span class="tooltiptext">MR: Hace un buen trabajo para proteger</span></span>
+		<span class="tooltip">job of protecting our ears from having to hear about the details<span class="tooltiptext">nuestros oídos de los detalles</span></span>
+		<span class="tooltip">of Kim Kardashian&#39;s wedding.<span class="tooltiptext">de la boda de Kim Kardashian.</span></span>
+		<span class="tooltip">MB: Okay. So, you know, again, what is interesting here<span class="tooltiptext">MB: Bien. De nuevo, lo interesante</span></span>
+		<span class="tooltip">is that Matt found this module<span class="tooltiptext">es que Matt encontró este módulo</span></span>
+		<span class="tooltip">that lets Arduino process<span class="tooltiptext">que permite a Arduino procesar</span></span>
+		<span class="tooltip">TV signals, he found some code<span class="tooltiptext">señales de TV, encontró un código,</span></span>
+		<span class="tooltip">written by somebody else that generates infrared signals for the TV,<span class="tooltiptext">escrito por otra persona, que genera señales infrarrojas para la TV,</span></span>
+		<span class="tooltip">put it together and then created this great project.<span class="tooltiptext">juntó todo y creó este gran proyecto.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">It&#39;s also used, Arduino&#39;s used,<span class="tooltiptext">Arduino también se usa</span></span>
+		<span class="tooltip">in serious places like, you know, the Large Hadron Collider.<span class="tooltiptext">en lugares serios como el gran colisionador de hadrones (GCH).</span></span>
+		<span class="tooltip">There&#39;s some Arduino balls collecting data and sort of<span class="tooltiptext">Algunas tarjetas Arduino recopilan información</span></span>
+		<span class="tooltip">measuring some parameters.<span class="tooltiptext">y miden algunos parámetros.</span></span>
+		<span class="tooltip">Or it&#39;s used for —<span class="tooltiptext">O bien se usan para…</span></span>
+		<span class="tooltip">(Music)<span class="tooltiptext">(Música)</span></span>
+		<span class="tooltip">So this is a musical interface<span class="tooltiptext">Esta es una interfaz musical</span></span>
+		<span class="tooltip">built by a student from Italy,<span class="tooltiptext">fabricada por un estudiante de Italia</span></span>
+		<span class="tooltip">and he&#39;s now turning this into<span class="tooltiptext">que ahora va a convertirla</span></span>
+		<span class="tooltip">a product. Because it was a<span class="tooltiptext">en un producto. Ya que es un proyecto</span></span>
+		<span class="tooltip">student project becoming a product.<span class="tooltiptext">estudiantil que se volverá un producto.</span></span>
+		<span class="tooltip">Or it can be used to make an assistive device.<span class="tooltiptext">También se puede usar para crear un dispositivo médico</span></span>
+		<span class="tooltip">This is a glove that understands<span class="tooltiptext">de ayuda técnica. Este es un guante que entiende</span></span>
+		<span class="tooltip">the sign language and transforms<span class="tooltiptext">el lenguaje de señas y transforma</span></span>
+		<span class="tooltip">the gestures you make into sounds<span class="tooltiptext">los gestos en sonidos</span></span>
+		<span class="tooltip">and writes the words that you&#39;re signing on a display<span class="tooltiptext">y escribe las palabras en un visualizador.</span></span>
+		<span class="tooltip">And again, this is made of all different parts you can find<span class="tooltiptext">Y, nuevamente, está hecho con diferentes partes</span></span>
+		<span class="tooltip">on all the websites that sell Arduino-compatible parts,<span class="tooltiptext">que se pueden encontrar en cualquier sitio web
+que venda piezas compatibles con Arduino</span></span>
+		<span class="tooltip">and you assemble it into a project.<span class="tooltiptext">y que se ensamblan para crear proyectos.</span></span>
+		<span class="tooltip">Or this is a project from the ITP part of NYU,<span class="tooltiptext">Este es un proyecto del Programa de Telecomunicación Interactiva</span></span>
+		<span class="tooltip">where they met with this boy<span class="tooltiptext">de la Universidad de Nueva York, donde conocieron a este niño</span></span>
+		<span class="tooltip">who has a severe disability, cannot play with the PS3,<span class="tooltiptext">con una severa discapacidad que no podía jugar con el PlayStation 3,</span></span>
+		<span class="tooltip">so they built this device that<span class="tooltiptext">así que fabricaron este aparato</span></span>
+		<span class="tooltip">allows the kid to play baseball<span class="tooltiptext">que le permite jugar béisbol</span></span>
+		<span class="tooltip">although he has limited<span class="tooltiptext">a pesar de su capacidad</span></span>
+		<span class="tooltip">movement capability.<span class="tooltiptext">de movimiento limitada.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Or you can find it in arts projects.<span class="tooltiptext">O bien se le encuentra en proyectos de arte.</span></span>
+		<span class="tooltip">So this is the txtBomber.<span class="tooltiptext">Este es el txtBomber.</span></span>
+		<span class="tooltip">So you put a message into this device<span class="tooltiptext">Se ingresa un mensaje en este aparato,</span></span>
+		<span class="tooltip">and then you roll it on the wall, and it basically<span class="tooltiptext">se lo desliza sobre la pared; consta básicamente</span></span>
+		<span class="tooltip">has all these solenoids<span class="tooltiptext">de cierto número de solenoides</span></span>
+		<span class="tooltip">pressing the buttons on spray cans,<span class="tooltiptext">que presionan los botones de los atomizadores,</span></span>
+		<span class="tooltip">so you just pull it over a wall<span class="tooltiptext">solo hay que deslizarlo sobre la pared</span></span>
+		<span class="tooltip">and it just writes on the wall<span class="tooltiptext">y escribirá sobre ella</span></span>
+		<span class="tooltip">all the political messages.<span class="tooltiptext">todos los mensajes políticos.</span></span>
+		<span class="tooltip">So, yeah. (Applause)<span class="tooltiptext">Así es. (Aplausos)</span></span>
+		<span class="tooltip">Then we have this plant here.<span class="tooltiptext">Ahora tenemos esta planta.</span></span>
+		<span class="tooltip">This is called Botanicalls,<span class="tooltiptext">Esto se llama «Botanicalls»,</span></span>
+		<span class="tooltip">because there&#39;s an Arduino ball with a Wi-Fi module<span class="tooltiptext">tiene una tarjeta Arduino con un módulo Wi-Fi</span></span>
+		<span class="tooltip">in the plant, and it&#39;s measuring<span class="tooltiptext">que mide el bienestar</span></span>
+		<span class="tooltip">the well-being of the plant,<span class="tooltiptext">de la planta y a la vez</span></span>
+		<span class="tooltip">and it&#39;s creating a Twitter account<span class="tooltiptext">crea una cuenta en Twitter</span></span>
+		<span class="tooltip">where you can actually interact with the plant. (Laughter)<span class="tooltiptext">donde se puede interactuar con la planta. (Risas)</span></span>
+		<span class="tooltip">So, you know, this plant<span class="tooltiptext">Así que esta planta comenzará</span></span>
+		<span class="tooltip">will start to say, &quot;This is really hot,&quot; or<span class="tooltiptext">a decir: «Hace mucho calor»,</span></span>
+		<span class="tooltip">there&#39;s a lot of, you know, &quot;I need water right now.&quot; (Laughter)<span class="tooltiptext">o tendremos muchos: «Necesito agua ahora mismo». (Risas)</span></span>
+		<span class="tooltip">So it just gives a personality to your plant.<span class="tooltiptext">Así que le da personalidad a nuestras plantas.</span></span>
+		<span class="tooltip">Or this is something that twitters when the<span class="tooltiptext">Hay un aparato que tuitea cada vez</span></span>
+		<span class="tooltip">baby inside the belly of a<span class="tooltiptext">que un bebé da una patadita</span></span>
+		<span class="tooltip">pregnant woman kicks. (Laughter)<span class="tooltiptext">dentro del vientre de una mujer gestante.</span></span>
+		<span class="tooltip">Or this is a 14-year-old kid in<span class="tooltiptext">Este adolescente de 14 años,</span></span>
+		<span class="tooltip">Chile who made a system that<span class="tooltiptext">en Chile, creó un sistema que detecta</span></span>
+		<span class="tooltip">detects earthquakes and publishes on Twitter.<span class="tooltiptext">terremotos y lo publica en Twitter;</span></span>
+		<span class="tooltip">He has 280,000 followers.<span class="tooltiptext">tiene 280 000 seguidores.</span></span>
+		<span class="tooltip">He&#39;s 14 and he anticipated<span class="tooltiptext">Tiene 14 años y ha anticipado</span></span>
+		<span class="tooltip">a governmental project by one year. (Applause)<span class="tooltiptext">un proyecto del gobierno por un año.
+(Aplausos)</span></span>
+		<span class="tooltip">Or again, another project where,<span class="tooltiptext">Existe otro proyecto que,</span></span>
+		<span class="tooltip">by analyzing the Twitter feed<span class="tooltiptext">mediante el análisis de las fuentes Twitter</span></span>
+		<span class="tooltip">of a family, you can basically<span class="tooltiptext">de una familia, puede señalar dónde se encuentran,</span></span>
+		<span class="tooltip">point where they are, like in the &quot;Harry Potter&quot; movie.<span class="tooltiptext">como en la película «Harry Potter».</span></span>
+		<span class="tooltip">So you can find out everything about this project on the website.<span class="tooltiptext">Pueden averiguar todo sobre este proyecto en el sitio web.</span></span>
+		<span class="tooltip">Or somebody made a chair that twitters when somebody farts. (Laughter)<span class="tooltiptext">O bien, alguien creó una silla que tuitea
+cuando alguien se tira un pedo. (Risas)</span></span>
+		<span class="tooltip">It&#39;s interesting how, in 2009,<span class="tooltiptext">Es interesante que en 2009</span></span>
+		<span class="tooltip">Gizmodo basically defined,<span class="tooltiptext">el blog «Gizmodo» dijo</span></span>
+		<span class="tooltip">said that this project actually gives a meaning to Twitter,<span class="tooltiptext">básicamente que este proyecto le da sentido a Twitter, así que…</span></span>
+		<span class="tooltip">so it was — a lot changed in between. (Laughter)<span class="tooltiptext">mucho ha cambiado desde entonces.
+(Risas)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So very serious project.<span class="tooltiptext">Ahora, un proyecto muy serio.</span></span>
+		<span class="tooltip">When the Fukushima disaster happened,<span class="tooltiptext">Cuando ocurrió el desastre de Fukushima,</span></span>
+		<span class="tooltip">a bunch of people in Japan, they realized that the information<span class="tooltiptext">un grupo de personas en Japón se dieron cuenta de que la información</span></span>
+		<span class="tooltip">that the government was giving wasn&#39;t really open<span class="tooltiptext">proveniente del gobierno no era en realidad abierta</span></span>
+		<span class="tooltip">and really reliable, so they built<span class="tooltiptext">ni muy confiable, así que crearon</span></span>
+		<span class="tooltip">this Geiger counter, plus Arduino, plus network<span class="tooltiptext">este contador Geiger, más Arduino, más una interfaz de red.</span></span>
+		<span class="tooltip">interface. They made 100<span class="tooltiptext">Fabricaron 100 y se los dieron</span></span>
+		<span class="tooltip">of them and gave them to people around Japan, and essentially<span class="tooltiptext">a diversas personas en todo Japón, y, en esencia,</span></span>
+		<span class="tooltip">the data that they gathered gets published on this website<span class="tooltiptext">recopilaron información que se publicó en un sitio web</span></span>
+		<span class="tooltip">called Cosm, another website<span class="tooltiptext">llamado «Cosm», otro sitio que</span></span>
+		<span class="tooltip">they built, so you can actually get reliable real-time<span class="tooltiptext">crearon para poder obtener información confiable</span></span>
+		<span class="tooltip">information from the field,<span class="tooltiptext">en tiempo real directamente del terreno;</span></span>
+		<span class="tooltip">and you can get unbiased information.<span class="tooltiptext">así se puede obtener información imparcial.</span></span>
+		<span class="tooltip">Or this machine here, it&#39;s from<span class="tooltiptext">Esta máquina que ven aquí proviene</span></span>
+		<span class="tooltip">the DIY bio movement,<span class="tooltiptext">del movimiento biológico hazlo tú mismo (DIY bio)</span></span>
+		<span class="tooltip">and it&#39;s one of the steps that you need in order to process DNA,<span class="tooltiptext">y es uno de los pasos que se requieren para procesar ADN.</span></span>
+		<span class="tooltip">and again, it&#39;s completely open-source from the ground up.<span class="tooltiptext">Otra vez, se trata por completo de un código abierto, desde lo más elemental.</span></span>
+		<span class="tooltip">Or you have students in developing countries making<span class="tooltiptext">También hay estudiantes de países en desarrollo que fabrican</span></span>
+		<span class="tooltip">replicas of scientific instruments that cost<span class="tooltiptext">réplicas de instrumentos científicos</span></span>
+		<span class="tooltip">a lot of money to make.<span class="tooltiptext">costosos.</span></span>
+		<span class="tooltip">Actually they just build them themselves for a lot less<span class="tooltiptext">Los construyen ellos mismos, a mucho menor costo,</span></span>
+		<span class="tooltip">using Arduino and a few parts.<span class="tooltiptext">usando Arduino y unas cuantas piezas.</span></span>
+		<span class="tooltip">This is a pH probe.<span class="tooltiptext">Este es un instrumento para medir el pH.</span></span>
+		<span class="tooltip">Or you get kids, like these kids, they&#39;re from Spain.<span class="tooltiptext">O bien, hay adolescentes como estos, provenientes de España.</span></span>
+		<span class="tooltip">They learned how to program and to make robots when they<span class="tooltiptext">Aprendieron a programar y a fabricar robots</span></span>
+		<span class="tooltip">were probably, like, 11, and then they started to use Arduino<span class="tooltiptext">cuando tenían unos 11 años y entonces comenzaron a usar Arduino</span></span>
+		<span class="tooltip">to make these robots that play football. They became<span class="tooltiptext">para crear estos robots que juegan fútbol. Se convirtieron</span></span>
+		<span class="tooltip">world champions by making an Arduino-based robot.<span class="tooltiptext">en campeones del mundo con un robot basado en Arduino.</span></span>
+		<span class="tooltip">And so when we had to make<span class="tooltiptext">Así que cuando tuvimos que fabricar</span></span>
+		<span class="tooltip">our own educational robot, we just went to them and said,<span class="tooltiptext">nuestro propio robot educativo, solo fuimos y les dijimos:</span></span>
+		<span class="tooltip">you know, &quot;You design it, because you know exactly<span class="tooltiptext">«Diséñenlo ustedes, ya que saben exactamente lo que se necesita</span></span>
+		<span class="tooltip">what is needed to make a great robot that excites kids.&quot;<span class="tooltiptext">para crear un robot fabuloso que entusiasme a los niños».</span></span>
+		<span class="tooltip">Not me. I&#39;m an old guy.<span class="tooltiptext">Yo no. Ya estoy muy viejo.</span></span>
+		<span class="tooltip">What am I supposed to excite, huh? (Laughter)<span class="tooltiptext">¿A quién puedo entusiasmar, no? (Risas)</span></span>
+		<span class="tooltip">But as I — in terms of educational assets. (Laughter)<span class="tooltiptext">Pero —me refiero en términos de cualidades educativas—. (Risas)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">There&#39;s also companies like Google<span class="tooltiptext">Además, hay compañías como Google</span></span>
+		<span class="tooltip">that are using the technology<span class="tooltiptext">que están usando esta tecnología</span></span>
+		<span class="tooltip">to create interfaces between<span class="tooltiptext">para crear interfaces entre</span></span>
+		<span class="tooltip">mobile phones, tablets and the real world.<span class="tooltiptext">teléfonos celulares, tabletas y el mundo real.</span></span>
+		<span class="tooltip">So the Accessory Development Kit<span class="tooltiptext">Así que el «Accesory Development Kit»
+(kit de desarrollo de accesorios)</span></span>
+		<span class="tooltip">from Google is open-source<span class="tooltiptext">de Google es de código abierto</span></span>
+		<span class="tooltip">and based on Arduino, as opposed<span class="tooltiptext">y basado en Arduino, al contrario del</span></span>
+		<span class="tooltip">to the one from Apple which is<span class="tooltiptext">de Apple que es de código cerrado,</span></span>
+		<span class="tooltip">closed-source, NDA, sign your<span class="tooltiptext">con acuerdo de confidencialidad,</span></span>
+		<span class="tooltip">life to Apple. Here you are.<span class="tooltiptext">compromete tu vida con Apple. Aquí tienes.</span></span>
+		<span class="tooltip">There&#39;s a giant maze, and Joey&#39;s sitting there, and the<span class="tooltiptext">Joey está ahí parado en un laberinto gigante</span></span>
+		<span class="tooltip">maze is moving when you tilt the tablet.<span class="tooltiptext">que se mueve cuando uno inclina la tableta.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Also, I come from Italy, and the design is important<span class="tooltiptext">Vengo de Italia, donde el diseño es importante</span></span>
+		<span class="tooltip">in Italy, and yet very conservative.<span class="tooltiptext">pero, sin embargo, muy conservador.</span></span>
+		<span class="tooltip">So we worked with a design<span class="tooltiptext">Así que trabajamos con un estudio</span></span>
+		<span class="tooltip">studio called Habits, in Milan,<span class="tooltiptext">de diseño llamado «Habits», en Milán,</span></span>
+		<span class="tooltip">to make this mirror, which is completely open-source.<span class="tooltiptext">para hacer este espejo que es completamente de código abierto.</span></span>
+		<span class="tooltip">This doubles also as an iPod speaker.<span class="tooltiptext">También hace las veces de parlante para iPod.</span></span>
+		<span class="tooltip">So the idea is that the hardware, the software,<span class="tooltiptext">Así que la idea es que los componentes físicos, los programas,</span></span>
+		<span class="tooltip">the design of the object, the fabrication,<span class="tooltiptext">el diseño de un objeto, su fabricación, todo lo relativo</span></span>
+		<span class="tooltip">everything about this project is open-source<span class="tooltiptext">a este proyecto sea de código abierto</span></span>
+		<span class="tooltip">and you can make it yourself.<span class="tooltiptext">y que lo pueda hacer Ud. mismo.</span></span>
+		<span class="tooltip">So we want other designers to pick this up and learn how<span class="tooltiptext">Queremos que otros diseñadores lo tomen y aprendan</span></span>
+		<span class="tooltip">to make great devices, to learn<span class="tooltiptext">a fabricar aparatos magníficos,</span></span>
+		<span class="tooltip">how to make interactive products<span class="tooltiptext">a crear productos interactivos</span></span>
+		<span class="tooltip">by starting from something real.<span class="tooltiptext">empezando desde algo real.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">But when you have this idea,<span class="tooltiptext">Cuando se le ocurre una idea…</span></span>
+		<span class="tooltip">you know, what happens to all these ideas?<span class="tooltiptext">¿sabe lo que pasa con todas estas ideas?</span></span>
+		<span class="tooltip">There&#39;s, like, thousands of ideas that I —<span class="tooltiptext">Hay algo así como miles de ideas que…</span></span>
+		<span class="tooltip">You know, it would take seven hours for me to do<span class="tooltiptext">Me tomaría unas 7 horas</span></span>
+		<span class="tooltip">all the presentations.<span class="tooltiptext">presentárselas todas.</span></span>
+		<span class="tooltip">I will not take all the seven hours. Thank you.<span class="tooltiptext">No me tomaré las 7 horas. Gracias.</span></span>
+		<span class="tooltip">But let&#39;s start from this example:<span class="tooltiptext">Comencemos con este ejemplo:</span></span>
+		<span class="tooltip">So, the group of people<span class="tooltiptext">un grupo de personas crearon</span></span>
+		<span class="tooltip">that started this company called Pebble, they prototyped<span class="tooltiptext">una compañía llamada «Pebble», desarrollaron</span></span>
+		<span class="tooltip">a watch that communicates via Bluetooth with your phone,<span class="tooltiptext">el prototipo de un reloj de pulsera que se comunica vía Bluetooth con su teléfono</span></span>
+		<span class="tooltip">and you can display information<span class="tooltiptext">y puede mostrar información.</span></span>
+		<span class="tooltip">on it. And they prototyped with<span class="tooltiptext">Lo crearon con una pantalla LCD vieja</span></span>
+		<span class="tooltip">an old LCD screen from a Nokia<span class="tooltiptext">de un teléfono celular Nokia</span></span>
+		<span class="tooltip">mobile phone and an Arduino.<span class="tooltiptext">y un Arduino.</span></span>
+		<span class="tooltip">And then, when they had a final<span class="tooltiptext">Y luego, cuando tuvieron listo</span></span>
+		<span class="tooltip">project, they actually went to Kickstarter<span class="tooltiptext">el proyecto final, fueron al sitio web «Kickstarter» y pidieron</span></span>
+		<span class="tooltip">and they were asking for 100,000 dollars to make<span class="tooltiptext">100 000 dólares para fabricar</span></span>
+		<span class="tooltip">a few of them to sell.<span class="tooltiptext">unos cuantos y venderlos.</span></span>
+		<span class="tooltip">They got 10 million dollars.<span class="tooltiptext">Obtuvieron 10 millones de dólares.</span></span>
+		<span class="tooltip">They got a completely<span class="tooltiptext">Lograron iniciar la empresa</span></span>
+		<span class="tooltip">fully funded start-up, and they don&#39;t have to,<span class="tooltiptext">completamente financiados, sin necesidad de involucrar</span></span>
+		<span class="tooltip">you know, get VCs involved or anything,<span class="tooltiptext">capitales de riesgo ni nada,</span></span>
+		<span class="tooltip">just excite the people with their great project.<span class="tooltiptext">solo por entusiasmar a la gente con su gran proyecto.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">The last project I want to show you is this:<span class="tooltiptext">Este es el último proyecto que quiero mostrarles:</span></span>
+		<span class="tooltip">It&#39;s called ArduSat. It&#39;s currently on Kickstarter,<span class="tooltiptext">Se llama «Ardusat». Se encuentra ahora en «Kickstarter»,</span></span>
+		<span class="tooltip">so if you want to contribute, please do it.<span class="tooltiptext">así que si desean contribuir, por favor háganlo.</span></span>
+		<span class="tooltip">It&#39;s a satellite that goes into space, which is probably<span class="tooltiptext">Es un satélite que va al espacio, lo que probablemente</span></span>
+		<span class="tooltip">the least open-source thing you can imagine,<span class="tooltiptext">sea el objeto con menos código abierto que se puedan imaginar,</span></span>
+		<span class="tooltip">and it contains an Arduino<span class="tooltiptext">y contiene un Arduino conectado</span></span>
+		<span class="tooltip">connected to a bunch of sensors. So if you know how to use Arduino,<span class="tooltiptext">a muchos sensores. Así que si saben usar Arduino,</span></span>
+		<span class="tooltip">you can actually upload your experiments<span class="tooltiptext">entonces pueden cargar sus experimentos</span></span>
+		<span class="tooltip">into this satellite and run them.<span class="tooltiptext">a este satélite y hacerlos funcionar.</span></span>
+		<span class="tooltip">So imagine, if you as a high school can have the satellite<span class="tooltiptext">Imagínense que un alumno de secundaria</span></span>
+		<span class="tooltip">for a week and do satellite<span class="tooltiptext">pueda tener el satélite por una semana</span></span>
+		<span class="tooltip">space experiments like that.<span class="tooltiptext">y hacer experimentos espaciales así simplemente.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So, as I said, there&#39;s<span class="tooltiptext">Como he dicho, hay muchos ejemplos,</span></span>
+		<span class="tooltip">lots of examples, and I&#39;m going to stop here. And I just<span class="tooltiptext">pero me voy a detener aquí. Solo quiero</span></span>
+		<span class="tooltip">want to thank the Arduino community<span class="tooltiptext">agradecer a la comunidad Arduino</span></span>
+		<span class="tooltip">for being the best, and just<span class="tooltiptext">por ser la mejor, que simplemente</span></span>
+		<span class="tooltip">every day making lots of projects.<span class="tooltiptext">crea tantos proyectos todos los días.</span></span>
+		<span class="tooltip">Thank you. (Applause)<span class="tooltiptext">Gracias. (Aplausos)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Applause)<span class="tooltiptext">(Aplausos)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And thanks to the community.<span class="tooltiptext">Y gracias a la comunidad.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Chris Anderson: Massimo,<span class="tooltiptext">Chris Anderson: Massimo,</span></span>
+		<span class="tooltip">you told me earlier today that you had no idea, of course,<span class="tooltiptext">hoy me dijiste que no tenías ni idea, claro,</span></span>
+		<span class="tooltip">that it would take off like this.<span class="tooltiptext">del éxito que iba a tener el proyecto.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">MB: No.<span class="tooltiptext">MB: No.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">CA: I mean, how must you feel when you read this stuff and you<span class="tooltiptext">CA: Quiero decir, ¿cómo te sientes cuando lees todo esto</span></span>
+		<span class="tooltip">see what you&#39;ve unlocked?<span class="tooltiptext">y te das cuenta de todo lo que has desencadenado?</span></span>
+	</p>
+	<p>
+		<span class="tooltip">MB: Well, it&#39;s the work of a lot of people, so we as a community<span class="tooltiptext">MB: Bueno, es la labor de mucha gente, así que nosotros</span></span>
+		<span class="tooltip">are enabling people to make<span class="tooltiptext">como comunidad estamos permitiendo a la gente</span></span>
+		<span class="tooltip">great stuff, and I just feel overwhelmed.<span class="tooltiptext">crear cosas magníficas y estoy maravillado.</span></span>
+		<span class="tooltip">It&#39;s just, it&#39;s difficult to describe this.<span class="tooltiptext">Es solo… es difícil de describir.</span></span>
+		<span class="tooltip">Every morning, I wake up and I look at all the stuff that<span class="tooltiptext">Cada mañana me despierto y veo todo</span></span>
+		<span class="tooltip">Google Alerts sends me, and it&#39;s<span class="tooltiptext">lo que las alertas de Google me envían</span></span>
+		<span class="tooltip">just amazing. It&#39;s just<span class="tooltiptext">y es asombroso.</span></span>
+		<span class="tooltip">going into every field that you can imagine.<span class="tooltiptext">Se expande a toda esfera imaginable.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">CA: Thank you so much. (Applause)<span class="tooltiptext">CA: Muchas gracias. (Aplausos)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Applause)<span class="tooltiptext">(Aplausos)</span></span>
+	</p>
+
+	<div class="line"></div>
+	<p>Love our website? Help us keep it ad-free and running smoothly by making a donation today.</p>
+	<p>To donate, simply click the PayPal link below:<p/>
+	<p><a href="https://www.paypal.com/paypalme/otechai" target='_blank'>Donate via PayPal</a></p>
+	<p>Ready to sound like a native speaker? Or better yet, elevate your language skills to the next level? Check out my book : </p>
+	<div style="text-align: center;"> <span><a href="https://amzn.to/3Um79fs" target="_blank" rel=" noopener noreferrer"><img height="160" width="103" typeof="foaf:Image" class="image-style-none" src="../../../static/images/off-the-hook-shaun-clark.jpg" alt="off the hook book by shaun clark"></a></span> </div>
+	<div class="views-field views-field-title" style="text-align: center;"> <span class="field-content"><a href="https://amzn.to/3Um79fs" target="_blank" rel=" noopener noreferrer">Off The Hook: The Ultimate English Slang Dictionary</a></span> </div>
+	<p style="text-align: center;">Or explore our amazing library! <a href="../../../library/1/index.html">HERE</a></p>
+	
+</div>
+<span onclick='topFunction()' id='gotop' title='Go to top'><svg width="32" height="32" viewBox="0 0 100 100">
+	   <path fill="white" d="m50 0c-13.262 0-25.98 5.2695-35.355 14.645s-14.645 22.094-14.645 35.355 5.2695 25.98 14.645 35.355 22.094 14.645 35.355 14.645 25.98-5.2695 35.355-14.645 14.645-22.094 14.645-35.355-5.2695-25.98-14.645-35.355-22.094-14.645-35.355-14.645zm20.832 62.5-20.832-22.457-20.625 22.457c-1.207 0.74219-2.7656 0.57812-3.7891-0.39844-1.0273-0.98047-1.2695-2.5273-0.58594-3.7695l22.918-25c0.60156-0.61328 1.4297-0.96094 2.2891-0.96094 0.86328 0 1.6914 0.34766 2.293 0.96094l22.918 25c0.88672 1.2891 0.6875 3.0352-0.47266 4.0898-1.1562 1.0508-2.9141 1.0859-4.1133 0.078125z"></path>
+	 </svg></span>
+
+	    <div class="footer">
+	        <div class="left"><a href='../../../index.html'>ReadingDB</a></div>
+	        <div class="center"><a href="https://twitter.com/readingdb" class="twitter-link">
+	    <svg class="twitter-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	        <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.58-2.11-9.96-5.02-.42.72-.66 1.56-.66 2.46 0 1.68.85 3.16 2.14 4.02-.79-.02-1.53-.24-2.18-.6v.06c0 2.35 1.67 4.31 3.88 4.76-.4.1-.83.16-1.27.16-.31 0-.62-.03-.92-.08.63 1.96 2.45 3.39 4.61 3.43-1.69 1.32-3.83 2.1-6.15 2.1-.4 0-.8-.02-1.19-.07 2.19 1.4 4.78 2.22 7.57 2.22 9.07 0 14.02-7.52 14.02-14.02 0-.21 0-.41-.01-.61.96-.69 1.79-1.56 2.45-2.55-.88.39-1.83.65-2.82.77z"/>
+	    </svg>
+	</a></div>
+	        <div class="right"><a href='../../../library/1/index.html'>Library</a></div>
+	    </div>
+	<script>
+
+		var mybutton = document.getElementById('gotop');
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+			if (document.documentElement.scrollTop > 20 || document.body.scrollTop > 20) {
+				mybutton.style.display = 'block';
+			} else {
+				mybutton.style.display = 'none';
+			}
+		}
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<script src="../../../static/scripts/script.js"></script>
+</body>
+</html>
+	

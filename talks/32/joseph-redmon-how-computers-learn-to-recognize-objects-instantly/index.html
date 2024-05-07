@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+	<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<meta name="description" content="Desbloquea la competencia en inglés con nuestra plataforma innovadora basada en las transcripciones de TED Talks. Sumérgete en un contenido cautivador, accede a traducciones instantáneas y únete a una comunidad global de estudiantes. ¡Comienza tu aventura de lectura hoy mismo! | Unlock English proficiency with our innovative platform powered by TED Talk transcripts. Dive into captivating content, access instant translations, and join a global community of learners. Start your reading adventure today!">
+		<meta name="keywords" content="lectura en inglés, transcripciones de TED Talks, aprendizaje de idiomas, traducciones instantáneas, comunidad global, aventura de lectura, mejorar inglés, mejorar habilidades de lectura, plataforma educativa, recursos de lectura, educación en línea, English reading, TED Talks transcripts, language learning, instant translations, global community, reading adventure, improve English, improve reading skills, educational platform, reading resources, online education, English proficiency, learn English, English learning resources, bilingual education, language exchange, study English online">
+		<link rel="apple-touch-icon" sizes="180x180" href="../../../static/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../../../static/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../../../static/favicons/favicon-16x16.png">
+		<link rel="manifest" href="../../../static/favicons/site.webmanifest">
+		<title>Joseph Redmon : How computers learn to recognize objects instantly</title>
+		<link rel='stylesheet' href='../../../static/styles/styles.css'>
+	</head>
+	<body>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-R5SK82H490"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-R5SK82H490');
+	</script>
+
+	<h1 class='title'>How computers learn to recognize objects instantly</h1>
+	<h2 class='speaker'>Joseph Redmon</h2>
+	<div class='transcript books'>
+	<p>Are you ready to improve your English speaking skills, check <a href='https://referral.lingoda.com/6Dztrv'>Lingoda</a> today!</p>
+		<p>
+		<span class="tooltip">Ten years ago,<span class="tooltiptext">Hace diez años los investigadores 
+de la visión artificial</span></span>
+		<span class="tooltip">computer vision researchers
+thought that getting a computer<span class="tooltiptext">pensaban que hacer que una computadora</span></span>
+		<span class="tooltip">to tell the difference
+between a cat and a dog<span class="tooltiptext">distinguiera un gato de un perro</span></span>
+		<span class="tooltip">would be almost impossible,<span class="tooltiptext">sería casi imposible,</span></span>
+		<span class="tooltip">even with the significant advance
+in the state of artificial intelligence.<span class="tooltiptext">incluso con el avance significativo 
+de la inteligencia artificial.</span></span>
+		<span class="tooltip">Now we can do it at a level
+greater than 99 percent accuracy.<span class="tooltiptext">Ahora podemos hacerlo con un nivel 
+superior al 99 % de precisión.</span></span>
+		<span class="tooltip">This is called image classification --<span class="tooltiptext">Esto se llama clasificación de imagen.</span></span>
+		<span class="tooltip">give it an image,
+put a label to that image --<span class="tooltiptext">Esto es, poner una etiqueta a esa imagen.</span></span>
+		<span class="tooltip">and computers know
+thousands of other categories as well.<span class="tooltiptext">Y las computadoras conocen miles 
+de otras categorías también.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">I&#39;m a graduate student
+at the University of Washington,<span class="tooltiptext">Soy estudiante de posgrado 
+en la Universidad de Washington,</span></span>
+		<span class="tooltip">and I work on a project called Darknet,<span class="tooltiptext">y trabajo en un proyecto llamado Darknet,</span></span>
+		<span class="tooltip">which is a neural network framework<span class="tooltiptext">que es un framework de red neuronal</span></span>
+		<span class="tooltip">for training and testing
+computer vision models.<span class="tooltiptext">para la capacitación y ensayo 
+de modelos de visión artificial,</span></span>
+		<span class="tooltip">So let&#39;s just see what Darknet thinks<span class="tooltiptext">Así que veamos lo que piensa Darknet</span></span>
+		<span class="tooltip">of this image that we have.<span class="tooltiptext">de esta imagen que tenemos aquí.</span></span>
+		<span class="tooltip">When we run our classifier<span class="tooltiptext">Cuando ejecutamos nuestro clasificador</span></span>
+		<span class="tooltip">on this image,<span class="tooltiptext">en esta imagen,</span></span>
+		<span class="tooltip">we see we don&#39;t just get
+a prediction of dog or cat,<span class="tooltiptext">vemos que no solo se obtiene 
+una predicción de perro o gato,</span></span>
+		<span class="tooltip">we actually get
+specific breed predictions.<span class="tooltiptext">en realidad, obtenemos 
+predicciones de raza específicas.</span></span>
+		<span class="tooltip">That&#39;s the level
+of granularity we have now.<span class="tooltiptext">Ese es el nivel de granularidad actual.</span></span>
+		<span class="tooltip">And it&#39;s correct.<span class="tooltiptext">Y es correcto.</span></span>
+		<span class="tooltip">My dog is in fact a malamute.<span class="tooltiptext">Mi perro es de hecho un malamute.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So we&#39;ve made amazing strides
+in image classification,<span class="tooltiptext">Hemos hecho avances increíbles 
+en la clasificación de imágenes,</span></span>
+		<span class="tooltip">but what happens
+when we run our classifier<span class="tooltiptext">pero ¿qué pasa 
+al ejecutar nuestro clasificador</span></span>
+		<span class="tooltip">on an image that looks like this?<span class="tooltiptext">en una imagen así?</span></span>
+		<span class="tooltip">Well ...<span class="tooltiptext">Bien...</span></span>
+		<span class="tooltip">We see that the classifier comes back
+with a pretty similar prediction.<span class="tooltiptext">Vemos que el clasificador vuelve 
+con una predicción bastante similar.</span></span>
+		<span class="tooltip">And it&#39;s correct,
+there is a malamute in the image,<span class="tooltiptext">Y es correcto, 
+hay un malamute en la imagen,</span></span>
+		<span class="tooltip">but just given this label,
+we don&#39;t actually know that much<span class="tooltiptext">pero solo con esta etiqueta, 
+en realidad, no sabemos mucho</span></span>
+		<span class="tooltip">about what&#39;s going on in the image.<span class="tooltiptext">sobre lo que pasa en la imagen.</span></span>
+		<span class="tooltip">We need something more powerful.<span class="tooltiptext">Necesitamos algo más potente.</span></span>
+		<span class="tooltip">I work on a problem
+called object detection,<span class="tooltiptext">Trabajo en un problema 
+llamado detección de objetos,</span></span>
+		<span class="tooltip">where we look at an image
+and try to find all of the objects,<span class="tooltiptext">donde miramos una imagen e 
+intentamos encontrar todos los objetos,</span></span>
+		<span class="tooltip">put bounding boxes around them<span class="tooltiptext">poniendo cajas delimitadoras 
+alrededor de ellos</span></span>
+		<span class="tooltip">and say what those objects are.<span class="tooltiptext">y averiguar qué son esos objetos.</span></span>
+		<span class="tooltip">So here&#39;s what happens
+when we run a detector on this image.<span class="tooltiptext">Así que esto es lo que ocurre 
+al ejecutar un detector en esta imagen.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Now, with this kind of result,<span class="tooltiptext">Ahora, con este tipo de resultado,</span></span>
+		<span class="tooltip">we can do a lot more
+with our computer vision algorithms.<span class="tooltiptext">podemos hacer mucho más con nuestros 
+algoritmos de visión artificial.</span></span>
+		<span class="tooltip">We see that it knows
+that there&#39;s a cat and a dog.<span class="tooltiptext">Vemos que sabe que hay un gato y un perro.</span></span>
+		<span class="tooltip">It knows their relative locations,<span class="tooltiptext">Conoce sus ubicaciones relativas,</span></span>
+		<span class="tooltip">their size.<span class="tooltiptext">su tamaño.</span></span>
+		<span class="tooltip">It may even know some extra information.<span class="tooltiptext">Incluso puede saber 
+alguna información adicional.</span></span>
+		<span class="tooltip">There&#39;s a book sitting in the background.<span class="tooltiptext">Hay un libro en el fondo.</span></span>
+		<span class="tooltip">And if you want to build a system
+on top of computer vision,<span class="tooltiptext">Y si desea construir un sistema con base 
+en la visión artificial</span></span>
+		<span class="tooltip">say a self-driving vehicle
+or a robotic system,<span class="tooltiptext">por ejemplo, un vehículo autodirigido
+o un sistema robótico,</span></span>
+		<span class="tooltip">this is the kind
+of information that you want.<span class="tooltiptext">este es el tipo de información 
+que necesita.</span></span>
+		<span class="tooltip">You want something so that
+you can interact with the physical world.<span class="tooltiptext">Algo para interactuar con el mundo físico.</span></span>
+		<span class="tooltip">Now, when I started working
+on object detection,<span class="tooltiptext">Cuando empecé a trabajar 
+en la detección de objetos,</span></span>
+		<span class="tooltip">it took 20 seconds
+to process a single image.<span class="tooltiptext">se tardaba 20 segundos 
+en procesar una sola imagen.</span></span>
+		<span class="tooltip">And to get a feel for why
+speed is so important in this domain,<span class="tooltiptext">Y para entender por qué la velocidad 
+es tan importante en este ámbito,</span></span>
+		<span class="tooltip">here&#39;s an example of an object detector<span class="tooltiptext">este es un ejemplo 
+de un detector de objetos</span></span>
+		<span class="tooltip">that takes two seconds
+to process an image.<span class="tooltiptext">que tarda dos segundos 
+en procesar una imagen.</span></span>
+		<span class="tooltip">So this is 10 times faster<span class="tooltiptext">Así que esto es 10 veces más rápido</span></span>
+		<span class="tooltip">than the 20-seconds-per-image detector,<span class="tooltiptext">que el detector de 20 segundos por imagen,</span></span>
+		<span class="tooltip">and you can see that by the time
+it makes predictions,<span class="tooltiptext">y se puede ver que, en el momento 
+de hacer las predicciones,</span></span>
+		<span class="tooltip">the entire state of the world has changed,<span class="tooltiptext">el estado entero del mundo ha cambiado,</span></span>
+		<span class="tooltip">and this wouldn&#39;t be very useful<span class="tooltiptext">y esto no sería muy útil</span></span>
+		<span class="tooltip">for an application.<span class="tooltiptext">para una aplicación.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">If we speed this up
+by another factor of 10,<span class="tooltiptext">Si aceleramos esto por otro factor de 10,</span></span>
+		<span class="tooltip">this is a detector running
+at five frames per second.<span class="tooltiptext">esto es un detector que funciona 
+en cinco fotogramas por segundo.</span></span>
+		<span class="tooltip">This is a lot better,<span class="tooltiptext">Esto es mucho mejor</span></span>
+		<span class="tooltip">but for example,<span class="tooltiptext">pero, por ejemplo,</span></span>
+		<span class="tooltip">if there&#39;s any significant movement,<span class="tooltiptext">si hay algún movimiento significativo,</span></span>
+		<span class="tooltip">I wouldn&#39;t want a system
+like this driving my car.<span class="tooltiptext">yo no quisiera un sistema como este 
+conduciendo mi auto.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">This is our detection system
+running in real time on my laptop.<span class="tooltiptext">Este es nuestro sistema de detección que 
+se ejecuta en tiempo real en mi portátil.</span></span>
+		<span class="tooltip">So it smoothly tracks me
+as I move around the frame,<span class="tooltiptext">Así que suavemente me sigue 
+mientras me muevo en la imagen,</span></span>
+		<span class="tooltip">and it&#39;s robust to a wide variety
+of changes in size,<span class="tooltiptext">y es robusto con una amplia variedad 
+de cambios de tamaño,</span></span>
+		<span class="tooltip">pose,<span class="tooltiptext">poses,</span></span>
+		<span class="tooltip">forward, backward.<span class="tooltiptext">hacia adelante, hacia atrás.</span></span>
+		<span class="tooltip">This is great.<span class="tooltiptext">Esto es genial.</span></span>
+		<span class="tooltip">This is what we really need<span class="tooltiptext">Esto es lo que realmente necesitamos</span></span>
+		<span class="tooltip">if we&#39;re going to build systems
+on top of computer vision.<span class="tooltiptext">si vamos a construir sistemas 
+con base en visión artificial.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Applause)<span class="tooltiptext">(Aplausos)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So in just a few years,<span class="tooltiptext">Así que en solo unos pocos años,</span></span>
+		<span class="tooltip">we&#39;ve gone from 20 seconds per image<span class="tooltiptext">hemos pasado de 20 segundos por imagen</span></span>
+		<span class="tooltip">to 20 milliseconds per image,
+a thousand times faster.<span class="tooltiptext">a 20 milisegundos por imagen, 
+mil veces más rápido.</span></span>
+		<span class="tooltip">How did we get there?<span class="tooltiptext">¿Cómo llegamos hasta aquí?</span></span>
+		<span class="tooltip">Well, in the past,
+object detection systems<span class="tooltiptext">Bueno, en el pasado, 
+los sistemas de detección de objetos</span></span>
+		<span class="tooltip">would take an image like this<span class="tooltiptext">tomaban una imagen como esta</span></span>
+		<span class="tooltip">and split it into a bunch of regions<span class="tooltiptext">y la dividían en un montón de regiones</span></span>
+		<span class="tooltip">and then run a classifier
+on each of these regions,<span class="tooltiptext">y luego ejecutaban un clasificador 
+en cada una de estas regiones,</span></span>
+		<span class="tooltip">and high scores for that classifier<span class="tooltiptext">y las puntuaciones altas 
+de ese clasificador</span></span>
+		<span class="tooltip">would be considered
+detections in the image.<span class="tooltiptext">se consideraban detecciones de la imagen.</span></span>
+		<span class="tooltip">But this involved running a classifier
+thousands of times over an image,<span class="tooltiptext">Pero eso implicaba ejecutar un clasificador 
+miles de veces sobre una imagen,</span></span>
+		<span class="tooltip">thousands of neural network evaluations
+to produce detection.<span class="tooltiptext">miles de evaluaciones de redes neuronales 
+para producir detección.</span></span>
+		<span class="tooltip">Instead, we trained a single network
+to do all of detection for us.<span class="tooltiptext">En cambio, nosotros hemos entrenado 
+una sola red para hacer toda la detección.</span></span>
+		<span class="tooltip">It produces all of the bounding boxes
+and class probabilities simultaneously.<span class="tooltiptext">Produce todas las cajas delimitadoras
+y ordena las probabilidades en simultáneo.</span></span>
+		<span class="tooltip">With our system, instead of looking
+at an image thousands of times<span class="tooltiptext">Con nuestro sistema, en lugar 
+de mirar una imagen miles de veces</span></span>
+		<span class="tooltip">to produce detection,<span class="tooltiptext">para hacer la detección,</span></span>
+		<span class="tooltip">you only look once,<span class="tooltiptext">se mira tan solo una vez,</span></span>
+		<span class="tooltip">and that&#39;s why we call it
+the YOLO method of object detection.<span class="tooltiptext">y por eso lo llamamos 
+método YOLO de detección de objetos.</span></span>
+		<span class="tooltip">So with this speed,
+we&#39;re not just limited to images;<span class="tooltiptext">Así que con esta velocidad, 
+no estamos limitados a las imágenes;</span></span>
+		<span class="tooltip">we can process video in real time.<span class="tooltiptext">podemos procesar el video en tiempo real.</span></span>
+		<span class="tooltip">And now, instead of just seeing
+that cat and dog,<span class="tooltiptext">Y ahora, en lugar de solo ver 
+a ese gato y perro,</span></span>
+		<span class="tooltip">we can see them move around
+and interact with each other.<span class="tooltiptext">podemos verlos moverse 
+e interactuar unos con otros.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">This is a detector that we trained<span class="tooltiptext">Este es un detector que entrenamos</span></span>
+		<span class="tooltip">on 80 different classes<span class="tooltiptext">en 80 clases diferentes</span></span>
+		<span class="tooltip">in Microsoft&#39;s COCO dataset.<span class="tooltiptext">en el conjunto de datos COCO de Microsoft.</span></span>
+		<span class="tooltip">It has all sorts of things
+like spoon and fork, bowl,<span class="tooltiptext">Tiene todo tipo de cosas 
+como cuchara y tenedor, cuenco,</span></span>
+		<span class="tooltip">common objects like that.<span class="tooltiptext">objetos comunes como esos.</span></span>
+		<span class="tooltip">It has a variety of more exotic things:<span class="tooltiptext">Tiene una variedad de cosas más exóticas:</span></span>
+		<span class="tooltip">animals, cars, zebras, giraffes.<span class="tooltiptext">animales, autos, cebras, jirafas.</span></span>
+		<span class="tooltip">And now we&#39;re going to do something fun.<span class="tooltiptext">Y ahora vamos a hacer algo divertido.</span></span>
+		<span class="tooltip">We&#39;re just going to go
+out into the audience<span class="tooltiptext">Solo vamos a ir a la audiencia</span></span>
+		<span class="tooltip">and see what kind of things we can detect.<span class="tooltiptext">y ver qué tipo de cosas podemos detectar.</span></span>
+		<span class="tooltip">Does anyone want a stuffed animal?<span class="tooltiptext">¿Alguien quiere un peluche?</span></span>
+		<span class="tooltip">There are some teddy bears out there.<span class="tooltiptext">Hay algunos osos de peluche por aquí.</span></span>
+		<span class="tooltip">And we can turn down
+our threshold for detection a little bit,<span class="tooltiptext">Y podemos reducir 
+nuestro umbral de detección un poco,</span></span>
+		<span class="tooltip">so we can find more of you guys
+out in the audience.<span class="tooltiptext">así podemos encontrar 
+a más de Uds. en la audiencia.</span></span>
+		<span class="tooltip">Let&#39;s see if we can get these stop signs.<span class="tooltiptext">Vamos a ver si podemos obtener 
+estas señales de stop.</span></span>
+		<span class="tooltip">We find some backpacks.<span class="tooltiptext">Encontramos algunas mochilas.</span></span>
+		<span class="tooltip">Let&#39;s just zoom in a little bit.<span class="tooltiptext">Vamos a acercarnos un poco.</span></span>
+		<span class="tooltip">And this is great.<span class="tooltiptext">Y esto es genial.</span></span>
+		<span class="tooltip">And all of the processing
+is happening in real time<span class="tooltiptext">Y todo el procesamiento 
+está sucediendo en tiempo real</span></span>
+		<span class="tooltip">on the laptop.<span class="tooltiptext">en la computadora portátil.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And it&#39;s important to remember<span class="tooltiptext">Y es importante recordar</span></span>
+		<span class="tooltip">that this is a general purpose
+object detection system,<span class="tooltiptext">que se trata de un sistema de 
+detección de objetos de propósito general,</span></span>
+		<span class="tooltip">so we can train this for any image domain.<span class="tooltiptext">así que podemos entrenar esto 
+para cualquier dominio de la imagen.</span></span>
+		<span class="tooltip">The same code that we use<span class="tooltiptext">El mismo código que usamos</span></span>
+		<span class="tooltip">to find stop signs or pedestrians,<span class="tooltiptext">para encontrar señales 
+de stop o de peatones,</span></span>
+		<span class="tooltip">bicycles in a self-driving vehicle,<span class="tooltiptext">bicicletas en un vehículo autodirigido,</span></span>
+		<span class="tooltip">can be used to find cancer cells<span class="tooltiptext">puede usarse 
+para encontrar células cancerosas</span></span>
+		<span class="tooltip">in a tissue biopsy.<span class="tooltiptext">en una biopsia de tejido.</span></span>
+		<span class="tooltip">And there are researchers around the globe
+already using this technology<span class="tooltiptext">Y hay investigadores de todo el mundo 
+que ya usan esta tecnología</span></span>
+		<span class="tooltip">for advances in things
+like medicine, robotics.<span class="tooltiptext">para avances en cosas 
+como la medicina, la robótica.</span></span>
+		<span class="tooltip">This morning, I read a paper<span class="tooltiptext">Esta mañana leí un periódico</span></span>
+		<span class="tooltip">where they were taking a census
+of animals in Nairobi National Park<span class="tooltiptext">sobre un censo de animales que estaban 
+haciendo en el Parque Nacional de Nairobi</span></span>
+		<span class="tooltip">with YOLO as part
+of this detection system.<span class="tooltiptext">que usa YOLO como parte 
+de este sistema de detección.</span></span>
+		<span class="tooltip">And that&#39;s because Darknet is open source<span class="tooltiptext">Y eso es posible, 
+porque Darknet es de código abierto</span></span>
+		<span class="tooltip">and in the public domain,
+free for anyone to use.<span class="tooltiptext">y de dominio público y libre para 
+que lo use cualquier persona.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Applause)<span class="tooltiptext">(Aplausos)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">But we wanted to make detection
+even more accessible and usable,<span class="tooltiptext">Pero queríamos que la detección 
+fuera aún más accesible y usable,</span></span>
+		<span class="tooltip">so through a combination
+of model optimization,<span class="tooltiptext">por eso, mediante una combinación 
+de optimización de modelos,</span></span>
+		<span class="tooltip">network binarization and approximation,<span class="tooltiptext">binarización de red y aproximación,</span></span>
+		<span class="tooltip">we actually have object detection
+running on a phone.<span class="tooltiptext">tenemos un reconocimiento de objetos
+que funciona en un teléfono.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Applause)<span class="tooltiptext">(Aplausos)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And I&#39;m really excited because
+now we have a pretty powerful solution<span class="tooltiptext">Y estoy muy contento porque ahora 
+tenemos una solución bastante potente</span></span>
+		<span class="tooltip">to this low-level computer vision problem,<span class="tooltiptext">a este problema de visión artificial
+de bajo nivel,</span></span>
+		<span class="tooltip">and anyone can take it
+and build something with it.<span class="tooltiptext">y cualquiera puede usarlo 
+y hacer algo con esto.</span></span>
+		<span class="tooltip">So now the rest is up to all of you<span class="tooltiptext">Así que ahora el resto depende de Uds.</span></span>
+		<span class="tooltip">and people around the world
+with access to this software,<span class="tooltiptext">y de personas de todo el mundo 
+con acceso a este software,</span></span>
+		<span class="tooltip">and I can&#39;t wait to see what people
+will build with this technology.<span class="tooltiptext">y estoy impaciente por ver qué construirá 
+la gente con esta tecnología.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Thank you.<span class="tooltiptext">Gracias.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Applause)<span class="tooltiptext">(Aplausos)</span></span>
+	</p>
+
+	<div class="line"></div>
+	<p>Love our website? Help us keep it ad-free and running smoothly by making a donation today.</p>
+	<p>To donate, simply click the PayPal link below:<p/>
+	<p><a href="https://www.paypal.com/paypalme/otechai" target='_blank'>Donate via PayPal</a></p>
+	<p>Ready to sound like a native speaker? Or better yet, elevate your language skills to the next level? Check out my book : </p>
+	<div style="text-align: center;"> <span><a href="https://amzn.to/3Um79fs" target="_blank" rel=" noopener noreferrer"><img height="160" width="103" typeof="foaf:Image" class="image-style-none" src="../../../static/images/off-the-hook-shaun-clark.jpg" alt="off the hook book by shaun clark"></a></span> </div>
+	<div class="views-field views-field-title" style="text-align: center;"> <span class="field-content"><a href="https://amzn.to/3Um79fs" target="_blank" rel=" noopener noreferrer">Off The Hook: The Ultimate English Slang Dictionary</a></span> </div>
+	<p style="text-align: center;">Or explore our amazing library! <a href="../../../library/1/index.html">HERE</a></p>
+	
+</div>
+<span onclick='topFunction()' id='gotop' title='Go to top'><svg width="32" height="32" viewBox="0 0 100 100">
+	   <path fill="white" d="m50 0c-13.262 0-25.98 5.2695-35.355 14.645s-14.645 22.094-14.645 35.355 5.2695 25.98 14.645 35.355 22.094 14.645 35.355 14.645 25.98-5.2695 35.355-14.645 14.645-22.094 14.645-35.355-5.2695-25.98-14.645-35.355-22.094-14.645-35.355-14.645zm20.832 62.5-20.832-22.457-20.625 22.457c-1.207 0.74219-2.7656 0.57812-3.7891-0.39844-1.0273-0.98047-1.2695-2.5273-0.58594-3.7695l22.918-25c0.60156-0.61328 1.4297-0.96094 2.2891-0.96094 0.86328 0 1.6914 0.34766 2.293 0.96094l22.918 25c0.88672 1.2891 0.6875 3.0352-0.47266 4.0898-1.1562 1.0508-2.9141 1.0859-4.1133 0.078125z"></path>
+	 </svg></span>
+
+	    <div class="footer">
+	        <div class="left"><a href='../../../index.html'>ReadingDB</a></div>
+	        <div class="center"><a href="https://twitter.com/readingdb" class="twitter-link">
+	    <svg class="twitter-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	        <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.58-2.11-9.96-5.02-.42.72-.66 1.56-.66 2.46 0 1.68.85 3.16 2.14 4.02-.79-.02-1.53-.24-2.18-.6v.06c0 2.35 1.67 4.31 3.88 4.76-.4.1-.83.16-1.27.16-.31 0-.62-.03-.92-.08.63 1.96 2.45 3.39 4.61 3.43-1.69 1.32-3.83 2.1-6.15 2.1-.4 0-.8-.02-1.19-.07 2.19 1.4 4.78 2.22 7.57 2.22 9.07 0 14.02-7.52 14.02-14.02 0-.21 0-.41-.01-.61.96-.69 1.79-1.56 2.45-2.55-.88.39-1.83.65-2.82.77z"/>
+	    </svg>
+	</a></div>
+	        <div class="right"><a href='../../../library/1/index.html'>Library</a></div>
+	    </div>
+	<script>
+
+		var mybutton = document.getElementById('gotop');
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+			if (document.documentElement.scrollTop > 20 || document.body.scrollTop > 20) {
+				mybutton.style.display = 'block';
+			} else {
+				mybutton.style.display = 'none';
+			}
+		}
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<script src="../../../static/scripts/script.js"></script>
+</body>
+</html>
+	

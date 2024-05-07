@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+	<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<meta name="description" content="Desbloquea la competencia en inglés con nuestra plataforma innovadora basada en las transcripciones de TED Talks. Sumérgete en un contenido cautivador, accede a traducciones instantáneas y únete a una comunidad global de estudiantes. ¡Comienza tu aventura de lectura hoy mismo! | Unlock English proficiency with our innovative platform powered by TED Talk transcripts. Dive into captivating content, access instant translations, and join a global community of learners. Start your reading adventure today!">
+		<meta name="keywords" content="lectura en inglés, transcripciones de TED Talks, aprendizaje de idiomas, traducciones instantáneas, comunidad global, aventura de lectura, mejorar inglés, mejorar habilidades de lectura, plataforma educativa, recursos de lectura, educación en línea, English reading, TED Talks transcripts, language learning, instant translations, global community, reading adventure, improve English, improve reading skills, educational platform, reading resources, online education, English proficiency, learn English, English learning resources, bilingual education, language exchange, study English online">
+		<link rel="apple-touch-icon" sizes="180x180" href="../../../static/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../../../static/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../../../static/favicons/favicon-16x16.png">
+		<link rel="manifest" href="../../../static/favicons/site.webmanifest">
+		<title>Adam Spencer : Why I fell in love with monster prime numbers</title>
+		<link rel='stylesheet' href='../../../static/styles/styles.css'>
+	</head>
+	<body>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-R5SK82H490"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-R5SK82H490');
+	</script>
+
+	<h1 class='title'>Why I fell in love with monster prime numbers</h1>
+	<h2 class='speaker'>Adam Spencer</h2>
+	<div class='transcript books'>
+	<p>Are you ready to improve your English speaking skills, check <a href='https://referral.lingoda.com/6Dztrv'>Lingoda</a> today!</p>
+		<p>
+		<span class="tooltip">Ah yes, those university days,<span class="tooltiptext">Ah sí, esos días de Universidad,</span></span>
+		<span class="tooltip">a heady mix of Ph.D-level pure mathematics<span class="tooltiptext">una mezcla de matemática 
+pura a nivel de doctorado</span></span>
+		<span class="tooltip">and world debating championships,<span class="tooltiptext">y campeonatos mundiales de debate,</span></span>
+		<span class="tooltip">or, as I like to say, &quot;Hello, ladies. Oh yeah.&quot;<span class="tooltiptext">o, como me gusta decir, 
+&quot;Hola, señoras. Oh sí. &quot;</span></span>
+		<span class="tooltip">Didn&#39;t get much sexier than the Spence<span class="tooltiptext">Nada era más sexi que el Spence</span></span>
+		<span class="tooltip">at university, let me tell you.<span class="tooltiptext">en la Universidad, déjenme decirles.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">It is such a thrill for a humble breakfast radio announcer<span class="tooltiptext">Es tan emocionante para un humilde 
+locutor de radio matutino</span></span>
+		<span class="tooltip">from Sydney, Australia, to be here on the TED stage<span class="tooltiptext">de Sydney, Australia, estar 
+aquí en el escenario de TED</span></span>
+		<span class="tooltip">literally on the other side of the world.<span class="tooltiptext">literalmente al otro lado del mundo.</span></span>
+		<span class="tooltip">And I wanted to let you know, a lot of the things you&#39;ve heard<span class="tooltiptext">Y quiero que sepan que un montón 
+de las cosas que han oído</span></span>
+		<span class="tooltip">about Australians are true.<span class="tooltiptext">sobre los australianos son ciertas.</span></span>
+		<span class="tooltip">From the youngest of ages, we display<span class="tooltiptext">Desde muy jovenes, exhibimos</span></span>
+		<span class="tooltip">a prodigious sporting talent.<span class="tooltiptext">un prodigioso talento deportivo.</span></span>
+		<span class="tooltip">On the field of battle, we are brave and noble warriors.<span class="tooltiptext">En el campo de batalla, somos 
+guerreros valientes y nobles.</span></span>
+		<span class="tooltip">What you&#39;ve heard is true.<span class="tooltiptext">Es cierto lo que han oído.</span></span>
+		<span class="tooltip">Australians, we don&#39;t mind a bit of a drink,<span class="tooltiptext">A los australianos, no nos 
+importa beber un poco,</span></span>
+		<span class="tooltip">sometimes to excess, leading to embarrassing social situations. (Laughter)<span class="tooltiptext">a veces en exceso, lo que conduce a 
+situaciones sociales embarazosas. (Risas)</span></span>
+		<span class="tooltip">This is my father&#39;s work Christmas party, December 1973.<span class="tooltiptext">Esto es en el trabajo de mi padre en la 
+fiesta de Navidad de 1973.</span></span>
+		<span class="tooltip">I&#39;m almost five years old. Fair to say,<span class="tooltiptext">Tengo casi cinco años. Es justo decir,</span></span>
+		<span class="tooltip">I&#39;m enjoying the day a lot more than Santa was.<span class="tooltiptext">que estoy disfrutando el día 
+mucho más que Papá Noel.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">But I stand before you today<span class="tooltiptext">Pero me presento ante Uds. hoy</span></span>
+		<span class="tooltip">not as a breakfast radio host,<span class="tooltiptext">no como un locutor de radio de desayuno,</span></span>
+		<span class="tooltip">not as a comedian, but as someone who was, is,<span class="tooltiptext">No como comediante, sino 
+como alguien que era, es,</span></span>
+		<span class="tooltip">and always will be a mathematician.<span class="tooltiptext">y siempre será un matemático.</span></span>
+		<span class="tooltip">And anyone who&#39;s been bitten by the numbers bug<span class="tooltiptext">Y quien ha sido mordido por 
+el virus de los números,</span></span>
+		<span class="tooltip">knows that it bites early and it bites deep.<span class="tooltiptext">sabe que muerde pronto y fuerte.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">I cast my mind back when I was in second grade<span class="tooltiptext">retrocedo mentalmente a cuando 
+estaba en segundo grado</span></span>
+		<span class="tooltip">at a beautiful little government-run school<span class="tooltiptext">en una pequeña y hermosa escuela estatal</span></span>
+		<span class="tooltip">called Boronia Park in the suburbs of Sydney,<span class="tooltiptext">llamada Boronia Park en los 
+suburbios de Sydney,</span></span>
+		<span class="tooltip">and as we came up towards lunchtime, our teacher,<span class="tooltiptext">y conforme salíamos hacia el 
+almuerzo, nuestra profesora,</span></span>
+		<span class="tooltip">Ms. Russell, said to the class,<span class="tooltiptext">la Sra. Russell, dijo a la clase,</span></span>
+		<span class="tooltip">&quot;Hey, year two. What do you want to do after lunch?<span class="tooltiptext">&quot;Escuchen ¿qué quieren 
+hacer después de comer?</span></span>
+		<span class="tooltip">I&#39;ve got no plans.&quot;<span class="tooltiptext">No tengo ningún plan.&quot;</span></span>
+		<span class="tooltip">It was an exercise in democratic schooling,<span class="tooltiptext">Fue un ejercicio de educación democrática,</span></span>
+		<span class="tooltip">and I am all for democratic schooling, but we were only seven.<span class="tooltiptext">y estoy del todo a favor de la educación democrática, pero sólo teníamos 7 años.</span></span>
+		<span class="tooltip">So some of the suggestions we made as to what<span class="tooltiptext">Así que algunas de las sugerencias 
+que hicimos sobre</span></span>
+		<span class="tooltip">we might want to do after lunch were a little bit impractical,<span class="tooltiptext">lo que queríamos hacer después 
+de comer fueron poco útiles.</span></span>
+		<span class="tooltip">and after a while, someone made a particularly silly suggestion<span class="tooltiptext">y después de un tiempo, alguien hizo 
+una sugerencia particularmente tonta</span></span>
+		<span class="tooltip">and Ms. Russell patted them down with that gentle aphorism,<span class="tooltiptext">y la Sra. Russell respondió 
+con esta suave expresión:</span></span>
+		<span class="tooltip">&quot;That wouldn&#39;t work.<span class="tooltiptext">&quot;Eso no funcionaría.</span></span>
+		<span class="tooltip">That&#39;d be like trying to put a square peg through a round hole.&quot;<span class="tooltiptext">Eso sería como tratar de poner una clavija 
+cuadrada a través de un orificio redondo.&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Now I wasn&#39;t trying to be smart.<span class="tooltiptext">Yo no estaba tratando de ser inteligente.</span></span>
+		<span class="tooltip">I wasn&#39;t trying to be funny.<span class="tooltiptext">No estaba tratando de ser gracioso.</span></span>
+		<span class="tooltip">I just politely raised my hand,<span class="tooltiptext">Sólo levanté mi mano educadamente,</span></span>
+		<span class="tooltip">and when Ms. Russell acknowledged me, I said,<span class="tooltiptext">y cuando la Sra. Russell me reconoció, le dije,</span></span>
+		<span class="tooltip">in front of my year two classmates, and I quote,<span class="tooltiptext">delante de mis compañeros 
+de 2º curso, y cito:</span></span>
+		<span class="tooltip">&quot;But Miss,<span class="tooltiptext">&quot;Pero Señorita,</span></span>
+		<span class="tooltip">surely if the diagonal of the square<span class="tooltiptext">seguramente si la diagonal del cuadrado</span></span>
+		<span class="tooltip">is less than the diameter of the circle,<span class="tooltiptext">es menor que el diámetro del círculo,</span></span>
+		<span class="tooltip">well, the square peg will pass quite easily through the round hole.&quot;<span class="tooltiptext">entonces, la patilla cuadrada pasará fácilmente 
+a través del agujero redondo.</span></span>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(Risas)</span></span>
+		<span class="tooltip">&quot;It&#39;d be like putting a piece of toast through a basketball hoop, wouldn&#39;t it?&quot;<span class="tooltiptext">&quot;Sería como poner un pedazo de pan 
+a través de un aro de baloncesto, ¿no?&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And there was that same awkward silence<span class="tooltiptext">Y hubo un silencio incómodo</span></span>
+		<span class="tooltip">from most of my classmates,<span class="tooltiptext">entre la mayoría de mis 
+compañeros de clase</span></span>
+		<span class="tooltip">until sitting next to me, one of my friends,<span class="tooltiptext">hasta que uno de mis amigos, 
+sentado junto a mí,</span></span>
+		<span class="tooltip">one of the cool kids in class, Steven, leaned across<span class="tooltiptext">uno de los chicos populares 
+en clase, Steven, se inclinó</span></span>
+		<span class="tooltip">and punched me really hard in the head.<span class="tooltiptext">y me dio un golpe muy fuerte en la cabeza.</span></span>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(Risas)</span></span>
+		<span class="tooltip">Now what Steven was saying was, &quot;Look, Adam,<span class="tooltiptext">Lo que Steven intentaba 
+decirme era, &quot;Mira, Adam,</span></span>
+		<span class="tooltip">you are at a critical juncture in your life here, my friend.<span class="tooltiptext">estás en un momento 
+crítico en tu vida, amigo.</span></span>
+		<span class="tooltip">You can keep sitting here with us.<span class="tooltiptext">Puedes seguir sentado aquí con nosotros.</span></span>
+		<span class="tooltip">Any more of that sort of talk, you&#39;ve got to go and sit<span class="tooltiptext">pero si vuelves a hablar de ese 
+modo, tienes que irte y sentarte</span></span>
+		<span class="tooltip">over there with them.&quot;<span class="tooltiptext">ahí con ellos&quot;.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">I thought about it for a nanosecond.<span class="tooltiptext">Lo pensé un nanosegundo.</span></span>
+		<span class="tooltip">I took one look at the road map of life,<span class="tooltiptext">Eché un vistazo a la hoja de ruta de la vida,</span></span>
+		<span class="tooltip">and I ran off down the street marked &quot;Geek&quot;<span class="tooltiptext">y salí corriendo por la calle llamada &quot;Geek&quot;</span></span>
+		<span class="tooltip">as fast as my chubby, asthmatic little legs would carry me.<span class="tooltiptext">tan rápido como mis piernas gorditas y 
+asmáticas pudieran.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">I fell in love with mathematics from the earliest of ages.<span class="tooltiptext">Me enamoré de las matemáticas 
+desde la más tierna edad.</span></span>
+		<span class="tooltip">I explained it to all my friends. Maths is beautiful.<span class="tooltiptext">Se lo expliqué a todos mis amigos. 
+La matemáticas son algo hermoso.</span></span>
+		<span class="tooltip">It&#39;s natural. It&#39;s everywhere.<span class="tooltiptext">Es natural. Están en todas partes.</span></span>
+		<span class="tooltip">Numbers are the musical notes<span class="tooltiptext">Los números son las notas musicales</span></span>
+		<span class="tooltip">with which the symphony of the universe is written.<span class="tooltiptext">con las que está escrita la sinfonía del universo.</span></span>
+		<span class="tooltip">The great Descartes said something quite similar.<span class="tooltiptext">El gran Descartes dijo algo muy similar.</span></span>
+		<span class="tooltip">The universe &quot;is written in the mathematical language.&quot;<span class="tooltiptext">El universo &quot;está escrito en el lenguaje matemático&quot;.</span></span>
+		<span class="tooltip">And today, I want to show you one of those musical notes,<span class="tooltiptext">Y hoy, quiero mostrarles una 
+de las notas musicales,</span></span>
+		<span class="tooltip">a number so beautiful, so massive,<span class="tooltiptext">un número tan hermoso, tan masivo,</span></span>
+		<span class="tooltip">I think it will blow your mind.<span class="tooltiptext">que creo que les hará alucinar.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Today we&#39;re going to talk about prime numbers.<span class="tooltiptext">Hoy hablaremos de los números primos.</span></span>
+		<span class="tooltip">Most of you I&#39;m sure remember that six is not prime<span class="tooltiptext">La mayoría de Uds. estoy seguro 
+recuerden que seis no es primo</span></span>
+		<span class="tooltip">because it&#39;s 2 x 3.<span class="tooltiptext">Porque es igual a 2 x 3.</span></span>
+		<span class="tooltip">Seven is prime because it&#39;s 1 x 7,<span class="tooltiptext">Siete es primo porque es igual a 1 x 7,</span></span>
+		<span class="tooltip">but we can&#39;t break it down into any smaller chunks,<span class="tooltiptext">Pero no podemos dividirlo 
+en trozos más pequeños,</span></span>
+		<span class="tooltip">or as we call them, factors.<span class="tooltiptext">o como los llamamos, factores.</span></span>
+		<span class="tooltip">Now a few things you might like to know about prime numbers.<span class="tooltiptext">Ahora hay un par de cosas que les gustaría 
+saber sobre los números primos.</span></span>
+		<span class="tooltip">One is not prime.<span class="tooltiptext">el 1 no es primo.</span></span>
+		<span class="tooltip">The proof of that is a great party trick<span class="tooltiptext">La prueba de eso es un 
+truco genial para fiestas</span></span>
+		<span class="tooltip">that admittedly only works at certain parties.<span class="tooltiptext">Hay que reconocer que sólo 
+funciona en ciertas fiestas.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(Risas)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Another thing about primes, there is no final biggest prime number.<span class="tooltiptext">Otra cosa sobre los números primos, no 
+hay ningún gran número primo final.</span></span>
+		<span class="tooltip">They keep going on forever.<span class="tooltiptext">Siguen aumentando para siempre.</span></span>
+		<span class="tooltip">We know there are an infinite number of primes<span class="tooltiptext">Sabemos que hay un número 
+infinito de números primos</span></span>
+		<span class="tooltip">due to the brilliant mathematician Euclid.<span class="tooltiptext">debido al brillante matemático Euclides.</span></span>
+		<span class="tooltip">Over thousands of years ago, he proved that for us.<span class="tooltiptext">que lo demostró hace miles de años.</span></span>
+		<span class="tooltip">But the third thing about prime numbers,<span class="tooltiptext">Pero lo tercero sobre los números primos,</span></span>
+		<span class="tooltip">mathematicians have always wondered,<span class="tooltiptext">que los matemáticos siempre se han planteado,</span></span>
+		<span class="tooltip">well at any given moment in time,<span class="tooltiptext">bueno en algún momento, es</span></span>
+		<span class="tooltip">what is the biggest prime that we know about?<span class="tooltiptext">¿cuál es el número primo mayor 
+que conocemos?</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Today we&#39;re going to hunt for that massive prime.<span class="tooltiptext">Hoy iremos a ala caza de 
+ese número primo masivo.</span></span>
+		<span class="tooltip">Don&#39;t freak out.<span class="tooltiptext">No se asusten.</span></span>
+		<span class="tooltip">All you need to know, of all the mathematics<span class="tooltiptext">Todo lo que necesitan saber, 
+de todas las matemáticas</span></span>
+		<span class="tooltip">you&#39;ve ever learned, unlearned, crammed, forgotten,<span class="tooltiptext">que hayan aprendido, desaprendido, 
+estudiado, olvidado,</span></span>
+		<span class="tooltip">never understood in the first place,<span class="tooltiptext">nunca entendido,</span></span>
+		<span class="tooltip">all you need to know is this:<span class="tooltiptext">todo lo que necesitan saber es:</span></span>
+		<span class="tooltip">When I say 2 ^ 5,<span class="tooltiptext">Cuando digo 2 ^ 5,</span></span>
+		<span class="tooltip">I&#39;m talking about five little number twos next to each other<span class="tooltiptext">Hablo de 5 veces 2 uno al lado del otro</span></span>
+		<span class="tooltip">all multiplied together,<span class="tooltiptext">todos juntos, multiplicados</span></span>
+		<span class="tooltip">2 x 2 x 2 x 2 x 2.<span class="tooltiptext">2 x 2 x 2 x 2 x 2.</span></span>
+		<span class="tooltip">So 2 ^ 5 is 2 x 2 = 4,<span class="tooltiptext">Así que 2 ^ 5 es 2 x 2 = 4,</span></span>
+		<span class="tooltip">8, 16, 32.<span class="tooltiptext">8, 16, 32.</span></span>
+		<span class="tooltip">If you&#39;ve got that, you&#39;re with me for the entire journey. Okay?<span class="tooltiptext">Si se entiende eso, podrán seguirme 
+todo el tiempo. ¿De acuerdo?</span></span>
+		<span class="tooltip">So 2 ^ 5,<span class="tooltiptext">Así que 2 ^ 5,</span></span>
+		<span class="tooltip">those five little twos multiplied together.<span class="tooltiptext">esos cinco pequeños 2 se multiplican juntos.</span></span>
+		<span class="tooltip">(2 ^ 5) - 1 = 31.<span class="tooltiptext">(2 ^ 5)-1 = 31.</span></span>
+		<span class="tooltip">31 is a prime number, and that five in the power<span class="tooltiptext">31 es un número primo y el 5 en la potencia</span></span>
+		<span class="tooltip">is also a prime number.<span class="tooltiptext">también es un número primo.</span></span>
+		<span class="tooltip">And the vast bulk of massive primes we&#39;ve ever found<span class="tooltiptext">Y la mayor parte de números primos 
+masivos que hemos encontrado</span></span>
+		<span class="tooltip">are of that form:<span class="tooltiptext">son de esa forma:</span></span>
+		<span class="tooltip">two to a prime number, take away one.<span class="tooltiptext">2 elevado a un número primo, restar 1.</span></span>
+		<span class="tooltip">I won&#39;t go into great detail as to why,<span class="tooltiptext">No entraré en detalles de por qué,</span></span>
+		<span class="tooltip">because most of your eyes will bleed out of your head if I do,<span class="tooltiptext">porque a la mayoría les explotará 
+la cabeza si lo hago,</span></span>
+		<span class="tooltip">but suffice to say, a number of that form<span class="tooltiptext">Pero basta con decir que para 
+un número de esa forma</span></span>
+		<span class="tooltip">is fairly easy to test for primacy.<span class="tooltiptext">es bastante fácil comprobar si es primo o no.</span></span>
+		<span class="tooltip">A random odd number is a lot harder to test.<span class="tooltiptext">Un número impar al azar es 
+mucho más difícil de comprobar.</span></span>
+		<span class="tooltip">But as soon as we go hunting for massive primes,<span class="tooltiptext">Pero en cuanto salimos a cazar 
+números primos masivos,</span></span>
+		<span class="tooltip">we realize it&#39;s not enough<span class="tooltiptext">nos damos cuenta que no es suficiente</span></span>
+		<span class="tooltip">just to put in any prime number in the power.<span class="tooltiptext">con sólo poner cualquier número 
+primo en la potencia.</span></span>
+		<span class="tooltip">(2 ^ 11) - 1 = 2,047,<span class="tooltiptext">(2 ^ 11)-1 = 2.047,</span></span>
+		<span class="tooltip">and you don&#39;t need me to tell you that&#39;s 23 x 89.<span class="tooltiptext">y no necesitan decirme que es 23 x 89.</span></span>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(Risas)</span></span>
+		<span class="tooltip">But (2 ^ 13) - 1, (2 ^ 17) - 1<span class="tooltiptext">Pero (2 ^ 13) - 1, (2 ^ 17) - 1</span></span>
+		<span class="tooltip">(2 ^ 19) - 1, are all prime numbers.<span class="tooltiptext">(2 ^ 19) - 1, son números primos.</span></span>
+		<span class="tooltip">After that point, they thin out a lot.<span class="tooltiptext">Después de ese punto, se disipan mucho.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And one of the things about the search for massive primes<span class="tooltiptext">Y algo sobre la búsqueda 
+de números primos masivos</span></span>
+		<span class="tooltip">that I love so much is some of the great mathematical minds<span class="tooltiptext">que me encanta son algunos de 
+los genios matemáticos</span></span>
+		<span class="tooltip">of all time have gone on this search.<span class="tooltiptext">de todos los tiempos que hicieron esta búsqueda.</span></span>
+		<span class="tooltip">This is the great Swiss mathematician Leonhard Euler.<span class="tooltiptext">Este es el gran matemático suizo Leonhard Euler.</span></span>
+		<span class="tooltip">In the 1700s, other mathematicians said<span class="tooltiptext">En el siglo XVIII, los demás 
+matemáticos dijeron que:</span></span>
+		<span class="tooltip">he is simply the master of us all.<span class="tooltiptext">&quot;El es, simplemente, nuestro maestro&quot;.</span></span>
+		<span class="tooltip">He was so respected, they put him on European currency<span class="tooltiptext">Era tan respetado que lo pusieron 
+en los billetes europeos,</span></span>
+		<span class="tooltip">back when that was a compliment.<span class="tooltiptext">tiempo atrás, cuando eso era un elogio.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(Risas)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Euler discovered at the time the world&#39;s biggest prime:<span class="tooltiptext">Euler descubrió en ese momento el 
+número primo más grande del mundo:</span></span>
+		<span class="tooltip">(2 ^ 31) - 1.<span class="tooltiptext">(2 ^ 31) - 1.</span></span>
+		<span class="tooltip">It&#39;s over two billion.<span class="tooltiptext">Es más de 2 billones.</span></span>
+		<span class="tooltip">He proved it was prime with nothing more<span class="tooltiptext">Él demostró que era primo con nada más</span></span>
+		<span class="tooltip">than a quill, ink, paper and his mind.<span class="tooltiptext">que una pluma, tinta, papel y su mente.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">You think that&#39;s big.<span class="tooltiptext">¿Te parece grande?.</span></span>
+		<span class="tooltip">We know that (2 ^ 127) - 1<span class="tooltiptext">Sabemos que (2 ^ 127) - 1</span></span>
+		<span class="tooltip">is a prime number.<span class="tooltiptext">es un número primo.</span></span>
+		<span class="tooltip">It&#39;s an absolute brute.<span class="tooltiptext">Es una bestia enorme.</span></span>
+		<span class="tooltip">Look at it here: 39 digits long,<span class="tooltiptext">Mírenlo aquí: 39 dígitos,</span></span>
+		<span class="tooltip">proven to be prime in 1876<span class="tooltiptext">se demostró que era primo en 1876</span></span>
+		<span class="tooltip">by a mathematician called Lucas.<span class="tooltiptext">por un matemático llamado Lucas.</span></span>
+		<span class="tooltip">Word up, L-Dog.<span class="tooltiptext">de acuerdo, L-Dog.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(Risas)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">But one of the great things about the search for massive primes,<span class="tooltiptext">Pero una de las cosas geniales en la 
+búsqueda de números primos masivos,</span></span>
+		<span class="tooltip">it&#39;s not just finding the primes.<span class="tooltiptext">no sólo es encontrar los números primos.</span></span>
+		<span class="tooltip">Sometimes proving another number not to be prime is just as exciting.<span class="tooltiptext">A veces, demostrar que otro número 
+no es primo es igual de emocionante.</span></span>
+		<span class="tooltip">Lucas again, in 1876, showed us (2 ^ 67) - 1,<span class="tooltiptext">Lucas, en 1876, nos mostró que (2 ^ 67) - 1,</span></span>
+		<span class="tooltip">21 digits long, was not prime.<span class="tooltiptext">21 dígitos, no era primo.</span></span>
+		<span class="tooltip">But he didn&#39;t know what the factors were.<span class="tooltiptext">Pero no sabía cuáles eran los factores.</span></span>
+		<span class="tooltip">We knew it was like six, but we didn&#39;t know<span class="tooltiptext">Sabíamos que eran cerca de seis, 
+pero no sabíamos</span></span>
+		<span class="tooltip">what are the 2 x 3 that multiply together<span class="tooltiptext">cuales son los 2 x 3 que se multiplican juntos</span></span>
+		<span class="tooltip">to give us that massive number.<span class="tooltiptext">para darnos ese número masivo.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">We didn&#39;t know for almost 40 years<span class="tooltiptext">No lo supimos durante casi 40 años</span></span>
+		<span class="tooltip">until Frank Nelson Cole came along.<span class="tooltiptext">hasta que llegó Frank Nelson Cole.</span></span>
+		<span class="tooltip">And at a gathering of prestigious American mathematicians,<span class="tooltiptext">Y en una reunión de prestigiosos 
+matemáticos estadounidenses,</span></span>
+		<span class="tooltip">he walked to the board, took up a piece of chalk,<span class="tooltiptext">caminó hacia la pizarra, tomó un trozo de tiza,</span></span>
+		<span class="tooltip">and started writing out the powers of two:<span class="tooltiptext">y empezó a escribir las potencias de 2:</span></span>
+		<span class="tooltip">two, four, eight, 16 --<span class="tooltiptext">dos, cuatro, ocho, 16...</span></span>
+		<span class="tooltip">come on, join in with me, you know how it goes --<span class="tooltiptext">Vamos, únanse a mí, ya saben cómo va...</span></span>
+		<span class="tooltip">32, 64, 128, 256,<span class="tooltiptext">32, 64, 128, 256,</span></span>
+		<span class="tooltip">512, 1,024, 2,048.<span class="tooltiptext">512, 1.024, 2.048.</span></span>
+		<span class="tooltip">I&#39;m in geek heaven. We&#39;ll stop it there for a second.<span class="tooltiptext">Estoy en el mundo friki. Nos detendremos 
+aquí por un segundo.</span></span>
+		<span class="tooltip">Frank Nelson Cole did not stop there.<span class="tooltiptext">Frank Nelson Cole no paró ahí.</span></span>
+		<span class="tooltip">He went on and on<span class="tooltiptext">siguió y siguió</span></span>
+		<span class="tooltip">and calculated 67 powers of two.<span class="tooltiptext">y calculó 67 potencias de 2.</span></span>
+		<span class="tooltip">He took away one and wrote that number on the board.<span class="tooltiptext">Se llevó una y escribió ese número en la pizarra.</span></span>
+		<span class="tooltip">A frisson of excitement went around the room.<span class="tooltiptext">Un escalofrío de emoción recorrió el aula.</span></span>
+		<span class="tooltip">It got even more exciting when he then wrote down<span class="tooltiptext">Se puso aún más emocionante 
+cuando escribió entonces</span></span>
+		<span class="tooltip">these two large prime numbers in your standard multiplication format --<span class="tooltiptext">estos dos grandes números primos en 
+el formato estándar de multiplicación.</span></span>
+		<span class="tooltip">and for the rest of the hour of his talk<span class="tooltiptext">y durante el resto de la hora de su charla</span></span>
+		<span class="tooltip">Frank Nelson Cole busted that out.<span class="tooltiptext">Frank Nelson Cole expuso eso.</span></span>
+		<span class="tooltip">He had found the prime factors<span class="tooltiptext">Había encontrado los factores primos</span></span>
+		<span class="tooltip">of (2 ^ 67) - 1.<span class="tooltiptext">de (2 ^ 67) - 1.</span></span>
+		<span class="tooltip">The room went berserk --<span class="tooltiptext">El aula entera enloqueció.</span></span>
+		<span class="tooltip">(Laughter) --<span class="tooltiptext">(Risas)</span></span>
+		<span class="tooltip">as Frank Nelson Cole sat down,<span class="tooltiptext">cuando Frank Nelson Cole se sentó,</span></span>
+		<span class="tooltip">having delivered the only talk in the history of mathematics<span class="tooltiptext">habiendo realizado la única charla 
+en la historia de las matemáticas</span></span>
+		<span class="tooltip">with no words.<span class="tooltiptext">sin palabras.</span></span>
+		<span class="tooltip">He admitted afterwards it wasn&#39;t that hard to do.<span class="tooltiptext">Mas tarde admitió que no fue tan difícil hacerlo.</span></span>
+		<span class="tooltip">It took focus. It took dedication.<span class="tooltiptext">Requirió concentración. 
+Requirió dedicación.</span></span>
+		<span class="tooltip">It took him, by his estimate,<span class="tooltiptext">Le llevó hacerlo, según su estimación,</span></span>
+		<span class="tooltip">&quot;three years of Sundays.&quot;<span class="tooltiptext">&quot;los domingos de tres años&quot;.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">But then in the field of mathematics,<span class="tooltiptext">Pero entonces, en el campo de las matemáticas,</span></span>
+		<span class="tooltip">as in so many of the fields that we&#39;ve heard from in this TED,<span class="tooltiptext">al igual que en otros muchos de los campos 
+de los que hemos oído en este TED,</span></span>
+		<span class="tooltip">the age of the computer goes along and things explode.<span class="tooltiptext">llega la época de las computadoras 
+y todo se dispara.</span></span>
+		<span class="tooltip">These are the largest prime numbers we knew<span class="tooltiptext">Estos son los números primos 
+mas grandes conocidos</span></span>
+		<span class="tooltip">decade by decade, each one dwarfing the one before<span class="tooltiptext">década tras década, cada uno 
+eclipsando al anterior,</span></span>
+		<span class="tooltip">as computers took over and our power to calculate<span class="tooltiptext">a medida que las computadoras tomaron 
+el control y nuestra capacidad de cálculo</span></span>
+		<span class="tooltip">just grew and grew.<span class="tooltiptext">Sólo creció y creció.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">This is the largest prime number we knew in 1996,<span class="tooltiptext">Este es el mayor número primo 
+que conocíamos en 1996,</span></span>
+		<span class="tooltip">a very emotional year for me.<span class="tooltiptext">un año muy emocionante para mí.</span></span>
+		<span class="tooltip">It was the year I left university.<span class="tooltiptext">Era el año en que dejé la Universidad.</span></span>
+		<span class="tooltip">I was torn between mathematics and media.<span class="tooltiptext">Me debatía entre las matemáticas y 
+los medios de comunicación.</span></span>
+		<span class="tooltip">It was a tough decision. I loved university.<span class="tooltiptext">Fue una decisión difícil. 
+Me encantó la universidad.</span></span>
+		<span class="tooltip">My arts degree was the best nine and a half years of my life.<span class="tooltiptext">Mi licenciatura fueron los mejores 
+nueve y medio años de mi vida.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(Risas)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">But I came to a realization about my own ability.<span class="tooltiptext">Pero llegué a una conclusión acerca 
+de mi propia capacidad.</span></span>
+		<span class="tooltip">Put simply, in a room full of randomly selected people,<span class="tooltiptext">Sencillamente, en una sala llena 
+de personas elegidas al azar,</span></span>
+		<span class="tooltip">I&#39;m a maths genius.<span class="tooltiptext">soy un genio de las matemáticas.</span></span>
+		<span class="tooltip">In a roomful of maths Ph.Ds,<span class="tooltiptext">En una habitación llena de 
+doctores en matemáticas,</span></span>
+		<span class="tooltip">I&#39;m as dumb as a box of hammers.<span class="tooltiptext">soy tan tonto como una caja de martillos.</span></span>
+		<span class="tooltip">My skill is not in the mathematics.<span class="tooltiptext">Mi habilidad no está en las matemáticas.</span></span>
+		<span class="tooltip">It is in telling the story of the mathematics.<span class="tooltiptext">Está en contar la historia de las matemáticas.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And during that time, since I&#39;ve left university,<span class="tooltiptext">Y durante ese tiempo, desde 
+que dejé la universidad,</span></span>
+		<span class="tooltip">these numbers have got bigger and bigger,<span class="tooltiptext">Estos números se ha vuelto 
+más y más grandes,</span></span>
+		<span class="tooltip">each one dwarfing the last,<span class="tooltiptext">cada uno eclipsando al último,</span></span>
+		<span class="tooltip">until along came this man, Dr. Curtis Cooper,<span class="tooltiptext">hasta que llegó este hombre, 
+el Dr. Curtis Cooper,</span></span>
+		<span class="tooltip">who a few years ago held the record for the largest ever prime,<span class="tooltiptext">que hace unos años ostentaba el récord del 
+número primo más grande jamás hallado,</span></span>
+		<span class="tooltip">only to see it snatched away by a rival university.<span class="tooltiptext">sólo para ver como se lo arrebataba 
+una universidad rival.</span></span>
+		<span class="tooltip">And then Curtis Cooper got it back.<span class="tooltiptext">Y entonces Curtis Cooper lo recuperó.</span></span>
+		<span class="tooltip">Not years ago, not months ago, days ago.<span class="tooltiptext">No hace años o meses, sino hace unos días.</span></span>
+		<span class="tooltip">In an amazing moment of serendipity,<span class="tooltiptext">En un momento increíble de serendipia</span></span>
+		<span class="tooltip">I had to send TED a new slide<span class="tooltiptext">tuve que enviar una nueva diapositiva a TED</span></span>
+		<span class="tooltip">to show you what this guy had done.<span class="tooltiptext">para mostrartes lo que había hecho este hombre.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">I still remember -- (Applause) --<span class="tooltiptext">Todavía recuerdo -- (Aplausos) --</span></span>
+		<span class="tooltip">I still remember when it happened.<span class="tooltiptext">Todavía recuerdo cuando sucedió.</span></span>
+		<span class="tooltip">I was doing my breakfast radio show.<span class="tooltiptext">Yo estaba haciendo mi programa 
+de radio matinal.</span></span>
+		<span class="tooltip">I looked down on Twitter. There was a tweet:<span class="tooltiptext">Eché un vistazo en Twitter. Había un tweet:</span></span>
+		<span class="tooltip">&quot;Adam, have you seen the new largest prime number?&quot;<span class="tooltiptext">&quot;Adam, ¿has visto el nuevo mayor número primo?&quot;</span></span>
+		<span class="tooltip">I shivered --<span class="tooltiptext">Me estremecí...</span></span>
+		<span class="tooltip">(Laughter) --<span class="tooltiptext">(Risas)</span></span>
+		<span class="tooltip">contacted the women who produced my radio show out in the other room,<span class="tooltiptext">Contacté con las mujeres que producían 
+mi programa de radio en la otra sala,</span></span>
+		<span class="tooltip">and said &quot;Girls, hold the front page.<span class="tooltiptext">y les dije &quot;chicas, retengan la portada.</span></span>
+		<span class="tooltip">We&#39;re not talking politics today.<span class="tooltiptext">Hoy no hablamos de política.</span></span>
+		<span class="tooltip">We&#39;re not talking sport today.<span class="tooltiptext">Hoy no hablamos de deporte.</span></span>
+		<span class="tooltip">They found another megaprime.&quot;<span class="tooltiptext">Han encontrado otro número megaprimo.&quot;</span></span>
+		<span class="tooltip">The girls just shook their heads,<span class="tooltiptext">Las chicas sacudieron la cabeza,</span></span>
+		<span class="tooltip">put them in their hands, and let me go my own way.<span class="tooltiptext">la apoyaron en sus manos y me 
+dejaron seguir con lo mío.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">It&#39;s because of Curtis Cooper that we know,<span class="tooltiptext">Es gracias a Curtis Cooper que conocemos,</span></span>
+		<span class="tooltip">currently the largest prime number we know,<span class="tooltiptext">el que es actualmente el mayor 
+número primo conocido,</span></span>
+		<span class="tooltip">is 2 ^ 57,885,161.<span class="tooltiptext">es 2 ^ 57,885,161 -1</span></span>
+		<span class="tooltip">Don&#39;t forget to subtract the one.<span class="tooltiptext">No se olviden de restar el uno.</span></span>
+		<span class="tooltip">This number is almost 17 and a half million digits long.<span class="tooltiptext">Este número tiene casi 17 millones y 
+medio de dígitos de longitud.</span></span>
+		<span class="tooltip">If you typed it out on a computer and saved it as a text file,<span class="tooltiptext">Si lo escribieran en una computadora y lo 
+guardasen como un archivo de texto</span></span>
+		<span class="tooltip">that&#39;s 22 meg.<span class="tooltiptext">ocuparía 22 megabytes</span></span>
+		<span class="tooltip">For the slightly less geeky of you,<span class="tooltiptext">Para los que no sean tan fikis</span></span>
+		<span class="tooltip">think about the Harry Potter novels, okay?<span class="tooltiptext">piensen en las novelas de 
+Harry Potter, ¿de acuerdo?</span></span>
+		<span class="tooltip">This is the first Harry Potter novel.<span class="tooltiptext">Esta es la primera novela de Harry Potter.</span></span>
+		<span class="tooltip">This is all seven Harry Potter novels,<span class="tooltiptext">Estas son las siete novelas 
+completas de Harry Potter,</span></span>
+		<span class="tooltip">because she did tend to faff on a bit near the end.<span class="tooltiptext">Porque ella tiende a tontear 
+un poco al final.</span></span>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(Risas)</span></span>
+		<span class="tooltip">Written out as a book, this number would run<span class="tooltiptext">Escrito como un libro, este número sería</span></span>
+		<span class="tooltip">the length of the Harry Potter novels and half again.<span class="tooltiptext">la longitud de las novelas de 
+Harry Potter y la mitad otra vez.</span></span>
+		<span class="tooltip">Here&#39;s a slide of the first 1,000 digits of this prime.<span class="tooltiptext">Aquí ven una diapositiva de los 1.000 
+primeros dígitos de este primo.</span></span>
+		<span class="tooltip">If, when TED had begun, at 11 o&#39;clock on Tuesday,<span class="tooltiptext">Si, al comenzar TED a las 
+11 en punto el martes,</span></span>
+		<span class="tooltip">we&#39;d walked out and simply hit one slide every second,<span class="tooltiptext">hubiésemos ido y simplemente pasado 
+una diapositiva cada segundo,</span></span>
+		<span class="tooltip">it would have taken five hours to show you that number.<span class="tooltiptext">nos habría llevado cinco horas 
+para mostrar ese número.</span></span>
+		<span class="tooltip">I was keen to do it, could not convince Bono.<span class="tooltiptext">Yo estaba dispuesto a hacerlo, pero 
+no pude convencer a Bono.</span></span>
+		<span class="tooltip">That&#39;s the way it goes.<span class="tooltiptext">Así es como funciona.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">This number is 17 and a half thousand slides long,<span class="tooltiptext">Este número tiene 17500 diapositivas de largo</span></span>
+		<span class="tooltip">and we know it is prime as confidently<span class="tooltiptext">y sabemos que es primo con la misma confianza</span></span>
+		<span class="tooltip">as we know the number seven is prime.<span class="tooltiptext">que sabemos que el número siete es primo.</span></span>
+		<span class="tooltip">That fills me with almost sexual excitement.<span class="tooltiptext">Eso me llena de excitación casi sexual.</span></span>
+		<span class="tooltip">And who am I kidding when I say almost?<span class="tooltiptext">¿Y a quién engaño cuando digo casi?</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(Risas)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">I know what you&#39;re thinking:<span class="tooltiptext">Sé lo que están pensando:</span></span>
+		<span class="tooltip">Adam, we&#39;re happy that you&#39;re happy,<span class="tooltiptext">Adam, nos alegra que estés feliz,</span></span>
+		<span class="tooltip">but why should we care?<span class="tooltiptext">Pero, ¿por qué debería importarnos?</span></span>
+		<span class="tooltip">Let me give you just three reasons why this is so beautiful.<span class="tooltiptext">Déjenme darles tres razones de 
+por qué esto es tan hermoso.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">First of all, as I explained, to ask a computer<span class="tooltiptext">En primer lugar, como he explicado, 
+para consultar en la computadora</span></span>
+		<span class="tooltip">&quot;Is that number prime?&quot; to type it in its abbreviated form,<span class="tooltiptext">&quot;¿Es ese un número primo?&quot; para 
+escribirlo en su forma abreviada,</span></span>
+		<span class="tooltip">and then only about six lines of code is the test for primacy,<span class="tooltiptext">y entonces sólo seis líneas de código 
+es la prueba para ver si es primo</span></span>
+		<span class="tooltip">is a remarkably simple question to ask.<span class="tooltiptext">es una pregunta muy simple.</span></span>
+		<span class="tooltip">It&#39;s got a remarkably clear yes/no answer,<span class="tooltiptext">Tiene una respuesta muy clara, sí o no,</span></span>
+		<span class="tooltip">and just requires phenomenal grunt.<span class="tooltiptext">y sólo requiere un gruñido fenomenal.</span></span>
+		<span class="tooltip">Large prime numbers are a great way of testing<span class="tooltiptext">Los grandes números primos son 
+una estupenda forma de medir</span></span>
+		<span class="tooltip">the speed and accuracy of computer chips.<span class="tooltiptext">la velocidad y precisión de los chips 
+de las computadoras.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">But secondly, as Curtis Cooper was looking for that monster prime,<span class="tooltiptext">Pero en segundo lugar, igual que Curtis Cooper 
+buscaba ese número primo monstruoso,</span></span>
+		<span class="tooltip">he wasn&#39;t the only guy searching.<span class="tooltiptext">él no era el único que buscaba.</span></span>
+		<span class="tooltip">My laptop at home was looking through<span class="tooltiptext">Mi portátil en casa revisaba</span></span>
+		<span class="tooltip">four potential candidate primes myself<span class="tooltiptext">cuatro candidatos potenciales a número primo</span></span>
+		<span class="tooltip">as part of a networked computer hunt around the world<span class="tooltiptext">como parte de una búsqueda global de 
+computadoras conectadas en red</span></span>
+		<span class="tooltip">for these large numbers.<span class="tooltiptext">para encontrar estos grandes números.</span></span>
+		<span class="tooltip">The discovery of that prime is similar to the work<span class="tooltiptext">El descubrimiento de ese número 
+primo es similar al trabajo</span></span>
+		<span class="tooltip">people are doing in unraveling RNA sequences,<span class="tooltiptext">que hacen las personas que están 
+desenredando las secuencias de ARN,</span></span>
+		<span class="tooltip">in searching through data from SETI and other astronomical projects.<span class="tooltiptext">o buscando a través de datos de SETI y 
+otros proyectos astronómicos.</span></span>
+		<span class="tooltip">We live in an age where some of the great breakthroughs<span class="tooltiptext">Vivimos en una época donde 
+algunos de los grandes avances</span></span>
+		<span class="tooltip">are not going to happen in the labs or the halls of academia<span class="tooltiptext">no sucederán en los laboratorios o 
+en los pasillos de la academia</span></span>
+		<span class="tooltip">but on laptops, desktops,<span class="tooltiptext">sino en portátiles, 
+o computadoras de escritorio,</span></span>
+		<span class="tooltip">in the palms of people&#39;s hands<span class="tooltiptext">en la palma de las manos de la gente</span></span>
+		<span class="tooltip">who are simply helping out for the search.<span class="tooltiptext">que simplemente están ayudando en la búsqueda.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">But for me it&#39;s amazing because it&#39;s a metaphor<span class="tooltiptext">Pero para mí es increíble porque es una metáfora</span></span>
+		<span class="tooltip">for the time in which we live,<span class="tooltiptext">de la época en que vivimos,</span></span>
+		<span class="tooltip">when human minds and machines can conquer together.<span class="tooltiptext">donde las mentes humanas y las 
+máquinas pueden conquistar juntos.</span></span>
+		<span class="tooltip">We&#39;ve heard a lot about robots in this TED.<span class="tooltiptext">Hemos oído mucho acerca de robots en este TED.</span></span>
+		<span class="tooltip">We&#39;ve heard a lot about what they can and can&#39;t do.<span class="tooltiptext">Hemos oído mucho acerca de lo 
+que pueden y no pueden hacer.</span></span>
+		<span class="tooltip">It is true, you can now download onto your smartphone<span class="tooltiptext">Es cierto, ya puedes descargar
+en tu móvil inteligente</span></span>
+		<span class="tooltip">an app that would beat most grandmasters at chess.<span class="tooltiptext">una aplicación que le ganaría a la mayoría 
+de los grandes maestros de ajedrez.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">You think that&#39;s cool.<span class="tooltiptext">¿Crees que eso es genial?.</span></span>
+		<span class="tooltip">Here&#39;s a machine doing something cool.<span class="tooltiptext">Aquí hay una máquina haciendo algo genial.</span></span>
+		<span class="tooltip">This is the CubeStormer II.<span class="tooltiptext">Este es el CubeStormer II.</span></span>
+		<span class="tooltip">It can take a randomly shuffled Rubik&#39;s Cube.<span class="tooltiptext">Puede tomar un cubo de Rubik girado al azar.</span></span>
+		<span class="tooltip">Using the power of the smartphone,<span class="tooltiptext">usando el poder de los móviles inteligentes,</span></span>
+		<span class="tooltip">it can examine the cube and solve the cube<span class="tooltiptext">puede examinar el cubo y resolverlo</span></span>
+		<span class="tooltip">in five seconds.<span class="tooltiptext">en cinco segundos.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Applause)<span class="tooltiptext">(Aplausos)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">That scares some people. That excites me.<span class="tooltiptext">Eso asusta a algunas personas. 
+A mí eso me excita.</span></span>
+		<span class="tooltip">How lucky are we to live in this age<span class="tooltiptext">¡Cuán afortunados somos de vivir en esta era</span></span>
+		<span class="tooltip">when mind and machine can work together?<span class="tooltiptext">donde mente y máquina pueden trabajar juntas!</span></span>
+	</p>
+	<p>
+		<span class="tooltip">I was asked in an interview last year in my capacity<span class="tooltiptext">Me preguntaron en una entrevista 
+el año pasado en mi calidad</span></span>
+		<span class="tooltip">as a lower-case &quot;c&quot; celebrity in Australia,<span class="tooltiptext">de pequeña celebridad con &quot;c&quot; 
+minúscula en Australia,</span></span>
+		<span class="tooltip">&quot;What was your highlight of 2012?&quot;<span class="tooltiptext">&quot;¿Cuál fue lo más destacable del 2012?&quot;</span></span>
+		<span class="tooltip">People were expecting me to talk about<span class="tooltiptext">La gente esperaba que hablara de</span></span>
+		<span class="tooltip">my beloved Sydney Swans football team.<span class="tooltiptext">mi amado equipo de fútbol de Sydney, los Swans.</span></span>
+		<span class="tooltip">In our beautiful, indigenous sport of Australian football,<span class="tooltiptext">En nuestro bello, autóctono deporte 
+de fútbol australiano,</span></span>
+		<span class="tooltip">they won the equivalent of the Super Bowl.<span class="tooltiptext">los Swans ganaron el equivalente 
+de la Super Bowl.</span></span>
+		<span class="tooltip">I was there. It was the most emotional, exciting day.<span class="tooltiptext">Yo estaba allí. Fue el día más 
+emocionante y excitante.</span></span>
+		<span class="tooltip">It wasn&#39;t my highlight of 2012.<span class="tooltiptext">pero no fue mi mejor momento de 2012.</span></span>
+		<span class="tooltip">People thought it might have been an interview I&#39;d done on my show.<span class="tooltiptext">La gente pensó que podría haber sido una 
+entrevista que había hecho en mi programa.</span></span>
+		<span class="tooltip">It might have been a politician. It might have been a breakthrough.<span class="tooltiptext">Podría haber sido un político. Podría 
+haber sido un gran avance.</span></span>
+		<span class="tooltip">It might have been a book I read, the arts. No, no, no.<span class="tooltiptext">Podría haber sido un libro 
+que leí, el arte. No, no, no.</span></span>
+		<span class="tooltip">It might have been something my two gorgeous daughters had done.<span class="tooltiptext">Podría haber sido algo que habían 
+hecho mis dos hermosas hijas.</span></span>
+		<span class="tooltip">No, it wasn&#39;t. The highlight of 2012, so clearly,<span class="tooltiptext">No, no. El punto culminante 
+del 2012, claramente,</span></span>
+		<span class="tooltip">was the discovery of the Higgs boson.<span class="tooltiptext">fue el descubrimiento del bosón de Higgs.</span></span>
+		<span class="tooltip">Give it up for the fundamental particle<span class="tooltiptext">Un aplauso para la partícula fundamental</span></span>
+		<span class="tooltip">that bequeaths all other fundamental particles their mass.<span class="tooltiptext">que lega a todas las otras partículas 
+fundamentales su masa.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Applause)<span class="tooltiptext">(Aplausos)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And what was so gorgeous about this discovery was<span class="tooltiptext">Y lo maravilloso sobre este descubrimiento fue</span></span>
+		<span class="tooltip">50 years ago Peter Higgs and his team<span class="tooltiptext">que hace 50 años Peter Higgs y su equipo</span></span>
+		<span class="tooltip">considered one of the deepest of all questions:<span class="tooltiptext">se plantearon una de las preguntas más profundas:</span></span>
+		<span class="tooltip">How is it that the things that make us up have no mass?<span class="tooltiptext">¿Cómo es que las cosas que nos 
+conforman no tienen ninguna masa?</span></span>
+		<span class="tooltip">I&#39;ve clearly got mass. Where does it come from?<span class="tooltiptext">Claramente tengo masa. ¿De dónde viene?</span></span>
+		<span class="tooltip">And he postulated a suggestion<span class="tooltiptext">Y postuló la proposición</span></span>
+		<span class="tooltip">that there&#39;s this infinite, incredibly small field<span class="tooltiptext">de que existe este campo infinito, 
+increíblemente pequeño</span></span>
+		<span class="tooltip">stretching throughout the universe,<span class="tooltiptext">extendiéndose por todo el universo,</span></span>
+		<span class="tooltip">and as other particles go through those particles<span class="tooltiptext">y como otras partículas pasan por esas partículas</span></span>
+		<span class="tooltip">and interact, that&#39;s where they get their mass.<span class="tooltiptext">e interactuan, ahí es donde obtienen su masa.</span></span>
+		<span class="tooltip">The rest of the scientific community said,<span class="tooltiptext">El resto de la comunidad científica dijo,</span></span>
+		<span class="tooltip">&quot;Great idea, Higgsy.<span class="tooltiptext">&quot;Gran idea, Higgsy.</span></span>
+		<span class="tooltip">We&#39;ve got no idea if we could ever prove it.<span class="tooltiptext">No tenemos ni idea de si alguna vez 
+lo podremos comprobar.</span></span>
+		<span class="tooltip">It&#39;s beyond our reach.&quot;<span class="tooltiptext">Está fuera de nuestro alcance&quot;.</span></span>
+		<span class="tooltip">And within just 50 years,<span class="tooltiptext">Y en sólo 50 años,</span></span>
+		<span class="tooltip">in his lifetime, with him sitting in the audience,<span class="tooltiptext">en su vida, con él sentado entre el público,</span></span>
+		<span class="tooltip">we had designed the greatest machine ever<span class="tooltiptext">habíamos diseñado la máquina 
+más grande jamás hecha</span></span>
+		<span class="tooltip">to prove this incredible idea<span class="tooltiptext">para demostrar esta idea increíble</span></span>
+		<span class="tooltip">that originated just in a human mind.<span class="tooltiptext">que se originó en una mente humana.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">That&#39;s what is so exciting for me about this prime number.<span class="tooltiptext">Eso es lo que me emociona tanto 
+de este número primo.</span></span>
+		<span class="tooltip">We thought it might be there,<span class="tooltiptext">Pensamos que podría estar ahí</span></span>
+		<span class="tooltip">and we went and found it.<span class="tooltiptext">y fuimos y lo encontramos.</span></span>
+		<span class="tooltip">That is the essence of being human.<span class="tooltiptext">Esa es la esencia del ser humano.</span></span>
+		<span class="tooltip">That is what we are all about.<span class="tooltiptext">Eso es lo que somos.</span></span>
+		<span class="tooltip">Or as my friend Descartes might put it,<span class="tooltiptext">O como mi amigo Descartes diría,</span></span>
+		<span class="tooltip">we think,<span class="tooltiptext">&quot;Pensamos,</span></span>
+		<span class="tooltip">therefore we are.<span class="tooltiptext">luego existimos&quot;.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Thank you.<span class="tooltiptext">Gracias.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Applause)<span class="tooltiptext">(Aplausos)</span></span>
+	</p>
+
+	<div class="line"></div>
+	<p>Love our website? Help us keep it ad-free and running smoothly by making a donation today.</p>
+	<p>To donate, simply click the PayPal link below:<p/>
+	<p><a href="https://www.paypal.com/paypalme/otechai" target='_blank'>Donate via PayPal</a></p>
+	<p>Ready to sound like a native speaker? Or better yet, elevate your language skills to the next level? Check out my book : </p>
+	<div style="text-align: center;"> <span><a href="https://amzn.to/3Um79fs" target="_blank" rel=" noopener noreferrer"><img height="160" width="103" typeof="foaf:Image" class="image-style-none" src="../../../static/images/off-the-hook-shaun-clark.jpg" alt="off the hook book by shaun clark"></a></span> </div>
+	<div class="views-field views-field-title" style="text-align: center;"> <span class="field-content"><a href="https://amzn.to/3Um79fs" target="_blank" rel=" noopener noreferrer">Off The Hook: The Ultimate English Slang Dictionary</a></span> </div>
+	<p style="text-align: center;">Or explore our amazing library! <a href="../../../library/1/index.html">HERE</a></p>
+	
+</div>
+<span onclick='topFunction()' id='gotop' title='Go to top'><svg width="32" height="32" viewBox="0 0 100 100">
+	   <path fill="white" d="m50 0c-13.262 0-25.98 5.2695-35.355 14.645s-14.645 22.094-14.645 35.355 5.2695 25.98 14.645 35.355 22.094 14.645 35.355 14.645 25.98-5.2695 35.355-14.645 14.645-22.094 14.645-35.355-5.2695-25.98-14.645-35.355-22.094-14.645-35.355-14.645zm20.832 62.5-20.832-22.457-20.625 22.457c-1.207 0.74219-2.7656 0.57812-3.7891-0.39844-1.0273-0.98047-1.2695-2.5273-0.58594-3.7695l22.918-25c0.60156-0.61328 1.4297-0.96094 2.2891-0.96094 0.86328 0 1.6914 0.34766 2.293 0.96094l22.918 25c0.88672 1.2891 0.6875 3.0352-0.47266 4.0898-1.1562 1.0508-2.9141 1.0859-4.1133 0.078125z"></path>
+	 </svg></span>
+
+	    <div class="footer">
+	        <div class="left"><a href='../../../index.html'>ReadingDB</a></div>
+	        <div class="center"><a href="https://twitter.com/readingdb" class="twitter-link">
+	    <svg class="twitter-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	        <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.58-2.11-9.96-5.02-.42.72-.66 1.56-.66 2.46 0 1.68.85 3.16 2.14 4.02-.79-.02-1.53-.24-2.18-.6v.06c0 2.35 1.67 4.31 3.88 4.76-.4.1-.83.16-1.27.16-.31 0-.62-.03-.92-.08.63 1.96 2.45 3.39 4.61 3.43-1.69 1.32-3.83 2.1-6.15 2.1-.4 0-.8-.02-1.19-.07 2.19 1.4 4.78 2.22 7.57 2.22 9.07 0 14.02-7.52 14.02-14.02 0-.21 0-.41-.01-.61.96-.69 1.79-1.56 2.45-2.55-.88.39-1.83.65-2.82.77z"/>
+	    </svg>
+	</a></div>
+	        <div class="right"><a href='../../../library/1/index.html'>Library</a></div>
+	    </div>
+	<script>
+
+		var mybutton = document.getElementById('gotop');
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+			if (document.documentElement.scrollTop > 20 || document.body.scrollTop > 20) {
+				mybutton.style.display = 'block';
+			} else {
+				mybutton.style.display = 'none';
+			}
+		}
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<script src="../../../static/scripts/script.js"></script>
+</body>
+</html>
+	

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+	<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<meta name="description" content="Desbloquea la competencia en inglés con nuestra plataforma innovadora basada en las transcripciones de TED Talks. Sumérgete en un contenido cautivador, accede a traducciones instantáneas y únete a una comunidad global de estudiantes. ¡Comienza tu aventura de lectura hoy mismo! | Unlock English proficiency with our innovative platform powered by TED Talk transcripts. Dive into captivating content, access instant translations, and join a global community of learners. Start your reading adventure today!">
+		<meta name="keywords" content="lectura en inglés, transcripciones de TED Talks, aprendizaje de idiomas, traducciones instantáneas, comunidad global, aventura de lectura, mejorar inglés, mejorar habilidades de lectura, plataforma educativa, recursos de lectura, educación en línea, English reading, TED Talks transcripts, language learning, instant translations, global community, reading adventure, improve English, improve reading skills, educational platform, reading resources, online education, English proficiency, learn English, English learning resources, bilingual education, language exchange, study English online">
+		<link rel="apple-touch-icon" sizes="180x180" href="../../../static/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../../../static/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../../../static/favicons/favicon-16x16.png">
+		<link rel="manifest" href="../../../static/favicons/site.webmanifest">
+		<title>Ralph Langner : Cracking Stuxnet, a 21st-century cyber weapon</title>
+		<link rel='stylesheet' href='../../../static/styles/styles.css'>
+	</head>
+	<body>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-R5SK82H490"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-R5SK82H490');
+	</script>
+
+	<h1 class='title'>Cracking Stuxnet, a 21st-century cyber weapon</h1>
+	<h2 class='speaker'>Ralph Langner</h2>
+	<div class='transcript books'>
+	<p>Are you ready to improve your English speaking skills, check <a href='https://referral.lingoda.com/6Dztrv'>Lingoda</a> today!</p>
+		<p>
+		<span class="tooltip">The idea behind the Stuxnet computer worm<span class="tooltiptext">La idea detrás del gusano informático Stuxnet</span></span>
+		<span class="tooltip">is actually quite simple.<span class="tooltiptext">es en realidad muy simple.</span></span>
+		<span class="tooltip">We don&#39;t want Iran to get the bomb.<span class="tooltiptext">No queremos que Irán obtenga la bomba nuclear.</span></span>
+		<span class="tooltip">Their major asset for developing nuclear weapons<span class="tooltiptext">Su mayor activo para desarrollar armas nucleares</span></span>
+		<span class="tooltip">is the Natanz uranium enrichment facility.<span class="tooltiptext">es la planta de enriquecimiento de Uranio en Natanz.</span></span>
+		<span class="tooltip">The gray boxes that you see,<span class="tooltiptext">Las cajas grises que ven</span></span>
+		<span class="tooltip">these are real-time control systems.<span class="tooltiptext">son sistemas de control en tiempo real.</span></span>
+		<span class="tooltip">Now if we manage to compromise these systems<span class="tooltiptext">Si logramos comprometer estos sistemas</span></span>
+		<span class="tooltip">that control drive speeds and valves,<span class="tooltiptext">que controlan velocidades y válvulas,</span></span>
+		<span class="tooltip">we can actually cause a lot of problems<span class="tooltiptext">podemos causar un montón de problemas</span></span>
+		<span class="tooltip">with the centrifuge.<span class="tooltiptext">con la centrífuga.</span></span>
+		<span class="tooltip">The gray boxes don&#39;t run Windows software;<span class="tooltiptext">Las cajas grises no usan software de Windows;</span></span>
+		<span class="tooltip">they are a completely different technology.<span class="tooltiptext">son de una tecnología completamente diferente.</span></span>
+		<span class="tooltip">But if we manage<span class="tooltiptext">Pero si logramos</span></span>
+		<span class="tooltip">to place a good Windows virus<span class="tooltiptext">poner un virus efectivo de Windows</span></span>
+		<span class="tooltip">on a notebook<span class="tooltiptext">en un ordenador portátil</span></span>
+		<span class="tooltip">that is used by a maintenance engineer<span class="tooltiptext">usado por un ingeniero</span></span>
+		<span class="tooltip">to configure this gray box,<span class="tooltiptext">para configurar esta caja gris,</span></span>
+		<span class="tooltip">then we are in business.<span class="tooltiptext">entonces estamos listos.</span></span>
+		<span class="tooltip">And this is the plot behind Stuxnet.<span class="tooltiptext">Este es el plan detrás de Stuxnet.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So we start with a Windows dropper.<span class="tooltiptext">Comenzamos con un instalador Windows.</span></span>
+		<span class="tooltip">The payload goes onto the gray box,<span class="tooltiptext">La ojiva ingresa a la caja gris,</span></span>
+		<span class="tooltip">damages the centrifuge,<span class="tooltiptext">daña la centrífuga,</span></span>
+		<span class="tooltip">and the Iranian nuclear program is delayed --<span class="tooltiptext">y el programa nuclear iraní es demorado;</span></span>
+		<span class="tooltip">mission accomplished.<span class="tooltiptext">misión cumplida.</span></span>
+		<span class="tooltip">That&#39;s easy, huh?<span class="tooltiptext">Es fácil, ¿eh?</span></span>
+		<span class="tooltip">I want to tell you how we found that out.<span class="tooltiptext">Quiero contarles cómo descubrimos esto.</span></span>
+		<span class="tooltip">When we started our research on Stuxnet six months ago,<span class="tooltiptext">Cuando comenzamos a investigar sobre Stuxnet hace 6 meses,</span></span>
+		<span class="tooltip">it was completely unknown what the purpose of this thing was.<span class="tooltiptext">el propósito era completamente desconocido.</span></span>
+		<span class="tooltip">The only thing that was known<span class="tooltiptext">Lo único que se sabía es que</span></span>
+		<span class="tooltip">is it&#39;s very, very complex on the Windows part, the dropper part,<span class="tooltiptext">es muy, muy complejo en la parte de Windows: el instalador</span></span>
+		<span class="tooltip">used multiple zero-day vulnerabilities.<span class="tooltiptext">usaba múltiples vulnerabilidades día-cero.</span></span>
+		<span class="tooltip">And it seemed to want to do something<span class="tooltiptext">Parecía querer hacer algo</span></span>
+		<span class="tooltip">with these gray boxes, these real-time control systems.<span class="tooltiptext">con estas cajas grises, estos sistemas de control.</span></span>
+		<span class="tooltip">So that got our attention,<span class="tooltiptext">Eso nos llamó la atención,</span></span>
+		<span class="tooltip">and we started a lab project<span class="tooltiptext">y comenzamos un experimento</span></span>
+		<span class="tooltip">where we infected our environment with Stuxnet<span class="tooltiptext">en el que infectamos nuestro entorno con Stuxnet</span></span>
+		<span class="tooltip">and checked this thing out.<span class="tooltiptext">y vimos qué pasaba con esto.</span></span>
+		<span class="tooltip">And then some very funny things happened.<span class="tooltiptext">Entonces pasaron cosas muy extrañas.</span></span>
+		<span class="tooltip">Stuxnet behaved like a lab rat<span class="tooltiptext">Stuxnet se comportaba como una rata de laboratorio</span></span>
+		<span class="tooltip">that didn&#39;t like our cheese --<span class="tooltiptext">a la que no le gustaba nuestro queso:</span></span>
+		<span class="tooltip">sniffed, but didn&#39;t want to eat.<span class="tooltiptext">lo olía, pero no quería comer.</span></span>
+		<span class="tooltip">Didn&#39;t make sense to me.<span class="tooltiptext">No tenía sentido para mí.</span></span>
+		<span class="tooltip">And after we experimented with different flavors of cheese,<span class="tooltiptext">Y luego de experimentar con diferentes sabores de queso,</span></span>
+		<span class="tooltip">I realized, well, this is a directed attack.<span class="tooltiptext">me di cuenta, y pensé: “Esto es un ataque dirigido.</span></span>
+		<span class="tooltip">It&#39;s completely directed.<span class="tooltiptext">Es completamente dirigido.&quot;</span></span>
+		<span class="tooltip">The dropper is prowling actively<span class="tooltiptext">El instalador está buscando activamente</span></span>
+		<span class="tooltip">on the gray box<span class="tooltiptext">en la caja gris</span></span>
+		<span class="tooltip">if a specific configuration is found,<span class="tooltiptext">si encuentra una configuración específica,</span></span>
+		<span class="tooltip">and even if the actual program code that it&#39;s trying to infect<span class="tooltiptext">e incluso si el programa que está tratando de infectar</span></span>
+		<span class="tooltip">is actually running on that target.<span class="tooltiptext">está efectivamente funcionando en ese lugar:</span></span>
+		<span class="tooltip">And if not, Stuxnet does nothing.<span class="tooltiptext">si no, Stuxnet no hace nada.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So that really got my attention,<span class="tooltiptext">Así que eso llamó mi atención,</span></span>
+		<span class="tooltip">and we started to work on this<span class="tooltiptext">y comenzamos a trabajar en esto</span></span>
+		<span class="tooltip">nearly around the clock,<span class="tooltiptext">casi 24 horas al día,</span></span>
+		<span class="tooltip">because I thought, &quot;Well, we don&#39;t know what the target is.<span class="tooltiptext">porque pensé; &quot;No sabemos cuál es el objetivo.&quot;</span></span>
+		<span class="tooltip">It could be, let&#39;s say for example,<span class="tooltiptext">Podría ser, digamos por ejemplo,</span></span>
+		<span class="tooltip">a U.S. power plant,<span class="tooltiptext">una planta de energía de EEUU,</span></span>
+		<span class="tooltip">or a chemical plant in Germany.<span class="tooltiptext">o una planta química en Alemania.</span></span>
+		<span class="tooltip">So we better find out what the target is soon.&quot;<span class="tooltiptext">Mejor que descubriéramos el objetivo pronto.</span></span>
+		<span class="tooltip">So we extracted and decompiled<span class="tooltiptext">Entonces extrajimos y descompilamos</span></span>
+		<span class="tooltip">the attack code,<span class="tooltiptext">el código de ataque,</span></span>
+		<span class="tooltip">and we discovered that it&#39;s structured in two digital bombs --<span class="tooltiptext">y descubrimos que estaba estructurado en 2 bombas digitales:</span></span>
+		<span class="tooltip">a smaller one and a bigger one.<span class="tooltiptext">una pequeña y una grande.</span></span>
+		<span class="tooltip">And we also saw that they are very professionally engineered<span class="tooltiptext">También vimos que estaban armados muy profesionalmente</span></span>
+		<span class="tooltip">by people who obviously had all insider information.<span class="tooltiptext">por gente que obviamente tenía toda la información interna.</span></span>
+		<span class="tooltip">They knew all the bits and bites<span class="tooltiptext">Conocían todos los puntos</span></span>
+		<span class="tooltip">that they had to attack.<span class="tooltiptext">por los que atacar.</span></span>
+		<span class="tooltip">They probably even know the shoe size of the operator.<span class="tooltiptext">Probablemente incluso sepan cuánto calza el operador.</span></span>
+		<span class="tooltip">So they know everything.<span class="tooltiptext">Así que saben todo.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And if you have heard that the dropper of Stuxnet<span class="tooltiptext">Y si han escuchado que el instalador de Stuxnet</span></span>
+		<span class="tooltip">is complex and high-tech,<span class="tooltiptext">es complejo y de alta tecnología,</span></span>
+		<span class="tooltip">let me tell you this:<span class="tooltiptext">déjenme decirles:</span></span>
+		<span class="tooltip">the payload is rocket science.<span class="tooltiptext">la carga es muy compleja.</span></span>
+		<span class="tooltip">It&#39;s way above everything<span class="tooltiptext">Está muy por encima de todo</span></span>
+		<span class="tooltip">that we have ever seen before.<span class="tooltiptext">lo que hayamos visto antes.</span></span>
+		<span class="tooltip">Here you see a sample of this actual attack code.<span class="tooltiptext">Aquí ven una muestra de este código de ataque.</span></span>
+		<span class="tooltip">We are talking about --<span class="tooltiptext">Estamos hablando de</span></span>
+		<span class="tooltip">around about 15,000 lines of code.<span class="tooltiptext">alrededor de 15 mil líneas de código.</span></span>
+		<span class="tooltip">Looks pretty much like old-style assembly language.<span class="tooltiptext">Se parece bastante al viejo lenguaje ensamblador.</span></span>
+		<span class="tooltip">And I want to tell you how we were able<span class="tooltiptext">Quiero contarles cómo pudimos</span></span>
+		<span class="tooltip">to make sense out of this code.<span class="tooltiptext">encontrarle sentido a este código.</span></span>
+		<span class="tooltip">So what we were looking for is, first of all, system function calls,<span class="tooltiptext">Lo que buscábamos al principio eran llamadas a funciones del sistema,</span></span>
+		<span class="tooltip">because we know what they do.<span class="tooltiptext">porque sabemos lo que hacen.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And then we were looking for timers and data structures<span class="tooltiptext">Luego buscábamos temporizadores y estructuras de datos</span></span>
+		<span class="tooltip">and trying to relate them to the real world --<span class="tooltiptext">y tratábamos de relacionarlos con el mundo real,</span></span>
+		<span class="tooltip">to potential real world targets.<span class="tooltiptext">con potenciales objetivos del mundo real.</span></span>
+		<span class="tooltip">So we do need target theories<span class="tooltiptext">Necesitamos teorías sobre destinatarios</span></span>
+		<span class="tooltip">that we can prove or disprove.<span class="tooltiptext">que podamos aprobar o desaprobar.</span></span>
+		<span class="tooltip">In order to get target theories,<span class="tooltiptext">Para llegar a teorías sobre objetivos,</span></span>
+		<span class="tooltip">we remember<span class="tooltiptext">recordamos</span></span>
+		<span class="tooltip">that it&#39;s definitely hardcore sabotage,<span class="tooltiptext">que es definitivamente un sabotaje violento,</span></span>
+		<span class="tooltip">it must be a high-value target<span class="tooltiptext">debe ser un blanco valioso,</span></span>
+		<span class="tooltip">and it is most likely located in Iran,<span class="tooltiptext">y está seguramente ubicado en Irán,</span></span>
+		<span class="tooltip">because that&#39;s where most of the infections had been reported.<span class="tooltiptext">porque es donde la mayoría de las infecciones ha sido reportada.</span></span>
+		<span class="tooltip">Now you don&#39;t find several thousand targets in that area.<span class="tooltiptext">No se encuentran varios miles de objetivos en ese área.</span></span>
+		<span class="tooltip">It basically boils down<span class="tooltiptext">Básicamente se reduce</span></span>
+		<span class="tooltip">to the Bushehr nuclear power plant<span class="tooltiptext">a la planta de energía nuclear de Bushehr</span></span>
+		<span class="tooltip">and to the Natanz fuel enrichment plant.<span class="tooltiptext">y a la planta de enriquecimiento de Natanz.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So I told my assistant,<span class="tooltiptext">Entonces le dije a mi asistente,</span></span>
+		<span class="tooltip">&quot;Get me a list of all centrifuge and power plant experts from our client base.&quot;<span class="tooltiptext">&quot;Tráeme una lista de todos los expertos en centrífugas y plantas de energía entre nuestros clientes.&quot;</span></span>
+		<span class="tooltip">And I phoned them up and picked their brain<span class="tooltiptext">Los llamé y les consulté</span></span>
+		<span class="tooltip">in an effort to match their expertise<span class="tooltiptext">en un esfuerzo por conjugar su experiencia</span></span>
+		<span class="tooltip">with what we found in code and data.<span class="tooltiptext">con lo que encontramos en código y datos.</span></span>
+		<span class="tooltip">And that worked pretty well.<span class="tooltiptext">Y funcionó bastante bien.</span></span>
+		<span class="tooltip">So we were able to associate<span class="tooltiptext">Así que pudimos asociar</span></span>
+		<span class="tooltip">the small digital warhead<span class="tooltiptext">la pequeña ojiva digital</span></span>
+		<span class="tooltip">with the rotor control.<span class="tooltiptext">con el control del rotor.</span></span>
+		<span class="tooltip">The rotor is that moving part within the centrifuge,<span class="tooltiptext">El rotor es esa parte móvil dentro de la centrífuga,</span></span>
+		<span class="tooltip">that black object that you see.<span class="tooltiptext">ese objeto negro que ven.</span></span>
+		<span class="tooltip">And if you manipulate the speed of this rotor,<span class="tooltiptext">Si manejan la velocidad de este rotor,</span></span>
+		<span class="tooltip">you are actually able to crack the rotor<span class="tooltiptext">ciertamente pueden quebrarlo</span></span>
+		<span class="tooltip">and eventually even have the centrifuge explode.<span class="tooltiptext">e incluso hacer que la centrífuga explote.</span></span>
+		<span class="tooltip">What we also saw<span class="tooltiptext">Lo que también vimos</span></span>
+		<span class="tooltip">is that the goal of the attack<span class="tooltiptext">es que la meta del ataque</span></span>
+		<span class="tooltip">was really to do it slowly and creepy --<span class="tooltiptext">era hacerlo lento y desconcertar</span></span>
+		<span class="tooltip">obviously in an effort<span class="tooltiptext">en un obvio esfuerzo</span></span>
+		<span class="tooltip">to drive maintenance engineers crazy,<span class="tooltiptext">por volver locos a los ingenieros de mantenimiento,</span></span>
+		<span class="tooltip">that they would not be able to figure this out quickly.<span class="tooltiptext">para que no pudieran resolver esto rápidamente.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">The big digital warhead -- we had a shot at this<span class="tooltiptext">Intentamos descifrar la ojiva digital grande</span></span>
+		<span class="tooltip">by looking very closely<span class="tooltiptext">observando muy de cerca</span></span>
+		<span class="tooltip">at data and data structures.<span class="tooltiptext">a los datos y sus estructuras.</span></span>
+		<span class="tooltip">So for example, the number 164<span class="tooltiptext">Así, por ejemplo, el número 164</span></span>
+		<span class="tooltip">really stands out in that code;<span class="tooltiptext">sobresale en ese código,</span></span>
+		<span class="tooltip">you can&#39;t overlook it.<span class="tooltiptext">no se puede obviar.</span></span>
+		<span class="tooltip">I started to research scientific literature<span class="tooltiptext">Empecé a investigar literatura científica</span></span>
+		<span class="tooltip">on how these centrifuges<span class="tooltiptext">sobre cómo estas centrífugas</span></span>
+		<span class="tooltip">are actually built in Natanz<span class="tooltiptext">son construidas en Natanz</span></span>
+		<span class="tooltip">and found they are structured<span class="tooltiptext">y encontré que son estructuradas</span></span>
+		<span class="tooltip">in what is called a cascade,<span class="tooltiptext">en lo que se llama una cascada,</span></span>
+		<span class="tooltip">and each cascade holds 164 centrifuges.<span class="tooltiptext">y cada cascada contiene 164 centrífugas.</span></span>
+		<span class="tooltip">So that made sense, that was a match.<span class="tooltiptext">Eso tenía sentido, había una coincidencia.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And it even got better.<span class="tooltiptext">Y se puso mejor aún.</span></span>
+		<span class="tooltip">These centrifuges in Iran<span class="tooltiptext">Estas centrífugas en Irán</span></span>
+		<span class="tooltip">are subdivided into 15, what is called, stages.<span class="tooltiptext">están divididas en 15 partes llamadas etapas.</span></span>
+		<span class="tooltip">And guess what we found in the attack code?<span class="tooltiptext">Y ¿adivinen qué encontramos en el código de ataque?</span></span>
+		<span class="tooltip">An almost identical structure.<span class="tooltiptext">Una estructura casi idéntica.</span></span>
+		<span class="tooltip">So again, that was a real good match.<span class="tooltiptext">Así que de nuevo, eso era una buena coincidencia.</span></span>
+		<span class="tooltip">And this gave us very high confidence for what we were looking at.<span class="tooltiptext">Esto nos dio mucha confianza en entender lo que teníamos entre manos.</span></span>
+		<span class="tooltip">Now don&#39;t get me wrong here, it didn&#39;t go like this.<span class="tooltiptext">Para que no haya malentendidos: no fue así:</span></span>
+		<span class="tooltip">These results have been obtained<span class="tooltiptext">los resultados han sido obtenidos</span></span>
+		<span class="tooltip">over several weeks of really hard labor.<span class="tooltiptext">tras varias semanas de trabajo duro.</span></span>
+		<span class="tooltip">And we often went into just a dead end<span class="tooltiptext">Habitualmente terminábamos en callejones sin salida</span></span>
+		<span class="tooltip">and had to recover.<span class="tooltiptext">y teníamos que volver a empezar.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Anyway, so we figured out<span class="tooltiptext">Aún así, descubrimos</span></span>
+		<span class="tooltip">that both digital warheads<span class="tooltiptext">que ambas ojivas digitales</span></span>
+		<span class="tooltip">were actually aiming at one and the same target,<span class="tooltiptext">apuntaban a un solo y mismo objetivo,</span></span>
+		<span class="tooltip">but from different angles.<span class="tooltiptext">pero desde diferentes ángulos.</span></span>
+		<span class="tooltip">The small warhead is taking one cascade,<span class="tooltiptext">La ojiva pequeña está tomando una cascada,</span></span>
+		<span class="tooltip">and spinning up the rotors and slowing them down,<span class="tooltiptext">y haciendo girar los rotores y ralentizándolos,</span></span>
+		<span class="tooltip">and the big warhead<span class="tooltiptext">y la ojiva grande</span></span>
+		<span class="tooltip">is talking to six cascades<span class="tooltiptext">se comunica con seis cascadas</span></span>
+		<span class="tooltip">and manipulating valves.<span class="tooltiptext">y manipulando válvulas.</span></span>
+		<span class="tooltip">So in all, we are very confident<span class="tooltiptext">En suma, estamos muy confiados</span></span>
+		<span class="tooltip">that we have actually determined what the target is.<span class="tooltiptext">en que hemos determinado cuál es el destinatario.</span></span>
+		<span class="tooltip">It is Natanz, and it is only Natanz.<span class="tooltiptext">Es Natanz, y es sólo Natanz.</span></span>
+		<span class="tooltip">So we don&#39;t have to worry<span class="tooltiptext">No debemos preocuparnos</span></span>
+		<span class="tooltip">that other targets<span class="tooltiptext">de que otros objetivos</span></span>
+		<span class="tooltip">might be hit by Stuxnet.<span class="tooltiptext">sean alcanzados por Stuxnet.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Here&#39;s some very cool stuff that we saw --<span class="tooltiptext">Aquí les muestro unas cosas muy interesantes que vimos,</span></span>
+		<span class="tooltip">really knocked my socks off.<span class="tooltiptext">realmente me impresionaron.</span></span>
+		<span class="tooltip">Down there is the gray box,<span class="tooltiptext">Ahí está la caja gris,</span></span>
+		<span class="tooltip">and on the top you see the centrifuges.<span class="tooltiptext">y arriba se ven las centrífugas.</span></span>
+		<span class="tooltip">Now what this thing does<span class="tooltiptext">Lo que esta cosa hace</span></span>
+		<span class="tooltip">is it intercepts the input values from sensors --<span class="tooltiptext">es interceptar los valores de entrada de los sensores</span></span>
+		<span class="tooltip">so for example, from pressure sensors<span class="tooltiptext">por ejemplo, de los sensores de presión</span></span>
+		<span class="tooltip">and vibration sensors --<span class="tooltiptext">y los sensores de vibración</span></span>
+		<span class="tooltip">and it provides legitimate program code,<span class="tooltiptext">y provee código legítimo,</span></span>
+		<span class="tooltip">which is still running during the attack,<span class="tooltiptext">el cual todavía ejecuta durante el ataque,</span></span>
+		<span class="tooltip">with fake input data.<span class="tooltiptext">con falsos datos de entrada.</span></span>
+		<span class="tooltip">And as a matter of fact, this fake input data<span class="tooltiptext">Y, créase o no, estos datos de entrada falsos</span></span>
+		<span class="tooltip">is actually prerecorded by Stuxnet.<span class="tooltiptext">son pregrabados por Stuxnet.</span></span>
+		<span class="tooltip">So it&#39;s just like from the Hollywood movies<span class="tooltiptext">Es como en las películas de Hollywood</span></span>
+		<span class="tooltip">where during the heist,<span class="tooltiptext">donde, durante el robo,</span></span>
+		<span class="tooltip">the observation camera is fed with prerecorded video.<span class="tooltiptext">la cámara de seguridad se alimenta de video pregrabado.</span></span>
+		<span class="tooltip">That&#39;s cool, huh?<span class="tooltiptext">Es genial ¿eh?</span></span>
+	</p>
+	<p>
+		<span class="tooltip">The idea here is obviously<span class="tooltiptext">La idea aquí es obviamente</span></span>
+		<span class="tooltip">not only to fool the operators in the control room.<span class="tooltiptext">no sólo burlar a los operadores en el cuarto de control.</span></span>
+		<span class="tooltip">It actually is much more dangerous and aggressive.<span class="tooltiptext">Es realmente mucho más peligrosa y agresiva.</span></span>
+		<span class="tooltip">The idea<span class="tooltiptext">La idea</span></span>
+		<span class="tooltip">is to circumvent a digital safety system.<span class="tooltiptext">es burlar un sistema de seguridad digital.</span></span>
+		<span class="tooltip">We need digital safety systems<span class="tooltiptext">Necesitamos sistemas de seguridad digital</span></span>
+		<span class="tooltip">where a human operator could not act quick enough.<span class="tooltiptext">donde un operador humano no podría actuar rápido.</span></span>
+		<span class="tooltip">So for example, in a power plant,<span class="tooltiptext">Por ejemplo, en una planta de energía,</span></span>
+		<span class="tooltip">when your big steam turbine gets too over speed,<span class="tooltiptext">cuando la gran turbina de vapor se pasa de velocidad,</span></span>
+		<span class="tooltip">you must open relief valves within a millisecond.<span class="tooltiptext">se deben abrir válvulas de escape en un milisegundo.</span></span>
+		<span class="tooltip">Obviously, this cannot be done by a human operator.<span class="tooltiptext">Obviamente, esto no puede hacerlo un operador humano.</span></span>
+		<span class="tooltip">So this is where we need digital safety systems.<span class="tooltiptext">Allí es donde necesitamos sistemas de seguridad digital.</span></span>
+		<span class="tooltip">And when they are compromised,<span class="tooltiptext">Y cuando están comprometidos,</span></span>
+		<span class="tooltip">then real bad things can happen.<span class="tooltiptext">entonces pueden pasar cosas malas.</span></span>
+		<span class="tooltip">Your plant can blow up.<span class="tooltiptext">La planta puede explotar.</span></span>
+		<span class="tooltip">And neither your operators nor your safety system will notice it.<span class="tooltiptext">Y ni los operarios ni el sistema de seguridad lo notarán.</span></span>
+		<span class="tooltip">That&#39;s scary.<span class="tooltiptext">Eso asusta.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">But it gets worse.<span class="tooltiptext">Pero puede ser peor.</span></span>
+		<span class="tooltip">And this is very important, what I&#39;m going to say.<span class="tooltiptext">Lo que voy a decir es muy importante.</span></span>
+		<span class="tooltip">Think about this:<span class="tooltiptext">Piensen en esto.</span></span>
+		<span class="tooltip">this attack is generic.<span class="tooltiptext">Este ataque es genérico.</span></span>
+		<span class="tooltip">It doesn&#39;t have anything to do, in specifics,<span class="tooltiptext">No tiene nada que ver, específicamente,</span></span>
+		<span class="tooltip">with centrifuges,<span class="tooltiptext">con centrífugas,</span></span>
+		<span class="tooltip">with uranium enrichment.<span class="tooltiptext">con enriquecimiento de uranio.</span></span>
+		<span class="tooltip">So it would work as well, for example,<span class="tooltiptext">Podría funcionar también, por ejemplo,</span></span>
+		<span class="tooltip">in a power plant<span class="tooltiptext">en una planta de energía,</span></span>
+		<span class="tooltip">or in an automobile factory.<span class="tooltiptext">o en una fábrica automotriz.</span></span>
+		<span class="tooltip">It is generic.<span class="tooltiptext">Es genérico.</span></span>
+		<span class="tooltip">And you don&#39;t have -- as an attacker --<span class="tooltiptext">Y no tienes (como atacante)</span></span>
+		<span class="tooltip">you don&#39;t have to deliver this payload<span class="tooltiptext">que diseminar esta carga</span></span>
+		<span class="tooltip">by a USB stick,<span class="tooltiptext">con una llave USB,</span></span>
+		<span class="tooltip">as we saw it in the case of Stuxnet.<span class="tooltiptext">como vimos en el caso de Stuxnet.</span></span>
+		<span class="tooltip">You could also use conventional worm technology for spreading.<span class="tooltiptext">También podrías usar tecnología convencional de gusanos para diseminarlo.</span></span>
+		<span class="tooltip">Just spread it as wide as possible.<span class="tooltiptext">Diseminarlo lo más posible.</span></span>
+		<span class="tooltip">And if you do that,<span class="tooltiptext">Y si hicieras eso,</span></span>
+		<span class="tooltip">what you end up with<span class="tooltiptext">con lo que terminarías</span></span>
+		<span class="tooltip">is a cyber weapon of mass destruction.<span class="tooltiptext">es con una ciber-arma de destrucción masiva.</span></span>
+		<span class="tooltip">That&#39;s the consequence<span class="tooltiptext">Esa es la consecuencia</span></span>
+		<span class="tooltip">that we have to face.<span class="tooltiptext">que debemos enfrentar.</span></span>
+		<span class="tooltip">So unfortunately,<span class="tooltiptext">Desafortunadamente,</span></span>
+		<span class="tooltip">the biggest number of targets for such attacks<span class="tooltiptext">el mayor número de objetivos para tales ataques</span></span>
+		<span class="tooltip">are not in the Middle East.<span class="tooltiptext">no está en Medio Oriente.</span></span>
+		<span class="tooltip">They&#39;re in the United States and Europe and in Japan.<span class="tooltiptext">Está en los Estados Unidos y en Japón.</span></span>
+		<span class="tooltip">So all of the green areas,<span class="tooltiptext">Todas las áreas verdes</span></span>
+		<span class="tooltip">these are your target-rich environments.<span class="tooltiptext">son espacios con gran número de objetivos.</span></span>
+		<span class="tooltip">We have to face the consequences,<span class="tooltiptext">Debemos enfrentar las consecuencias,</span></span>
+		<span class="tooltip">and we better start to prepare right now.<span class="tooltiptext">y mejor que nos empecemos a preparar ahora.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Thanks.<span class="tooltiptext">Gracias.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Applause)<span class="tooltiptext">(Aplausos)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Chris Anderson: I&#39;ve got a question.<span class="tooltiptext">Chris Anderson: Tengo una pregunta.</span></span>
+		<span class="tooltip">Ralph, it&#39;s been quite widely reported<span class="tooltiptext">Ralph, se ha hecho público en muchos lados</span></span>
+		<span class="tooltip">that people assume that Mossad<span class="tooltiptext">que la gente asume que el Mossad</span></span>
+		<span class="tooltip">is the main entity behind this.<span class="tooltiptext">es la principal entidad detrás de esto.</span></span>
+		<span class="tooltip">Is that your opinion?<span class="tooltiptext">¿Cuál es tu opinión?</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Ralph Langner: Okay, you really want to hear that?<span class="tooltiptext">Ralph Langnet: Okey, ¿realmente quieren escuchar esto?</span></span>
+		<span class="tooltip">Yeah. Okay.<span class="tooltiptext">Sí. Okey.</span></span>
+		<span class="tooltip">My opinion is that the Mossad is involved,<span class="tooltiptext">Mi opinión es que el Mossad está involucrado,</span></span>
+		<span class="tooltip">but that the leading force is not Israel.<span class="tooltiptext">pero el motor no es Israel:</span></span>
+		<span class="tooltip">So the leading force behind that<span class="tooltiptext">el motor detrás de esto</span></span>
+		<span class="tooltip">is the cyber superpower.<span class="tooltiptext">es la superpotencia cibernética.</span></span>
+		<span class="tooltip">There is only one,<span class="tooltiptext">Existe una sola,</span></span>
+		<span class="tooltip">and that&#39;s the United States --<span class="tooltiptext">y ésa es los Estados Unidos,</span></span>
+		<span class="tooltip">fortunately, fortunately.<span class="tooltiptext">afortunadamente, afortunadamente.</span></span>
+		<span class="tooltip">Because otherwise,<span class="tooltiptext">Porque, de otro modo,</span></span>
+		<span class="tooltip">our problems would even be bigger.<span class="tooltiptext">nuestros problemas serían aún mayores.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">CA: Thank you for scaring the living daylights out of us. Thank you, Ralph.<span class="tooltiptext">CA: Gracias por atemorizarnos. Gracias, Ralph.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Applause)<span class="tooltiptext">(Aplausos)</span></span>
+	</p>
+
+	<div class="line"></div>
+	<p>Love our website? Help us keep it ad-free and running smoothly by making a donation today.</p>
+	<p>To donate, simply click the PayPal link below:<p/>
+	<p><a href="https://www.paypal.com/paypalme/otechai" target='_blank'>Donate via PayPal</a></p>
+	<p>Ready to sound like a native speaker? Or better yet, elevate your language skills to the next level? Check out my book : </p>
+	<div style="text-align: center;"> <span><a href="https://amzn.to/3Um79fs" target="_blank" rel=" noopener noreferrer"><img height="160" width="103" typeof="foaf:Image" class="image-style-none" src="../../../static/images/off-the-hook-shaun-clark.jpg" alt="off the hook book by shaun clark"></a></span> </div>
+	<div class="views-field views-field-title" style="text-align: center;"> <span class="field-content"><a href="https://amzn.to/3Um79fs" target="_blank" rel=" noopener noreferrer">Off The Hook: The Ultimate English Slang Dictionary</a></span> </div>
+	<p style="text-align: center;">Or explore our amazing library! <a href="../../../library/1/index.html">HERE</a></p>
+	
+</div>
+<span onclick='topFunction()' id='gotop' title='Go to top'><svg width="32" height="32" viewBox="0 0 100 100">
+	   <path fill="white" d="m50 0c-13.262 0-25.98 5.2695-35.355 14.645s-14.645 22.094-14.645 35.355 5.2695 25.98 14.645 35.355 22.094 14.645 35.355 14.645 25.98-5.2695 35.355-14.645 14.645-22.094 14.645-35.355-5.2695-25.98-14.645-35.355-22.094-14.645-35.355-14.645zm20.832 62.5-20.832-22.457-20.625 22.457c-1.207 0.74219-2.7656 0.57812-3.7891-0.39844-1.0273-0.98047-1.2695-2.5273-0.58594-3.7695l22.918-25c0.60156-0.61328 1.4297-0.96094 2.2891-0.96094 0.86328 0 1.6914 0.34766 2.293 0.96094l22.918 25c0.88672 1.2891 0.6875 3.0352-0.47266 4.0898-1.1562 1.0508-2.9141 1.0859-4.1133 0.078125z"></path>
+	 </svg></span>
+
+	    <div class="footer">
+	        <div class="left"><a href='../../../index.html'>ReadingDB</a></div>
+	        <div class="center"><a href="https://twitter.com/readingdb" class="twitter-link">
+	    <svg class="twitter-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	        <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.58-2.11-9.96-5.02-.42.72-.66 1.56-.66 2.46 0 1.68.85 3.16 2.14 4.02-.79-.02-1.53-.24-2.18-.6v.06c0 2.35 1.67 4.31 3.88 4.76-.4.1-.83.16-1.27.16-.31 0-.62-.03-.92-.08.63 1.96 2.45 3.39 4.61 3.43-1.69 1.32-3.83 2.1-6.15 2.1-.4 0-.8-.02-1.19-.07 2.19 1.4 4.78 2.22 7.57 2.22 9.07 0 14.02-7.52 14.02-14.02 0-.21 0-.41-.01-.61.96-.69 1.79-1.56 2.45-2.55-.88.39-1.83.65-2.82.77z"/>
+	    </svg>
+	</a></div>
+	        <div class="right"><a href='../../../library/1/index.html'>Library</a></div>
+	    </div>
+	<script>
+
+		var mybutton = document.getElementById('gotop');
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+			if (document.documentElement.scrollTop > 20 || document.body.scrollTop > 20) {
+				mybutton.style.display = 'block';
+			} else {
+				mybutton.style.display = 'none';
+			}
+		}
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<script src="../../../static/scripts/script.js"></script>
+</body>
+</html>
+	

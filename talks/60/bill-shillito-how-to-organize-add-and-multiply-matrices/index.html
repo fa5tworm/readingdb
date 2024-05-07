@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+	<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<meta name="description" content="Desbloquea la competencia en inglés con nuestra plataforma innovadora basada en las transcripciones de TED Talks. Sumérgete en un contenido cautivador, accede a traducciones instantáneas y únete a una comunidad global de estudiantes. ¡Comienza tu aventura de lectura hoy mismo! | Unlock English proficiency with our innovative platform powered by TED Talk transcripts. Dive into captivating content, access instant translations, and join a global community of learners. Start your reading adventure today!">
+		<meta name="keywords" content="lectura en inglés, transcripciones de TED Talks, aprendizaje de idiomas, traducciones instantáneas, comunidad global, aventura de lectura, mejorar inglés, mejorar habilidades de lectura, plataforma educativa, recursos de lectura, educación en línea, English reading, TED Talks transcripts, language learning, instant translations, global community, reading adventure, improve English, improve reading skills, educational platform, reading resources, online education, English proficiency, learn English, English learning resources, bilingual education, language exchange, study English online">
+		<link rel="apple-touch-icon" sizes="180x180" href="../../../static/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../../../static/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../../../static/favicons/favicon-16x16.png">
+		<link rel="manifest" href="../../../static/favicons/site.webmanifest">
+		<title>Bill Shillito : How to organize, add and multiply matrices</title>
+		<link rel='stylesheet' href='../../../static/styles/styles.css'>
+	</head>
+	<body>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-R5SK82H490"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-R5SK82H490');
+	</script>
+
+	<h1 class='title'>How to organize, add and multiply matrices</h1>
+	<h2 class='speaker'>Bill Shillito</h2>
+	<div class='transcript books'>
+	<p>Are you ready to improve your English speaking skills, check <a href='https://referral.lingoda.com/6Dztrv'>Lingoda</a> today!</p>
+		<p>
+		<span class="tooltip">By now, I&#39;m sure you know<span class="tooltiptext">Estoy seguro de que ya saben</span></span>
+		<span class="tooltip">that in just about anything you do in life,<span class="tooltiptext">que para cualquier cosa
+que hagan en la vida,</span></span>
+		<span class="tooltip">you need numbers.<span class="tooltiptext">se necesitan números.</span></span>
+		<span class="tooltip">In particular, though,<span class="tooltiptext">En particular</span></span>
+		<span class="tooltip">some fields don&#39;t just need a few numbers,<span class="tooltiptext">en algunas áreas con
+pocos números no alcanza,</span></span>
+		<span class="tooltip">they need lots of them.<span class="tooltiptext">se necesitan muchos números.</span></span>
+		<span class="tooltip">How do you keep track of all those numbers?<span class="tooltiptext">¿Cómo llevar registro de todos esos números?</span></span>
+		<span class="tooltip">Well, mathematicians dating back<span class="tooltiptext">Bueno, ya los matemáticos</span></span>
+		<span class="tooltip">as early as ancient China<span class="tooltiptext">de la antigua China</span></span>
+		<span class="tooltip">came up with a way to represent<span class="tooltiptext">idearon una forma de representar</span></span>
+		<span class="tooltip">arrays of many numbers at once.<span class="tooltiptext">conjuntos de números de una vez.</span></span>
+		<span class="tooltip">Nowadays we call such an array a &quot;matrix,&quot;<span class="tooltiptext">Hoy en día a ese conjunto
+lo llamamos &quot;matriz&quot;</span></span>
+		<span class="tooltip">and many of them hanging out together, &quot;matrices&quot;.<span class="tooltiptext">y cuando hay varias juntas, &quot;matrices&quot;.</span></span>
+		<span class="tooltip">Matrices are everywhere.<span class="tooltiptext">Las matrices están en todos lados.</span></span>
+		<span class="tooltip">They are all around us,<span class="tooltiptext">Estamos rodeados de matrices,</span></span>
+		<span class="tooltip">even now in this very room.<span class="tooltiptext">incluso en esta misma sala.</span></span>
+		<span class="tooltip">Sorry, let&#39;s get back on track.<span class="tooltiptext">Lo siento, retomemos el hilo.</span></span>
+		<span class="tooltip">Matrices really are everywhere, though.<span class="tooltiptext">Las matrices están en todos lados.</span></span>
+		<span class="tooltip">They are used in business,<span class="tooltiptext">Se usan en los negocios,</span></span>
+		<span class="tooltip">economics,<span class="tooltiptext">en economía,</span></span>
+		<span class="tooltip">cryptography,<span class="tooltiptext">en criptografía,</span></span>
+		<span class="tooltip">physics,<span class="tooltiptext">en física,</span></span>
+		<span class="tooltip">electronics,<span class="tooltiptext">en electrónica,</span></span>
+		<span class="tooltip">and computer graphics.<span class="tooltiptext">y en gráficos informáticos.</span></span>
+		<span class="tooltip">One reason matrices are so cool<span class="tooltiptext">Una de las razones de su genialidad</span></span>
+		<span class="tooltip">is that we can pack so much information into them<span class="tooltiptext">es que permiten empaquetar
+mucha información</span></span>
+		<span class="tooltip">and then turn a huge series of different problems<span class="tooltiptext">y entonces reducir varios
+problemas diferentes</span></span>
+		<span class="tooltip">into one single problem.<span class="tooltiptext">a un problema simple.</span></span>
+		<span class="tooltip">So, to use matrices, we need to learn how they work.<span class="tooltiptext">Pero para usar matrices tenemos
+que saber cómo funcionan.</span></span>
+		<span class="tooltip">It turns out, you can treat matrices<span class="tooltiptext">Resulta que se puede
+operar con matrices</span></span>
+		<span class="tooltip">just like regular numbers.<span class="tooltiptext">de igual forma que con los números.</span></span>
+		<span class="tooltip">You can add them,<span class="tooltiptext">Se las puede sumar,</span></span>
+		<span class="tooltip">subtract them,<span class="tooltiptext">restar,</span></span>
+		<span class="tooltip">even multiply them.<span class="tooltiptext">e incluso multiplicar.</span></span>
+		<span class="tooltip">You can&#39;t divide them,<span class="tooltiptext">No se las puede dividir</span></span>
+		<span class="tooltip">but that&#39;s a rabbit hole of its own.<span class="tooltiptext">pero eso es un tema aparte.</span></span>
+		<span class="tooltip">Adding matrices is pretty simple.<span class="tooltiptext">Sumar matrices es bastante simple.</span></span>
+		<span class="tooltip">All you have to do is add the corresponding entries<span class="tooltiptext">Simplemente hay que sumar
+las entradas correspondientes</span></span>
+		<span class="tooltip">in the order they come.<span class="tooltiptext">por orden de llegada.</span></span>
+		<span class="tooltip">So the first entries get added together,<span class="tooltiptext">Las primeras entradas se suman juntas,</span></span>
+		<span class="tooltip">the second entries,<span class="tooltiptext">las segundas entradas,</span></span>
+		<span class="tooltip">the third,<span class="tooltiptext">la tercera,</span></span>
+		<span class="tooltip">all the way down.<span class="tooltiptext">y así siguiendo.</span></span>
+		<span class="tooltip">Of course, your matrices have to be the same size,<span class="tooltiptext">Claro, las matrices deben 
+tener el mismo tamaño,</span></span>
+		<span class="tooltip">but that&#39;s pretty intuitive anyway.<span class="tooltiptext">pero eso es bastante intuitivo
+de todos modos.</span></span>
+		<span class="tooltip">You can also multiply the whole matrix<span class="tooltiptext">Se puede multiplicar toda la matriz</span></span>
+		<span class="tooltip">by a number, called a scalar.<span class="tooltiptext">por un número, llamado escalar,</span></span>
+		<span class="tooltip">Just multiply every entry by that number.<span class="tooltiptext">con solo multiplicar
+cada entrada por ese número.</span></span>
+		<span class="tooltip">But wait, there&#39;s more!<span class="tooltiptext">Pero esperen, ¡hay más!</span></span>
+		<span class="tooltip">You can actually multiply one matrix by another matrix.<span class="tooltiptext">Se puede multiplicar
+una matriz por otra matriz.</span></span>
+		<span class="tooltip">It&#39;s not like adding them, though,<span class="tooltiptext">Pero no es como sumar matrices,</span></span>
+		<span class="tooltip">where you do it entry by entry.<span class="tooltiptext">donde uno suma entrada por entrada.</span></span>
+		<span class="tooltip">It&#39;s more unique<span class="tooltiptext">Es más singular</span></span>
+		<span class="tooltip">and pretty cool once you get the hang of it.<span class="tooltiptext">y bastante genial una vez
+que le tomamos la mano.</span></span>
+		<span class="tooltip">Here&#39;s how it works.<span class="tooltiptext">Funciona así.</span></span>
+		<span class="tooltip">Let&#39;s say you have two matrices.<span class="tooltiptext">Digamos que tenemos dos matrices.</span></span>
+		<span class="tooltip">Let&#39;s make them both two by two,<span class="tooltiptext">Ambas de dos por dos,</span></span>
+		<span class="tooltip">meaning two rows by two columns.<span class="tooltiptext">es decir, dos filas y dos columnas.</span></span>
+		<span class="tooltip">Write the first matrix to the left<span class="tooltiptext">Escribamos la primer
+matriz a la izquierda</span></span>
+		<span class="tooltip">and the second matrix goes next to it<span class="tooltiptext">y la segunda matriz a su lado,</span></span>
+		<span class="tooltip">and translated up a bit,<span class="tooltiptext">y desplacémosla un poco,</span></span>
+		<span class="tooltip">kind of like we are making a table.<span class="tooltiptext">como si estuviésemos haciendo una tabla.</span></span>
+		<span class="tooltip">The product we get when we multiply the matrices together<span class="tooltiptext">El producto que obtenemos
+al multiplicar matrices</span></span>
+		<span class="tooltip">will go right between them.<span class="tooltiptext">irá en el espacio intermedio.</span></span>
+		<span class="tooltip">We&#39;ll also draw some gridlines to help us along.<span class="tooltiptext">Trazaremos una cuadrícula
+para orientarnos.</span></span>
+		<span class="tooltip">Now, look at the first row of the first matrix<span class="tooltiptext">Ahora, veamos la primera fila
+de la primera matriz</span></span>
+		<span class="tooltip">and the first column of the second matrix.<span class="tooltiptext">y la primera columna
+de la segunda matriz.</span></span>
+		<span class="tooltip">See how there&#39;s two numbers in each?<span class="tooltiptext">¿Ven cómo hay dos números en cada una?</span></span>
+		<span class="tooltip">Multiply the first number in the row<span class="tooltiptext">Multipliquemos el primer número de la fila</span></span>
+		<span class="tooltip">by the first number in the column:<span class="tooltiptext">por el primer número de la columna:</span></span>
+		<span class="tooltip">1 times 2 is 2.<span class="tooltiptext">1 por 2 es 2.</span></span>
+		<span class="tooltip">Now do the next ones:<span class="tooltiptext">Ahora los siguientes:</span></span>
+		<span class="tooltip">3 times 3 is 9.<span class="tooltiptext">3 por 3 es 9.</span></span>
+		<span class="tooltip">Now add them up:<span class="tooltiptext">Ahora sumémoslos:</span></span>
+		<span class="tooltip">2 plus 9 is 11.<span class="tooltiptext">2 más 9 es 11.</span></span>
+		<span class="tooltip">Let&#39;s put that number in the top-left position<span class="tooltiptext">Pongamos ese número en
+la esquina superior izquierda</span></span>
+		<span class="tooltip">so that it matches up with the rows and columns<span class="tooltiptext">para que concuerde
+con la fila y la columna</span></span>
+		<span class="tooltip">we used to get it.<span class="tooltiptext">que usamos en el cálculo.</span></span>
+		<span class="tooltip">See how that works?<span class="tooltiptext">¿Ven cómo funciona?</span></span>
+		<span class="tooltip">You can do the same thing to get the other entries.<span class="tooltiptext">Hacemos lo mismo para
+obtener las otras entradas.</span></span>
+		<span class="tooltip">-4 plus 0 is -4.<span class="tooltiptext">-4 más 0 es -4.</span></span>
+		<span class="tooltip">4 plus -3 is 1.<span class="tooltiptext">4 más -3 es 1.</span></span>
+		<span class="tooltip">-8 plus 0 is -8.<span class="tooltiptext">-8 más 0 es -8.</span></span>
+		<span class="tooltip">So, here&#39;s your answer.<span class="tooltiptext">Esta es la respuesta.</span></span>
+		<span class="tooltip">Not all that bad, is it?<span class="tooltiptext">No está mal, ¿no?</span></span>
+		<span class="tooltip">There&#39;s one catch, though.<span class="tooltiptext">Pero hay un truco.</span></span>
+		<span class="tooltip">Just like with addition,<span class="tooltiptext">Al igual que en la suma,</span></span>
+		<span class="tooltip">your matrices have to be the right size.<span class="tooltiptext">las matrices deben tener
+el tamaño correcto.</span></span>
+		<span class="tooltip">Look at these two matrices.<span class="tooltiptext">Veamos estas dos matrices.</span></span>
+		<span class="tooltip">2 times 8 is 16.<span class="tooltiptext">2 por 8 es 16.</span></span>
+		<span class="tooltip">3 times 4 is 12.<span class="tooltiptext">3 por 4 es 12.</span></span>
+		<span class="tooltip">3 times<span class="tooltiptext">3 por...</span></span>
+		<span class="tooltip">wait a minute,<span class="tooltiptext">¡Momento!</span></span>
+		<span class="tooltip">there are no more rows in the second matrix.<span class="tooltiptext">No hay más filas en la segunda matriz.</span></span>
+		<span class="tooltip">We ran out of room.<span class="tooltiptext">Nos quedamos sin espacio.</span></span>
+		<span class="tooltip">So, these matrices can&#39;t be multiplied.<span class="tooltiptext">Estas matrices no se pueden multiplicar.</span></span>
+		<span class="tooltip">The number of columns in the first matrix<span class="tooltiptext">La cantidad de columnas de la primera matriz</span></span>
+		<span class="tooltip">has to be the same as the number of rows in the second matrix.<span class="tooltiptext">tiene que ser igual que la cantidad
+de filas de la segunda matriz.</span></span>
+		<span class="tooltip">As long as you&#39;re careful<span class="tooltiptext">Con solo tener cuidado</span></span>
+		<span class="tooltip">to match up your dimensions right, though,<span class="tooltiptext">de hacer coincidir las dimensiones correctamente,</span></span>
+		<span class="tooltip">it&#39;s pretty easy.<span class="tooltiptext">es bastante fácil.</span></span>
+		<span class="tooltip">Understanding matrix multiplication<span class="tooltiptext">Entonces, la multiplicación de matrices</span></span>
+		<span class="tooltip">is just the beginning, by the way.<span class="tooltiptext">es sólo el comienzo, por cierto.</span></span>
+		<span class="tooltip">There&#39;s so much you can do with them.<span class="tooltiptext">Sirven para muchas cosas.</span></span>
+		<span class="tooltip">For example, let&#39;s say you want<span class="tooltiptext">Por ejemplo, digamos que queremos</span></span>
+		<span class="tooltip">to encrypt a secret message.<span class="tooltiptext">encriptar un mensaje secreto.</span></span>
+		<span class="tooltip">Let&#39;s say it&#39;s &quot;Math rules&quot;.<span class="tooltiptext">Supongamos que dice &quot;Reglas matemáticas&quot;.</span></span>
+		<span class="tooltip">Though, why anybody would want to keep this a secret<span class="tooltiptext">¿Por qué alguien quisiera
+mantener esto en secreto?</span></span>
+		<span class="tooltip">is beyond me.<span class="tooltiptext">No lo sé.</span></span>
+		<span class="tooltip">Letting numbers stand for letters,<span class="tooltiptext">Reemplazando las letras por números,</span></span>
+		<span class="tooltip">you can put the numbers in a matrix<span class="tooltiptext">podemos colocar los números en una matriz</span></span>
+		<span class="tooltip">and then an encryption key in another.<span class="tooltiptext">y en otra matriz,
+la clave de encriptación.</span></span>
+		<span class="tooltip">Multiply them together<span class="tooltiptext">Multiplicamos ambas matrices</span></span>
+		<span class="tooltip">and you&#39;ve got a new encoded matrix.<span class="tooltiptext">y obtenemos una nueva matriz codificada.</span></span>
+		<span class="tooltip">The only way to decode the new matrix<span class="tooltiptext">La única forma de decodificar la nueva matriz</span></span>
+		<span class="tooltip">and read the message<span class="tooltiptext">para leer el mensaje</span></span>
+		<span class="tooltip">is to have the key,<span class="tooltiptext">es teniendo la clave,</span></span>
+		<span class="tooltip">that second matrix.<span class="tooltiptext">esa segunda matriz.</span></span>
+		<span class="tooltip">There&#39;s even a branch of mathematics<span class="tooltiptext">Hay incluso una rama de la matemática</span></span>
+		<span class="tooltip">that uses matrices constantly,<span class="tooltiptext">que usa matrices todo el tiempo</span></span>
+		<span class="tooltip">called Linear Algebra.<span class="tooltiptext">llamada álgebra lineal.</span></span>
+		<span class="tooltip">If you ever get a chance to study Linear Algebra,<span class="tooltiptext">Si alguna vez tienen la oportunidad
+de estudiar álgebra lineal</span></span>
+		<span class="tooltip">do it, it&#39;s pretty awesome.<span class="tooltiptext">háganlo, está muy bueno.</span></span>
+		<span class="tooltip">But just remember,<span class="tooltiptext">Y recuerden,</span></span>
+		<span class="tooltip">once you know how to use matrices,<span class="tooltiptext">una vez que aprenden a usar matrices,</span></span>
+		<span class="tooltip">you can do pretty much anything.<span class="tooltiptext">pueden hacer casi todo.</span></span>
+	</p>
+
+	<div class="line"></div>
+	<p>Love our website? Help us keep it ad-free and running smoothly by making a donation today.</p>
+	<p>To donate, simply click the PayPal link below:<p/>
+	<p><a href="https://www.paypal.com/paypalme/otechai" target='_blank'>Donate via PayPal</a></p>
+	<p>Ready to sound like a native speaker? Or better yet, elevate your language skills to the next level? Check out my book : </p>
+	<div style="text-align: center;"> <span><a href="https://amzn.to/3Um79fs" target="_blank" rel=" noopener noreferrer"><img height="160" width="103" typeof="foaf:Image" class="image-style-none" src="../../../static/images/off-the-hook-shaun-clark.jpg" alt="off the hook book by shaun clark"></a></span> </div>
+	<div class="views-field views-field-title" style="text-align: center;"> <span class="field-content"><a href="https://amzn.to/3Um79fs" target="_blank" rel=" noopener noreferrer">Off The Hook: The Ultimate English Slang Dictionary</a></span> </div>
+	<p style="text-align: center;">Or explore our amazing library! <a href="../../../library/1/index.html">HERE</a></p>
+	
+</div>
+<span onclick='topFunction()' id='gotop' title='Go to top'><svg width="32" height="32" viewBox="0 0 100 100">
+	   <path fill="white" d="m50 0c-13.262 0-25.98 5.2695-35.355 14.645s-14.645 22.094-14.645 35.355 5.2695 25.98 14.645 35.355 22.094 14.645 35.355 14.645 25.98-5.2695 35.355-14.645 14.645-22.094 14.645-35.355-5.2695-25.98-14.645-35.355-22.094-14.645-35.355-14.645zm20.832 62.5-20.832-22.457-20.625 22.457c-1.207 0.74219-2.7656 0.57812-3.7891-0.39844-1.0273-0.98047-1.2695-2.5273-0.58594-3.7695l22.918-25c0.60156-0.61328 1.4297-0.96094 2.2891-0.96094 0.86328 0 1.6914 0.34766 2.293 0.96094l22.918 25c0.88672 1.2891 0.6875 3.0352-0.47266 4.0898-1.1562 1.0508-2.9141 1.0859-4.1133 0.078125z"></path>
+	 </svg></span>
+
+	    <div class="footer">
+	        <div class="left"><a href='../../../index.html'>ReadingDB</a></div>
+	        <div class="center"><a href="https://twitter.com/readingdb" class="twitter-link">
+	    <svg class="twitter-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	        <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.58-2.11-9.96-5.02-.42.72-.66 1.56-.66 2.46 0 1.68.85 3.16 2.14 4.02-.79-.02-1.53-.24-2.18-.6v.06c0 2.35 1.67 4.31 3.88 4.76-.4.1-.83.16-1.27.16-.31 0-.62-.03-.92-.08.63 1.96 2.45 3.39 4.61 3.43-1.69 1.32-3.83 2.1-6.15 2.1-.4 0-.8-.02-1.19-.07 2.19 1.4 4.78 2.22 7.57 2.22 9.07 0 14.02-7.52 14.02-14.02 0-.21 0-.41-.01-.61.96-.69 1.79-1.56 2.45-2.55-.88.39-1.83.65-2.82.77z"/>
+	    </svg>
+	</a></div>
+	        <div class="right"><a href='../../../library/1/index.html'>Library</a></div>
+	    </div>
+	<script>
+
+		var mybutton = document.getElementById('gotop');
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+			if (document.documentElement.scrollTop > 20 || document.body.scrollTop > 20) {
+				mybutton.style.display = 'block';
+			} else {
+				mybutton.style.display = 'none';
+			}
+		}
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<script src="../../../static/scripts/script.js"></script>
+</body>
+</html>
+	
