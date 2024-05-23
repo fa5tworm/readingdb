@@ -18,176 +18,172 @@
 	<h1 class='title'>Animating a photo-real digital face</h1>
 	<h2 class='speaker'>Paul Debevec</h2>
 	<div class='transcript books'>
-	<p>Are you ready to improve your English speaking skills, check <a href='https://referral.lingoda.com/6Dztrv'>Lingoda</a> today!</p>
+	<p>Are you ready to improve your Spanish speaking skills, check <a href='https://referral.lingoda.com/6Dztrv'>Lingoda</a> today!</p>
 		<p>
-		<span class="tooltip">One of the biggest challenges in computer graphics<span class="tooltiptext">Uno de los mayores retos en computación gráfica</span></span>
-		<span class="tooltip">has been being able to create a photo-real,<span class="tooltiptext">ha sido el poder crear un rostro</span></span>
-		<span class="tooltip">digital human face.<span class="tooltiptext">humano digital fotorrealista.</span></span>
-		<span class="tooltip">And one of the reasons it is so difficult is that, unlike aliens and dinosaurs,<span class="tooltiptext">Y una de las razones por las que es tan difícil, a diferencia de alienígenas y dinosaurios,</span></span>
-		<span class="tooltip">we look at human faces every day.<span class="tooltiptext">es porque observamos caras humanas todos los días.</span></span>
-		<span class="tooltip">They are very important to how we communicate with each other.<span class="tooltiptext">Son muy importantes para la forma en que nos comunicamos con los demás.</span></span>
-		<span class="tooltip">As a result, we&#39;re tuned in to the subtlest things<span class="tooltiptext">Como resultado, estamos afinando las cosas más sutiles</span></span>
-		<span class="tooltip">that could possibly be wrong with a computer rendering,<span class="tooltiptext">que probablemente pudieran estar erradas en un renderizado computacional,</span></span>
-		<span class="tooltip">in order to believe whether these things are realistic.<span class="tooltiptext">a fin de considerar si estas cosas son realistas.</span></span>
+		<span class="tooltip">Uno de los mayores retos en computación gráfica<span class="tooltiptext">One of the biggest challenges in computer graphics</span></span>
+		<span class="tooltip">ha sido el poder crear un rostro<span class="tooltiptext">has been being able to create a photo-real,</span></span>
+		<span class="tooltip">humano digital fotorrealista.<span class="tooltiptext">digital human face.</span></span>
+		<span class="tooltip">Y una de las razones por las que es tan difícil, a diferencia de alienígenas y dinosaurios,<span class="tooltiptext">And one of the reasons it is so difficult is that, unlike aliens and dinosaurs,</span></span>
+		<span class="tooltip">es porque observamos caras humanas todos los días.<span class="tooltiptext">we look at human faces every day.</span></span>
+		<span class="tooltip">Son muy importantes para la forma en que nos comunicamos con los demás.<span class="tooltiptext">They are very important to how we communicate with each other.</span></span>
+		<span class="tooltip">Como resultado, estamos afinando las cosas más sutiles<span class="tooltiptext">As a result, we&#39;re tuned in to the subtlest things</span></span>
+		<span class="tooltip">que probablemente pudieran estar erradas en un renderizado computacional,<span class="tooltiptext">that could possibly be wrong with a computer rendering,</span></span>
+		<span class="tooltip">a fin de considerar si estas cosas son realistas.<span class="tooltiptext">in order to believe whether these things are realistic.</span></span>
 	</p>
 	<p>
-		<span class="tooltip">And what I&#39;m going to do in the next five minutes<span class="tooltiptext">Y lo que voy a hacer en los próximos cinco minutos</span></span>
-		<span class="tooltip">is take you through a process<span class="tooltiptext">es llevarles a través de un proceso</span></span>
-		<span class="tooltip">where we tried to create a reasonably photo-realistic computer-generated face,<span class="tooltiptext">donde intentamos crear un rostro generado por computadora razonablemente fotorrealista,</span></span>
-		<span class="tooltip">using some computer graphics technology we&#39;ve developed,<span class="tooltiptext">usando algo de la tecnología de computación gráfica que hemos desarrollado,</span></span>
-		<span class="tooltip">and also some collaborators at a company called Image Metrics.<span class="tooltiptext">y también algunos colaboradores de una compañía llamada Image Metrics.</span></span>
-		<span class="tooltip">And we&#39;re going to try to do a photo-real face<span class="tooltiptext">Y vamos a intentar hacer una cara fotorrealista</span></span>
-		<span class="tooltip">of an actress named Emily O&#39;Brien, who is right there.<span class="tooltiptext">de una actriz llamada Emily O&#39;Brian, quien está justo allí.</span></span>
-		<span class="tooltip">And that&#39;s actually a completely computer-generated rendering of her face.<span class="tooltiptext">Y ese es, de hecho, un renderizado totalmente generado en computadora de su cara.</span></span>
-		<span class="tooltip">By the end of the talk, we&#39;re going to see it move.<span class="tooltiptext">Hacia el final de la charla, lo vamos a ver moverse.</span></span>
+		<span class="tooltip">Y lo que voy a hacer en los próximos cinco minutos<span class="tooltiptext">And what I&#39;m going to do in the next five minutes</span></span>
+		<span class="tooltip">es llevarles a través de un proceso<span class="tooltiptext">is take you through a process</span></span>
+		<span class="tooltip">donde intentamos crear un rostro generado por computadora razonablemente fotorrealista,<span class="tooltiptext">where we tried to create a reasonably photo-realistic computer-generated face,</span></span>
+		<span class="tooltip">usando algo de la tecnología de computación gráfica que hemos desarrollado,<span class="tooltiptext">using some computer graphics technology we&#39;ve developed,</span></span>
+		<span class="tooltip">y también algunos colaboradores de una compañía llamada Image Metrics.<span class="tooltiptext">and also some collaborators at a company called Image Metrics.</span></span>
+		<span class="tooltip">Y vamos a intentar hacer una cara fotorrealista<span class="tooltiptext">And we&#39;re going to try to do a photo-real face</span></span>
+		<span class="tooltip">de una actriz llamada Emily O&#39;Brian, quien está justo allí.<span class="tooltiptext">of an actress named Emily O&#39;Brien, who is right there.</span></span>
+		<span class="tooltip">Y ese es, de hecho, un renderizado totalmente generado en computadora de su cara.<span class="tooltiptext">And that&#39;s actually a completely computer-generated rendering of her face.</span></span>
+		<span class="tooltip">Hacia el final de la charla, lo vamos a ver moverse.<span class="tooltiptext">By the end of the talk, we&#39;re going to see it move.</span></span>
 	</p>
 	<p>
-		<span class="tooltip">The way that we did this is we tried to start with Emily herself,<span class="tooltiptext">La forma en que lo hicimos fue que, para comenzar, ensayamos con la propia Emily,</span></span>
-		<span class="tooltip">who was gracious enough to come to our laboratory<span class="tooltiptext">quien fue tan amable de venir a nuestro laboratorio</span></span>
-		<span class="tooltip">in Marina Del Rey, and sit for a session in Light Stage 5.<span class="tooltiptext">en Marina Del Rey, y posar para una sesión en la Light Stage 5.</span></span>
-		<span class="tooltip">This is a face-scanning sphere, with 156 white LEDs all around<span class="tooltiptext">Ésta es una esfera para escanear rostros, con 156 &quot;LEDs&quot; blancos en todo su contorno,</span></span>
-		<span class="tooltip">that allow us to photograph her<span class="tooltiptext">que nos permite fotografiarla</span></span>
-		<span class="tooltip">in a series of very controlled illumination conditions.<span class="tooltiptext">en una serie de condiciones de iluminación muy controladas.</span></span>
-		<span class="tooltip">And the lighting that we use these days looks something like this.<span class="tooltiptext">Y la iluminación que usamos estos días se ve algo parecida a ésta.</span></span>
-		<span class="tooltip">We shoot all of these photographs in about three seconds.<span class="tooltiptext">Tomamos todas estas fotografías en aproximadamente tres segundos.</span></span>
+		<span class="tooltip">La forma en que lo hicimos fue que, para comenzar, ensayamos con la propia Emily,<span class="tooltiptext">The way that we did this is we tried to start with Emily herself,</span></span>
+		<span class="tooltip">quien fue tan amable de venir a nuestro laboratorio<span class="tooltiptext">who was gracious enough to come to our laboratory</span></span>
+		<span class="tooltip">en Marina Del Rey, y posar para una sesión en la Light Stage 5.<span class="tooltiptext">in Marina Del Rey, and sit for a session in Light Stage 5.</span></span>
+		<span class="tooltip">Ésta es una esfera para escanear rostros, con 156 &quot;LEDs&quot; blancos en todo su contorno,<span class="tooltiptext">This is a face-scanning sphere, with 156 white LEDs all around</span></span>
+		<span class="tooltip">que nos permite fotografiarla<span class="tooltiptext">that allow us to photograph her</span></span>
+		<span class="tooltip">en una serie de condiciones de iluminación muy controladas.<span class="tooltiptext">in a series of very controlled illumination conditions.</span></span>
+		<span class="tooltip">Y la iluminación que usamos estos días se ve algo parecida a ésta.<span class="tooltiptext">And the lighting that we use these days looks something like this.</span></span>
+		<span class="tooltip">Tomamos todas estas fotografías en aproximadamente tres segundos.<span class="tooltiptext">We shoot all of these photographs in about three seconds.</span></span>
 	</p>
 	<p>
-		<span class="tooltip">And we basically capture enough information<span class="tooltiptext">Y básicamente, capturamos suficiente información</span></span>
-		<span class="tooltip">with video projector patterns that drape over the contours of her face,<span class="tooltiptext">con los patrones de video-proyector extendidos sobre los contornos de su cara,</span></span>
-		<span class="tooltip">and different principle directions of light from the light stage,<span class="tooltiptext">y con las direcciones de las diferentes fuentes de luz de la Light Stage,</span></span>
-		<span class="tooltip">to figure out both the coarse-scale<span class="tooltiptext">como para resolver tanto el grano grueso</span></span>
-		<span class="tooltip">and the fine-scale detail of her face.<span class="tooltiptext">como el detalle del grano fino de su cara.</span></span>
-		<span class="tooltip">If we zoom in on this photograph right here,<span class="tooltiptext">Si ampliamos esta fotografía justo aquí,</span></span>
-		<span class="tooltip">we can see it&#39;s a really nice photograph to have of her,<span class="tooltiptext">podemos ver que es una fotografía muy buena de ella,</span></span>
-		<span class="tooltip">because she is lit from absolutely everywhere at the same time<span class="tooltiptext">porque está absolutamente iluminada desde todos lados al mismo tiempo</span></span>
-		<span class="tooltip">to get a nice image of her facial texture.<span class="tooltiptext">para conseguir una buena imagen de su textura facial.</span></span>
+		<span class="tooltip">Y básicamente, capturamos suficiente información<span class="tooltiptext">And we basically capture enough information</span></span>
+		<span class="tooltip">con los patrones de video-proyector extendidos sobre los contornos de su cara,<span class="tooltiptext">with video projector patterns that drape over the contours of her face,</span></span>
+		<span class="tooltip">y con las direcciones de las diferentes fuentes de luz de la Light Stage,<span class="tooltiptext">and different principle directions of light from the light stage,</span></span>
+		<span class="tooltip">como para resolver tanto el grano grueso<span class="tooltiptext">to figure out both the coarse-scale</span></span>
+		<span class="tooltip">como el detalle del grano fino de su cara.<span class="tooltiptext">and the fine-scale detail of her face.</span></span>
+		<span class="tooltip">Si ampliamos esta fotografía justo aquí,<span class="tooltiptext">If we zoom in on this photograph right here,</span></span>
+		<span class="tooltip">podemos ver que es una fotografía muy buena de ella,<span class="tooltiptext">we can see it&#39;s a really nice photograph to have of her,</span></span>
+		<span class="tooltip">porque está absolutamente iluminada desde todos lados al mismo tiempo<span class="tooltiptext">because she is lit from absolutely everywhere at the same time</span></span>
+		<span class="tooltip">para conseguir una buena imagen de su textura facial.<span class="tooltiptext">to get a nice image of her facial texture.</span></span>
 	</p>
 	<p>
-		<span class="tooltip">And in addition, we&#39;ve actually used polarizers on all the lights --<span class="tooltiptext">Y además, en efecto, hemos utilizado polarizadores para todas las luces --</span></span>
-		<span class="tooltip">just like polarized sunglasses can block<span class="tooltiptext">exactamente como los lentes de sol polarizados pueden bloquear</span></span>
-		<span class="tooltip">the glare off of the road,<span class="tooltiptext">el resplandor del pavimento,</span></span>
-		<span class="tooltip">polarizers can block the shine off of the skin,<span class="tooltiptext">los polarizadores pueden bloquear el brillo de la piel,</span></span>
-		<span class="tooltip">so we don&#39;t get all those specular reflections to take this map.<span class="tooltiptext">así que no usamos todos esos reflejos especulares para hacer este mapa.</span></span>
-		<span class="tooltip">Now, if we turn the polarizers around just a little bit,<span class="tooltiptext">Ahora, si giramos los polarizadores sólo un poco,</span></span>
-		<span class="tooltip">we can actually bring that specular reflection<span class="tooltiptext">podemos, realmente, devolver esa reflexión especular</span></span>
-		<span class="tooltip">of the skin back in,<span class="tooltiptext">a la piel,</span></span>
-		<span class="tooltip">and you can see she looks kind of shiny and oily at this point.<span class="tooltiptext">y pueden ver que luce bastante brillante y grasosa en este punto.</span></span>
-		<span class="tooltip">If you take the difference between these two images here,<span class="tooltiptext">Si tomas la diferencia entre estas dos imágenes aquí,</span></span>
-		<span class="tooltip">you can get an image lit from the entire sphere of light<span class="tooltiptext">puedes obtener una imagen iluminada por toda la esfera luz</span></span>
-		<span class="tooltip">of just the shine off of Emily&#39;s skin.<span class="tooltiptext">de únicamente el brillo de la tez de Emily.</span></span>
+		<span class="tooltip">Y además, en efecto, hemos utilizado polarizadores para todas las luces --<span class="tooltiptext">And in addition, we&#39;ve actually used polarizers on all the lights --</span></span>
+		<span class="tooltip">exactamente como los lentes de sol polarizados pueden bloquear<span class="tooltiptext">just like polarized sunglasses can block</span></span>
+		<span class="tooltip">el resplandor del pavimento,<span class="tooltiptext">the glare off of the road,</span></span>
+		<span class="tooltip">los polarizadores pueden bloquear el brillo de la piel,<span class="tooltiptext">polarizers can block the shine off of the skin,</span></span>
+		<span class="tooltip">así que no usamos todos esos reflejos especulares para hacer este mapa.<span class="tooltiptext">so we don&#39;t get all those specular reflections to take this map.</span></span>
+		<span class="tooltip">Ahora, si giramos los polarizadores sólo un poco,<span class="tooltiptext">Now, if we turn the polarizers around just a little bit,</span></span>
+		<span class="tooltip">podemos, realmente, devolver esa reflexión especular<span class="tooltiptext">we can actually bring that specular reflection</span></span>
+		<span class="tooltip">a la piel,<span class="tooltiptext">of the skin back in,</span></span>
+		<span class="tooltip">y pueden ver que luce bastante brillante y grasosa en este punto.<span class="tooltiptext">and you can see she looks kind of shiny and oily at this point.</span></span>
+		<span class="tooltip">Si tomas la diferencia entre estas dos imágenes aquí,<span class="tooltiptext">If you take the difference between these two images here,</span></span>
+		<span class="tooltip">puedes obtener una imagen iluminada por toda la esfera luz<span class="tooltiptext">you can get an image lit from the entire sphere of light</span></span>
+		<span class="tooltip">de únicamente el brillo de la tez de Emily.<span class="tooltiptext">of just the shine off of Emily&#39;s skin.</span></span>
 	</p>
 	<p>
-		<span class="tooltip">I don&#39;t think any photograph like this had ever been taken<span class="tooltiptext">Creo que ninguna fotografía así se había tomado</span></span>
-		<span class="tooltip">before we had done this.<span class="tooltiptext">antes de que hubiésemos hecho ésta.</span></span>
-		<span class="tooltip">And this is very important light to capture,<span class="tooltiptext">Y ésta es una luz muy importante de captar,</span></span>
-		<span class="tooltip">because this is the light that reflects off the first surface of the skin.<span class="tooltiptext">porque es la luz que se refleja en el primer estrato de la piel.</span></span>
-		<span class="tooltip">It doesn&#39;t get underneath the translucent<span class="tooltiptext">No alcanza las capas traslúcidas</span></span>
-		<span class="tooltip">layers of the skin and blur out.<span class="tooltiptext">inferiores de la piel y se dispersa.</span></span>
-		<span class="tooltip">And, as a result, it&#39;s a very good cue<span class="tooltiptext">Y, como resultado, es una referencia muy buena</span></span>
-		<span class="tooltip">to the detailed shape of the skin-pore structure<span class="tooltiptext">para la forma detallada de la estructura de los poros de la piel</span></span>
-		<span class="tooltip">and all of the fine wrinkles that all of us have,<span class="tooltiptext">y la totalidad de finas arrugas que todos tenemos,</span></span>
-		<span class="tooltip">the things that actually make us look like real humans.<span class="tooltiptext">cosas que efectivamente nos hacen lucir como humanos reales.</span></span>
+		<span class="tooltip">Creo que ninguna fotografía así se había tomado<span class="tooltiptext">I don&#39;t think any photograph like this had ever been taken</span></span>
+		<span class="tooltip">antes de que hubiésemos hecho ésta.<span class="tooltiptext">before we had done this.</span></span>
+		<span class="tooltip">Y ésta es una luz muy importante de captar,<span class="tooltiptext">And this is very important light to capture,</span></span>
+		<span class="tooltip">porque es la luz que se refleja en el primer estrato de la piel.<span class="tooltiptext">because this is the light that reflects off the first surface of the skin.</span></span>
+		<span class="tooltip">No alcanza las capas traslúcidas<span class="tooltiptext">It doesn&#39;t get underneath the translucent</span></span>
+		<span class="tooltip">inferiores de la piel y se dispersa.<span class="tooltiptext">layers of the skin and blur out.</span></span>
+		<span class="tooltip">Y, como resultado, es una referencia muy buena<span class="tooltiptext">And, as a result, it&#39;s a very good cue</span></span>
+		<span class="tooltip">para la forma detallada de la estructura de los poros de la piel<span class="tooltiptext">to the detailed shape of the skin-pore structure</span></span>
+		<span class="tooltip">y la totalidad de finas arrugas que todos tenemos,<span class="tooltiptext">and all of the fine wrinkles that all of us have,</span></span>
+		<span class="tooltip">cosas que efectivamente nos hacen lucir como humanos reales.<span class="tooltiptext">the things that actually make us look like real humans.</span></span>
 	</p>
 	<p>
-		<span class="tooltip">So, if we use information that comes off of this specular reflection,<span class="tooltiptext">Bien, si usamos la información proveniente de esta reflexión especular</span></span>
-		<span class="tooltip">we can go from a traditional face scan<span class="tooltiptext">podemos ir de un tradicional rostro escaneado</span></span>
-		<span class="tooltip">that might have the gross contours of the face and the basic shape,<span class="tooltiptext">que podría tener los burods contornos de la cara y la forma básica,</span></span>
-		<span class="tooltip">and augment it with information<span class="tooltiptext">y mejorarlo con la información</span></span>
-		<span class="tooltip">that puts in all of that skin pore structure and fine wrinkles.<span class="tooltiptext">que introduce toda esa estructura de poros y finas arrugas.</span></span>
-		<span class="tooltip">And, even more importantly,<span class="tooltiptext">Y, aún más importante,</span></span>
-		<span class="tooltip">since this is a photometric process that only takes three seconds to capture,<span class="tooltiptext">ya que es un proceso fotométrico que sólo toma tres segundos capturar,</span></span>
-		<span class="tooltip">we can shoot Emily<span class="tooltiptext">podemos fotografiar a Emily</span></span>
-		<span class="tooltip">in just part of an afternoon,<span class="tooltiptext">en apenas parte de una tarde,</span></span>
-		<span class="tooltip">in many different facial poses and facial expressions.<span class="tooltiptext">en poses y expresiones faciales muy diversas .</span></span>
+		<span class="tooltip">Bien, si usamos la información proveniente de esta reflexión especular<span class="tooltiptext">So, if we use information that comes off of this specular reflection,</span></span>
+		<span class="tooltip">podemos ir de un tradicional rostro escaneado<span class="tooltiptext">we can go from a traditional face scan</span></span>
+		<span class="tooltip">que podría tener los burods contornos de la cara y la forma básica,<span class="tooltiptext">that might have the gross contours of the face and the basic shape,</span></span>
+		<span class="tooltip">y mejorarlo con la información<span class="tooltiptext">and augment it with information</span></span>
+		<span class="tooltip">que introduce toda esa estructura de poros y finas arrugas.<span class="tooltiptext">that puts in all of that skin pore structure and fine wrinkles.</span></span>
+		<span class="tooltip">Y, aún más importante,<span class="tooltiptext">And, even more importantly,</span></span>
+		<span class="tooltip">ya que es un proceso fotométrico que sólo toma tres segundos capturar,<span class="tooltiptext">since this is a photometric process that only takes three seconds to capture,</span></span>
+		<span class="tooltip">podemos fotografiar a Emily<span class="tooltiptext">we can shoot Emily</span></span>
+		<span class="tooltip">en apenas parte de una tarde,<span class="tooltiptext">in just part of an afternoon,</span></span>
+		<span class="tooltip">en poses y expresiones faciales muy diversas .<span class="tooltiptext">in many different facial poses and facial expressions.</span></span>
 	</p>
 	<p>
-		<span class="tooltip">So, here you can see her moving her eyes around, moving her mouth around.<span class="tooltiptext">Bien, aquí pueden verla moviendo sus ojos alrededor, moviendo su boca alrededor.</span></span>
-		<span class="tooltip">And these we&#39;re actually going to use to create a photo-real digital character.<span class="tooltiptext">Y estas, efectivamente, vamos a utilizarlas para crear un personaje digital fotorrealista.</span></span>
-		<span class="tooltip">If you take a look at these scans that we have of Emily,<span class="tooltiptext">Si echan una mirada a estas imágenes que obtuvimos de Emily,</span></span>
-		<span class="tooltip">you can see that the human face does an enormous amount of amazing things<span class="tooltiptext">pueden ver que el rostro humano realiza una enorme cantidad de cosas asombrosas</span></span>
-		<span class="tooltip">as it goes into different facial expressions.<span class="tooltiptext">al formar distintas expresiones faciales.</span></span>
-		<span class="tooltip">You can see things. Not only the face shape changes,<span class="tooltiptext">Pueden ver cosas. No solo cambia la forma de la cara,</span></span>
-		<span class="tooltip">but all sorts of different skin buckling and skin wrinkling occurs.<span class="tooltiptext">sino que ocurren todo tipo de plegamientos y fruncimientos de la piel.</span></span>
-		<span class="tooltip">You can see that the skin pore structure changes enormously<span class="tooltiptext">Pueden ver que la estructura porosa de la piel cambia enormemente,</span></span>
-		<span class="tooltip">from stretched skin pores<span class="tooltiptext">desde los poros estirados,</span></span>
-		<span class="tooltip">to the regular skin texture.<span class="tooltiptext">hasta la textura regular de la piel.</span></span>
-		<span class="tooltip">You can see the furrows in the brow and how the microstructure changes there.<span class="tooltiptext">Pueden ver los surcos en el ceño y como cambia la microestructura allí.</span></span>
-		<span class="tooltip">You can see muscles pulling down at flesh to bring her eyebrows down.<span class="tooltiptext">Pueden ver los músculos tirando la carne para llevar sus cejas hacia abajo.</span></span>
-		<span class="tooltip">Her muscles bulging in her forehead when she winces like that.<span class="tooltiptext">Sus músculos sobresaliendo en la frente cuando gesticula así.</span></span>
+		<span class="tooltip">Bien, aquí pueden verla moviendo sus ojos alrededor, moviendo su boca alrededor.<span class="tooltiptext">So, here you can see her moving her eyes around, moving her mouth around.</span></span>
+		<span class="tooltip">Y estas, efectivamente, vamos a utilizarlas para crear un personaje digital fotorrealista.<span class="tooltiptext">And these we&#39;re actually going to use to create a photo-real digital character.</span></span>
+		<span class="tooltip">Si echan una mirada a estas imágenes que obtuvimos de Emily,<span class="tooltiptext">If you take a look at these scans that we have of Emily,</span></span>
+		<span class="tooltip">pueden ver que el rostro humano realiza una enorme cantidad de cosas asombrosas<span class="tooltiptext">you can see that the human face does an enormous amount of amazing things</span></span>
+		<span class="tooltip">al formar distintas expresiones faciales.<span class="tooltiptext">as it goes into different facial expressions.</span></span>
+		<span class="tooltip">Pueden ver cosas. No solo cambia la forma de la cara,<span class="tooltiptext">You can see things. Not only the face shape changes,</span></span>
+		<span class="tooltip">sino que ocurren todo tipo de plegamientos y fruncimientos de la piel.<span class="tooltiptext">but all sorts of different skin buckling and skin wrinkling occurs.</span></span>
+		<span class="tooltip">Pueden ver que la estructura porosa de la piel cambia enormemente,<span class="tooltiptext">You can see that the skin pore structure changes enormously</span></span>
+		<span class="tooltip">desde los poros estirados,<span class="tooltiptext">from stretched skin pores</span></span>
+		<span class="tooltip">hasta la textura regular de la piel.<span class="tooltiptext">to the regular skin texture.</span></span>
+		<span class="tooltip">Pueden ver los surcos en el ceño y como cambia la microestructura allí.<span class="tooltiptext">You can see the furrows in the brow and how the microstructure changes there.</span></span>
+		<span class="tooltip">Pueden ver los músculos tirando la carne para llevar sus cejas hacia abajo.<span class="tooltiptext">You can see muscles pulling down at flesh to bring her eyebrows down.</span></span>
+		<span class="tooltip">Sus músculos sobresaliendo en la frente cuando gesticula así.<span class="tooltiptext">Her muscles bulging in her forehead when she winces like that.</span></span>
 	</p>
 	<p>
-		<span class="tooltip">In addition to this kind of high-resolution geometry,<span class="tooltiptext">Además de este tipo de geometría de alta resolución,</span></span>
-		<span class="tooltip">since it&#39;s all captured with cameras, we&#39;ve got a great texture map to use for the face.<span class="tooltiptext">ya que todo se capturó con cámaras, contamos con un gran mapa de texturas que utilizar para su cara.</span></span>
-		<span class="tooltip">And by looking at how the different color channels of the illumination,<span class="tooltiptext">Y al explorar cómo los diferentes canales de color de la iluminación,</span></span>
-		<span class="tooltip">the red and the green and the blue,<span class="tooltiptext">el rojo, y el verde y el azul,</span></span>
-		<span class="tooltip">diffuse the light differently,<span class="tooltiptext">esparcen la luz diferentemente,</span></span>
-		<span class="tooltip">we can come up with a way of shading the skin on the computer.<span class="tooltiptext">podemos conseguir una forma de matizar la piel en la computadora.</span></span>
-		<span class="tooltip">Then, instead of looking like a plaster mannequin,<span class="tooltiptext">Entonces, en vez de lucir como un maniquí de yeso,</span></span>
-		<span class="tooltip">it actually looks like it&#39;s made out of living human flesh.<span class="tooltiptext">efectivamente, luce como hecho de carne y hueso.</span></span>
+		<span class="tooltip">Además de este tipo de geometría de alta resolución,<span class="tooltiptext">In addition to this kind of high-resolution geometry,</span></span>
+		<span class="tooltip">ya que todo se capturó con cámaras, contamos con un gran mapa de texturas que utilizar para su cara.<span class="tooltiptext">since it&#39;s all captured with cameras, we&#39;ve got a great texture map to use for the face.</span></span>
+		<span class="tooltip">Y al explorar cómo los diferentes canales de color de la iluminación,<span class="tooltiptext">And by looking at how the different color channels of the illumination,</span></span>
+		<span class="tooltip">el rojo, y el verde y el azul,<span class="tooltiptext">the red and the green and the blue,</span></span>
+		<span class="tooltip">esparcen la luz diferentemente,<span class="tooltiptext">diffuse the light differently,</span></span>
+		<span class="tooltip">podemos conseguir una forma de matizar la piel en la computadora.<span class="tooltiptext">we can come up with a way of shading the skin on the computer.</span></span>
+		<span class="tooltip">Entonces, en vez de lucir como un maniquí de yeso,<span class="tooltiptext">Then, instead of looking like a plaster mannequin,</span></span>
+		<span class="tooltip">efectivamente, luce como hecho de carne y hueso.<span class="tooltiptext">it actually looks like it&#39;s made out of living human flesh.</span></span>
 	</p>
 	<p>
-		<span class="tooltip">And this is what we used<span class="tooltiptext">Y esto es lo que hicimos</span></span>
-		<span class="tooltip">to give to the company Image Metrics<span class="tooltiptext">para entregarlo a la compañía Image Metrics</span></span>
-		<span class="tooltip">to create a rigged, digital version of Emily.<span class="tooltiptext">para crear una versión articulada de Emily.</span></span>
-		<span class="tooltip">We&#39;re just seeing the coarse-scale geometry here.<span class="tooltiptext">Estamos apenas viendo la geometría en grueso aquí.</span></span>
-		<span class="tooltip">But they basically created a digital puppet of her,<span class="tooltiptext">Pero, básicamente, crearon un títere digital de ella,</span></span>
-		<span class="tooltip">where you can pull on these various strings,<span class="tooltiptext">donde ustedes pueden halar de las diversas cuerdas,</span></span>
-		<span class="tooltip">and it actually moves her face in ways that are<span class="tooltiptext">y efectivamente, mover su cara en formas que son</span></span>
-		<span class="tooltip">completely consistent with the scans that we took.<span class="tooltiptext">completamente consistentes con las imágenes que tomamos.</span></span>
-		<span class="tooltip">And, in addition to the coarse-scale geometry,<span class="tooltiptext">Y, además de la geometría en grueso,</span></span>
-		<span class="tooltip">they also used all of that detail<span class="tooltiptext">también usaron todo aquel detalle</span></span>
-		<span class="tooltip">to create a set of what are called &quot;displacement maps&quot;<span class="tooltiptext">para crear un juego de los llamados &quot;mapas de desplazamiento&quot;</span></span>
-		<span class="tooltip">that animate as well.<span class="tooltiptext">que también dan animación.</span></span>
-		<span class="tooltip">These are the displacement maps here.<span class="tooltiptext">Estos aquí son los mapas de desplazamiento.</span></span>
-		<span class="tooltip">And you can see those different wrinkles actually show up as she animates.<span class="tooltiptext">Y de hecho, pueden ver esas diversas arrugas manifestándose mientras ella cobra animación.</span></span>
+		<span class="tooltip">Y esto es lo que hicimos<span class="tooltiptext">And this is what we used</span></span>
+		<span class="tooltip">para entregarlo a la compañía Image Metrics<span class="tooltiptext">to give to the company Image Metrics</span></span>
+		<span class="tooltip">para crear una versión articulada de Emily.<span class="tooltiptext">to create a rigged, digital version of Emily.</span></span>
+		<span class="tooltip">Estamos apenas viendo la geometría en grueso aquí.<span class="tooltiptext">We&#39;re just seeing the coarse-scale geometry here.</span></span>
+		<span class="tooltip">Pero, básicamente, crearon un títere digital de ella,<span class="tooltiptext">But they basically created a digital puppet of her,</span></span>
+		<span class="tooltip">donde ustedes pueden halar de las diversas cuerdas,<span class="tooltiptext">where you can pull on these various strings,</span></span>
+		<span class="tooltip">y efectivamente, mover su cara en formas que son<span class="tooltiptext">and it actually moves her face in ways that are</span></span>
+		<span class="tooltip">completamente consistentes con las imágenes que tomamos.<span class="tooltiptext">completely consistent with the scans that we took.</span></span>
+		<span class="tooltip">Y, además de la geometría en grueso,<span class="tooltiptext">And, in addition to the coarse-scale geometry,</span></span>
+		<span class="tooltip">también usaron todo aquel detalle<span class="tooltiptext">they also used all of that detail</span></span>
+		<span class="tooltip">para crear un juego de los llamados &quot;mapas de desplazamiento&quot;<span class="tooltiptext">to create a set of what are called &quot;displacement maps&quot;</span></span>
+		<span class="tooltip">que también dan animación.<span class="tooltiptext">that animate as well.</span></span>
+		<span class="tooltip">Estos aquí son los mapas de desplazamiento.<span class="tooltiptext">These are the displacement maps here.</span></span>
+		<span class="tooltip">Y de hecho, pueden ver esas diversas arrugas manifestándose mientras ella cobra animación.<span class="tooltiptext">And you can see those different wrinkles actually show up as she animates.</span></span>
 	</p>
 	<p>
-		<span class="tooltip">So the next process was then to animate her.<span class="tooltiptext">Así que el siguiente proceso fue darle luego animación a ella.</span></span>
-		<span class="tooltip">We actually used one of her own performances to provide the source data.<span class="tooltiptext">En realidad, usamos una de sus propias actuaciones para estipular los datos originales.</span></span>
-		<span class="tooltip">So, by analyzing this video with computer vision techniques,<span class="tooltiptext">Bien, analizando este video con técnicas de visión por computadora,</span></span>
-		<span class="tooltip">they were able to drive the facial rig<span class="tooltiptext">ellos pudieron manejar el dispositivo facial</span></span>
-		<span class="tooltip">with the computer-generated performance.<span class="tooltiptext">con la ejecución generada en el computador.</span></span>
-		<span class="tooltip">So what you&#39;re going to see now, after this,<span class="tooltiptext">Por lo tanto, lo que van a ver ahora, después de esto,</span></span>
-		<span class="tooltip">is a completely photo-real digital face.<span class="tooltiptext">es un rostro digital completamente fotorrealista.</span></span>
-		<span class="tooltip">We can turn the volume up a little bit if that&#39;s available.<span class="tooltiptext">Podemos subir un poco el volumen si es posible.</span></span>
+		<span class="tooltip">Así que el siguiente proceso fue darle luego animación a ella.<span class="tooltiptext">So the next process was then to animate her.</span></span>
+		<span class="tooltip">En realidad, usamos una de sus propias actuaciones para estipular los datos originales.<span class="tooltiptext">We actually used one of her own performances to provide the source data.</span></span>
+		<span class="tooltip">Bien, analizando este video con técnicas de visión por computadora,<span class="tooltiptext">So, by analyzing this video with computer vision techniques,</span></span>
+		<span class="tooltip">ellos pudieron manejar el dispositivo facial<span class="tooltiptext">they were able to drive the facial rig</span></span>
+		<span class="tooltip">con la ejecución generada en el computador.<span class="tooltiptext">with the computer-generated performance.</span></span>
+		<span class="tooltip">Por lo tanto, lo que van a ver ahora, después de esto,<span class="tooltiptext">So what you&#39;re going to see now, after this,</span></span>
+		<span class="tooltip">es un rostro digital completamente fotorrealista.<span class="tooltiptext">is a completely photo-real digital face.</span></span>
+		<span class="tooltip">Podemos subir un poco el volumen si es posible.<span class="tooltiptext">We can turn the volume up a little bit if that&#39;s available.</span></span>
 	</p>
 	<p>
-		<span class="tooltip">Emily: Image Metrics is a markerless, performance-driven animation company.<span class="tooltiptext">EMILY: Image Metrics es una compañía de animación sin marcadores orientada por resultados.</span></span>
-		<span class="tooltip">We specialize in high-quality facial animation<span class="tooltiptext">Nos especializamos en animación facial de alta calidad</span></span>
-		<span class="tooltip">for video games and films.<span class="tooltiptext">para videojuegos y películas.</span></span>
-		<span class="tooltip">Image Metrics is a markerless, performance-driven animation company.<span class="tooltiptext">Image Metrics es una compañía de animación sin marcadores orientada por resultados.</span></span>
-		<span class="tooltip">We specialize in high quality facial animation<span class="tooltiptext">Nos especializamos en animación facial de alta calidad</span></span>
-		<span class="tooltip">for video games and films.<span class="tooltiptext">para videojuegos y películas.</span></span>
+		<span class="tooltip">EMILY: Image Metrics es una compañía de animación sin marcadores orientada por resultados.<span class="tooltiptext">Emily: Image Metrics is a markerless, performance-driven animation company.</span></span>
+		<span class="tooltip">Nos especializamos en animación facial de alta calidad<span class="tooltiptext">We specialize in high-quality facial animation</span></span>
+		<span class="tooltip">para videojuegos y películas.<span class="tooltiptext">for video games and films.</span></span>
+		<span class="tooltip">Image Metrics es una compañía de animación sin marcadores orientada por resultados.<span class="tooltiptext">Image Metrics is a markerless, performance-driven animation company.</span></span>
+		<span class="tooltip">Nos especializamos en animación facial de alta calidad<span class="tooltiptext">We specialize in high quality facial animation</span></span>
+		<span class="tooltip">para videojuegos y películas.<span class="tooltiptext">for video games and films.</span></span>
 	</p>
 	<p>
-		<span class="tooltip">Paul Debevec: So, if we break that down into layers, here&#39;s that diffuse component<span class="tooltiptext">PAUL DEBEVEC: Bien, si desglosamos eso en capas, aquí está aquel difuso componente</span></span>
-		<span class="tooltip">we saw in the first slide.<span class="tooltiptext">que vimos en la primera diapositiva.</span></span>
-		<span class="tooltip">Here is the specular component animating.<span class="tooltiptext">Aquí está el componente especular en animación.</span></span>
-		<span class="tooltip">You can see all the wrinkles happening there.<span class="tooltiptext">Pueden ver cómo todas las arrugas se presentan allí.</span></span>
-		<span class="tooltip">And there is the underlying wireframe mesh.<span class="tooltiptext">Y allí está la malla de la armadura lineal subyacente.</span></span>
-		<span class="tooltip">And that is Emily herself.<span class="tooltiptext">Y esa es la propia Emily.</span></span>
+		<span class="tooltip">PAUL DEBEVEC: Bien, si desglosamos eso en capas, aquí está aquel difuso componente<span class="tooltiptext">Paul Debevec: So, if we break that down into layers, here&#39;s that diffuse component</span></span>
+		<span class="tooltip">que vimos en la primera diapositiva.<span class="tooltiptext">we saw in the first slide.</span></span>
+		<span class="tooltip">Aquí está el componente especular en animación.<span class="tooltiptext">Here is the specular component animating.</span></span>
+		<span class="tooltip">Pueden ver cómo todas las arrugas se presentan allí.<span class="tooltiptext">You can see all the wrinkles happening there.</span></span>
+		<span class="tooltip">Y allí está la malla de la armadura lineal subyacente.<span class="tooltiptext">And there is the underlying wireframe mesh.</span></span>
+		<span class="tooltip">Y esa es la propia Emily.<span class="tooltiptext">And that is Emily herself.</span></span>
 	</p>
 	<p>
-		<span class="tooltip">Now, where are we going with this here?<span class="tooltiptext">Ahora, ¿adónde vamos con esto?</span></span>
-		<span class="tooltip">We&#39;ve gone a little bit beyond Light Stage 5. This is Light Stage 6,<span class="tooltiptext">Hemos ido un poquito más allá de la Light Stage 5. Ésta es Light Stage 6.</span></span>
-		<span class="tooltip">and we&#39;re looking at taking this technology<span class="tooltiptext">Y estamos estudiando usar esta tecnología</span></span>
-		<span class="tooltip">and applying it to whole human bodies.<span class="tooltiptext">y aplicarla a cuerpos humanos enteros.</span></span>
-		<span class="tooltip">This is Bruce Lawmen, one of our researchers in the group,<span class="tooltiptext">Éste es Bruce Lawmen, uno de nuestros investigadores en el equipo,</span></span>
-		<span class="tooltip">who graciously agreed to get captured running in the Light Stage.<span class="tooltiptext">quien gentilmente aceptó ser captado al correr en la Light Stage.</span></span>
-		<span class="tooltip">And let&#39;s take a look at a computer-generated version<span class="tooltiptext">Y vamos a echar un vistazo a la versión generada por computadora</span></span>
-		<span class="tooltip">of Bruce, running in a new environment.<span class="tooltiptext">de Bruce, corriendo en un nuevo ambiente.</span></span>
-		<span class="tooltip">And thank you very much.<span class="tooltiptext">Y muchísimas gracias.</span></span>
-		<span class="tooltip">(Applause)<span class="tooltiptext">Aplausos</span></span>
+		<span class="tooltip">Ahora, ¿adónde vamos con esto?<span class="tooltiptext">Now, where are we going with this here?</span></span>
+		<span class="tooltip">Hemos ido un poquito más allá de la Light Stage 5. Ésta es Light Stage 6.<span class="tooltiptext">We&#39;ve gone a little bit beyond Light Stage 5. This is Light Stage 6,</span></span>
+		<span class="tooltip">Y estamos estudiando usar esta tecnología<span class="tooltiptext">and we&#39;re looking at taking this technology</span></span>
+		<span class="tooltip">y aplicarla a cuerpos humanos enteros.<span class="tooltiptext">and applying it to whole human bodies.</span></span>
+		<span class="tooltip">Éste es Bruce Lawmen, uno de nuestros investigadores en el equipo,<span class="tooltiptext">This is Bruce Lawmen, one of our researchers in the group,</span></span>
+		<span class="tooltip">quien gentilmente aceptó ser captado al correr en la Light Stage.<span class="tooltiptext">who graciously agreed to get captured running in the Light Stage.</span></span>
+		<span class="tooltip">Y vamos a echar un vistazo a la versión generada por computadora<span class="tooltiptext">And let&#39;s take a look at a computer-generated version</span></span>
+		<span class="tooltip">de Bruce, corriendo en un nuevo ambiente.<span class="tooltiptext">of Bruce, running in a new environment.</span></span>
+		<span class="tooltip">Y muchísimas gracias.<span class="tooltiptext">And thank you very much.</span></span>
+		<span class="tooltip">Aplausos<span class="tooltiptext">(Applause)</span></span>
 	</p>
 
 	<div class="line"></div>
-	<p>Love our website? Help us keep it ad-free and running smoothly by making a donation today.</p>
+	<p>Enjoying my website? Your donation helps maintain its ad-free experience and smooth operation. Your support is truly appreciated and helps us continue providing quality content. Thank you for considering a donation!</p>
 	<p>To donate, simply click the PayPal link below:<p/>
 	<p><a href="https://www.paypal.com/paypalme/otechai" target='_blank'>Donate via PayPal</a></p>
-	<p>Ready to sound like a native speaker? Or better yet, elevate your language skills to the next level? Check out my book : </p>
-	<div style="text-align: center;"> <span><a href="https://amzn.to/3Um79fs" target="_blank" rel=" noopener noreferrer"><img height="160" width="103" typeof="foaf:Image" class="image-style-none" src="../../../static/images/off-the-hook-shaun-clark.jpg" alt="off the hook book by shaun clark"></a></span> </div>
-	<div class="views-field views-field-title" style="text-align: center;"> <span class="field-content"><a href="https://amzn.to/3Um79fs" target="_blank" rel=" noopener noreferrer">Off The Hook: The Ultimate English Slang Dictionary</a></span> </div>
-	<p style="text-align: center;">Or explore our amazing library! <a href="../../../library/1/index.html">HERE</a></p>
 	
 </div>
 <span onclick='topFunction()' id='gotop' title='Go to top'><svg width="32" height="32" viewBox="0 0 100 100">
@@ -201,7 +197,7 @@
 	        <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.58-2.11-9.96-5.02-.42.72-.66 1.56-.66 2.46 0 1.68.85 3.16 2.14 4.02-.79-.02-1.53-.24-2.18-.6v.06c0 2.35 1.67 4.31 3.88 4.76-.4.1-.83.16-1.27.16-.31 0-.62-.03-.92-.08.63 1.96 2.45 3.39 4.61 3.43-1.69 1.32-3.83 2.1-6.15 2.1-.4 0-.8-.02-1.19-.07 2.19 1.4 4.78 2.22 7.57 2.22 9.07 0 14.02-7.52 14.02-14.02 0-.21 0-.41-.01-.61.96-.69 1.79-1.56 2.45-2.55-.88.39-1.83.65-2.82.77z"/>
 	    </svg>
 	</a></div>
-	        <div class="right"><a href='../../../library/1/index.html'>Library</a></div>
+	        <div class="right"><a href='https://www.paypal.com/paypalme/otechai'>Donate</a></div>
 	    </div>
 	<script>
 

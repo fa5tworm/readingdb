@@ -18,231 +18,195 @@
 	<h1 class='title'>How to manage your time more effectively (according to machines)</h1>
 	<h2 class='speaker'>Brian Christian</h2>
 	<div class='transcript books'>
-	<p>Are you ready to improve your English speaking skills, check <a href='https://referral.lingoda.com/6Dztrv'>Lingoda</a> today!</p>
+	<p>Are you ready to improve your Spanish speaking skills, check <a href='https://referral.lingoda.com/6Dztrv'>Lingoda</a> today!</p>
 		<p>
-		<span class="tooltip">In the summer of 1997,<span class="tooltiptext">En el verano de 1997,</span></span>
-		<span class="tooltip">NASA&#39;s Pathfinder spacecraft landed 
-on the surface of Mars,<span class="tooltiptext">la nave &quot;Pathfinder&quot; de la NASA
-descendió en la superficie de Marte,</span></span>
-		<span class="tooltip">and began transmitting incredible,
-iconic images back to Earth.<span class="tooltiptext">e increíblemente transmitió
-imágenes icónicas a la Tierra.</span></span>
-		<span class="tooltip">But several days in, 
-something went terribly wrong.<span class="tooltiptext">Después de algunos días,
-ocurrió algo terrible.</span></span>
-		<span class="tooltip">The transmissions stopped.<span class="tooltiptext">Las transmisiones se detuvieron.</span></span>
-		<span class="tooltip">Pathfinder was, in effect, 
-procrastinating:<span class="tooltiptext">El &quot;Pathfinder&quot; de hecho
-estaba procrastinando:</span></span>
-		<span class="tooltip">keeping itself fully occupied 
-but failing to do its most important work.<span class="tooltiptext">manteniéndose ocupado sin hacer
-su trabajo más importante.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">What was going on?<span class="tooltiptext">¿Qué estaba sucediendo?</span></span>
-		<span class="tooltip">There was a bug, it turned out, 
-in its scheduler.<span class="tooltiptext">Resulta ser que había un error
-de programación en el planificador.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">Every operating system has something 
-called the scheduler<span class="tooltiptext">Cada sistema operativo
-tiene algo llamado el planificador</span></span>
-		<span class="tooltip">that tells the CPU how long
-to work on each task before switching,<span class="tooltiptext">que le dice a la CPU cuánto tiempo
-trabajar en una tarea antes de cambiar,</span></span>
-		<span class="tooltip">and what to switch to.<span class="tooltiptext">y a qué cambiar.</span></span>
-		<span class="tooltip">Done right, computers move so fluidly 
-between their various responsibilities,<span class="tooltiptext">Hecho adecuadamente, los computadores
-cambian las tareas de forma fluida,</span></span>
-		<span class="tooltip">they give the illusion 
-of doing everything simultaneously.<span class="tooltiptext">dando la ilusión de que hacen
-todo simultáneamente.</span></span>
-		<span class="tooltip">But we all know what happens
-when things go wrong.<span class="tooltiptext">Pero todos sabemos lo que sucede
-cuando las cosas salen mal.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">This should give us, if nothing else, 
-some measure of consolation.<span class="tooltiptext">Esto debería darnos algo de consuelo.</span></span>
-		<span class="tooltip">Even computers get overwhelmed sometimes.<span class="tooltiptext">Incluso los computadores
-son abrumados algunas veces.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">Maybe learning about the computer science 
-of scheduling<span class="tooltiptext">Posiblemente aprender la ciencia
-de la planificación informática</span></span>
-		<span class="tooltip">can give us some ideas about our own
-human struggles with time.<span class="tooltiptext">puede darnos una idea de cómo
-los humanos luchamos con el tiempo.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">One of the first insights is that all 
-the time you spend prioritizing your work<span class="tooltiptext">Una de las primeras ideas es que el tiempo
-gastado en priorizar el trabajo</span></span>
-		<span class="tooltip">is time you aren&#39;t spending doing it.<span class="tooltiptext">es tiempo que no se gasta haciéndolo.</span></span>
-		<span class="tooltip">For instance, let&#39;s say when you check 
-your inbox, you scan all the messages,<span class="tooltiptext">Por ejemplo, al revisar el email,
-echar un vistazo a todos los mensajes,</span></span>
-		<span class="tooltip">choosing which is the most important.<span class="tooltiptext">para elegir cuál es el más importante.</span></span>
-		<span class="tooltip">Once you&#39;ve dealt with that one, 
-you repeat.<span class="tooltiptext">Una vez resuelto el correo,
-repite la tarea.</span></span>
-		<span class="tooltip">Seems sensible, 
-but there&#39;s a problem here.<span class="tooltiptext">Parece sensato, pero hay un problema.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">This is what&#39;s known 
-as a quadratic-time algorithm.<span class="tooltiptext">Esto se llama un algoritmo
-de tiempo cuadrático.</span></span>
-		<span class="tooltip">With an inbox that&#39;s twice as
-full, these passes will take twice as long<span class="tooltiptext">Con una bandeja el doble de llena,
-estos pasos toman el doble de tiempo</span></span>
-		<span class="tooltip">and you&#39;ll need to do 
-twice as many of them!<span class="tooltiptext">y necesitarás hacer el doble de trabajo.</span></span>
-		<span class="tooltip">This means four times the work.<span class="tooltiptext">Es decir 4 veces el mismo trabajo.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">The programmers 
-of the operating system Linux<span class="tooltiptext">Los programadores
-del sistema operativo Linux</span></span>
-		<span class="tooltip">encountered a similar problem in 2003.<span class="tooltiptext">encontraron un problema
-similar en el 2003.</span></span>
-		<span class="tooltip">Linux would rank every single 
-one of its tasks in order of importance,<span class="tooltiptext">Linux organizaba todas las tareas
-en orden de importancia,</span></span>
-		<span class="tooltip">and sometimes spent more time 
-ranking tasks than doing them.<span class="tooltiptext">y algunas veces gastaba más tiempo
-organizándolas que ejecutándolas.</span></span>
-		<span class="tooltip">The programmers’ counterintuitive solution
-was to replace this full ranking<span class="tooltiptext">La solución de los programadores
-fue reemplazar la organización</span></span>
-		<span class="tooltip">with a limited number 
-of priority “buckets.”<span class="tooltiptext">con un número limitado
-de grupos prioritarios.</span></span>
-		<span class="tooltip">The system was less precise 
-about what to do next<span class="tooltiptext">El sistema era menos preciso
-en qué hacer a continuación</span></span>
-		<span class="tooltip">but more than made up for it 
-by spending more time making progress.<span class="tooltiptext">pero recuperaba con creces
-el tiempo ejecutando tareas.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">So with your emails, insisting on always 
-doing the very most important thing first<span class="tooltiptext">Entonces con la bandeja, hacer
-la tarea más importante primero</span></span>
-		<span class="tooltip">could lead to a meltdown.<span class="tooltiptext">podría llevar a un colapso.</span></span>
-		<span class="tooltip">Waking up to an inbox three times fuller 
-than normal<span class="tooltiptext">Al encontrar una bandeja llena
-3 veces más de lo normal</span></span>
-		<span class="tooltip">could take nine times longer to clear.<span class="tooltiptext">podría llevar 9 veces más tiempo limpiarla.</span></span>
-		<span class="tooltip">You’d be better off replying 
-in chronological order, or even at random!<span class="tooltiptext">¡Sería mejor responderlos en orden
-cronológico o incluso aleatoriamente!</span></span>
-		<span class="tooltip">Surprisingly, sometimes giving up 
-on doing things in the perfect order<span class="tooltiptext">Sorprendentemente, dejar
-de hacer cosas en orden perfecto</span></span>
-		<span class="tooltip">may be the key to getting them done.<span class="tooltiptext">puede ser la clave para terminarlas.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">Another insight that emerges 
-from computer scheduling<span class="tooltiptext">Otra idea que emerge
-de la programación computacional</span></span>
-		<span class="tooltip">has to do with one of the most prevalent 
-features of modern life: interruptions.<span class="tooltiptext">tiene que ver con una característica
-de la vida moderna: la interrupción.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">When a computer goes 
-from one task to another,<span class="tooltiptext">Cuando un computador
-cambia de una tarea a otra,</span></span>
-		<span class="tooltip">it has to do what&#39;s called 
-a context switch,<span class="tooltiptext">tiene que hacer un cambio de contexto,</span></span>
-		<span class="tooltip">bookmarking its place in one task,<span class="tooltiptext">marcar su lugar en una tarea,</span></span>
-		<span class="tooltip">moving old data out of its memory 
-and new data in.<span class="tooltiptext">mover los datos antiguos
-de la memoria y traer nuevos datos.</span></span>
-		<span class="tooltip">Each of these actions comes at a cost.<span class="tooltiptext">Cada acción tiene un costo.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">The insight here is that there’s 
-a fundamental tradeoff<span class="tooltiptext">La idea es que hay
-un intercambio fundamental</span></span>
-		<span class="tooltip">between productivity and responsiveness.<span class="tooltiptext">entre productividad 
-y capacidad de respuesta.</span></span>
-		<span class="tooltip">Getting serious work done 
-means minimizing context switches.<span class="tooltiptext">Hacer un trabajo serio significa
-minimizar cambios de contexto.</span></span>
-		<span class="tooltip">But being responsive means reacting 
-anytime something comes up.<span class="tooltiptext">Pero responder significa reaccionar
-cada vez que algo sucede.</span></span>
-		<span class="tooltip">These two principles 
-are fundamentally in tension.<span class="tooltiptext">Estos dos principios son
-fundamentalmente opuestos.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">Recognizing this tension allows us<span class="tooltiptext">Reconocer esta oposición permite</span></span>
-		<span class="tooltip">to decide where 
-we want to strike that balance.<span class="tooltiptext">decidir donde atacar ese balance.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">The obvious solution 
-is to minimize interruptions.<span class="tooltiptext">La solución obvia es minimizar
-las interrupciones.</span></span>
-		<span class="tooltip">The less obvious one is to group them.<span class="tooltiptext">La menos obvia es agruparlas.</span></span>
-		<span class="tooltip">If no notification 
-or email requires a response<span class="tooltiptext">Si ninguna notificación o email
-requiere una respuesta</span></span>
-		<span class="tooltip">more urgently than once an hour, say,<span class="tooltiptext">en menos de una hora, digamos,</span></span>
-		<span class="tooltip">then that’s exactly how often 
-you should check them. No more.<span class="tooltiptext">entonces esa es la frecuencia
-para revisarlos. No más.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">In computer science, this idea goes by 
-the name of interrupt coalescing.<span class="tooltiptext">En la informática, esta idea 
-se llama interrupción moderada.</span></span>
-		<span class="tooltip">Rather than dealing with 
-things as they come up –<span class="tooltiptext">en lugar de lidiar con las cosas
-a medida que surgen</span></span>
-		<span class="tooltip">Oh, the mouse was moved?<span class="tooltiptext">-- ¿Se movió el ratón?</span></span>
-		<span class="tooltip">A key was pressed?<span class="tooltiptext">¿Una tecla fue presionada?</span></span>
-		<span class="tooltip">More of that file downloaded? –<span class="tooltiptext">¿Más archivos descargados? --</span></span>
-		<span class="tooltip">the system groups these 
-interruptions together<span class="tooltiptext">el sistema agrupa estas interrupciones</span></span>
-		<span class="tooltip">based on how long they can afford to wait.<span class="tooltiptext">basado en cuánto tiempo pueden esperar.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">In 2013, interrupt coalescing<span class="tooltiptext">En 2013, la interrupción moderada</span></span>
-		<span class="tooltip">triggered a massive improvement 
-in laptop battery life.<span class="tooltiptext">incrementó la vida de la batería
-de los computadores portátiles.</span></span>
-		<span class="tooltip">This is because deferring interruptions 
-lets a system check everything at once,<span class="tooltiptext">Porque aplazar interrupciones permite
-que el sistema revise todo a la vez,</span></span>
-		<span class="tooltip">then quickly re-enter a low-power state.<span class="tooltiptext">y luego entrar en estado
-de bajo consumo de energía.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">As with computers, so it is with us.<span class="tooltiptext">Al igual que con los computadores,
-también lo es con nosotros.</span></span>
-		<span class="tooltip">Perhaps adopting a similar approach<span class="tooltiptext">Tal vez adoptar un enfoque similar</span></span>
-		<span class="tooltip">might allow us users 
-to reclaim our own attention,<span class="tooltiptext">puede permitirnos como usuarios 
-recuperar nuestra atención,</span></span>
-		<span class="tooltip">and give us back one of the things
-that feels so rare in modern life: rest.<span class="tooltiptext">y recuperar una de las cosas que parece
-extraña en la vida moderna: el descanso.</span></span>
+		<span class="tooltip">En el verano de 1997,<span class="tooltiptext">In the summer of 1997,</span></span>
+		<span class="tooltip">la nave &quot;Pathfinder&quot; de la NASA
+descendió en la superficie de Marte,<span class="tooltiptext">NASA&#39;s Pathfinder spacecraft landed 
+on the surface of Mars,</span></span>
+		<span class="tooltip">e increíblemente transmitió
+imágenes icónicas a la Tierra.<span class="tooltiptext">and began transmitting incredible,
+iconic images back to Earth.</span></span>
+		<span class="tooltip">Después de algunos días,
+ocurrió algo terrible.<span class="tooltiptext">But several days in, 
+something went terribly wrong.</span></span>
+		<span class="tooltip">Las transmisiones se detuvieron.<span class="tooltiptext">The transmissions stopped.</span></span>
+		<span class="tooltip">El &quot;Pathfinder&quot; de hecho
+estaba procrastinando:<span class="tooltiptext">Pathfinder was, in effect, 
+procrastinating:</span></span>
+		<span class="tooltip">manteniéndose ocupado sin hacer
+su trabajo más importante.<span class="tooltiptext">keeping itself fully occupied 
+but failing to do its most important work.</span></span>
+		<span class="tooltip">¿Qué estaba sucediendo?<span class="tooltiptext">What was going on?</span></span>
+		<span class="tooltip">Resulta ser que había un error
+de programación en el planificador.<span class="tooltiptext">There was a bug, it turned out, 
+in its scheduler.</span></span>
+		<span class="tooltip">Cada sistema operativo
+tiene algo llamado el planificador<span class="tooltiptext">Every operating system has something 
+called the scheduler</span></span>
+		<span class="tooltip">que le dice a la CPU cuánto tiempo
+trabajar en una tarea antes de cambiar,<span class="tooltiptext">that tells the CPU how long
+to work on each task before switching,</span></span>
+		<span class="tooltip">y a qué cambiar.<span class="tooltiptext">and what to switch to.</span></span>
+		<span class="tooltip">Hecho adecuadamente, los computadores
+cambian las tareas de forma fluida,<span class="tooltiptext">Done right, computers move so fluidly 
+between their various responsibilities,</span></span>
+		<span class="tooltip">dando la ilusión de que hacen
+todo simultáneamente.<span class="tooltiptext">they give the illusion 
+of doing everything simultaneously.</span></span>
+		<span class="tooltip">Pero todos sabemos lo que sucede
+cuando las cosas salen mal.<span class="tooltiptext">But we all know what happens
+when things go wrong.</span></span>
+		<span class="tooltip">Esto debería darnos algo de consuelo.<span class="tooltiptext">This should give us, if nothing else, 
+some measure of consolation.</span></span>
+		<span class="tooltip">Incluso los computadores
+son abrumados algunas veces.<span class="tooltiptext">Even computers get overwhelmed sometimes.</span></span>
+		<span class="tooltip">Posiblemente aprender la ciencia
+de la planificación informática<span class="tooltiptext">Maybe learning about the computer science 
+of scheduling</span></span>
+		<span class="tooltip">puede darnos una idea de cómo
+los humanos luchamos con el tiempo.<span class="tooltiptext">can give us some ideas about our own
+human struggles with time.</span></span>
+		<span class="tooltip">Una de las primeras ideas es que el tiempo
+gastado en priorizar el trabajo<span class="tooltiptext">One of the first insights is that all 
+the time you spend prioritizing your work</span></span>
+		<span class="tooltip">es tiempo que no se gasta haciéndolo.<span class="tooltiptext">is time you aren&#39;t spending doing it.</span></span>
+		<span class="tooltip">Por ejemplo, al revisar el email,
+echar un vistazo a todos los mensajes,<span class="tooltiptext">For instance, let&#39;s say when you check 
+your inbox, you scan all the messages,</span></span>
+		<span class="tooltip">para elegir cuál es el más importante.<span class="tooltiptext">choosing which is the most important.</span></span>
+		<span class="tooltip">Una vez resuelto el correo,
+repite la tarea.<span class="tooltiptext">Once you&#39;ve dealt with that one, 
+you repeat.</span></span>
+		<span class="tooltip">Parece sensato, pero hay un problema.<span class="tooltiptext">Seems sensible, 
+but there&#39;s a problem here.</span></span>
+		<span class="tooltip">Esto se llama un algoritmo
+de tiempo cuadrático.<span class="tooltiptext">This is what&#39;s known 
+as a quadratic-time algorithm.</span></span>
+		<span class="tooltip">Con una bandeja el doble de llena,
+estos pasos toman el doble de tiempo<span class="tooltiptext">With an inbox that&#39;s twice as
+full, these passes will take twice as long</span></span>
+		<span class="tooltip">y necesitarás hacer el doble de trabajo.<span class="tooltiptext">and you&#39;ll need to do 
+twice as many of them!</span></span>
+		<span class="tooltip">Es decir 4 veces el mismo trabajo.<span class="tooltiptext">This means four times the work.</span></span>
+		<span class="tooltip">Los programadores
+del sistema operativo Linux<span class="tooltiptext">The programmers 
+of the operating system Linux</span></span>
+		<span class="tooltip">encontraron un problema
+similar en el 2003.<span class="tooltiptext">encountered a similar problem in 2003.</span></span>
+		<span class="tooltip">Linux organizaba todas las tareas
+en orden de importancia,<span class="tooltiptext">Linux would rank every single 
+one of its tasks in order of importance,</span></span>
+		<span class="tooltip">y algunas veces gastaba más tiempo
+organizándolas que ejecutándolas.<span class="tooltiptext">and sometimes spent more time 
+ranking tasks than doing them.</span></span>
+		<span class="tooltip">La solución de los programadores
+fue reemplazar la organización<span class="tooltiptext">The programmers’ counterintuitive solution
+was to replace this full ranking</span></span>
+		<span class="tooltip">con un número limitado
+de grupos prioritarios.<span class="tooltiptext">with a limited number 
+of priority “buckets.”</span></span>
+		<span class="tooltip">El sistema era menos preciso
+en qué hacer a continuación<span class="tooltiptext">The system was less precise 
+about what to do next</span></span>
+		<span class="tooltip">pero recuperaba con creces
+el tiempo ejecutando tareas.<span class="tooltiptext">but more than made up for it 
+by spending more time making progress.</span></span>
+		<span class="tooltip">Entonces con la bandeja, hacer
+la tarea más importante primero<span class="tooltiptext">So with your emails, insisting on always 
+doing the very most important thing first</span></span>
+		<span class="tooltip">podría llevar a un colapso.<span class="tooltiptext">could lead to a meltdown.</span></span>
+		<span class="tooltip">Al encontrar una bandeja llena
+3 veces más de lo normal<span class="tooltiptext">Waking up to an inbox three times fuller 
+than normal</span></span>
+		<span class="tooltip">podría llevar 9 veces más tiempo limpiarla.<span class="tooltiptext">could take nine times longer to clear.</span></span>
+		<span class="tooltip">¡Sería mejor responderlos en orden
+cronológico o incluso aleatoriamente!<span class="tooltiptext">You’d be better off replying 
+in chronological order, or even at random!</span></span>
+		<span class="tooltip">Sorprendentemente, dejar
+de hacer cosas en orden perfecto<span class="tooltiptext">Surprisingly, sometimes giving up 
+on doing things in the perfect order</span></span>
+		<span class="tooltip">puede ser la clave para terminarlas.<span class="tooltiptext">may be the key to getting them done.</span></span>
+		<span class="tooltip">Otra idea que emerge
+de la programación computacional<span class="tooltiptext">Another insight that emerges 
+from computer scheduling</span></span>
+		<span class="tooltip">tiene que ver con una característica
+de la vida moderna: la interrupción.<span class="tooltiptext">has to do with one of the most prevalent 
+features of modern life: interruptions.</span></span>
+		<span class="tooltip">Cuando un computador
+cambia de una tarea a otra,<span class="tooltiptext">When a computer goes 
+from one task to another,</span></span>
+		<span class="tooltip">tiene que hacer un cambio de contexto,<span class="tooltiptext">it has to do what&#39;s called 
+a context switch,</span></span>
+		<span class="tooltip">marcar su lugar en una tarea,<span class="tooltiptext">bookmarking its place in one task,</span></span>
+		<span class="tooltip">mover los datos antiguos
+de la memoria y traer nuevos datos.<span class="tooltiptext">moving old data out of its memory 
+and new data in.</span></span>
+		<span class="tooltip">Cada acción tiene un costo.<span class="tooltiptext">Each of these actions comes at a cost.</span></span>
+		<span class="tooltip">La idea es que hay
+un intercambio fundamental<span class="tooltiptext">The insight here is that there’s 
+a fundamental tradeoff</span></span>
+		<span class="tooltip">entre productividad 
+y capacidad de respuesta.<span class="tooltiptext">between productivity and responsiveness.</span></span>
+		<span class="tooltip">Hacer un trabajo serio significa
+minimizar cambios de contexto.<span class="tooltiptext">Getting serious work done 
+means minimizing context switches.</span></span>
+		<span class="tooltip">Pero responder significa reaccionar
+cada vez que algo sucede.<span class="tooltiptext">But being responsive means reacting 
+anytime something comes up.</span></span>
+		<span class="tooltip">Estos dos principios son
+fundamentalmente opuestos.<span class="tooltiptext">These two principles 
+are fundamentally in tension.</span></span>
+		<span class="tooltip">Reconocer esta oposición permite<span class="tooltiptext">Recognizing this tension allows us</span></span>
+		<span class="tooltip">decidir donde atacar ese balance.<span class="tooltiptext">to decide where 
+we want to strike that balance.</span></span>
+		<span class="tooltip">La solución obvia es minimizar
+las interrupciones.<span class="tooltiptext">The obvious solution 
+is to minimize interruptions.</span></span>
+		<span class="tooltip">La menos obvia es agruparlas.<span class="tooltiptext">The less obvious one is to group them.</span></span>
+		<span class="tooltip">Si ninguna notificación o email
+requiere una respuesta<span class="tooltiptext">If no notification 
+or email requires a response</span></span>
+		<span class="tooltip">en menos de una hora, digamos,<span class="tooltiptext">more urgently than once an hour, say,</span></span>
+		<span class="tooltip">entonces esa es la frecuencia
+para revisarlos. No más.<span class="tooltiptext">then that’s exactly how often 
+you should check them. No more.</span></span>
+		<span class="tooltip">En la informática, esta idea 
+se llama interrupción moderada.<span class="tooltiptext">In computer science, this idea goes by 
+the name of interrupt coalescing.</span></span>
+		<span class="tooltip">en lugar de lidiar con las cosas
+a medida que surgen<span class="tooltiptext">Rather than dealing with 
+things as they come up –</span></span>
+		<span class="tooltip">-- ¿Se movió el ratón?<span class="tooltiptext">Oh, the mouse was moved?</span></span>
+		<span class="tooltip">¿Una tecla fue presionada?<span class="tooltiptext">A key was pressed?</span></span>
+		<span class="tooltip">¿Más archivos descargados? --<span class="tooltiptext">More of that file downloaded? –</span></span>
+		<span class="tooltip">el sistema agrupa estas interrupciones<span class="tooltiptext">the system groups these 
+interruptions together</span></span>
+		<span class="tooltip">basado en cuánto tiempo pueden esperar.<span class="tooltiptext">based on how long they can afford to wait.</span></span>
+		<span class="tooltip">En 2013, la interrupción moderada<span class="tooltiptext">In 2013, interrupt coalescing</span></span>
+		<span class="tooltip">incrementó la vida de la batería
+de los computadores portátiles.<span class="tooltiptext">triggered a massive improvement 
+in laptop battery life.</span></span>
+		<span class="tooltip">Porque aplazar interrupciones permite
+que el sistema revise todo a la vez,<span class="tooltiptext">This is because deferring interruptions 
+lets a system check everything at once,</span></span>
+		<span class="tooltip">y luego entrar en estado
+de bajo consumo de energía.<span class="tooltiptext">then quickly re-enter a low-power state.</span></span>
+		<span class="tooltip">Al igual que con los computadores,
+también lo es con nosotros.<span class="tooltiptext">As with computers, so it is with us.</span></span>
+		<span class="tooltip">Tal vez adoptar un enfoque similar<span class="tooltiptext">Perhaps adopting a similar approach</span></span>
+		<span class="tooltip">puede permitirnos como usuarios 
+recuperar nuestra atención,<span class="tooltiptext">might allow us users 
+to reclaim our own attention,</span></span>
+		<span class="tooltip">y recuperar una de las cosas que parece
+extraña en la vida moderna: el descanso.<span class="tooltiptext">and give us back one of the things
+that feels so rare in modern life: rest.</span></span>
 	</p>
 
 	<div class="line"></div>
-	<p>Love our website? Help us keep it ad-free and running smoothly by making a donation today.</p>
+	<p>Enjoying my website? Your donation helps maintain its ad-free experience and smooth operation. Your support is truly appreciated and helps us continue providing quality content. Thank you for considering a donation!</p>
 	<p>To donate, simply click the PayPal link below:<p/>
 	<p><a href="https://www.paypal.com/paypalme/otechai" target='_blank'>Donate via PayPal</a></p>
-	<p>Ready to sound like a native speaker? Or better yet, elevate your language skills to the next level? Check out my book : </p>
-	<div style="text-align: center;"> <span><a href="https://amzn.to/3Um79fs" target="_blank" rel=" noopener noreferrer"><img height="160" width="103" typeof="foaf:Image" class="image-style-none" src="../../../static/images/off-the-hook-shaun-clark.jpg" alt="off the hook book by shaun clark"></a></span> </div>
-	<div class="views-field views-field-title" style="text-align: center;"> <span class="field-content"><a href="https://amzn.to/3Um79fs" target="_blank" rel=" noopener noreferrer">Off The Hook: The Ultimate English Slang Dictionary</a></span> </div>
-	<p style="text-align: center;">Or explore our amazing library! <a href="../../../library/1/index.html">HERE</a></p>
 	
 </div>
 <span onclick='topFunction()' id='gotop' title='Go to top'><svg width="32" height="32" viewBox="0 0 100 100">
@@ -256,7 +220,7 @@ extraña en la vida moderna: el descanso.</span></span>
 	        <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.58-2.11-9.96-5.02-.42.72-.66 1.56-.66 2.46 0 1.68.85 3.16 2.14 4.02-.79-.02-1.53-.24-2.18-.6v.06c0 2.35 1.67 4.31 3.88 4.76-.4.1-.83.16-1.27.16-.31 0-.62-.03-.92-.08.63 1.96 2.45 3.39 4.61 3.43-1.69 1.32-3.83 2.1-6.15 2.1-.4 0-.8-.02-1.19-.07 2.19 1.4 4.78 2.22 7.57 2.22 9.07 0 14.02-7.52 14.02-14.02 0-.21 0-.41-.01-.61.96-.69 1.79-1.56 2.45-2.55-.88.39-1.83.65-2.82.77z"/>
 	    </svg>
 	</a></div>
-	        <div class="right"><a href='../../../library/1/index.html'>Library</a></div>
+	        <div class="right"><a href='https://www.paypal.com/paypalme/otechai'>Donate</a></div>
 	    </div>
 	<script>
 

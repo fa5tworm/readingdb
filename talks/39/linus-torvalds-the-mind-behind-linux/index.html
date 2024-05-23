@@ -18,1071 +18,877 @@
 	<h1 class='title'>The mind behind Linux</h1>
 	<h2 class='speaker'>Linus Torvalds</h2>
 	<div class='transcript books'>
-	<p>Are you ready to improve your English speaking skills, check <a href='https://referral.lingoda.com/6Dztrv'>Lingoda</a> today!</p>
+	<p>Are you ready to improve your Spanish speaking skills, check <a href='https://referral.lingoda.com/6Dztrv'>Lingoda</a> today!</p>
 		<p>
-		<span class="tooltip">Chris Anderson: This is such
-a strange thing.<span class="tooltiptext">Chris Anderson: Es una cosa tan curiosa.</span></span>
-		<span class="tooltip">Your software, Linux,
-is in millions of computers,<span class="tooltiptext">Tu software, Linux, 
-está en millones de computadoras,</span></span>
-		<span class="tooltip">it probably powers much of the Internet.<span class="tooltiptext">probablemente soporta 
-gran parte de Internet.</span></span>
-		<span class="tooltip">And I think that there are, like,<span class="tooltiptext">Y creo que hay, como,</span></span>
-		<span class="tooltip">a billion and a half active
-Android devices out there.<span class="tooltiptext">1500 millones de 
-dispositivos Android activos por ahí.</span></span>
-		<span class="tooltip">Your software is in every
-single one of them.<span class="tooltiptext">Tu software está en todos 
-y cada uno de ellos.</span></span>
-		<span class="tooltip">It&#39;s kind of amazing.<span class="tooltiptext">Es un poco sorprendente.</span></span>
-		<span class="tooltip">You must have some amazing
-software headquarters driving all this.<span class="tooltiptext">Debes tener una sorprendente sede de 
-software dirigiendo todo esto.</span></span>
-		<span class="tooltip">That&#39;s what I thought -- and I was shocked
-when I saw a picture of it.<span class="tooltiptext">Es lo que pensé, y quedé muy 
-sorprendido cuando vi una foto de ello.</span></span>
-		<span class="tooltip">I mean, this is --<span class="tooltiptext">Es decir, es esto...</span></span>
-		<span class="tooltip">this is the Linux world headquarters.<span class="tooltiptext">esta es la sede mundial de Linux.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">(Laughter)<span class="tooltiptext">(Risas)</span></span>
-	</p>
-	<p>
-		<span class="tooltip">(Applause)<span class="tooltiptext">(Aplausos)</span></span>
-	</p>
-	<p>
-		<span class="tooltip">Linus Torvalds: It really
-doesn&#39;t look like much.<span class="tooltiptext">Linus Torvalds: Realmente 
-no lo parece mucho.</span></span>
-		<span class="tooltip">And I have to say,<span class="tooltiptext">Y tengo que decir,</span></span>
-		<span class="tooltip">the most interesting part in this picture,<span class="tooltiptext">la parte más interesante en esta imagen,</span></span>
-		<span class="tooltip">that people mostly react to,<span class="tooltiptext">a lo que las personas reaccionan,</span></span>
-		<span class="tooltip">is the walking desk.<span class="tooltiptext">es al escritorio de pie.</span></span>
-		<span class="tooltip">It is the most interesting
-part in my office<span class="tooltiptext">Es la parte más interesante en mi oficina</span></span>
-		<span class="tooltip">and I&#39;m not actually using it anymore.<span class="tooltiptext">y no estoy realmente usándola más.</span></span>
-		<span class="tooltip">And I think the two things are related.<span class="tooltiptext">Creo que las dos cosas están relacionadas.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">The way I work is ...<span class="tooltiptext">Mi forma de trabajar es...</span></span>
-		<span class="tooltip">I want to not have external stimulation.<span class="tooltiptext">No quiero tener estimulación externa.</span></span>
-		<span class="tooltip">You can kind of see,
-on the walls are this light green.<span class="tooltiptext">Pueden ver más o menos, las paredes 
-son de color verde claro.</span></span>
-		<span class="tooltip">I&#39;m told that at mental institutions
-they use that on the walls.<span class="tooltiptext">Me han dicho que en las instituciones 
-mentales que utilizan las mismas paredes.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">(Laughter)<span class="tooltiptext">(Risas)</span></span>
-	</p>
-	<p>
-		<span class="tooltip">It&#39;s like a calming color,<span class="tooltiptext">Es como un color calmante,</span></span>
-		<span class="tooltip">it&#39;s not something
-that really stimulates you.<span class="tooltiptext">no es algo que realmente te estimula.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">What you can&#39;t see is the computer here,
-you only see the screen,<span class="tooltiptext">Lo que no pueden ver es el equipo, 
-solo se ve la pantalla,</span></span>
-		<span class="tooltip">but the main thing I worry
-about in my computer is --<span class="tooltiptext">pero lo más me preocupa de mi equipo es...</span></span>
-		<span class="tooltip">it doesn&#39;t have to be big
-and powerful, although I like that --<span class="tooltiptext">no tiene que ser grande y poderoso, 
-aunque me gusta que...</span></span>
-		<span class="tooltip">it really has to be completely silent.<span class="tooltiptext">lo que realmente tiene que ser 
-es completamente silencioso.</span></span>
-		<span class="tooltip">I know people who work for Google<span class="tooltiptext">Conozco personas que trabajan para Google</span></span>
-		<span class="tooltip">and they have their own
-small data center at home,<span class="tooltiptext">y tienen su propio pequeño 
-centro de datos en casa,</span></span>
-		<span class="tooltip">and I don&#39;t do that.<span class="tooltiptext">y yo no hago eso.</span></span>
-		<span class="tooltip">My office is the most
-boring office you&#39;ll ever see.<span class="tooltiptext">Mi oficina es la oficina 
-más aburrida que jamás puedan ver.</span></span>
-		<span class="tooltip">And I sit there alone in the quiet.<span class="tooltiptext">Y me siento allí solo en silencio.</span></span>
-		<span class="tooltip">If the cat comes up,<span class="tooltiptext">Si el gato se acerca,</span></span>
-		<span class="tooltip">it sits in my lap.<span class="tooltiptext">se sienta en mi regazo.</span></span>
-		<span class="tooltip">And I want to hear the cat purring,<span class="tooltiptext">Y quiero oír el ronroneo del gato,</span></span>
-		<span class="tooltip">not the sound of the fans in the computer.<span class="tooltiptext">no el sonido de 
-los ventiladores del equipo.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">CA: So this is astonishing,<span class="tooltiptext">CA: Es sorprendente,</span></span>
-		<span class="tooltip">because working this way,<span class="tooltiptext">porque trabajando de esta manera,</span></span>
-		<span class="tooltip">you&#39;re able to run this vast
-technology empire --<span class="tooltiptext">has sido capaz de llevar 
-este vasto imperio de tecnología</span></span>
-		<span class="tooltip">it is an empire --<span class="tooltiptext">--es un imperio--</span></span>
-		<span class="tooltip">so that&#39;s an amazing testament
-to the power of open source.<span class="tooltiptext">así que eso es un testamento increíble 
-a la potencia del código abierto.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">Tell us how you got
-to understand open source<span class="tooltiptext">Cuéntanos cómo has llegado 
-a entender el código abierto</span></span>
-		<span class="tooltip">and how it lead
-to the development of Linux.<span class="tooltiptext">y cómo lleva al desarrollo de Linux.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">LT: I mean, I still work alone.<span class="tooltiptext">LT: Sigo trabajando solo.</span></span>
-		<span class="tooltip">Really -- I work alone in my house,<span class="tooltiptext">Realmente... trabajo solo en mi casa,</span></span>
-		<span class="tooltip">often in my bathrobe.<span class="tooltiptext">a menudo en mi albornoz.</span></span>
-		<span class="tooltip">When a photographer shows up, I dress up,<span class="tooltiptext">Cuando un fotógrafo aparece, me visto,</span></span>
-		<span class="tooltip">so I have clothes on.<span class="tooltiptext">tengo la ropa puesta.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">(Laughter)<span class="tooltiptext">(Risas)</span></span>
-	</p>
-	<p>
-		<span class="tooltip">And that&#39;s how I&#39;ve always worked.<span class="tooltiptext">Así es como siempre he trabajado.</span></span>
-		<span class="tooltip">I mean, this was how I started Linux, too.<span class="tooltiptext">Así fue como empecé Linux, también.</span></span>
-		<span class="tooltip">I did not start Linux
-as a collaborative project.<span class="tooltiptext">No empecé Linux 
-como un proyecto de colaboración.</span></span>
-		<span class="tooltip">I started it as one
-in a series of many projects<span class="tooltiptext">Empecé como parte de 
-una serie de muchos proyectos</span></span>
-		<span class="tooltip">I had done at the time for myself,<span class="tooltiptext">que había hecho en el tiempo para mí,</span></span>
-		<span class="tooltip">partly because I needed the end result,<span class="tooltiptext">en parte porque 
-necesitaba el resultado final,</span></span>
-		<span class="tooltip">but even more because I just
-enjoyed programming.<span class="tooltiptext">pero aún más porque 
-disfrutaba la programación.</span></span>
-		<span class="tooltip">So it was about the end of the journey,<span class="tooltiptext">Por lo tanto, 
-era sobre el final del viaje,</span></span>
-		<span class="tooltip">which, 25 years later,
-we still have not reached.<span class="tooltiptext">el cual, 25 años después, 
-todavía no hemos alcanzado.</span></span>
-		<span class="tooltip">But it was really about the fact
-that I was looking for a project on my own<span class="tooltiptext">Pero fue realmente sobre el hecho de que 
-estaba buscando un proyecto por mi cuenta</span></span>
-		<span class="tooltip">and there was no open source,
-really, on my radar at all.<span class="tooltiptext">y no había ninguna fuente abierta, 
-en realidad, en mi radar en absoluto.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">And what happened is ...<span class="tooltiptext">Y lo que pasó es...</span></span>
-		<span class="tooltip">the project grows and becomes something
-you want to show off to people.<span class="tooltiptext">el proyecto crece y se convierte en algo 
-que uno desea mostrar a la gente.</span></span>
-		<span class="tooltip">Really, this is more of a, &quot;Wow,
-look at what I did!&quot;<span class="tooltiptext">Realmente, esto es más de un, 
-&quot;¡Mira lo que hice!&quot;.</span></span>
-		<span class="tooltip">And trust me -- it was not
-that great back then.<span class="tooltiptext">Y, créanme...
-no era tan bueno en ese entonces.</span></span>
-		<span class="tooltip">I made it publicly available,<span class="tooltiptext">Lo hice públicamente disponible,</span></span>
-		<span class="tooltip">and it wasn&#39;t even
-open source at that point.<span class="tooltiptext">y ni siquiera era código abierto entonces.</span></span>
-		<span class="tooltip">At that point it was source that was open,
-but there was no intention<span class="tooltiptext">En ese momento era fuente que estaba 
-abierta, pero no había ninguna intención</span></span>
-		<span class="tooltip">behind using the kind of open-source
-methodology that we think of today<span class="tooltiptext">detrás de usar el tipo de metodología de 
-código abierto que pensamos hoy</span></span>
-		<span class="tooltip">to improve it.<span class="tooltiptext">para mejorarlo.</span></span>
-		<span class="tooltip">It was more like,<span class="tooltiptext">Era más como,</span></span>
-		<span class="tooltip">&quot;Look, I&#39;ve been working
-on this for half a year,<span class="tooltiptext">&quot;Mira, he estado trabajando en esto 
-durante medio año,</span></span>
-		<span class="tooltip">I&#39;d love to have comments.&quot;<span class="tooltiptext">me gustaría tener comentarios&quot;.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">And other people approached me.<span class="tooltiptext">Y otras personas se acercaron a mí.</span></span>
-		<span class="tooltip">At the University of Helsinki,<span class="tooltiptext">En la Universidad de Helsinki,</span></span>
-		<span class="tooltip">I had a friend who was one
-of the open source --<span class="tooltiptext">tenía un amigo que era uno 
-de los de código abierto</span></span>
-		<span class="tooltip">it was called mainly
-&quot;free software&quot; back then --<span class="tooltiptext">--se le llamó &quot;software libre&quot;, 
-principalmente en aquel entonces--</span></span>
-		<span class="tooltip">and he actually introduced me
-to the notion that, hey,<span class="tooltiptext">y de hecho me introdujo 
-a la idea de que, bueno,</span></span>
-		<span class="tooltip">you can use these open-source
-licenses that had been around.<span class="tooltiptext">puedes utilizar estas licencias 
-de código abierto que han existido.</span></span>
-		<span class="tooltip">And I thought about it for a while.<span class="tooltiptext">Y pensé en ello durante un tiempo.</span></span>
-		<span class="tooltip">I was actually worried about the whole
-commercial interests coming in.<span class="tooltiptext">En realidad, estaba preocupado sobre 
-el interés comercial que llegaba.</span></span>
-		<span class="tooltip">I mean, that&#39;s one of the worries
-I think most people who start out have,<span class="tooltiptext">Es una de preocupación, que creo que 
-tiene la mayoría de los que comienzan,</span></span>
-		<span class="tooltip">is that they worry about somebody
-taking advantage of their work, right?<span class="tooltiptext">es que les preocupa que alguien 
-se aproveche de su trabajo, ¿verdad?</span></span>
-		<span class="tooltip">And I decided, &quot;What the hell?&quot;<span class="tooltiptext">Yo decidí, &quot;¿Qué demonios?&quot;.</span></span>
-		<span class="tooltip">And --<span class="tooltiptext">y...</span></span>
-	</p>
-	<p>
-		<span class="tooltip">CA: And then at some point,<span class="tooltiptext">CA: Y después, en algún momento,</span></span>
-		<span class="tooltip">someone contributed
-some code that you thought,<span class="tooltiptext">alguien aportó un código 
-que pensaste,</span></span>
-		<span class="tooltip">&quot;Wow, that really is interesting,
-I would not have thought of that.<span class="tooltiptext">&quot;Esto es realmente interesante, 
-yo no habría pensado en eso.</span></span>
-		<span class="tooltip">This could actually improve this.&quot;<span class="tooltiptext">En realidad, podría mejorar esto&quot;.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">LT: It didn&#39;t even start
-by people contributing code,<span class="tooltiptext">LT: Ni siquiera comenzó con gente 
-contribuyendo con código,</span></span>
-		<span class="tooltip">it was more that people
-started contributing ideas.<span class="tooltiptext">era más aportando ideas.</span></span>
-		<span class="tooltip">And just the fact that somebody else
-takes a look at your project --<span class="tooltiptext">Y el solo hecho de que alguien 
-eche un vistazo a tu proyecto</span></span>
-		<span class="tooltip">and I&#39;m sure it&#39;s true
-of other things, too,<span class="tooltiptext">--y estoy seguro de que es cierto 
-para otras cosas, también,</span></span>
-		<span class="tooltip">but it&#39;s definitely true in code --<span class="tooltiptext">pero sin duda es cierto en código--</span></span>
-		<span class="tooltip">is that somebody else
-takes an interest in your code,<span class="tooltiptext">es que alguien se interese en tu código,</span></span>
-		<span class="tooltip">looks at it enough to actually
-give you feedback<span class="tooltiptext">mire lo suficiente como para realmente 
-darte retroalimentación</span></span>
-		<span class="tooltip">and give you ideas.<span class="tooltiptext">y darte ideas.</span></span>
-		<span class="tooltip">That was a huge thing for me.<span class="tooltiptext">Eso fue algo muy importante para mí.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">I was 21 at the time, so I was young,<span class="tooltiptext">Tenía 21 años en ese momento, 
-así que era joven,</span></span>
-		<span class="tooltip">but I had already programmed
-for half my life, basically.<span class="tooltiptext">pero ya había programado 
-para la mitad de mi vida, básicamente.</span></span>
-		<span class="tooltip">And every project before that
-had been completely personal<span class="tooltiptext">Y cada proyecto anterior 
-había sido completamente personal</span></span>
-		<span class="tooltip">and it was a revelation when people
-just started commenting,<span class="tooltiptext">y fue una revelación cuando la gente 
-empezó a comentarlo,</span></span>
-		<span class="tooltip">started giving feedback on your code.<span class="tooltiptext">comenzó a dar retroalimentación 
-sobre tu código.</span></span>
-		<span class="tooltip">And even before they started
-giving code back,<span class="tooltiptext">E incluso antes de comenzar 
-a dar vuelta código,</span></span>
-		<span class="tooltip">that was, I think, one of the big
-moments where I said,<span class="tooltiptext">que fue, creo, uno de los 
-grandes momentos en los que he dicho,</span></span>
-		<span class="tooltip">&quot;I love other people!&quot;<span class="tooltiptext">&quot;¡Me encanta la gente!&quot;.</span></span>
-		<span class="tooltip">Don&#39;t get me wrong --<span class="tooltiptext">No me malinterpreten...</span></span>
-		<span class="tooltip">I&#39;m actually not a people person.<span class="tooltiptext">en realidad, no tengo don de gentes.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">(Laughter)<span class="tooltiptext">(Risas)</span></span>
-	</p>
-	<p>
-		<span class="tooltip">I don&#39;t really love other people --<span class="tooltiptext">Realmente no me gusta la gente...</span></span>
-	</p>
-	<p>
-		<span class="tooltip">(Laughter)<span class="tooltiptext">(Risas)</span></span>
-	</p>
-	<p>
-		<span class="tooltip">But I love computers,<span class="tooltiptext">Pero me encantan los computadores,</span></span>
-		<span class="tooltip">I love interacting with other
-people on email,<span class="tooltiptext">me encanta interactuar con otros por mail,</span></span>
-		<span class="tooltip">because it kind of gives you that buffer.<span class="tooltiptext">debido a que esto te da ese búfer.</span></span>
-		<span class="tooltip">But I do love other people who comment
-and get involved in my project.<span class="tooltiptext">Pero me gusta que otras personas 
-comenten y participen en mi proyecto.</span></span>
-		<span class="tooltip">And it made it so much more.<span class="tooltiptext">Y se hizo mucho más.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">CA: So was there a moment
-when you saw what was being built<span class="tooltiptext">CA: Así que ¿hubo un momento en que viste 
-lo que se estaba construyendo</span></span>
-		<span class="tooltip">and it suddenly started taking off,<span class="tooltiptext">y de repente empezó a despegar,</span></span>
-		<span class="tooltip">and you thought, &quot;Wait a sec,
-this actually could be something huge,<span class="tooltiptext">y pensaste, &quot;Espera un segundo, 
-en realidad, esto podría ser algo enorme,</span></span>
-		<span class="tooltip">not just a personal project
-that I&#39;m getting nice feedback on,<span class="tooltiptext">no solo un proyecto personal 
-que recibe buena retroalimentación,</span></span>
-		<span class="tooltip">but a kind of explosive development
-in the whole technology world&quot;?<span class="tooltiptext">sino una especie de desarrollo explosivo 
-en todo el mundo de la tecnología&quot;?</span></span>
-	</p>
-	<p>
-		<span class="tooltip">LT: Not really.<span class="tooltiptext">LT: En realidad no.</span></span>
-		<span class="tooltip">I mean, the big point for me, really,
-was not when it was becoming huge,<span class="tooltiptext">Es decir, el punto para mí, realmente, no 
-fue cuando se estaba convirtiendo enorme,</span></span>
-		<span class="tooltip">it was when it was becoming little.<span class="tooltiptext">fue cuando se estaba convirtiendo en algo.</span></span>
-		<span class="tooltip">The big point for me was not being alone<span class="tooltiptext">El punto grande para mí 
-fue que no estaba solo</span></span>
-		<span class="tooltip">and having 10, maybe 100
-people being involved --<span class="tooltiptext">y que tenía 10, 
-tal vez 100 personas involucradas...</span></span>
-		<span class="tooltip">that was a big point.<span class="tooltiptext">eso fue un gran punto.</span></span>
-		<span class="tooltip">Then everything else was very gradual.<span class="tooltiptext">A continuación, 
-todo lo demás fue muy gradual.</span></span>
-		<span class="tooltip">Going from 100 people to a million people
-is not a big deal -- to me.<span class="tooltiptext">Pasar de 100 personas a un millón de 
-personas no es una gran cosa... para mí.</span></span>
-		<span class="tooltip">Well, I mean, maybe it is if you&#39;re --<span class="tooltiptext">Bueno, quiero decir, 
-tal vez es si estás...</span></span>
-	</p>
-	<p>
-		<span class="tooltip">(Laughter)<span class="tooltiptext">(Risas)</span></span>
-	</p>
-	<p>
-		<span class="tooltip">If you want to sell your result
-then it&#39;s a huge deal --<span class="tooltiptext">Si se quiere vender su resultado 
-entonces es algo grande,</span></span>
-		<span class="tooltip">don&#39;t get me wrong.<span class="tooltiptext">no me malinterpreten.</span></span>
-		<span class="tooltip">But if you&#39;re interested in the technology<span class="tooltiptext">Pero si se está interesado 
-en la tecnología</span></span>
-		<span class="tooltip">and you&#39;re interested in the project,<span class="tooltiptext">y se está interesado en el proyecto,</span></span>
-		<span class="tooltip">the big part was getting the community.<span class="tooltiptext">la parte grande estaba 
-en formar comunidad.</span></span>
-		<span class="tooltip">Then the community grew gradually.<span class="tooltiptext">Después la comunidad 
-creció gradualmente.</span></span>
-		<span class="tooltip">And there&#39;s actually not
-a single point where I went like,<span class="tooltiptext">Y no hay en realidad un único punto 
-en el que fui como,</span></span>
-		<span class="tooltip">&quot;Wow, that just took off!&quot; because it --<span class="tooltiptext">&quot;Uf, ¡acaba de despegar!&quot;, porque,</span></span>
-		<span class="tooltip">I mean -- it took a long time, relatively.<span class="tooltiptext">quiero decir, tomó mucho tiempo, 
-relativamente.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">CA: So all the technologists
-that I talk to really credit you<span class="tooltiptext">CA: Todos los técnicos con los que hablo 
-en realidad te dan crédito</span></span>
-		<span class="tooltip">with massively changing their work.<span class="tooltiptext">del masivo cambio 
-en la forma de su trabajo.</span></span>
-		<span class="tooltip">And it&#39;s not just Linux,<span class="tooltiptext">Y no se trata solo de Linux,</span></span>
-		<span class="tooltip">it&#39;s this thing called Git,<span class="tooltiptext">es esta cosa llamada Git,</span></span>
-		<span class="tooltip">which is this management system
-for software development.<span class="tooltiptext">que es este sistema de gestión 
-para el desarrollo de software.</span></span>
-		<span class="tooltip">Tell us briefly about that
-and your role in that.<span class="tooltiptext">Cuéntanos brevemente sobre eso 
-y tu papel en eso.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">LT: So one of the issues we had,<span class="tooltiptext">LT: Uno de los temas que tuvimos,</span></span>
-		<span class="tooltip">and this took a while to start to appear,<span class="tooltiptext">y esto tomó un tiempo 
-para empezar a aparecer,</span></span>
-		<span class="tooltip">is when you ...<span class="tooltiptext">es cuando uno...</span></span>
-		<span class="tooltip">When you grow from having 10 people
-or 100 people working on a project<span class="tooltiptext">Cuando creces de tener 10 personas 
-o 100 personas trabajando en un proyecto</span></span>
-		<span class="tooltip">to having 10,000 people, which --<span class="tooltiptext">a tener 10 000 personas, lo que...</span></span>
-		<span class="tooltip">I mean, right now we&#39;re in the situation
-where just on the kernel,<span class="tooltiptext">es decir, en este momento estamos en 
-la situación en la que solo en el núcleo,</span></span>
-		<span class="tooltip">we have 1,000 people involved
-in every single release<span class="tooltiptext">tenemos 1000 personas que participan 
-en cada lanzamiento</span></span>
-		<span class="tooltip">and that&#39;s every two months,
-roughly two or three months.<span class="tooltiptext">y eso es cada dos meses, 
-más o menos dos o tres meses.</span></span>
-		<span class="tooltip">Some of those people don&#39;t do a lot.<span class="tooltiptext">Algunas de esas personas no hacen mucho.</span></span>
-		<span class="tooltip">There&#39;s a lot of people
-who make small, small changes.<span class="tooltiptext">Hay muchas personas que hacen 
-pequeños cambios.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">But to maintain this,<span class="tooltiptext">Pero para mantener esto,</span></span>
-		<span class="tooltip">the scale changes how
-you have to maintain it.<span class="tooltiptext">la escala cambia la forma 
-en que hay que mantenerla.</span></span>
-		<span class="tooltip">And we went through a lot of pain.<span class="tooltiptext">Y el proceso lo hicimos muy doloroso.</span></span>
-		<span class="tooltip">And there are whole projects
-that do only source-code maintenance.<span class="tooltiptext">Y hay proyectos completos que hacen 
-solo mantenimiento del código fuente.</span></span>
-		<span class="tooltip">CVS is the one that used to be
-the most commonly used,<span class="tooltiptext">CVS es el que solía ser el más utilizado,</span></span>
-		<span class="tooltip">and I hated CVS with a passion
-and refused to touch it<span class="tooltiptext">y yo odiaba CVS con pasión 
-y rehusaba tocarlo</span></span>
-		<span class="tooltip">and tried something else
-that was radical and interesting<span class="tooltiptext">e intentaba otra cosa 
-que era radical e interesante</span></span>
-		<span class="tooltip">and everybody else hated.<span class="tooltiptext">y todo el mundo la odiaba.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">CA: (Laughs)<span class="tooltiptext">CA: (Risas)</span></span>
-	</p>
-	<p>
-		<span class="tooltip">LT: And we were in this bad spot,<span class="tooltiptext">LT: Y estábamos en este mal lugar,</span></span>
-		<span class="tooltip">where we had thousands of people
-who wanted to participate,<span class="tooltiptext">en que teníamos miles de personas 
-que querían participar,</span></span>
-		<span class="tooltip">but in many ways,
-I was the kind of break point,<span class="tooltiptext">pero en muchos aspectos, 
-yo era el punto de ruptura,</span></span>
-		<span class="tooltip">where I could not scale to the point<span class="tooltiptext">donde no podía escalar hasta el punto</span></span>
-		<span class="tooltip">where I could work
-with thousands of people.<span class="tooltiptext">en el que podía trabajar 
-con miles de personas.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">So Git is my second big project,<span class="tooltiptext">Así que Git es mi segundo gran proyecto,</span></span>
-		<span class="tooltip">which was only created for me
-to maintain my first big project.<span class="tooltiptext">que solo fue creado para mí,
-para mantener mi primer gran proyecto.</span></span>
-		<span class="tooltip">And this is literally how I work.<span class="tooltiptext">Y así es literalmente cómo trabajo.</span></span>
-		<span class="tooltip">I don&#39;t code for --<span class="tooltiptext">Yo no codifico para</span></span>
-		<span class="tooltip">well, I do code for fun --<span class="tooltiptext">--bueno, hago código por diversión--</span></span>
-		<span class="tooltip">but I want to code
-for something meaningful<span class="tooltiptext">pero quiero codificar 
-para algo significativo</span></span>
-		<span class="tooltip">so every single project I&#39;ve ever done
-has been something I needed<span class="tooltiptext">por lo que cada uno de los proyectos que 
-he hecho ha sido algo que necesitaba</span></span>
-		<span class="tooltip">and --<span class="tooltiptext">y...</span></span>
-	</p>
-	<p>
-		<span class="tooltip">CA: So really, both Linux
-and Git kind of arose<span class="tooltiptext">CA: Así que, en realidad, tanto en Linux 
-como Git surgió de algo así</span></span>
-		<span class="tooltip">almost as an unintended consequence<span class="tooltiptext">casi como una consecuencia no deseada</span></span>
-		<span class="tooltip">of your desire not to have
-to work with too many people.<span class="tooltiptext">de tu deseo de no tener 
-que trabajar con mucha gente.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">LT: Absolutely. Yes.<span class="tooltiptext">LT: Totalmente. Sí.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">(Laughter)<span class="tooltiptext">(Risas)</span></span>
-	</p>
-	<p>
-		<span class="tooltip">CA: That&#39;s amazing.
-LT: Yeah.<span class="tooltiptext">CA: Eso es increíble. 
-LT: Sí.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">(Applause)<span class="tooltiptext">(Aplausos)</span></span>
-	</p>
-	<p>
-		<span class="tooltip">And yet, you&#39;re the man
-who&#39;s transformed technology<span class="tooltiptext">Y, sin embargo, eres el hombre 
-que ha transformado la tecnología</span></span>
-		<span class="tooltip">not just once but twice,<span class="tooltiptext">no solo una sino dos veces,</span></span>
-		<span class="tooltip">and we have to try
-and understand why it is.<span class="tooltiptext">y tenemos que tratar 
-de entender por qué es así</span></span>
-		<span class="tooltip">You&#39;ve given us some clues, but ...<span class="tooltiptext">Nos has dado algunas pistas, pero ...</span></span>
-		<span class="tooltip">Here&#39;s a picture of you as a kid,
-with a Rubik&#39;s Cube.<span class="tooltiptext">Aquí hay una foto tuya de niño, 
-con un cubo de Rubik.</span></span>
-		<span class="tooltip">You mentioned that you&#39;ve been
-programming since you were like 10 or 11,<span class="tooltiptext">Has dicho que has estado programando 
-desde que eran como 10 u 11,</span></span>
-		<span class="tooltip">half your life.<span class="tooltiptext">la mitad de tu vida.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">Were you this sort of computer
-genius, you know, übernerd,<span class="tooltiptext">¿Eras ese tipo de genio de 
-la informática, ya sabes, súper nerdo,</span></span>
-		<span class="tooltip">were you the star at school
-who could do everything?<span class="tooltiptext">eras la estrella en la escuela
-que podría hacer todo?</span></span>
-		<span class="tooltip">What were you like as a kid?<span class="tooltiptext">¿Cómo eras cuando eras niño?</span></span>
-	</p>
-	<p>
-		<span class="tooltip">LT: Yeah, I think I was
-the prototypical nerd.<span class="tooltiptext">LT: Sí, creo que yo 
-era el nerdo prototípico.</span></span>
-		<span class="tooltip">I mean, I was ...<span class="tooltiptext">Quiero decir, yo era...</span></span>
-		<span class="tooltip">I was not a people person back then.<span class="tooltiptext">Yo no era una persona sociable entonces.</span></span>
-		<span class="tooltip">That&#39;s my younger brother.<span class="tooltiptext">Ese es mi hermano menor.</span></span>
-		<span class="tooltip">I was clearly more interested
-in the Rubik&#39;s Cube<span class="tooltiptext">Yo estaba claramente 
-más interesado en el cubo de Rubik</span></span>
-		<span class="tooltip">than my younger brother.<span class="tooltiptext">que mi hermano menor.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">(Laughter)<span class="tooltiptext">(Risas)</span></span>
-	</p>
-	<p>
-		<span class="tooltip">My younger sister,
-who&#39;s not in the picture,<span class="tooltiptext">Mi hermana menor, 
-que no está en la imagen,</span></span>
-		<span class="tooltip">when we had family meetings --<span class="tooltiptext">cuando teníamos reuniones familiares</span></span>
-		<span class="tooltip">and it&#39;s not a huge family, but I have,
-like, a couple of cousins --<span class="tooltiptext">--y no es una gran familia, pero tengo, 
-como, un par de primos--</span></span>
-		<span class="tooltip">she would prep me beforehand.<span class="tooltiptext">ella me preparaba de antemano.</span></span>
-		<span class="tooltip">Like, before I stepped
-into the room she would say,<span class="tooltiptext">Como, antes de que yo entrara 
-en la habitación diría,</span></span>
-		<span class="tooltip">&quot;OK. That&#39;s so-and-so ...&quot;<span class="tooltiptext">&quot;Bien. Esto y lo otro...&quot;</span></span>
-		<span class="tooltip">Because I was not --<span class="tooltiptext">Porque yo no estaba...</span></span>
-		<span class="tooltip">I was a geek.<span class="tooltiptext">yo era un friki.</span></span>
-		<span class="tooltip">I was into computers,<span class="tooltiptext">Yo estaba en computadoras,</span></span>
-		<span class="tooltip">I was into math,<span class="tooltiptext">Estaba en matemáticas,</span></span>
-		<span class="tooltip">I was into physics.<span class="tooltiptext">Yo estaba en la física.</span></span>
-		<span class="tooltip">I was good at that.<span class="tooltiptext">Yo era bueno en eso.</span></span>
-		<span class="tooltip">I don&#39;t think I was
-particularly exceptional.<span class="tooltiptext">No creo que fuera 
-particularmente excepcional.</span></span>
-		<span class="tooltip">Apparently, my sister said<span class="tooltiptext">Al parecer, dijo mi hermana</span></span>
-		<span class="tooltip">that my biggest exceptional quality
-was that I would not let go.<span class="tooltiptext">que mi mayor cualidad excepcional 
-era que no abandonaba.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">CA: OK, so let&#39;s go there,
-because that&#39;s interesting.<span class="tooltiptext">CA: Bien, profundicemos, 
-porque eso es interesante.</span></span>
-		<span class="tooltip">You would not let go.<span class="tooltiptext">Tú no abandonas.</span></span>
-		<span class="tooltip">So that&#39;s not about being
-a geek and being smart,<span class="tooltiptext">No se trata de ser un geek 
-y ser inteligente,</span></span>
-		<span class="tooltip">that&#39;s about being ... stubborn?<span class="tooltiptext">que trata de ser... ¿terco?</span></span>
-	</p>
-	<p>
-		<span class="tooltip">LT: That&#39;s about being stubborn.<span class="tooltiptext">LT: Eso es ser terco.</span></span>
-		<span class="tooltip">That&#39;s about, like,<span class="tooltiptext">Eso es, al igual que,</span></span>
-		<span class="tooltip">just starting something<span class="tooltiptext">acabar de empezar algo</span></span>
-		<span class="tooltip">and not saying, &quot;OK, I&#39;m done,
-let&#39;s do something else --<span class="tooltiptext">y no decir: &quot;Está bien, hecho, 
-vamos a hacer algo más...</span></span>
-		<span class="tooltip">Look: shiny!&quot;<span class="tooltiptext">Mira: ¡brillante!&quot;.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">And I notice that in many
-other parts in my life, too.<span class="tooltiptext">Y lo noto que en muchas 
-otras partes de mi vida, también.</span></span>
-		<span class="tooltip">I lived in Silicon Valley for seven years.<span class="tooltiptext">He vivido en Silicon Valley 
-durante siete años.</span></span>
-		<span class="tooltip">And I worked for the same
-company, in Silicon Valley,<span class="tooltiptext">Y trabajé para la misma empresa, 
-en Silicon Valley,</span></span>
-		<span class="tooltip">for the whole time.<span class="tooltiptext">durante todo el tiempo.</span></span>
-		<span class="tooltip">That is unheard of.<span class="tooltiptext">Eso es inaudito.</span></span>
-		<span class="tooltip">That&#39;s not how Silicon Valley works.<span class="tooltiptext">Así no funciona Silicon Valley.</span></span>
-		<span class="tooltip">The whole point of Silicon Valley
-is that people jump between jobs<span class="tooltiptext">El punto de Silicon Valley es que 
-la gente salta entre puestos de trabajo</span></span>
-		<span class="tooltip">to kind of mix up the pot.<span class="tooltiptext">como mezclar todo.</span></span>
-		<span class="tooltip">And that&#39;s not the kind of person I am.<span class="tooltiptext">Y ese no es el tipo de persona que soy.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">CA: But during the actual
-development of Linux itself,<span class="tooltiptext">CA: Pero durante el desarrollo 
-de Linux en sí mismo,</span></span>
-		<span class="tooltip">that stubbornness sometimes brought
-you in conflict with other people.<span class="tooltiptext">esa terquedad te trajo conflictos 
-con otras personas.</span></span>
-		<span class="tooltip">Talk about that a bit.<span class="tooltiptext">Habla de eso un poco.</span></span>
-		<span class="tooltip">Was that essential to sort of maintain
-the quality of what was being built?<span class="tooltiptext">¿Era esencial para mantener la especie 
-de calidad de lo que estabas construyendo?</span></span>
-		<span class="tooltip">How would you describe what happened?<span class="tooltiptext">¿Cómo describirías lo que pasó?</span></span>
-	</p>
-	<p>
-		<span class="tooltip">LT: I don&#39;t know if it&#39;s essential.<span class="tooltiptext">LT: No sé si es esencial.</span></span>
-		<span class="tooltip">Going back to the &quot;I&#39;m not
-a people person,&quot; --<span class="tooltiptext">Volviendo a lo de 
-&quot;No soy una persona sociable&quot;,</span></span>
-		<span class="tooltip">sometimes I&#39;m also ...<span class="tooltiptext">--a veces también soy--</span></span>
-		<span class="tooltip">shall we say,<span class="tooltiptext">podríamos decir,</span></span>
-		<span class="tooltip">&quot;myopic&quot; when it comes
-to other people&#39;s feelings,<span class="tooltiptext">&quot;miope&quot; cuando se trata 
-de los sentimientos de otras personas,</span></span>
-		<span class="tooltip">and that sometimes makes you
-say things that hurt other people.<span class="tooltiptext">y que a veces te hace decir cosas 
-que perjudican a otras personas.</span></span>
-		<span class="tooltip">And I&#39;m not proud of that.<span class="tooltiptext">Y no estoy orgulloso de ello.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">(Applause)<span class="tooltiptext">(Aplausos)</span></span>
-	</p>
-	<p>
-		<span class="tooltip">But, at the same time, it&#39;s --<span class="tooltiptext">Pero, al mismo tiempo, es...</span></span>
-		<span class="tooltip">I get people who tell me
-that I should be nice.<span class="tooltiptext">Hay gente que me dice 
-que debería ser agradable.</span></span>
-		<span class="tooltip">And then when I try to explain to them
-that maybe you&#39;re nice,<span class="tooltiptext">Y luego cuando trato de explicarles 
-que tal vez usted es agradable,</span></span>
-		<span class="tooltip">maybe you should be more aggressive,<span class="tooltiptext">tal vez debería ser más agresivo,</span></span>
-		<span class="tooltip">they see that as me being not nice.<span class="tooltiptext">ven que como yo no soy agradable.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">(Laughter)<span class="tooltiptext">(Risas)</span></span>
-	</p>
-	<p>
-		<span class="tooltip">What I&#39;m trying to say
-is we are different.<span class="tooltiptext">Trato de decir que somos diferentes.</span></span>
-		<span class="tooltip">I&#39;m not a people person;<span class="tooltiptext">No soy una persona sociable;</span></span>
-		<span class="tooltip">it&#39;s not something
-I&#39;m particularly proud of,<span class="tooltiptext">no es algo de lo que estoy 
-particularmente orgulloso,</span></span>
-		<span class="tooltip">but it&#39;s part of me.<span class="tooltiptext">pero es parte de mí.</span></span>
-		<span class="tooltip">And one of the things
-I really like about open source<span class="tooltiptext">Y una de las cosas que 
-me gusta del código abierto</span></span>
-		<span class="tooltip">is it really allows different
-people to work together.<span class="tooltiptext">es que realmente permite que 
-diferentes personas trabajen juntas.</span></span>
-		<span class="tooltip">We don&#39;t have to like each other --<span class="tooltiptext">No tenemos que agradarnos,</span></span>
-		<span class="tooltip">and sometimes we really
-don&#39;t like each other.<span class="tooltiptext">y, a veces, realmente 
-no nos agradamos.</span></span>
-		<span class="tooltip">Really -- I mean, there are very,
-very heated arguments.<span class="tooltiptext">Realmente... quiero decir, 
-hay discusiones muy, muy calientes.</span></span>
-		<span class="tooltip">But you can, actually,
-you can find things that --<span class="tooltiptext">Pero se puede, de hecho, 
-se pueden encontrar cosas que...</span></span>
-		<span class="tooltip">you don&#39;t even agree to disagree,<span class="tooltiptext">uno ni siquiera está de acuerdo 
-en estar en desacuerdo,</span></span>
-		<span class="tooltip">it&#39;s just that you&#39;re interested
-in really different things.<span class="tooltiptext">es solo que le interesan 
-realmente diferentes cosas.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">And coming back to the point
-where I said earlier<span class="tooltiptext">Y volviendo al punto 
-en el que he dicho anteriormente</span></span>
-		<span class="tooltip">that I was afraid of commercial people
-taking advantage of your work,<span class="tooltiptext">que temía a las personas comerciales 
-que se aprovechan de tu trabajo,</span></span>
-		<span class="tooltip">it turned out, and very
-quickly turned out,<span class="tooltiptext">se vio después, 
-y muy pronto resultó que,</span></span>
-		<span class="tooltip">that those commercial people
-were lovely, lovely people.<span class="tooltiptext">aquellas personas comerciales
-eran gente encantadora, de verdad.</span></span>
-		<span class="tooltip">And they did all the things that I was not
-at all interested in doing,<span class="tooltiptext">E hicieron todas las cosas que yo no 
-estaba en absoluto interesado en hacer,</span></span>
-		<span class="tooltip">and they had completely different goals.<span class="tooltiptext">y tenían objetivos muy diferentes.</span></span>
-		<span class="tooltip">And they used open source in ways
-that I just did not want to go.<span class="tooltiptext">Y utilizaron el código abierto 
-de una manera que yo no quería.</span></span>
-		<span class="tooltip">But because it was open
-source they could do it,<span class="tooltiptext">Pero debido a que era 
-código abierto que podían hacer,</span></span>
-		<span class="tooltip">and it actually works
-really beautifully together.<span class="tooltiptext">y que en realidad funcionan
-muy bien juntos.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">And I actually think
-it works the same way.<span class="tooltiptext">De hecho, creo que funciona
-de la misma forma.</span></span>
-		<span class="tooltip">You need to have the people-people,
-the communicators,<span class="tooltiptext">Es necesario tener las personas-personas, 
-los comunicadores,</span></span>
-		<span class="tooltip">the warm and friendly people<span class="tooltiptext">la gente cálida y amigable</span></span>
-		<span class="tooltip">who like --<span class="tooltiptext">a quien le gusta...</span></span>
-	</p>
-	<p>
-		<span class="tooltip">(Laughter)<span class="tooltiptext">(Risas)</span></span>
-	</p>
-	<p>
-		<span class="tooltip">really want to hug you
-and get you into the community.<span class="tooltiptext">realmente quieren abrazarlo 
-y traerlo a la comunidad.</span></span>
-		<span class="tooltip">But that&#39;s not everybody.<span class="tooltiptext">Pero así no es todo el mundo.</span></span>
-		<span class="tooltip">And that&#39;s not me.<span class="tooltiptext">Y ese no soy yo.</span></span>
-		<span class="tooltip">I care about the technology.<span class="tooltiptext">Me importa la tecnología.</span></span>
-		<span class="tooltip">There are people who care about the UI.<span class="tooltiptext">Hay quienes se preocupan 
-por la interfaz de usuario.</span></span>
-		<span class="tooltip">I can&#39;t do UI to save my life.<span class="tooltiptext">No puedo hacer la interfaz de usuario
-para salvar mi vida.</span></span>
-		<span class="tooltip">I mean, if I was stranded on an island<span class="tooltiptext">Es decir, si yo estuviera 
-varado en una isla</span></span>
-		<span class="tooltip">and the only way to get off that island
-was the make a pretty UI,<span class="tooltiptext">y la única manera de salir de esa isla 
-fuera una buena interfaz de usuario,</span></span>
-		<span class="tooltip">I&#39;d die there.<span class="tooltiptext">me moriría allí.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">(Laughter)<span class="tooltiptext">(Risas)</span></span>
-	</p>
-	<p>
-		<span class="tooltip">So there&#39;s different kinds of people,<span class="tooltiptext">Así que hay diferentes tipos de personas,</span></span>
-		<span class="tooltip">and I&#39;m not making excuses,
-I&#39;m trying to explain.<span class="tooltiptext">y no estoy dando excusas, 
-estoy tratando de explicar.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">CA: Now, when we talked last week,<span class="tooltiptext">CA: Cuando hablamos la semana pasada,</span></span>
-		<span class="tooltip">you talked about some
-other trait that you have,<span class="tooltiptext">hablaste de algún otro rasgo que tienes,</span></span>
-		<span class="tooltip">which I found really interesting.<span class="tooltiptext">que me pareció muy interesante.</span></span>
-		<span class="tooltip">It&#39;s this idea called taste.<span class="tooltiptext">Es esta idea llamada gusto.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">And I&#39;ve just got a couple of images here.<span class="tooltiptext">Solo tengo un par de imágenes aquí.</span></span>
-		<span class="tooltip">I think this is an example of not
-particularly good taste in code,<span class="tooltiptext">Creo que esto es un ejemplo de un 
-no particular buen gusto en el código,</span></span>
-		<span class="tooltip">and this one is better taste,<span class="tooltiptext">y este sabe mejor,</span></span>
-		<span class="tooltip">which one can immediately see.<span class="tooltiptext">la cual se puede ver inmediatamente.</span></span>
-		<span class="tooltip">What is the difference between these two?<span class="tooltiptext">¿Cuál es la diferencia entre estos dos?</span></span>
-	</p>
-	<p>
-		<span class="tooltip">LT: So this is --<span class="tooltiptext">LT: Esto es...</span></span>
-		<span class="tooltip">How many people here actually have coded?<span class="tooltiptext">¿Cuántas personas aquí 
-realmente han codificado?</span></span>
-	</p>
-	<p>
-		<span class="tooltip">CA: Oh my goodness.<span class="tooltiptext">CA: Oh mi Dios.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">LT: So I guarantee you,<span class="tooltiptext">LT: Les garantizo,</span></span>
-		<span class="tooltip">everybody who raised their hand,<span class="tooltiptext">a todos los que levantaron su mano,</span></span>
-		<span class="tooltip">they have done what&#39;s called
-a singly-linked list.<span class="tooltiptext">que han hecho lo que se llama 
-una lista enlazada.</span></span>
-		<span class="tooltip">And it&#39;s taught --<span class="tooltiptext">Y se enseña...</span></span>
-		<span class="tooltip">This, the first not very
-good taste approach,<span class="tooltiptext">Este, el primero no es una 
-muy buena aproximación de gusto,</span></span>
-		<span class="tooltip">is basically how it&#39;s taught to be done
-when you start out coding.<span class="tooltiptext">es básicamente cómo se enseña a hacer 
-cuando se empieza la codificación.</span></span>
-		<span class="tooltip">And you don&#39;t have to understand the code.<span class="tooltiptext">Y uno no tiene que entender el código.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">The most interesting part to me<span class="tooltiptext">La parte más interesante para mí</span></span>
-		<span class="tooltip">is the last if statement.<span class="tooltiptext">es la última sentencia &quot;if&quot; (si).</span></span>
-		<span class="tooltip">Because what happens
-in a singly-linked list --<span class="tooltiptext">Debido a que lo que pasa
-en una lista enlazada</span></span>
-		<span class="tooltip">this is trying to remove
-an existing entry from a list --<span class="tooltiptext">--esto está tratando de quitar 
-una entrada existente de una lista--</span></span>
-		<span class="tooltip">and there&#39;s a difference
-between if it&#39;s the first entry<span class="tooltiptext">y hay una diferencia entre 
-si es la primera entrada</span></span>
-		<span class="tooltip">or whether it&#39;s an entry in the middle.<span class="tooltiptext">o si se trata de una entrada en el centro.</span></span>
-		<span class="tooltip">Because if it&#39;s the first entry,<span class="tooltiptext">Porque si es la primera entrada,</span></span>
-		<span class="tooltip">you have to change
-the pointer to the first entry.<span class="tooltiptext">uno tiene que cambiar el puntero 
-a la primera entrada.</span></span>
-		<span class="tooltip">If it&#39;s in the middle,<span class="tooltiptext">Si está en el medio,</span></span>
-		<span class="tooltip">you have to change the pointer
-of a previous entry.<span class="tooltiptext">uno tiene que cambiar el puntero 
-de una entrada anterior.</span></span>
-		<span class="tooltip">So they&#39;re two completely different cases.<span class="tooltiptext">Son dos casos 
-completamente diferentes.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">CA: And that&#39;s better.<span class="tooltiptext">CA: Y ese es mejor.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">LT: And this is better.<span class="tooltiptext">LT: Y este es mejor.</span></span>
-		<span class="tooltip">It does not have the if statement.<span class="tooltiptext">No tiene la sentencia &quot;if&quot;.</span></span>
-		<span class="tooltip">And it doesn&#39;t really matter --<span class="tooltiptext">Y realmente no importa...</span></span>
-		<span class="tooltip">I don&#39;t want you understand
-why it doesn&#39;t have the if statement,<span class="tooltiptext">No quiero que entiendan 
-por qué no tiene la sentencia &quot;if&quot;,</span></span>
-		<span class="tooltip">but I want you to understand<span class="tooltiptext">pero quiero que entiendan</span></span>
-		<span class="tooltip">that sometimes you can see
-a problem in a different way<span class="tooltiptext">que a veces se puede ver 
-un problema de forma diferente</span></span>
-		<span class="tooltip">and rewrite it so that
-a special case goes away<span class="tooltiptext">y volver a escribir para que 
-un caso especial desaparezca</span></span>
-		<span class="tooltip">and becomes the normal case.<span class="tooltiptext">y se convierta en el caso normal.</span></span>
-		<span class="tooltip">And that&#39;s good code.<span class="tooltiptext">Y eso es un buen código.</span></span>
-		<span class="tooltip">But this is simple code.<span class="tooltiptext">Pero esto es simple código.</span></span>
-		<span class="tooltip">This is CS 101.<span class="tooltiptext">Esto es CS 101.</span></span>
-		<span class="tooltip">This is not important --
-although, details are important.<span class="tooltiptext">Esto no es importante... 
-si bien, los detalles son importantes.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">To me, the sign of people
-I really want to work with<span class="tooltiptext">Para mí, el signo de la gente 
-que realmente quiere trabajar con esto</span></span>
-		<span class="tooltip">is that they have good taste,
-which is how ...<span class="tooltiptext">es que tienen buen gusto, que es como...</span></span>
-		<span class="tooltip">I sent you this stupid example<span class="tooltiptext">Te envié este estúpido ejemplo</span></span>
-		<span class="tooltip">that is not relevant
-because it&#39;s too small.<span class="tooltiptext">que no es relevante, 
-porque es muy pequeño.</span></span>
-		<span class="tooltip">Good taste is much bigger than this.<span class="tooltiptext">El buen gusto es 
-mucho más grande que esto.</span></span>
-		<span class="tooltip">Good taste is about really
-seeing the big patterns<span class="tooltiptext">El buen gusto es ve
-realmente los grandes patrones</span></span>
-		<span class="tooltip">and kind of instinctively knowing
-what&#39;s the right way to do things.<span class="tooltiptext">y el tipo de saber instintivamente cuál es
-la forma correcta de hacer las cosas.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">CA: OK, so we&#39;re putting
-the pieces together here now.<span class="tooltiptext">CA: OK, así que estamos juntando 
-las piezas aquí ahora.</span></span>
-		<span class="tooltip">You have taste,<span class="tooltiptext">Tú tienes gusto,</span></span>
-		<span class="tooltip">in a way that&#39;s meaningful
-to software people.<span class="tooltiptext">de una manera que es significativa 
-para la gente de software.</span></span>
-		<span class="tooltip">You&#39;re --<span class="tooltiptext">Eres...</span></span>
-	</p>
-	<p>
-		<span class="tooltip">(Laughter)<span class="tooltiptext">(Risas)</span></span>
-	</p>
-	<p>
-		<span class="tooltip">LT: I think it was meaningful
-to some people here.<span class="tooltiptext">LT: Creo que fue significativo 
-para algunos aquí.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">CA: You&#39;re a very smart computer coder,<span class="tooltiptext">CA: Eres un programador informático 
-muy inteligente,</span></span>
-		<span class="tooltip">and you&#39;re hellish stubborn.<span class="tooltiptext">y eres un terco infernal.</span></span>
-		<span class="tooltip">But there must be something else.<span class="tooltiptext">Pero tiene que haber algo más.</span></span>
-		<span class="tooltip">I mean, you&#39;ve changed the future.<span class="tooltiptext">Es decir, has cambiado el futuro.</span></span>
-		<span class="tooltip">You must have the ability
-of these grand visions of the future.<span class="tooltiptext">Debes tener la capacidad 
-de estas grandes visiones del futuro.</span></span>
-		<span class="tooltip">You&#39;re a visionary, right?<span class="tooltiptext">Eres un visionario, ¿verdad?</span></span>
-	</p>
-	<p>
-		<span class="tooltip">LT: I&#39;ve actually felt slightly
-uncomfortable at TED<span class="tooltiptext">LT: Me he sentido un poco incómodo en TED</span></span>
-		<span class="tooltip">for the last two days,<span class="tooltiptext">durante los últimos dos días,</span></span>
-		<span class="tooltip">because there&#39;s a lot
-of vision going on, right?<span class="tooltiptext">porque hay una gran cantidad 
-de visión dándose, ¿verdad?</span></span>
-		<span class="tooltip">And I am not a visionary.<span class="tooltiptext">Y no soy un visionario.</span></span>
-		<span class="tooltip">I do not have a five-year plan.<span class="tooltiptext">No tengo un plan a cinco años.</span></span>
-		<span class="tooltip">I&#39;m an engineer.<span class="tooltiptext">Soy ingeniero.</span></span>
-		<span class="tooltip">And I think it&#39;s really --<span class="tooltiptext">Y creo que es realmente...</span></span>
-		<span class="tooltip">I mean -- I&#39;m perfectly
-happy with all the people<span class="tooltiptext">Quiero decir... 
-Estoy muy feliz con todas las personas</span></span>
-		<span class="tooltip">who are walking around
-and just staring at the clouds<span class="tooltiptext">que andan por ahí y 
-solo miran a las nubes</span></span>
-		<span class="tooltip">and looking at the stars
-and saying, &quot;I want to go there.&quot;<span class="tooltiptext">y miran las estrellas 
-y dicen, &quot;quiero ir allá&quot;.</span></span>
-		<span class="tooltip">But I&#39;m looking at the ground,<span class="tooltiptext">Pero estoy mirando al suelo,</span></span>
-		<span class="tooltip">and I want to fix the pothole
-that&#39;s right in front of me<span class="tooltiptext">y quiero arreglar el bache 
-que está justo en frente de mí</span></span>
-		<span class="tooltip">before I fall in.<span class="tooltiptext">antes de que caiga en él</span></span>
-		<span class="tooltip">This is the kind of person I am.<span class="tooltiptext">Este es el tipo de persona que soy.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">(Cheers)<span class="tooltiptext">(Aclamaciones)</span></span>
-	</p>
-	<p>
-		<span class="tooltip">(Applause)<span class="tooltiptext">(Aplausos)</span></span>
-	</p>
-	<p>
-		<span class="tooltip">CA: So you spoke to me last week
-about these two guys.<span class="tooltiptext">CA: Hablaste la semana pasada 
-sobre estos dos chicos.</span></span>
-		<span class="tooltip">Who are they and how
-do you relate to them?<span class="tooltiptext">¿Quiénes son 
-y cómo te relacionas con ellos?</span></span>
-	</p>
-	<p>
-		<span class="tooltip">LT: Well, so this is kind
-of cliché in technology,<span class="tooltiptext">LT: Bueno, es una especie de 
-lugar común en la tecnología,</span></span>
-		<span class="tooltip">the whole Tesla versus Edison,<span class="tooltiptext">todo el Tesla contra Edison,</span></span>
-		<span class="tooltip">where Tesla is seen as the visionary
-scientist and crazy idea man.<span class="tooltiptext">donde Tesla es visto como el visionario 
-científico y el hombre de la idea loca.</span></span>
-		<span class="tooltip">And people love Tesla.<span class="tooltiptext">Y a la gente le encanta Tesla.</span></span>
-		<span class="tooltip">I mean, there are people who name
-their companies after him.<span class="tooltiptext">Es decir, hay personas que nombran 
-sus empresas por él.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">(Laughter)<span class="tooltiptext">(Risas)</span></span>
-	</p>
-	<p>
-		<span class="tooltip">The other person there is Edison,<span class="tooltiptext">La otra persona hay es Edison,</span></span>
-		<span class="tooltip">who is actually often vilified
-for being kind of pedestrian<span class="tooltiptext">que en realidad es a menudo vilipendiado 
-por ser especie de peatón</span></span>
-		<span class="tooltip">and is --<span class="tooltiptext">y es...</span></span>
-		<span class="tooltip">I mean, his most famous quote is,<span class="tooltiptext">Es decir, su cita más famosa es,</span></span>
-		<span class="tooltip">&quot;Genius is one percent inspiration
-and 99 percent perspiration.&quot;<span class="tooltiptext">&quot;El genio es un 1 % de inspiración 
-y 99 % de transpiración&quot;.</span></span>
-		<span class="tooltip">And I&#39;m in the Edison camp,<span class="tooltiptext">Y estoy en el campo de Edison,</span></span>
-		<span class="tooltip">even if people don&#39;t always like him.<span class="tooltiptext">incluso si a la gente no siempre le gusta.</span></span>
-		<span class="tooltip">Because if you actually compare the two,<span class="tooltiptext">Porque si en realidad se comparan los dos,</span></span>
-		<span class="tooltip">Tesla has kind of this mind
-grab these days,<span class="tooltiptext">Tesla tiene esa clase de mente 
-que atrapa en estos días,</span></span>
-		<span class="tooltip">but who actually changed the world?<span class="tooltiptext">pero ¿realmente cambió el mundo?</span></span>
-		<span class="tooltip">Edison may not have been a nice person,<span class="tooltiptext">Edison pudo no haber sido 
-una buena persona,</span></span>
-		<span class="tooltip">he did a lot of things --<span class="tooltiptext">que hizo un montón de cosas...</span></span>
-		<span class="tooltip">he was maybe not so intellectual,<span class="tooltiptext">él no era quizá tan intelectual,</span></span>
-		<span class="tooltip">not so visionary.<span class="tooltiptext">no era tan visionario.</span></span>
-		<span class="tooltip">But I think I&#39;m more
-of an Edison than a Tesla.<span class="tooltiptext">Pero creo que soy más 
-un Edison que un Tesla.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">CA: So our theme at TED
-this week is dreams --<span class="tooltiptext">CA: Nuestro tema en TED
-esta semana son los sueños,</span></span>
-		<span class="tooltip">big, bold, audacious dreams.<span class="tooltiptext">grandes, audaces sueños.</span></span>
-		<span class="tooltip">You&#39;re really the antidote to that.<span class="tooltiptext">Eres realmente el antídoto para eso.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">LT: I&#39;m trying to dial it down a bit, yes.<span class="tooltiptext">LT: Trato de apuntar
-hacia abajo un poco, sí.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">CA: That&#39;s good.<span class="tooltiptext">CA: Eso es bueno.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">(Laughter)<span class="tooltiptext">(Risas)</span></span>
-		<span class="tooltip">We embrace you, we embrace you.<span class="tooltiptext">Los abrazamos, los abrazamos.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">Companies like Google and many
-others have made, arguably,<span class="tooltiptext">Empresas como Google y muchas otras 
-han hecho, podría decirse,</span></span>
-		<span class="tooltip">like, billions of dollars
-out of your software.<span class="tooltiptext">miles de millones de dólares 
-con tu software.</span></span>
-		<span class="tooltip">Does that piss you off?<span class="tooltiptext">¿No te molesta?</span></span>
-	</p>
-	<p>
+		<span class="tooltip">Chris Anderson: Es una cosa tan curiosa.<span class="tooltiptext">Chris Anderson: This is such
+a strange thing.</span></span>
+		<span class="tooltip">Tu software, Linux, 
+está en millones de computadoras,<span class="tooltiptext">Your software, Linux,
+is in millions of computers,</span></span>
+		<span class="tooltip">probablemente soporta 
+gran parte de Internet.<span class="tooltiptext">it probably powers much of the Internet.</span></span>
+		<span class="tooltip">Y creo que hay, como,<span class="tooltiptext">And I think that there are, like,</span></span>
+		<span class="tooltip">1500 millones de 
+dispositivos Android activos por ahí.<span class="tooltiptext">a billion and a half active
+Android devices out there.</span></span>
+		<span class="tooltip">Tu software está en todos 
+y cada uno de ellos.<span class="tooltiptext">Your software is in every
+single one of them.</span></span>
+		<span class="tooltip">Es un poco sorprendente.<span class="tooltiptext">It&#39;s kind of amazing.</span></span>
+		<span class="tooltip">Debes tener una sorprendente sede de 
+software dirigiendo todo esto.<span class="tooltiptext">You must have some amazing
+software headquarters driving all this.</span></span>
+		<span class="tooltip">Es lo que pensé, y quedé muy 
+sorprendido cuando vi una foto de ello.<span class="tooltiptext">That&#39;s what I thought -- and I was shocked
+when I saw a picture of it.</span></span>
+		<span class="tooltip">Es decir, es esto...<span class="tooltiptext">I mean, this is --</span></span>
+		<span class="tooltip">esta es la sede mundial de Linux.<span class="tooltiptext">this is the Linux world headquarters.</span></span>
+		<span class="tooltip">(Risas)<span class="tooltiptext">(Laughter)</span></span>
+		<span class="tooltip">(Aplausos)<span class="tooltiptext">(Applause)</span></span>
+		<span class="tooltip">Linus Torvalds: Realmente 
+no lo parece mucho.<span class="tooltiptext">Linus Torvalds: It really
+doesn&#39;t look like much.</span></span>
+		<span class="tooltip">Y tengo que decir,<span class="tooltiptext">And I have to say,</span></span>
+		<span class="tooltip">la parte más interesante en esta imagen,<span class="tooltiptext">the most interesting part in this picture,</span></span>
+		<span class="tooltip">a lo que las personas reaccionan,<span class="tooltiptext">that people mostly react to,</span></span>
+		<span class="tooltip">es al escritorio de pie.<span class="tooltiptext">is the walking desk.</span></span>
+		<span class="tooltip">Es la parte más interesante en mi oficina<span class="tooltiptext">It is the most interesting
+part in my office</span></span>
+		<span class="tooltip">y no estoy realmente usándola más.<span class="tooltiptext">and I&#39;m not actually using it anymore.</span></span>
+		<span class="tooltip">Creo que las dos cosas están relacionadas.<span class="tooltiptext">And I think the two things are related.</span></span>
+		<span class="tooltip">Mi forma de trabajar es...<span class="tooltiptext">The way I work is ...</span></span>
+		<span class="tooltip">No quiero tener estimulación externa.<span class="tooltiptext">I want to not have external stimulation.</span></span>
+		<span class="tooltip">Pueden ver más o menos, las paredes 
+son de color verde claro.<span class="tooltiptext">You can kind of see,
+on the walls are this light green.</span></span>
+		<span class="tooltip">Me han dicho que en las instituciones 
+mentales que utilizan las mismas paredes.<span class="tooltiptext">I&#39;m told that at mental institutions
+they use that on the walls.</span></span>
+		<span class="tooltip">(Risas)<span class="tooltiptext">(Laughter)</span></span>
+		<span class="tooltip">Es como un color calmante,<span class="tooltiptext">It&#39;s like a calming color,</span></span>
+		<span class="tooltip">no es algo que realmente te estimula.<span class="tooltiptext">it&#39;s not something
+that really stimulates you.</span></span>
+		<span class="tooltip">Lo que no pueden ver es el equipo, 
+solo se ve la pantalla,<span class="tooltiptext">What you can&#39;t see is the computer here,
+you only see the screen,</span></span>
+		<span class="tooltip">pero lo más me preocupa de mi equipo es...<span class="tooltiptext">but the main thing I worry
+about in my computer is --</span></span>
+		<span class="tooltip">no tiene que ser grande y poderoso, 
+aunque me gusta que...<span class="tooltiptext">it doesn&#39;t have to be big
+and powerful, although I like that --</span></span>
+		<span class="tooltip">lo que realmente tiene que ser 
+es completamente silencioso.<span class="tooltiptext">it really has to be completely silent.</span></span>
+		<span class="tooltip">Conozco personas que trabajan para Google<span class="tooltiptext">I know people who work for Google</span></span>
+		<span class="tooltip">y tienen su propio pequeño 
+centro de datos en casa,<span class="tooltiptext">and they have their own
+small data center at home,</span></span>
+		<span class="tooltip">y yo no hago eso.<span class="tooltiptext">and I don&#39;t do that.</span></span>
+		<span class="tooltip">Mi oficina es la oficina 
+más aburrida que jamás puedan ver.<span class="tooltiptext">My office is the most
+boring office you&#39;ll ever see.</span></span>
+		<span class="tooltip">Y me siento allí solo en silencio.<span class="tooltiptext">And I sit there alone in the quiet.</span></span>
+		<span class="tooltip">Si el gato se acerca,<span class="tooltiptext">If the cat comes up,</span></span>
+		<span class="tooltip">se sienta en mi regazo.<span class="tooltiptext">it sits in my lap.</span></span>
+		<span class="tooltip">Y quiero oír el ronroneo del gato,<span class="tooltiptext">And I want to hear the cat purring,</span></span>
+		<span class="tooltip">no el sonido de 
+los ventiladores del equipo.<span class="tooltiptext">not the sound of the fans in the computer.</span></span>
+		<span class="tooltip">CA: Es sorprendente,<span class="tooltiptext">CA: So this is astonishing,</span></span>
+		<span class="tooltip">porque trabajando de esta manera,<span class="tooltiptext">because working this way,</span></span>
+		<span class="tooltip">has sido capaz de llevar 
+este vasto imperio de tecnología<span class="tooltiptext">you&#39;re able to run this vast
+technology empire --</span></span>
+		<span class="tooltip">--es un imperio--<span class="tooltiptext">it is an empire --</span></span>
+		<span class="tooltip">así que eso es un testamento increíble 
+a la potencia del código abierto.<span class="tooltiptext">so that&#39;s an amazing testament
+to the power of open source.</span></span>
+		<span class="tooltip">Cuéntanos cómo has llegado 
+a entender el código abierto<span class="tooltiptext">Tell us how you got
+to understand open source</span></span>
+		<span class="tooltip">y cómo lleva al desarrollo de Linux.<span class="tooltiptext">and how it lead
+to the development of Linux.</span></span>
+		<span class="tooltip">LT: Sigo trabajando solo.<span class="tooltiptext">LT: I mean, I still work alone.</span></span>
+		<span class="tooltip">Realmente... trabajo solo en mi casa,<span class="tooltiptext">Really -- I work alone in my house,</span></span>
+		<span class="tooltip">a menudo en mi albornoz.<span class="tooltiptext">often in my bathrobe.</span></span>
+		<span class="tooltip">Cuando un fotógrafo aparece, me visto,<span class="tooltiptext">When a photographer shows up, I dress up,</span></span>
+		<span class="tooltip">tengo la ropa puesta.<span class="tooltiptext">so I have clothes on.</span></span>
+		<span class="tooltip">(Risas)<span class="tooltiptext">(Laughter)</span></span>
+		<span class="tooltip">Así es como siempre he trabajado.<span class="tooltiptext">And that&#39;s how I&#39;ve always worked.</span></span>
+		<span class="tooltip">Así fue como empecé Linux, también.<span class="tooltiptext">I mean, this was how I started Linux, too.</span></span>
+		<span class="tooltip">No empecé Linux 
+como un proyecto de colaboración.<span class="tooltiptext">I did not start Linux
+as a collaborative project.</span></span>
+		<span class="tooltip">Empecé como parte de 
+una serie de muchos proyectos<span class="tooltiptext">I started it as one
+in a series of many projects</span></span>
+		<span class="tooltip">que había hecho en el tiempo para mí,<span class="tooltiptext">I had done at the time for myself,</span></span>
+		<span class="tooltip">en parte porque 
+necesitaba el resultado final,<span class="tooltiptext">partly because I needed the end result,</span></span>
+		<span class="tooltip">pero aún más porque 
+disfrutaba la programación.<span class="tooltiptext">but even more because I just
+enjoyed programming.</span></span>
+		<span class="tooltip">Por lo tanto, 
+era sobre el final del viaje,<span class="tooltiptext">So it was about the end of the journey,</span></span>
+		<span class="tooltip">el cual, 25 años después, 
+todavía no hemos alcanzado.<span class="tooltiptext">which, 25 years later,
+we still have not reached.</span></span>
+		<span class="tooltip">Pero fue realmente sobre el hecho de que 
+estaba buscando un proyecto por mi cuenta<span class="tooltiptext">But it was really about the fact
+that I was looking for a project on my own</span></span>
+		<span class="tooltip">y no había ninguna fuente abierta, 
+en realidad, en mi radar en absoluto.<span class="tooltiptext">and there was no open source,
+really, on my radar at all.</span></span>
+		<span class="tooltip">Y lo que pasó es...<span class="tooltiptext">And what happened is ...</span></span>
+		<span class="tooltip">el proyecto crece y se convierte en algo 
+que uno desea mostrar a la gente.<span class="tooltiptext">the project grows and becomes something
+you want to show off to people.</span></span>
+		<span class="tooltip">Realmente, esto es más de un, 
+&quot;¡Mira lo que hice!&quot;.<span class="tooltiptext">Really, this is more of a, &quot;Wow,
+look at what I did!&quot;</span></span>
+		<span class="tooltip">Y, créanme...
+no era tan bueno en ese entonces.<span class="tooltiptext">And trust me -- it was not
+that great back then.</span></span>
+		<span class="tooltip">Lo hice públicamente disponible,<span class="tooltiptext">I made it publicly available,</span></span>
+		<span class="tooltip">y ni siquiera era código abierto entonces.<span class="tooltiptext">and it wasn&#39;t even
+open source at that point.</span></span>
+		<span class="tooltip">En ese momento era fuente que estaba 
+abierta, pero no había ninguna intención<span class="tooltiptext">At that point it was source that was open,
+but there was no intention</span></span>
+		<span class="tooltip">detrás de usar el tipo de metodología de 
+código abierto que pensamos hoy<span class="tooltiptext">behind using the kind of open-source
+methodology that we think of today</span></span>
+		<span class="tooltip">para mejorarlo.<span class="tooltiptext">to improve it.</span></span>
+		<span class="tooltip">Era más como,<span class="tooltiptext">It was more like,</span></span>
+		<span class="tooltip">&quot;Mira, he estado trabajando en esto 
+durante medio año,<span class="tooltiptext">&quot;Look, I&#39;ve been working
+on this for half a year,</span></span>
+		<span class="tooltip">me gustaría tener comentarios&quot;.<span class="tooltiptext">I&#39;d love to have comments.&quot;</span></span>
+		<span class="tooltip">Y otras personas se acercaron a mí.<span class="tooltiptext">And other people approached me.</span></span>
+		<span class="tooltip">En la Universidad de Helsinki,<span class="tooltiptext">At the University of Helsinki,</span></span>
+		<span class="tooltip">tenía un amigo que era uno 
+de los de código abierto<span class="tooltiptext">I had a friend who was one
+of the open source --</span></span>
+		<span class="tooltip">--se le llamó &quot;software libre&quot;, 
+principalmente en aquel entonces--<span class="tooltiptext">it was called mainly
+&quot;free software&quot; back then --</span></span>
+		<span class="tooltip">y de hecho me introdujo 
+a la idea de que, bueno,<span class="tooltiptext">and he actually introduced me
+to the notion that, hey,</span></span>
+		<span class="tooltip">puedes utilizar estas licencias 
+de código abierto que han existido.<span class="tooltiptext">you can use these open-source
+licenses that had been around.</span></span>
+		<span class="tooltip">Y pensé en ello durante un tiempo.<span class="tooltiptext">And I thought about it for a while.</span></span>
+		<span class="tooltip">En realidad, estaba preocupado sobre 
+el interés comercial que llegaba.<span class="tooltiptext">I was actually worried about the whole
+commercial interests coming in.</span></span>
+		<span class="tooltip">Es una de preocupación, que creo que 
+tiene la mayoría de los que comienzan,<span class="tooltiptext">I mean, that&#39;s one of the worries
+I think most people who start out have,</span></span>
+		<span class="tooltip">es que les preocupa que alguien 
+se aproveche de su trabajo, ¿verdad?<span class="tooltiptext">is that they worry about somebody
+taking advantage of their work, right?</span></span>
+		<span class="tooltip">Yo decidí, &quot;¿Qué demonios?&quot;.<span class="tooltiptext">And I decided, &quot;What the hell?&quot;</span></span>
+		<span class="tooltip">y...<span class="tooltiptext">And --</span></span>
+		<span class="tooltip">CA: Y después, en algún momento,<span class="tooltiptext">CA: And then at some point,</span></span>
+		<span class="tooltip">alguien aportó un código 
+que pensaste,<span class="tooltiptext">someone contributed
+some code that you thought,</span></span>
+		<span class="tooltip">&quot;Esto es realmente interesante, 
+yo no habría pensado en eso.<span class="tooltiptext">&quot;Wow, that really is interesting,
+I would not have thought of that.</span></span>
+		<span class="tooltip">En realidad, podría mejorar esto&quot;.<span class="tooltiptext">This could actually improve this.&quot;</span></span>
+		<span class="tooltip">LT: Ni siquiera comenzó con gente 
+contribuyendo con código,<span class="tooltiptext">LT: It didn&#39;t even start
+by people contributing code,</span></span>
+		<span class="tooltip">era más aportando ideas.<span class="tooltiptext">it was more that people
+started contributing ideas.</span></span>
+		<span class="tooltip">Y el solo hecho de que alguien 
+eche un vistazo a tu proyecto<span class="tooltiptext">And just the fact that somebody else
+takes a look at your project --</span></span>
+		<span class="tooltip">--y estoy seguro de que es cierto 
+para otras cosas, también,<span class="tooltiptext">and I&#39;m sure it&#39;s true
+of other things, too,</span></span>
+		<span class="tooltip">pero sin duda es cierto en código--<span class="tooltiptext">but it&#39;s definitely true in code --</span></span>
+		<span class="tooltip">es que alguien se interese en tu código,<span class="tooltiptext">is that somebody else
+takes an interest in your code,</span></span>
+		<span class="tooltip">mire lo suficiente como para realmente 
+darte retroalimentación<span class="tooltiptext">looks at it enough to actually
+give you feedback</span></span>
+		<span class="tooltip">y darte ideas.<span class="tooltiptext">and give you ideas.</span></span>
+		<span class="tooltip">Eso fue algo muy importante para mí.<span class="tooltiptext">That was a huge thing for me.</span></span>
+		<span class="tooltip">Tenía 21 años en ese momento, 
+así que era joven,<span class="tooltiptext">I was 21 at the time, so I was young,</span></span>
+		<span class="tooltip">pero ya había programado 
+para la mitad de mi vida, básicamente.<span class="tooltiptext">but I had already programmed
+for half my life, basically.</span></span>
+		<span class="tooltip">Y cada proyecto anterior 
+había sido completamente personal<span class="tooltiptext">And every project before that
+had been completely personal</span></span>
+		<span class="tooltip">y fue una revelación cuando la gente 
+empezó a comentarlo,<span class="tooltiptext">and it was a revelation when people
+just started commenting,</span></span>
+		<span class="tooltip">comenzó a dar retroalimentación 
+sobre tu código.<span class="tooltiptext">started giving feedback on your code.</span></span>
+		<span class="tooltip">E incluso antes de comenzar 
+a dar vuelta código,<span class="tooltiptext">And even before they started
+giving code back,</span></span>
+		<span class="tooltip">que fue, creo, uno de los 
+grandes momentos en los que he dicho,<span class="tooltiptext">that was, I think, one of the big
+moments where I said,</span></span>
+		<span class="tooltip">&quot;¡Me encanta la gente!&quot;.<span class="tooltiptext">&quot;I love other people!&quot;</span></span>
+		<span class="tooltip">No me malinterpreten...<span class="tooltiptext">Don&#39;t get me wrong --</span></span>
+		<span class="tooltip">en realidad, no tengo don de gentes.<span class="tooltiptext">I&#39;m actually not a people person.</span></span>
+		<span class="tooltip">(Risas)<span class="tooltiptext">(Laughter)</span></span>
+		<span class="tooltip">Realmente no me gusta la gente...<span class="tooltiptext">I don&#39;t really love other people --</span></span>
+		<span class="tooltip">(Risas)<span class="tooltiptext">(Laughter)</span></span>
+		<span class="tooltip">Pero me encantan los computadores,<span class="tooltiptext">But I love computers,</span></span>
+		<span class="tooltip">me encanta interactuar con otros por mail,<span class="tooltiptext">I love interacting with other
+people on email,</span></span>
+		<span class="tooltip">debido a que esto te da ese búfer.<span class="tooltiptext">because it kind of gives you that buffer.</span></span>
+		<span class="tooltip">Pero me gusta que otras personas 
+comenten y participen en mi proyecto.<span class="tooltiptext">But I do love other people who comment
+and get involved in my project.</span></span>
+		<span class="tooltip">Y se hizo mucho más.<span class="tooltiptext">And it made it so much more.</span></span>
+		<span class="tooltip">CA: Así que ¿hubo un momento en que viste 
+lo que se estaba construyendo<span class="tooltiptext">CA: So was there a moment
+when you saw what was being built</span></span>
+		<span class="tooltip">y de repente empezó a despegar,<span class="tooltiptext">and it suddenly started taking off,</span></span>
+		<span class="tooltip">y pensaste, &quot;Espera un segundo, 
+en realidad, esto podría ser algo enorme,<span class="tooltiptext">and you thought, &quot;Wait a sec,
+this actually could be something huge,</span></span>
+		<span class="tooltip">no solo un proyecto personal 
+que recibe buena retroalimentación,<span class="tooltiptext">not just a personal project
+that I&#39;m getting nice feedback on,</span></span>
+		<span class="tooltip">sino una especie de desarrollo explosivo 
+en todo el mundo de la tecnología&quot;?<span class="tooltiptext">but a kind of explosive development
+in the whole technology world&quot;?</span></span>
+		<span class="tooltip">LT: En realidad no.<span class="tooltiptext">LT: Not really.</span></span>
+		<span class="tooltip">Es decir, el punto para mí, realmente, no 
+fue cuando se estaba convirtiendo enorme,<span class="tooltiptext">I mean, the big point for me, really,
+was not when it was becoming huge,</span></span>
+		<span class="tooltip">fue cuando se estaba convirtiendo en algo.<span class="tooltiptext">it was when it was becoming little.</span></span>
+		<span class="tooltip">El punto grande para mí 
+fue que no estaba solo<span class="tooltiptext">The big point for me was not being alone</span></span>
+		<span class="tooltip">y que tenía 10, 
+tal vez 100 personas involucradas...<span class="tooltiptext">and having 10, maybe 100
+people being involved --</span></span>
+		<span class="tooltip">eso fue un gran punto.<span class="tooltiptext">that was a big point.</span></span>
+		<span class="tooltip">A continuación, 
+todo lo demás fue muy gradual.<span class="tooltiptext">Then everything else was very gradual.</span></span>
+		<span class="tooltip">Pasar de 100 personas a un millón de 
+personas no es una gran cosa... para mí.<span class="tooltiptext">Going from 100 people to a million people
+is not a big deal -- to me.</span></span>
+		<span class="tooltip">Bueno, quiero decir, 
+tal vez es si estás...<span class="tooltiptext">Well, I mean, maybe it is if you&#39;re --</span></span>
+		<span class="tooltip">(Risas)<span class="tooltiptext">(Laughter)</span></span>
+		<span class="tooltip">Si se quiere vender su resultado 
+entonces es algo grande,<span class="tooltiptext">If you want to sell your result
+then it&#39;s a huge deal --</span></span>
+		<span class="tooltip">no me malinterpreten.<span class="tooltiptext">don&#39;t get me wrong.</span></span>
+		<span class="tooltip">Pero si se está interesado 
+en la tecnología<span class="tooltiptext">But if you&#39;re interested in the technology</span></span>
+		<span class="tooltip">y se está interesado en el proyecto,<span class="tooltiptext">and you&#39;re interested in the project,</span></span>
+		<span class="tooltip">la parte grande estaba 
+en formar comunidad.<span class="tooltiptext">the big part was getting the community.</span></span>
+		<span class="tooltip">Después la comunidad 
+creció gradualmente.<span class="tooltiptext">Then the community grew gradually.</span></span>
+		<span class="tooltip">Y no hay en realidad un único punto 
+en el que fui como,<span class="tooltiptext">And there&#39;s actually not
+a single point where I went like,</span></span>
+		<span class="tooltip">&quot;Uf, ¡acaba de despegar!&quot;, porque,<span class="tooltiptext">&quot;Wow, that just took off!&quot; because it --</span></span>
+		<span class="tooltip">quiero decir, tomó mucho tiempo, 
+relativamente.<span class="tooltiptext">I mean -- it took a long time, relatively.</span></span>
+		<span class="tooltip">CA: Todos los técnicos con los que hablo 
+en realidad te dan crédito<span class="tooltiptext">CA: So all the technologists
+that I talk to really credit you</span></span>
+		<span class="tooltip">del masivo cambio 
+en la forma de su trabajo.<span class="tooltiptext">with massively changing their work.</span></span>
+		<span class="tooltip">Y no se trata solo de Linux,<span class="tooltiptext">And it&#39;s not just Linux,</span></span>
+		<span class="tooltip">es esta cosa llamada Git,<span class="tooltiptext">it&#39;s this thing called Git,</span></span>
+		<span class="tooltip">que es este sistema de gestión 
+para el desarrollo de software.<span class="tooltiptext">which is this management system
+for software development.</span></span>
+		<span class="tooltip">Cuéntanos brevemente sobre eso 
+y tu papel en eso.<span class="tooltiptext">Tell us briefly about that
+and your role in that.</span></span>
+		<span class="tooltip">LT: Uno de los temas que tuvimos,<span class="tooltiptext">LT: So one of the issues we had,</span></span>
+		<span class="tooltip">y esto tomó un tiempo 
+para empezar a aparecer,<span class="tooltiptext">and this took a while to start to appear,</span></span>
+		<span class="tooltip">es cuando uno...<span class="tooltiptext">is when you ...</span></span>
+		<span class="tooltip">Cuando creces de tener 10 personas 
+o 100 personas trabajando en un proyecto<span class="tooltiptext">When you grow from having 10 people
+or 100 people working on a project</span></span>
+		<span class="tooltip">a tener 10 000 personas, lo que...<span class="tooltiptext">to having 10,000 people, which --</span></span>
+		<span class="tooltip">es decir, en este momento estamos en 
+la situación en la que solo en el núcleo,<span class="tooltiptext">I mean, right now we&#39;re in the situation
+where just on the kernel,</span></span>
+		<span class="tooltip">tenemos 1000 personas que participan 
+en cada lanzamiento<span class="tooltiptext">we have 1,000 people involved
+in every single release</span></span>
+		<span class="tooltip">y eso es cada dos meses, 
+más o menos dos o tres meses.<span class="tooltiptext">and that&#39;s every two months,
+roughly two or three months.</span></span>
+		<span class="tooltip">Algunas de esas personas no hacen mucho.<span class="tooltiptext">Some of those people don&#39;t do a lot.</span></span>
+		<span class="tooltip">Hay muchas personas que hacen 
+pequeños cambios.<span class="tooltiptext">There&#39;s a lot of people
+who make small, small changes.</span></span>
+		<span class="tooltip">Pero para mantener esto,<span class="tooltiptext">But to maintain this,</span></span>
+		<span class="tooltip">la escala cambia la forma 
+en que hay que mantenerla.<span class="tooltiptext">the scale changes how
+you have to maintain it.</span></span>
+		<span class="tooltip">Y el proceso lo hicimos muy doloroso.<span class="tooltiptext">And we went through a lot of pain.</span></span>
+		<span class="tooltip">Y hay proyectos completos que hacen 
+solo mantenimiento del código fuente.<span class="tooltiptext">And there are whole projects
+that do only source-code maintenance.</span></span>
+		<span class="tooltip">CVS es el que solía ser el más utilizado,<span class="tooltiptext">CVS is the one that used to be
+the most commonly used,</span></span>
+		<span class="tooltip">y yo odiaba CVS con pasión 
+y rehusaba tocarlo<span class="tooltiptext">and I hated CVS with a passion
+and refused to touch it</span></span>
+		<span class="tooltip">e intentaba otra cosa 
+que era radical e interesante<span class="tooltiptext">and tried something else
+that was radical and interesting</span></span>
+		<span class="tooltip">y todo el mundo la odiaba.<span class="tooltiptext">and everybody else hated.</span></span>
+		<span class="tooltip">CA: (Risas)<span class="tooltiptext">CA: (Laughs)</span></span>
+		<span class="tooltip">LT: Y estábamos en este mal lugar,<span class="tooltiptext">LT: And we were in this bad spot,</span></span>
+		<span class="tooltip">en que teníamos miles de personas 
+que querían participar,<span class="tooltiptext">where we had thousands of people
+who wanted to participate,</span></span>
+		<span class="tooltip">pero en muchos aspectos, 
+yo era el punto de ruptura,<span class="tooltiptext">but in many ways,
+I was the kind of break point,</span></span>
+		<span class="tooltip">donde no podía escalar hasta el punto<span class="tooltiptext">where I could not scale to the point</span></span>
+		<span class="tooltip">en el que podía trabajar 
+con miles de personas.<span class="tooltiptext">where I could work
+with thousands of people.</span></span>
+		<span class="tooltip">Así que Git es mi segundo gran proyecto,<span class="tooltiptext">So Git is my second big project,</span></span>
+		<span class="tooltip">que solo fue creado para mí,
+para mantener mi primer gran proyecto.<span class="tooltiptext">which was only created for me
+to maintain my first big project.</span></span>
+		<span class="tooltip">Y así es literalmente cómo trabajo.<span class="tooltiptext">And this is literally how I work.</span></span>
+		<span class="tooltip">Yo no codifico para<span class="tooltiptext">I don&#39;t code for --</span></span>
+		<span class="tooltip">--bueno, hago código por diversión--<span class="tooltiptext">well, I do code for fun --</span></span>
+		<span class="tooltip">pero quiero codificar 
+para algo significativo<span class="tooltiptext">but I want to code
+for something meaningful</span></span>
+		<span class="tooltip">por lo que cada uno de los proyectos que 
+he hecho ha sido algo que necesitaba<span class="tooltiptext">so every single project I&#39;ve ever done
+has been something I needed</span></span>
+		<span class="tooltip">y...<span class="tooltiptext">and --</span></span>
+		<span class="tooltip">CA: Así que, en realidad, tanto en Linux 
+como Git surgió de algo así<span class="tooltiptext">CA: So really, both Linux
+and Git kind of arose</span></span>
+		<span class="tooltip">casi como una consecuencia no deseada<span class="tooltiptext">almost as an unintended consequence</span></span>
+		<span class="tooltip">de tu deseo de no tener 
+que trabajar con mucha gente.<span class="tooltiptext">of your desire not to have
+to work with too many people.</span></span>
+		<span class="tooltip">LT: Totalmente. Sí.<span class="tooltiptext">LT: Absolutely. Yes.</span></span>
+		<span class="tooltip">(Risas)<span class="tooltiptext">(Laughter)</span></span>
+		<span class="tooltip">CA: Eso es increíble. 
+LT: Sí.<span class="tooltiptext">CA: That&#39;s amazing.
+LT: Yeah.</span></span>
+		<span class="tooltip">(Aplausos)<span class="tooltiptext">(Applause)</span></span>
+		<span class="tooltip">Y, sin embargo, eres el hombre 
+que ha transformado la tecnología<span class="tooltiptext">And yet, you&#39;re the man
+who&#39;s transformed technology</span></span>
+		<span class="tooltip">no solo una sino dos veces,<span class="tooltiptext">not just once but twice,</span></span>
+		<span class="tooltip">y tenemos que tratar 
+de entender por qué es así<span class="tooltiptext">and we have to try
+and understand why it is.</span></span>
+		<span class="tooltip">Nos has dado algunas pistas, pero ...<span class="tooltiptext">You&#39;ve given us some clues, but ...</span></span>
+		<span class="tooltip">Aquí hay una foto tuya de niño, 
+con un cubo de Rubik.<span class="tooltiptext">Here&#39;s a picture of you as a kid,
+with a Rubik&#39;s Cube.</span></span>
+		<span class="tooltip">Has dicho que has estado programando 
+desde que eran como 10 u 11,<span class="tooltiptext">You mentioned that you&#39;ve been
+programming since you were like 10 or 11,</span></span>
+		<span class="tooltip">la mitad de tu vida.<span class="tooltiptext">half your life.</span></span>
+		<span class="tooltip">¿Eras ese tipo de genio de 
+la informática, ya sabes, súper nerdo,<span class="tooltiptext">Were you this sort of computer
+genius, you know, übernerd,</span></span>
+		<span class="tooltip">eras la estrella en la escuela
+que podría hacer todo?<span class="tooltiptext">were you the star at school
+who could do everything?</span></span>
+		<span class="tooltip">¿Cómo eras cuando eras niño?<span class="tooltiptext">What were you like as a kid?</span></span>
+		<span class="tooltip">LT: Sí, creo que yo 
+era el nerdo prototípico.<span class="tooltiptext">LT: Yeah, I think I was
+the prototypical nerd.</span></span>
+		<span class="tooltip">Quiero decir, yo era...<span class="tooltiptext">I mean, I was ...</span></span>
+		<span class="tooltip">Yo no era una persona sociable entonces.<span class="tooltiptext">I was not a people person back then.</span></span>
+		<span class="tooltip">Ese es mi hermano menor.<span class="tooltiptext">That&#39;s my younger brother.</span></span>
+		<span class="tooltip">Yo estaba claramente 
+más interesado en el cubo de Rubik<span class="tooltiptext">I was clearly more interested
+in the Rubik&#39;s Cube</span></span>
+		<span class="tooltip">que mi hermano menor.<span class="tooltiptext">than my younger brother.</span></span>
+		<span class="tooltip">(Risas)<span class="tooltiptext">(Laughter)</span></span>
+		<span class="tooltip">Mi hermana menor, 
+que no está en la imagen,<span class="tooltiptext">My younger sister,
+who&#39;s not in the picture,</span></span>
+		<span class="tooltip">cuando teníamos reuniones familiares<span class="tooltiptext">when we had family meetings --</span></span>
+		<span class="tooltip">--y no es una gran familia, pero tengo, 
+como, un par de primos--<span class="tooltiptext">and it&#39;s not a huge family, but I have,
+like, a couple of cousins --</span></span>
+		<span class="tooltip">ella me preparaba de antemano.<span class="tooltiptext">she would prep me beforehand.</span></span>
+		<span class="tooltip">Como, antes de que yo entrara 
+en la habitación diría,<span class="tooltiptext">Like, before I stepped
+into the room she would say,</span></span>
+		<span class="tooltip">&quot;Bien. Esto y lo otro...&quot;<span class="tooltiptext">&quot;OK. That&#39;s so-and-so ...&quot;</span></span>
+		<span class="tooltip">Porque yo no estaba...<span class="tooltiptext">Because I was not --</span></span>
+		<span class="tooltip">yo era un friki.<span class="tooltiptext">I was a geek.</span></span>
+		<span class="tooltip">Yo estaba en computadoras,<span class="tooltiptext">I was into computers,</span></span>
+		<span class="tooltip">Estaba en matemáticas,<span class="tooltiptext">I was into math,</span></span>
+		<span class="tooltip">Yo estaba en la física.<span class="tooltiptext">I was into physics.</span></span>
+		<span class="tooltip">Yo era bueno en eso.<span class="tooltiptext">I was good at that.</span></span>
+		<span class="tooltip">No creo que fuera 
+particularmente excepcional.<span class="tooltiptext">I don&#39;t think I was
+particularly exceptional.</span></span>
+		<span class="tooltip">Al parecer, dijo mi hermana<span class="tooltiptext">Apparently, my sister said</span></span>
+		<span class="tooltip">que mi mayor cualidad excepcional 
+era que no abandonaba.<span class="tooltiptext">that my biggest exceptional quality
+was that I would not let go.</span></span>
+		<span class="tooltip">CA: Bien, profundicemos, 
+porque eso es interesante.<span class="tooltiptext">CA: OK, so let&#39;s go there,
+because that&#39;s interesting.</span></span>
+		<span class="tooltip">Tú no abandonas.<span class="tooltiptext">You would not let go.</span></span>
+		<span class="tooltip">No se trata de ser un geek 
+y ser inteligente,<span class="tooltiptext">So that&#39;s not about being
+a geek and being smart,</span></span>
+		<span class="tooltip">que trata de ser... ¿terco?<span class="tooltiptext">that&#39;s about being ... stubborn?</span></span>
+		<span class="tooltip">LT: Eso es ser terco.<span class="tooltiptext">LT: That&#39;s about being stubborn.</span></span>
+		<span class="tooltip">Eso es, al igual que,<span class="tooltiptext">That&#39;s about, like,</span></span>
+		<span class="tooltip">acabar de empezar algo<span class="tooltiptext">just starting something</span></span>
+		<span class="tooltip">y no decir: &quot;Está bien, hecho, 
+vamos a hacer algo más...<span class="tooltiptext">and not saying, &quot;OK, I&#39;m done,
+let&#39;s do something else --</span></span>
+		<span class="tooltip">Mira: ¡brillante!&quot;.<span class="tooltiptext">Look: shiny!&quot;</span></span>
+		<span class="tooltip">Y lo noto que en muchas 
+otras partes de mi vida, también.<span class="tooltiptext">And I notice that in many
+other parts in my life, too.</span></span>
+		<span class="tooltip">He vivido en Silicon Valley 
+durante siete años.<span class="tooltiptext">I lived in Silicon Valley for seven years.</span></span>
+		<span class="tooltip">Y trabajé para la misma empresa, 
+en Silicon Valley,<span class="tooltiptext">And I worked for the same
+company, in Silicon Valley,</span></span>
+		<span class="tooltip">durante todo el tiempo.<span class="tooltiptext">for the whole time.</span></span>
+		<span class="tooltip">Eso es inaudito.<span class="tooltiptext">That is unheard of.</span></span>
+		<span class="tooltip">Así no funciona Silicon Valley.<span class="tooltiptext">That&#39;s not how Silicon Valley works.</span></span>
+		<span class="tooltip">El punto de Silicon Valley es que 
+la gente salta entre puestos de trabajo<span class="tooltiptext">The whole point of Silicon Valley
+is that people jump between jobs</span></span>
+		<span class="tooltip">como mezclar todo.<span class="tooltiptext">to kind of mix up the pot.</span></span>
+		<span class="tooltip">Y ese no es el tipo de persona que soy.<span class="tooltiptext">And that&#39;s not the kind of person I am.</span></span>
+		<span class="tooltip">CA: Pero durante el desarrollo 
+de Linux en sí mismo,<span class="tooltiptext">CA: But during the actual
+development of Linux itself,</span></span>
+		<span class="tooltip">esa terquedad te trajo conflictos 
+con otras personas.<span class="tooltiptext">that stubbornness sometimes brought
+you in conflict with other people.</span></span>
+		<span class="tooltip">Habla de eso un poco.<span class="tooltiptext">Talk about that a bit.</span></span>
+		<span class="tooltip">¿Era esencial para mantener la especie 
+de calidad de lo que estabas construyendo?<span class="tooltiptext">Was that essential to sort of maintain
+the quality of what was being built?</span></span>
+		<span class="tooltip">¿Cómo describirías lo que pasó?<span class="tooltiptext">How would you describe what happened?</span></span>
+		<span class="tooltip">LT: No sé si es esencial.<span class="tooltiptext">LT: I don&#39;t know if it&#39;s essential.</span></span>
+		<span class="tooltip">Volviendo a lo de 
+&quot;No soy una persona sociable&quot;,<span class="tooltiptext">Going back to the &quot;I&#39;m not
+a people person,&quot; --</span></span>
+		<span class="tooltip">--a veces también soy--<span class="tooltiptext">sometimes I&#39;m also ...</span></span>
+		<span class="tooltip">podríamos decir,<span class="tooltiptext">shall we say,</span></span>
+		<span class="tooltip">&quot;miope&quot; cuando se trata 
+de los sentimientos de otras personas,<span class="tooltiptext">&quot;myopic&quot; when it comes
+to other people&#39;s feelings,</span></span>
+		<span class="tooltip">y que a veces te hace decir cosas 
+que perjudican a otras personas.<span class="tooltiptext">and that sometimes makes you
+say things that hurt other people.</span></span>
+		<span class="tooltip">Y no estoy orgulloso de ello.<span class="tooltiptext">And I&#39;m not proud of that.</span></span>
+		<span class="tooltip">(Aplausos)<span class="tooltiptext">(Applause)</span></span>
+		<span class="tooltip">Pero, al mismo tiempo, es...<span class="tooltiptext">But, at the same time, it&#39;s --</span></span>
+		<span class="tooltip">Hay gente que me dice 
+que debería ser agradable.<span class="tooltiptext">I get people who tell me
+that I should be nice.</span></span>
+		<span class="tooltip">Y luego cuando trato de explicarles 
+que tal vez usted es agradable,<span class="tooltiptext">And then when I try to explain to them
+that maybe you&#39;re nice,</span></span>
+		<span class="tooltip">tal vez debería ser más agresivo,<span class="tooltiptext">maybe you should be more aggressive,</span></span>
+		<span class="tooltip">ven que como yo no soy agradable.<span class="tooltiptext">they see that as me being not nice.</span></span>
+		<span class="tooltip">(Risas)<span class="tooltiptext">(Laughter)</span></span>
+		<span class="tooltip">Trato de decir que somos diferentes.<span class="tooltiptext">What I&#39;m trying to say
+is we are different.</span></span>
+		<span class="tooltip">No soy una persona sociable;<span class="tooltiptext">I&#39;m not a people person;</span></span>
+		<span class="tooltip">no es algo de lo que estoy 
+particularmente orgulloso,<span class="tooltiptext">it&#39;s not something
+I&#39;m particularly proud of,</span></span>
+		<span class="tooltip">pero es parte de mí.<span class="tooltiptext">but it&#39;s part of me.</span></span>
+		<span class="tooltip">Y una de las cosas que 
+me gusta del código abierto<span class="tooltiptext">And one of the things
+I really like about open source</span></span>
+		<span class="tooltip">es que realmente permite que 
+diferentes personas trabajen juntas.<span class="tooltiptext">is it really allows different
+people to work together.</span></span>
+		<span class="tooltip">No tenemos que agradarnos,<span class="tooltiptext">We don&#39;t have to like each other --</span></span>
+		<span class="tooltip">y, a veces, realmente 
+no nos agradamos.<span class="tooltiptext">and sometimes we really
+don&#39;t like each other.</span></span>
+		<span class="tooltip">Realmente... quiero decir, 
+hay discusiones muy, muy calientes.<span class="tooltiptext">Really -- I mean, there are very,
+very heated arguments.</span></span>
+		<span class="tooltip">Pero se puede, de hecho, 
+se pueden encontrar cosas que...<span class="tooltiptext">But you can, actually,
+you can find things that --</span></span>
+		<span class="tooltip">uno ni siquiera está de acuerdo 
+en estar en desacuerdo,<span class="tooltiptext">you don&#39;t even agree to disagree,</span></span>
+		<span class="tooltip">es solo que le interesan 
+realmente diferentes cosas.<span class="tooltiptext">it&#39;s just that you&#39;re interested
+in really different things.</span></span>
+		<span class="tooltip">Y volviendo al punto 
+en el que he dicho anteriormente<span class="tooltiptext">And coming back to the point
+where I said earlier</span></span>
+		<span class="tooltip">que temía a las personas comerciales 
+que se aprovechan de tu trabajo,<span class="tooltiptext">that I was afraid of commercial people
+taking advantage of your work,</span></span>
+		<span class="tooltip">se vio después, 
+y muy pronto resultó que,<span class="tooltiptext">it turned out, and very
+quickly turned out,</span></span>
+		<span class="tooltip">aquellas personas comerciales
+eran gente encantadora, de verdad.<span class="tooltiptext">that those commercial people
+were lovely, lovely people.</span></span>
+		<span class="tooltip">E hicieron todas las cosas que yo no 
+estaba en absoluto interesado en hacer,<span class="tooltiptext">And they did all the things that I was not
+at all interested in doing,</span></span>
+		<span class="tooltip">y tenían objetivos muy diferentes.<span class="tooltiptext">and they had completely different goals.</span></span>
+		<span class="tooltip">Y utilizaron el código abierto 
+de una manera que yo no quería.<span class="tooltiptext">And they used open source in ways
+that I just did not want to go.</span></span>
+		<span class="tooltip">Pero debido a que era 
+código abierto que podían hacer,<span class="tooltiptext">But because it was open
+source they could do it,</span></span>
+		<span class="tooltip">y que en realidad funcionan
+muy bien juntos.<span class="tooltiptext">and it actually works
+really beautifully together.</span></span>
+		<span class="tooltip">De hecho, creo que funciona
+de la misma forma.<span class="tooltiptext">And I actually think
+it works the same way.</span></span>
+		<span class="tooltip">Es necesario tener las personas-personas, 
+los comunicadores,<span class="tooltiptext">You need to have the people-people,
+the communicators,</span></span>
+		<span class="tooltip">la gente cálida y amigable<span class="tooltiptext">the warm and friendly people</span></span>
+		<span class="tooltip">a quien le gusta...<span class="tooltiptext">who like --</span></span>
+		<span class="tooltip">(Risas)<span class="tooltiptext">(Laughter)</span></span>
+		<span class="tooltip">realmente quieren abrazarlo 
+y traerlo a la comunidad.<span class="tooltiptext">really want to hug you
+and get you into the community.</span></span>
+		<span class="tooltip">Pero así no es todo el mundo.<span class="tooltiptext">But that&#39;s not everybody.</span></span>
+		<span class="tooltip">Y ese no soy yo.<span class="tooltiptext">And that&#39;s not me.</span></span>
+		<span class="tooltip">Me importa la tecnología.<span class="tooltiptext">I care about the technology.</span></span>
+		<span class="tooltip">Hay quienes se preocupan 
+por la interfaz de usuario.<span class="tooltiptext">There are people who care about the UI.</span></span>
+		<span class="tooltip">No puedo hacer la interfaz de usuario
+para salvar mi vida.<span class="tooltiptext">I can&#39;t do UI to save my life.</span></span>
+		<span class="tooltip">Es decir, si yo estuviera 
+varado en una isla<span class="tooltiptext">I mean, if I was stranded on an island</span></span>
+		<span class="tooltip">y la única manera de salir de esa isla 
+fuera una buena interfaz de usuario,<span class="tooltiptext">and the only way to get off that island
+was the make a pretty UI,</span></span>
+		<span class="tooltip">me moriría allí.<span class="tooltiptext">I&#39;d die there.</span></span>
+		<span class="tooltip">(Risas)<span class="tooltiptext">(Laughter)</span></span>
+		<span class="tooltip">Así que hay diferentes tipos de personas,<span class="tooltiptext">So there&#39;s different kinds of people,</span></span>
+		<span class="tooltip">y no estoy dando excusas, 
+estoy tratando de explicar.<span class="tooltiptext">and I&#39;m not making excuses,
+I&#39;m trying to explain.</span></span>
+		<span class="tooltip">CA: Cuando hablamos la semana pasada,<span class="tooltiptext">CA: Now, when we talked last week,</span></span>
+		<span class="tooltip">hablaste de algún otro rasgo que tienes,<span class="tooltiptext">you talked about some
+other trait that you have,</span></span>
+		<span class="tooltip">que me pareció muy interesante.<span class="tooltiptext">which I found really interesting.</span></span>
+		<span class="tooltip">Es esta idea llamada gusto.<span class="tooltiptext">It&#39;s this idea called taste.</span></span>
+		<span class="tooltip">Solo tengo un par de imágenes aquí.<span class="tooltiptext">And I&#39;ve just got a couple of images here.</span></span>
+		<span class="tooltip">Creo que esto es un ejemplo de un 
+no particular buen gusto en el código,<span class="tooltiptext">I think this is an example of not
+particularly good taste in code,</span></span>
+		<span class="tooltip">y este sabe mejor,<span class="tooltiptext">and this one is better taste,</span></span>
+		<span class="tooltip">la cual se puede ver inmediatamente.<span class="tooltiptext">which one can immediately see.</span></span>
+		<span class="tooltip">¿Cuál es la diferencia entre estos dos?<span class="tooltiptext">What is the difference between these two?</span></span>
+		<span class="tooltip">LT: Esto es...<span class="tooltiptext">LT: So this is --</span></span>
+		<span class="tooltip">¿Cuántas personas aquí 
+realmente han codificado?<span class="tooltiptext">How many people here actually have coded?</span></span>
+		<span class="tooltip">CA: Oh mi Dios.<span class="tooltiptext">CA: Oh my goodness.</span></span>
+		<span class="tooltip">LT: Les garantizo,<span class="tooltiptext">LT: So I guarantee you,</span></span>
+		<span class="tooltip">a todos los que levantaron su mano,<span class="tooltiptext">everybody who raised their hand,</span></span>
+		<span class="tooltip">que han hecho lo que se llama 
+una lista enlazada.<span class="tooltiptext">they have done what&#39;s called
+a singly-linked list.</span></span>
+		<span class="tooltip">Y se enseña...<span class="tooltiptext">And it&#39;s taught --</span></span>
+		<span class="tooltip">Este, el primero no es una 
+muy buena aproximación de gusto,<span class="tooltiptext">This, the first not very
+good taste approach,</span></span>
+		<span class="tooltip">es básicamente cómo se enseña a hacer 
+cuando se empieza la codificación.<span class="tooltiptext">is basically how it&#39;s taught to be done
+when you start out coding.</span></span>
+		<span class="tooltip">Y uno no tiene que entender el código.<span class="tooltiptext">And you don&#39;t have to understand the code.</span></span>
+		<span class="tooltip">La parte más interesante para mí<span class="tooltiptext">The most interesting part to me</span></span>
+		<span class="tooltip">es la última sentencia &quot;if&quot; (si).<span class="tooltiptext">is the last if statement.</span></span>
+		<span class="tooltip">Debido a que lo que pasa
+en una lista enlazada<span class="tooltiptext">Because what happens
+in a singly-linked list --</span></span>
+		<span class="tooltip">--esto está tratando de quitar 
+una entrada existente de una lista--<span class="tooltiptext">this is trying to remove
+an existing entry from a list --</span></span>
+		<span class="tooltip">y hay una diferencia entre 
+si es la primera entrada<span class="tooltiptext">and there&#39;s a difference
+between if it&#39;s the first entry</span></span>
+		<span class="tooltip">o si se trata de una entrada en el centro.<span class="tooltiptext">or whether it&#39;s an entry in the middle.</span></span>
+		<span class="tooltip">Porque si es la primera entrada,<span class="tooltiptext">Because if it&#39;s the first entry,</span></span>
+		<span class="tooltip">uno tiene que cambiar el puntero 
+a la primera entrada.<span class="tooltiptext">you have to change
+the pointer to the first entry.</span></span>
+		<span class="tooltip">Si está en el medio,<span class="tooltiptext">If it&#39;s in the middle,</span></span>
+		<span class="tooltip">uno tiene que cambiar el puntero 
+de una entrada anterior.<span class="tooltiptext">you have to change the pointer
+of a previous entry.</span></span>
+		<span class="tooltip">Son dos casos 
+completamente diferentes.<span class="tooltiptext">So they&#39;re two completely different cases.</span></span>
+		<span class="tooltip">CA: Y ese es mejor.<span class="tooltiptext">CA: And that&#39;s better.</span></span>
+		<span class="tooltip">LT: Y este es mejor.<span class="tooltiptext">LT: And this is better.</span></span>
+		<span class="tooltip">No tiene la sentencia &quot;if&quot;.<span class="tooltiptext">It does not have the if statement.</span></span>
+		<span class="tooltip">Y realmente no importa...<span class="tooltiptext">And it doesn&#39;t really matter --</span></span>
+		<span class="tooltip">No quiero que entiendan 
+por qué no tiene la sentencia &quot;if&quot;,<span class="tooltiptext">I don&#39;t want you understand
+why it doesn&#39;t have the if statement,</span></span>
+		<span class="tooltip">pero quiero que entiendan<span class="tooltiptext">but I want you to understand</span></span>
+		<span class="tooltip">que a veces se puede ver 
+un problema de forma diferente<span class="tooltiptext">that sometimes you can see
+a problem in a different way</span></span>
+		<span class="tooltip">y volver a escribir para que 
+un caso especial desaparezca<span class="tooltiptext">and rewrite it so that
+a special case goes away</span></span>
+		<span class="tooltip">y se convierta en el caso normal.<span class="tooltiptext">and becomes the normal case.</span></span>
+		<span class="tooltip">Y eso es un buen código.<span class="tooltiptext">And that&#39;s good code.</span></span>
+		<span class="tooltip">Pero esto es simple código.<span class="tooltiptext">But this is simple code.</span></span>
+		<span class="tooltip">Esto es CS 101.<span class="tooltiptext">This is CS 101.</span></span>
+		<span class="tooltip">Esto no es importante... 
+si bien, los detalles son importantes.<span class="tooltiptext">This is not important --
+although, details are important.</span></span>
+		<span class="tooltip">Para mí, el signo de la gente 
+que realmente quiere trabajar con esto<span class="tooltiptext">To me, the sign of people
+I really want to work with</span></span>
+		<span class="tooltip">es que tienen buen gusto, que es como...<span class="tooltiptext">is that they have good taste,
+which is how ...</span></span>
+		<span class="tooltip">Te envié este estúpido ejemplo<span class="tooltiptext">I sent you this stupid example</span></span>
+		<span class="tooltip">que no es relevante, 
+porque es muy pequeño.<span class="tooltiptext">that is not relevant
+because it&#39;s too small.</span></span>
+		<span class="tooltip">El buen gusto es 
+mucho más grande que esto.<span class="tooltiptext">Good taste is much bigger than this.</span></span>
+		<span class="tooltip">El buen gusto es ve
+realmente los grandes patrones<span class="tooltiptext">Good taste is about really
+seeing the big patterns</span></span>
+		<span class="tooltip">y el tipo de saber instintivamente cuál es
+la forma correcta de hacer las cosas.<span class="tooltiptext">and kind of instinctively knowing
+what&#39;s the right way to do things.</span></span>
+		<span class="tooltip">CA: OK, así que estamos juntando 
+las piezas aquí ahora.<span class="tooltiptext">CA: OK, so we&#39;re putting
+the pieces together here now.</span></span>
+		<span class="tooltip">Tú tienes gusto,<span class="tooltiptext">You have taste,</span></span>
+		<span class="tooltip">de una manera que es significativa 
+para la gente de software.<span class="tooltiptext">in a way that&#39;s meaningful
+to software people.</span></span>
+		<span class="tooltip">Eres...<span class="tooltiptext">You&#39;re --</span></span>
+		<span class="tooltip">(Risas)<span class="tooltiptext">(Laughter)</span></span>
+		<span class="tooltip">LT: Creo que fue significativo 
+para algunos aquí.<span class="tooltiptext">LT: I think it was meaningful
+to some people here.</span></span>
+		<span class="tooltip">CA: Eres un programador informático 
+muy inteligente,<span class="tooltiptext">CA: You&#39;re a very smart computer coder,</span></span>
+		<span class="tooltip">y eres un terco infernal.<span class="tooltiptext">and you&#39;re hellish stubborn.</span></span>
+		<span class="tooltip">Pero tiene que haber algo más.<span class="tooltiptext">But there must be something else.</span></span>
+		<span class="tooltip">Es decir, has cambiado el futuro.<span class="tooltiptext">I mean, you&#39;ve changed the future.</span></span>
+		<span class="tooltip">Debes tener la capacidad 
+de estas grandes visiones del futuro.<span class="tooltiptext">You must have the ability
+of these grand visions of the future.</span></span>
+		<span class="tooltip">Eres un visionario, ¿verdad?<span class="tooltiptext">You&#39;re a visionary, right?</span></span>
+		<span class="tooltip">LT: Me he sentido un poco incómodo en TED<span class="tooltiptext">LT: I&#39;ve actually felt slightly
+uncomfortable at TED</span></span>
+		<span class="tooltip">durante los últimos dos días,<span class="tooltiptext">for the last two days,</span></span>
+		<span class="tooltip">porque hay una gran cantidad 
+de visión dándose, ¿verdad?<span class="tooltiptext">because there&#39;s a lot
+of vision going on, right?</span></span>
+		<span class="tooltip">Y no soy un visionario.<span class="tooltiptext">And I am not a visionary.</span></span>
+		<span class="tooltip">No tengo un plan a cinco años.<span class="tooltiptext">I do not have a five-year plan.</span></span>
+		<span class="tooltip">Soy ingeniero.<span class="tooltiptext">I&#39;m an engineer.</span></span>
+		<span class="tooltip">Y creo que es realmente...<span class="tooltiptext">And I think it&#39;s really --</span></span>
+		<span class="tooltip">Quiero decir... 
+Estoy muy feliz con todas las personas<span class="tooltiptext">I mean -- I&#39;m perfectly
+happy with all the people</span></span>
+		<span class="tooltip">que andan por ahí y 
+solo miran a las nubes<span class="tooltiptext">who are walking around
+and just staring at the clouds</span></span>
+		<span class="tooltip">y miran las estrellas 
+y dicen, &quot;quiero ir allá&quot;.<span class="tooltiptext">and looking at the stars
+and saying, &quot;I want to go there.&quot;</span></span>
+		<span class="tooltip">Pero estoy mirando al suelo,<span class="tooltiptext">But I&#39;m looking at the ground,</span></span>
+		<span class="tooltip">y quiero arreglar el bache 
+que está justo en frente de mí<span class="tooltiptext">and I want to fix the pothole
+that&#39;s right in front of me</span></span>
+		<span class="tooltip">antes de que caiga en él<span class="tooltiptext">before I fall in.</span></span>
+		<span class="tooltip">Este es el tipo de persona que soy.<span class="tooltiptext">This is the kind of person I am.</span></span>
+		<span class="tooltip">(Aclamaciones)<span class="tooltiptext">(Cheers)</span></span>
+		<span class="tooltip">(Aplausos)<span class="tooltiptext">(Applause)</span></span>
+		<span class="tooltip">CA: Hablaste la semana pasada 
+sobre estos dos chicos.<span class="tooltiptext">CA: So you spoke to me last week
+about these two guys.</span></span>
+		<span class="tooltip">¿Quiénes son 
+y cómo te relacionas con ellos?<span class="tooltiptext">Who are they and how
+do you relate to them?</span></span>
+		<span class="tooltip">LT: Bueno, es una especie de 
+lugar común en la tecnología,<span class="tooltiptext">LT: Well, so this is kind
+of cliché in technology,</span></span>
+		<span class="tooltip">todo el Tesla contra Edison,<span class="tooltiptext">the whole Tesla versus Edison,</span></span>
+		<span class="tooltip">donde Tesla es visto como el visionario 
+científico y el hombre de la idea loca.<span class="tooltiptext">where Tesla is seen as the visionary
+scientist and crazy idea man.</span></span>
+		<span class="tooltip">Y a la gente le encanta Tesla.<span class="tooltiptext">And people love Tesla.</span></span>
+		<span class="tooltip">Es decir, hay personas que nombran 
+sus empresas por él.<span class="tooltiptext">I mean, there are people who name
+their companies after him.</span></span>
+		<span class="tooltip">(Risas)<span class="tooltiptext">(Laughter)</span></span>
+		<span class="tooltip">La otra persona hay es Edison,<span class="tooltiptext">The other person there is Edison,</span></span>
+		<span class="tooltip">que en realidad es a menudo vilipendiado 
+por ser especie de peatón<span class="tooltiptext">who is actually often vilified
+for being kind of pedestrian</span></span>
+		<span class="tooltip">y es...<span class="tooltiptext">and is --</span></span>
+		<span class="tooltip">Es decir, su cita más famosa es,<span class="tooltiptext">I mean, his most famous quote is,</span></span>
+		<span class="tooltip">&quot;El genio es un 1 % de inspiración 
+y 99 % de transpiración&quot;.<span class="tooltiptext">&quot;Genius is one percent inspiration
+and 99 percent perspiration.&quot;</span></span>
+		<span class="tooltip">Y estoy en el campo de Edison,<span class="tooltiptext">And I&#39;m in the Edison camp,</span></span>
+		<span class="tooltip">incluso si a la gente no siempre le gusta.<span class="tooltiptext">even if people don&#39;t always like him.</span></span>
+		<span class="tooltip">Porque si en realidad se comparan los dos,<span class="tooltiptext">Because if you actually compare the two,</span></span>
+		<span class="tooltip">Tesla tiene esa clase de mente 
+que atrapa en estos días,<span class="tooltiptext">Tesla has kind of this mind
+grab these days,</span></span>
+		<span class="tooltip">pero ¿realmente cambió el mundo?<span class="tooltiptext">but who actually changed the world?</span></span>
+		<span class="tooltip">Edison pudo no haber sido 
+una buena persona,<span class="tooltiptext">Edison may not have been a nice person,</span></span>
+		<span class="tooltip">que hizo un montón de cosas...<span class="tooltiptext">he did a lot of things --</span></span>
+		<span class="tooltip">él no era quizá tan intelectual,<span class="tooltiptext">he was maybe not so intellectual,</span></span>
+		<span class="tooltip">no era tan visionario.<span class="tooltiptext">not so visionary.</span></span>
+		<span class="tooltip">Pero creo que soy más 
+un Edison que un Tesla.<span class="tooltiptext">But I think I&#39;m more
+of an Edison than a Tesla.</span></span>
+		<span class="tooltip">CA: Nuestro tema en TED
+esta semana son los sueños,<span class="tooltiptext">CA: So our theme at TED
+this week is dreams --</span></span>
+		<span class="tooltip">grandes, audaces sueños.<span class="tooltiptext">big, bold, audacious dreams.</span></span>
+		<span class="tooltip">Eres realmente el antídoto para eso.<span class="tooltiptext">You&#39;re really the antidote to that.</span></span>
+		<span class="tooltip">LT: Trato de apuntar
+hacia abajo un poco, sí.<span class="tooltiptext">LT: I&#39;m trying to dial it down a bit, yes.</span></span>
+		<span class="tooltip">CA: Eso es bueno.<span class="tooltiptext">CA: That&#39;s good.</span></span>
+		<span class="tooltip">(Risas)<span class="tooltiptext">(Laughter)</span></span>
+		<span class="tooltip">Los abrazamos, los abrazamos.<span class="tooltiptext">We embrace you, we embrace you.</span></span>
+		<span class="tooltip">Empresas como Google y muchas otras 
+han hecho, podría decirse,<span class="tooltiptext">Companies like Google and many
+others have made, arguably,</span></span>
+		<span class="tooltip">miles de millones de dólares 
+con tu software.<span class="tooltiptext">like, billions of dollars
+out of your software.</span></span>
+		<span class="tooltip">¿No te molesta?<span class="tooltiptext">Does that piss you off?</span></span>
 		<span class="tooltip">LT: No.<span class="tooltiptext">LT: No.</span></span>
-		<span class="tooltip">No, it doesn&#39;t piss me off
-for several reasons.<span class="tooltiptext">No, no me molesta por varias razones.</span></span>
-		<span class="tooltip">And one of them is, I&#39;m doing fine.<span class="tooltiptext">Y una es, 
-que los estoy haciéndolo bien.</span></span>
-		<span class="tooltip">I&#39;m really doing fine.<span class="tooltiptext">Realmente estoy haciéndolo bien.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">But the other reason is --<span class="tooltiptext">Pero la otra razón es...</span></span>
-		<span class="tooltip">I mean, without doing the whole
-open source and really letting go thing,<span class="tooltiptext">Es decir, sin hacer todo el 
-código abierto y realmente dejarlo ir,</span></span>
-		<span class="tooltip">Linux would never have been what it is.<span class="tooltiptext">Linux nunca habría sido lo que es.</span></span>
-		<span class="tooltip">And it&#39;s brought experiences
-I don&#39;t really enjoy, public talking,<span class="tooltiptext">Y ha traído experiencias que realmente 
-no disfruto, hacerlas públicas,</span></span>
-		<span class="tooltip">but at the same time,
-this is an experience.<span class="tooltiptext">pero al mismo tiempo, 
-es una experiencia.</span></span>
-		<span class="tooltip">Trust me.<span class="tooltiptext">Créeme.</span></span>
-		<span class="tooltip">So there&#39;s a lot of things going on
-that make me a very happy man<span class="tooltiptext">Así que hay un montón de cosas que pasan 
-que me hacen un hombre muy feliz</span></span>
-		<span class="tooltip">and thinking I did the right choices.<span class="tooltiptext">y pensando que tomé 
-las decisiones correctas.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">CA: Is the open source idea --<span class="tooltiptext">CA: ¿Está la idea de código abierto</span></span>
-		<span class="tooltip">this is, I think we&#39;ll end here --<span class="tooltiptext">--creo que terminamos aquí--</span></span>
-		<span class="tooltip">is the open source idea
-fully realized now in the world,<span class="tooltiptext">está la idea del código abierto 
-completamente realizada ahora en el mundo,</span></span>
-		<span class="tooltip">or is there more that it could go,<span class="tooltiptext">o hay algo más que se podría hacer,</span></span>
-		<span class="tooltip">are there more things that it could do?<span class="tooltiptext">hay más cosas que se podrían hacer?</span></span>
-	</p>
-	<p>
-		<span class="tooltip">LT: So, I&#39;m of two minds there.<span class="tooltiptext">LT: Tengo dos pensamientos.</span></span>
-		<span class="tooltip">I think one reason open source
-works so well in code<span class="tooltiptext">Creo que una de las razones por las 
-que el código abierto funciona tan bien</span></span>
-		<span class="tooltip">is that at the end of the day,<span class="tooltiptext">es que al final del día,</span></span>
-		<span class="tooltip">code tends to be somewhat black and white.<span class="tooltiptext">el código tiende a ser 
-algo blanco y negro.</span></span>
-		<span class="tooltip">There&#39;s often a fairly good way to decide,<span class="tooltiptext">Hay a menudo una forma 
-bastante buena de decidir,</span></span>
-		<span class="tooltip">this is done correctly
-and this is not done well.<span class="tooltiptext">esto está hecho correctamente, 
-y esto no está bien hecho.</span></span>
-		<span class="tooltip">Code either works or it doesn&#39;t,<span class="tooltiptext">El código funciona o no,</span></span>
-		<span class="tooltip">which means that there&#39;s less
-room for arguments.<span class="tooltiptext">lo que significa que hay 
-menos espacio para las discusiones.</span></span>
-		<span class="tooltip">And we have arguments despite this, right?<span class="tooltiptext">Y tenemos discusiones 
-a pesar de esto, ¿verdad?</span></span>
-		<span class="tooltip">In many other areas --<span class="tooltiptext">En muchas otras áreas...</span></span>
-		<span class="tooltip">I mean, people have talked about
-open politics and things like that --<span class="tooltiptext">quiero decir, la gente ha hablado de 
-la política abierta y cosas por el estilo</span></span>
-		<span class="tooltip">and it&#39;s really hard sometimes to say<span class="tooltiptext">y es muy difícil a veces decir</span></span>
-		<span class="tooltip">that, yes, you can apply the same
-principles in some other areas<span class="tooltiptext">sí, pueden aplicar los mismos principios 
-en algunas otras áreas</span></span>
-		<span class="tooltip">just because the black and white
-turns into not just gray,<span class="tooltiptext">solo porque lo blanco y negro 
-se torna en no solo gris,</span></span>
-		<span class="tooltip">but different colors.<span class="tooltiptext">sino en diferentes colores.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">So, obviously open source in science
-is making a comeback.<span class="tooltiptext">Así que, obviamente, la fuente abierta 
-en la ciencia está reapareciendo.</span></span>
-		<span class="tooltip">Science was there first.<span class="tooltiptext">La ciencia estaba allí primero.</span></span>
-		<span class="tooltip">But then science ended up
-being pretty closed,<span class="tooltiptext">Pero después la ciencia terminó 
-siendo bastante cerrada,</span></span>
-		<span class="tooltip">with very expensive journals
-and some of that going on.<span class="tooltiptext">con revistas muy caras 
-y algunos de los que pasa.</span></span>
-		<span class="tooltip">And open source is making
-a comeback in science,<span class="tooltiptext">Y de código abierto está haciendo 
-una reaparición en la ciencia,</span></span>
-		<span class="tooltip">with things like arXiv and open journals.<span class="tooltiptext">con cosas como arXiv y revistas abiertas.</span></span>
-		<span class="tooltip">Wikipedia changed the world, too.<span class="tooltiptext">Wikipedia cambió el mundo, también.</span></span>
-		<span class="tooltip">So there are other examples,<span class="tooltiptext">Hay otros ejemplos,</span></span>
-		<span class="tooltip">I&#39;m sure there are more to come.<span class="tooltiptext">Estoy seguro de que hay más por venir.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">CA: But you&#39;re not a visionary,<span class="tooltiptext">CA: Pero no eres un visionario,</span></span>
-		<span class="tooltip">and so it&#39;s not up to you to name them.<span class="tooltiptext">y no depende de ti nombrarlos.</span></span>
-	</p>
-	<p>
+		<span class="tooltip">No, no me molesta por varias razones.<span class="tooltiptext">No, it doesn&#39;t piss me off
+for several reasons.</span></span>
+		<span class="tooltip">Y una es, 
+que los estoy haciéndolo bien.<span class="tooltiptext">And one of them is, I&#39;m doing fine.</span></span>
+		<span class="tooltip">Realmente estoy haciéndolo bien.<span class="tooltiptext">I&#39;m really doing fine.</span></span>
+		<span class="tooltip">Pero la otra razón es...<span class="tooltiptext">But the other reason is --</span></span>
+		<span class="tooltip">Es decir, sin hacer todo el 
+código abierto y realmente dejarlo ir,<span class="tooltiptext">I mean, without doing the whole
+open source and really letting go thing,</span></span>
+		<span class="tooltip">Linux nunca habría sido lo que es.<span class="tooltiptext">Linux would never have been what it is.</span></span>
+		<span class="tooltip">Y ha traído experiencias que realmente 
+no disfruto, hacerlas públicas,<span class="tooltiptext">And it&#39;s brought experiences
+I don&#39;t really enjoy, public talking,</span></span>
+		<span class="tooltip">pero al mismo tiempo, 
+es una experiencia.<span class="tooltiptext">but at the same time,
+this is an experience.</span></span>
+		<span class="tooltip">Créeme.<span class="tooltiptext">Trust me.</span></span>
+		<span class="tooltip">Así que hay un montón de cosas que pasan 
+que me hacen un hombre muy feliz<span class="tooltiptext">So there&#39;s a lot of things going on
+that make me a very happy man</span></span>
+		<span class="tooltip">y pensando que tomé 
+las decisiones correctas.<span class="tooltiptext">and thinking I did the right choices.</span></span>
+		<span class="tooltip">CA: ¿Está la idea de código abierto<span class="tooltiptext">CA: Is the open source idea --</span></span>
+		<span class="tooltip">--creo que terminamos aquí--<span class="tooltiptext">this is, I think we&#39;ll end here --</span></span>
+		<span class="tooltip">está la idea del código abierto 
+completamente realizada ahora en el mundo,<span class="tooltiptext">is the open source idea
+fully realized now in the world,</span></span>
+		<span class="tooltip">o hay algo más que se podría hacer,<span class="tooltiptext">or is there more that it could go,</span></span>
+		<span class="tooltip">hay más cosas que se podrían hacer?<span class="tooltiptext">are there more things that it could do?</span></span>
+		<span class="tooltip">LT: Tengo dos pensamientos.<span class="tooltiptext">LT: So, I&#39;m of two minds there.</span></span>
+		<span class="tooltip">Creo que una de las razones por las 
+que el código abierto funciona tan bien<span class="tooltiptext">I think one reason open source
+works so well in code</span></span>
+		<span class="tooltip">es que al final del día,<span class="tooltiptext">is that at the end of the day,</span></span>
+		<span class="tooltip">el código tiende a ser 
+algo blanco y negro.<span class="tooltiptext">code tends to be somewhat black and white.</span></span>
+		<span class="tooltip">Hay a menudo una forma 
+bastante buena de decidir,<span class="tooltiptext">There&#39;s often a fairly good way to decide,</span></span>
+		<span class="tooltip">esto está hecho correctamente, 
+y esto no está bien hecho.<span class="tooltiptext">this is done correctly
+and this is not done well.</span></span>
+		<span class="tooltip">El código funciona o no,<span class="tooltiptext">Code either works or it doesn&#39;t,</span></span>
+		<span class="tooltip">lo que significa que hay 
+menos espacio para las discusiones.<span class="tooltiptext">which means that there&#39;s less
+room for arguments.</span></span>
+		<span class="tooltip">Y tenemos discusiones 
+a pesar de esto, ¿verdad?<span class="tooltiptext">And we have arguments despite this, right?</span></span>
+		<span class="tooltip">En muchas otras áreas...<span class="tooltiptext">In many other areas --</span></span>
+		<span class="tooltip">quiero decir, la gente ha hablado de 
+la política abierta y cosas por el estilo<span class="tooltiptext">I mean, people have talked about
+open politics and things like that --</span></span>
+		<span class="tooltip">y es muy difícil a veces decir<span class="tooltiptext">and it&#39;s really hard sometimes to say</span></span>
+		<span class="tooltip">sí, pueden aplicar los mismos principios 
+en algunas otras áreas<span class="tooltiptext">that, yes, you can apply the same
+principles in some other areas</span></span>
+		<span class="tooltip">solo porque lo blanco y negro 
+se torna en no solo gris,<span class="tooltiptext">just because the black and white
+turns into not just gray,</span></span>
+		<span class="tooltip">sino en diferentes colores.<span class="tooltiptext">but different colors.</span></span>
+		<span class="tooltip">Así que, obviamente, la fuente abierta 
+en la ciencia está reapareciendo.<span class="tooltiptext">So, obviously open source in science
+is making a comeback.</span></span>
+		<span class="tooltip">La ciencia estaba allí primero.<span class="tooltiptext">Science was there first.</span></span>
+		<span class="tooltip">Pero después la ciencia terminó 
+siendo bastante cerrada,<span class="tooltiptext">But then science ended up
+being pretty closed,</span></span>
+		<span class="tooltip">con revistas muy caras 
+y algunos de los que pasa.<span class="tooltiptext">with very expensive journals
+and some of that going on.</span></span>
+		<span class="tooltip">Y de código abierto está haciendo 
+una reaparición en la ciencia,<span class="tooltiptext">And open source is making
+a comeback in science,</span></span>
+		<span class="tooltip">con cosas como arXiv y revistas abiertas.<span class="tooltiptext">with things like arXiv and open journals.</span></span>
+		<span class="tooltip">Wikipedia cambió el mundo, también.<span class="tooltiptext">Wikipedia changed the world, too.</span></span>
+		<span class="tooltip">Hay otros ejemplos,<span class="tooltiptext">So there are other examples,</span></span>
+		<span class="tooltip">Estoy seguro de que hay más por venir.<span class="tooltiptext">I&#39;m sure there are more to come.</span></span>
+		<span class="tooltip">CA: Pero no eres un visionario,<span class="tooltiptext">CA: But you&#39;re not a visionary,</span></span>
+		<span class="tooltip">y no depende de ti nombrarlos.<span class="tooltiptext">and so it&#39;s not up to you to name them.</span></span>
 		<span class="tooltip">LT: No.<span class="tooltiptext">LT: No.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">(Laughter)<span class="tooltiptext">(Risas)</span></span>
-	</p>
-	<p>
-		<span class="tooltip">It&#39;s up to you guys to make them, right?<span class="tooltiptext">Todo depende de Uds. 
-hacerlo, ¿verdad?</span></span>
-	</p>
-	<p>
-		<span class="tooltip">CA: Exactly.<span class="tooltiptext">CA: Exactamente.</span></span>
-	</p>
-	<p>
+		<span class="tooltip">(Risas)<span class="tooltiptext">(Laughter)</span></span>
+		<span class="tooltip">Todo depende de Uds. 
+hacerlo, ¿verdad?<span class="tooltiptext">It&#39;s up to you guys to make them, right?</span></span>
+		<span class="tooltip">CA: Exactamente.<span class="tooltiptext">CA: Exactly.</span></span>
 		<span class="tooltip">Linus Torvalds,<span class="tooltiptext">Linus Torvalds,</span></span>
-		<span class="tooltip">thank you for Linux,
-thank you for the Internet,<span class="tooltiptext">gracias por Linux, gracias a Internet,</span></span>
-		<span class="tooltip">thank you for all those Android phones.<span class="tooltiptext">gracias por todos los teléfonos Android.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">Thank you for coming here to TED
-and revealing so much of yourself.<span class="tooltiptext">Gracias por venir aquí a TED 
-y revelarnos tanto de ti.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">LT: Thank you.<span class="tooltiptext">LT: Gracias.</span></span>
-	</p>
-	<p>
-		<span class="tooltip">(Applause)<span class="tooltiptext">(Aplausos)</span></span>
+		<span class="tooltip">gracias por Linux, gracias a Internet,<span class="tooltiptext">thank you for Linux,
+thank you for the Internet,</span></span>
+		<span class="tooltip">gracias por todos los teléfonos Android.<span class="tooltiptext">thank you for all those Android phones.</span></span>
+		<span class="tooltip">Gracias por venir aquí a TED 
+y revelarnos tanto de ti.<span class="tooltiptext">Thank you for coming here to TED
+and revealing so much of yourself.</span></span>
+		<span class="tooltip">LT: Gracias.<span class="tooltiptext">LT: Thank you.</span></span>
+		<span class="tooltip">(Aplausos)<span class="tooltiptext">(Applause)</span></span>
 	</p>
 
 	<div class="line"></div>
-	<p>Love our website? Help us keep it ad-free and running smoothly by making a donation today.</p>
+	<p>Enjoying my website? Your donation helps maintain its ad-free experience and smooth operation. Your support is truly appreciated and helps us continue providing quality content. Thank you for considering a donation!</p>
 	<p>To donate, simply click the PayPal link below:<p/>
 	<p><a href="https://www.paypal.com/paypalme/otechai" target='_blank'>Donate via PayPal</a></p>
-	<p>Ready to sound like a native speaker? Or better yet, elevate your language skills to the next level? Check out my book : </p>
-	<div style="text-align: center;"> <span><a href="https://amzn.to/3Um79fs" target="_blank" rel=" noopener noreferrer"><img height="160" width="103" typeof="foaf:Image" class="image-style-none" src="../../../static/images/off-the-hook-shaun-clark.jpg" alt="off the hook book by shaun clark"></a></span> </div>
-	<div class="views-field views-field-title" style="text-align: center;"> <span class="field-content"><a href="https://amzn.to/3Um79fs" target="_blank" rel=" noopener noreferrer">Off The Hook: The Ultimate English Slang Dictionary</a></span> </div>
-	<p style="text-align: center;">Or explore our amazing library! <a href="../../../library/1/index.html">HERE</a></p>
 	
 </div>
 <span onclick='topFunction()' id='gotop' title='Go to top'><svg width="32" height="32" viewBox="0 0 100 100">
@@ -1096,7 +902,7 @@ y revelarnos tanto de ti.</span></span>
 	        <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.58-2.11-9.96-5.02-.42.72-.66 1.56-.66 2.46 0 1.68.85 3.16 2.14 4.02-.79-.02-1.53-.24-2.18-.6v.06c0 2.35 1.67 4.31 3.88 4.76-.4.1-.83.16-1.27.16-.31 0-.62-.03-.92-.08.63 1.96 2.45 3.39 4.61 3.43-1.69 1.32-3.83 2.1-6.15 2.1-.4 0-.8-.02-1.19-.07 2.19 1.4 4.78 2.22 7.57 2.22 9.07 0 14.02-7.52 14.02-14.02 0-.21 0-.41-.01-.61.96-.69 1.79-1.56 2.45-2.55-.88.39-1.83.65-2.82.77z"/>
 	    </svg>
 	</a></div>
-	        <div class="right"><a href='../../../library/1/index.html'>Library</a></div>
+	        <div class="right"><a href='https://www.paypal.com/paypalme/otechai'>Donate</a></div>
 	    </div>
 	<script>
 

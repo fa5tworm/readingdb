@@ -18,277 +18,273 @@
 	<h1 class='title'>How I built a toaster -- from scratch</h1>
 	<h2 class='speaker'>Thomas Thwaites</h2>
 	<div class='transcript books'>
-	<p>Are you ready to improve your English speaking skills, check <a href='https://referral.lingoda.com/6Dztrv'>Lingoda</a> today!</p>
+	<p>Are you ready to improve your Spanish speaking skills, check <a href='https://referral.lingoda.com/6Dztrv'>Lingoda</a> today!</p>
 		<p>
-		<span class="tooltip">If we look around us,<span class="tooltiptext">Si miramos a nuestro alrededor,</span></span>
-		<span class="tooltip">much of what surrounds us<span class="tooltiptext">mucho de lo que nos rodea</span></span>
-		<span class="tooltip">started life as various rocks and sludge<span class="tooltiptext">al principio existió en forma de piedras y lodo</span></span>
-		<span class="tooltip">buried in the ground in various places in the world.<span class="tooltiptext">que cubrían el suelo en distintas partes del mundo.</span></span>
-		<span class="tooltip">But, of course, they don&#39;t look like rocks and sludge now.<span class="tooltiptext">Obviamente, ahora no tienen la apariencia de piedras y lodo,</span></span>
-		<span class="tooltip">They look like TV cameras, monitors,<span class="tooltiptext">sino de cámaras de TV, monitores,</span></span>
-		<span class="tooltip">annoying radio mics.<span class="tooltiptext">y molestos micrófonos.</span></span>
-		<span class="tooltip">And so this magical transformation<span class="tooltiptext">Y por eso con mi proyecto,</span></span>
-		<span class="tooltip">is what I was trying to get at with my project,<span class="tooltiptext">que se hizo célebre como «Proyecto Tostadora»,</span></span>
-		<span class="tooltip">which became known as the Toaster Project.<span class="tooltiptext">yo buscaba mostrar esta transformación mágica.</span></span>
-		<span class="tooltip">And it was also inspired by this quote<span class="tooltiptext">Inspirado en esta frase</span></span>
-		<span class="tooltip">from Douglas Adams,<span class="tooltiptext">de Douglas Adams</span></span>
-		<span class="tooltip">and the situation is from &quot;The Hitchhiker&#39;s Guide to the Galaxy.&quot;<span class="tooltiptext">tomada de la &quot;Guía del viajero galáctico&quot;</span></span>
-		<span class="tooltip">And the situation it describes<span class="tooltiptext">que describe la parte en que</span></span>
-		<span class="tooltip">is the hero of the book -- he&#39;s a 20th-century man --<span class="tooltiptext">el protagonista del libro -un hombre del siglo XX-</span></span>
-		<span class="tooltip">finds himself alone on a strange planet<span class="tooltiptext">se encuentra a sí mismo solo en un planeta extraño</span></span>
-		<span class="tooltip">populated only by a technologically primitive people.<span class="tooltiptext">habitado por gente de una tecnología primitiva.</span></span>
-		<span class="tooltip">And he kind of assumes that, yes,<span class="tooltiptext">Y él supone que, sí, que va a llegar</span></span>
-		<span class="tooltip">he&#39;ll become -- these villagers --<span class="tooltiptext">a ser el emperador de estos aldeanos,</span></span>
-		<span class="tooltip">he&#39;ll become their emperor<span class="tooltiptext">que va a llegar a serlo</span></span>
-		<span class="tooltip">and transform their society<span class="tooltiptext">y que va a transformar a la sociedad</span></span>
-		<span class="tooltip">with his wonderful command of technology<span class="tooltiptext">gracias al dominio que tiene de la tecnología</span></span>
-		<span class="tooltip">and science and the elements,<span class="tooltiptext">de la ciencia y de los elementos</span></span>
-		<span class="tooltip">but, of course, realizes<span class="tooltiptext">pero, por supuesto, se da cuenta</span></span>
-		<span class="tooltip">that without the rest of human society,<span class="tooltiptext">de que sin el resto de la sociedad humana</span></span>
-		<span class="tooltip">he can barely make a sandwich,<span class="tooltiptext">apenas podría hacer un sándwich,</span></span>
-		<span class="tooltip">let alone a toaster.<span class="tooltiptext">por no hablar de una tostadora.</span></span>
-		<span class="tooltip">But he didn&#39;t have Wikipedia.<span class="tooltiptext">Pero él no tenía Wikipedia.</span></span>
+		<span class="tooltip">Si miramos a nuestro alrededor,<span class="tooltiptext">If we look around us,</span></span>
+		<span class="tooltip">mucho de lo que nos rodea<span class="tooltiptext">much of what surrounds us</span></span>
+		<span class="tooltip">al principio existió en forma de piedras y lodo<span class="tooltiptext">started life as various rocks and sludge</span></span>
+		<span class="tooltip">que cubrían el suelo en distintas partes del mundo.<span class="tooltiptext">buried in the ground in various places in the world.</span></span>
+		<span class="tooltip">Obviamente, ahora no tienen la apariencia de piedras y lodo,<span class="tooltiptext">But, of course, they don&#39;t look like rocks and sludge now.</span></span>
+		<span class="tooltip">sino de cámaras de TV, monitores,<span class="tooltiptext">They look like TV cameras, monitors,</span></span>
+		<span class="tooltip">y molestos micrófonos.<span class="tooltiptext">annoying radio mics.</span></span>
+		<span class="tooltip">Y por eso con mi proyecto,<span class="tooltiptext">And so this magical transformation</span></span>
+		<span class="tooltip">que se hizo célebre como «Proyecto Tostadora»,<span class="tooltiptext">is what I was trying to get at with my project,</span></span>
+		<span class="tooltip">yo buscaba mostrar esta transformación mágica.<span class="tooltiptext">which became known as the Toaster Project.</span></span>
+		<span class="tooltip">Inspirado en esta frase<span class="tooltiptext">And it was also inspired by this quote</span></span>
+		<span class="tooltip">de Douglas Adams<span class="tooltiptext">from Douglas Adams,</span></span>
+		<span class="tooltip">tomada de la &quot;Guía del viajero galáctico&quot;<span class="tooltiptext">and the situation is from &quot;The Hitchhiker&#39;s Guide to the Galaxy.&quot;</span></span>
+		<span class="tooltip">que describe la parte en que<span class="tooltiptext">And the situation it describes</span></span>
+		<span class="tooltip">el protagonista del libro -un hombre del siglo XX-<span class="tooltiptext">is the hero of the book -- he&#39;s a 20th-century man --</span></span>
+		<span class="tooltip">se encuentra a sí mismo solo en un planeta extraño<span class="tooltiptext">finds himself alone on a strange planet</span></span>
+		<span class="tooltip">habitado por gente de una tecnología primitiva.<span class="tooltiptext">populated only by a technologically primitive people.</span></span>
+		<span class="tooltip">Y él supone que, sí, que va a llegar<span class="tooltiptext">And he kind of assumes that, yes,</span></span>
+		<span class="tooltip">a ser el emperador de estos aldeanos,<span class="tooltiptext">he&#39;ll become -- these villagers --</span></span>
+		<span class="tooltip">que va a llegar a serlo<span class="tooltiptext">he&#39;ll become their emperor</span></span>
+		<span class="tooltip">y que va a transformar a la sociedad<span class="tooltiptext">and transform their society</span></span>
+		<span class="tooltip">gracias al dominio que tiene de la tecnología<span class="tooltiptext">with his wonderful command of technology</span></span>
+		<span class="tooltip">de la ciencia y de los elementos<span class="tooltiptext">and science and the elements,</span></span>
+		<span class="tooltip">pero, por supuesto, se da cuenta<span class="tooltiptext">but, of course, realizes</span></span>
+		<span class="tooltip">de que sin el resto de la sociedad humana<span class="tooltiptext">that without the rest of human society,</span></span>
+		<span class="tooltip">apenas podría hacer un sándwich,<span class="tooltiptext">he can barely make a sandwich,</span></span>
+		<span class="tooltip">por no hablar de una tostadora.<span class="tooltiptext">let alone a toaster.</span></span>
+		<span class="tooltip">Pero él no tenía Wikipedia.<span class="tooltiptext">But he didn&#39;t have Wikipedia.</span></span>
 	</p>
 	<p>
-		<span class="tooltip">So I thought, okay,<span class="tooltiptext">Así que pensé, bueno,</span></span>
-		<span class="tooltip">I&#39;ll try and make an electric toaster from scratch.<span class="tooltiptext">voy a tratar de hacer una tostadora eléctrica desde cero.</span></span>
-		<span class="tooltip">And, working on the idea<span class="tooltiptext">Y, a partir de la idea de que</span></span>
-		<span class="tooltip">that the cheapest electric toaster<span class="tooltiptext">la tostadora eléctrica más barata</span></span>
-		<span class="tooltip">would also be the simplest to reverse-engineer,<span class="tooltiptext">sería la más fácil de estudiar</span></span>
-		<span class="tooltip">I went and bought the cheapest toaster I could find,<span class="tooltiptext">fui a comprar la más barata que pude encontrar,</span></span>
-		<span class="tooltip">took it home<span class="tooltiptext">la llevé a casa,</span></span>
-		<span class="tooltip">and was kind of dismayed to discover<span class="tooltiptext">y quedé consternado al descubrir</span></span>
-		<span class="tooltip">that, inside this object,<span class="tooltiptext">que en este objeto</span></span>
-		<span class="tooltip">which I&#39;d bought for just 3.49 pounds,<span class="tooltiptext">que había comprado por apenas £ 3,94</span></span>
-		<span class="tooltip">there were 400 different bits<span class="tooltiptext">hay 400 componentes distintos</span></span>
-		<span class="tooltip">made out of a hundred-plus different materials.<span class="tooltiptext">hechos con más de cien materiales diferentes.</span></span>
-		<span class="tooltip">I didn&#39;t have the rest of my life to do this project.<span class="tooltiptext">Yo no tenía toda la vida para dedicarle al proyecto;</span></span>
-		<span class="tooltip">I had maybe nine months.<span class="tooltiptext">tenía, como mucho, 9 meses.</span></span>
-		<span class="tooltip">So I thought, okay, I&#39;ll start with five.<span class="tooltiptext">Entonces pensé, bueno, voy a empezar</span></span>
-		<span class="tooltip">And these were steel, mica,<span class="tooltiptext">con cinco: acero, mica,</span></span>
-		<span class="tooltip">plastic, copper and nickel.<span class="tooltiptext">plástico, cobre y níquel.</span></span>
+		<span class="tooltip">Así que pensé, bueno,<span class="tooltiptext">So I thought, okay,</span></span>
+		<span class="tooltip">voy a tratar de hacer una tostadora eléctrica desde cero.<span class="tooltiptext">I&#39;ll try and make an electric toaster from scratch.</span></span>
+		<span class="tooltip">Y, a partir de la idea de que<span class="tooltiptext">And, working on the idea</span></span>
+		<span class="tooltip">la tostadora eléctrica más barata<span class="tooltiptext">that the cheapest electric toaster</span></span>
+		<span class="tooltip">sería la más fácil de estudiar<span class="tooltiptext">would also be the simplest to reverse-engineer,</span></span>
+		<span class="tooltip">fui a comprar la más barata que pude encontrar,<span class="tooltiptext">I went and bought the cheapest toaster I could find,</span></span>
+		<span class="tooltip">la llevé a casa,<span class="tooltiptext">took it home</span></span>
+		<span class="tooltip">y quedé consternado al descubrir<span class="tooltiptext">and was kind of dismayed to discover</span></span>
+		<span class="tooltip">que en este objeto<span class="tooltiptext">that, inside this object,</span></span>
+		<span class="tooltip">que había comprado por apenas £ 3,94<span class="tooltiptext">which I&#39;d bought for just 3.49 pounds,</span></span>
+		<span class="tooltip">hay 400 componentes distintos<span class="tooltiptext">there were 400 different bits</span></span>
+		<span class="tooltip">hechos con más de cien materiales diferentes.<span class="tooltiptext">made out of a hundred-plus different materials.</span></span>
+		<span class="tooltip">Yo no tenía toda la vida para dedicarle al proyecto;<span class="tooltiptext">I didn&#39;t have the rest of my life to do this project.</span></span>
+		<span class="tooltip">tenía, como mucho, 9 meses.<span class="tooltiptext">I had maybe nine months.</span></span>
+		<span class="tooltip">Entonces pensé, bueno, voy a empezar<span class="tooltiptext">So I thought, okay, I&#39;ll start with five.</span></span>
+		<span class="tooltip">con cinco: acero, mica,<span class="tooltiptext">And these were steel, mica,</span></span>
+		<span class="tooltip">plástico, cobre y níquel.<span class="tooltiptext">plastic, copper and nickel.</span></span>
 	</p>
 	<p>
-		<span class="tooltip">So, starting with steel: how do you make steel?<span class="tooltiptext">Empecemos con el acero: ¿cómo se hace el acero?</span></span>
-		<span class="tooltip">I went and knocked on the door<span class="tooltiptext">Fui a golpear la puerta</span></span>
-		<span class="tooltip">of the Rio Tinto Chair<span class="tooltiptext">del director del Centro de Extracción Mineral Avanzada</span></span>
-		<span class="tooltip">of Advanced Mineral Extraction at the Royal School of Mines<span class="tooltiptext">de Río Tinto, en la Escuela Real de Minas</span></span>
-		<span class="tooltip">and said, &quot;How do you make steel?&quot;<span class="tooltiptext">y le dije: &quot;¿Cómo se hace el acero?&quot;</span></span>
-		<span class="tooltip">And Professor Cilliers was very kind<span class="tooltiptext">Y el profesor Cilliers fue muy amable</span></span>
-		<span class="tooltip">and talked me through it.<span class="tooltiptext">y me explicó el proceso.</span></span>
-		<span class="tooltip">And my vague rememberings from GCSE science --<span class="tooltiptext">De mis recuerdos vagos de ciencias de la secundaria</span></span>
-		<span class="tooltip">well, steel comes from iron,<span class="tooltiptext">sabía que el acero proviene del hierro</span></span>
-		<span class="tooltip">so I phoned up an iron mine.<span class="tooltiptext">así que llamé a una mina de hierro y les dije:</span></span>
-		<span class="tooltip">And said, &quot;Hi, I&#39;m trying to make a toaster.<span class="tooltiptext">&quot;Hola, estoy tratando de hacer una tostadora [&#39;toaster&#39;, NT].</span></span>
-		<span class="tooltip">Can I come up and get some iron?&quot;<span class="tooltiptext">¿Puedo ir a buscar algo de hierro?&quot;</span></span>
-		<span class="tooltip">Unfortunately, when I got there -- emerges Ray.<span class="tooltiptext">Por desgracia, cuando llegué allí, apareció Ray.</span></span>
-		<span class="tooltip">He had misheard me<span class="tooltiptext">Él me había oído mal</span></span>
-		<span class="tooltip">and thought I was coming up because I was trying to make a poster,<span class="tooltiptext">y pensó que yo estaba por hacer un póster [rima con &#39;toaster&#39;, NT]</span></span>
-		<span class="tooltip">and so wasn&#39;t prepared to take me into the mines.<span class="tooltiptext">y no estaba preparado para llevarme a la mina.</span></span>
-		<span class="tooltip">But after some nagging, I got him to do that.<span class="tooltiptext">Pero luego de insistir un poco, lo convencí.</span></span>
+		<span class="tooltip">Empecemos con el acero: ¿cómo se hace el acero?<span class="tooltiptext">So, starting with steel: how do you make steel?</span></span>
+		<span class="tooltip">Fui a golpear la puerta<span class="tooltiptext">I went and knocked on the door</span></span>
+		<span class="tooltip">del director del Centro de Extracción Mineral Avanzada<span class="tooltiptext">of the Rio Tinto Chair</span></span>
+		<span class="tooltip">de Río Tinto, en la Escuela Real de Minas<span class="tooltiptext">of Advanced Mineral Extraction at the Royal School of Mines</span></span>
+		<span class="tooltip">y le dije: &quot;¿Cómo se hace el acero?&quot;<span class="tooltiptext">and said, &quot;How do you make steel?&quot;</span></span>
+		<span class="tooltip">Y el profesor Cilliers fue muy amable<span class="tooltiptext">And Professor Cilliers was very kind</span></span>
+		<span class="tooltip">y me explicó el proceso.<span class="tooltiptext">and talked me through it.</span></span>
+		<span class="tooltip">De mis recuerdos vagos de ciencias de la secundaria<span class="tooltiptext">And my vague rememberings from GCSE science --</span></span>
+		<span class="tooltip">sabía que el acero proviene del hierro<span class="tooltiptext">well, steel comes from iron,</span></span>
+		<span class="tooltip">así que llamé a una mina de hierro y les dije:<span class="tooltiptext">so I phoned up an iron mine.</span></span>
+		<span class="tooltip">&quot;Hola, estoy tratando de hacer una tostadora [&#39;toaster&#39;, NT].<span class="tooltiptext">And said, &quot;Hi, I&#39;m trying to make a toaster.</span></span>
+		<span class="tooltip">¿Puedo ir a buscar algo de hierro?&quot;<span class="tooltiptext">Can I come up and get some iron?&quot;</span></span>
+		<span class="tooltip">Por desgracia, cuando llegué allí, apareció Ray.<span class="tooltiptext">Unfortunately, when I got there -- emerges Ray.</span></span>
+		<span class="tooltip">Él me había oído mal<span class="tooltiptext">He had misheard me</span></span>
+		<span class="tooltip">y pensó que yo estaba por hacer un póster [rima con &#39;toaster&#39;, NT]<span class="tooltiptext">and thought I was coming up because I was trying to make a poster,</span></span>
+		<span class="tooltip">y no estaba preparado para llevarme a la mina.<span class="tooltiptext">and so wasn&#39;t prepared to take me into the mines.</span></span>
+		<span class="tooltip">Pero luego de insistir un poco, lo convencí.<span class="tooltiptext">But after some nagging, I got him to do that.</span></span>
 	</p>
 	<p>
-		<span class="tooltip">(Video) Ray: It was Crease Limestone,<span class="tooltiptext">(Video) Ray: era una cantera de caliza</span></span>
-		<span class="tooltip">and that was produced<span class="tooltiptext">producto de criaturas marinas</span></span>
-		<span class="tooltip">by sea creatures<span class="tooltiptext">que hace 350 millones</span></span>
-		<span class="tooltip">350 million years ago<span class="tooltiptext">de años vivían en una</span></span>
-		<span class="tooltip">in a nice, warm,<span class="tooltiptext">atmósfera soleada</span></span>
-		<span class="tooltip">sunny atmosphere.<span class="tooltiptext">agradable y cálida.</span></span>
-		<span class="tooltip">When you study geology,<span class="tooltiptext">Cuando uno estudia geología</span></span>
-		<span class="tooltip">you can see what&#39;s happened in the past,<span class="tooltiptext">puede ver lo que sucedía en el pasado.</span></span>
-		<span class="tooltip">and there were terrific changes in the earth.<span class="tooltiptext">Y se han producido cambios increíbles.</span></span>
+		<span class="tooltip">(Video) Ray: era una cantera de caliza<span class="tooltiptext">(Video) Ray: It was Crease Limestone,</span></span>
+		<span class="tooltip">producto de criaturas marinas<span class="tooltiptext">and that was produced</span></span>
+		<span class="tooltip">que hace 350 millones<span class="tooltiptext">by sea creatures</span></span>
+		<span class="tooltip">de años vivían en una<span class="tooltiptext">350 million years ago</span></span>
+		<span class="tooltip">atmósfera soleada<span class="tooltiptext">in a nice, warm,</span></span>
+		<span class="tooltip">agradable y cálida.<span class="tooltiptext">sunny atmosphere.</span></span>
+		<span class="tooltip">Cuando uno estudia geología<span class="tooltiptext">When you study geology,</span></span>
+		<span class="tooltip">puede ver lo que sucedía en el pasado.<span class="tooltiptext">you can see what&#39;s happened in the past,</span></span>
+		<span class="tooltip">Y se han producido cambios increíbles.<span class="tooltiptext">and there were terrific changes in the earth.</span></span>
 	</p>
 	<p>
-		<span class="tooltip">Thomas Thwaites: As you can see, they had the Christmas decorations up.<span class="tooltiptext">Thomas Thwaites: Como pueden ver había decoraciones navideñas.</span></span>
-		<span class="tooltip">And of course, it wasn&#39;t actually a working mine anymore,<span class="tooltiptext">Y, por supuesto, ya no era una mina activa</span></span>
-		<span class="tooltip">because, though Ray was a miner there,<span class="tooltiptext">porque, aunque Ray era minero,</span></span>
-		<span class="tooltip">the mine had closed<span class="tooltiptext">la mina había cerrado</span></span>
-		<span class="tooltip">and had been reopened as a kind of tourist attraction,<span class="tooltiptext">y volvió a abrir como atracción turística</span></span>
-		<span class="tooltip">because, of course, it can&#39;t compete<span class="tooltiptext">porque, obviamente, no puede competir</span></span>
-		<span class="tooltip">on the scale of operations which are happening<span class="tooltiptext">con la magnitud de las actividades que tienen lugar</span></span>
-		<span class="tooltip">in South America, Australia, wherever.<span class="tooltiptext">en América del Sur, Australia, etc.</span></span>
-		<span class="tooltip">But anyway, I got my suitcase of iron ore<span class="tooltiptext">De todas formas, conseguí mi maleta de mineral de hierro</span></span>
-		<span class="tooltip">and dragged it back to London on the train,<span class="tooltiptext">y la arrastré hasta Londres en tren</span></span>
-		<span class="tooltip">and then was faced with the problem:<span class="tooltiptext">para luego enfrentarme al problema:</span></span>
-		<span class="tooltip">Okay, how do you make this rock<span class="tooltiptext">bueno, ¿cómo transformo esta piedra</span></span>
-		<span class="tooltip">into components for a toaster?<span class="tooltiptext">en componentes de una tostadora?</span></span>
+		<span class="tooltip">Thomas Thwaites: Como pueden ver había decoraciones navideñas.<span class="tooltiptext">Thomas Thwaites: As you can see, they had the Christmas decorations up.</span></span>
+		<span class="tooltip">Y, por supuesto, ya no era una mina activa<span class="tooltiptext">And of course, it wasn&#39;t actually a working mine anymore,</span></span>
+		<span class="tooltip">porque, aunque Ray era minero,<span class="tooltiptext">because, though Ray was a miner there,</span></span>
+		<span class="tooltip">la mina había cerrado<span class="tooltiptext">the mine had closed</span></span>
+		<span class="tooltip">y volvió a abrir como atracción turística<span class="tooltiptext">and had been reopened as a kind of tourist attraction,</span></span>
+		<span class="tooltip">porque, obviamente, no puede competir<span class="tooltiptext">because, of course, it can&#39;t compete</span></span>
+		<span class="tooltip">con la magnitud de las actividades que tienen lugar<span class="tooltiptext">on the scale of operations which are happening</span></span>
+		<span class="tooltip">en América del Sur, Australia, etc.<span class="tooltiptext">in South America, Australia, wherever.</span></span>
+		<span class="tooltip">De todas formas, conseguí mi maleta de mineral de hierro<span class="tooltiptext">But anyway, I got my suitcase of iron ore</span></span>
+		<span class="tooltip">y la arrastré hasta Londres en tren<span class="tooltiptext">and dragged it back to London on the train,</span></span>
+		<span class="tooltip">para luego enfrentarme al problema:<span class="tooltiptext">and then was faced with the problem:</span></span>
+		<span class="tooltip">bueno, ¿cómo transformo esta piedra<span class="tooltiptext">Okay, how do you make this rock</span></span>
+		<span class="tooltip">en componentes de una tostadora?<span class="tooltiptext">into components for a toaster?</span></span>
 	</p>
 	<p>
-		<span class="tooltip">So I went back to Professor Cilliers,<span class="tooltiptext">Así que volví con el profesor Cilliers</span></span>
-		<span class="tooltip">and he said, &quot;Go to the library.&quot;<span class="tooltiptext">y me dijo: &quot;Ve a la biblioteca&quot;.</span></span>
-		<span class="tooltip">So I did<span class="tooltiptext">Y así hice,</span></span>
-		<span class="tooltip">and was looking through the undergraduate textbooks on metallurgy --<span class="tooltiptext">fui a hojear los textos de metalurgia</span></span>
-		<span class="tooltip">completely useless for what I was trying to do.<span class="tooltiptext">completamente inútiles para lo que estaba tratando de hacer.</span></span>
-		<span class="tooltip">Because, of course, they don&#39;t actually tell you how to do it<span class="tooltiptext">Porque, por supuesto, no dicen realmente cómo se hace</span></span>
-		<span class="tooltip">if you want to do it yourself and you don&#39;t have a smelting plant.<span class="tooltiptext">si uno quiere hacerlo por su cuenta y no dispone de una planta de fundición.</span></span>
-		<span class="tooltip">So I ended up going to the History of Science Library<span class="tooltiptext">Así que terminé yendo a la Biblioteca de la Historia de la Ciencia,</span></span>
-		<span class="tooltip">and looking at this book.<span class="tooltiptext">y encontré este libro.</span></span>
-		<span class="tooltip">This is the first textbook on metallurgy<span class="tooltiptext">Este es el primer libro sobre metalurgia,</span></span>
-		<span class="tooltip">written in the West, at least.<span class="tooltiptext">al menos, el primero escrito en Occidente.</span></span>
-		<span class="tooltip">And there you can see that woodcut<span class="tooltiptext">Allí puede verse ese grabado en madera</span></span>
-		<span class="tooltip">is basically what I ended up doing.<span class="tooltiptext">que, al final, es lo que terminé haciendo.</span></span>
-		<span class="tooltip">But instead of a bellows, I had a leaf blower.<span class="tooltiptext">Pero en lugar de un fuelle yo tenía un soplador de hojas.</span></span>
-		<span class="tooltip">(Laughter)<span class="tooltiptext">(Risas)</span></span>
-		<span class="tooltip">And that was something that reoccurred throughout the project,<span class="tooltiptext">Y eso fue una constante en el proyecto:</span></span>
-		<span class="tooltip">was, the smaller the scale you want to work on,<span class="tooltiptext">cuanto menor era la escala en que quería trabajar</span></span>
-		<span class="tooltip">the further back in time you have to go.<span class="tooltiptext">más debía remontarme en el tiempo.</span></span>
-		<span class="tooltip">And so this is after<span class="tooltiptext">Y esto es después</span></span>
-		<span class="tooltip">a day and about half a night<span class="tooltiptext">de un día y casi media noche</span></span>
-		<span class="tooltip">smelting this iron.<span class="tooltiptext">de fundir este hierro.</span></span>
-		<span class="tooltip">I dragged out this stuff,<span class="tooltiptext">Quité esta cosa</span></span>
-		<span class="tooltip">and it wasn&#39;t iron.<span class="tooltiptext">y no había hierro.</span></span>
-		<span class="tooltip">But luckily,<span class="tooltiptext">Pero por suerte</span></span>
-		<span class="tooltip">I found a patent online<span class="tooltiptext">encontré en línea una patente</span></span>
-		<span class="tooltip">for industrial furnaces that use microwaves,<span class="tooltiptext">para hornos industriales que usan microondas.</span></span>
-		<span class="tooltip">and at 30 minutes at full power,<span class="tooltiptext">Después de 30 minutos a plena potencia</span></span>
-		<span class="tooltip">and I was able to finish off the process.<span class="tooltiptext">pude completar el proceso.</span></span>
+		<span class="tooltip">Así que volví con el profesor Cilliers<span class="tooltiptext">So I went back to Professor Cilliers,</span></span>
+		<span class="tooltip">y me dijo: &quot;Ve a la biblioteca&quot;.<span class="tooltiptext">and he said, &quot;Go to the library.&quot;</span></span>
+		<span class="tooltip">Y así hice,<span class="tooltiptext">So I did</span></span>
+		<span class="tooltip">fui a hojear los textos de metalurgia<span class="tooltiptext">and was looking through the undergraduate textbooks on metallurgy --</span></span>
+		<span class="tooltip">completamente inútiles para lo que estaba tratando de hacer.<span class="tooltiptext">completely useless for what I was trying to do.</span></span>
+		<span class="tooltip">Porque, por supuesto, no dicen realmente cómo se hace<span class="tooltiptext">Because, of course, they don&#39;t actually tell you how to do it</span></span>
+		<span class="tooltip">si uno quiere hacerlo por su cuenta y no dispone de una planta de fundición.<span class="tooltiptext">if you want to do it yourself and you don&#39;t have a smelting plant.</span></span>
+		<span class="tooltip">Así que terminé yendo a la Biblioteca de la Historia de la Ciencia,<span class="tooltiptext">So I ended up going to the History of Science Library</span></span>
+		<span class="tooltip">y encontré este libro.<span class="tooltiptext">and looking at this book.</span></span>
+		<span class="tooltip">Este es el primer libro sobre metalurgia,<span class="tooltiptext">This is the first textbook on metallurgy</span></span>
+		<span class="tooltip">al menos, el primero escrito en Occidente.<span class="tooltiptext">written in the West, at least.</span></span>
+		<span class="tooltip">Allí puede verse ese grabado en madera<span class="tooltiptext">And there you can see that woodcut</span></span>
+		<span class="tooltip">que, al final, es lo que terminé haciendo.<span class="tooltiptext">is basically what I ended up doing.</span></span>
+		<span class="tooltip">Pero en lugar de un fuelle yo tenía un soplador de hojas.<span class="tooltiptext">But instead of a bellows, I had a leaf blower.</span></span>
+		<span class="tooltip">(Risas)<span class="tooltiptext">(Laughter)</span></span>
+		<span class="tooltip">Y eso fue una constante en el proyecto:<span class="tooltiptext">And that was something that reoccurred throughout the project,</span></span>
+		<span class="tooltip">cuanto menor era la escala en que quería trabajar<span class="tooltiptext">was, the smaller the scale you want to work on,</span></span>
+		<span class="tooltip">más debía remontarme en el tiempo.<span class="tooltiptext">the further back in time you have to go.</span></span>
+		<span class="tooltip">Y esto es después<span class="tooltiptext">And so this is after</span></span>
+		<span class="tooltip">de un día y casi media noche<span class="tooltiptext">a day and about half a night</span></span>
+		<span class="tooltip">de fundir este hierro.<span class="tooltiptext">smelting this iron.</span></span>
+		<span class="tooltip">Quité esta cosa<span class="tooltiptext">I dragged out this stuff,</span></span>
+		<span class="tooltip">y no había hierro.<span class="tooltiptext">and it wasn&#39;t iron.</span></span>
+		<span class="tooltip">Pero por suerte<span class="tooltiptext">But luckily,</span></span>
+		<span class="tooltip">encontré en línea una patente<span class="tooltiptext">I found a patent online</span></span>
+		<span class="tooltip">para hornos industriales que usan microondas.<span class="tooltiptext">for industrial furnaces that use microwaves,</span></span>
+		<span class="tooltip">Después de 30 minutos a plena potencia<span class="tooltiptext">and at 30 minutes at full power,</span></span>
+		<span class="tooltip">pude completar el proceso.<span class="tooltiptext">and I was able to finish off the process.</span></span>
 	</p>
 	<p>
-		<span class="tooltip">So, my next --<span class="tooltiptext">Así, lo siguiente...</span></span>
-		<span class="tooltip">(Applause)<span class="tooltiptext">(Aplausos)</span></span>
-		<span class="tooltip">The next thing I was trying to get was copper.<span class="tooltiptext">El siguiente paso fue obtener cobre.</span></span>
-		<span class="tooltip">Again, this mine<span class="tooltiptext">De nuevo, alguna vez</span></span>
-		<span class="tooltip">was once the largest copper mine in the world.<span class="tooltiptext">esta fue la mina de cobre más grande del mundo.</span></span>
-		<span class="tooltip">It&#39;s not anymore,<span class="tooltiptext">Ya no lo es.</span></span>
-		<span class="tooltip">but I found a retired geology professor<span class="tooltiptext">Pero encontré un profesor de geología jubilado</span></span>
-		<span class="tooltip">to take me down,<span class="tooltiptext">que me llevó allí.</span></span>
-		<span class="tooltip">and he said, &quot;Okay, I&#39;ll let you have some water from the mine.&quot;<span class="tooltiptext">Y me dijo: &quot;Bueno, te dejo llevar agua de la mina&quot;.</span></span>
-		<span class="tooltip">And the reason I was interested in getting water<span class="tooltiptext">La razón de mi interés por el agua</span></span>
-		<span class="tooltip">is because water which goes through mines<span class="tooltiptext">es que la que fluye por las minas</span></span>
-		<span class="tooltip">becomes kind of acidic<span class="tooltiptext">se vuelve ácida</span></span>
-		<span class="tooltip">and will start picking up,<span class="tooltiptext">y empieza a absorber,</span></span>
-		<span class="tooltip">dissolving the minerals from the mine.<span class="tooltiptext">a disolver los minerales de la mina.</span></span>
-		<span class="tooltip">And a good example of this is the Rio Tinto,<span class="tooltiptext">Un claro ejemplo es el Río Tinto,</span></span>
-		<span class="tooltip">which is in Portugal.<span class="tooltiptext">en Portugal.</span></span>
-		<span class="tooltip">As you can see, it&#39;s got lots and lots of minerals dissolved in it.<span class="tooltiptext">Como pueden ver, contiene grandes cantidades de minerales.</span></span>
-		<span class="tooltip">So many such<span class="tooltiptext">Tantos que ahora</span></span>
-		<span class="tooltip">that it&#39;s now just a home for bacteria<span class="tooltiptext">es caldo de cultivo de bacterias</span></span>
-		<span class="tooltip">who really like acidic, toxic conditions.<span class="tooltiptext">que viven en condiciones ácidas, tóxicas.</span></span>
-		<span class="tooltip">But anyway, the water I dragged back<span class="tooltiptext">De todos modos, el agua que traje</span></span>
-		<span class="tooltip">from the Isle of Anglesey where the mine was --<span class="tooltiptext">de la isla de Anglesey, donde estaba la mina,</span></span>
-		<span class="tooltip">there was enough copper in it<span class="tooltiptext">contenía suficiente cobre</span></span>
-		<span class="tooltip">such that I could cast the pins<span class="tooltiptext">así que pude moldear las clavijas</span></span>
-		<span class="tooltip">of my metal electric plug.<span class="tooltiptext">de mi enchufe metálico.</span></span>
+		<span class="tooltip">Así, lo siguiente...<span class="tooltiptext">So, my next --</span></span>
+		<span class="tooltip">(Aplausos)<span class="tooltiptext">(Applause)</span></span>
+		<span class="tooltip">El siguiente paso fue obtener cobre.<span class="tooltiptext">The next thing I was trying to get was copper.</span></span>
+		<span class="tooltip">De nuevo, alguna vez<span class="tooltiptext">Again, this mine</span></span>
+		<span class="tooltip">esta fue la mina de cobre más grande del mundo.<span class="tooltiptext">was once the largest copper mine in the world.</span></span>
+		<span class="tooltip">Ya no lo es.<span class="tooltiptext">It&#39;s not anymore,</span></span>
+		<span class="tooltip">Pero encontré un profesor de geología jubilado<span class="tooltiptext">but I found a retired geology professor</span></span>
+		<span class="tooltip">que me llevó allí.<span class="tooltiptext">to take me down,</span></span>
+		<span class="tooltip">Y me dijo: &quot;Bueno, te dejo llevar agua de la mina&quot;.<span class="tooltiptext">and he said, &quot;Okay, I&#39;ll let you have some water from the mine.&quot;</span></span>
+		<span class="tooltip">La razón de mi interés por el agua<span class="tooltiptext">And the reason I was interested in getting water</span></span>
+		<span class="tooltip">es que la que fluye por las minas<span class="tooltiptext">is because water which goes through mines</span></span>
+		<span class="tooltip">se vuelve ácida<span class="tooltiptext">becomes kind of acidic</span></span>
+		<span class="tooltip">y empieza a absorber,<span class="tooltiptext">and will start picking up,</span></span>
+		<span class="tooltip">a disolver los minerales de la mina.<span class="tooltiptext">dissolving the minerals from the mine.</span></span>
+		<span class="tooltip">Un claro ejemplo es el Río Tinto,<span class="tooltiptext">And a good example of this is the Rio Tinto,</span></span>
+		<span class="tooltip">en Portugal.<span class="tooltiptext">which is in Portugal.</span></span>
+		<span class="tooltip">Como pueden ver, contiene grandes cantidades de minerales.<span class="tooltiptext">As you can see, it&#39;s got lots and lots of minerals dissolved in it.</span></span>
+		<span class="tooltip">Tantos que ahora<span class="tooltiptext">So many such</span></span>
+		<span class="tooltip">es caldo de cultivo de bacterias<span class="tooltiptext">that it&#39;s now just a home for bacteria</span></span>
+		<span class="tooltip">que viven en condiciones ácidas, tóxicas.<span class="tooltiptext">who really like acidic, toxic conditions.</span></span>
+		<span class="tooltip">De todos modos, el agua que traje<span class="tooltiptext">But anyway, the water I dragged back</span></span>
+		<span class="tooltip">de la isla de Anglesey, donde estaba la mina,<span class="tooltiptext">from the Isle of Anglesey where the mine was --</span></span>
+		<span class="tooltip">contenía suficiente cobre<span class="tooltiptext">there was enough copper in it</span></span>
+		<span class="tooltip">así que pude moldear las clavijas<span class="tooltiptext">such that I could cast the pins</span></span>
+		<span class="tooltip">de mi enchufe metálico.<span class="tooltiptext">of my metal electric plug.</span></span>
 	</p>
 	<p>
-		<span class="tooltip">So my next thing: I was off to Scotland<span class="tooltiptext">El siguiente paso fue ir a Escocia</span></span>
-		<span class="tooltip">to get mica.<span class="tooltiptext">a buscar mica.</span></span>
-		<span class="tooltip">And mica is a mineral<span class="tooltiptext">La mica es un mineral</span></span>
-		<span class="tooltip">which is a very good insulator<span class="tooltiptext">muy aislante,</span></span>
-		<span class="tooltip">and very good at insulating electricity.<span class="tooltiptext">muy bueno para aislar electricidad.</span></span>
-		<span class="tooltip">That&#39;s me getting mica.<span class="tooltiptext">Ahí estoy consiguiendo mica.</span></span>
-		<span class="tooltip">And the last material I&#39;m going to talk about today is plastic,<span class="tooltiptext">Y el último material del que voy a hablar es el plástico.</span></span>
-		<span class="tooltip">and, of course,<span class="tooltiptext">Y, claro,</span></span>
-		<span class="tooltip">my toaster had to have a plastic case.<span class="tooltiptext">mi tostadora tenía que tener una cubierta de plástico.</span></span>
-		<span class="tooltip">Plastic is the defining feature<span class="tooltiptext">El plástico es lo que caracteriza</span></span>
-		<span class="tooltip">of cheap electrical goods.<span class="tooltiptext">a los aparatos eléctricos baratos.</span></span>
-		<span class="tooltip">And so plastic comes from oil, so I phoned up BP<span class="tooltiptext">Como el plástico proviene del petróleo, llamé a British Petroleum</span></span>
-		<span class="tooltip">and spent a good half an hour<span class="tooltiptext">y pasé una buena media hora</span></span>
-		<span class="tooltip">trying to convince the PR office at BP<span class="tooltiptext">tratando de convencer a la oficina de RRPP de BP</span></span>
-		<span class="tooltip">that it would be fantastic for them<span class="tooltiptext">de que sería fantástico para ellos</span></span>
-		<span class="tooltip">if they flew me to an oil rig<span class="tooltiptext">si me llevaban a una plataforma petrolera</span></span>
-		<span class="tooltip">and let me have a jug of oil.<span class="tooltiptext">y me dejaban traer una jarra de petróleo.</span></span>
-		<span class="tooltip">BP obviously has a bit more on their mind now.<span class="tooltiptext">Hoy en día, obviamente, BP tiene otros problemas en mente.</span></span>
-		<span class="tooltip">But even then<span class="tooltiptext">Pero incluso entonces</span></span>
-		<span class="tooltip">they weren&#39;t convinced<span class="tooltiptext">no estaban convencidos</span></span>
-		<span class="tooltip">and said, &quot;Okay, we&#39;ll phone you back&quot; -- never did.<span class="tooltiptext">y dijeron: &quot;Bueno, te volveremos a llamar&quot;; cosa que nunca hicieron.</span></span>
-		<span class="tooltip">So I looked at other ways of making plastic.<span class="tooltiptext">Así que busqué otras maneras de hacer plástico.</span></span>
-		<span class="tooltip">And you can actually make plastic<span class="tooltiptext">Y uno puede hacer plástico, obviamente,</span></span>
-		<span class="tooltip">from obviously oils which come from plants, but also from starches.<span class="tooltiptext">de aceites vegetales, pero también de almidón.</span></span>
-		<span class="tooltip">So this is attempting to make<span class="tooltiptext">Aquí estoy tratando de hacer</span></span>
-		<span class="tooltip">potato starch plastic.<span class="tooltiptext">plástico de almidón de papa.</span></span>
-		<span class="tooltip">And for a while that was looking really good.<span class="tooltiptext">Y por un momento pareció resultar realmente bien.</span></span>
-		<span class="tooltip">I poured it into the mold, which you can see there,<span class="tooltiptext">Lo vertí en el molde que pueden ver allí,</span></span>
-		<span class="tooltip">which I&#39;ve made from a tree trunk.<span class="tooltiptext">que hice con un tronco de árbol.</span></span>
-		<span class="tooltip">And it was looking good for a while,<span class="tooltiptext">Y por un momento pareció resultar bien</span></span>
-		<span class="tooltip">but I left it outside, because you had to leave it outside to dry,<span class="tooltiptext">pero lo dejé afuera, porque hay que dejarlo afuera a secar,</span></span>
-		<span class="tooltip">and unfortunately I came back<span class="tooltiptext">y, por desgracia, cuando regresé</span></span>
-		<span class="tooltip">and there were snails eating the unhydrolyzed bits of potato.<span class="tooltiptext">había caracoles comiendo los trozos de papa deshidrolizados.</span></span>
+		<span class="tooltip">El siguiente paso fue ir a Escocia<span class="tooltiptext">So my next thing: I was off to Scotland</span></span>
+		<span class="tooltip">a buscar mica.<span class="tooltiptext">to get mica.</span></span>
+		<span class="tooltip">La mica es un mineral<span class="tooltiptext">And mica is a mineral</span></span>
+		<span class="tooltip">muy aislante,<span class="tooltiptext">which is a very good insulator</span></span>
+		<span class="tooltip">muy bueno para aislar electricidad.<span class="tooltiptext">and very good at insulating electricity.</span></span>
+		<span class="tooltip">Ahí estoy consiguiendo mica.<span class="tooltiptext">That&#39;s me getting mica.</span></span>
+		<span class="tooltip">Y el último material del que voy a hablar es el plástico.<span class="tooltiptext">And the last material I&#39;m going to talk about today is plastic,</span></span>
+		<span class="tooltip">Y, claro,<span class="tooltiptext">and, of course,</span></span>
+		<span class="tooltip">mi tostadora tenía que tener una cubierta de plástico.<span class="tooltiptext">my toaster had to have a plastic case.</span></span>
+		<span class="tooltip">El plástico es lo que caracteriza<span class="tooltiptext">Plastic is the defining feature</span></span>
+		<span class="tooltip">a los aparatos eléctricos baratos.<span class="tooltiptext">of cheap electrical goods.</span></span>
+		<span class="tooltip">Como el plástico proviene del petróleo, llamé a British Petroleum<span class="tooltiptext">And so plastic comes from oil, so I phoned up BP</span></span>
+		<span class="tooltip">y pasé una buena media hora<span class="tooltiptext">and spent a good half an hour</span></span>
+		<span class="tooltip">tratando de convencer a la oficina de RRPP de BP<span class="tooltiptext">trying to convince the PR office at BP</span></span>
+		<span class="tooltip">de que sería fantástico para ellos<span class="tooltiptext">that it would be fantastic for them</span></span>
+		<span class="tooltip">si me llevaban a una plataforma petrolera<span class="tooltiptext">if they flew me to an oil rig</span></span>
+		<span class="tooltip">y me dejaban traer una jarra de petróleo.<span class="tooltiptext">and let me have a jug of oil.</span></span>
+		<span class="tooltip">Hoy en día, obviamente, BP tiene otros problemas en mente.<span class="tooltiptext">BP obviously has a bit more on their mind now.</span></span>
+		<span class="tooltip">Pero incluso entonces<span class="tooltiptext">But even then</span></span>
+		<span class="tooltip">no estaban convencidos<span class="tooltiptext">they weren&#39;t convinced</span></span>
+		<span class="tooltip">y dijeron: &quot;Bueno, te volveremos a llamar&quot;; cosa que nunca hicieron.<span class="tooltiptext">and said, &quot;Okay, we&#39;ll phone you back&quot; -- never did.</span></span>
+		<span class="tooltip">Así que busqué otras maneras de hacer plástico.<span class="tooltiptext">So I looked at other ways of making plastic.</span></span>
+		<span class="tooltip">Y uno puede hacer plástico, obviamente,<span class="tooltiptext">And you can actually make plastic</span></span>
+		<span class="tooltip">de aceites vegetales, pero también de almidón.<span class="tooltiptext">from obviously oils which come from plants, but also from starches.</span></span>
+		<span class="tooltip">Aquí estoy tratando de hacer<span class="tooltiptext">So this is attempting to make</span></span>
+		<span class="tooltip">plástico de almidón de papa.<span class="tooltiptext">potato starch plastic.</span></span>
+		<span class="tooltip">Y por un momento pareció resultar realmente bien.<span class="tooltiptext">And for a while that was looking really good.</span></span>
+		<span class="tooltip">Lo vertí en el molde que pueden ver allí,<span class="tooltiptext">I poured it into the mold, which you can see there,</span></span>
+		<span class="tooltip">que hice con un tronco de árbol.<span class="tooltiptext">which I&#39;ve made from a tree trunk.</span></span>
+		<span class="tooltip">Y por un momento pareció resultar bien<span class="tooltiptext">And it was looking good for a while,</span></span>
+		<span class="tooltip">pero lo dejé afuera, porque hay que dejarlo afuera a secar,<span class="tooltiptext">but I left it outside, because you had to leave it outside to dry,</span></span>
+		<span class="tooltip">y, por desgracia, cuando regresé<span class="tooltiptext">and unfortunately I came back</span></span>
+		<span class="tooltip">había caracoles comiendo los trozos de papa deshidrolizados.<span class="tooltiptext">and there were snails eating the unhydrolyzed bits of potato.</span></span>
 	</p>
 	<p>
-		<span class="tooltip">So kind of out of desperation,<span class="tooltiptext">Así que en un arrebato de desesperación</span></span>
-		<span class="tooltip">I decided that I could think laterally.<span class="tooltiptext">decidí pensar lateralmente.</span></span>
-		<span class="tooltip">And geologists have actually christened --<span class="tooltiptext">En realidad los geólogos han bautizado</span></span>
-		<span class="tooltip">well, they&#39;re debating whether to christen --<span class="tooltiptext">-bueno, están discutiendo si hacerlo-</span></span>
-		<span class="tooltip">the age that we&#39;re living in --<span class="tooltiptext">a la era en que vivimos como la Era del Hombre,</span></span>
-		<span class="tooltip">they&#39;re debating whether to make it a new geological epoch<span class="tooltiptext">e incluso están debatiendo la posibilidad</span></span>
-		<span class="tooltip">called the Anthropocene, the age of Man.<span class="tooltiptext">de que sea una nueva época geológica llamada Antropoceno.</span></span>
-		<span class="tooltip">And that&#39;s because geologists of the future<span class="tooltiptext">Y eso debido a que los geólogos del futuro</span></span>
-		<span class="tooltip">would kind of see a sharp shift<span class="tooltiptext">verán un cambio marcado</span></span>
-		<span class="tooltip">in the strata of rock that is being laid down now.<span class="tooltiptext">en los estratos de roca que estamos dejando ahora.</span></span>
-		<span class="tooltip">So suddenly, it will become kind of radioactive from Chernobyl<span class="tooltiptext">De repente, se volverán radiactivos a causa de Chernóbil</span></span>
-		<span class="tooltip">and the 2,000 or so nuclear bombs<span class="tooltiptext">y de las cerca de 2.000 bombas nucleares</span></span>
-		<span class="tooltip">that have been set off since 1945.<span class="tooltiptext">detonadas desde 1945.</span></span>
-		<span class="tooltip">And there&#39;d also be an extinction event --<span class="tooltiptext">Y habrá también una extinción</span></span>
-		<span class="tooltip">like fossils would suddenly disappear.<span class="tooltiptext">y los fósiles desaparecerán de repente.</span></span>
-		<span class="tooltip">And also, I thought<span class="tooltiptext">Y entonces pensé</span></span>
-		<span class="tooltip">that there would be<span class="tooltiptext">que también habría</span></span>
-		<span class="tooltip">synthetic polymers,<span class="tooltiptext">polímeros sintéticos,</span></span>
-		<span class="tooltip">plastics, embedded in the rock.<span class="tooltiptext">plásticos contenidos en la roca.</span></span>
+		<span class="tooltip">Así que en un arrebato de desesperación<span class="tooltiptext">So kind of out of desperation,</span></span>
+		<span class="tooltip">decidí pensar lateralmente.<span class="tooltiptext">I decided that I could think laterally.</span></span>
+		<span class="tooltip">En realidad los geólogos han bautizado<span class="tooltiptext">And geologists have actually christened --</span></span>
+		<span class="tooltip">-bueno, están discutiendo si hacerlo-<span class="tooltiptext">well, they&#39;re debating whether to christen --</span></span>
+		<span class="tooltip">a la era en que vivimos como la Era del Hombre,<span class="tooltiptext">the age that we&#39;re living in --</span></span>
+		<span class="tooltip">e incluso están debatiendo la posibilidad<span class="tooltiptext">they&#39;re debating whether to make it a new geological epoch</span></span>
+		<span class="tooltip">de que sea una nueva época geológica llamada Antropoceno.<span class="tooltiptext">called the Anthropocene, the age of Man.</span></span>
+		<span class="tooltip">Y eso debido a que los geólogos del futuro<span class="tooltiptext">And that&#39;s because geologists of the future</span></span>
+		<span class="tooltip">verán un cambio marcado<span class="tooltiptext">would kind of see a sharp shift</span></span>
+		<span class="tooltip">en los estratos de roca que estamos dejando ahora.<span class="tooltiptext">in the strata of rock that is being laid down now.</span></span>
+		<span class="tooltip">De repente, se volverán radiactivos a causa de Chernóbil<span class="tooltiptext">So suddenly, it will become kind of radioactive from Chernobyl</span></span>
+		<span class="tooltip">y de las cerca de 2.000 bombas nucleares<span class="tooltiptext">and the 2,000 or so nuclear bombs</span></span>
+		<span class="tooltip">detonadas desde 1945.<span class="tooltiptext">that have been set off since 1945.</span></span>
+		<span class="tooltip">Y habrá también una extinción<span class="tooltiptext">And there&#39;d also be an extinction event --</span></span>
+		<span class="tooltip">y los fósiles desaparecerán de repente.<span class="tooltiptext">like fossils would suddenly disappear.</span></span>
+		<span class="tooltip">Y entonces pensé<span class="tooltiptext">And also, I thought</span></span>
+		<span class="tooltip">que también habría<span class="tooltiptext">that there would be</span></span>
+		<span class="tooltip">polímeros sintéticos,<span class="tooltiptext">synthetic polymers,</span></span>
+		<span class="tooltip">plásticos contenidos en la roca.<span class="tooltiptext">plastics, embedded in the rock.</span></span>
 	</p>
 	<p>
-		<span class="tooltip">So I looked up a plastic --<span class="tooltiptext">Así que busqué plástico...</span></span>
-		<span class="tooltip">so I decided that I could mine<span class="tooltiptext">decidí que podía extraerlo</span></span>
-		<span class="tooltip">some of this modern-day rock.<span class="tooltiptext">de alguna de estas rocas de hoy.</span></span>
-		<span class="tooltip">And I went up to Manchester<span class="tooltiptext">Y me fui a Manchester</span></span>
-		<span class="tooltip">to visit a place called Axion Recycling.<span class="tooltiptext">de visita a un lugar llamado Axion Recycling.</span></span>
-		<span class="tooltip">And they&#39;re at the sharp end of what&#39;s called the WEEE,<span class="tooltiptext">Ellos están en el frente de lo que se llama WEEE,</span></span>
-		<span class="tooltip">which is this European electrical and electronic waste directive.<span class="tooltiptext">que es la directiva europea sobre residuos eléctricos y electrónicos.</span></span>
-		<span class="tooltip">And that was brought into force<span class="tooltiptext">Y que entró en vigor</span></span>
-		<span class="tooltip">to try and deal with the mountain of stuff<span class="tooltiptext">para tratar de hacer frente a la montaña de cosas</span></span>
-		<span class="tooltip">that is just being made<span class="tooltiptext">que se están produciendo</span></span>
-		<span class="tooltip">and then living for a while in our homes<span class="tooltiptext">y acumulando temporalmente en nuestros hogares</span></span>
-		<span class="tooltip">and then going to landfill.<span class="tooltiptext">para luego ir al relleno sanitario.</span></span>
-		<span class="tooltip">But this is it.<span class="tooltiptext">Pero eso es todo.</span></span>
+		<span class="tooltip">Así que busqué plástico...<span class="tooltiptext">So I looked up a plastic --</span></span>
+		<span class="tooltip">decidí que podía extraerlo<span class="tooltiptext">so I decided that I could mine</span></span>
+		<span class="tooltip">de alguna de estas rocas de hoy.<span class="tooltiptext">some of this modern-day rock.</span></span>
+		<span class="tooltip">Y me fui a Manchester<span class="tooltiptext">And I went up to Manchester</span></span>
+		<span class="tooltip">de visita a un lugar llamado Axion Recycling.<span class="tooltiptext">to visit a place called Axion Recycling.</span></span>
+		<span class="tooltip">Ellos están en el frente de lo que se llama WEEE,<span class="tooltiptext">And they&#39;re at the sharp end of what&#39;s called the WEEE,</span></span>
+		<span class="tooltip">que es la directiva europea sobre residuos eléctricos y electrónicos.<span class="tooltiptext">which is this European electrical and electronic waste directive.</span></span>
+		<span class="tooltip">Y que entró en vigor<span class="tooltiptext">And that was brought into force</span></span>
+		<span class="tooltip">para tratar de hacer frente a la montaña de cosas<span class="tooltiptext">to try and deal with the mountain of stuff</span></span>
+		<span class="tooltip">que se están produciendo<span class="tooltiptext">that is just being made</span></span>
+		<span class="tooltip">y acumulando temporalmente en nuestros hogares<span class="tooltiptext">and then living for a while in our homes</span></span>
+		<span class="tooltip">para luego ir al relleno sanitario.<span class="tooltiptext">and then going to landfill.</span></span>
+		<span class="tooltip">Pero eso es todo.<span class="tooltiptext">But this is it.</span></span>
 	</p>
 	<p>
-		<span class="tooltip">(Music)<span class="tooltiptext">(Música)</span></span>
+		<span class="tooltip">(Música)<span class="tooltiptext">(Music)</span></span>
 	</p>
 	<p>
-		<span class="tooltip">(Laughter)<span class="tooltiptext">(Risas)</span></span>
+		<span class="tooltip">(Risas)<span class="tooltiptext">(Laughter)</span></span>
 	</p>
 	<p>
-		<span class="tooltip">So there&#39;s a picture<span class="tooltiptext">Ahí tienen una imagen</span></span>
-		<span class="tooltip">of my toaster.<span class="tooltiptext">de mi tostadora.</span></span>
-		<span class="tooltip">(Applause)<span class="tooltiptext">(Aplausos)</span></span>
-		<span class="tooltip">That&#39;s it without the case on.<span class="tooltiptext">Ahí está sin la cubierta.</span></span>
-		<span class="tooltip">And there it is on the shelves.<span class="tooltiptext">Y ahí está en la estantería.</span></span>
-		<span class="tooltip">Thanks.<span class="tooltiptext">Gracias.</span></span>
+		<span class="tooltip">Ahí tienen una imagen<span class="tooltiptext">So there&#39;s a picture</span></span>
+		<span class="tooltip">de mi tostadora.<span class="tooltiptext">of my toaster.</span></span>
+		<span class="tooltip">(Aplausos)<span class="tooltiptext">(Applause)</span></span>
+		<span class="tooltip">Ahí está sin la cubierta.<span class="tooltiptext">That&#39;s it without the case on.</span></span>
+		<span class="tooltip">Y ahí está en la estantería.<span class="tooltiptext">And there it is on the shelves.</span></span>
+		<span class="tooltip">Gracias.<span class="tooltiptext">Thanks.</span></span>
 	</p>
 	<p>
-		<span class="tooltip">(Applause)<span class="tooltiptext">(Aplausos)</span></span>
+		<span class="tooltip">(Aplausos)<span class="tooltiptext">(Applause)</span></span>
 	</p>
 	<p>
-		<span class="tooltip">Bruno Giussani: I&#39;m told you did plug it in once.<span class="tooltiptext">Bruno Giussani: Me contaron que la enchufaste una vez.</span></span>
+		<span class="tooltip">Bruno Giussani: Me contaron que la enchufaste una vez.<span class="tooltiptext">Bruno Giussani: I&#39;m told you did plug it in once.</span></span>
 	</p>
 	<p>
-		<span class="tooltip">TT: Yeah, I did plug it in.<span class="tooltiptext">TT: Sí, la enchufé.</span></span>
-		<span class="tooltip">I don&#39;t know if you could see,<span class="tooltiptext">No sé si pueden verlo</span></span>
-		<span class="tooltip">but I was never able to make insulation for the wires.<span class="tooltiptext">pero nunca pude aislar los cables.</span></span>
-		<span class="tooltip">Kew Gardens were insistent<span class="tooltiptext">En Kew Gardens fueron reticentes</span></span>
-		<span class="tooltip">that I couldn&#39;t come and hack into their rubber tree.<span class="tooltiptext">al hecho de que yo fuera a cortar el árbol de caucho.</span></span>
-		<span class="tooltip">So the wires were uninsulated.<span class="tooltiptext">Así que los cables estaban sin aislar.</span></span>
-		<span class="tooltip">So there was 240 volts<span class="tooltiptext">Por eso había 240 voltios</span></span>
-		<span class="tooltip">going through these homemade copper wires,<span class="tooltiptext">en esos cables caseros de cobre</span></span>
-		<span class="tooltip">homemade plug.<span class="tooltiptext">con enchufe casero.</span></span>
-		<span class="tooltip">And for about five seconds,<span class="tooltiptext">Durante unos cinco segundos</span></span>
-		<span class="tooltip">the toaster toasted,<span class="tooltiptext">la tostadora tostó,</span></span>
-		<span class="tooltip">but then, unfortunately,<span class="tooltiptext">pero luego, por desgracia,</span></span>
-		<span class="tooltip">the element kind of melted itself.<span class="tooltiptext">el aparato se derritió.</span></span>
-		<span class="tooltip">But I considered it a partial success, to be honest.<span class="tooltiptext">Pero lo considero un éxito parcial, para ser honesto.</span></span>
+		<span class="tooltip">TT: Sí, la enchufé.<span class="tooltiptext">TT: Yeah, I did plug it in.</span></span>
+		<span class="tooltip">No sé si pueden verlo<span class="tooltiptext">I don&#39;t know if you could see,</span></span>
+		<span class="tooltip">pero nunca pude aislar los cables.<span class="tooltiptext">but I was never able to make insulation for the wires.</span></span>
+		<span class="tooltip">En Kew Gardens fueron reticentes<span class="tooltiptext">Kew Gardens were insistent</span></span>
+		<span class="tooltip">al hecho de que yo fuera a cortar el árbol de caucho.<span class="tooltiptext">that I couldn&#39;t come and hack into their rubber tree.</span></span>
+		<span class="tooltip">Así que los cables estaban sin aislar.<span class="tooltiptext">So the wires were uninsulated.</span></span>
+		<span class="tooltip">Por eso había 240 voltios<span class="tooltiptext">So there was 240 volts</span></span>
+		<span class="tooltip">en esos cables caseros de cobre<span class="tooltiptext">going through these homemade copper wires,</span></span>
+		<span class="tooltip">con enchufe casero.<span class="tooltiptext">homemade plug.</span></span>
+		<span class="tooltip">Durante unos cinco segundos<span class="tooltiptext">And for about five seconds,</span></span>
+		<span class="tooltip">la tostadora tostó,<span class="tooltiptext">the toaster toasted,</span></span>
+		<span class="tooltip">pero luego, por desgracia,<span class="tooltiptext">but then, unfortunately,</span></span>
+		<span class="tooltip">el aparato se derritió.<span class="tooltiptext">the element kind of melted itself.</span></span>
+		<span class="tooltip">Pero lo considero un éxito parcial, para ser honesto.<span class="tooltiptext">But I considered it a partial success, to be honest.</span></span>
 	</p>
 	<p>
-		<span class="tooltip">BG: Thomas Thwaites. TT: Thanks.<span class="tooltiptext">BG: Thomas Thwaites. (TT: Gracias)</span></span>
+		<span class="tooltip">BG: Thomas Thwaites. (TT: Gracias)<span class="tooltiptext">BG: Thomas Thwaites. TT: Thanks.</span></span>
 	</p>
 
 	<div class="line"></div>
-	<p>Love our website? Help us keep it ad-free and running smoothly by making a donation today.</p>
+	<p>Enjoying my website? Your donation helps maintain its ad-free experience and smooth operation. Your support is truly appreciated and helps us continue providing quality content. Thank you for considering a donation!</p>
 	<p>To donate, simply click the PayPal link below:<p/>
 	<p><a href="https://www.paypal.com/paypalme/otechai" target='_blank'>Donate via PayPal</a></p>
-	<p>Ready to sound like a native speaker? Or better yet, elevate your language skills to the next level? Check out my book : </p>
-	<div style="text-align: center;"> <span><a href="https://amzn.to/3Um79fs" target="_blank" rel=" noopener noreferrer"><img height="160" width="103" typeof="foaf:Image" class="image-style-none" src="../../../static/images/off-the-hook-shaun-clark.jpg" alt="off the hook book by shaun clark"></a></span> </div>
-	<div class="views-field views-field-title" style="text-align: center;"> <span class="field-content"><a href="https://amzn.to/3Um79fs" target="_blank" rel=" noopener noreferrer">Off The Hook: The Ultimate English Slang Dictionary</a></span> </div>
-	<p style="text-align: center;">Or explore our amazing library! <a href="../../../library/1/index.html">HERE</a></p>
 	
 </div>
 <span onclick='topFunction()' id='gotop' title='Go to top'><svg width="32" height="32" viewBox="0 0 100 100">
@@ -302,7 +298,7 @@
 	        <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.58-2.11-9.96-5.02-.42.72-.66 1.56-.66 2.46 0 1.68.85 3.16 2.14 4.02-.79-.02-1.53-.24-2.18-.6v.06c0 2.35 1.67 4.31 3.88 4.76-.4.1-.83.16-1.27.16-.31 0-.62-.03-.92-.08.63 1.96 2.45 3.39 4.61 3.43-1.69 1.32-3.83 2.1-6.15 2.1-.4 0-.8-.02-1.19-.07 2.19 1.4 4.78 2.22 7.57 2.22 9.07 0 14.02-7.52 14.02-14.02 0-.21 0-.41-.01-.61.96-.69 1.79-1.56 2.45-2.55-.88.39-1.83.65-2.82.77z"/>
 	    </svg>
 	</a></div>
-	        <div class="right"><a href='../../../library/1/index.html'>Library</a></div>
+	        <div class="right"><a href='https://www.paypal.com/paypalme/otechai'>Donate</a></div>
 	    </div>
 	<script>
 
