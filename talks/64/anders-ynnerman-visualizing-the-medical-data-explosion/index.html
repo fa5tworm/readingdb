@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+	<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<meta name="description" content="Unlock your Spanish reading skills: Immerse yourself in a contextual and practical learning enhanced by high-quality instant translations.">
+      	<meta name="keywords" content="Spanish reading, Spanish language learning, instant translations, reading adventure, improve Spanish, improve reading skills, educational platform, spanish reading resources, online education, Spanish proficiency, learn Spanish, Spanish learning resources, bilingual education, language exchange, study Spanish online">
+		<link rel="apple-touch-icon" sizes="180x180" href="../../../static/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../../../static/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../../../static/favicons/favicon-16x16.png">
+		<link rel="manifest" href="../../../static/favicons/site.webmanifest">
+		<title>Anders Ynnerman : Visualizing the medical data explosion</title>
+		<link rel='stylesheet' href='../../../static/styles/styles.css'>
+		<script defer data-domain="readingdb.org" src="https://plausible.io/js/script.js"></script>
+	</head>
+	<body>
+
+	<h1 class='title'>Visualizing the medical data explosion</h1>
+	<h2 class='speaker'>Anders Ynnerman</h2>
+	<div class='transcript books'>
+	<p>Are you ready to improve your Spanish speaking skills, check <a href='https://referral.lingoda.com/6Dztrv'>Lingoda</a> today!</p>
+		<p>
+		<span class="tooltip">Je vais commencer par lancer un tout petit défi,<span class="tooltiptext">I will start by posing a little bit of a challenge:</span></span>
+		<span class="tooltip">le problème du traitement des données,<span class="tooltiptext">the challenge of dealing with data,</span></span>
+		<span class="tooltip">des données que nous devons traiter<span class="tooltiptext">data that we have to deal with</span></span>
+		<span class="tooltip">dans le contexte médical.<span class="tooltiptext">in medical situations.</span></span>
+		<span class="tooltip">C&#39;est vraiment un énorme défi pour nous.<span class="tooltiptext">It&#39;s really a huge challenge for us.</span></span>
+		<span class="tooltip">Et ceci est notre bête de somme.<span class="tooltiptext">And this is our beast of burden --</span></span>
+		<span class="tooltip">C&#39;est un appareil à tomographie calculée par ordinateur --<span class="tooltiptext">this is a Computer Tomography machine,</span></span>
+		<span class="tooltip">un scanner CT.<span class="tooltiptext">a CT machine.</span></span>
+		<span class="tooltip">C&#39;est un appareil extraordinaire.<span class="tooltiptext">It&#39;s a fantastic device.</span></span>
+		<span class="tooltip">Il utilise les rayons X, des faisceaux de rayons X,<span class="tooltiptext">It uses X-rays, X-ray beams,</span></span>
+		<span class="tooltip">qui tournent très rapidement autour du corps humain.<span class="tooltiptext">that are rotating very fast around the human body.</span></span>
+		<span class="tooltip">Il faut environ 30 secondes pour passer à travers tout l&#39;appareil<span class="tooltiptext">It takes about 30 seconds to go through the whole machine</span></span>
+		<span class="tooltip">et d&#39;énormes quantités d&#39;informations sont produites<span class="tooltiptext">and is generating enormous amounts of information</span></span>
+		<span class="tooltip">en sortie de la machine.<span class="tooltiptext">that comes out of the machine.</span></span>
+		<span class="tooltip">C&#39;est une machine extraordinaire<span class="tooltiptext">So this is a fantastic machine</span></span>
+		<span class="tooltip">que nous pouvons utiliser<span class="tooltiptext">that we can use</span></span>
+		<span class="tooltip">pour améliorer les soins de santé.<span class="tooltiptext">for improving health care,</span></span>
+		<span class="tooltip">Mais, comme je l&#39;ai dit, c&#39;est aussi un défi à relever.<span class="tooltiptext">but as I said, it&#39;s also a challenge for us.</span></span>
+		<span class="tooltip">Toute l&#39;ampleur du problème se trouve sur cette image.<span class="tooltiptext">And the challenge is really found in this picture here.</span></span>
+		<span class="tooltip">Il s&#39;agit de l&#39;explosion des données médicales<span class="tooltiptext">It&#39;s the medical data explosion</span></span>
+		<span class="tooltip">qui se produit en ce moment même.<span class="tooltiptext">that we&#39;re having right now.</span></span>
+		<span class="tooltip">C&#39;est le problème auquel nous sommes confrontés.<span class="tooltiptext">We&#39;re facing this problem.</span></span>
+		<span class="tooltip">Laissez-moi revenir en arrière.<span class="tooltiptext">And let me step back in time.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Revenons quelques années en arrière, et observons ce qui se passait à l&#39;époque.<span class="tooltiptext">Let&#39;s go back a few years in time and see what happened back then.</span></span>
+		<span class="tooltip">Les appareils qui sortaient alors --<span class="tooltiptext">These machines that came out --</span></span>
+		<span class="tooltip">ils ont commencé à arriver dans les années 70 --<span class="tooltiptext">they started coming in the 1970s --</span></span>
+		<span class="tooltip">scannaient le corps humain,<span class="tooltiptext">they would scan human bodies,</span></span>
+		<span class="tooltip">et produisaient environ une centaine d&#39;images<span class="tooltiptext">and they would generate about 100 images</span></span>
+		<span class="tooltip">de ce corps.<span class="tooltiptext">of the human body.</span></span>
+		<span class="tooltip">J&#39;ai pris la liberté, pour que ce soit plus clair,<span class="tooltiptext">And I&#39;ve taken the liberty, just for clarity,</span></span>
+		<span class="tooltip">de traduire cela en termes de données numériques.<span class="tooltiptext">to translate that to data slices.</span></span>
+		<span class="tooltip">Ça correspondrait à environ 50 Mo,<span class="tooltiptext">That would correspond to about 50 megabytes of data,</span></span>
+		<span class="tooltip">ce qui est peu<span class="tooltiptext">which is small</span></span>
+		<span class="tooltip">quand vous pensez aux quantités de données que nous pouvons manipuler de nos jours<span class="tooltiptext">when you think about the data we can handle today</span></span>
+		<span class="tooltip">rien que sur nos portables normaux.<span class="tooltiptext">just on normal mobile devices.</span></span>
+		<span class="tooltip">Si vous traduisez ça en annuaires,<span class="tooltiptext">If you translate that to phone books,</span></span>
+		<span class="tooltip">ça fait une pile d&#39;annuaires d&#39;environ un mètre de haut.<span class="tooltiptext">it&#39;s about one meter of phone books in the pile.</span></span>
+		<span class="tooltip">Quand on voit ce que l&#39;on peut faire aujourd&#39;hui<span class="tooltiptext">Looking at what we&#39;re doing today</span></span>
+		<span class="tooltip">avec les machines dont nous disposons,<span class="tooltiptext">with these machines that we have,</span></span>
+		<span class="tooltip">on peut, en seulement quelques secondes,<span class="tooltiptext">we can, just in a few seconds,</span></span>
+		<span class="tooltip">obtenir 24 000 images d&#39;un corps.<span class="tooltiptext">get 24,000 images out of a body,</span></span>
+		<span class="tooltip">Cela correspondrait à environ 20 Go,<span class="tooltiptext">and that would correspond to about 20 gigabytes of data,</span></span>
+		<span class="tooltip">ou 800 annuaires.<span class="tooltiptext">or 800 phone books,</span></span>
+		<span class="tooltip">La pile d&#39;annuaires ferait alors 200 mètres de haut.<span class="tooltiptext">and the pile would then be 200 meters of phone books.</span></span>
+		<span class="tooltip">Ce qui va se produire --<span class="tooltiptext">What&#39;s about to happen --</span></span>
+		<span class="tooltip">et nous le voyons déjà, ça commence --<span class="tooltiptext">and we&#39;re seeing this; it&#39;s beginning --</span></span>
+		<span class="tooltip">c&#39;est une tendance technologique qui arrive en ce moment même,<span class="tooltiptext">a technology trend that&#39;s happening right now</span></span>
+		<span class="tooltip">est que nous commençons également à regarder les images en temps réel.<span class="tooltiptext">is that we&#39;re starting to look at time-resolved situations as well.</span></span>
+		<span class="tooltip">Nous obtenons également la dynamique du corps.<span class="tooltiptext">So we&#39;re getting the dynamics out of the body as well.</span></span>
+		<span class="tooltip">Supposez seulement<span class="tooltiptext">And just assume</span></span>
+		<span class="tooltip">que nous ne recueillions des données que sur une durée de cinq secondes,<span class="tooltiptext">that we will be collecting data during five seconds,</span></span>
+		<span class="tooltip">cela correspondrait à un téraoctet de données.<span class="tooltiptext">and that would correspond to one terabyte of data --</span></span>
+		<span class="tooltip">C&#39;est à dire 800 000 annuaires,<span class="tooltiptext">that&#39;s 800,000 books</span></span>
+		<span class="tooltip">une pile de 16 km de haut.<span class="tooltiptext">and 16 kilometers of phone books.</span></span>
+		<span class="tooltip">Et cela pour un seul patient, un seul examen.<span class="tooltiptext">That&#39;s one patient, one data set.</span></span>
+		<span class="tooltip">Voilà ce à quoi nous devons faire face.<span class="tooltiptext">And this is what we have to deal with.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">C&#39;est vraiment l&#39;énorme défi qui se présente à nous.<span class="tooltiptext">So this is really the enormous challenge that we have.</span></span>
+		<span class="tooltip">Et dès aujourd&#39;hui -- il s&#39;agit de 25 000 images.<span class="tooltiptext">And already today -- this is 25,000 images.</span></span>
+		<span class="tooltip">Imaginez l&#39;époque<span class="tooltiptext">Imagine the days</span></span>
+		<span class="tooltip">où les radiologues travaillaient de cette façon.<span class="tooltiptext">when we had radiologists doing this.</span></span>
+		<span class="tooltip">Ils auraient affiché 25 000 clichés,<span class="tooltiptext">They would put up 25,000 images,</span></span>
+		<span class="tooltip">et ils auraient dit 25 000 fois :&quot; Tout va bien, tout va bien,<span class="tooltiptext">they would go like this, &quot;25,0000, okay, okay.</span></span>
+		<span class="tooltip">Ah, voilà le problème. &quot;<span class="tooltiptext">There is the problem.&quot;</span></span>
+		<span class="tooltip">On ne peut plus faire ça, c&#39;est impossible.<span class="tooltiptext">They can&#39;t do that anymore. That&#39;s impossible.</span></span>
+		<span class="tooltip">Alors on doit trouver quelque chose d&#39;un peu plus intelligent que ça.<span class="tooltiptext">So we have to do something that&#39;s a little bit more intelligent than doing this.</span></span>
+		<span class="tooltip">Ce que nous faisons donc, c&#39;est de regrouper toutes ces coupes.<span class="tooltiptext">So what we do is that we put all these slices together.</span></span>
+		<span class="tooltip">Imaginez que vous découpez votre corps dans tous les sens,<span class="tooltiptext">Imagine that you slice your body in all these directions,</span></span>
+		<span class="tooltip">et puis vous essayez de remettre les tranches ensemble<span class="tooltiptext">and then you try to put the slices back together again</span></span>
+		<span class="tooltip">pour former une pile de données, un bloc de données.<span class="tooltiptext">into a pile of data, into a block of data.</span></span>
+		<span class="tooltip">C&#39;est ce que nous faisons en réalité.<span class="tooltiptext">So this is really what we&#39;re doing.</span></span>
+		<span class="tooltip">Ce gigaoctet, ou téraoctet de données, nous le mettons dans ce bloc.<span class="tooltiptext">So this gigabyte or terabyte of data, we&#39;re putting it into this block.</span></span>
+		<span class="tooltip">Mais, bien sûr, le bloc de données<span class="tooltiptext">But of course, the block of data</span></span>
+		<span class="tooltip">n&#39;indique que la quantité de rayons X<span class="tooltiptext">just contains the amount of X-ray</span></span>
+		<span class="tooltip">qui a été absorbée par chaque point du corps humain.<span class="tooltiptext">that&#39;s been absorbed in each point in the human body.</span></span>
+		<span class="tooltip">Nous devons donc trouver un moyen<span class="tooltiptext">So what we need to do is to figure out a way</span></span>
+		<span class="tooltip">de voir les choses que nous voulons observer<span class="tooltiptext">of looking at the things we do want to look at</span></span>
+		<span class="tooltip">et de rendre transparentes les choses que nous ne voulons pas observer.<span class="tooltiptext">and make things transparent that we don&#39;t want to look at.</span></span>
+		<span class="tooltip">C&#39;est-à-dire de transformer l&#39;ensemble des données<span class="tooltiptext">So transforming the data set</span></span>
+		<span class="tooltip">en quelque chose qui ressemble à ça.<span class="tooltiptext">into something that looks like this.</span></span>
+		<span class="tooltip">Et c&#39;est très difficile.<span class="tooltiptext">And this is a challenge.</span></span>
+		<span class="tooltip">Le défi pour nous est énorme.<span class="tooltiptext">This is a huge challenge for us to do that.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">En utilisant des ordinateurs, même s&#39;ils deviennent tout le temps plus rapides et meilleurs,<span class="tooltiptext">Using computers, even though they&#39;re getting faster and better all the time,</span></span>
+		<span class="tooltip">il est très difficile de traiter des gigaoctets de données,<span class="tooltiptext">it&#39;s a challenge to deal with gigabytes of data,</span></span>
+		<span class="tooltip">des téraoctets de données,<span class="tooltiptext">terabytes of data</span></span>
+		<span class="tooltip">et d&#39;en extraire les informations utiles.<span class="tooltiptext">and extracting the relevant information.</span></span>
+		<span class="tooltip">Je veux observer le cœur,<span class="tooltiptext">I want to look at the heart.</span></span>
+		<span class="tooltip">je veux observer les vaisseaux sanguins, je veux observer le foie,<span class="tooltiptext">I want to look at the blood vessels. I want to look at the liver.</span></span>
+		<span class="tooltip">peut-être même détecter une tumeur<span class="tooltiptext">Maybe even find a tumor,</span></span>
+		<span class="tooltip">dans certains cas.<span class="tooltiptext">in some cases.</span></span>
+		<span class="tooltip">Et voilà où ce petit amour entre en jeu.<span class="tooltiptext">So this is where this little dear comes into play.</span></span>
+		<span class="tooltip">C&#39;est ma fille.<span class="tooltiptext">This is my daughter.</span></span>
+		<span class="tooltip">A 9 h 00, ce matin même.<span class="tooltiptext">This is as of 9 a.m. this morning.</span></span>
+		<span class="tooltip">Elle joue à un jeu sur ordinateur.<span class="tooltiptext">She&#39;s playing a computer game.</span></span>
+		<span class="tooltip">Elle n&#39;a que deux ans,<span class="tooltiptext">She&#39;s only two years old,</span></span>
+		<span class="tooltip">et elle s&#39;éclate.<span class="tooltiptext">and she&#39;s having a blast.</span></span>
+		<span class="tooltip">C&#39;est elle la vraie force motrice<span class="tooltiptext">So she&#39;s really the driving force</span></span>
+		<span class="tooltip">qui pousse au développement des cartes graphiques.<span class="tooltiptext">behind the development of graphics-processing units.</span></span>
+		<span class="tooltip">Aussi longtemps que les gamins joueront à des jeux sur ordinateur,<span class="tooltiptext">As long as kids are playing computer games,</span></span>
+		<span class="tooltip">le traitement graphique continuera à s&#39;améliorer de plus en plus.<span class="tooltiptext">graphics is getting better and better and better.</span></span>
+		<span class="tooltip">Alors rentrez chez vous, s&#39;il vous plaît, et dites à vos enfants de jouer plus souvent,<span class="tooltiptext">So please go back home, tell your kids to play more games,</span></span>
+		<span class="tooltip">parce que j&#39;en ai besoin.<span class="tooltiptext">because that&#39;s what I need.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">C&#39;est ce qui est à l&#39;intérieur de cet appareil<span class="tooltiptext">So what&#39;s inside of this machine</span></span>
+		<span class="tooltip">qui me permet de faire ce que je j&#39;accomplis<span class="tooltiptext">is what enables me to do the things that I&#39;m doing</span></span>
+		<span class="tooltip">avec les données médicales.<span class="tooltiptext">with the medical data.</span></span>
+		<span class="tooltip">Ce que je fais en vérité, c&#39;est que j&#39;utilise ces petits appareils extraordinaires.<span class="tooltiptext">So really what I&#39;m doing is using these fantastic little devices.</span></span>
+		<span class="tooltip">Et vous savez, si je reviens<span class="tooltiptext">And you know, going back</span></span>
+		<span class="tooltip">peut-être dix ans en arrière<span class="tooltiptext">maybe 10 years in time</span></span>
+		<span class="tooltip">quand j&#39;ai obtenu le financement<span class="tooltiptext">when I got the funding</span></span>
+		<span class="tooltip">pour acheter mon premier ordinateur de traitement graphique.<span class="tooltiptext">to buy my first graphics computer --</span></span>
+		<span class="tooltip">C&#39;était une énorme machine.<span class="tooltiptext">it was a huge machine.</span></span>
+		<span class="tooltip">C&#39;était des rangées de processeurs, de stockage, de tout cela.<span class="tooltiptext">It was cabinets of processors and storage and everything.</span></span>
+		<span class="tooltip">J&#39;ai payé cette machine aux alentours d&#39;un million de dollars.<span class="tooltiptext">I paid about one million dollars for that machine.</span></span>
+		<span class="tooltip">Et elle était à peu près aussi rapide que mon iPhone aujourd&#39;hui.<span class="tooltiptext">That machine is, today, about as fast as my iPhone.</span></span>
+		<span class="tooltip">Chaque mois il y a de nouvelles cartes graphiques qui sortent.<span class="tooltiptext">So every month there are new graphics cards coming out,</span></span>
+		<span class="tooltip">En voici quelques unes des dernières mises en vente --<span class="tooltiptext">and here is a few of the latest ones from the vendors --</span></span>
+		<span class="tooltip">NVIDIA, ATI. Intel est également présent.<span class="tooltiptext">NVIDIA, ATI, Intel is out there as well.</span></span>
+		<span class="tooltip">Et vous savez, pour quelques centaines d&#39;euros,<span class="tooltiptext">And you know, for a few hundred bucks</span></span>
+		<span class="tooltip">vous pouvez les acquérir et les mettre dans votre ordinateur,<span class="tooltiptext">you can get these things and put them into your computer,</span></span>
+		<span class="tooltip">et vous pouvez faire des choses extraordinaires avec ces cartes graphiques.<span class="tooltiptext">and you can do fantastic things with these graphics cards.</span></span>
+		<span class="tooltip">C&#39;est donc ce qui nous permet de faire face<span class="tooltiptext">So this is really what&#39;s enabling us</span></span>
+		<span class="tooltip">à l&#39;explosion des données en médecine,<span class="tooltiptext">to deal with the explosion of data in medicine,</span></span>
+		<span class="tooltip">ajouté à l&#39;élaboration de quelques solutions très habiles<span class="tooltiptext">together with some really nifty work</span></span>
+		<span class="tooltip">en termes d&#39;algorithmes --<span class="tooltiptext">in terms of algorithms --</span></span>
+		<span class="tooltip">de compression des données,<span class="tooltiptext">compressing data,</span></span>
+		<span class="tooltip">d&#39;extraction des informations utiles aux travaux des chercheurs.<span class="tooltiptext">extracting the relevant information that people are doing research on.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Je vais vous montrer quelques exemples de ce que nous pouvons faire.<span class="tooltiptext">So I&#39;m going to show you a few examples of what we can do.</span></span>
+		<span class="tooltip">Voici un ensemble de données qui ont été relevées par un scanner CT.<span class="tooltiptext">This is a data set that was captured using a CT scanner.</span></span>
+		<span class="tooltip">Vous pouvez voir que ces données sont complètes.<span class="tooltiptext">You can see that this is a full data [set].</span></span>
+		<span class="tooltip">C&#39;est une femme. Vous pouvez voir les cheveux.<span class="tooltiptext">It&#39;s a woman. You can see the hair.</span></span>
+		<span class="tooltip">Vous pouvez voir chaque organe de cette femme séparément.<span class="tooltiptext">You can see the individual structures of the woman.</span></span>
+		<span class="tooltip">Vous pouvez voir qu&#39;il y a un éparpillement de rayons X<span class="tooltiptext">You can see that there is [a] scattering of X-rays</span></span>
+		<span class="tooltip">sur les dents, le métal des dents.<span class="tooltiptext">on the teeth, the metal in the teeth.</span></span>
+		<span class="tooltip">C&#39;est la raison de ces traces.<span class="tooltiptext">That&#39;s where those artifacts are coming from.</span></span>
+		<span class="tooltip">Mais de façon complètement interactive,<span class="tooltiptext">But fully interactively</span></span>
+		<span class="tooltip">avec une carte graphique standard, sur un ordinateur normal,<span class="tooltiptext">on standard graphics cards on a normal computer,</span></span>
+		<span class="tooltip">je peux faire une coupe plane.<span class="tooltiptext">I can just put in a clip plane.</span></span>
+		<span class="tooltip">Et bien sûr, toutes les données sont à l&#39;intérieur,<span class="tooltiptext">And of course all the data is inside,</span></span>
+		<span class="tooltip">je peux donc la faire tourner, je peux la voir sous différents angles,<span class="tooltiptext">so I can start rotating, I can look at it from different angles,</span></span>
+		<span class="tooltip">et je peux voir que cette femme a eu un problème.<span class="tooltiptext">and I can see that this woman had a problem.</span></span>
+		<span class="tooltip">Elle a eu une hémorragie au cerveau,<span class="tooltiptext">She had a bleeding up in the brain,</span></span>
+		<span class="tooltip">qui a été soignée par un petit stent,<span class="tooltiptext">and that&#39;s been fixed with a little stent,</span></span>
+		<span class="tooltip">un tube en métal qui renforce le vaisseau.<span class="tooltiptext">a metal clamp that&#39;s tightening up the vessel.</span></span>
+		<span class="tooltip">Et rien qu&#39;en changeant les réglages,<span class="tooltiptext">And just by changing the functions,</span></span>
+		<span class="tooltip">je peux décider de ce qui va être transparent,<span class="tooltiptext">then I can decide what&#39;s going to be transparent</span></span>
+		<span class="tooltip">et de ce qui va être visible.<span class="tooltiptext">and what&#39;s going to be visible.</span></span>
+		<span class="tooltip">Je peux observer la structure crânienne,<span class="tooltiptext">I can look at the skull structure,</span></span>
+		<span class="tooltip">et je peux voir que, oui, c&#39;est là qu&#39;on a ouvert le crâne de cette femme,<span class="tooltiptext">and I can see that, okay, this is where they opened up the skull on this woman,</span></span>
+		<span class="tooltip">et c&#39;est par là qu&#39;on est entré.<span class="tooltiptext">and that&#39;s where they went in.</span></span>
+		<span class="tooltip">Ce sont des images extraordinaires.<span class="tooltiptext">So these are fantastic images.</span></span>
+		<span class="tooltip">Elles sont de très haute définition,<span class="tooltiptext">They&#39;re really high resolution,</span></span>
+		<span class="tooltip">et sont vraiment un exemple de ce qu&#39;on peut faire aujourd&#39;hui<span class="tooltiptext">and they&#39;re really showing us what we can do</span></span>
+		<span class="tooltip">avec des cartes graphiques standard.<span class="tooltiptext">with standard graphics cards today.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Alors on s&#39;en est vraiment servi,<span class="tooltiptext">Now we have really made use of this,</span></span>
+		<span class="tooltip">et on a essayé de faire entrer plein de données<span class="tooltiptext">and we have tried to squeeze a lot of data</span></span>
+		<span class="tooltip">dans le système.<span class="tooltiptext">into the system.</span></span>
+		<span class="tooltip">L&#39;une des utilisations sur lesquelles nous travaillons --<span class="tooltiptext">And one of the applications that we&#39;ve been working on --</span></span>
+		<span class="tooltip">et cela a suscité quelque intérêt dans le monde entier --<span class="tooltiptext">and this has gotten a little bit of traction worldwide --</span></span>
+		<span class="tooltip">est le programme d&#39;autopsies virtuelles.<span class="tooltiptext">is the application of virtual autopsies.</span></span>
+		<span class="tooltip">Une fois de plus, en partant de très très grands ensembles de données,<span class="tooltiptext">So again, looking at very, very large data sets,</span></span>
+		<span class="tooltip">vous avez vu ces scans en pied que nous pouvons faire.<span class="tooltiptext">and you saw those full-body scans that we can do.</span></span>
+		<span class="tooltip">Nous faisons juste passer le corps à travers le scanner CT,<span class="tooltiptext">We&#39;re just pushing the body through the whole CT scanner,</span></span>
+		<span class="tooltip">et en seulement quelques secondes nous pouvons obtenir l&#39;ensemble des données du corps entier.<span class="tooltiptext">and just in a few seconds we can get a full-body data set.</span></span>
+		<span class="tooltip">Ceci provient d&#39;une autopsie virtuelle.<span class="tooltiptext">So this is from a virtual autopsy.</span></span>
+		<span class="tooltip">Vous pouvez voir comment j&#39;enlève progressivement les couches.<span class="tooltiptext">And you can see how I&#39;m gradually peeling off.</span></span>
+		<span class="tooltip">En premier vous avez vu le sac dans lequel le corps est arrivé,<span class="tooltiptext">First you saw the body bag that the body came in,</span></span>
+		<span class="tooltip">puis j&#39;enlève la peau -- vous pouvez voir les muscles --<span class="tooltiptext">then I&#39;m peeling off the skin -- you can see the muscles --</span></span>
+		<span class="tooltip">et finalement vous pouvez voir le squelette de cette femme.<span class="tooltiptext">and eventually you can see the bone structure of this woman.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">A ce stade, je voudrais aussi souligner que,<span class="tooltiptext">Now at this point, I would also like to emphasize</span></span>
+		<span class="tooltip">avec le plus grand respect<span class="tooltiptext">that, with the greatest respect</span></span>
+		<span class="tooltip">pour les personnes que je vais maintenant vous montrer --<span class="tooltiptext">for the people that I&#39;m now going to show --</span></span>
+		<span class="tooltip">je vais vous montrer quelques cas d&#39;autopsies virtuelles --<span class="tooltiptext">I&#39;m going to show you a few cases of virtual autopsies --</span></span>
+		<span class="tooltip">c&#39;est avec un grand respect pour ces personnes<span class="tooltiptext">so it&#39;s with great respect for the people</span></span>
+		<span class="tooltip">qui sont mortes dans des circonstances violentes<span class="tooltiptext">that have died under violent circumstances</span></span>
+		<span class="tooltip">que je vous montre ces images.<span class="tooltiptext">that I&#39;m showing these pictures to you.</span></span>
+		<span class="tooltip">Dans le cadre médico-légal --<span class="tooltiptext">In the forensic case --</span></span>
+		<span class="tooltip">il y a eu jusqu&#39;ici<span class="tooltiptext">and this is something</span></span>
+		<span class="tooltip">environ 400 cas,<span class="tooltiptext">that ... there&#39;s been approximately 400 cases so far</span></span>
+		<span class="tooltip">rien que dans la région de Suède d&#39;où je viens,<span class="tooltiptext">just in the part of Sweden that I come from</span></span>
+		<span class="tooltip">qui ont subi une autopsie virtuelle<span class="tooltiptext">that has been undergoing virtual autopsies</span></span>
+		<span class="tooltip">durant ces quatre dernières années.<span class="tooltiptext">in the past four years.</span></span>
+		<span class="tooltip">Voilà le déroulement de la situation typique :<span class="tooltiptext">So this will be the typical workflow situation.</span></span>
+		<span class="tooltip">La police va décider --<span class="tooltiptext">The police will decide --</span></span>
+		<span class="tooltip">dans la soirée, quand un cas se présente --<span class="tooltiptext">in the evening, when there&#39;s a case coming in --</span></span>
+		<span class="tooltip">ils vont décider, d&#39;accord, voilà un cas qui nécessite une autopsie.<span class="tooltiptext">they will decide, okay, is this a case where we need to do an autopsy?</span></span>
+		<span class="tooltip">Le lendemain, entre six et sept heures du matin,<span class="tooltiptext">So in the morning, in between six and seven in the morning,</span></span>
+		<span class="tooltip">le corps est transporté dans son sac<span class="tooltiptext">the body is then transported inside of the body bag</span></span>
+		<span class="tooltip">jusqu&#39;à notre Centre,<span class="tooltiptext">to our center</span></span>
+		<span class="tooltip">et il est passé dans l&#39;un de nos scanners CT.<span class="tooltiptext">and is being scanned through one of the CT scanners.</span></span>
+		<span class="tooltip">Puis le radiologue, en compagnie du pathologiste<span class="tooltiptext">And then the radiologist, together with the pathologist</span></span>
+		<span class="tooltip">et parfois du médecin légiste,<span class="tooltiptext">and sometimes the forensic scientist,</span></span>
+		<span class="tooltip">examinent les données qui sortent,<span class="tooltiptext">looks at the data that&#39;s coming out,</span></span>
+		<span class="tooltip">et ils se concertent.<span class="tooltiptext">and they have a joint session.</span></span>
+		<span class="tooltip">Ils décident alors de ce qu&#39;ils vont faire lors de la vraie autopsie qui va suivre.<span class="tooltiptext">And then they decide what to do in the real physical autopsy after that.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Voyons maintenant quelques cas,<span class="tooltiptext">Now looking at a few cases,</span></span>
+		<span class="tooltip">voici l&#39;un de nos tout premiers.<span class="tooltiptext">here&#39;s one of the first cases that we had.</span></span>
+		<span class="tooltip">Vous pouvez vraiment voir les détails de l&#39;ensemble de données ;<span class="tooltiptext">You can really see the details of the data set.</span></span>
+		<span class="tooltip">c&#39;est à très haute définition.<span class="tooltiptext">It&#39;s very high-resolution,</span></span>
+		<span class="tooltip">Et ce sont nos algorithmes qui nous permettent<span class="tooltiptext">and it&#39;s our algorithms that allow us</span></span>
+		<span class="tooltip">d&#39;agrandir chaque détail.<span class="tooltiptext">to zoom in on all the details.</span></span>
+		<span class="tooltip">Là aussi, c&#39;est totalement interactif,<span class="tooltiptext">And again, it&#39;s fully interactive,</span></span>
+		<span class="tooltip">vous pouvez le faire pivoter et voir les choses en temps réel<span class="tooltiptext">so you can rotate and you can look at things in real time</span></span>
+		<span class="tooltip">sur ces systèmes là.<span class="tooltiptext">on these systems here.</span></span>
+		<span class="tooltip">Sans trop en dire sur ce cas,<span class="tooltiptext">Without saying too much about this case,</span></span>
+		<span class="tooltip">il s&#39;agit d&#39;un accident de circulation,<span class="tooltiptext">this is a traffic accident,</span></span>
+		<span class="tooltip">un chauffard ivre a renversé une femme.<span class="tooltiptext">a drunk driver hit a woman.</span></span>
+		<span class="tooltip">Il est très très facile de voir les dégâts sur le squelette.<span class="tooltiptext">And it&#39;s very, very easy to see the damages on the bone structure.</span></span>
+		<span class="tooltip">Et la cause du décès qui est la nuque brisée.<span class="tooltiptext">And the cause of death is the broken neck.</span></span>
+		<span class="tooltip">Cette femme a de plus fini sous la voiture,<span class="tooltiptext">And this women also ended up under the car,</span></span>
+		<span class="tooltip">alors elle est assez gravement abîmée<span class="tooltiptext">so she&#39;s quite badly beaten up</span></span>
+		<span class="tooltip">par l&#39;accident.<span class="tooltiptext">by this injury.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Voici un autre cas, une attaque au couteau.<span class="tooltiptext">Here&#39;s another case, a knifing.</span></span>
+		<span class="tooltip">Ça nous montre une fois encore ce que nous pouvons faire.<span class="tooltiptext">And this is also again showing us what we can do.</span></span>
+		<span class="tooltip">Il est très facile d&#39;observer les objets en métal,<span class="tooltiptext">It&#39;s very easy to look at metal artifacts</span></span>
+		<span class="tooltip">nous pouvons les montrer à l&#39;intérieur du corps.<span class="tooltiptext">that we can show inside of the body.</span></span>
+		<span class="tooltip">Vous pouvez aussi voir des objets dans la mâchoire --<span class="tooltiptext">You can also see some of the artifacts from the teeth --</span></span>
+		<span class="tooltip">ce sont en réalité les plombages --<span class="tooltiptext">that&#39;s actually the filling of the teeth --</span></span>
+		<span class="tooltip">mais c&#39;est parce que j&#39;ai réglé les fonctions pour faire apparaître le métal<span class="tooltiptext">but because I&#39;ve set the functions to show me metal</span></span>
+		<span class="tooltip">et rendre tout le reste transparent.<span class="tooltiptext">and make everything else transparent.</span></span>
+		<span class="tooltip">Voici un autre cas de violence. Ce n&#39;est pas vraiment ça qui a tué la personne.<span class="tooltiptext">Here&#39;s another violent case. This really didn&#39;t kill the person.</span></span>
+		<span class="tooltip">Elle a été tuée par des coups de poignard dans le cœur,<span class="tooltiptext">The person was killed by stabs in the heart,</span></span>
+		<span class="tooltip">mais ils se sont simplement débarrassé du couteau<span class="tooltiptext">but they just deposited the knife</span></span>
+		<span class="tooltip">en l&#39;enfonçant dans l&#39;un des globes oculaires.<span class="tooltiptext">by putting it through one of the eyeballs.</span></span>
+		<span class="tooltip">Voici un autre cas.<span class="tooltiptext">Here&#39;s another case.</span></span>
+		<span class="tooltip">C&#39;est très intéressant pour nous<span class="tooltiptext">It&#39;s very interesting for us</span></span>
+		<span class="tooltip">de pouvoir observer des choses comme les coups de couteau.<span class="tooltiptext">to be able to look at things like knife stabbings.</span></span>
+		<span class="tooltip">Ici vous pouvez voir que le couteau a transpercé le cœur.<span class="tooltiptext">Here you can see that knife went through the heart.</span></span>
+		<span class="tooltip">On peut facilement voir comment l&#39;air a fui<span class="tooltiptext">It&#39;s very easy to see how air has been leaking</span></span>
+		<span class="tooltip">d&#39;un endroit à l&#39;autre,<span class="tooltiptext">from one part to another part,</span></span>
+		<span class="tooltip">ce qui est difficile dans une autopsie normale, standard.<span class="tooltiptext">which is difficult to do in a normal, standard, physical autopsy.</span></span>
+		<span class="tooltip">Cela aide énormément<span class="tooltiptext">So it really, really helps</span></span>
+		<span class="tooltip">l&#39;enquête criminelle<span class="tooltiptext">the criminal investigation</span></span>
+		<span class="tooltip">à établir la cause du décès,<span class="tooltiptext">to establish the cause of death,</span></span>
+		<span class="tooltip">et dans certains cas, à orienter l&#39;enquête dans la bonne direction<span class="tooltiptext">and in some cases also directing the investigation in the right direction</span></span>
+		<span class="tooltip">pour découvrir qui est vraiment le meurtrier.<span class="tooltiptext">to find out who the killer really was.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Voici un autre cas que je trouve intéressant.<span class="tooltiptext">Here&#39;s another case that I think is interesting.</span></span>
+		<span class="tooltip">Vous pouvez voir ici une balle<span class="tooltiptext">Here you can see a bullet</span></span>
+		<span class="tooltip">qui s&#39;est logée juste à côté de la colonne vertébrale de cette personne.<span class="tooltiptext">that has lodged just next to the spine on this person.</span></span>
+		<span class="tooltip">Et ce que nous avons fait, c&#39;est de transformer cette balle en source lumineuse,<span class="tooltiptext">And what we&#39;ve done is that we&#39;ve turned the bullet into a light source,</span></span>
+		<span class="tooltip">de façon à ce que la balle brille réellement,<span class="tooltiptext">so that bullet is actually shining,</span></span>
+		<span class="tooltip">ce qui rend la recherche des fragments très facile.<span class="tooltiptext">and it makes it really easy to find these fragments.</span></span>
+		<span class="tooltip">Lors d&#39;une autopsie physique,<span class="tooltiptext">During a physical autopsy,</span></span>
+		<span class="tooltip">si vous devez réellement fouiller le corps pour retrouver les fragments,<span class="tooltiptext">if you actually have to dig through the body to find these fragments,</span></span>
+		<span class="tooltip">c&#39;est vraiment assez dur à faire.<span class="tooltiptext">that&#39;s actually quite hard to do.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Une des choses que je suis très très heureux<span class="tooltiptext">One of the things that I&#39;m really, really happy</span></span>
+		<span class="tooltip">de pouvoir vous montrer aujourd&#39;hui<span class="tooltiptext">to be able to show you here today</span></span>
+		<span class="tooltip">est notre table d&#39;autopsie virtuelle.<span class="tooltiptext">is our virtual autopsy table.</span></span>
+		<span class="tooltip">C&#39;est un appareil tactile que nous avons élaboré<span class="tooltiptext">It&#39;s a touch device that we have developed</span></span>
+		<span class="tooltip">basé sur ces algorithmes, et qui utilise un processeur graphique standard.<span class="tooltiptext">based on these algorithms, using standard graphics GPUs.</span></span>
+		<span class="tooltip">Voici de quoi cela a l&#39;air en vrai,<span class="tooltiptext">It actually looks like this,</span></span>
+		<span class="tooltip">juste pour vous donner un idée de ce à quoi cela ressemble.<span class="tooltiptext">just to give you a feeling for what it looks like.</span></span>
+		<span class="tooltip">Ça marche vraiment comme un énorme iPhone.<span class="tooltiptext">It really just works like a huge iPhone.</span></span>
+		<span class="tooltip">Nous avons implémenté<span class="tooltiptext">So we&#39;ve implemented</span></span>
+		<span class="tooltip">tous les gestes que vous pouvez faire sur une table classique,<span class="tooltiptext">all the gestures you can do on the table,</span></span>
+		<span class="tooltip">vous pouvez voir cela comme une énorme interface tactile.<span class="tooltiptext">and you can think of it as an enormous touch interface.</span></span>
+		<span class="tooltip">Alors si vous aviez l&#39;intention d&#39;acheter un iPad,<span class="tooltiptext">So if you were thinking of buying an iPad,</span></span>
+		<span class="tooltip">laissez tomber, voilà ce qu&#39;il vous faut à la place.<span class="tooltiptext">forget about it. This is what you want instead.</span></span>
+		<span class="tooltip">Steve, j&#39;espère bien que tu nous écoutes.<span class="tooltiptext">Steve, I hope you&#39;re listening to this, all right.</span></span>
+		<span class="tooltip">C&#39;est un petit appareil très sympa.<span class="tooltiptext">So it&#39;s a very nice little device.</span></span>
+		<span class="tooltip">Alors si vous en avez l&#39;occasion, essayez-le.<span class="tooltiptext">So if you have the opportunity, please try it out.</span></span>
+		<span class="tooltip">C&#39;est vraiment une expérience concrète.<span class="tooltiptext">It&#39;s really a hands-on experience.</span></span>
+		<span class="tooltip">Nous avons eu des réactions favorables, et nous essayons de le développer,<span class="tooltiptext">So it gained some traction, and we&#39;re trying to roll this out</span></span>
+		<span class="tooltip">et de l&#39;utiliser à des fins pédagogiques,<span class="tooltiptext">and trying to use it for educational purposes,</span></span>
+		<span class="tooltip">mais aussi, peut-être à l&#39;avenir,<span class="tooltiptext">but also, perhaps in the future,</span></span>
+		<span class="tooltip">dans un contexte plus clinique.<span class="tooltiptext">in a more clinical situation.</span></span>
+		<span class="tooltip">Il y a une vidéo sur YouTube que vous pouvez télécharger et regarder,<span class="tooltiptext">There&#39;s a YouTube video that you can download and look at this,</span></span>
+		<span class="tooltip">si vous voulez relayer l&#39;information sur les autopsies virtuelles<span class="tooltiptext">if you want to convey the information to other people</span></span>
+		<span class="tooltip">vers d&#39;autres personnes.<span class="tooltiptext">about virtual autopsies.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Bon, puisque nous parlons de toucher,<span class="tooltiptext">Okay, now that we&#39;re talking about touch,</span></span>
+		<span class="tooltip">passons à la possibilité de toucher réellement les données.<span class="tooltiptext">let me move on to really &quot;touching&quot; data.</span></span>
+		<span class="tooltip">C&#39;est un peu de la science-fiction, là,<span class="tooltiptext">And this is a bit of science fiction now,</span></span>
+		<span class="tooltip">on se projette dans le futur.<span class="tooltiptext">so we&#39;re moving into really the future.</span></span>
+		<span class="tooltip">Ça n&#39;est pas vraiment ce que les médecins utilisent actuellement,<span class="tooltiptext">This is not really what the medical doctors are using right now,</span></span>
+		<span class="tooltip">mais j&#39;espère qu&#39;ils le feront à l&#39;avenir.<span class="tooltiptext">but I hope they will in the future.</span></span>
+		<span class="tooltip">Ce que vous voyez à gauche est un appareil tactile.<span class="tooltiptext">So what you&#39;re seeing on the left is a touch device.</span></span>
+		<span class="tooltip">C&#39;est un petit stylet mécanique<span class="tooltiptext">It&#39;s a little mechanical pen</span></span>
+		<span class="tooltip">qui a des moteurs pas à pas extrêmement rapides à l&#39;intérieur.<span class="tooltiptext">that has very, very fast step motors inside of the pen.</span></span>
+		<span class="tooltip">Je peux donc produire un retour de force.<span class="tooltiptext">And so I can generate a force feedback.</span></span>
+		<span class="tooltip">Alors, quand je touche virtuellement les données<span class="tooltiptext">So when I virtually touch data,</span></span>
+		<span class="tooltip">cela va produire des retours de force dans le stylet, et j&#39;obtiens ainsi une réaction.<span class="tooltiptext">it will generate forces in the pen, so I get a feedback.</span></span>
+		<span class="tooltip">Dans ce cas précis,<span class="tooltiptext">So in this particular situation,</span></span>
+		<span class="tooltip">il s&#39;agit du scan d&#39;une personne vivante.<span class="tooltiptext">it&#39;s a scan of a living person.</span></span>
+		<span class="tooltip">J&#39;ai ce stylet, et j&#39;examine les données,<span class="tooltiptext">I have this pen, and I look at the data,</span></span>
+		<span class="tooltip">je déplace le stylet vers la tête,<span class="tooltiptext">and I move the pen towards the head,</span></span>
+		<span class="tooltip">et tout à coup, je sens une résistance.<span class="tooltiptext">and all of a sudden I feel resistance.</span></span>
+		<span class="tooltip">Et ainsi je peux sentir la peau.<span class="tooltiptext">So I can feel the skin.</span></span>
+		<span class="tooltip">Si j&#39;appuie un peu plus fort, je vais traverser la peau,<span class="tooltiptext">If I push a little bit harder, I&#39;ll go through the skin,</span></span>
+		<span class="tooltip">et je pourrai sentir l&#39;os à l&#39;intérieur.<span class="tooltiptext">and I can feel the bone structure inside.</span></span>
+		<span class="tooltip">Si j&#39;appuie encore plus fort, je traverserai le crâne,<span class="tooltiptext">If I push even harder, I&#39;ll go through the bone structure,</span></span>
+		<span class="tooltip">particulièrement près de l&#39;oreille, où l&#39;os est très tendre.<span class="tooltiptext">especially close to the ear where the bone is very soft.</span></span>
+		<span class="tooltip">Et alors je pourrai sentir le cerveau à l&#39;intérieur, et ça aura une consistance de neige fondue, comme ceci.<span class="tooltiptext">And then I can feel the brain inside, and this will be the slushy like this.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">C&#39;est vraiment bien.<span class="tooltiptext">So this is really nice.</span></span>
+		<span class="tooltip">Et pour aller encore plus loin, voilà un cœur.<span class="tooltiptext">And to take that even further, this is a heart.</span></span>
+		<span class="tooltip">C&#39;est aussi grâce à ces nouveaux scanners extraordinaires,<span class="tooltiptext">And this is also due to these fantastic new scanners,</span></span>
+		<span class="tooltip">avec lesquels, en seulement 0,3 secondes,<span class="tooltiptext">that just in 0.3 seconds,</span></span>
+		<span class="tooltip">je peux scanner la totalité du cœur,<span class="tooltiptext">I can scan the whole heart,</span></span>
+		<span class="tooltip">et je peux le faire avec une dimension temporelle.<span class="tooltiptext">and I can do that with time resolution.</span></span>
+		<span class="tooltip">Et donc, pour observer ce cœur,<span class="tooltiptext">So just looking at this heart,</span></span>
+		<span class="tooltip">je peux faire tourner une vidéo.<span class="tooltiptext">I can play back a video here.</span></span>
+		<span class="tooltip">Voici Karljohan, l&#39;un de mes étudiants de troisième cycle,<span class="tooltiptext">And this is Karljohan, one of my graduate students</span></span>
+		<span class="tooltip">qui travaille sur ce projet.<span class="tooltiptext">who&#39;s been working on this project.</span></span>
+		<span class="tooltip">Il est assis devant l&#39;appareil haptique, le système de retour de force,<span class="tooltiptext">And he&#39;s sitting there in front of the Haptic device, the force feedback system,</span></span>
+		<span class="tooltip">et il déplace le stylet vers le cœur,<span class="tooltiptext">and he&#39;s moving his pen towards the heart,</span></span>
+		<span class="tooltip">et le cœur bat maintenant devant lui,<span class="tooltiptext">and the heart is now beating in front of him,</span></span>
+		<span class="tooltip">pour qu&#39;il puisse voir comment il bat.<span class="tooltiptext">so he can see how the heart is beating.</span></span>
+		<span class="tooltip">Il a pris le stylet, et il le déplace vers le cœur,<span class="tooltiptext">He&#39;s taken the pen, and he&#39;s moving it towards the heart,</span></span>
+		<span class="tooltip">il le pose sur le cœur,<span class="tooltiptext">and he&#39;s putting it on the heart,</span></span>
+		<span class="tooltip">et il sent les battements de cœur du véritable patient en vie.<span class="tooltiptext">and then he feels the heartbeats from the real living patient.</span></span>
+		<span class="tooltip">Il peut alors examiner les mouvements du cœur.<span class="tooltiptext">Then he can examine how the heart is moving.</span></span>
+		<span class="tooltip">Il peut entrer à l&#39;intérieur, pénétrer à l&#39;intérieur du cœur,<span class="tooltiptext">He can go inside, push inside of the heart,</span></span>
+		<span class="tooltip">et sentir vraiment comment les valves bougent.<span class="tooltiptext">and really feel how the valves are moving.</span></span>
+		<span class="tooltip">Ceci, je crois, est vraiment l&#39;avenir pour les chirurgiens cardiaques.<span class="tooltiptext">And this, I think, is really the future for heart surgeons.</span></span>
+		<span class="tooltip">Je veux dire, c&#39;est probablement le plus grand fantasme pour un chirurgien du cœur<span class="tooltiptext">I mean it&#39;s probably the wet dream for a heart surgeon</span></span>
+		<span class="tooltip">que de pouvoir aller voir à l&#39;intérieur du cœur du patient<span class="tooltiptext">to be able to go inside of the patient&#39;s heart</span></span>
+		<span class="tooltip">avant de passer à l&#39;acte chirurgical,<span class="tooltiptext">before you actually do surgery,</span></span>
+		<span class="tooltip">et de faire cela avec des données de qualité haute définition.<span class="tooltiptext">and do that with high-quality resolution data.</span></span>
+		<span class="tooltip">C&#39;est vraiment super.<span class="tooltiptext">So this is really neat.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Maintenant nous allons encore un peu plus loin dans la science-fiction.<span class="tooltiptext">Now we&#39;re going even further into science fiction.</span></span>
+		<span class="tooltip">Nous avons un peu entendu parler de l&#39;IRM fonctionnelle.<span class="tooltiptext">And we heard a little bit about functional MRI.</span></span>
+		<span class="tooltip">Voilà un projet vraiment intéressant.<span class="tooltiptext">Now this is really an interesting project.</span></span>
+		<span class="tooltip">L&#39;IRM utilise des champs magnétiques<span class="tooltiptext">MRI is using magnetic fields</span></span>
+		<span class="tooltip">et des fréquences radio<span class="tooltiptext">and radio frequencies</span></span>
+		<span class="tooltip">pour scanner le cerveau, ou n&#39;importe quelle partie du corps.<span class="tooltiptext">to scan the brain, or any part of the body.</span></span>
+		<span class="tooltip">Ce que l&#39;on obtient en réalité<span class="tooltiptext">So what we&#39;re really getting out of this</span></span>
+		<span class="tooltip">ce sont des informations sur la structure du cerveau,<span class="tooltiptext">is information of the structure of the brain,</span></span>
+		<span class="tooltip">mais on peut aussi mesurer la différence de propriétés magnétiques<span class="tooltiptext">but we can also measure the difference</span></span>
+		<span class="tooltip">entre le sang qui est oxygéné<span class="tooltiptext">in magnetic properties of blood that&#39;s oxygenated</span></span>
+		<span class="tooltip">et le sang qui s&#39;est appauvri en oxygène.<span class="tooltiptext">and blood that&#39;s depleted of oxygen.</span></span>
+		<span class="tooltip">Cela signifie qu&#39;il est possible<span class="tooltiptext">That means that it&#39;s possible</span></span>
+		<span class="tooltip">d&#39;établir une carte de l&#39;activité du cerveau.<span class="tooltiptext">to map out the activity of the brain.</span></span>
+		<span class="tooltip">C&#39;est quelque chose sur quoi nous travaillons.<span class="tooltiptext">So this is something that we&#39;ve been working on.</span></span>
+		<span class="tooltip">Vous venez juste de voir Motts, notre ingénieur d&#39;étude,<span class="tooltiptext">And you just saw Motts the research engineer, there,</span></span>
+		<span class="tooltip">entrer dans la machine d&#39;IRM,<span class="tooltiptext">going into the MRI system,</span></span>
+		<span class="tooltip">et il portait des lunettes.<span class="tooltiptext">and he was wearing goggles.</span></span>
+		<span class="tooltip">Pour qu&#39;il puisse voir des choses dans les lunettes, en fait.<span class="tooltiptext">So he could actually see things in the goggles.</span></span>
+		<span class="tooltip">Pour que je puisse lui montrer des choses pendant qu&#39;il est dans le scanner.<span class="tooltiptext">So I could present things to him while he&#39;s in the scanner.</span></span>
+		<span class="tooltip">Et c&#39;est un peu bizarre,<span class="tooltiptext">And this is a little bit freaky,</span></span>
+		<span class="tooltip">parce que ce que Motts voit, c&#39;est en fait ceci.<span class="tooltiptext">because what Motts is seeing is actually this.</span></span>
+		<span class="tooltip">Il voit son propre cerveau.<span class="tooltiptext">He&#39;s seeing his own brain.</span></span>
+		<span class="tooltip">Motts fait quelque chose, là.<span class="tooltiptext">So Motts is doing something here,</span></span>
+		<span class="tooltip">Il fait probablement comme ça avec sa main droite,<span class="tooltiptext">and probably he is going like this with his right hand,</span></span>
+		<span class="tooltip">parce que le côté gauche du cortex de la motricité<span class="tooltiptext">because the left side is activated</span></span>
+		<span class="tooltip">est actif.<span class="tooltiptext">on the motor cortex.</span></span>
+		<span class="tooltip">Et il peut voir ceci en même temps.<span class="tooltiptext">And then he can see that at the same time.</span></span>
+		<span class="tooltip">Ces représentations sont toutes nouvelles.<span class="tooltiptext">These visualizations are brand new.</span></span>
+		<span class="tooltip">C&#39;est quelque chose sur quoi nous menons des recherches depuis un certain temps.<span class="tooltiptext">And this is something that we&#39;ve been researching for a little while.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Voici une autre séquence du cerveau de Motts.<span class="tooltiptext">This is another sequence of Motts&#39; brain.</span></span>
+		<span class="tooltip">Ici, nous avons demandé à Motts de compter à rebours à partir de 100.<span class="tooltiptext">And here we asked Motts to calculate backwards from 100.</span></span>
+		<span class="tooltip">Il fait : &quot; 100, 97, 94...&quot;<span class="tooltiptext">So he&#39;s going &quot;100, 97, 94.&quot;</span></span>
+		<span class="tooltip">Il le fait à l&#39;envers.<span class="tooltiptext">And then he&#39;s going backwards.</span></span>
+		<span class="tooltip">Et vous pouvez voir comment le petit processeur mathématique travaille dans son cerveau,<span class="tooltiptext">And you can see how the little math processor is working up here in his brain</span></span>
+		<span class="tooltip">et illumine tout le cerveau.<span class="tooltiptext">and is lighting up the whole brain.</span></span>
+		<span class="tooltip">Eh bien, c&#39;est extraordinaire. On peut faire ça en temps réel.<span class="tooltiptext">Well this is fantastic. We can do this in real time.</span></span>
+		<span class="tooltip">On peut étudier des tas de choses. On peut lui demander de faire des trucs.<span class="tooltiptext">We can investigate things. We can tell him to do things.</span></span>
+		<span class="tooltip">Vous pouvez aussi voir que son cortex visuel<span class="tooltiptext">You can also see that his visual cortex</span></span>
+		<span class="tooltip">est actif, à l&#39;arrière de sa tête,<span class="tooltiptext">is activated in the back of the head,</span></span>
+		<span class="tooltip">parce que c&#39;est là qu&#39;il voit, il voit son propre cerveau.<span class="tooltiptext">because that&#39;s where he&#39;s seeing, he&#39;s seeing his own brain.</span></span>
+		<span class="tooltip">Et il entend également nos instructions<span class="tooltiptext">And he&#39;s also hearing our instructions</span></span>
+		<span class="tooltip">quand nous lui disons de faire quelque chose.<span class="tooltiptext">when we tell him to do things.</span></span>
+		<span class="tooltip">De plus, le signal est vraiment profond à l&#39;intérieur du cerveau,<span class="tooltiptext">The signal is really deep inside of the brain as well,</span></span>
+		<span class="tooltip">mais il brille au travers,<span class="tooltiptext">and it&#39;s shining through,</span></span>
+		<span class="tooltip">parce qu&#39;il y a toutes les données à l&#39;intérieur de ce volume.<span class="tooltiptext">because all of the data is inside this volume.</span></span>
+		<span class="tooltip">Dans juste un instant vous allez voir --<span class="tooltiptext">And in just a second here you will see --</span></span>
+		<span class="tooltip">Bien, là, Motts, maintenant bouge ton pied gauche.<span class="tooltiptext">okay, here. Motts, now move your left foot.</span></span>
+		<span class="tooltip">Il fait comme ça.<span class="tooltiptext">So he&#39;s going like this.</span></span>
+		<span class="tooltip">Pendant 20 secondes, il fait comme ça,<span class="tooltiptext">For 20 seconds he&#39;s going like that,</span></span>
+		<span class="tooltip">et tout à coup, ça s&#39;illumine là-haut.<span class="tooltiptext">and all of a sudden it lights up up here.</span></span>
+		<span class="tooltip">Nous avons le cortex moteur qui s&#39;active là-haut.<span class="tooltiptext">So we&#39;ve got motor cortex activation up there.</span></span>
+		<span class="tooltip">C&#39;est vraiment, vraiment bien.<span class="tooltiptext">So this is really, really nice,</span></span>
+		<span class="tooltip">Je pense que c&#39;est un outil formidable.<span class="tooltiptext">and I think this is a great tool.</span></span>
+		<span class="tooltip">Et en rapport avec la conférence qui m&#39;a précédé ici,<span class="tooltiptext">And connecting also with the previous talk here,</span></span>
+		<span class="tooltip">c&#39;est quelque chose que nous pourrions utiliser comme outil<span class="tooltiptext">this is something that we could use as a tool</span></span>
+		<span class="tooltip">pour comprendre vraiment<span class="tooltiptext">to really understand</span></span>
+		<span class="tooltip">comment marchent les neurones, comment marche le cerveau,<span class="tooltiptext">how the neurons are working, how the brain is working,</span></span>
+		<span class="tooltip">et nous pouvons le faire avec de la très, très bonne qualité visuelle<span class="tooltiptext">and we can do this with very, very high visual quality</span></span>
+		<span class="tooltip">et une résolution très rapide.<span class="tooltiptext">and very fast resolution.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Il nous arrive aussi de nous amuser au Centre.<span class="tooltiptext">Now we&#39;re also having a bit of fun at the center.</span></span>
+		<span class="tooltip">Ceci est un CAT scan -- Computer Aided Tomography.<span class="tooltiptext">So this is a CAT scan -- Computer Aided Tomography.</span></span>
+		<span class="tooltip">C&#39;est Elsa, une lionne du zoo de notre région,<span class="tooltiptext">So this is a lion from the local zoo</span></span>
+		<span class="tooltip">près de Norrkoping, dans la forêt de Kolmarden.<span class="tooltiptext">outside of Norrkoping in Kolmarden, Elsa.</span></span>
+		<span class="tooltip">Elle est arrivée au Centre,<span class="tooltiptext">So she came to the center,</span></span>
+		<span class="tooltip">et ils l&#39;ont endormie,<span class="tooltiptext">and they sedated her</span></span>
+		<span class="tooltip">et passée directement dans le scanner.<span class="tooltiptext">and then put her straight into the scanner.</span></span>
+		<span class="tooltip">Ensuite, bien sûr, j&#39;obtiens tout l&#39;ensemble des données de la lionne.<span class="tooltiptext">And then, of course, I get the whole data set from the lion.</span></span>
+		<span class="tooltip">Et je peux faire de très jolies images comme celle-ci.<span class="tooltiptext">And I can do very nice images like this.</span></span>
+		<span class="tooltip">Je peux enlever des couches de la lionne.<span class="tooltiptext">I can peel off the layer of the lion.</span></span>
+		<span class="tooltip">Je peux observer l&#39;intérieur.<span class="tooltiptext">I can look inside of it.</span></span>
+		<span class="tooltip">Nous avons testé cela.<span class="tooltiptext">And we&#39;ve been experimenting with this.</span></span>
+		<span class="tooltip">Et je pense que c&#39;est une application formidable<span class="tooltiptext">And I think this is a great application</span></span>
+		<span class="tooltip">pour l&#39;avenir de cette technologie.<span class="tooltiptext">for the future of this technology,</span></span>
+		<span class="tooltip">Parce qu&#39;on en sait très peu sur l&#39;anatomie animale.<span class="tooltiptext">because there&#39;s very little known about the animal anatomy.</span></span>
+		<span class="tooltip">Le seul savoir disponible pour les vétérinaires est très basique, en somme.<span class="tooltiptext">What&#39;s known out there for veterinarians is kind of basic information.</span></span>
+		<span class="tooltip">Nous pouvons scanner toutes sortes de choses,<span class="tooltiptext">We can scan all sorts of things,</span></span>
+		<span class="tooltip">toutes sortes d&#39;animaux.<span class="tooltiptext">all sorts of animals.</span></span>
+		<span class="tooltip">Le seul problème est de les faire entrer dans la machine.<span class="tooltiptext">The only problem is to fit it into the machine.</span></span>
+		<span class="tooltip">Voici un ours.<span class="tooltiptext">So here&#39;s a bear.</span></span>
+		<span class="tooltip">Ça a été un peu dur de le faire rentrer.<span class="tooltiptext">It was kind of hard to get it in.</span></span>
+		<span class="tooltip">L&#39;ours est un animal affectueux, amical.<span class="tooltiptext">And the bear is a cuddly, friendly animal.</span></span>
+		<span class="tooltip">Le voilà. Voilà le nez de l&#39;ours.<span class="tooltiptext">And here it is. Here is the nose of the bear.</span></span>
+		<span class="tooltip">Vous pourriez avoir envie de câliner celui-ci,<span class="tooltiptext">And you might want to cuddle this one,</span></span>
+		<span class="tooltip">jusqu&#39;à ce que vous changiez les réglages et que vous voyiez ceci.<span class="tooltiptext">until you change the functions and look at this.</span></span>
+		<span class="tooltip">Alors, attention aux ours.<span class="tooltiptext">So be aware of the bear.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Pour finir,<span class="tooltiptext">So with that,</span></span>
+		<span class="tooltip">je voudrais remercier toutes les personnes<span class="tooltiptext">I&#39;d like to thank all the people</span></span>
+		<span class="tooltip">qui m&#39;ont aidé à produire ces images.<span class="tooltiptext">who have helped me to generate these images.</span></span>
+		<span class="tooltip">C&#39;est un énorme travail que de réussir cela,<span class="tooltiptext">It&#39;s a huge effort that goes into doing this,</span></span>
+		<span class="tooltip">rassembler les données, développer les algorithmes,<span class="tooltiptext">gathering the data and developing the algorithms,</span></span>
+		<span class="tooltip">écrire tous les programmes.<span class="tooltiptext">writing all the software.</span></span>
+		<span class="tooltip">Ces personnes ont énormément de talent.<span class="tooltiptext">So, some very talented people.</span></span>
+		<span class="tooltip">Ma devise est toujours : &quot; N&#39;embauche que des gens plus intelligents que toi&quot;,<span class="tooltiptext">My motto is always, I only hire people that are smarter than I am</span></span>
+		<span class="tooltip">et la plupart d&#39;entre eux sont plus intelligents que moi.<span class="tooltiptext">and most of these are smarter than I am.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Merci beaucoup.<span class="tooltiptext">So thank you very much.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Applaudissements)<span class="tooltiptext">(Applause)</span></span>
+	</p>
+
+	<div class="line"></div>
+	<p>Enjoying my website? Your donation helps maintain its ad-free experience and smooth operation. Your support is truly appreciated and helps me continue providing quality content. Thank you for considering a donation!</p>
+	<p>To donate, simply click the PayPal link below:<p/>
+	<p><a href="https://www.paypal.com/paypalme/otechai" target='_blank'>Donate via PayPal</a></p>
+	
+</div>
+<span onclick='topFunction()' id='gotop' title='Go to top'><svg width="32" height="32" viewBox="0 0 100 100">
+	   <path fill="white" d="m50 0c-13.262 0-25.98 5.2695-35.355 14.645s-14.645 22.094-14.645 35.355 5.2695 25.98 14.645 35.355 22.094 14.645 35.355 14.645 25.98-5.2695 35.355-14.645 14.645-22.094 14.645-35.355-5.2695-25.98-14.645-35.355-22.094-14.645-35.355-14.645zm20.832 62.5-20.832-22.457-20.625 22.457c-1.207 0.74219-2.7656 0.57812-3.7891-0.39844-1.0273-0.98047-1.2695-2.5273-0.58594-3.7695l22.918-25c0.60156-0.61328 1.4297-0.96094 2.2891-0.96094 0.86328 0 1.6914 0.34766 2.293 0.96094l22.918 25c0.88672 1.2891 0.6875 3.0352-0.47266 4.0898-1.1562 1.0508-2.9141 1.0859-4.1133 0.078125z"></path>
+	 </svg></span>
+
+	    <div class="footer">
+	        <div class="left"><a href='../../../index.html'>ReadingDB</a></div>
+	        <div class="center"><a href="https://twitter.com/readingdb" class="twitter-link">
+	    <svg class="twitter-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	        <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.58-2.11-9.96-5.02-.42.72-.66 1.56-.66 2.46 0 1.68.85 3.16 2.14 4.02-.79-.02-1.53-.24-2.18-.6v.06c0 2.35 1.67 4.31 3.88 4.76-.4.1-.83.16-1.27.16-.31 0-.62-.03-.92-.08.63 1.96 2.45 3.39 4.61 3.43-1.69 1.32-3.83 2.1-6.15 2.1-.4 0-.8-.02-1.19-.07 2.19 1.4 4.78 2.22 7.57 2.22 9.07 0 14.02-7.52 14.02-14.02 0-.21 0-.41-.01-.61.96-.69 1.79-1.56 2.45-2.55-.88.39-1.83.65-2.82.77z"/>
+	    </svg>
+	</a></div>
+	        <div class="right"><a href='https://www.paypal.com/paypalme/otechai'>Donate</a></div>
+	    </div>
+	<script>
+
+		var mybutton = document.getElementById('gotop');
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+			if (document.documentElement.scrollTop > 20 || document.body.scrollTop > 20) {
+				mybutton.style.display = 'block';
+			} else {
+				mybutton.style.display = 'none';
+			}
+		}
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<script src="../../../static/scripts/script.js"></script>
+</body>
+</html>
+	

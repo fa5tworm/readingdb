@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+	<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<meta name="description" content="Unlock your Spanish reading skills: Immerse yourself in a contextual and practical learning enhanced by high-quality instant translations.">
+      	<meta name="keywords" content="Spanish reading, Spanish language learning, instant translations, reading adventure, improve Spanish, improve reading skills, educational platform, spanish reading resources, online education, Spanish proficiency, learn Spanish, Spanish learning resources, bilingual education, language exchange, study Spanish online">
+		<link rel="apple-touch-icon" sizes="180x180" href="../../../static/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../../../static/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../../../static/favicons/favicon-16x16.png">
+		<link rel="manifest" href="../../../static/favicons/site.webmanifest">
+		<title>Ben Wellington : How we found the worst place to park in New York City -- using big data</title>
+		<link rel='stylesheet' href='../../../static/styles/styles.css'>
+		<script defer data-domain="readingdb.org" src="https://plausible.io/js/script.js"></script>
+	</head>
+	<body>
+
+	<h1 class='title'>How we found the worst place to park in New York City -- using big data</h1>
+	<h2 class='speaker'>Ben Wellington</h2>
+	<div class='transcript books'>
+	<p>Are you ready to improve your Spanish speaking skills, check <a href='https://referral.lingoda.com/6Dztrv'>Lingoda</a> today!</p>
+		<p>
+		<span class="tooltip">10 000 km de routes,<span class="tooltiptext">Six thousand miles of road,</span></span>
+		<span class="tooltip">1000 km de rails de métro,<span class="tooltiptext">600 miles of subway track,</span></span>
+		<span class="tooltip">640 km d&#39;aménagements cyclables<span class="tooltiptext">400 miles of bike lanes</span></span>
+		<span class="tooltip">et un tramway aérien de 945 m reliant<span class="tooltiptext">and a half a mile of tram track,</span></span>
+		<span class="tooltip">Manhattan à Roosevelt Island.<span class="tooltiptext">if you&#39;ve ever been to Roosevelt Island.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Ces quelques nombres décrivent
+l&#39;infrastructure routière<span class="tooltiptext">These are the numbers that make up
+the infrastructure of New York City.</span></span>
+		<span class="tooltip">de la ville de New York.<span class="tooltiptext">These are the statistics
+of our infrastructure.</span></span>
+		<span class="tooltip">Les rapports des organismes 
+municipaux contiennent ces données.<span class="tooltiptext">They&#39;re the kind of numbers you can find
+released in reports by city agencies.</span></span>
+		<span class="tooltip">Le département des transports, vous dira
+<span class="tooltiptext">For example, the Department
+of Transportation will probably tell you</span></span>
+		<span class="tooltip">le nombre de km de routes entretenus<span class="tooltiptext">how many miles of road they maintain.</span></span>
+		<span class="tooltip">Le MTA se vantera du nombre de km
+de voies de métro.<span class="tooltiptext">The MTA will boast how many miles
+of subway track there are.</span></span>
+		<span class="tooltip">La plupart des organismes établissent
+des statistiques.<span class="tooltiptext">Most city agencies give us statistics.</span></span>
+		<span class="tooltip">Voici des données
+d&#39;un rapport de cette année<span class="tooltiptext">This is from a report this year</span></span>
+		<span class="tooltip">de la commission des taxis,<span class="tooltiptext">from the Taxi and Limousine Commission,</span></span>
+		<span class="tooltip">qui nous apprennent qu&#39;il y a environ 
+13 500 taxis ici à New York.<span class="tooltiptext">where we learn that there&#39;s about
+13,500 taxis here in New York City.</span></span>
+		<span class="tooltip">Intéressant, n&#39;est-ce pas?<span class="tooltiptext">Pretty interesting, right?</span></span>
+		<span class="tooltip">Mais vous êtes-vous déjà demandé
+d&#39;où viennent ces nombres?<span class="tooltiptext">But did you ever think about
+where these numbers came from?</span></span>
+		<span class="tooltip">Pour qu&#39;ils existent, 
+des fonctionnaires ont dû<span class="tooltiptext">Because for these numbers to exist,
+someone at the city agency</span></span>
+		<span class="tooltip">s&#39;arrêter et se dire, hum, voici une
+donnée qui intéresse peut-être quelqu&#39;un.<span class="tooltiptext">had to stop and say, hmm, here&#39;s a number
+that somebody might want want to know.</span></span>
+		<span class="tooltip">Voilà un nombre dont
+nos citoyens ont besoin.<span class="tooltiptext">Here&#39;s a number 
+that our citizens want to know.</span></span>
+		<span class="tooltip">Ils sortent alors leurs
+données brutes,<span class="tooltiptext">So they go back to their raw data,</span></span>
+		<span class="tooltip">comptent, ajoutent, calculent,<span class="tooltiptext">they count, they add, they calculate,</span></span>
+		<span class="tooltip">et rédigent des rapports<span class="tooltiptext">and then they put out reports,</span></span>
+		<span class="tooltip">contenant de nouveaux chiffres.<span class="tooltiptext">and those reports
+will have numbers like this.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Mais le problème : comment
+devinent-ils nos questions?<span class="tooltiptext">The problem is, how do they know
+all of our questions?</span></span>
+		<span class="tooltip">Nous en avons beaucoup.<span class="tooltiptext">We have lots of questions.</span></span>
+		<span class="tooltip">En fait, le nombre de questions 
+que nous nous posons sur notre ville<span class="tooltiptext">In fact, in some ways there&#39;s literally
+an infinite number of questions</span></span>
+		<span class="tooltip">est infini et les organismes<span class="tooltiptext">that we can ask about our city.</span></span>
+		<span class="tooltip">peinent à nous suivre.<span class="tooltiptext">The agencies can never keep up.</span></span>
+		<span class="tooltip">Cette façon de faire n&#39;est pas au point et
+je crois que nos décideurs le réalisent,<span class="tooltiptext">So the paradigm isn&#39;t exactly working,
+and I think our policymakers realize that,</span></span>
+		<span class="tooltip">car en 2012, le maire Bloomberg 
+a signé ce qu&#39;il a appelé la mesure<span class="tooltiptext">because in 2012, Mayor Bloomberg
+signed into law what he called</span></span>
+		<span class="tooltip">législative sur les données ouvertes 
+la plus ambitieuse et exhaustive au pays.<span class="tooltiptext">the most ambitious and comprehensive
+open data legislation in the country.</span></span>
+		<span class="tooltip">Il a raison à bien des égards.<span class="tooltiptext">In a lot of ways, he&#39;s right.</span></span>
+		<span class="tooltip">En deux ans, la ville a publié
+1000 jeux de données sur notre<span class="tooltiptext">In the last two years, 
+the city has released 1,000 datasets</span></span>
+		<span class="tooltip">portail des données ouvertes,<span class="tooltiptext">on our open data portal,</span></span>
+		<span class="tooltip">ce qui n&#39;est pas mal.<span class="tooltiptext">and it&#39;s pretty awesome.</span></span>
+		<span class="tooltip">Vous regardez des données comme celles-là<span class="tooltiptext">So you go and look at data like this,</span></span>
+		<span class="tooltip">et vous commencez à vous
+poser des questions qui<span class="tooltiptext">and instead of just counting
+the number of cabs,</span></span>
+		<span class="tooltip">vont au-delà du simple
+nombre de taxis.<span class="tooltiptext">we can start to ask different questions.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Moi, je me suis demandé,<span class="tooltiptext">So I had a question.</span></span>
+		<span class="tooltip">quelle est l&#39;heure de pointe à NY?<span class="tooltiptext">When&#39;s rush hour in New York City?</span></span>
+		<span class="tooltip">La réponse ne nous vient 
+pas naturellement.<span class="tooltiptext">It can be pretty bothersome.
+When is rush hour exactly?</span></span>
+		<span class="tooltip">Et je me suis dit, ces taxis sont 
+plus que des nombres,<span class="tooltiptext">And I thought to myself,
+these cabs aren&#39;t just numbers,</span></span>
+		<span class="tooltip">ils transportent des GPS qui enregistrent<span class="tooltiptext">these are GPS recorders
+driving around in our city streets</span></span>
+		<span class="tooltip">chaque course qu&#39;ils font.<span class="tooltiptext">recording each and every ride they take.</span></span>
+		<span class="tooltip">J&#39;ai donc jeté un œil à ces données,<span class="tooltiptext">There&#39;s data there,
+and I looked at that data,</span></span>
+		<span class="tooltip">et j&#39;ai tracé une courbe de la vitesse
+moyenne des taxis durant la journée.<span class="tooltiptext">and I made a plot of the average speed of
+taxis in New York City throughout the day.</span></span>
+		<span class="tooltip">Vous pouvez voir qu&#39;à partir de minuit
+jusqu&#39;à environ 5 h 18,<span class="tooltiptext">You can see that from about midnight
+to around 5:18 in the morning,</span></span>
+		<span class="tooltip">la vitesse augmente, 
+puis les choses se gâtent et<span class="tooltiptext">speed increases, and at that point,
+things turn around,</span></span>
+		<span class="tooltip">la vitesse décroît et décroît 
+et décroît jusqu&#39;à 8 h 35,<span class="tooltiptext">and they get slower and slower and slower
+until about 8:35 in the morning,</span></span>
+		<span class="tooltip">où elle se stabilise à environ
+18,5 km par heure.<span class="tooltiptext">when they end up at around
+11 and a half miles per hour.</span></span>
+		<span class="tooltip">Les taxis roulent en moyenne à 18,5 km/h
+dans les rues de notre ville,<span class="tooltiptext">The average taxi is going 11 and a half
+miles per hour on our city streets,</span></span>
+		<span class="tooltip">et leur vitesse demeure telle quelle<span class="tooltiptext">and it turns out it stays that way</span></span>
+		<span class="tooltip">toute la journée.<span class="tooltiptext">for the entire day.</span></span>
+		<span class="tooltip">(Rires)<span class="tooltiptext">(Laughter)</span></span>
+		<span class="tooltip">J&#39;en conclus donc qu&#39;il n&#39;y a pas 
+d&#39;heure de pointe à New York,<span class="tooltiptext">So I said to myself, I guess
+there&#39;s no rush hour in New York City.</span></span>
+		<span class="tooltip">mais des journées de pointe.<span class="tooltiptext">There&#39;s just a rush day.</span></span>
+		<span class="tooltip">Logique. Et c&#39;est important 
+pour diverses raisons.<span class="tooltiptext">Makes sense. And this is important
+for a couple of reasons.</span></span>
+		<span class="tooltip">Si vous travaillez dans le domaine du
+transport, c&#39;est intéressant pour vous.<span class="tooltiptext">If you&#39;re a transportation planner,
+this might be pretty interesting to know.</span></span>
+		<span class="tooltip">Et si vous êtes quelqu&#39;un de pressé,<span class="tooltiptext">But if you want to get somewhere quickly,</span></span>
+		<span class="tooltip">vous savez maintenant que vous 
+devez vous réveiller à 4 h 45.<span class="tooltiptext">you now know to set your alarm for
+4:45 in the morning and you&#39;re all set.</span></span>
+		<span class="tooltip">New York, non?<span class="tooltiptext">New York, right?</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Mais ces données
+ont elles aussi une<span class="tooltiptext">But there&#39;s a story behind this data.</span></span>
+		<span class="tooltip">histoire : elles n&#39;étaient
+publiées nulle part<span class="tooltiptext">This data wasn&#39;t
+just available, it turns out.</span></span>
+		<span class="tooltip">et ont été obtenues par suite d&#39;une
+demande faite en vertu<span class="tooltiptext">It actually came from something called
+a Freedom of Information Law Request,</span></span>
+		<span class="tooltip">de la loi del’accès à l’information.<span class="tooltiptext">or a FOIL Request.</span></span>
+		<span class="tooltip">Le formulaire pour faire une telle 
+demande est sur le site de la TLC.<span class="tooltiptext">This is a form you can find on the
+Taxi and Limousine Commission website.</span></span>
+		<span class="tooltip">Pour obtenir les données, vous
+devez le remplir, l&#39;envoyer, puis<span class="tooltiptext">In order to access this data,
+you need to go get this form,</span></span>
+		<span class="tooltip">attendre qu&#39;on communique avec nous.<span class="tooltiptext">fill it out, and they will notify you,</span></span>
+		<span class="tooltip">C&#39;est ce qu&#39;a fait Chris Whong.<span class="tooltiptext">and a guy named Chris Whong
+did exactly that.</span></span>
+		<span class="tooltip">Voici ce que le TLC lui a demandé :<span class="tooltiptext">Chris went down, and they told him,</span></span>
+		<span class="tooltip">« Apportez-nous un disque
+dur neuf. Nous y copierons<span class="tooltiptext">&quot;Just bring a brand new hard drive 
+down to our office,</span></span>
+		<span class="tooltip">les données et vous pourrez venir le 
+chercher cinq heures plus tard. »<span class="tooltiptext">leave it here for five hours,
+we&#39;ll copy the data and you take it back.&quot;</span></span>
+		<span class="tooltip">Voilà d&#39;où les données proviennent.<span class="tooltiptext">And that&#39;s where this data came from.</span></span>
+		<span class="tooltip">Chris est de ceux qui veulent
+que de telles données soient<span class="tooltiptext">Now, Chris is the kind of guy
+who wants to make the data public,</span></span>
+		<span class="tooltip">publiques, et il les a mis en ligne, 
+ce qui m&#39;a permis de faire la carte.<span class="tooltiptext">and so it ended up online for all to use,
+and that&#39;s where this graph came from.</span></span>
+		<span class="tooltip">Le fait que ces enregistrements GPS
+existent -- vraiment cool.<span class="tooltiptext">And the fact that it exists is amazing.
+These GPS recorders -- really cool.</span></span>
+		<span class="tooltip">Mais le fait que des citoyens 
+se promènent avec des disques durs<span class="tooltiptext">But the fact that we have citizens
+walking around with hard drives</span></span>
+		<span class="tooltip">pour aller chercher des données,<span class="tooltiptext">picking up data from city agencies
+to make it public --</span></span>
+		<span class="tooltip">qui en soi sont « publiques », mais<span class="tooltiptext">it was already kind of public,
+you could get to it,</span></span>
+		<span class="tooltip">qui ne sont pas rendues publiques,<span class="tooltiptext">but it was &quot;public,&quot; it wasn&#39;t public.</span></span>
+		<span class="tooltip">nous pouvons faire mieux comme ville.<span class="tooltiptext">And we can do better than that as a city.</span></span>
+		<span class="tooltip">Nul besoin que nos citoyens 
+trimbalent des disques durs.<span class="tooltiptext">We don&#39;t need our citizens
+walking around with hard drives.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Mais certaines données 
+sont déjà à disposition.<span class="tooltiptext">Now, not every dataset
+is behind a FOIL Request.</span></span>
+		<span class="tooltip">Voici une carte que j&#39;ai créée des 
+intersections de NY enregistrant le plus<span class="tooltiptext">Here is a map I made with the most
+dangerous intersections in New York City</span></span>
+		<span class="tooltip">d&#39;accidents impliquant des cyclistes.<span class="tooltiptext">based on cyclist accidents.</span></span>
+		<span class="tooltip">Les zones rouges sont
+les plus dangereuses.<span class="tooltiptext">So the red areas are more dangerous.</span></span>
+		<span class="tooltip">Ce que l&#39;on observe, c&#39;est
+que la portion est de l&#39;île,<span class="tooltiptext">And what it shows is first
+the East side of Manhattan,</span></span>
+		<span class="tooltip">particulièrement dans le sud de la 
+ville, enregistre le plus d&#39;accidents.<span class="tooltiptext">especially in the lower area of Manhattan,
+has more cyclist accidents.</span></span>
+		<span class="tooltip">Ce n&#39;est pas illogique,<span class="tooltiptext">That might make sense</span></span>
+		<span class="tooltip">car beaucoup de cyclistes 
+sortent du pont à cet endroit.<span class="tooltiptext">because there are more cyclists
+coming off the bridges there.</span></span>
+		<span class="tooltip">Mais d&#39;autres zones,
+comme Williamsburg,<span class="tooltiptext">But there&#39;s other hotspots worth studying.</span></span>
+		<span class="tooltip">Roosevelt Avenue dans Queens,
+méritent notre attention.<span class="tooltiptext">There&#39;s Williamsburg.
+There&#39;s Roosevelt Avenue in Queens.</span></span>
+		<span class="tooltip">C&#39;est le genre de données
+dont Vision Zero a besoin.<span class="tooltiptext">And this is exactly the kind of data
+we need for Vision Zero.</span></span>
+		<span class="tooltip">C&#39;est ce qui fait notre bonheur.<span class="tooltiptext">This is exactly what we&#39;re looking for.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Mais encore une fois,
+il y a une histoire<span class="tooltiptext">But there&#39;s a story
+behind this data as well.</span></span>
+		<span class="tooltip">à raconter au sujet de ces données.<span class="tooltiptext">This data didn&#39;t just appear.</span></span>
+		<span class="tooltip">Combien d&#39;entre vous connaissent ce logo?<span class="tooltiptext">How many of you guys know this logo?</span></span>
+		<span class="tooltip">Je vois des hochements de tête.<span class="tooltiptext">Yeah, I see some shakes.</span></span>
+		<span class="tooltip">Avez-vous déjà copié et
+collé des données d&#39;un PDF,<span class="tooltiptext">Have you ever tried to copy
+and paste data out of a PDF</span></span>
+		<span class="tooltip">puis essayé d&#39;y voir clair?<span class="tooltiptext">and make sense of it?</span></span>
+		<span class="tooltip">Vous l&#39;êtes apparemment.<span class="tooltiptext">I see more shakes.</span></span>
+		<span class="tooltip">Plus à avoir fait du copier-coller
+qu&#39;à reconnaître le logo. Intéressant.<span class="tooltiptext">More of you tried copying and pasting
+than knew the logo. I like that.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Les données que vous avez vues 
+se trouvaient à l&#39;origine dans un PDF.<span class="tooltiptext">So what happened is, the data
+that you just saw was actually on a PDF.</span></span>
+		<span class="tooltip">En fait, dans un PDF de 
+plusieurs centaines de pages<span class="tooltiptext">In fact, hundreds and hundreds
+and hundreds of pages of PDF</span></span>
+		<span class="tooltip">créé par notre service de police,<span class="tooltiptext">put out by our very own NYPD,</span></span>
+		<span class="tooltip">et pour pouvoir les utiliser, vous 
+deviez faire du copier-coller,<span class="tooltiptext">and in order to access it,
+you would either have to copy and paste</span></span>
+		<span class="tooltip">pendant des heures,<span class="tooltiptext">for hundreds and hundreds of hours,</span></span>
+		<span class="tooltip">ou vous appelez John Krauss.<span class="tooltiptext">or you could be John Krauss.</span></span>
+		<span class="tooltip">John Krauss s&#39;est dit,<span class="tooltiptext">John Krauss was like,</span></span>
+		<span class="tooltip">je ne vais pas copier ces données, 
+mais plutôt créer un programme,<span class="tooltiptext">I&#39;m not going to copy and paste this data.
+I&#39;m going to write a program.</span></span>
+		<span class="tooltip">le NYPD Crash Data Band-Aid,<span class="tooltiptext">It&#39;s called the NYPD Crash Data Band-Aid,</span></span>
+		<span class="tooltip">qui se promène sur le site Web du NYPD
+pour y dénicher des PDF.<span class="tooltiptext">and it goes to the NYPD&#39;s website
+and it would download PDFs.</span></span>
+		<span class="tooltip">Chaque jour, il cherche, 
+trouve et télécharge des PDF,<span class="tooltiptext">Every day it would search;
+if it found a PDF, it would download it</span></span>
+		<span class="tooltip">puis en extrait le contenu qu&#39;il<span class="tooltiptext">and then it would run
+some PDF-scraping program,</span></span>
+		<span class="tooltip">transforme en texte et<span class="tooltiptext">and out would come the text,</span></span>
+		<span class="tooltip">qu&#39;il publie sur le Web, pour que 
+l&#39;on puisse faire des cartes.<span class="tooltiptext">and it would go on the Internet,
+and then people could make maps like that.</span></span>
+		<span class="tooltip">Et le fait que nous ayons ces données --<span class="tooltiptext">And the fact that the data&#39;s here,
+the fact that we have access to it --</span></span>
+		<span class="tooltip">en passant, chaque ligne 
+du tableau est un accident.<span class="tooltiptext">Every accident, by the way,
+is a row in this table.</span></span>
+		<span class="tooltip">Vous pouvez imaginer le nombre de PDF.<span class="tooltiptext">You can imagine how many PDFs that is.</span></span>
+		<span class="tooltip">Le fait que nous y ayons 
+accès est formidable,<span class="tooltiptext">The fact that we
+have access to that is great,</span></span>
+		<span class="tooltip">mais ne les publions pas dans des PDF,<span class="tooltiptext">but let&#39;s not release it in PDF form,</span></span>
+		<span class="tooltip">car nos citoyens chercheront 
+le moyen de les en extraire.<span class="tooltiptext">because then we&#39;re having our citizens
+write PDF scrapers.</span></span>
+		<span class="tooltip">Nos citoyens n&#39;ont pas de temps à perdre,<span class="tooltiptext">It&#39;s not the best use
+of our citizens&#39; time,</span></span>
+		<span class="tooltip">et comme ville nous pouvons offrir mieux.<span class="tooltiptext">and we as a city can do better than that.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">La bonne nouvelle, c&#39;est 
+que l&#39;administration Blasio<span class="tooltiptext">Now, the good news is that
+the de Blasio administration</span></span>
+		<span class="tooltip">a publié ces données il y a quelques mois,<span class="tooltiptext">actually recently released this data
+a few months ago,</span></span>
+		<span class="tooltip">Mais beaucoup de données restent enfermées<span class="tooltiptext">and so now we can
+actually have access to it,</span></span>
+		<span class="tooltip">dans des PDF, ce qui est notamment le cas<span class="tooltiptext">but there&#39;s a lot of data
+still entombed in PDF.</span></span>
+		<span class="tooltip">des données sur les crimes.<span class="tooltiptext">For example, our crime data
+is still only available in PDF.</span></span>
+		<span class="tooltip">Tout comme du budget 
+de notre propre ville.<span class="tooltiptext">And not just our crime data,
+our own city budget.</span></span>
+		<span class="tooltip">Le budget de NY n&#39;est actuellement 
+disponible qu&#39;en format PDF.<span class="tooltiptext">Our city budget is only readable
+right now in PDF form.</span></span>
+		<span class="tooltip">Nous ne sommes pas les 
+seuls que cela embête.<span class="tooltiptext">And it&#39;s not just us
+that can&#39;t analyze it --</span></span>
+		<span class="tooltip">Nos propres législateurs, ceux 
+qui votent le budget,<span class="tooltiptext">our own legislators
+who vote for the budget</span></span>
+		<span class="tooltip">le reçoivent en PDF.<span class="tooltiptext">also only get it in PDF.</span></span>
+		<span class="tooltip">Nos législateurs ne peuvent pas 
+analyser le budget qu&#39;ils votent.<span class="tooltiptext">So our legislators cannot analyze 
+the budget that they are voting for.</span></span>
+		<span class="tooltip">Et je crois que comme ville nous 
+pouvons faire un peu mieux que cela.<span class="tooltiptext">And I think as a city we can do
+a little better than that as well.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Toutes les données ne sont
+pas cachées dans des PDF.<span class="tooltiptext">Now, there&#39;s a lot of data
+that&#39;s not hidden in PDFs.</span></span>
+		<span class="tooltip">Voici une carte que j&#39;ai faite<span class="tooltiptext">This is an example of a map I made,</span></span>
+		<span class="tooltip">des voies de navigation 
+les plus sales de New York.<span class="tooltiptext">and this is the dirtiest waterways
+in New York City.</span></span>
+		<span class="tooltip">Que veux-je dire par sale?<span class="tooltiptext">Now, how do I measure dirty?</span></span>
+		<span class="tooltip">C&#39;est quelque peu étrange,<span class="tooltiptext">Well, it&#39;s kind of a little weird,</span></span>
+		<span class="tooltip">mais j&#39;ai pris le nombre
+de coliformes fécaux,<span class="tooltiptext">but I looked at the level
+of fecal coliform,</span></span>
+		<span class="tooltip">soit la quantité de matière fécale, 
+dans chacune de nos voies d&#39;eau.<span class="tooltiptext">which is a measurement of fecal matter
+in each of our waterways.</span></span>
+		<span class="tooltip">Plus le cercle est grand, 
+plus l&#39;eau est sale,<span class="tooltiptext">The larger the circle,
+the dirtier the water,</span></span>
+		<span class="tooltip">et vice versa.
+Ce que vous voyez ce sont<span class="tooltiptext">so the large circles are dirty water,
+the small circles are cleaner.</span></span>
+		<span class="tooltip">les voies navigables intérieures.<span class="tooltiptext">What you see is inland waterways.</span></span>
+		<span class="tooltip">Il s&#39;agit de données que la ville 
+recueille depuis cinq ans.<span class="tooltiptext">This is all data that was sampled
+by the city over the last five years.</span></span>
+		<span class="tooltip">Les voies intérieures sont
+généralement plus sales,<span class="tooltiptext">And inland waterways are,
+in general, dirtier.</span></span>
+		<span class="tooltip">C&#39;est assez évident, non?<span class="tooltiptext">That makes sense, right?</span></span>
+		<span class="tooltip">Voici ce que j&#39;ai découvert
+grâce à cette carte.<span class="tooltiptext">And the bigger circles are dirty.
+And I learned a few things from this.</span></span>
+		<span class="tooltip">Premièrement, il ne faut jamais nager 
+dans un « creek » ou un « canal ».<span class="tooltiptext">Number one: Never swim in anything
+that ends in &quot;creek&quot; or &quot;canal.&quot;</span></span>
+		<span class="tooltip">Deuxièmement, la voie la plus sale
+de New York est Coney Island Creek,<span class="tooltiptext">But number two: I also found
+the dirtiest waterway in New York City,</span></span>
+		<span class="tooltip">d&#39;après cette mesure.<span class="tooltiptext">by this measure, one measure.</span></span>
+		<span class="tooltip">Ce n&#39;est heureusement pas le Coney 
+Island où vous vous baignez.<span class="tooltiptext">In Coney Island Creek, which is not
+the Coney Island you swim in, luckily.</span></span>
+		<span class="tooltip">C&#39;est de l&#39;autre côté.<span class="tooltiptext">It&#39;s on the other side.</span></span>
+		<span class="tooltip">Mais à Coney Island Creek, 94 % des 
+échantillons prélevés depuis cinq ans<span class="tooltiptext">But Coney Island Creek, 94 percent
+of samples taken over the last five years</span></span>
+		<span class="tooltip">contenaient tellement de coliformes fécaux<span class="tooltiptext">have had fecal levels so high</span></span>
+		<span class="tooltip">que les lois de l&#39;État le rendent 
+impropre à la baignade.<span class="tooltiptext">that it would be against state law
+to swim in the water.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Et ce n&#39;est pas le genre 
+de faits que les rapports<span class="tooltiptext">And this is not the kind of fact
+that you&#39;re going to see</span></span>
+		<span class="tooltip">de la ville contiennent ou qui<span class="tooltiptext">boasted in a city report, right?</span></span>
+		<span class="tooltip">figure sur la page d&#39;accueil
+du nyc.gov, non?<span class="tooltiptext">It&#39;s not going to be 
+the front page on nyc.gov.</span></span>
+		<span class="tooltip">Vous ne les y verrez pas, mais<span class="tooltiptext">You&#39;re not going to see it there,</span></span>
+		<span class="tooltip">le fait qu&#39;on puisse trouver
+ces données est génial.<span class="tooltiptext">but the fact that we can get 
+to that data is awesome.</span></span>
+		<span class="tooltip">Ici encore, ce ne fut pas facile, car<span class="tooltiptext">But once again, it wasn&#39;t super easy,</span></span>
+		<span class="tooltip">elles ne figuraient pas
+dans le portail des<span class="tooltiptext">because this data was not
+on the open data portal.</span></span>
+		<span class="tooltip">données ouvertes, où vous trouverez<span class="tooltiptext">If you were to go to the open data portal,</span></span>
+		<span class="tooltip">seulement des chiffres pour
+un an ou quelques mois.<span class="tooltiptext">you&#39;d see just a snippet of it, 
+a year or a few months.</span></span>
+		<span class="tooltip">Elles étaient plutôt sur le site 
+du DEP de la ville de NY.<span class="tooltiptext">It was actually on the Department
+of Environmental Protection&#39;s website.</span></span>
+		<span class="tooltip">Chacun de ces liens ouvre un tableur Excel
+différent, avec des titres différents.<span class="tooltiptext">And each one of these links is an Excel 
+sheet, and each Excel sheet is different.</span></span>
+		<span class="tooltip">Vous copiez, collez, réorganisez le tout,<span class="tooltiptext">Every heading is different:
+you copy, paste, reorganize.</span></span>
+		<span class="tooltip">puis faites des cartes et 
+c&#39;est bien, mais encore une fois,<span class="tooltiptext">When you do you can make maps
+and that&#39;s great, but once again,</span></span>
+		<span class="tooltip">nous pouvons faire mieux comme 
+ville et établir des normes.<span class="tooltiptext">we can do better than that 
+as a city, we can normalize things.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Et nous y arrivons par des sites 
+Web comme celui de Socrata<span class="tooltiptext">And we&#39;re getting there, because
+there&#39;s this website that Socrata makes</span></span>
+		<span class="tooltip">appelé l&#39;Open Data Portal NYC,<span class="tooltiptext">called the Open Data Portal NYC.</span></span>
+		<span class="tooltip">où 1100 jeux de données,
+qui ne souffrent pas<span class="tooltiptext">This is where 1,100 data sets 
+that don&#39;t suffer</span></span>
+		<span class="tooltip">des maux que j&#39;ai décrits se trouvent,<span class="tooltiptext">from the things I just told you live,</span></span>
+		<span class="tooltip">et leur nombre ne
+cesse de croître.<span class="tooltiptext">and that number is growing,
+and that&#39;s great.</span></span>
+		<span class="tooltip">Vous pouvez y télécharger les données
+que vous voulez dans une foule<span class="tooltiptext">You can download data in any format,
+be it CSV or PDF or Excel document.</span></span>
+		<span class="tooltip">de formats : CSV,
+PDF, XLS ou autres.<span class="tooltiptext">Whatever you want,
+you can download the data that way.</span></span>
+		<span class="tooltip">Vous découvrirez alors que<span class="tooltiptext">The problem is, once you do,</span></span>
+		<span class="tooltip">le format des adresses n&#39;est pas 
+le même d&#39;un organisme à l&#39;autre.<span class="tooltiptext">you will find that each agency
+codes their addresses differently.</span></span>
+		<span class="tooltip">L&#39;un classe ses données par rue ou par<span class="tooltiptext">So one is street name, 
+intersection street,</span></span>
+		<span class="tooltip">intersection, l&#39;autre par quartier 
+ou adresse postale.<span class="tooltiptext">street, borough, address, building,
+building address.</span></span>
+		<span class="tooltip">Même avec ce portail, vous perdez 
+du temps, car vous devez<span class="tooltiptext">So once again, you&#39;re spending time,
+even when we have this portal,</span></span>
+		<span class="tooltip">uniformiser les champs des adresses.<span class="tooltiptext">you&#39;re spending time
+normalizing our address fields.</span></span>
+		<span class="tooltip">Et nos citoyens ont d&#39;autres
+chats à fouetter.<span class="tooltiptext">And that&#39;s not the best use 
+of our citizens&#39; time.</span></span>
+		<span class="tooltip">Nous pouvons faire mieux comme ville.<span class="tooltiptext">We can do better than that as a city.</span></span>
+		<span class="tooltip">Nous pourrions normaliser nos adresses,<span class="tooltiptext">We can standardize our addresses,</span></span>
+		<span class="tooltip">ce qui nous aiderait 
+à créer plus de cartes.<span class="tooltiptext">and if we do, 
+we can get more maps like this.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">En voici une des
+bornes d&#39;incendie de NY,<span class="tooltiptext">This is a map of fire hydrants
+in New York City,</span></span>
+		<span class="tooltip">mais pas de n&#39;importe quelle borne.<span class="tooltiptext">but not just any fire hydrants.</span></span>
+		<span class="tooltip">Il s&#39;agit des 250 bornes ayant remis le
+plus grand nombre de contraventions.<span class="tooltiptext">These are the top 250 grossing fire
+hydrants in terms of parking tickets.</span></span>
+		<span class="tooltip">(Rires)<span class="tooltiptext">(Laughter)</span></span>
+		<span class="tooltip">J&#39;ai fait des découvertes 
+grâce à cette carte.<span class="tooltiptext">So I learned a few things from this map,
+and I really like this map.</span></span>
+		<span class="tooltip">Primo, ne vous garez
+pas dans l&#39;Upper East Side.<span class="tooltiptext">Number one, just don&#39;t park
+on the Upper East Side.</span></span>
+		<span class="tooltip">Peu importe où vous vous 
+garerez, vous aurez un ticket.<span class="tooltiptext">Just don&#39;t. It doesn&#39;t matter where
+you park, you will get a hydrant ticket.</span></span>
+		<span class="tooltip">J&#39;ai également trouvé les deux 
+bornes les plus lucratives pour la ville,<span class="tooltiptext">Number two, I found the two highest
+grossing hydrants in all of New York City,</span></span>
+		<span class="tooltip">deux bornes dans le Lower East Side,<span class="tooltiptext">and they&#39;re on the Lower East Side,</span></span>
+		<span class="tooltip">qui rapportent plus de 55 000 $
+par année en contraventions.<span class="tooltiptext">and they were bringing in over
+55,000 dollars a year in parking tickets.</span></span>
+		<span class="tooltip">Cela m&#39;a surpris.<span class="tooltiptext">And that seemed a little strange
+to me when I noticed it,</span></span>
+		<span class="tooltip">J&#39;ai donc fait des recherches 
+et j&#39;ai découvert<span class="tooltiptext">so I did a little digging and it turns out
+what you had is a hydrant</span></span>
+		<span class="tooltip">qu&#39;une avancée de trottoir de sept pieds<span class="tooltiptext">and then something called
+a curb extension,</span></span>
+		<span class="tooltip">sépare la place de parking<span class="tooltiptext">which is like a seven-foot
+space to walk on,</span></span>
+		<span class="tooltip">de la borne d&#39;incendie.<span class="tooltiptext">and then a parking spot.</span></span>
+		<span class="tooltip">Un conducteur arrive et se dit :<span class="tooltiptext">And so these cars came along,
+and the hydrant --</span></span>
+		<span class="tooltip">« La borne est là-bas, je suis ok. »<span class="tooltiptext">&quot;It&#39;s all the way over there, I&#39;m fine,&quot;</span></span>
+		<span class="tooltip">Il regarde les lignes de parking
+dessinées au sol et se gare.<span class="tooltiptext">and there was actually a parking spot
+painted there beautifully for them.</span></span>
+		<span class="tooltip">Les policiers, qui ne voient pas
+les choses du même œil, lui<span class="tooltiptext">They would park there, and the NYPD
+disagreed with this designation</span></span>
+		<span class="tooltip">collent une amende.<span class="tooltiptext">and would ticket them.</span></span>
+		<span class="tooltip">Je ne suis pas le seul
+à avoir remarqué cela.<span class="tooltiptext">And it wasn&#39;t just me 
+who found a parking ticket.</span></span>
+		<span class="tooltip">La voiture de Google qui passait par là<span class="tooltiptext">This is the Google 
+Street View car driving by</span></span>
+		<span class="tooltip">a photographié la scène.<span class="tooltiptext">finding the same parking ticket.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">J&#39;en ai parlé dans mon blogue I Quant NY, 
+à la suite de quoi le DOT m&#39;a répondu,<span class="tooltiptext">So I wrote about this on my blog,
+on I Quant NY, and the DOT responded,</span></span>
+		<span class="tooltip">et a déclaré :<span class="tooltiptext">and they said,</span></span>
+		<span class="tooltip">« Bien que le DOT n&#39;ait reçu
+aucune plainte au sujet de<span class="tooltiptext">&quot;While the DOT has not received
+any complaints about this location,</span></span>
+		<span class="tooltip">cet emplacement, nous allons 
+revoir le marquage au sol. »<span class="tooltiptext">we will review the roadway markings
+and make any appropriate alterations.&quot;</span></span>
+		<span class="tooltip">Je me suis dit, voilà une 
+réponse typique,<span class="tooltiptext">And I thought to myself,
+typical government response,</span></span>
+		<span class="tooltip">merci, passons à autre chose.<span class="tooltiptext">all right, moved on with my life.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Mais, quelques semaines plus tard, une
+chose extraordinaire s&#39;est produite.<span class="tooltiptext">But then, a few weeks later,
+something incredible happened.</span></span>
+		<span class="tooltip">Ils ont refait les lignes, et pendant<span class="tooltiptext">They repainted the spot,</span></span>
+		<span class="tooltip">une seconde, j&#39;ai vu l&#39;avenir
+de l&#39;ouverture des données,<span class="tooltiptext">and for a second I thought I saw
+the future of open data,</span></span>
+		<span class="tooltip">car pensez à ce qui est arrivé ici.<span class="tooltiptext">because think about what happened here.</span></span>
+		<span class="tooltip">Durant cinq ans, ceux qui se garaient-là
+recevaient un ticket sans comprendre,<span class="tooltiptext">For five years, this spot was being 
+ticketed, and it was confusing,</span></span>
+		<span class="tooltip">puis un citoyen a fait une observation,
+en a fait part à la ville et en quelques<span class="tooltiptext">and then a citizen found something,
+they told the city, and within a few weeks</span></span>
+		<span class="tooltip">semaines tout était réglé.<span class="tooltiptext">the problem was fixed.</span></span>
+		<span class="tooltip">C&#39;est formidable. Plusieurs personnes
+voient là un rôle de cerbère.<span class="tooltiptext">It&#39;s amazing. And a lot of people
+see open data as being a watchdog.</span></span>
+		<span class="tooltip">Les données sont plutôt un outil,<span class="tooltiptext">It&#39;s not, it&#39;s about being a partner.</span></span>
+		<span class="tooltip">qui nous permettent d&#39;être de vrais 
+partenaires du gouvernement,<span class="tooltiptext">We can empower our citizens
+to be better partners for government,</span></span>
+		<span class="tooltip">et ce n&#39;est pas si complexe.<span class="tooltiptext">and it&#39;s not that hard.</span></span>
+		<span class="tooltip">Peu de changements sont requis.<span class="tooltiptext">All we need are a few changes.</span></span>
+		<span class="tooltip">Si vous vous faites<span class="tooltiptext">If you&#39;re FOILing data,</span></span>
+		<span class="tooltip">régulièrement demander vos données,<span class="tooltiptext">if you&#39;re seeing your data 
+being FOILed over and over again,</span></span>
+		<span class="tooltip">rendez-les publiques, c&#39;est un signe 
+qu&#39;elles devraient l&#39;être.<span class="tooltiptext">let&#39;s release it to the public, that&#39;s
+a sign that it should be made public.</span></span>
+		<span class="tooltip">Votons aussi une loi qui 
+oblige les organismes<span class="tooltiptext">And if you&#39;re a government agency
+releasing a PDF,</span></span>
+		<span class="tooltip">gouvernementaux qui mettent en 
+ligne des PDF à joindre à ceux-ci<span class="tooltiptext">let&#39;s pass legislation that requires you
+to post it with the underlying data,</span></span>
+		<span class="tooltip">les données brutes, car
+celles-ci proviennent<span class="tooltiptext">because that data
+is coming from somewhere.</span></span>
+		<span class="tooltip">nécessairement de quelque part,<span class="tooltiptext">I don&#39;t know where, but it&#39;s
+coming from somewhere,</span></span>
+		<span class="tooltip">et devraient être accessibles.<span class="tooltiptext">and you can release it with the PDF.</span></span>
+		<span class="tooltip">Fixons des normes 
+sur les données ouvertes<span class="tooltiptext">And let&#39;s adopt and share
+some open data standards.</span></span>
+		<span class="tooltip">et uniformisons le format<span class="tooltiptext">Let&#39;s start with our addresses
+here in New York City.</span></span>
+		<span class="tooltip">des adresses de New York.<span class="tooltiptext">Let&#39;s just start
+normalizing our addresses.</span></span>
+		<span class="tooltip">Malgré tout ce que j&#39;ai dit, NY reste un<span class="tooltiptext">Because New York is a leader in open data.</span></span>
+		<span class="tooltip">leader dans le domaine 
+des données ouvertes<span class="tooltiptext">Despite all this, we are absolutely
+a leader in open data,</span></span>
+		<span class="tooltip">et si nous choisissons d&#39;établir 
+des normes en la matière<span class="tooltiptext">and if we start normalizing things,
+and set an open data standard,</span></span>
+		<span class="tooltip">d&#39;autres feront de même. L&#39;État, 
+le gouvernement fédéral, voire d&#39;autres<span class="tooltiptext">others will follow. The state will follow,
+and maybe the federal government,</span></span>
+	</p>
+	<p>
+		<span class="tooltip">pays pourraient nous suivre.<span class="tooltiptext">Other countries could follow,</span></span>
+		<span class="tooltip">Nous approchons d&#39;une ère où nous
+aurons un programme qui pourra<span class="tooltiptext">and we&#39;re not that far off from a time
+where you could write one program</span></span>
+		<span class="tooltip">créeons des cartes avec les
+données de 100 pays.<span class="tooltiptext">and map information from 100 countries.</span></span>
+		<span class="tooltip">Ce n&#39;est pas de la science fiction, 
+nous y sommes presque.<span class="tooltiptext">It&#39;s not science fiction.
+We&#39;re actually quite close.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Mais au fait, à qui donnons-nous 
+le pouvoir?<span class="tooltiptext">And by the way, who are we
+empowering with this?</span></span>
+		<span class="tooltip">Car il ne s&#39;agit pas seulement de
+John Krauss et de Chris Whong,<span class="tooltiptext">Because it&#39;s not just John Krauss
+and it&#39;s not just Chris Whong.</span></span>
+		<span class="tooltip">Il y a actuellement des 
+centaines de Meetup actifs<span class="tooltiptext">There are hundreds of meetups
+going on in New York City right now,</span></span>
+		<span class="tooltip">à New York.<span class="tooltiptext">active meetups.</span></span>
+		<span class="tooltip">Ils sont des milliers 
+à participer à ces réunions.<span class="tooltiptext">There are thousands of people
+attending these meetups.</span></span>
+		<span class="tooltip">Ils y assistent après le 
+travail et les weekends,<span class="tooltiptext">These people are going after work
+and on weekends,</span></span>
+		<span class="tooltip">pour passer en revue des 
+données et améliorer la<span class="tooltiptext">and they&#39;re attending these meetups
+to look at open data</span></span>
+		<span class="tooltip">qualité de vie dans notre ville.<span class="tooltiptext">and make our city a better place.</span></span>
+		<span class="tooltip">Des groupes comme BetaNYC, qui la
+semaine dernière a lancé citygram.nyc,<span class="tooltiptext">Groups like BetaNYC, who just last week 
+released something called citygram.nyc</span></span>
+		<span class="tooltip">où vous pouvez vous
+abonner à un bulletin des<span class="tooltiptext">that allows you to subscribe
+to 311 complaints</span></span>
+		<span class="tooltip">plaintes que la ville 
+reçoit au 311 dans un<span class="tooltiptext">around your own home,
+or around your office.</span></span>
+		<span class="tooltip">rayon autour de chez vous 
+ou de votre travail.<span class="tooltiptext">You put in your address,
+you get local complaints.</span></span>
+		<span class="tooltip">Et ce n&#39;est pas que la communauté 
+techno que cela intéresse.<span class="tooltiptext">And it&#39;s not just the tech community
+that are after these things.</span></span>
+		<span class="tooltip">Les urbanistes, mes 
+étudiants, les défenseurs<span class="tooltiptext">It&#39;s urban planners like 
+the students I teach at Pratt.</span></span>
+		<span class="tooltip">du domaine public, des citoyens<span class="tooltiptext">It&#39;s policy advocates, it&#39;s everyone,</span></span>
+		<span class="tooltip">de tous les milieux. 
+Tout le monde s&#39;y intéresse.<span class="tooltiptext">it&#39;s citizens from a diverse
+set of backgrounds.</span></span>
+		<span class="tooltip">Et tous ces petits changements progressifs<span class="tooltiptext">And with some small, incremental changes,</span></span>
+		<span class="tooltip">attisent la passion de nos
+citoyens et leur permettent<span class="tooltiptext">we can unlock the passion
+and the ability of our citizens</span></span>
+		<span class="tooltip">d&#39;utiliser des données pour 
+améliorer notre ville,<span class="tooltiptext">to harness open data
+and make our city even better,</span></span>
+		<span class="tooltip">que ce soit une donnée ou 
+une place de stationnement à la fois.<span class="tooltiptext">whether it&#39;s one dataset,
+or one parking spot at a time.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Merci.<span class="tooltiptext">Thank you.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Applaudissements)<span class="tooltiptext">(Applause)</span></span>
+	</p>
+
+	<div class="line"></div>
+	<p>Enjoying my website? Your donation helps maintain its ad-free experience and smooth operation. Your support is truly appreciated and helps me continue providing quality content. Thank you for considering a donation!</p>
+	<p>To donate, simply click the PayPal link below:<p/>
+	<p><a href="https://www.paypal.com/paypalme/otechai" target='_blank'>Donate via PayPal</a></p>
+	
+</div>
+<span onclick='topFunction()' id='gotop' title='Go to top'><svg width="32" height="32" viewBox="0 0 100 100">
+	   <path fill="white" d="m50 0c-13.262 0-25.98 5.2695-35.355 14.645s-14.645 22.094-14.645 35.355 5.2695 25.98 14.645 35.355 22.094 14.645 35.355 14.645 25.98-5.2695 35.355-14.645 14.645-22.094 14.645-35.355-5.2695-25.98-14.645-35.355-22.094-14.645-35.355-14.645zm20.832 62.5-20.832-22.457-20.625 22.457c-1.207 0.74219-2.7656 0.57812-3.7891-0.39844-1.0273-0.98047-1.2695-2.5273-0.58594-3.7695l22.918-25c0.60156-0.61328 1.4297-0.96094 2.2891-0.96094 0.86328 0 1.6914 0.34766 2.293 0.96094l22.918 25c0.88672 1.2891 0.6875 3.0352-0.47266 4.0898-1.1562 1.0508-2.9141 1.0859-4.1133 0.078125z"></path>
+	 </svg></span>
+
+	    <div class="footer">
+	        <div class="left"><a href='../../../index.html'>ReadingDB</a></div>
+	        <div class="center"><a href="https://twitter.com/readingdb" class="twitter-link">
+	    <svg class="twitter-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	        <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.58-2.11-9.96-5.02-.42.72-.66 1.56-.66 2.46 0 1.68.85 3.16 2.14 4.02-.79-.02-1.53-.24-2.18-.6v.06c0 2.35 1.67 4.31 3.88 4.76-.4.1-.83.16-1.27.16-.31 0-.62-.03-.92-.08.63 1.96 2.45 3.39 4.61 3.43-1.69 1.32-3.83 2.1-6.15 2.1-.4 0-.8-.02-1.19-.07 2.19 1.4 4.78 2.22 7.57 2.22 9.07 0 14.02-7.52 14.02-14.02 0-.21 0-.41-.01-.61.96-.69 1.79-1.56 2.45-2.55-.88.39-1.83.65-2.82.77z"/>
+	    </svg>
+	</a></div>
+	        <div class="right"><a href='https://www.paypal.com/paypalme/otechai'>Donate</a></div>
+	    </div>
+	<script>
+
+		var mybutton = document.getElementById('gotop');
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+			if (document.documentElement.scrollTop > 20 || document.body.scrollTop > 20) {
+				mybutton.style.display = 'block';
+			} else {
+				mybutton.style.display = 'none';
+			}
+		}
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<script src="../../../static/scripts/script.js"></script>
+</body>
+</html>
+	

@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+	<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<meta name="description" content="Unlock your Spanish reading skills: Immerse yourself in a contextual and practical learning enhanced by high-quality instant translations.">
+      	<meta name="keywords" content="Spanish reading, Spanish language learning, instant translations, reading adventure, improve Spanish, improve reading skills, educational platform, spanish reading resources, online education, Spanish proficiency, learn Spanish, Spanish learning resources, bilingual education, language exchange, study Spanish online">
+		<link rel="apple-touch-icon" sizes="180x180" href="../../../static/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../../../static/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../../../static/favicons/favicon-16x16.png">
+		<link rel="manifest" href="../../../static/favicons/site.webmanifest">
+		<title>Stuart Russell : 3 principles for creating safer AI</title>
+		<link rel='stylesheet' href='../../../static/styles/styles.css'>
+		<script defer data-domain="readingdb.org" src="https://plausible.io/js/script.js"></script>
+	</head>
+	<body>
+
+	<h1 class='title'>3 principles for creating safer AI</h1>
+	<h2 class='speaker'>Stuart Russell</h2>
+	<div class='transcript books'>
+	<p>Are you ready to improve your Spanish speaking skills, check <a href='https://referral.lingoda.com/6Dztrv'>Lingoda</a> today!</p>
+		<p>
+		<span class="tooltip">Voici Lee Sedol.<span class="tooltiptext">This is Lee Sedol.</span></span>
+		<span class="tooltip">Lee Sedol est l&#39;un des meilleurs
+joueurs de go au monde,<span class="tooltiptext">Lee Sedol is one of the world&#39;s
+greatest Go players,</span></span>
+		<span class="tooltip">et il vient d&#39;avoir ce que mes amis
+de Silicon Valley appellent<span class="tooltiptext">and he&#39;s having what my friends
+in Silicon Valley call</span></span>
+		<span class="tooltip">un moment « Mince alors... »<span class="tooltiptext">a &quot;Holy Cow&quot; moment --</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Rires)<span class="tooltiptext">(Laughter)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Ce moment où nous réalisons<span class="tooltiptext">a moment where we realize</span></span>
+		<span class="tooltip">que l&#39;intelligence artificielle progresse
+plus rapidement que prévu.<span class="tooltiptext">that AI is actually progressing
+a lot faster than we expected.</span></span>
+		<span class="tooltip">Les hommes ont donc perdu au jeu de go.
+Qu&#39;en est-il du monde réel ?<span class="tooltiptext">So humans have lost on the Go board.
+What about the real world?</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Eh bien, le monde réel est
+bien plus grand,<span class="tooltiptext">Well, the real world is much bigger,</span></span>
+		<span class="tooltip">plus compliqué d&#39;un plateau de go.<span class="tooltiptext">much more complicated than the Go board.</span></span>
+		<span class="tooltip">C&#39;est beaucoup moins visible<span class="tooltiptext">It&#39;s a lot less visible,</span></span>
+		<span class="tooltip">mais ça reste un problème de décision.<span class="tooltiptext">but it&#39;s still a decision problem.</span></span>
+		<span class="tooltip">Si nous pensons à certaines technologies<span class="tooltiptext">And if we think about some
+of the technologies</span></span>
+		<span class="tooltip">qui apparaissent...<span class="tooltiptext">that are coming down the pike ...</span></span>
+		<span class="tooltip">Noriko [Arai] a dit que la lecture n&#39;est
+pas encore au point pour les machines,<span class="tooltiptext">Noriko [Arai] mentioned that reading
+is not yet happening in machines,</span></span>
+		<span class="tooltip">du moins avec compréhension.<span class="tooltiptext">at least with understanding.</span></span>
+		<span class="tooltip">Mais cela se produira,<span class="tooltiptext">But that will happen,</span></span>
+		<span class="tooltip">et quand ça se produira,<span class="tooltiptext">and when that happens,</span></span>
+		<span class="tooltip">très peu de temps après,<span class="tooltiptext">very soon afterwards,</span></span>
+		<span class="tooltip">les machines liront tout
+ce que la race humaine a jamais écrit.<span class="tooltiptext">machines will have read everything
+that the human race has ever written.</span></span>
+		<span class="tooltip">Cela permettra aux machines,<span class="tooltiptext">And that will enable machines,</span></span>
+		<span class="tooltip">qui ont la capacité de voir plus loin
+que les hommes ne le peuvent,<span class="tooltiptext">along with the ability to look
+further ahead than humans can,</span></span>
+		<span class="tooltip">comme démontré avec le jeu de go,<span class="tooltiptext">as we&#39;ve already seen in Go,</span></span>
+		<span class="tooltip">si elles ont accès à plus d&#39;informations,<span class="tooltiptext">if they also have access
+to more information,</span></span>
+		<span class="tooltip">de prendre de meilleures 
+décisions dans le monde réel que nous.<span class="tooltiptext">they&#39;ll be able to make better decisions
+in the real world than we can.</span></span>
+		<span class="tooltip">Est-ce donc une bonne chose ?<span class="tooltiptext">So is that a good thing?</span></span>
+		<span class="tooltip">Eh bien, je l&#39;espère.<span class="tooltiptext">Well, I hope so.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Notre civilisation tout entière,
+tout ce que nous apprécions,<span class="tooltiptext">Our entire civilization,
+everything that we value,</span></span>
+		<span class="tooltip">est basé sur notre intelligence.<span class="tooltiptext">is based on our intelligence.</span></span>
+		<span class="tooltip">Et si nous avions accès
+à une plus large intelligence,<span class="tooltiptext">And if we had access
+to a lot more intelligence,</span></span>
+		<span class="tooltip">alors il n&#39;y aurait aucune limite
+à ce que la race humaine peut faire.<span class="tooltiptext">then there&#39;s really no limit
+to what the human race can do.</span></span>
+		<span class="tooltip">Je pense que cela pourrait être,
+comme certains l&#39;ont décrit,<span class="tooltiptext">And I think this could be,
+as some people have described it,</span></span>
+		<span class="tooltip">le plus grand moment
+de l&#39;histoire humaine.<span class="tooltiptext">the biggest event in human history.</span></span>
+		<span class="tooltip">Alors, pourquoi les gens
+racontent-ils des choses comme :<span class="tooltiptext">So why are people saying things like this,</span></span>
+		<span class="tooltip">« l&#39;IA pourrait signifier
+la fin de la race humaine ? »<span class="tooltiptext">that AI might spell the end
+of the human race?</span></span>
+		<span class="tooltip">Est-ce une chose nouvelle ?<span class="tooltiptext">Is this a new thing?</span></span>
+		<span class="tooltip">Cela ne concerne-t-il qu&#39; Elon Musk, 
+Bill Gates et Stephen Hawking ?<span class="tooltiptext">Is it just Elon Musk and Bill Gates
+and Stephen Hawking?</span></span>
+	</p>
+	<p>
+		<span class="tooltip">En fait, non.
+Cette idée existe depuis un moment.<span class="tooltiptext">Actually, no. This idea
+has been around for a while.</span></span>
+		<span class="tooltip">Voici une citation :<span class="tooltiptext">Here&#39;s a quotation:</span></span>
+		<span class="tooltip">« Même si nous pouvions garder les
+machines dans une position subalterne,<span class="tooltiptext">&quot;Even if we could keep the machines
+in a subservient position,</span></span>
+		<span class="tooltip">par exemple, en coupant
+l&#39;énergie à des moments stratégiques... »<span class="tooltiptext">for instance, by turning off the power
+at strategic moments&quot; --</span></span>
+		<span class="tooltip">et je reviendrai sur cette idée
+de « couper l&#39;énergie » plus tard...<span class="tooltiptext">and I&#39;ll come back to that
+&quot;turning off the power&quot; idea later on --</span></span>
+		<span class="tooltip">« Nous devrions, en tant qu&#39;espèce,
+faire preuve d&#39;humilité. »<span class="tooltiptext">&quot;we should, as a species,
+feel greatly humbled.&quot;</span></span>
+		<span class="tooltip">Donc qui a dit ça ?
+C&#39;est Alan Turing en 1951.<span class="tooltiptext">So who said this?
+This is Alan Turing in 1951.</span></span>
+		<span class="tooltip">Alan Turing, vous le savez,
+est le père de l&#39;informatique<span class="tooltiptext">Alan Turing, as you know,
+is the father of computer science</span></span>
+		<span class="tooltip">et à bien des égards,
+le père de l&#39;IA également.<span class="tooltiptext">and in many ways,
+the father of AI as well.</span></span>
+		<span class="tooltip">Si nous pensons à ce problème,<span class="tooltiptext">So if we think about this problem,</span></span>
+		<span class="tooltip">celui de créer quelque chose de plus
+intelligent que notre propre espèce,<span class="tooltiptext">the problem of creating something
+more intelligent than your own species,</span></span>
+		<span class="tooltip">appelons cela
+« le problème du gorille »,<span class="tooltiptext">we might call this &quot;the gorilla problem,&quot;</span></span>
+		<span class="tooltip">parce que leurs ancêtres ont vécu cela
+il y a quelques millions d&#39;années,<span class="tooltiptext">because gorillas&#39; ancestors did this
+a few million years ago,</span></span>
+		<span class="tooltip">nous pouvons donc leur demander :<span class="tooltiptext">and now we can ask the gorillas:</span></span>
+		<span class="tooltip">« Était-ce une bonne idée ? »<span class="tooltiptext">Was this a good idea?</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Donc, ils ont eu une réunion
+pour savoir si c&#39;était une bonne idée<span class="tooltiptext">So here they are having a meeting
+to discuss whether it was a good idea,</span></span>
+		<span class="tooltip">et après un petit moment,
+ils conclurent que non,<span class="tooltiptext">and after a little while,
+they conclude, no,</span></span>
+		<span class="tooltip">c&#39;était une mauvaise idée.<span class="tooltiptext">this was a terrible idea.</span></span>
+		<span class="tooltip">« Notre espèce est en difficulté. »<span class="tooltiptext">Our species is in dire straits.</span></span>
+		<span class="tooltip">En fait, vous pouvez voir de la tristesse
+existentielle dans leurs yeux.<span class="tooltiptext">In fact, you can see the existential
+sadness in their eyes.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Rires)<span class="tooltiptext">(Laughter)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Ce sentiment gênant d&#39;avoir créé
+quelque chose de plus intelligent<span class="tooltiptext">So this queasy feeling that making
+something smarter than your own species</span></span>
+		<span class="tooltip">que votre propre espèce alors que
+ce n&#39;est peut-être pas une bonne idée...<span class="tooltiptext">is maybe not a good idea --</span></span>
+		<span class="tooltip">« Que pouvons-nous y faire ? »<span class="tooltiptext">what can we do about that?</span></span>
+		<span class="tooltip">Eh bien, rien,
+sauf abandonner l&#39;IA.<span class="tooltiptext">Well, really nothing,
+except stop doing AI,</span></span>
+		<span class="tooltip">Mais à cause de tous les avantages
+que j&#39;ai mentionnés<span class="tooltiptext">and because of all
+the benefits that I mentioned</span></span>
+		<span class="tooltip">et parce que je suis chercheur en IA,<span class="tooltiptext">and because I&#39;m an AI researcher,</span></span>
+		<span class="tooltip">je ne peux m&#39;y résoudre.<span class="tooltiptext">I&#39;m not having that.</span></span>
+		<span class="tooltip">Je veux réellement continuer
+à travailler sur l&#39;IA.<span class="tooltiptext">I actually want to be able
+to keep doing AI.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Nous avons besoin de définir
+un peu plus le problème.<span class="tooltiptext">So we actually need to nail down
+the problem a bit more.</span></span>
+		<span class="tooltip">Quel est donc le problème ?<span class="tooltiptext">What exactly is the problem?</span></span>
+		<span class="tooltip">Pourquoi une meilleure IA
+pourrait être une catastrophe ?<span class="tooltiptext">Why is better AI possibly a catastrophe?</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Voici une autre citation :<span class="tooltiptext">So here&#39;s another quotation:</span></span>
+		<span class="tooltip">« Nous devrions être certains
+que l&#39;objectif introduit dans la machine<span class="tooltiptext">&quot;We had better be quite sure
+that the purpose put into the machine</span></span>
+		<span class="tooltip">est bien l&#39;objectif que nous souhaitons. »<span class="tooltiptext">is the purpose which we really desire.&quot;</span></span>
+		<span class="tooltip">C&#39;est une citation de 
+Norbert Wienner en 1960,<span class="tooltiptext">This was said by Norbert Wiener in 1960,</span></span>
+		<span class="tooltip">peu après qu&#39;il a observé
+l&#39;un des premiers systèmes d&#39;apprentissage<span class="tooltiptext">shortly after he watched
+one of the very early learning systems</span></span>
+		<span class="tooltip">apprendre à mieux jouer aux échecs
+que son créateur.<span class="tooltiptext">learn to play checkers
+better than its creator.</span></span>
+		<span class="tooltip">Mais ça aurait aussi pu être<span class="tooltiptext">But this could equally have been said</span></span>
+		<span class="tooltip">le roi Midas, qui a dit :<span class="tooltiptext">by King Midas.</span></span>
+		<span class="tooltip">« Je souhaite que tout
+ce que je touche se transforme en or »<span class="tooltiptext">King Midas said, &quot;I want everything
+I touch to turn to gold,&quot;</span></span>
+		<span class="tooltip">et qui a obtenu exactement
+ce qu&#39;il avait demandé.<span class="tooltiptext">and he got exactly what he asked for.</span></span>
+		<span class="tooltip">C&#39;était l&#39;objectif
+qu&#39;il a introduit dans la machine,<span class="tooltiptext">That was the purpose
+that he put into the machine,</span></span>
+		<span class="tooltip">pour ainsi dire.<span class="tooltiptext">so to speak,</span></span>
+		<span class="tooltip">Sa nourriture, sa boisson et
+sa famille se sont alors changées en or.<span class="tooltiptext">and then his food and his drink
+and his relatives turned to gold</span></span>
+		<span class="tooltip">Il est mort de faim dans la misère.<span class="tooltiptext">and he died in misery and starvation.</span></span>
+		<span class="tooltip">Nous appellerons ça
+« le problème du roi Midas »,<span class="tooltiptext">So we&#39;ll call this
+&quot;the King Midas problem&quot;</span></span>
+		<span class="tooltip">le fait de déclarer un objectif
+qui n&#39;est pas, en fait,<span class="tooltiptext">of stating an objective
+which is not, in fact,</span></span>
+		<span class="tooltip">en adéquation avec ce que nous voulons.<span class="tooltiptext">truly aligned with what we want.</span></span>
+		<span class="tooltip">Aujourd&#39;hui, nous appelons cela 
+« un problème d&#39;alignement de valeur ».<span class="tooltiptext">In modern terms, we call this
+&quot;the value alignment problem.&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Établir le mauvais objectif
+n&#39;est qu&#39;une partie du problème.<span class="tooltiptext">Putting in the wrong objective
+is not the only part of the problem.</span></span>
+		<span class="tooltip">Il en existe une autre.<span class="tooltiptext">There&#39;s another part.</span></span>
+		<span class="tooltip">Si vous introduisez un objectif
+dans une machine,<span class="tooltiptext">If you put an objective into a machine,</span></span>
+		<span class="tooltip">même une chose
+simple comme « acheter du café »,<span class="tooltiptext">even something as simple as,
+&quot;Fetch the coffee,&quot;</span></span>
+		<span class="tooltip">la machine se dit :<span class="tooltiptext">the machine says to itself,</span></span>
+		<span class="tooltip">« Comment pourrais-je échouer
+à apporter du café ?<span class="tooltiptext">&quot;Well, how might I fail
+to fetch the coffee?</span></span>
+		<span class="tooltip">Quelqu&#39;un pourrait m&#39;éteindre.<span class="tooltiptext">Someone might switch me off.</span></span>
+		<span class="tooltip">Alors, je dois prendre
+des mesures pour éviter cela.<span class="tooltiptext">OK, I have to take steps to prevent that.</span></span>
+		<span class="tooltip">Je vais désactiver mon interrupteur.<span class="tooltiptext">I will disable my &#39;off&#39; switch.</span></span>
+		<span class="tooltip">Je ferai tout pour me défendre
+contre les interférences<span class="tooltiptext">I will do anything to defend myself
+against interference</span></span>
+		<span class="tooltip">contre l&#39;objectif
+qu&#39;on m&#39;a donné. »<span class="tooltiptext">with this objective
+that I have been given.&quot;</span></span>
+		<span class="tooltip">Cette quête obsessionnelle,<span class="tooltiptext">So this single-minded pursuit</span></span>
+		<span class="tooltip">avec une attitude très défensive
+envers un objectif qui n&#39;est, en fait,<span class="tooltiptext">in a very defensive mode
+of an objective that is, in fact,</span></span>
+		<span class="tooltip">pas aligné sur les vrais objectifs
+de la race humaine...<span class="tooltiptext">not aligned with the true objectives
+of the human race --</span></span>
+		<span class="tooltip">C&#39;est le problème auquel
+nous sommes confrontés.<span class="tooltiptext">that&#39;s the problem that we face.</span></span>
+		<span class="tooltip">Et c&#39;est aussi la notion importante
+à retenir de cette présentation.<span class="tooltiptext">And in fact, that&#39;s the high-value
+takeaway from this talk.</span></span>
+		<span class="tooltip">Si vous ne devez retenir qu&#39;une chose,<span class="tooltiptext">If you want to remember one thing,</span></span>
+		<span class="tooltip">c&#39;est que vous ne pourrez pas aller
+chercher le café si vous êtes mort.<span class="tooltiptext">it&#39;s that you can&#39;t fetch
+the coffee if you&#39;re dead.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Rires)<span class="tooltiptext">(Laughter)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">C&#39;est très simple. Rappelez-vous de cela.
+Répétez-le-vous trois fois par jour.<span class="tooltiptext">It&#39;s very simple. Just remember that.
+Repeat it to yourself three times a day.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Rires)<span class="tooltiptext">(Laughter)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">En fait, c&#39;est exactement l&#39;intrigue<span class="tooltiptext">And in fact, this is exactly the plot</span></span>
+		<span class="tooltip">de « 2001, l&#39;Odyssée de l&#39;espace. »<span class="tooltiptext">of &quot;2001: [A Space Odyssey]&quot;</span></span>
+		<span class="tooltip">HAL a un objectif, une mission,<span class="tooltiptext">HAL has an objective, a mission,</span></span>
+		<span class="tooltip">qui n&#39;est pas en adéquation
+avec les objectifs des êtres humains<span class="tooltiptext">which is not aligned
+with the objectives of the humans,</span></span>
+		<span class="tooltip">et cela conduit à ce conflit.<span class="tooltiptext">and that leads to this conflict.</span></span>
+		<span class="tooltip">Heureusement, HAL
+n&#39;est pas super-intelligent.<span class="tooltiptext">Now fortunately, HAL
+is not superintelligent.</span></span>
+		<span class="tooltip">Il est assez malin,
+mais finalement Dave le surpasse<span class="tooltiptext">He&#39;s pretty smart,
+but eventually Dave outwits him</span></span>
+		<span class="tooltip">et parvient à l&#39;éteindre.<span class="tooltiptext">and manages to switch him off.</span></span>
+		<span class="tooltip">Nous pourrions avoir moins de chance.<span class="tooltiptext">But we might not be so lucky.</span></span>
+		<span class="tooltip">Alors qu&#39;allons-nous faire ?<span class="tooltiptext">So what are we going to do?</span></span>
+	</p>
+	<p>
+		<span class="tooltip">J&#39;essaie de redéfinir l&#39;IA,<span class="tooltiptext">I&#39;m trying to redefine AI</span></span>
+		<span class="tooltip">afin de nous éloigner
+de cette notion classique<span class="tooltiptext">to get away from this classical notion</span></span>
+		<span class="tooltip">de machines qui poursuivent
+leurs objectifs de manière intelligente.<span class="tooltiptext">of machines that intelligently
+pursue objectives.</span></span>
+		<span class="tooltip">Cela repose sur trois principes.<span class="tooltiptext">There are three principles involved.</span></span>
+		<span class="tooltip">Le premier est un principe d&#39;altruisme,
+si vous voulez.<span class="tooltiptext">The first one is a principle
+of altruism, if you like,</span></span>
+		<span class="tooltip">L&#39;unique objectif du robot<span class="tooltiptext">that the robot&#39;s only objective</span></span>
+		<span class="tooltip">est de maximiser la réalisation
+des objectifs des êtres humains,<span class="tooltiptext">is to maximize the realization
+of human objectives,</span></span>
+		<span class="tooltip">des valeurs humaines.<span class="tooltiptext">of human values.</span></span>
+		<span class="tooltip">Je ne parle pas de celles qui sont
+sentimentales ou sainte-nitouche.<span class="tooltiptext">And by values here I don&#39;t mean
+touchy-feely, goody-goody values.</span></span>
+		<span class="tooltip">Je parle de la vie que
+les êtres humains voudraient<span class="tooltiptext">I just mean whatever it is
+that the human would prefer</span></span>
+		<span class="tooltip">par n&#39;importe quels moyens.<span class="tooltiptext">their life to be like.</span></span>
+		<span class="tooltip">Cela viole la loi d&#39;Asimov,
+selon laquelle<span class="tooltiptext">And so this actually violates Asimov&#39;s law</span></span>
+		<span class="tooltip">le robot doit protéger
+sa propre existence.<span class="tooltiptext">that the robot has to protect
+its own existence.</span></span>
+		<span class="tooltip">Il n&#39;a aucun intérêt
+à préserver son existence.<span class="tooltiptext">It has no interest in preserving
+its existence whatsoever.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">La deuxième loi est une loi d&#39;humilité,
+si vous préférez.<span class="tooltiptext">The second law is a law
+of humility, if you like.</span></span>
+		<span class="tooltip">Elle s&#39;avère très importante
+afin de rendre le robot inoffensif.<span class="tooltiptext">And this turns out to be really
+important to make robots safe.</span></span>
+		<span class="tooltip">L&#39;idée, c&#39;est que le robot ne sait pas<span class="tooltiptext">It says that the robot does not know</span></span>
+		<span class="tooltip">ce que sont les valeurs humaines.<span class="tooltiptext">what those human values are,</span></span>
+		<span class="tooltip">Il doit les maximiser,
+mais il ne sait pas ce qu&#39;elles sont.<span class="tooltiptext">so it has to maximize them,
+but it doesn&#39;t know what they are.</span></span>
+		<span class="tooltip">Pour éviter une quête obsessionnelle<span class="tooltiptext">And that avoids this problem
+of single-minded pursuit</span></span>
+		<span class="tooltip">d&#39;un objectif,<span class="tooltiptext">of an objective.</span></span>
+		<span class="tooltip">cette incertitude s&#39;avère cruciale.<span class="tooltiptext">This uncertainty turns out to be crucial.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Mais pour nous être utiles,<span class="tooltiptext">Now, in order to be useful to us,</span></span>
+		<span class="tooltip">il doit avoir une idée de nos désirs.<span class="tooltiptext">it has to have some idea of what we want.</span></span>
+		<span class="tooltip">Il obtient cette information surtout
+par l&#39;observation des choix humains.<span class="tooltiptext">It obtains that information primarily
+by observation of human choices,</span></span>
+		<span class="tooltip">Ces choix révèlent donc des informations<span class="tooltiptext">so our own choices reveal information</span></span>
+		<span class="tooltip">quant à ce que nous désirons
+pour notre vie.<span class="tooltiptext">about what it is that we prefer
+our lives to be like.</span></span>
+		<span class="tooltip">Ce sont donc les trois principes.<span class="tooltiptext">So those are the three principles.</span></span>
+		<span class="tooltip">Voyons comment cela s&#39;applique
+à la question<span class="tooltiptext">Let&#39;s see how that applies
+to this question of:</span></span>
+		<span class="tooltip">de Turing :
+« Pouvez-vous éteindre la machine ? »<span class="tooltiptext">&quot;Can you switch the machine off?&quot;
+as Turing suggested.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Voici un robot PR2.<span class="tooltiptext">So here&#39;s a PR2 robot.</span></span>
+		<span class="tooltip">C&#39;est celui que nous avons au laboratoire<span class="tooltiptext">This is one that we have in our lab,</span></span>
+		<span class="tooltip">Il possède un gros interrupteur rouge
+directement sur le dos.<span class="tooltiptext">and it has a big red &quot;off&quot; switch
+right on the back.</span></span>
+		<span class="tooltip">La question est :
+« Va-t-il nous laisser l&#39;éteindre ? »<span class="tooltiptext">The question is: Is it
+going to let you switch it off?</span></span>
+		<span class="tooltip">Selon la méthode classique,<span class="tooltiptext">If we do it the classical way,</span></span>
+		<span class="tooltip">nous lui donnons pour objectif de
+« chercher du café,<span class="tooltiptext">we give it the objective of, &quot;Fetch
+the coffee, I must fetch the coffee,</span></span>
+		<span class="tooltip">je dois aller chercher du café,
+je ne peux pas y aller si je suis mort. »<span class="tooltiptext">I can&#39;t fetch the coffee if I&#39;m dead,&quot;</span></span>
+		<span class="tooltip">Alors, évidemment, le PR2
+a écouté ma présentation<span class="tooltiptext">so obviously the PR2
+has been listening to my talk,</span></span>
+		<span class="tooltip">et il se dit :
+« Je dois désactiver mon interrupteur<span class="tooltiptext">and so it says, therefore,
+&quot;I must disable my &#39;off&#39; switch,</span></span>
+		<span class="tooltip">et tirer sur toutes les autres
+personnes dans le Starbucks<span class="tooltiptext">and probably taser all the other
+people in Starbucks</span></span>
+		<span class="tooltip">qui pourraient interférer avec moi. »<span class="tooltiptext">who might interfere with me.&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Rires)<span class="tooltiptext">(Laughter)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Cela semble inévitable, n&#39;est-ce pas ?<span class="tooltiptext">So this seems to be inevitable, right?</span></span>
+		<span class="tooltip">Ce genre d&#39;échec
+semble être inévitable<span class="tooltiptext">This kind of failure mode
+seems to be inevitable,</span></span>
+		<span class="tooltip">et résulte de
+l&#39;objectif concret et défini.<span class="tooltiptext">and it follows from having
+a concrete, definite objective.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Qu&#39;arrive-t-il si la machine
+ne connaît pas l&#39;objectif ?<span class="tooltiptext">So what happens if the machine
+is uncertain about the objective?</span></span>
+		<span class="tooltip">Eh bien, elle raisonne différemment.<span class="tooltiptext">Well, it reasons in a different way.</span></span>
+		<span class="tooltip">Elle se dit :
+« OK, l&#39;humain pourrait m&#39;éteindre,<span class="tooltiptext">It says, &quot;OK, the human
+might switch me off,</span></span>
+		<span class="tooltip">si je fais ce qui ne va pas.<span class="tooltiptext">but only if I&#39;m doing something wrong.</span></span>
+		<span class="tooltip">Eh bien, je ne sais pas vraiment
+ce qui est mal,<span class="tooltiptext">Well, I don&#39;t really know what wrong is,</span></span>
+		<span class="tooltip">mais je sais
+que je ne veux pas le faire. »<span class="tooltiptext">but I know that I don&#39;t want to do it.&quot;</span></span>
+		<span class="tooltip">Voilà le premier et le deuxième principes.<span class="tooltiptext">So that&#39;s the first and second
+principles right there.</span></span>
+		<span class="tooltip">« Je devrais donc laisser
+l&#39;humain m&#39;éteindre. »<span class="tooltiptext">&quot;So I should let the human switch me off.&quot;</span></span>
+		<span class="tooltip">En fait, vous pouvez calculer
+l&#39;incitation que le robot a<span class="tooltiptext">And in fact you can calculate
+the incentive that the robot has</span></span>
+		<span class="tooltip">à se laisser éteindre.<span class="tooltiptext">to allow the human to switch it off,</span></span>
+		<span class="tooltip">C&#39;est directement lié au degré<span class="tooltiptext">and it&#39;s directly tied to the degree</span></span>
+		<span class="tooltip">d&#39;incertitude de
+l&#39;objectif sous-jacent.<span class="tooltiptext">of uncertainty about
+the underlying objective.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Et c&#39;est lorsque la machine est éteinte<span class="tooltiptext">And then when the machine is switched off,</span></span>
+		<span class="tooltip">que ce troisième principe
+entre en jeu.<span class="tooltiptext">that third principle comes into play.</span></span>
+		<span class="tooltip">Elle apprend des choses sur
+les objectifs qu&#39;elle doit poursuivre<span class="tooltiptext">It learns something about the objectives
+it should be pursuing,</span></span>
+		<span class="tooltip">en constatant que ce qu&#39;elle a fait
+n&#39;était pas bien.<span class="tooltiptext">because it learns that
+what it did wasn&#39;t right.</span></span>
+		<span class="tooltip">En fait, avec une utilisation
+appropriée des symboles grecs,<span class="tooltiptext">In fact, we can, with suitable use
+of Greek symbols,</span></span>
+		<span class="tooltip">comme le font souvent les mathématiciens,<span class="tooltiptext">as mathematicians usually do,</span></span>
+		<span class="tooltip">nous pouvons prouver un théorème<span class="tooltiptext">we can actually prove a theorem</span></span>
+		<span class="tooltip">qui dit qu&#39;un tel robot
+est manifestement bénéfique pour l&#39;humain.<span class="tooltiptext">that says that such a robot
+is provably beneficial to the human.</span></span>
+		<span class="tooltip">Vous êtes probablement mieux
+avec une machine conçue de cette façon<span class="tooltiptext">You are provably better off
+with a machine that&#39;s designed in this way</span></span>
+		<span class="tooltip">que sans.<span class="tooltiptext">than without it.</span></span>
+		<span class="tooltip">C&#39;est donc un exemple très simple,
+mais c&#39;est la première étape<span class="tooltiptext">So this is a very simple example,
+but this is the first step</span></span>
+		<span class="tooltip">dans ce que nous essayons de faire avec
+l&#39;IA compatible avec les êtres humains.<span class="tooltiptext">in what we&#39;re trying to do
+with human-compatible AI.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Quant au troisième principe,<span class="tooltiptext">Now, this third principle,</span></span>
+		<span class="tooltip">je pense que vous êtes en train
+de vous gratter la tête à ce sujet.<span class="tooltiptext">I think is the one that you&#39;re probably
+scratching your head over.</span></span>
+		<span class="tooltip">Vous pensez probablement :
+« Eh bien, vous savez, je me comporte mal.<span class="tooltiptext">You&#39;re probably thinking, &quot;Well,
+you know, I behave badly.</span></span>
+		<span class="tooltip">Je ne veux pas que mon robot
+se comporte comme moi.<span class="tooltiptext">I don&#39;t want my robot to behave like me.</span></span>
+		<span class="tooltip">Je me faufile au milieu de la nuit
+et je picore dans le frigo.<span class="tooltiptext">I sneak down in the middle of the night
+and take stuff from the fridge.</span></span>
+		<span class="tooltip">Je fais ceci et cela. »<span class="tooltiptext">I do this and that.&quot;</span></span>
+		<span class="tooltip">Il y a plein de choses
+que vous ne voulez pas qu&#39;un robot fasse.<span class="tooltiptext">There&#39;s all kinds of things
+you don&#39;t want the robot doing.</span></span>
+		<span class="tooltip">Mais cela ne fonctionne pas ainsi.<span class="tooltiptext">But in fact, it doesn&#39;t
+quite work that way.</span></span>
+		<span class="tooltip">Votre mauvais comportement<span class="tooltiptext">Just because you behave badly</span></span>
+		<span class="tooltip">ne va pas inciter le robot
+à vous copier.<span class="tooltiptext">doesn&#39;t mean the robot
+is going to copy your behavior.</span></span>
+		<span class="tooltip">Il va comprendre vos motivations
+et peut-être vous aider à résister,<span class="tooltiptext">It&#39;s going to understand your motivations
+and maybe help you resist them,</span></span>
+		<span class="tooltip">le cas échéant.<span class="tooltiptext">if appropriate.</span></span>
+		<span class="tooltip">Mais ça restera difficile.<span class="tooltiptext">But it&#39;s still difficult.</span></span>
+		<span class="tooltip">Ce que nous essayons de faire,
+en fait, c&#39;est de permettre<span class="tooltiptext">What we&#39;re trying to do, in fact,</span></span>
+		<span class="tooltip">aux machines de se demander,
+pour toute personne et<span class="tooltiptext">is to allow machines to predict
+for any person and for any possible life</span></span>
+		<span class="tooltip">pour toute vie qu&#39;ils pourraient vivre<span class="tooltiptext">that they could live,</span></span>
+		<span class="tooltip">et les vies de tous les autres :<span class="tooltiptext">and the lives of everybody else:</span></span>
+		<span class="tooltip">« Laquelle préfèreraient-ils ? »<span class="tooltiptext">Which would they prefer?</span></span>
+		<span class="tooltip">Et cela engendre
+beaucoup, beaucoup de difficultés.<span class="tooltiptext">And there are many, many
+difficulties involved in doing this;</span></span>
+		<span class="tooltip">Je ne m&#39;attends pas à ce que nous
+résolvions cela très rapidement.<span class="tooltiptext">I don&#39;t expect that this
+is going to get solved very quickly.</span></span>
+		<span class="tooltip">Le vrai problème, en fait, c&#39;est nous.<span class="tooltiptext">The real difficulties, in fact, are us.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Comme je l&#39;ai déjà mentionné,
+nous nous comportons mal.<span class="tooltiptext">As I have already mentioned,
+we behave badly.</span></span>
+		<span class="tooltip">Certains d&#39;entre nous sont
+même foncièrement méchants.<span class="tooltiptext">In fact, some of us are downright nasty.</span></span>
+		<span class="tooltip">Le robot, comme je l&#39;ai dit, n&#39;est pas
+obligé de copier ce comportement.<span class="tooltiptext">Now the robot, as I said,
+doesn&#39;t have to copy the behavior.</span></span>
+		<span class="tooltip">Il n&#39;a aucun objectif propre.<span class="tooltiptext">The robot does not have
+any objective of its own.</span></span>
+		<span class="tooltip">Il est purement altruiste.<span class="tooltiptext">It&#39;s purely altruistic.</span></span>
+		<span class="tooltip">Il ne doit pas uniquement satisfaire
+les désirs d&#39;une personne, l&#39;utilisateur,<span class="tooltiptext">And it&#39;s not designed just to satisfy
+the desires of one person, the user,</span></span>
+		<span class="tooltip">mais, en fait, il doit respecter
+les préférences de tous.<span class="tooltiptext">but in fact it has to respect
+the preferences of everybody.</span></span>
+		<span class="tooltip">Il peut donc faire face
+à une certaine négligence.<span class="tooltiptext">So it can deal with a certain
+amount of nastiness,</span></span>
+		<span class="tooltip">Il peut même comprendre
+votre malveillance, par exemple,<span class="tooltiptext">and it can even understand
+that your nastiness, for example,</span></span>
+		<span class="tooltip">si vous acceptez des pots-de-vin en tant
+que préposé aux passeports<span class="tooltiptext">you may take bribes as a passport official</span></span>
+		<span class="tooltip">afin de nourrir votre famille
+et envoyer vos enfants à l&#39;école.<span class="tooltiptext">because you need to feed your family
+and send your kids to school.</span></span>
+		<span class="tooltip">Il peut comprendre cela, ce qui ne
+signifie pas qu&#39;il va se mettre à voler.<span class="tooltiptext">It can understand that;
+it doesn&#39;t mean it&#39;s going to steal.</span></span>
+		<span class="tooltip">En fait, il vous aidera
+à envoyer vos enfants à l&#39;école.<span class="tooltiptext">In fact, it&#39;ll just help you
+send your kids to school.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Nous sommes limités
+par la puissance de calcul.<span class="tooltiptext">We are also computationally limited.</span></span>
+		<span class="tooltip">Lee Sedol est un brillant joueur de go,<span class="tooltiptext">Lee Sedol is a brilliant Go player,</span></span>
+		<span class="tooltip">mais il a quand même perdu.<span class="tooltiptext">but he still lost.</span></span>
+		<span class="tooltip">Si on regarde ses actions, il a pris
+une décision qui lui a coûté le match.<span class="tooltiptext">So if we look at his actions,
+he took an action that lost the game.</span></span>
+		<span class="tooltip">Ça ne veut pas dire qu&#39;il voulait perdre.<span class="tooltiptext">That doesn&#39;t mean he wanted to lose.</span></span>
+		<span class="tooltip">Pour comprendre son comportement,<span class="tooltiptext">So to understand his behavior,</span></span>
+		<span class="tooltip">nous devons l&#39;observer à travers 
+un modèle de cognition humaine<span class="tooltiptext">we actually have to invert
+through a model of human cognition</span></span>
+		<span class="tooltip">qui inclut nos limites en calcul.
+Un modèle très compliqué.<span class="tooltiptext">that includes our computational
+limitations -- a very complicated model.</span></span>
+		<span class="tooltip">Ça demande un effort,
+mais nous pouvons le comprendre.<span class="tooltiptext">But it&#39;s still something
+that we can work on understanding.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Ce qui est le plus difficile,
+de mon point de vue de chercheur en IA,<span class="tooltiptext">Probably the most difficult part,
+from my point of view as an AI researcher,</span></span>
+		<span class="tooltip">c&#39;est le fait que nous sommes si nombreux.<span class="tooltiptext">is the fact that there are lots of us,</span></span>
+		<span class="tooltip">La machine doit faire des choix, 
+évaluer les préférences<span class="tooltiptext">and so the machine has to somehow
+trade off, weigh up the preferences</span></span>
+		<span class="tooltip">d&#39;un grand nombre
+de personnes différentes<span class="tooltiptext">of many different people,</span></span>
+		<span class="tooltip">et il existe différentes
+façons de le faire.<span class="tooltiptext">and there are different ways to do that.</span></span>
+		<span class="tooltip">Les économistes, les sociologues,
+les philosophes l&#39;ont bien compris<span class="tooltiptext">Economists, sociologists,
+moral philosophers have understood that,</span></span>
+		<span class="tooltip">et nous cherchons activement
+leur collaboration.<span class="tooltiptext">and we are actively
+looking for collaboration.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Voyons ce qui se passe
+lorsque vous avez un problème.<span class="tooltiptext">Let&#39;s have a look and see what happens
+when you get that wrong.</span></span>
+		<span class="tooltip">Vous pouvez discuter,
+par exemple,<span class="tooltiptext">So you can have
+a conversation, for example,</span></span>
+		<span class="tooltip">avec votre assistant personnel intelligent<span class="tooltiptext">with your intelligent personal assistant</span></span>
+		<span class="tooltip">qui pourrait être disponible
+dans quelques années.<span class="tooltiptext">that might be available
+in a few years&#39; time.</span></span>
+		<span class="tooltip">Pensez à un Siri sous stéroïdes.<span class="tooltiptext">Think of a Siri on steroids.</span></span>
+		<span class="tooltip">Siri dit : « Votre femme a appelé
+pour vous rappeler le dîner de ce soir. »<span class="tooltiptext">So Siri says, &quot;Your wife called
+to remind you about dinner tonight.&quot;</span></span>
+		<span class="tooltip">Bien sûr, vous aviez oublié.
+« Quoi ? Quel dîner ?<span class="tooltiptext">And of course, you&#39;ve forgotten.
+&quot;What? What dinner?</span></span>
+		<span class="tooltip">De quoi me parles-tu ? »<span class="tooltiptext">What are you talking about?&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">« Euh, votre 20ème anniversaire à 19h00. »<span class="tooltiptext">&quot;Uh, your 20th anniversary at 7pm.&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">« Je ne peux pas. J&#39;ai une réunion
+avec le secrétaire général à 19h30.<span class="tooltiptext">&quot;I can&#39;t do that. I&#39;m meeting
+with the secretary-general at 7:30.</span></span>
+		<span class="tooltip">Comment cela a-t-il pu arriver ? »<span class="tooltiptext">How could this have happened?&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">« Eh bien, je vous ai prévenu,
+mais vous avez ignoré mon avertissement. »<span class="tooltiptext">&quot;Well, I did warn you, but you overrode
+my recommendation.&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">« Qu&#39;est-ce que je vais faire ? Je ne
+peux pas lui dire que je suis occupé. »<span class="tooltiptext">&quot;Well, what am I going to do?
+I can&#39;t just tell him I&#39;m too busy.&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">« Ne vous inquiétez pas. J&#39;ai fait
+en sorte que son avion ait du retard. »<span class="tooltiptext">&quot;Don&#39;t worry. I arranged
+for his plane to be delayed.&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Rires)<span class="tooltiptext">(Laughter)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">« Une sorte de bug de l&#39;ordinateur. »<span class="tooltiptext">&quot;Some kind of computer malfunction.&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Rires)<span class="tooltiptext">(Laughter)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">« Vraiment ? Tu peux faire ça ? »<span class="tooltiptext">&quot;Really? You can do that?&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">« Il vous présente ses excuses<span class="tooltiptext">&quot;He sends his profound apologies</span></span>
+		<span class="tooltip">et voudrait vous rencontrer
+demain pour le déjeuner. »<span class="tooltiptext">and looks forward to meeting you
+for lunch tomorrow.&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Rires)<span class="tooltiptext">(Laughter)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Donc là...
+Il y a une légère erreur.<span class="tooltiptext">So the values here --
+there&#39;s a slight mistake going on.</span></span>
+		<span class="tooltip">Ce scénario suit clairement
+la philosophie de ma femme.<span class="tooltiptext">This is clearly following my wife&#39;s values</span></span>
+		<span class="tooltip">qui est :
+« femme heureuse, vie heureuse. »<span class="tooltiptext">which is &quot;Happy wife, happy life.&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Rires)<span class="tooltiptext">(Laughter)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Mais ça pourrait aussi
+aller autrement.<span class="tooltiptext">It could go the other way.</span></span>
+		<span class="tooltip">Vous pourriez rentrer
+après une dure journée<span class="tooltiptext">You could come home
+after a hard day&#39;s work,</span></span>
+		<span class="tooltip">et l&#39;ordinateur vous dit :
+« Dure journée ? »<span class="tooltiptext">and the computer says, &quot;Long day?&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">« Oui, je n&#39;ai même pas
+eu le temps de manger. »<span class="tooltiptext">&quot;Yes, I didn&#39;t even have time for lunch.&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">« Tu dois avoir faim. »<span class="tooltiptext">&quot;You must be very hungry.&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">« Oui, très faim.
+Tu peux me faire à dîner ? »<span class="tooltiptext">&quot;Starving, yeah.
+Could you make some dinner?&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">« Je dois te dire quelque chose. »<span class="tooltiptext">&quot;There&#39;s something I need to tell you.&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Rires)<span class="tooltiptext">(Laughter)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">« Il y a des gens au Soudan du Sud qui ont
+bien plus besoin de nourriture que toi. »<span class="tooltiptext">&quot;There are humans in South Sudan
+who are in more urgent need than you.&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Rires)<span class="tooltiptext">(Laughter)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">« Je te quitte.
+Fais-toi à dîner toi-même. »<span class="tooltiptext">&quot;So I&#39;m leaving. Make your own dinner.&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Rires)<span class="tooltiptext">(Laughter)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Nous devons résoudre ces problèmes<span class="tooltiptext">So we have to solve these problems,</span></span>
+		<span class="tooltip">et je suis impatient
+de travailler là-dessus.<span class="tooltiptext">and I&#39;m looking forward
+to working on them.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Nous avons des raisons
+d&#39;être optimistes.<span class="tooltiptext">There are reasons for optimism.</span></span>
+		<span class="tooltip">La première, c&#39;est que<span class="tooltiptext">One reason is,</span></span>
+		<span class="tooltip">nous disposons d&#39;une masse de données.<span class="tooltiptext">there is a massive amount of data.</span></span>
+		<span class="tooltip">Parce que, souvenez-vous,
+j&#39;ai dit que l&#39;IA va lire tout<span class="tooltiptext">Because remember -- I said
+they&#39;re going to read everything</span></span>
+		<span class="tooltip">ce que l&#39;homme a jamais écrit.<span class="tooltiptext">the human race has ever written.</span></span>
+		<span class="tooltip">La plupart du temps,
+nous écrivons sur ce que les humains font<span class="tooltiptext">Most of what we write about
+is human beings doing things</span></span>
+		<span class="tooltip">et sur les gens que ça contrarie.<span class="tooltiptext">and other people getting upset about it.</span></span>
+		<span class="tooltip">Alors il y a une masse de données
+dans laquelle puiser.<span class="tooltiptext">So there&#39;s a massive amount
+of data to learn from.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Il y a également une très forte
+incitation économique à cela.<span class="tooltiptext">There&#39;s also a very
+strong economic incentive</span></span>
+		<span class="tooltip">Donc,<span class="tooltiptext">to get this right.</span></span>
+		<span class="tooltip">imaginez votre robot domestique.<span class="tooltiptext">So imagine your domestic robot&#39;s at home.</span></span>
+		<span class="tooltip">Vous êtes en retard au travail
+et le robot doit nourrir les enfants,<span class="tooltiptext">You&#39;re late from work again
+and the robot has to feed the kids,</span></span>
+		<span class="tooltip">les enfants ont faim
+et il n&#39;y a rien dans le réfrigérateur.<span class="tooltiptext">and the kids are hungry
+and there&#39;s nothing in the fridge.</span></span>
+		<span class="tooltip">Le robot voit le chat.<span class="tooltiptext">And the robot sees the cat.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Rires)<span class="tooltiptext">(Laughter)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Le robot n&#39;a pas bien appris
+les valeurs humaines,<span class="tooltiptext">And the robot hasn&#39;t quite learned
+the human value function properly,</span></span>
+		<span class="tooltip">donc il ne comprend pas<span class="tooltiptext">so it doesn&#39;t understand</span></span>
+		<span class="tooltip">que la valeur sentimentale du chat
+l&#39;emporte sur sa valeur nutritionnelle.<span class="tooltiptext">the sentimental value of the cat outweighs
+the nutritional value of the cat.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Rires)<span class="tooltiptext">(Laughter)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Que se passe-t-il ?<span class="tooltiptext">So then what happens?</span></span>
+		<span class="tooltip">Eh bien, que se passe-t-il ?<span class="tooltiptext">Well, it happens like this:</span></span>
+		<span class="tooltip">« Le robot fou cuisine le chat
+de la famille pour le dîner. »<span class="tooltiptext">&quot;Deranged robot cooks kitty
+for family dinner.&quot;</span></span>
+		<span class="tooltip">Cet incident sonnerait la fin
+de l&#39;industrie du robot domestique.<span class="tooltiptext">That one incident would be the end
+of the domestic robot industry.</span></span>
+		<span class="tooltip">Il y a donc une incitation énorme
+à régler cela<span class="tooltiptext">So there&#39;s a huge incentive
+to get this right</span></span>
+		<span class="tooltip">bien avant que nous n&#39;arrivions
+aux machines supra-intelligentes.<span class="tooltiptext">long before we reach
+superintelligent machines.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Pour résumer.<span class="tooltiptext">So to summarize:</span></span>
+		<span class="tooltip">J&#39;essaie de modifier la définition de l&#39;IA<span class="tooltiptext">I&#39;m actually trying to change
+the definition of AI</span></span>
+		<span class="tooltip">afin que nous ayons des machines
+irréfutablement bénéfiques.<span class="tooltiptext">so that we have provably
+beneficial machines.</span></span>
+		<span class="tooltip">Les principes sont :<span class="tooltiptext">And the principles are:</span></span>
+		<span class="tooltip">des machines altruistes,<span class="tooltiptext">machines that are altruistic,</span></span>
+		<span class="tooltip">ne cherchant qu&#39;à atteindre nos objectifs,<span class="tooltiptext">that want to achieve only our objectives,</span></span>
+		<span class="tooltip">mais ayant une incertitude
+quant à ces objectifs<span class="tooltiptext">but that are uncertain
+about what those objectives are,</span></span>
+		<span class="tooltip">et qui nous observerons<span class="tooltiptext">and will watch all of us</span></span>
+		<span class="tooltip">afin d&#39;en savoir plus sur
+ce que nous voulons vraiment.<span class="tooltiptext">to learn more about what it is
+that we really want.</span></span>
+		<span class="tooltip">J&#39;espère que dans le processus, nous
+apprendrons aussi à devenir meilleurs.<span class="tooltiptext">And hopefully in the process,
+we will learn to be better people.</span></span>
+		<span class="tooltip">Merci beaucoup.<span class="tooltiptext">Thank you very much.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Applaudissements)<span class="tooltiptext">(Applause)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Chris Anderson :
+Très intéressant, Stuart.<span class="tooltiptext">Chris Anderson: So interesting, Stuart.</span></span>
+		<span class="tooltip">Nous allons rester un peu ici,
+car je crois qu&#39;ils préparent<span class="tooltiptext">We&#39;re going to stand here a bit
+because I think they&#39;re setting up</span></span>
+		<span class="tooltip">la prochaine intervention.<span class="tooltiptext">for our next speaker.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Plusieurs questions.<span class="tooltiptext">A couple of questions.</span></span>
+		<span class="tooltip">L&#39;idée d&#39;une programmation limitée
+semble intuitivement très puissante.<span class="tooltiptext">So the idea of programming in ignorance
+seems intuitively really powerful.</span></span>
+		<span class="tooltip">En se rapprochant
+de la supra-intelligence,<span class="tooltiptext">As you get to superintelligence,</span></span>
+		<span class="tooltip">qu&#39;est-ce qui empêchera un robot<span class="tooltiptext">what&#39;s going to stop a robot</span></span>
+		<span class="tooltip">de lire la littérature et de découvrir
+cette notion que la connaissance<span class="tooltiptext">reading literature and discovering
+this idea that knowledge</span></span>
+		<span class="tooltip">est en fait supérieure à l&#39;ignorance<span class="tooltiptext">is actually better than ignorance</span></span>
+		<span class="tooltip">et de changer ses propres objectifs
+en réécrivant cette programmation ?<span class="tooltiptext">and still just shifting its own goals
+and rewriting that programming?</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Stuart Russell : Oui, nous voulons qu&#39;il
+en apprenne davantage, comme je l&#39;ai dit,<span class="tooltiptext">Stuart Russell: Yes, so we want
+it to learn more, as I said,</span></span>
+		<span class="tooltip">à propos de nos objectifs.<span class="tooltiptext">about our objectives.</span></span>
+		<span class="tooltip">Il gagnera en confiance
+avec l&#39;expérience,<span class="tooltiptext">It&#39;ll only become more certain
+as it becomes more correct,</span></span>
+		<span class="tooltip">la preuve est là,<span class="tooltiptext">so the evidence is there</span></span>
+		<span class="tooltip">et il sera conçu pour interpréter
+correctement nos objectifs.<span class="tooltiptext">and it&#39;s going to be designed
+to interpret it correctly.</span></span>
+		<span class="tooltip">Il comprendra, par exemple,
+que les livres sont très biaisés<span class="tooltiptext">It will understand, for example,
+that books are very biased</span></span>
+		<span class="tooltip">en fonction de leur contenu.<span class="tooltiptext">in the evidence they contain.</span></span>
+		<span class="tooltip">Ils ne parlent que de rois et de princes<span class="tooltiptext">They only talk about kings and princes</span></span>
+		<span class="tooltip">et des choses
+que fait l&#39;élite blanche.<span class="tooltiptext">and elite white male people doing stuff.</span></span>
+		<span class="tooltip">C&#39;est donc un problème complexe,<span class="tooltiptext">So it&#39;s a complicated problem,</span></span>
+		<span class="tooltip">mais comme il en apprend plus
+sur nos objectifs,<span class="tooltiptext">but as it learns more about our objectives</span></span>
+		<span class="tooltip">il nous sera de plus en plus utile.<span class="tooltiptext">it will become more and more useful to us.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">CA : Et vous ne pourriez pas
+résumer cela en une seule loi,<span class="tooltiptext">CA: And you couldn&#39;t
+just boil it down to one law,</span></span>
+		<span class="tooltip">vous savez, une ligne de code :<span class="tooltiptext">you know, hardwired in:</span></span>
+		<span class="tooltip">« Si un humain essaie de me débrancher,<span class="tooltiptext">&quot;if any human ever tries to switch me off,</span></span>
+		<span class="tooltip">je coopère, je coopère. »<span class="tooltiptext">I comply. I comply.&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">SR : Impossible.<span class="tooltiptext">SR: Absolutely not.</span></span>
+		<span class="tooltip">Ce serait une mauvaise idée.<span class="tooltiptext">That would be a terrible idea.</span></span>
+		<span class="tooltip">Imaginez que vous ayez
+une voiture sans chauffeur<span class="tooltiptext">So imagine that you have
+a self-driving car</span></span>
+		<span class="tooltip">et vous souhaitez envoyer
+votre enfant de cinq ans<span class="tooltiptext">and you want to send your five-year-old</span></span>
+		<span class="tooltip">à la maternelle.<span class="tooltiptext">off to preschool.</span></span>
+		<span class="tooltip">Voulez-vous que votre enfant de cinq ans
+puisse éteindre la voiture<span class="tooltiptext">Do you want your five-year-old
+to be able to switch off the car</span></span>
+		<span class="tooltip">alors qu&#39;elle roule ?<span class="tooltiptext">while it&#39;s driving along?</span></span>
+		<span class="tooltip">Probablement pas.<span class="tooltiptext">Probably not.</span></span>
+		<span class="tooltip">Alors l&#39;IA doit pouvoir évaluer si la
+personne est rationnelle et raisonnable.<span class="tooltiptext">So it needs to understand how rational
+and sensible the person is.</span></span>
+		<span class="tooltip">Plus la personne est rationnelle,<span class="tooltiptext">The more rational the person,</span></span>
+		<span class="tooltip">plus elle devrait avoir de contrôle.<span class="tooltiptext">the more willing you are
+to be switched off.</span></span>
+		<span class="tooltip">Si la personne est incohérente
+ou même malveillante,<span class="tooltiptext">If the person is completely
+random or even malicious,</span></span>
+		<span class="tooltip">alors elle devrait avoir
+un contrôle plus limité.<span class="tooltiptext">then you&#39;re less willing
+to be switched off.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">CA : Très bien. Stuart,<span class="tooltiptext">CA: All right. Stuart, can I just say,</span></span>
+		<span class="tooltip">j&#39;espère que vous allez
+régler cela pour nous.<span class="tooltiptext">I really, really hope you
+figure this out for us.</span></span>
+		<span class="tooltip">Merci beaucoup pour cette présentation.
+C&#39;était incroyable.<span class="tooltiptext">Thank you so much for that talk.
+That was amazing.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">SR : Merci.<span class="tooltiptext">SR: Thank you.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Applaudissements)<span class="tooltiptext">(Applause)</span></span>
+	</p>
+
+	<div class="line"></div>
+	<p>Enjoying my website? Your donation helps maintain its ad-free experience and smooth operation. Your support is truly appreciated and helps me continue providing quality content. Thank you for considering a donation!</p>
+	<p>To donate, simply click the PayPal link below:<p/>
+	<p><a href="https://www.paypal.com/paypalme/otechai" target='_blank'>Donate via PayPal</a></p>
+	
+</div>
+<span onclick='topFunction()' id='gotop' title='Go to top'><svg width="32" height="32" viewBox="0 0 100 100">
+	   <path fill="white" d="m50 0c-13.262 0-25.98 5.2695-35.355 14.645s-14.645 22.094-14.645 35.355 5.2695 25.98 14.645 35.355 22.094 14.645 35.355 14.645 25.98-5.2695 35.355-14.645 14.645-22.094 14.645-35.355-5.2695-25.98-14.645-35.355-22.094-14.645-35.355-14.645zm20.832 62.5-20.832-22.457-20.625 22.457c-1.207 0.74219-2.7656 0.57812-3.7891-0.39844-1.0273-0.98047-1.2695-2.5273-0.58594-3.7695l22.918-25c0.60156-0.61328 1.4297-0.96094 2.2891-0.96094 0.86328 0 1.6914 0.34766 2.293 0.96094l22.918 25c0.88672 1.2891 0.6875 3.0352-0.47266 4.0898-1.1562 1.0508-2.9141 1.0859-4.1133 0.078125z"></path>
+	 </svg></span>
+
+	    <div class="footer">
+	        <div class="left"><a href='../../../index.html'>ReadingDB</a></div>
+	        <div class="center"><a href="https://twitter.com/readingdb" class="twitter-link">
+	    <svg class="twitter-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	        <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.58-2.11-9.96-5.02-.42.72-.66 1.56-.66 2.46 0 1.68.85 3.16 2.14 4.02-.79-.02-1.53-.24-2.18-.6v.06c0 2.35 1.67 4.31 3.88 4.76-.4.1-.83.16-1.27.16-.31 0-.62-.03-.92-.08.63 1.96 2.45 3.39 4.61 3.43-1.69 1.32-3.83 2.1-6.15 2.1-.4 0-.8-.02-1.19-.07 2.19 1.4 4.78 2.22 7.57 2.22 9.07 0 14.02-7.52 14.02-14.02 0-.21 0-.41-.01-.61.96-.69 1.79-1.56 2.45-2.55-.88.39-1.83.65-2.82.77z"/>
+	    </svg>
+	</a></div>
+	        <div class="right"><a href='https://www.paypal.com/paypalme/otechai'>Donate</a></div>
+	    </div>
+	<script>
+
+		var mybutton = document.getElementById('gotop');
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+			if (document.documentElement.scrollTop > 20 || document.body.scrollTop > 20) {
+				mybutton.style.display = 'block';
+			} else {
+				mybutton.style.display = 'none';
+			}
+		}
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<script src="../../../static/scripts/script.js"></script>
+</body>
+</html>
+	

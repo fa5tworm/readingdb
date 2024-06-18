@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+	<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<meta name="description" content="Unlock your Spanish reading skills: Immerse yourself in a contextual and practical learning enhanced by high-quality instant translations.">
+      	<meta name="keywords" content="Spanish reading, Spanish language learning, instant translations, reading adventure, improve Spanish, improve reading skills, educational platform, spanish reading resources, online education, Spanish proficiency, learn Spanish, Spanish learning resources, bilingual education, language exchange, study Spanish online">
+		<link rel="apple-touch-icon" sizes="180x180" href="../../../static/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../../../static/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../../../static/favicons/favicon-16x16.png">
+		<link rel="manifest" href="../../../static/favicons/site.webmanifest">
+		<title>Paul Rothemund : DNA folding, in detail</title>
+		<link rel='stylesheet' href='../../../static/styles/styles.css'>
+		<script defer data-domain="readingdb.org" src="https://plausible.io/js/script.js"></script>
+	</head>
+	<body>
+
+	<h1 class='title'>DNA folding, in detail</h1>
+	<h2 class='speaker'>Paul Rothemund</h2>
+	<div class='transcript books'>
+	<p>Are you ready to improve your Spanish speaking skills, check <a href='https://referral.lingoda.com/6Dztrv'>Lingoda</a> today!</p>
+		<p>
+		<span class="tooltip">So, people argue vigorously about the definition of life.<span class="tooltiptext">حسناً, الكثيرون يتناقشون حول تعريف للحياة.</span></span>
+		<span class="tooltip">They ask if it should have reproduction in it, or metabolism, or evolution.<span class="tooltiptext">يتسألون هل تعريف الحياة يعتمد على التكاثر, الأيض, أم التطور.</span></span>
+		<span class="tooltip">And I don&#39;t know the answer to that, so I&#39;m not going to tell you.<span class="tooltiptext">وأنا لا أدري ماهي الإجابة ... فلن أخبركم بهذا.</span></span>
+		<span class="tooltip">I will say that life involves computation.<span class="tooltiptext">ولكن سأقول أن الحياة تعتمد على الحسابات</span></span>
+		<span class="tooltip">So this is a computer program.<span class="tooltiptext">فهذا هو برنامج كمبيوتر.</span></span>
+		<span class="tooltip">Booted up in a cell, the program would execute,<span class="tooltiptext">حمله إلى خلية ما , والبرنامج سينفذ</span></span>
+		<span class="tooltip">and it could result in this person;<span class="tooltiptext">وممكن أن ينتج هذا الشخص</span></span>
+		<span class="tooltip">or with a small change, it could result in this person;<span class="tooltiptext">و أي تغيير صغير, يمكن أن ينتج هذا الشخص..</span></span>
+		<span class="tooltip">or another small change, this person;<span class="tooltiptext">أو تغيير صغير آخر سينتج هذا الشخص,</span></span>
+		<span class="tooltip">or with a larger change, this dog,<span class="tooltiptext">أو بتغيير أكبر نحصل على كلب</span></span>
+		<span class="tooltip">or this tree, or this whale.<span class="tooltiptext">أو هذه الشجرة, أو هذا الحوت.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So now, if you take this metaphor<span class="tooltiptext">حسناً الآن لنأخذ هذا التشبيه</span></span>
+		<span class="tooltip">[of] genome as program seriously,<span class="tooltiptext">فخريطة الجينات البشرية هي كالبرنامج.</span></span>
+		<span class="tooltip">you have to consider that Chris Anderson<span class="tooltiptext">عليكم التفكير في أن كريس أندرسون</span></span>
+		<span class="tooltip">is a computer-fabricated artifact, as is Jim Watson,<span class="tooltiptext">هو تحفة مصنوعة عن طريق الكمبيوتر كما هو جيم واتسون</span></span>
+		<span class="tooltip">Craig Venter, as are all of us.<span class="tooltiptext">وكريج فينتر أيضاً ,و كلنا كذلك.</span></span>
+		<span class="tooltip">And in convincing yourself that this metaphor is true,<span class="tooltiptext">وبالإعتقاد بأن هذا التشبيه حقيقي</span></span>
+		<span class="tooltip">there are lots of similarities between genetic programs<span class="tooltiptext">نكتشف أن هناك الكثير من التشابه بين عمل الجينات</span></span>
+		<span class="tooltip">and computer programs that could help to convince you.<span class="tooltiptext">وبرنامج الكمبيوتر, هذا سيساعدكم على الاقتناع.</span></span>
+		<span class="tooltip">But one, to me, that&#39;s most compelling<span class="tooltiptext">ولكن ربما ماهو مقنع أكثر</span></span>
+		<span class="tooltip">is the peculiar sensitivity to small changes<span class="tooltiptext">هو الحساسية لأصغر التغييرات</span></span>
+		<span class="tooltip">that can make large changes in biological development -- the output.<span class="tooltiptext">والتي تستطيع أن تحدث تغييرات كبيرة في المنتج.</span></span>
+		<span class="tooltip">A small mutation can take a two-wing fly<span class="tooltiptext">طفرة صغيرة ممكن أن تحدث في ذبابة ذات جناحين</span></span>
+		<span class="tooltip">and make it a four-wing fly.<span class="tooltiptext">وتجعلها بأربع أجنحة</span></span>
+		<span class="tooltip">Or it could take a fly and put legs where its antennae should be.<span class="tooltiptext">أو تجعل للذبابة أرجل مكان قرون الاستشعار.</span></span>
+		<span class="tooltip">Or if you&#39;re familiar with &quot;The Princess Bride,&quot;<span class="tooltiptext">أو لو تعرفون الأميرة العروس,</span></span>
+		<span class="tooltip">it could create a six-fingered man.<span class="tooltiptext">بإمكاننا صنع رجل له ستة أصابع في يده,</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Now, a hallmark of computer programs<span class="tooltiptext">السمة المميزة لبرامج الكمبيوتر</span></span>
+		<span class="tooltip">is just this kind of sensitivity to small changes.<span class="tooltiptext">هي هذه الحساسية لأصغر التغييرات</span></span>
+		<span class="tooltip">If your bank account&#39;s one dollar, and you flip a single bit,<span class="tooltiptext">فلو كان حسابك البنكي يحتوي على دولار واحد, وتم تغير رقم واحد فحسب ,</span></span>
+		<span class="tooltip">you could end up with a thousand dollars.<span class="tooltiptext">بإمكانك أن تحصل على ألف دولار</span></span>
+		<span class="tooltip">So these small changes are things that I think<span class="tooltiptext">إذاً هذه التغييرات الصغيرة أعتقد أنها..</span></span>
+		<span class="tooltip">that -- they indicate to us that a complicated computation<span class="tooltiptext">تشير إلى أن حسابات معقدة</span></span>
+		<span class="tooltip">in development is underlying these amplified, large changes.<span class="tooltiptext">هي التي تؤدي إلى إحداث وتضخيم هذه التغييرات.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So now, all of this indicates that there are molecular programs underlying biology,<span class="tooltiptext">لذلك, كل هذا يشير إلى وجود برامج جزيئية لتأسيس علم الأحياء,</span></span>
+		<span class="tooltip">and it shows the power of molecular programs -- biology does.<span class="tooltiptext">وعلم الأحياء يدل على قوة هذه البرامج الجزيئية.</span></span>
+		<span class="tooltip">And what I want to do is write molecular programs,<span class="tooltiptext">وماأريد أن أفعله هو كتابة برنامج جزيئي,</span></span>
+		<span class="tooltip">potentially to build technology.<span class="tooltiptext">بهدف بناء هذه التكنولوجيا.</span></span>
+		<span class="tooltip">And there are a lot of people doing this,<span class="tooltiptext">وهناك العديد من الأشخاص الذين يعملون على ذلك.</span></span>
+		<span class="tooltip">a lot of synthetic biologists doing this, like Craig Venter.<span class="tooltiptext">الكثير من خبراء البيولوجيا الصناعية يعملون على ذلك مثل كريغ فينتر</span></span>
+		<span class="tooltip">And they concentrate on using cells.<span class="tooltiptext">وهم يركزون على استعمال الخلايا.</span></span>
+		<span class="tooltip">They&#39;re cell-oriented.<span class="tooltiptext">هم مهتمون أكثر بالخلايا.</span></span>
+		<span class="tooltip">So my friends, molecular programmers, and I<span class="tooltiptext">حسناً العديد من أصدقائي المبرمجين الجزيئيين وأنا,</span></span>
+		<span class="tooltip">have a sort of biomolecule-centric approach.<span class="tooltiptext">لدينا مخطط مبني على نظرة حيوية جزيئية.</span></span>
+		<span class="tooltip">We&#39;re interested in using DNA, RNA and protein,<span class="tooltiptext">نحن مهتمون بالحمضين النووي الريبوزي والديوكسي رايبوزي بالإضافة إلى البروتينات,</span></span>
+		<span class="tooltip">and building new languages for building things from the bottom up,<span class="tooltiptext">وإنشاء لغات مختلفة لبناء الأشياء من القاعدة إلى القمة,</span></span>
+		<span class="tooltip">using biomolecules,<span class="tooltiptext">باستخدام الجزيئات الحيوية,</span></span>
+		<span class="tooltip">potentially having nothing to do with biology.<span class="tooltiptext">بدون اللجوء إلى العملية الحيوية الطبيعية.</span></span>
+		<span class="tooltip">So, these are all the machines in a cell.<span class="tooltiptext">حسناً هذه هي كل المعدات في الخلية.</span></span>
+		<span class="tooltip">There&#39;s a camera.<span class="tooltiptext">هناك كاميرا.</span></span>
+		<span class="tooltip">There&#39;s the solar panels of the cell,<span class="tooltiptext">هناك ألواح شمسية في الخلية</span></span>
+		<span class="tooltip">some switches that turn your genes on and off,<span class="tooltiptext">وهناك بعض الأزرار لتشغيل الجين أو تعطيله,</span></span>
+		<span class="tooltip">the girders of the cell, motors that move your muscles.<span class="tooltiptext">دعامات الخلية وهي المحركات التي تحرك عضلاتك.</span></span>
+		<span class="tooltip">My little group of molecular programmers<span class="tooltiptext">فريقي الصغير من الباحثين هم مبرمجون جزيئيون</span></span>
+		<span class="tooltip">are trying to refashion all of these parts from DNA.<span class="tooltiptext">وهم يحاولون تغيير هذه الأجزاء من الحمض النووي الديوكسي رايبوزي</span></span>
+		<span class="tooltip">We&#39;re not DNA zealots, but DNA is the cheapest,<span class="tooltiptext">نحن مهوسو حمض نووي والحمض النووي هو الأرخص,</span></span>
+		<span class="tooltip">easiest to understand and easy to program material to do this.<span class="tooltiptext">والأسهل في الفهم و الأسهل للاستخدام لبرمجة المواد لفعل هذا</span></span>
+		<span class="tooltip">And as other things become easier to use --<span class="tooltiptext">والأشياء الأخرى تصبح أسهل للاستعمال...</span></span>
+		<span class="tooltip">maybe protein -- we&#39;ll work with those.<span class="tooltiptext">ربما البروتين أيضاً... سوف نعمل على هذه الأشياء.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">If we succeed, what will molecular programming look like?<span class="tooltiptext">لو نجحنا, كيف ستبدو البرمجة الجزيئية؟</span></span>
+		<span class="tooltip">You&#39;re going to sit in front of your computer.<span class="tooltiptext">سوف تجلس أمام كمبيوترك.</span></span>
+		<span class="tooltip">You&#39;re going to design something like a cell phone,<span class="tooltiptext">سوف تقوم بتصميم شيء كالهاتف الجوال مثلاً,</span></span>
+		<span class="tooltip">and in a high-level language, you&#39;ll describe that cell phone.<span class="tooltiptext">وبلغة عالية المستوى في التخصص سوف تصف هذا الهاتف الجوال.</span></span>
+		<span class="tooltip">Then you&#39;re going to have a compiler<span class="tooltiptext">سوف تحتاج لمجمع</span></span>
+		<span class="tooltip">that&#39;s going to take that description<span class="tooltiptext">والمجمع سوف يأخذ الوصف للهاتف الجوال</span></span>
+		<span class="tooltip">and it&#39;s going to turn it into actual molecules<span class="tooltiptext">وسوف يحول الوصف والمعلومات إلى جزيئات حقيقية</span></span>
+		<span class="tooltip">that can be sent to a synthesizer<span class="tooltiptext">تنتقل هذه الجزيئات إلى المصنّع</span></span>
+		<span class="tooltip">and that synthesizer will pack those molecules into a seed.<span class="tooltiptext">والمصنع سوف يضم الجزيئات كبذرة,</span></span>
+		<span class="tooltip">And what happens if you water and feed that seed appropriately,<span class="tooltiptext">ومايحدث عند سقاية البذور والعناية بها بشكل سليم,</span></span>
+		<span class="tooltip">is it will do a developmental computation,<span class="tooltiptext">هو أنها سوف تقوم بحسابات تطويرية</span></span>
+		<span class="tooltip">a molecular computation, and it&#39;ll build an electronic computer.<span class="tooltiptext">حسابات جزئيئة و سوف تبني جهاز حاسوب الكتروني.</span></span>
+		<span class="tooltip">And if I haven&#39;t revealed my prejudices already,<span class="tooltiptext">ولو لم أظهر ميولي وتعصبي بعد,</span></span>
+		<span class="tooltip">I think that life has been about molecular computers<span class="tooltiptext">أعتقد أن الحياة هي عبارة عن كمبيوترات وحاسوبات جزيئية</span></span>
+		<span class="tooltip">building electrochemical computers,<span class="tooltiptext">تبني كمبيوترات كهروكيميائية</span></span>
+		<span class="tooltip">building electronic computers,<span class="tooltiptext">و كمبيوترات الكترونية</span></span>
+		<span class="tooltip">which together with electrochemical computers<span class="tooltiptext">ومع بعضهم</span></span>
+		<span class="tooltip">will build new molecular computers,<span class="tooltiptext">سوف يبنون كمبيوترات جزيئية</span></span>
+		<span class="tooltip">which will build new electronic computers, and so forth.<span class="tooltiptext">وبدورها تبني كمبيوترات إلكترونية وما إلى ذلك.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And if you buy all of this,<span class="tooltiptext">ولو صدقت كل هذا,</span></span>
+		<span class="tooltip">and you think life is about computation, as I do,<span class="tooltiptext">وكنت تعتقد أن الحياة هي عبارة عن حسابات كما أفعل,</span></span>
+		<span class="tooltip">then you look at big questions through the eyes of a computer scientist.<span class="tooltiptext">عندها ستنظر للأسئلة المهمة من وجهة نظر مبرمجي الكمبيوتر.</span></span>
+		<span class="tooltip">So one big question is, how does a baby know when to stop growing?<span class="tooltiptext">وهذا السؤال الكبير هو كيف يعرف الطفل متى يتوقف عن النمو؟</span></span>
+		<span class="tooltip">And for molecular programming,<span class="tooltiptext">وبالنسبة للمبرمج الجزيئي,</span></span>
+		<span class="tooltip">the question is how does your cell phone know when to stop growing?<span class="tooltiptext">السؤال هو كيف يعرف هاتفك الجوال متى يتوقف عن النمو؟</span></span>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(ضحك)</span></span>
+		<span class="tooltip">Or how does a computer program know when to stop running?<span class="tooltiptext">أو كيف يعرف برنامج الكمبيوتر متى يتوجب عليه التوقف عن العمل ؟</span></span>
+		<span class="tooltip">Or more to the point, how do you know if a program will ever stop?<span class="tooltiptext">أو سؤال مباشر أكثر. كيف تعرف ما إذا كان البرنامج سوف يتوقف؟</span></span>
+		<span class="tooltip">There are other questions like this, too.<span class="tooltiptext">هناك العديد من الأسئلة كهذه أيضاً.</span></span>
+		<span class="tooltip">One of them is Craig Venter&#39;s question.<span class="tooltiptext">واحد من تلك الأسئلة هو سؤال كريج فنتر.</span></span>
+		<span class="tooltip">Turns out I think he&#39;s actually a computer scientist.<span class="tooltiptext">يبدو أنه فعلاً مبرمج كمبيوتر.</span></span>
+		<span class="tooltip">He asked, how big is the minimal genome<span class="tooltiptext">هو سأل ما هو حجم أصغر جينوم</span></span>
+		<span class="tooltip">that will give me a functioning microorganism?<span class="tooltiptext">بحيث يعطي أصغر كائن حي؟</span></span>
+		<span class="tooltip">How few genes can I use?<span class="tooltiptext">كيف نستطيع استخدام عدد قليل من الجينات؟</span></span>
+		<span class="tooltip">This is exactly analogous to the question,<span class="tooltiptext">هذا مماثل للسؤال ,</span></span>
+		<span class="tooltip">what&#39;s the smallest program I can write<span class="tooltiptext">ما هو أصغر برنامج أستطيع كتابته</span></span>
+		<span class="tooltip">that will act exactly like Microsoft Word?<span class="tooltiptext">والذي سيتصرف تماماً مثل مايكروسوفت وورد؟</span></span>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(ضحك)</span></span>
+		<span class="tooltip">And just as he&#39;s writing, you know, bacteria that will be smaller,<span class="tooltiptext">وعندما هو يبرمج مستهدفاً الحصول على البكتيريا الصغيرة</span></span>
+		<span class="tooltip">he&#39;s writing genomes that will work,<span class="tooltiptext">هو يصنع في الحقيقة على جينوم فعال,</span></span>
+		<span class="tooltip">we could write smaller programs<span class="tooltiptext">باستطاعتنا كتابة برامج أصغر</span></span>
+		<span class="tooltip">that would do what Microsoft Word does.<span class="tooltiptext">بإمكانه عمل مايعمله مايكروسوفت وورد.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">But for molecular programming, our question is,<span class="tooltiptext">ولكن للبرمجة الجزيئية ، سؤالنا هو ؟</span></span>
+		<span class="tooltip">how many molecules do we need to put in that seed to get a cell phone?<span class="tooltiptext">كم عدد الجزيئات التي نحتاجها لوضعها في البذور للحصول على الهاتف الخليوي؟</span></span>
+		<span class="tooltip">What&#39;s the smallest number we can get away with?<span class="tooltiptext">ما هو أصغر عدد بإمكاننا أن نعتمد عليه ؟</span></span>
+		<span class="tooltip">Now, these are big questions in computer science.<span class="tooltiptext">الأن , هذه هي الأسئلة الكبيرة في علوم الكمبيوتر.</span></span>
+		<span class="tooltip">These are all complexity questions,<span class="tooltiptext">كل هذه اسئلة معقدة ..</span></span>
+		<span class="tooltip">and computer science tells us that these are very hard questions.<span class="tooltiptext">وعلوم الكمبيوتر يخبرنا أن هذه هي الأسئلة الصعبة جدا</span></span>
+		<span class="tooltip">Almost -- many of them are impossible.<span class="tooltiptext">تقريبا -- وكثير منها من المستحيل.</span></span>
+		<span class="tooltip">But for some tasks, we can start to answer them.<span class="tooltiptext">ولكن بالنسبة لبعض المهام ، يمكن أن نبدأ في الإجابة عليها.</span></span>
+		<span class="tooltip">So, I&#39;m going to start asking those questions<span class="tooltiptext">وهكذا ، وانا سوف أبدء بطرح هذه الأسئلة</span></span>
+		<span class="tooltip">for the DNA structures I&#39;m going to talk about next.<span class="tooltiptext">خلال تحدثي عن هياكل الحمض النووي</span></span>
+		<span class="tooltip">So, this is normal DNA, what you think of as normal DNA.<span class="tooltiptext">هكذا ، وهذا هو الحمض النووي المعتاد ، ما تظنوننه الحمض النووي المعتاد</span></span>
+		<span class="tooltip">It&#39;s double-stranded, it&#39;s a double helix,<span class="tooltiptext">انه اللولب المزدوج المنطبق</span></span>
+		<span class="tooltip">has the As, Ts, Cs and Gs that pair to hold the strands together.<span class="tooltiptext">لديه ازواج من ( الثايمين Thymine وتختصر T , السايتوسين Cytosine وتختصر C , أدينين Adenine وتختصر A , غوانين Guanine وتختصر G )</span></span>
+		<span class="tooltip">And I&#39;m going to draw it like this sometimes,<span class="tooltiptext">وسوف ارسمه بهذه الشاكلة</span></span>
+		<span class="tooltip">just so I don&#39;t scare you.<span class="tooltiptext">لكي لا أخيفكم</span></span>
+		<span class="tooltip">We want to look at individual strands and not think about the double helix.<span class="tooltiptext">ونحن نريد أن ننظر إلى خيوط فردية وليس التفكير في اللولب المزدوج</span></span>
+		<span class="tooltip">When we synthesize it, it comes single-stranded,<span class="tooltiptext">وعندما نقوم بفك ذلك ، فإنه سنحصل على صف واحد ،</span></span>
+		<span class="tooltip">so we can take the blue strand in one tube<span class="tooltiptext">حتى نتمكن من اتخاذ الوتر الازرق في أنبوب واحد</span></span>
+		<span class="tooltip">and make an orange strand in the other tube,<span class="tooltiptext">والوتر البرتقالي في انبوب آخر</span></span>
+		<span class="tooltip">and they&#39;re floppy when they&#39;re single-stranded.<span class="tooltiptext">وهم ذوي مرونة جيدة في حال كانوا في حالة غير مزدوجة</span></span>
+		<span class="tooltip">You mix them together and they make a rigid double helix.<span class="tooltiptext">ومن ثم يمكن خلطهم سوية لكي نحصل على لولب مزدوج صلب</span></span>
+		<span class="tooltip">Now for the last 25 years,<span class="tooltiptext">الآن على مدى السنوات ال 25 الماضية</span></span>
+		<span class="tooltip">Ned Seeman and a bunch of his descendants<span class="tooltiptext">نيد سيمان وحفنة من زملائه</span></span>
+		<span class="tooltip">have worked very hard and made beautiful three-dimensional structures<span class="tooltiptext">عملوا بمجهود كبير لكي يصنعوا هذه المجسمات ثلاثية الابعاد</span></span>
+		<span class="tooltip">using this kind of reaction of DNA strands coming together.<span class="tooltiptext">ياستخدام ردات فعل الحمض النووي هذه التي تجعله يتصل فيما بينه</span></span>
+		<span class="tooltip">But a lot of their approaches, though elegant, take a long time.<span class="tooltiptext">والعديد من تلك المجسمات &quot; الأنيقة &quot; أخذت وقتاً طويلاً</span></span>
+		<span class="tooltip">They can take a couple of years, or it can be difficult to design.<span class="tooltiptext">بعضها استغرق عامين من اجل تصميمه</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So I came up with a new method a couple of years ago<span class="tooltiptext">من عامين خرجت بنظرية أسميتها</span></span>
+		<span class="tooltip">I call DNA origami<span class="tooltiptext">أوريجامي الحمض النووي</span></span>
+		<span class="tooltip">that&#39;s so easy you could do it at home in your kitchen<span class="tooltiptext">انها بسيطة جداً ويمكن استخدامها في مطبخ منزلك</span></span>
+		<span class="tooltip">and design the stuff on a laptop.<span class="tooltiptext">ويمكنك تصميمه على الحاسوب</span></span>
+		<span class="tooltip">But to do it, you need a long, single strand of DNA,<span class="tooltiptext">ولكن لكي تقوم بذلك .. عليك ان تملك شريط طويل من الحمض النووي</span></span>
+		<span class="tooltip">which is technically very difficult to get.<span class="tooltiptext">وهو أمرٌ بالغ الصعوبة</span></span>
+		<span class="tooltip">So, you can go to a natural source.<span class="tooltiptext">يجب البحث عنه في المصادر الطبيعية</span></span>
+		<span class="tooltip">You can look in this computer-fabricated artifact,<span class="tooltiptext">عندما تنظر الى هذه الصور الحاسوبية المعدة للعملية</span></span>
+		<span class="tooltip">and he&#39;s got a double-stranded genome -- that&#39;s no good.<span class="tooltiptext">ترى شريط جينييون مزدوج .. وهو لاينفع</span></span>
+		<span class="tooltip">You look in his intestines. There are billions of bacteria.<span class="tooltiptext">وعندما تنظر الى الامعاء .. ترى مليارات البكتريا</span></span>
+		<span class="tooltip">They&#39;re no good either.<span class="tooltiptext">وهذا لا ينفع ايضاً</span></span>
+		<span class="tooltip">Double strand again, but inside them, they&#39;re infected with a virus<span class="tooltiptext">وها هي الاشرطة المزدوجة مرة أخرى .. عندما تحقن فيروس</span></span>
+		<span class="tooltip">that has a nice, long, single-stranded genome<span class="tooltiptext">في شريط فردي من الجينيوم الطويل</span></span>
+		<span class="tooltip">that we can fold like a piece of paper.<span class="tooltiptext">يمكننا طيه كما يطوى الورق</span></span>
+		<span class="tooltip">And here&#39;s how we do it.<span class="tooltiptext">وهاهي وسيلة القيام بذلك</span></span>
+	</p>
+	<p>
+		<span class="tooltip">This is part of that genome.<span class="tooltiptext">هذا جزء من الجينينيوم</span></span>
+		<span class="tooltip">We add a bunch of short, synthetic DNAs that I call staples.<span class="tooltiptext">نحن نضيف عليه شرائط قصيرة من الحمض النووي ما أسميه &quot; دبابيس &quot;</span></span>
+		<span class="tooltip">Each one has a left half that binds the long strand in one place,<span class="tooltiptext">بحيث نثبت أحداها على الطرف الأيسر على طول الشريط</span></span>
+		<span class="tooltip">and a right half that binds it in a different place,<span class="tooltiptext">والآخر على الطرف الأيمن في موقع آخر</span></span>
+		<span class="tooltip">and brings the long strand together like this.<span class="tooltiptext">ومن ثم يتم جمع الشريط هكذا ..</span></span>
+		<span class="tooltip">The net action of many of these on that long strand<span class="tooltiptext">ويمكن اعادة تكرار هذه العملية على طول الشريط</span></span>
+		<span class="tooltip">is to fold it into something like a rectangle.<span class="tooltiptext">لكي نطبق شريط الحمض النووي فنشكل ما يشبه المستطيلات</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Now, we can&#39;t actually take a movie of this process,<span class="tooltiptext">الآن لايمكن أن نريكم فلم عن هذه العملية ..</span></span>
+		<span class="tooltip">but Shawn Douglas at Harvard<span class="tooltiptext">ولكن &quot; شاون دوجلاس &quot; في هارفرد</span></span>
+		<span class="tooltip">has made a nice visualization for us<span class="tooltiptext">قام بعمل تصوير مرئي للعملية</span></span>
+		<span class="tooltip">that begins with a long strand and has some short strands in it.<span class="tooltiptext">يوضح شريط طويل من الحمض النووي وشرائط قصيرة</span></span>
+		<span class="tooltip">And what happens is that we mix these strands together.<span class="tooltiptext">والذي يحدث هو اننا نخلط هذه معاً</span></span>
+		<span class="tooltip">We heat them up, we add a little bit of salt,<span class="tooltiptext">ومن ثم نرفع درجة الحرارة ونضيف القليل من الملح</span></span>
+		<span class="tooltip">we heat them up to almost boiling and cool them down,<span class="tooltiptext">نحن نرفع درجة الحرارة تقريباً الى درجة الغليان ومن ثم نقوم بتبريدها</span></span>
+		<span class="tooltip">and as we cool them down,<span class="tooltiptext">ونحن نقوم بعملية التبريد</span></span>
+		<span class="tooltip">the short strands bind the long strands<span class="tooltiptext">تبدأ الشرائط القصيرة تصل و تطوي الطويلة</span></span>
+		<span class="tooltip">and start to form structure.<span class="tooltiptext">لكي تشكل المجسمات المطلوبة</span></span>
+		<span class="tooltip">And you can see a little bit of double helix forming there.<span class="tooltiptext">كما ترون هنا قد تشكل &quot; لولب مزدوج &quot;</span></span>
+		<span class="tooltip">When you look at DNA origami,<span class="tooltiptext">وعندما تنظر الى أوريجامي الحمض النووي</span></span>
+		<span class="tooltip">you can see that what it really is,<span class="tooltiptext">يمكنك ان تعي العملية</span></span>
+		<span class="tooltip">even though you think it&#39;s complicated,<span class="tooltiptext">ربما تظن انها معقدة</span></span>
+		<span class="tooltip">is a bunch of double helices that are parallel to each other,<span class="tooltiptext">انها مجرد حلزونيات مزدوجة ترتصف بالتوازي</span></span>
+		<span class="tooltip">and they&#39;re held together<span class="tooltiptext">وترتبط معاً</span></span>
+		<span class="tooltip">by places where short strands go along one helix<span class="tooltiptext">بواسطة الشرائط القصيرة والتي تمتد من &quot; لولب مزدوج &quot;</span></span>
+		<span class="tooltip">and then jump to another one.<span class="tooltiptext">نحو الآخر لكي تتم عملية الوصل</span></span>
+		<span class="tooltip">So there&#39;s a strand that goes like this, goes along one helix and binds --<span class="tooltiptext">وكما ترون هذا الشريط يمتد من هنا .. من هذا اللولب المزدوج .. من ثم</span></span>
+		<span class="tooltip">it jumps to another helix and comes back.<span class="tooltiptext">يقفز الى هذا اللولب المزدوج لكي يربطهم سوية و من ثم يعود</span></span>
+		<span class="tooltip">That holds the long strand like this.<span class="tooltiptext">ويمكن بهذا الاسلوب ربط شريط طويل</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Now, to show that we could make any shape or pattern<span class="tooltiptext">الآن لكي أثبت انه يمكن القيام بأي شكل او مجسم</span></span>
+		<span class="tooltip">that we wanted, I tried to make this shape.<span class="tooltiptext">حاولت أن أصنع هذا الشكل</span></span>
+		<span class="tooltip">I wanted to fold DNA into something that goes up over the eye,<span class="tooltiptext">أردت أن أطوي الحمض النووي بصورة هكذا تشكل الاعين</span></span>
+		<span class="tooltip">down the nose, up the nose, around the forehead,<span class="tooltiptext">ومن ثم الانف .. ومن ثم الجبهة</span></span>
+		<span class="tooltip">back down and end in a little loop like this.<span class="tooltiptext">ومن ثم مرة أخرى لاكمل الدورة بعد ان امثل شكل العين الأخرى</span></span>
+		<span class="tooltip">And so, I thought, if this could work, anything could work.<span class="tooltiptext">وقلت لنفسي .. ان استطعت أن اصنع هذا المجسم .. فيمكنني صنع أي شيء</span></span>
+		<span class="tooltip">So I had the computer program design the short staples to do this.<span class="tooltiptext">كان لدي برنامج حاسوبي لكي اصمم الشرائط القصيرة</span></span>
+		<span class="tooltip">I ordered them; they came by FedEx.<span class="tooltiptext">وقد طلبتهم بواسطة فيديكس</span></span>
+		<span class="tooltip">I mixed them up, heated them, cooled them down,<span class="tooltiptext">وقمت بخلطهم .. ورفعت درجة حرارتهم .. ومن ثم خفضتها</span></span>
+		<span class="tooltip">and I got 50 billion little smiley faces<span class="tooltiptext">وحصلت على 50 مليار وجه مبتسم كهذا</span></span>
+		<span class="tooltip">floating around in a single drop of water.<span class="tooltiptext">يسبحون في قطرة مياه واحدة</span></span>
+		<span class="tooltip">And each one of these is just<span class="tooltiptext">وكل واحد من هذه يبلغ قطره</span></span>
+		<span class="tooltip">one-thousandth the width of a human hair, OK?<span class="tooltiptext">1/1000 من قطر شعرة الانسان</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So, they&#39;re all floating around in solution, and to look at them,<span class="tooltiptext">وهم يسبحون هكذا في العينة .. ولكي ننظر إليهم</span></span>
+		<span class="tooltip">you have to get them on a surface where they stick.<span class="tooltiptext">علينا أن ننقلهم الى سطح يمنع حركتهم</span></span>
+		<span class="tooltip">So, you pour them out onto a surface<span class="tooltiptext">لذا قمت بسكبهم على سطح</span></span>
+		<span class="tooltip">and they start to stick to that surface,<span class="tooltiptext">ومن ثم بدأوا بالالتصاق به</span></span>
+		<span class="tooltip">and we take a picture using an atomic-force microscope.<span class="tooltiptext">وقمت بتصويرهم بواسطة مجهر بدقة ميكروسكوبية</span></span>
+		<span class="tooltip">It&#39;s got a needle, like a record needle,<span class="tooltiptext">تحتاج لذلك إبرة .. إبرة اختبار</span></span>
+		<span class="tooltip">that goes back and forth over the surface,<span class="tooltiptext">تمررها على السطح جيئة وذهابا</span></span>
+		<span class="tooltip">bumps up and down, and feels the height of the first surface.<span class="tooltiptext">وللأعلى والاسفل لأجل معرفة إرتفاع السطح</span></span>
+		<span class="tooltip">It feels the DNA origami.<span class="tooltiptext">ومعرفة &quot; اوريجامي الحمض النووي &quot;</span></span>
+		<span class="tooltip">There&#39;s the atomic-force microscope working<span class="tooltiptext">ها هي صورة من مجهر بدقة ميكروسكوبية</span></span>
+		<span class="tooltip">and you can see that the landing&#39;s a little rough.<span class="tooltiptext">وكما ترون يبدو المسطح - مسطح المجهر - خاماً قليلاً</span></span>
+		<span class="tooltip">When you zoom in, they&#39;ve got, you know,<span class="tooltiptext">وعندما نقرب الصورة اكثر .. كما ترون</span></span>
+		<span class="tooltip">weak jaws that flip over their heads<span class="tooltiptext">يوجد وجوه بفكوك مخلوعة .. وبعضٌ مقلوبة</span></span>
+		<span class="tooltip">and some of their noses get punched out, but it&#39;s pretty good.<span class="tooltiptext">وبعض الوجوه تلقت لكمة في الأنف .. انها تبدو جيدة حقاً</span></span>
+		<span class="tooltip">You can zoom in and even see the extra little loop,<span class="tooltiptext">ويمكنك أن تقرب الصورة أكثر لك ترى الحلقات الصغيرة</span></span>
+		<span class="tooltip">this little nano-goatee.<span class="tooltiptext">هذه الوجوه بحجم النانو</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Now, what&#39;s great about this is anybody can do this.<span class="tooltiptext">الآن الجميل في الامر .. ان أي شخص يمكنه القيام بهذه العملية</span></span>
+		<span class="tooltip">And so, I got this in the mail about a year after I did this, unsolicited.<span class="tooltiptext">لقد وصلت لي هذه بعد عام من تجربتي عبر البريد ..</span></span>
+		<span class="tooltip">Anyone know what this is? What is it?<span class="tooltiptext">هل تعلمون ما هذه .. هل يعلم احدكم ؟</span></span>
+		<span class="tooltip">It&#39;s China, right?<span class="tooltiptext">انها الصين .. نعم</span></span>
+		<span class="tooltip">So, what happened is, a graduate student in China,<span class="tooltiptext">ماحدث هو ان طالبة في مشروع تخرجها</span></span>
+		<span class="tooltip">Lulu Qian, did a great job.<span class="tooltiptext">لولو شيان .. قامت بعمل مميز جداً</span></span>
+		<span class="tooltip">She wrote all her own software<span class="tooltiptext">لقد كتبت برنامجها الخاص بها</span></span>
+		<span class="tooltip">to design and built this DNA origami,<span class="tooltiptext">لكي تصمم هذا الاوريجامي للحمض النووي</span></span>
+		<span class="tooltip">a beautiful rendition of China, which even has Taiwan,<span class="tooltiptext">انه شكل رائع لدولة الصين .. وتضم تايوان أيضاً</span></span>
+		<span class="tooltip">and you can see it&#39;s sort of on the world&#39;s shortest leash, right?<span class="tooltiptext">كما ترون انها التعبير السياسي الاصغر في العالم</span></span>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(ضحك)</span></span>
+		<span class="tooltip">So, this works really well<span class="tooltiptext">إذا .. هذه الطريقة ناجحة</span></span>
+		<span class="tooltip">and you can make patterns as well as shapes, OK?<span class="tooltiptext">وبالتالي يمكننا صنع السلاسل والانساق كما صنعنا الاشكال .. صحيح ؟</span></span>
+		<span class="tooltip">And you can make a map of the Americas and spell DNA with DNA.<span class="tooltiptext">ويمكنك ان تشكل خريطة للولايات المتحدة .. او ان تكتب كلمة الحمض النووي بواسطة الحمض النووي</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And what&#39;s really neat about it --<span class="tooltiptext">الآن الجميل في الامر ..</span></span>
+		<span class="tooltip">well, actually, this all looks like nano-artwork,<span class="tooltiptext">حسناً .. ان هذا يبدو كما انه فن من حجم النانو</span></span>
+		<span class="tooltip">but it turns out that nano-artwork<span class="tooltiptext">ولكن تبين ان الفن النانو هذا</span></span>
+		<span class="tooltip">is just what you need to make nano-circuits.<span class="tooltiptext">هو ما نحتاجه لكي نصنع دارات بحجم النانو</span></span>
+		<span class="tooltip">So, you can put circuit components on the staples,<span class="tooltiptext">يمكن ان نضع على الشرائط القصيرة عناصر الدارات</span></span>
+		<span class="tooltip">like a light bulb and a light switch.<span class="tooltiptext">مثل مفتاح .. او مصباح</span></span>
+		<span class="tooltip">Let the thing assemble, and you&#39;ll get some kind of a circuit.<span class="tooltiptext">وان ندفع الشرائط للتموضع .. ومن ثم نحصل على الدارة التي نريد</span></span>
+		<span class="tooltip">And then you can maybe wash the DNA away and have the circuit left over.<span class="tooltiptext">وم ثم يمكننا ان نزيل عناصر الحمض النووي لكي نحصل على الدارة الكهربائية فحسب</span></span>
+		<span class="tooltip">So, this is what some colleagues of mine at Caltech did.<span class="tooltiptext">حسناً. . هذا ما قام به زملائي في كلايتك</span></span>
+		<span class="tooltip">They took a DNA origami, organized some carbon nano-tubes,<span class="tooltiptext">لقد استخدموا أورجامي الحمض النووي وقد قاموا بتركيب انابيب كربونية بحجم الناتو عليها</span></span>
+		<span class="tooltip">made a little switch, you see here, wired it up,<span class="tooltiptext">وقاموا بصناعة &quot; مفاتيح كهربائية &quot; و وصلوها هكذا ..</span></span>
+		<span class="tooltip">tested it and showed that it is indeed a switch.<span class="tooltiptext">ومن قم اختبروها .. وقد عملت تماما كمفتاح كهربائي</span></span>
+		<span class="tooltip">Now, this is just a single switch<span class="tooltiptext">هنا كما ترون مفتاح أحادي</span></span>
+		<span class="tooltip">and you need half a billion for a computer, so we have a long way to go.<span class="tooltiptext">انت تحتاج الى نصف مليار لصناعة حاسوب .. لذا الطريق اماما طويل</span></span>
+		<span class="tooltip">But this is very promising<span class="tooltiptext">ولكننا متفائلون</span></span>
+		<span class="tooltip">because the origami can organize parts just one-tenth the size<span class="tooltiptext">لأن الأوريجامي يمكن ان تصنع 1/10 من حجم تلك</span></span>
+		<span class="tooltip">of those in a normal computer.<span class="tooltiptext">الموجودة في الحواسيب الطبيعية</span></span>
+		<span class="tooltip">So it&#39;s very promising for making small computers.<span class="tooltiptext">انه امرٌ مُبشر حقاً .. فيما يخص صناعة الحواسيب الصغيرة</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Now, I want to get back to that compiler.<span class="tooltiptext">الآن اريد ان اعود الى مترجم البيانات</span></span>
+		<span class="tooltip">The DNA origami is a proof that that compiler actually works.<span class="tooltiptext">ان أوريجامي الحمض النووي هي دليل على ان مترجم البيانات يعمل</span></span>
+		<span class="tooltip">So, you start with something in the computer.<span class="tooltiptext">فانت تبدأ من على الحاسوب</span></span>
+		<span class="tooltip">You get a high-level description of the computer program,<span class="tooltiptext">ومن ثم تقوم بكتابة برنامج بأوامر دقيقة</span></span>
+		<span class="tooltip">a high-level description of the origami.<span class="tooltiptext">بوصف عالي الدقة للأوريجامي</span></span>
+		<span class="tooltip">You can compile it to molecules, send it to a synthesizer,<span class="tooltiptext">ومن ثم تقوم بترجمته الى الجزئيات ومن ثم يحول الى المزج لنحصل على ما نريد</span></span>
+		<span class="tooltip">and it actually works.<span class="tooltiptext">ان الامر ينجح حقاً</span></span>
+		<span class="tooltip">And it turns out that a company has made a nice program<span class="tooltiptext">ولقد تبين ان الشركة قد صنعت برنامجاً</span></span>
+		<span class="tooltip">that&#39;s much better than my code, which was kind of ugly,<span class="tooltiptext">يعمل افضل من برنامجي .. وهذا أحزنني</span></span>
+		<span class="tooltip">and will allow us to do this in a nice,<span class="tooltiptext">سيمكننا هذا البرنامج من كتابة الاوامر</span></span>
+		<span class="tooltip">visual, computer-aided design way.<span class="tooltiptext">ومن ثم تصويرها بصورة بصرية</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So, now you can say, all right,<span class="tooltiptext">الآن يمكننا القول انه عمل رائع</span></span>
+		<span class="tooltip">why isn&#39;t DNA origami the end of the story?<span class="tooltiptext">ولكن لماذا اوريجامي الحمض النووي ليس كل القصة ؟</span></span>
+		<span class="tooltip">You have your molecular compiler, you can do whatever you want.<span class="tooltiptext">على اعتبار لديك مترجم الجزيئات .. يمكنك القيام باي شي</span></span>
+		<span class="tooltip">The fact is that it does not scale.<span class="tooltiptext">في الحقيقة يمكن ذلك على كافة النطاقات</span></span>
+		<span class="tooltip">So if you want to build a human from DNA origami,<span class="tooltiptext">وان أردت ان تصنع انساناً من خلال اوريجامي الحمض النووي</span></span>
+		<span class="tooltip">the problem is, you need a long strand<span class="tooltiptext">فانت تحتاج شريطاً</span></span>
+		<span class="tooltip">that&#39;s 10 trillion trillion bases long.<span class="tooltiptext">بطول 10 تريليون تريليون</span></span>
+		<span class="tooltip">That&#39;s three light years&#39; worth of DNA,<span class="tooltiptext">اي شريط من الحمض النووي طوله 3 سنوات ضوئية</span></span>
+		<span class="tooltip">so we&#39;re not going to do this.<span class="tooltiptext">لذا لن نستخدم هذه الطريقة</span></span>
+		<span class="tooltip">We&#39;re going to turn to another technology,<span class="tooltiptext">سوف نعمد الى طريقة ثانية</span></span>
+		<span class="tooltip">called algorithmic self-assembly of tiles.<span class="tooltiptext">تدعى &quot; التجمع الحسابي الذاتي للبلاطات &quot;</span></span>
+		<span class="tooltip">It was started by Erik Winfree,<span class="tooltiptext">لقد بدأ هذه الطريقة إيريك وينفري</span></span>
+		<span class="tooltip">and what it does,<span class="tooltiptext">وما قام به</span></span>
+		<span class="tooltip">it has tiles that are a hundredth the size of a DNA origami.<span class="tooltiptext">هو انه احضر مئات البلاطات ( مربعات صغيرة ) مصنوعة من اوريجامي الحمض النووي</span></span>
+		<span class="tooltip">You zoom in, there are just four DNA strands<span class="tooltiptext">كما ترون حينما نقرب الصورة نجد شرائط الحمض النووي</span></span>
+		<span class="tooltip">and they have little single-stranded bits on them<span class="tooltiptext">وكما ترون يوجد شرائط فردية</span></span>
+		<span class="tooltip">that can bind to other tiles, if they match.<span class="tooltiptext">يمكن ان تستخدم لربط البلاطات في حال التوافق</span></span>
+		<span class="tooltip">And we like to draw these tiles as little squares.<span class="tooltiptext">ونحن نفضل ان نرسم هذه البلاطات على شكل مربعات صغيرة</span></span>
+		<span class="tooltip">And if you look at their sticky ends, these little DNA bits,<span class="tooltiptext">ولكن ان نظرتم الى الزوايا .. فان هذه الاجزاء من الحمض النووي</span></span>
+		<span class="tooltip">you can see that they actually form a checkerboard pattern.<span class="tooltiptext">تبدو وكانها تشكل لوح شطرنج ..</span></span>
+		<span class="tooltip">So, these tiles would make a complicated, self-assembling checkerboard.<span class="tooltiptext">وكما ترون هذه البلاطات تتشكل بصورة ذاتية معقدة على شاكلة لوح شطرنج</span></span>
+		<span class="tooltip">And the point of this, if you didn&#39;t catch that,<span class="tooltiptext">وان لم تعوا ما أرمي إليه</span></span>
+		<span class="tooltip">is that tiles are a kind of molecular program<span class="tooltiptext">فاني اقصد ان البلاطات هي عبارة عن برنامج يستهدف الجزئيات</span></span>
+		<span class="tooltip">and they can output patterns.<span class="tooltiptext">ويمكن ان نستخدمه لصناعة الانماط والمجسمات التي نريد</span></span>
+		<span class="tooltip">And a really amazing part of this is<span class="tooltiptext">والجزء الممتع في هذا</span></span>
+		<span class="tooltip">that any computer program can be translated<span class="tooltiptext">هو انه اي برنامج حاسوب يمكن ترجمته</span></span>
+		<span class="tooltip">into one of these tile programs -- specifically, counting.<span class="tooltiptext">الى واحدة من هذه البرمجيات التي تصنع بواسطة البلاطات بدقة عالية وبنفس العدد</span></span>
+		<span class="tooltip">So, you can come up with a set of tiles<span class="tooltiptext">لذا يمكنك ان تخرج بعدد من البلاطات وتموضع معين</span></span>
+		<span class="tooltip">that when they come together, form a little binary counter<span class="tooltiptext">يشابه الشيفرة الثنائية ( 0,1 )</span></span>
+		<span class="tooltip">rather than a checkerboard.<span class="tooltiptext">بدلاً من نمط لوح الشطرنج</span></span>
+		<span class="tooltip">So you can read off binary numbers five, six and seven.<span class="tooltiptext">اذا يمكنك ان تقرأ من تلك الشيفرة الارقام ( 5 , 6 , 7 )</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And in order to get these kinds of computations started right,<span class="tooltiptext">و من اجل الحصول على حسابات صحيحة</span></span>
+		<span class="tooltip">you need some kind of input, a kind of seed.<span class="tooltiptext">يجب علينا ان نحصل على مُدخلات .. تستخدم كبذور أساس للبرنامج</span></span>
+		<span class="tooltip">You can use DNA origami for that.<span class="tooltiptext">وهنا يأتي دور أوريجامي الحمض النووي</span></span>
+		<span class="tooltip">You can encode the number 32<span class="tooltiptext">يمكنك تشفير الرقم 32</span></span>
+		<span class="tooltip">in the right-hand side of a DNA origami,<span class="tooltiptext">على الجانب الايمن من اوريجامي الحمض النووي</span></span>
+		<span class="tooltip">and when you add those tiles that count,<span class="tooltiptext">وعندما تضيف تلك البلاطات &quot; المبرمجة على الاعداد &quot;</span></span>
+		<span class="tooltip">they will start to count -- they will read that 32<span class="tooltiptext">سوف تبدأ بالعد .. وما ان تصل الى الرقم 32</span></span>
+		<span class="tooltip">and they&#39;ll stop at 32.<span class="tooltiptext">سوف تتوقف عند ذلك الرقم</span></span>
+		<span class="tooltip">So, what we&#39;ve done is we&#39;ve figured out a way<span class="tooltiptext">اذا ما توصلنا اليه .</span></span>
+		<span class="tooltip">to have a molecular program know when to stop going.<span class="tooltiptext">هو طريقة نملك فيها برنامج جزئيات .. يعرف متى يتوقف عن النمو</span></span>
+		<span class="tooltip">It knows when to stop growing because it can count.<span class="tooltiptext">انه يعلم متى يتوقف عن النمو لانه يستطيع العد</span></span>
+		<span class="tooltip">It knows how big it is.<span class="tooltiptext">لانه يستيطع استيعاب حجمه</span></span>
+		<span class="tooltip">So, that answers that sort of first question I was talking about.<span class="tooltiptext">وهذا هو الجواب للسؤال الاول الذي طرحته</span></span>
+		<span class="tooltip">It doesn&#39;t tell us how babies do it, however.<span class="tooltiptext">ولكن هذا لا يفسر لنا كيف تقوم الاجنة بذلك .. على كل ..</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So now, we can use this counting to try and get at much bigger things<span class="tooltiptext">يمكننا ان نستخدم هذه التقنية لكي نحصل على مجسمات أكبر</span></span>
+		<span class="tooltip">than DNA origami could otherwise.<span class="tooltiptext">اكبر من تلك التي نحصل علها بواسطة اوريجامي الحمض النووي</span></span>
+		<span class="tooltip">Here&#39;s the DNA origami, and what we can do<span class="tooltiptext">هذا هو اوريجامي الحمض النووي .. وما يمكننا القيام به</span></span>
+		<span class="tooltip">is we can write 32 on both edges of the DNA origami,<span class="tooltiptext">هو برمجة 32 على حافتي اوريجامي الحمض النووي</span></span>
+		<span class="tooltip">and we can now use our watering can<span class="tooltiptext">لكي نستخدم هذا بالإنماء ..</span></span>
+		<span class="tooltip">and water with tiles, and we can start growing tiles off of that<span class="tooltiptext">حيث نضيف البلاطات ومن ثم يمكننا ان ننمي البلاطات من ذلك المنطلق</span></span>
+		<span class="tooltip">and create a square.<span class="tooltiptext">لكي نصنع مربعاً</span></span>
+		<span class="tooltip">The counter serves as a template<span class="tooltiptext">فان العدد يستخدم كمرجع</span></span>
+		<span class="tooltip">to fill in a square in the middle of this thing.<span class="tooltiptext">لكي يتم ملء الوسط في داخل المربع</span></span>
+		<span class="tooltip">So, what we&#39;ve done is we&#39;ve succeeded<span class="tooltiptext">ان ما قمنا به ونجحنا به</span></span>
+		<span class="tooltip">in making something much bigger than a DNA origami<span class="tooltiptext">هو اننا استطعنا ان نصنع ما هو اكبر من اوريجامي الحمض النووي</span></span>
+		<span class="tooltip">by combining DNA origami with tiles.<span class="tooltiptext">عن طريق دمج اوريجامي الحمض النووي بالبلاطات</span></span>
+		<span class="tooltip">And the neat thing about it is, is that it&#39;s also reprogrammable.<span class="tooltiptext">والامر المميز انه امرٌ قابل لاعادة البرمجة</span></span>
+		<span class="tooltip">You can just change a couple of the DNA strands in this binary representation<span class="tooltiptext">عليك فقط ان تغير رقمين من شريط الحمض النووي الذي يمثل الشيفرة الثنائية</span></span>
+		<span class="tooltip">and you&#39;ll get 96 rather than 32.<span class="tooltiptext">وسوف تحصل على 96 بدلاً من 32</span></span>
+		<span class="tooltip">And if you do that, the origami&#39;s the same size,<span class="tooltiptext">وان قمت بهذا فانت ستستخدم نفس حجم الاوريجامي</span></span>
+		<span class="tooltip">but the resulting square that you get is three times bigger.<span class="tooltiptext">ولكنك ستحصل على مربع اكبر بثلاث مرات</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So, this sort of recapitulates<span class="tooltiptext">انه نوع من عمليات التجميل ..</span></span>
+		<span class="tooltip">what I was telling you about development.<span class="tooltiptext">تحتاجها في حالات التطوير</span></span>
+		<span class="tooltip">You have a very sensitive computer program<span class="tooltiptext">انه برنامج حساس جداً</span></span>
+		<span class="tooltip">where small changes -- single, tiny, little mutations --<span class="tooltiptext">بتغيرات بسيطة .. بتعديلات طفيفة</span></span>
+		<span class="tooltip">can take something that made one size square<span class="tooltiptext">يمكن ان ننتقل من حجم مربع</span></span>
+		<span class="tooltip">and make something very much bigger.<span class="tooltiptext">الى حجم اكبر بكثير</span></span>
+		<span class="tooltip">Now, this -- using counting to compute<span class="tooltiptext">نحن نستخدم &quot; العد &quot; لكي نحسب</span></span>
+		<span class="tooltip">and build these kinds of things<span class="tooltiptext">ونبني هذه المجسمات</span></span>
+		<span class="tooltip">by this kind of developmental process<span class="tooltiptext">بواسطة عملية تطويرية</span></span>
+		<span class="tooltip">is something that also has bearing on Craig Venter&#39;s question.<span class="tooltiptext">هذا يطرح تساؤل كريج فينتر</span></span>
+		<span class="tooltip">So, you can ask, how many DNA strands are required<span class="tooltiptext">والذي سأل كم عدد شرائط الاحماض النووية المطلوبة</span></span>
+		<span class="tooltip">to build a square of a given size?<span class="tooltiptext">لكي نبني مربع بحجم معين ؟</span></span>
+		<span class="tooltip">If we wanted to make a square of size 10, 100 or 1,000,<span class="tooltiptext">ان اردناه مربع بحجم 10 او 100 او 1000</span></span>
+		<span class="tooltip">if we used DNA origami alone,<span class="tooltiptext">ان استخدمنا فحسب اوريجامي الحمض النووي</span></span>
+		<span class="tooltip">we would require a number of DNA strands that&#39;s the square<span class="tooltiptext">فاننا سنحتاج عدد من شرائط الحمض النووي تبلغ</span></span>
+		<span class="tooltip">of the size of that square;<span class="tooltiptext">حجم المربع المطلوب مرفوع للأس 2</span></span>
+		<span class="tooltip">so we&#39;d need 100, 10,000 or a million DNA strands.<span class="tooltiptext">لذا نحن نحتاج 100 أو 10000 او مليون من شرائط الحمض النووي</span></span>
+		<span class="tooltip">That&#39;s really not affordable.<span class="tooltiptext">والذي لايمكن توفيره</span></span>
+		<span class="tooltip">But if we use a little computation --<span class="tooltiptext">ولكن ان استخدمنا حسابات صغيرة</span></span>
+		<span class="tooltip">we use origami, plus some tiles that count --<span class="tooltiptext">وباستخدام الاوريجامي والبلاطات مع العدادات</span></span>
+		<span class="tooltip">then we can get away with using 100, 200 or 300 DNA strands.<span class="tooltiptext">يمكننا ان نقوم بذلك بواسطة 100 او 200 او 300 شريط من الاحماض النووية</span></span>
+		<span class="tooltip">And so we can exponentially reduce the number of DNA strands we use,<span class="tooltiptext">لذا يمكننا تخفيض عدد شرائط الحمض النووي الذي يجب استخدامها</span></span>
+		<span class="tooltip">if we use counting, if we use a little bit of computation.<span class="tooltiptext">ان استخدمنا العدادات .. وبقليل من البرمجيات</span></span>
+		<span class="tooltip">And so computation is some very powerful way<span class="tooltiptext">لذا البرمجة اداة قوية جداً</span></span>
+		<span class="tooltip">to reduce the number of molecules you need to build something,<span class="tooltiptext">تقلل عدد الجزئيات المطلوبة لبناء مجسم معين</span></span>
+		<span class="tooltip">to reduce the size of the genome that you&#39;re building.<span class="tooltiptext">ولكي تقلل حجم الجينينوم الذي يستهدف بناءه</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And finally, I&#39;m going to get back to that sort of crazy idea<span class="tooltiptext">وفي النهاية .. اريد ان اعود الى فكرة جنونية</span></span>
+		<span class="tooltip">about computers building computers.<span class="tooltiptext">عن الكمبيوترات التي تبني الكمبيوترات</span></span>
+		<span class="tooltip">If you look at the square that you build with the origami<span class="tooltiptext">إن نظرت الى المربع الذي تم بناؤه بواسطة الاوريجامي</span></span>
+		<span class="tooltip">and some counters growing off it,<span class="tooltiptext">وبوجود العدادات التي تضبط الحجم</span></span>
+		<span class="tooltip">the pattern that it has is exactly the pattern that you need<span class="tooltiptext">سترى ان النسق المنتج هو النسق المطلوب تماماً</span></span>
+		<span class="tooltip">to make a memory.<span class="tooltiptext">لتكوين الذاكرة</span></span>
+		<span class="tooltip">So if you affix some wires and switches to those tiles --<span class="tooltiptext">لذا ان تم وصل بعض الاسلاك والمفاتيح لهذه البلاطات</span></span>
+		<span class="tooltip">rather than to the staple strands, you affix them to the tiles --<span class="tooltiptext">أي نربطها بالبلاطات بدلاً من ربطها الى شرائط الحمض النووي</span></span>
+		<span class="tooltip">then they&#39;ll self-assemble the somewhat complicated circuits,<span class="tooltiptext">فسوف تقوم وحدها بالتموضع وتنشىء بصورة ما دارات معقدة</span></span>
+		<span class="tooltip">the demultiplexer circuits, that you need to address this memory.<span class="tooltiptext">وسوف تقوم بمضاعفة الدارات لكي تحصل على المطلوب</span></span>
+		<span class="tooltip">So you can actually make a complicated circuit<span class="tooltiptext">لذا يمكنك في الحقيقة صناعة دارات معقدة</span></span>
+		<span class="tooltip">using a little bit of computation.<span class="tooltiptext">باستخدام بعض الحسابات</span></span>
+		<span class="tooltip">It&#39;s a molecular computer building an electronic computer.<span class="tooltiptext">انها برمجة جزيئية تقوم ببناء كمبيوترات الكترونية</span></span>
+		<span class="tooltip">Now, you ask me, how far have we gotten down this path?<span class="tooltiptext">والآن السؤال المطروح .. الى أين وصلنا في هذا الامر ؟</span></span>
+		<span class="tooltip">Experimentally, this is what we&#39;ve done in the last year.<span class="tooltiptext">تقريباً .. هذا ما قمنا به في العام الماضي</span></span>
+		<span class="tooltip">Here is a DNA origami rectangle,<span class="tooltiptext">ها هو أوريجامي مستطيل الشكل من الحمض النووي</span></span>
+		<span class="tooltip">and here are some tiles growing from it.<span class="tooltiptext">وهاهي بعض البلاطات التي تنمو من خلاله</span></span>
+		<span class="tooltip">And you can see how they count.<span class="tooltiptext">وكما ترون كيف يتم العد</span></span>
+		<span class="tooltip">One, two, three, four, five, six, nine, 10, 11, 12, 17.<span class="tooltiptext">1 , 2 , 3 ... 10 , 11 , 17</span></span>
+		<span class="tooltip">So it&#39;s got some errors, but at least it counts up.<span class="tooltiptext">لدينا بعض الاخطاء .. ولكن العد يتم على الاقل</span></span>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(ضحك)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So, it turns out we actually had this idea nine years ago,<span class="tooltiptext">كما تبين كنا نملك هذه الفكرة منذ 9 سنوات</span></span>
+		<span class="tooltip">and that&#39;s about the time constant for how long it takes<span class="tooltiptext">ولكن كان الزمن الثابت هو ما تطلب منا كل هذا الوقت</span></span>
+		<span class="tooltip">to do these kinds of things, so I think we made a lot of progress.<span class="tooltiptext">ولكني اظن اننا قطعنا شوطاً جيداً في هذا المجال</span></span>
+		<span class="tooltip">We&#39;ve got ideas about how to fix these errors.<span class="tooltiptext">ولدينا بعض الافكار عن كيفية اصلاح هذه الاخطاء</span></span>
+		<span class="tooltip">And I think in the next five or 10 years,<span class="tooltiptext">وانا اعتقد انه في خلال 5-10 سنوات</span></span>
+		<span class="tooltip">we&#39;ll make the kind of squares that I described<span class="tooltiptext">سوف نستطيع عمل المربع الذي تحدث عنه</span></span>
+		<span class="tooltip">and maybe even get to some of those self-assembled circuits.<span class="tooltiptext">وربما سوف نستطيع الوصول الى دارات ذاتية التموضع</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So now, what do I want you to take away from this talk?<span class="tooltiptext">وما اريدكم ان تخرجوا منه من هذه المحادثة</span></span>
+		<span class="tooltip">I want you to remember that<span class="tooltiptext">اريدكم ان تتذكروا</span></span>
+		<span class="tooltip">to create life&#39;s very diverse and complex forms,<span class="tooltiptext">انه لكي تصنع الطبيعة اشكال حياة متباينة ومعقدة</span></span>
+		<span class="tooltip">life uses computation to do that.<span class="tooltiptext">فان الحياة تحتاج الى الحسابات من اجل ذلك</span></span>
+		<span class="tooltip">And the computations that it uses, they&#39;re molecular computations,<span class="tooltiptext">وهذه الحسابات التي تستخدمها هي حسابات جزيئية</span></span>
+		<span class="tooltip">and in order to understand this and get a better handle on it,<span class="tooltiptext">ولكي نستطيع ان نفهم هذه الحسابات ونستطيع ان نتحكم بها</span></span>
+		<span class="tooltip">as Feynman said, you know,<span class="tooltiptext">كما قال فينمان (عالم فيزياء)</span></span>
+		<span class="tooltip">we need to build something to understand it.<span class="tooltiptext">علينا ان نبني شيئاً لكي نفهمها</span></span>
+		<span class="tooltip">And so we are going to use molecules and refashion this thing,<span class="tooltiptext">لذا سوف نقوم باستخدام اعادة توظيف الجزئيات</span></span>
+		<span class="tooltip">rebuild everything from the bottom up,<span class="tooltiptext">لكي نحاول بناء كل شيء من الصفر</span></span>
+		<span class="tooltip">using DNA in ways that nature never intended,<span class="tooltiptext">باستخدم الحمض النووي بصورة لم تكن تتوقعها الطبيعة</span></span>
+		<span class="tooltip">using DNA origami,<span class="tooltiptext">باستخدام اوريجامي الحمض النووي</span></span>
+		<span class="tooltip">and DNA origami to seed this algorithmic self-assembly.<span class="tooltiptext">باستخدام التموضع الرياضي الذاتي لاوريجامي الحمض النووي</span></span>
+	</p>
+	<p>
+		<span class="tooltip">You know, so this is all very cool,<span class="tooltiptext">كما ترون الامر ممتع جداً</span></span>
+		<span class="tooltip">but what I&#39;d like you to take from the talk,<span class="tooltiptext">وما اريده من هذه المحادثة</span></span>
+		<span class="tooltip">hopefully from some of those big questions,<span class="tooltiptext">هو ان اكون &quot; متأملاً &quot; هو اكون قد وضحت بعض الاجابات عن الاسئلة المبهمة</span></span>
+		<span class="tooltip">is that this molecular programming isn&#39;t just about making gadgets.<span class="tooltiptext">وان اكون قد وضحت ان البرمجة الجزيئية ليست فحسب محض &quot; تسلية &quot;</span></span>
+		<span class="tooltip">It&#39;s not just making about --<span class="tooltiptext">وهي ليست فحسب محاولة لصناعة</span></span>
+		<span class="tooltip">it&#39;s making self-assembled cell phones and circuits.<span class="tooltiptext">هواتف بصورة ذاتية او دارات كهربائية</span></span>
+		<span class="tooltip">What it&#39;s really about is taking computer science<span class="tooltiptext">ولكنها عبارة عن وسيلة لنقل علوم الحاسوب</span></span>
+		<span class="tooltip">and looking at big questions in a new light,<span class="tooltiptext">الى نطاق آخر جديد .. والنظر الى الامور بمنظور جديد</span></span>
+		<span class="tooltip">asking new versions of those big questions<span class="tooltiptext">وتدفعنا لطرح أسئلة جديدة كبيرة</span></span>
+		<span class="tooltip">and trying to understand how biology<span class="tooltiptext">وتساعدنا في فهم كيف ان علم البيولوجيا</span></span>
+		<span class="tooltip">can make such amazing things. Thank you.<span class="tooltiptext">يمكنه ان يقوم بأشياء مذهلة</span></span>
+		<span class="tooltip">(Applause)<span class="tooltiptext">(تصفيق)</span></span>
+	</p>
+
+	<div class="line"></div>
+	<p>Enjoying my website? Your donation helps maintain its ad-free experience and smooth operation. Your support is truly appreciated and helps me continue providing quality content. Thank you for considering a donation!</p>
+	<p>To donate, simply click the PayPal link below:<p/>
+	<p><a href="https://www.paypal.com/paypalme/otechai" target='_blank'>Donate via PayPal</a></p>
+	
+</div>
+<span onclick='topFunction()' id='gotop' title='Go to top'><svg width="32" height="32" viewBox="0 0 100 100">
+	   <path fill="white" d="m50 0c-13.262 0-25.98 5.2695-35.355 14.645s-14.645 22.094-14.645 35.355 5.2695 25.98 14.645 35.355 22.094 14.645 35.355 14.645 25.98-5.2695 35.355-14.645 14.645-22.094 14.645-35.355-5.2695-25.98-14.645-35.355-22.094-14.645-35.355-14.645zm20.832 62.5-20.832-22.457-20.625 22.457c-1.207 0.74219-2.7656 0.57812-3.7891-0.39844-1.0273-0.98047-1.2695-2.5273-0.58594-3.7695l22.918-25c0.60156-0.61328 1.4297-0.96094 2.2891-0.96094 0.86328 0 1.6914 0.34766 2.293 0.96094l22.918 25c0.88672 1.2891 0.6875 3.0352-0.47266 4.0898-1.1562 1.0508-2.9141 1.0859-4.1133 0.078125z"></path>
+	 </svg></span>
+
+	    <div class="footer">
+	        <div class="left"><a href='../../../index.html'>ReadingDB</a></div>
+	        <div class="center"><a href="https://twitter.com/readingdb" class="twitter-link">
+	    <svg class="twitter-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	        <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.58-2.11-9.96-5.02-.42.72-.66 1.56-.66 2.46 0 1.68.85 3.16 2.14 4.02-.79-.02-1.53-.24-2.18-.6v.06c0 2.35 1.67 4.31 3.88 4.76-.4.1-.83.16-1.27.16-.31 0-.62-.03-.92-.08.63 1.96 2.45 3.39 4.61 3.43-1.69 1.32-3.83 2.1-6.15 2.1-.4 0-.8-.02-1.19-.07 2.19 1.4 4.78 2.22 7.57 2.22 9.07 0 14.02-7.52 14.02-14.02 0-.21 0-.41-.01-.61.96-.69 1.79-1.56 2.45-2.55-.88.39-1.83.65-2.82.77z"/>
+	    </svg>
+	</a></div>
+	        <div class="right"><a href='https://www.paypal.com/paypalme/otechai'>Donate</a></div>
+	    </div>
+	<script>
+
+		var mybutton = document.getElementById('gotop');
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+			if (document.documentElement.scrollTop > 20 || document.body.scrollTop > 20) {
+				mybutton.style.display = 'block';
+			} else {
+				mybutton.style.display = 'none';
+			}
+		}
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<script src="../../../static/scripts/script.js"></script>
+</body>
+</html>
+	

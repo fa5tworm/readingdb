@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+	<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<meta name="description" content="Unlock your Spanish reading skills: Immerse yourself in a contextual and practical learning enhanced by high-quality instant translations.">
+      	<meta name="keywords" content="Spanish reading, Spanish language learning, instant translations, reading adventure, improve Spanish, improve reading skills, educational platform, spanish reading resources, online education, Spanish proficiency, learn Spanish, Spanish learning resources, bilingual education, language exchange, study Spanish online">
+		<link rel="apple-touch-icon" sizes="180x180" href="../../../static/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../../../static/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../../../static/favicons/favicon-16x16.png">
+		<link rel="manifest" href="../../../static/favicons/site.webmanifest">
+		<title>Adam Sadowsky : How to engineer a viral music video</title>
+		<link rel='stylesheet' href='../../../static/styles/styles.css'>
+		<script defer data-domain="readingdb.org" src="https://plausible.io/js/script.js"></script>
+	</head>
+	<body>
+
+	<h1 class='title'>How to engineer a viral music video</h1>
+	<h2 class='speaker'>Adam Sadowsky</h2>
+	<div class='transcript books'>
+	<p>Are you ready to improve your Spanish speaking skills, check <a href='https://referral.lingoda.com/6Dztrv'>Lingoda</a> today!</p>
+		<p>
+		<span class="tooltip">Hi there.<span class="tooltiptext">أهلا بكم</span></span>
+		<span class="tooltip">I&#39;m going to be talking a little bit about<span class="tooltiptext">سأتحدث قليلا عن</span></span>
+		<span class="tooltip">music, machines and life.<span class="tooltiptext">الموسيقى، الآلات والحياة</span></span>
+		<span class="tooltip">Or, more specifically,<span class="tooltiptext">أو، بالأخص</span></span>
+		<span class="tooltip">what we learned from the creation of a very large and complicated machine<span class="tooltiptext">ما تعلمناه من صناعة آلة ضخمة ومعقدة جدا</span></span>
+		<span class="tooltip">for a music video.<span class="tooltiptext">لفيديو موسيقي</span></span>
+		<span class="tooltip">Some of you may recognize this image.<span class="tooltiptext">بعضكم قد يتعرف على هذه الصورة</span></span>
+		<span class="tooltip">This is the opening frame of the video that we created.<span class="tooltiptext">هذه اللقطة الإفتتاحية من الفيديو الذي صنعناه</span></span>
+		<span class="tooltip">We&#39;ll be showing the video at the end,<span class="tooltiptext">سنعرض المقطع في النهاية</span></span>
+		<span class="tooltip">but before we do, I want to talk a little bit about<span class="tooltiptext">ولكن قبل أن نفعل ذلك، أود التحدث قليلا عن</span></span>
+		<span class="tooltip">what it is that they wanted.<span class="tooltiptext">ما أرادوه</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Now, when we first started talking to OK Go --<span class="tooltiptext">الآن، حين بدأنا التحدث مع &quot;أوك جو&quot;</span></span>
+		<span class="tooltip">the name of the song is &quot;This Too Shall Pass&quot; --<span class="tooltiptext">إسم الأغنية &quot;هذا أيضا سيمضي&quot;</span></span>
+		<span class="tooltip">we were really excited because<span class="tooltiptext">كنا متحمسين جدا لأنهم</span></span>
+		<span class="tooltip">they expressed interest in building a machine that they could dance with.<span class="tooltiptext">أبدو إهتمامهم بصنع آلة يمكنهم الرقص معها</span></span>
+		<span class="tooltip">And we were very excited about this<span class="tooltiptext">وكنا متحمسين جدا لذلك</span></span>
+		<span class="tooltip">because, of course,<span class="tooltiptext">لأنهم، بالطبع</span></span>
+		<span class="tooltip">they have a history of dancing with machines.<span class="tooltiptext">لهم تاريخ في الرقص مع الآلات</span></span>
+		<span class="tooltip">They&#39;re responsible for this video, &quot;Here It Goes Again.&quot;<span class="tooltiptext">إنهم المسؤولين عن هذا المقطع، &quot;ها نحن نعيد الكرة&quot;</span></span>
+		<span class="tooltip">50-million-plus views on YouTube.<span class="tooltiptext">أكثر من 50 مليون مشاهد على يوتيوب</span></span>
+		<span class="tooltip">Four guys dancing on treadmills,<span class="tooltiptext">أربع أشخاص يرقصون على آلالات المشي</span></span>
+		<span class="tooltip">no cuts, just a static camera.<span class="tooltiptext">بدون تقطيع، فقط كاميرا ثابتة</span></span>
+		<span class="tooltip">A fantastically viral and wonderful video.<span class="tooltiptext">مقطع رائع حقق إنتشارا كبيرا</span></span>
+		<span class="tooltip">So we were really excited about working with them.<span class="tooltiptext">فكنا متحمسين جدا للعمل معهم</span></span>
+		<span class="tooltip">And we sort of started talking about what it is that they wanted.<span class="tooltiptext">وبدأنا التحدث عن مرادهم</span></span>
+		<span class="tooltip">And they explained that they wanted<span class="tooltiptext">وشرحوا أنهم يريدون</span></span>
+		<span class="tooltip">kind of a Rube Goldberg machine.<span class="tooltiptext">نوع من آلات روبي جولدبيرت</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Now, for those of you who don&#39;t know,<span class="tooltiptext">لمن لا يعرف منكم</span></span>
+		<span class="tooltip">a Rube Goldberg machine<span class="tooltiptext">آلة روبي جولدبيرت</span></span>
+		<span class="tooltip">is a complicated contraption,<span class="tooltiptext">هي آلة غريبة الشكل</span></span>
+		<span class="tooltip">an incredibly over-engineered piece of machinery<span class="tooltiptext">مهندسة بشكل معقد ومبالغ به</span></span>
+		<span class="tooltip">that accomplishes a relatively simple task.<span class="tooltiptext">لتؤدي عملا بسيط نسبيا</span></span>
+		<span class="tooltip">So we were excited by this idea,<span class="tooltiptext">وقد تحمسنا لهذه الفكرة</span></span>
+		<span class="tooltip">and we started talking about<span class="tooltiptext">وبدأنا بالحديث عن</span></span>
+		<span class="tooltip">exactly what it would look like.<span class="tooltiptext">شكلها النهائي</span></span>
+		<span class="tooltip">And we came up with some parameters, because,<span class="tooltiptext">وتوصلنا إلى بعض المواصفات</span></span>
+		<span class="tooltip">you know, building a Rube Goldberg machine<span class="tooltiptext">فبناء آلة روبي جولدبيرت</span></span>
+		<span class="tooltip">has limitations,<span class="tooltiptext">له حدوده</span></span>
+		<span class="tooltip">but it also is pretty wide open.<span class="tooltiptext">وكما أنه مفتوح على مصراعيه</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And we wanted to make sure that we did something<span class="tooltiptext">وأردنا التأكد بأننا سنصنع شيئا</span></span>
+		<span class="tooltip">that would work for a music video.<span class="tooltiptext">يتماشى مع المقطع</span></span>
+		<span class="tooltip">So we came up with a list of requirements,<span class="tooltiptext">فتوصلنا إلى قائمة الإحتياجات</span></span>
+		<span class="tooltip">the &quot;10 commandments,&quot;<span class="tooltiptext">الوصايا العشر</span></span>
+		<span class="tooltip">and they were, in order of ascending difficulty:<span class="tooltiptext">وهي مذكورة من الأسهل إلى الأصعب</span></span>
+		<span class="tooltip">The first is &quot;No magic.&quot;<span class="tooltiptext">الأول &quot;لا سحر&quot;ـ</span></span>
+		<span class="tooltip">Everything that happened on screen had to be<span class="tooltiptext">كل ما يحدث على الشاشة يجب أن يكون</span></span>
+		<span class="tooltip">very easily understood by a typical viewer.<span class="tooltiptext">سهل جدا للفهم من قبل المشاهد العادي</span></span>
+		<span class="tooltip">The rule of thumb was that, if my mother couldn&#39;t understand it,<span class="tooltiptext">القاعدة هي، لو لم تفهمهم أمي</span></span>
+		<span class="tooltip">then we couldn&#39;t use it in the video.<span class="tooltiptext">إذا لا يمكننا إستخدامه في المقطع</span></span>
+		<span class="tooltip">They wanted band integration,<span class="tooltiptext">أرادو دمج الفرقة</span></span>
+		<span class="tooltip">that is, the machine acting upon the band members,<span class="tooltiptext">وذلك بأن تتصرف الآلة بأعضاء الفرقة</span></span>
+		<span class="tooltip">specifically not the other way around.<span class="tooltiptext">تحديدا وليس بالعكس</span></span>
+		<span class="tooltip">They wanted the machine action to follow the song feeling.<span class="tooltiptext">أرادو أن تتوافق حركات الآلة مع شعور الأغنية</span></span>
+		<span class="tooltip">So as the song picks up emotion,<span class="tooltiptext">فكلما تحولت الأغنية إلى شعور</span></span>
+		<span class="tooltip">so should the machine<span class="tooltiptext">كذلك يجب أن تتحول الآلة</span></span>
+		<span class="tooltip">get grander in its process.<span class="tooltiptext">إلى حركات أكبر</span></span>
+		<span class="tooltip">They wanted us to make use of the space.<span class="tooltiptext">أرادو أن نستغل المساحة</span></span>
+		<span class="tooltip">So we have this 10,000-square-foot warehouse we were using,<span class="tooltiptext">فلدينا مستودع 10,000 قدم مربع</span></span>
+		<span class="tooltip">divided between two floors.<span class="tooltiptext">مقسومة بين طابقين</span></span>
+		<span class="tooltip">It included an exterior loading dock.<span class="tooltiptext">ولديها منصة خارجية للتحميل</span></span>
+		<span class="tooltip">We used all of that, including a giant hole in the floor<span class="tooltiptext">إستخدمنا كل المساحة، بما في ذلك حفرة في الأرض</span></span>
+		<span class="tooltip">that we actually descended the camera and cameraman through.<span class="tooltiptext">إنزلنا فيها الكاميرا وطاقم التصوير</span></span>
+		<span class="tooltip">They wanted it messy, and we were happy to oblige.<span class="tooltiptext">أرادو أن تكون فوضوية، ووافقنا بفرحة</span></span>
+		<span class="tooltip">The machine itself would start the music.<span class="tooltiptext">على الآلة نفسها أن تبدأ الموسيقى</span></span>
+		<span class="tooltip">So the machine would get started,<span class="tooltiptext">فالآلة تبدأ</span></span>
+		<span class="tooltip">it would travel some distance,<span class="tooltiptext">وتعمل لبعض الوقت</span></span>
+		<span class="tooltip">reacting along the way,<span class="tooltiptext">متفاعلة</span></span>
+		<span class="tooltip">hit play on an iPod or a tape deck<span class="tooltiptext">تضغط زر البدأ</span></span>
+		<span class="tooltip">or something that would start playback.<span class="tooltiptext">أو شيء ما ليبدأ العرض</span></span>
+		<span class="tooltip">And the machine would maintain synchronization throughout.<span class="tooltiptext">على الآلة أن تحافظ على توافقها طوال الوقت</span></span>
+		<span class="tooltip">And speaking of synchronization,<span class="tooltiptext">على ذكر التوافق</span></span>
+		<span class="tooltip">they wanted it to sync to the rhythm<span class="tooltiptext">أرادو أن تتوافق مع اللحن</span></span>
+		<span class="tooltip">and to hit specific beats along the way.<span class="tooltiptext">وأن تضرب على نغمات معينة</span></span>
+		<span class="tooltip">Okay. (Laughter)<span class="tooltiptext">حسنا (ضحك)</span></span>
+		<span class="tooltip">They wanted it to end precisely on time.<span class="tooltiptext">أرادوا أن تنتهي عند الوقت تماما</span></span>
+		<span class="tooltip">Okay, so now the start to finish timing has to be perfect.<span class="tooltiptext">حسنا، فالآن والتوقيت من البداية حتى النهاية يجب أن تكون دقيقة</span></span>
+		<span class="tooltip">And they wanted the music to drop out<span class="tooltiptext">وأرادو الموسيقى أن تختفي</span></span>
+		<span class="tooltip">at a certain point in the video<span class="tooltiptext">في نقطة معينة من المقطع</span></span>
+		<span class="tooltip">and actual live audio from the machine<span class="tooltiptext">وتلعب أصوات حية من الآلة</span></span>
+		<span class="tooltip">to play part of the song.<span class="tooltiptext">أجزاءا من الأغنية</span></span>
+		<span class="tooltip">And as if that wasn&#39;t enough,<span class="tooltiptext">وكأن ذلك لم يكن كافيا</span></span>
+		<span class="tooltip">all of these incredibly complicating things, right,<span class="tooltiptext">كل هذه الأمور الرائعة المعقدة</span></span>
+		<span class="tooltip">they wanted it in one shot.<span class="tooltiptext">أرادو أن تصور في لقطة واحدة</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(ضحك)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Applause)<span class="tooltiptext">(تصفيق)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Okay.<span class="tooltiptext">حسنا</span></span>
+		<span class="tooltip">So, just some statistics<span class="tooltiptext">بعض من الإحصائيات</span></span>
+		<span class="tooltip">about what we went through in the process.<span class="tooltiptext">عن، تقريبا، ما مررنا به في العملية</span></span>
+		<span class="tooltip">The machine itself has<span class="tooltiptext">الآلة ذاتها لديها</span></span>
+		<span class="tooltip">89 distinct interactions.<span class="tooltiptext">89 تفاعل مستقل</span></span>
+		<span class="tooltip">It took us 85 takes<span class="tooltiptext">إحتجنا إلى 85 تجربة</span></span>
+		<span class="tooltip">to get it on film<span class="tooltiptext">لتصويرها</span></span>
+		<span class="tooltip">to our satisfaction.<span class="tooltiptext">كما يرضينا</span></span>
+		<span class="tooltip">Of those 85 takes,<span class="tooltiptext">من هذه الـ 85</span></span>
+		<span class="tooltip">only three actually successfully completed their run.<span class="tooltiptext">فقط 3 أتممت التشغيل بنجاح</span></span>
+		<span class="tooltip">We destroyed two pianos<span class="tooltiptext">دمرنا آلتي بيانو</span></span>
+		<span class="tooltip">and 10 televisions in the process.<span class="tooltiptext">و 10 تلفزيونات خلال العملية</span></span>
+		<span class="tooltip">We went to Home Depot well over a hundred times.<span class="tooltiptext">ذهبنا إلى هووم ديبو أكثر من مائة مرة</span></span>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(ضحك)</span></span>
+		<span class="tooltip">And we lost one high-heeled shoe<span class="tooltiptext">وفقدنا جزمة كعب عالي</span></span>
+		<span class="tooltip">when one of our engineers, Heather Knight,<span class="tooltiptext">حين تركت أحد المهندسات</span></span>
+		<span class="tooltip">left her high-heeled shoe -- after a nice dinner,<span class="tooltiptext">جزمتها ذات الكعب العالي -- بعد عشاء ممتع</span></span>
+		<span class="tooltip">and returned back to the build --<span class="tooltiptext">وعادت إلى البناء</span></span>
+		<span class="tooltip">and left it in a pile of stuff.<span class="tooltiptext">وتركتها في كومة من الأشياء</span></span>
+		<span class="tooltip">And another engineer thought, &quot;Well, that would be a really good thing to use&quot;<span class="tooltiptext">وإعتقد مهندس آخر &quot;هذا شيء جيد يمكن إستخدامه&quot;ـ</span></span>
+		<span class="tooltip">and ended up using it as a really nice trigger.<span class="tooltiptext">وإنتهى به الأمر بإستخدامه كمشغل جيد</span></span>
+		<span class="tooltip">And it&#39;s actually in the machine.<span class="tooltiptext">وهي في الآلة الآن</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So what did we learn from all of this?<span class="tooltiptext">فماذا تعلمنا من كل ذلك؟</span></span>
+		<span class="tooltip">Well, having completed this,<span class="tooltiptext">بعد إنهاء هذا الأمر</span></span>
+		<span class="tooltip">we have the opportunity to step back and reflect<span class="tooltiptext">لدينا فرصة التوقف والتأمل</span></span>
+		<span class="tooltip">on some of the things.<span class="tooltiptext">في بعض الأمور</span></span>
+		<span class="tooltip">And we learned that small stuff stinks.<span class="tooltiptext">وتعلمنا أن الأمور الصغيرة نتنة</span></span>
+		<span class="tooltip">Little balls in wooden tracks<span class="tooltiptext">كرات صغيرة في ممرات خشبية</span></span>
+		<span class="tooltip">are really susceptible to<span class="tooltiptext">تتأثر جدا</span></span>
+		<span class="tooltip">humidity and temperature and a little bit of dust,<span class="tooltiptext">بالرطوبة والحرارة والقليل من الغبار</span></span>
+		<span class="tooltip">and they fall out of the tracks,<span class="tooltiptext">ويسقطون من الممر</span></span>
+		<span class="tooltip">the exact angles makes it hard to get right.<span class="tooltiptext">يصعب ضبط الزوايا</span></span>
+		<span class="tooltip">And yet, a bowling ball will always follow the same path.<span class="tooltiptext">وبالمقابل، فكرة البولنج ستتبع نفس الطريق دوما</span></span>
+		<span class="tooltip">It doesn&#39;t matter what temperature it is,<span class="tooltiptext">لا يهم درجة الحرارة</span></span>
+		<span class="tooltip">doesn&#39;t matter what&#39;s in its way;<span class="tooltiptext">ولا يهم ما يعيق طريقها</span></span>
+		<span class="tooltip">it will pretty much get where it needs to go.<span class="tooltiptext">ستصل تقريبا إلى حيث تحتاج</span></span>
+		<span class="tooltip">But as much as the small stuff stinks, we needed somewhere to start,<span class="tooltiptext">ولكن على قدر ما نكره الأمور الصغيرة، نحتاج لنقطة بداية</span></span>
+		<span class="tooltip">so that we would have somewhere to go.<span class="tooltiptext">لتكون لنا وجهة</span></span>
+		<span class="tooltip">And so you have to start with it. You have to focus on it.<span class="tooltiptext">ولذلك عليك البدء بها. وعليك التركيز عليها</span></span>
+		<span class="tooltip">Small stuff stinks,<span class="tooltiptext">الأمور الصغيرة نتنة</span></span>
+		<span class="tooltip">but, of course, it&#39;s essential, right?<span class="tooltiptext">ولكنها بالطبع ضرورية</span></span>
+	</p>
+	<p>
+		<span class="tooltip">What else? Planning is incredibly important.<span class="tooltiptext">ماذا أيضا؟ التخطيط مهم جدا</span></span>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(ضحك)</span></span>
+		<span class="tooltip">You know, we spent a lot of time ideating<span class="tooltiptext">تعلمون، نحن نمضي وقتا طويلا في الأفكار</span></span>
+		<span class="tooltip">and even building some of these things.<span class="tooltiptext">وأيضا في بناء بعض هذه الأشياء</span></span>
+		<span class="tooltip">It&#39;s been said that, &quot;No battle plan<span class="tooltiptext">وقد قيل &quot;لا توجد خطة حربية</span></span>
+		<span class="tooltip">survives contact with the enemy.&quot;<span class="tooltiptext">تتجاوز لقاء العدو&quot;ـ</span></span>
+		<span class="tooltip">I think our enemy was physics --<span class="tooltiptext">أعتقد أن عدونا كان الفيزياء</span></span>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(ضحك)</span></span>
+		<span class="tooltip">and she&#39;s a cruel mistress.<span class="tooltiptext">وهي عشيقة شريرة</span></span>
+		<span class="tooltip">Often, we had to pull things out as a result<span class="tooltiptext">كثيرا ما إضطررنا إلى إستبعاد بعض الأشياء</span></span>
+		<span class="tooltip">because of timing or aesthetics or whatever.<span class="tooltiptext">نتيجة للتوقيت أو المناظر أو سبب ما</span></span>
+		<span class="tooltip">And so while planning is important, so is flexibility.<span class="tooltiptext">فالتخطيط مهم، ولكن المرونة كذلك</span></span>
+		<span class="tooltip">These are all things that ended up<span class="tooltiptext">هذه كلها أشياء إنتهى بها المطاف</span></span>
+		<span class="tooltip">not making it into the final machine.<span class="tooltiptext">خارج الآلة النهائية</span></span>
+		<span class="tooltip">So also, put reliable stuff last,<span class="tooltiptext">وكذلك ضع الأمور المؤكدة في النهاية</span></span>
+		<span class="tooltip">the stuff that&#39;s going to run every time.<span class="tooltiptext">الأشياء التي ستعمل كل مرة</span></span>
+		<span class="tooltip">Again, small to large is relevant here.<span class="tooltiptext">الصغير إلى الكبير أمر نسبي هنا</span></span>
+		<span class="tooltip">The little Lego car in the beginning of the video<span class="tooltiptext">سيارة الليجو الصغيرة في بداية المقطع</span></span>
+		<span class="tooltip">references the big, real car<span class="tooltiptext">في مقابل السيارة الكبيرة الحقيقية</span></span>
+		<span class="tooltip">near the end of the video.<span class="tooltiptext">قرب نهاية المقطع</span></span>
+		<span class="tooltip">The big, real car works every time; there&#39;s no problem about it.<span class="tooltiptext">السيارة الكبيرة الحقيقية تعمل كل مرة، لا توجد بها أي مشاكل</span></span>
+		<span class="tooltip">The little one had a tendency to try to run off the track<span class="tooltiptext">الصغيرة كانت عادة ما تحاول لخروج عن الطريق</span></span>
+		<span class="tooltip">and that&#39;s a problem.<span class="tooltiptext">وتلك مشكلة</span></span>
+		<span class="tooltip">But you don&#39;t want to have to reset the whole machine<span class="tooltiptext">ولا ترغب في أن تضطر لمعاودة الكرة على الآلة كاملة</span></span>
+		<span class="tooltip">because the Lego car at the end doesn&#39;t work, right.<span class="tooltiptext">لأن سيارة الليجو في النهاية لا تعمل</span></span>
+		<span class="tooltip">So you put that up front so that, if it fails,<span class="tooltiptext">فتضعها في البداية، حتى لو تعطلت</span></span>
+		<span class="tooltip">at least you know<span class="tooltiptext">على الأقل أنت تعلم</span></span>
+		<span class="tooltip">you don&#39;t have to reset the whole thing.<span class="tooltiptext">أنك لن تحتاج إلى إعادة الآلة كاملة</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Life can be<span class="tooltiptext">يمكن للحياة أن تكون</span></span>
+		<span class="tooltip">messy.<span class="tooltiptext">فوضوية</span></span>
+		<span class="tooltip">There were incredibly difficult moments in the building of this thing.<span class="tooltiptext">كانت هناك لحظات صعبة جدا في بناء هذا الشيء</span></span>
+		<span class="tooltip">Months were spent in this tiny, cold warehouse.<span class="tooltiptext">أمضينا شهورا في هذا المستودع الصغير</span></span>
+		<span class="tooltip">And the wonderful elation that we had<span class="tooltiptext">والغبطة الرائعة التي شعرنا بها</span></span>
+		<span class="tooltip">when we finally completed it.<span class="tooltiptext">حين أنتهينا أخيرا</span></span>
+		<span class="tooltip">So it&#39;s important to remember that whether it&#39;s good or it&#39;s bad,<span class="tooltiptext">فعلينا التذكر بأن الأمور لو كانت جيدة أو سيئة</span></span>
+		<span class="tooltip">&quot;This Too Shall Pass.&quot;<span class="tooltiptext">&quot;هذه أيضا ستمضي&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Thank you very much.<span class="tooltiptext">شكرا جزيلا</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Applause)<span class="tooltiptext">(تصفيق)</span></span>
+		<span class="tooltip">And now to introduce<span class="tooltiptext">والآن ليقدموا</span></span>
+	</p>
+	<p>
+		<span class="tooltip">their music video,<span class="tooltiptext">مقطعهم الموسيقي</span></span>
+		<span class="tooltip">we have OK Go.<span class="tooltiptext">لدينا أوك جو</span></span>
+	</p>
+	<p>
+		<span class="tooltip">OK Go: An introduction. Hello TEDxUSC.<span class="tooltiptext">أوك جو: مقدمة. مرحبا تيد أكس يو إس سي</span></span>
+		<span class="tooltip">We are OK Go.<span class="tooltiptext">نحن أوك جو</span></span>
+		<span class="tooltip">What are we doing? Oh, just hanging out with our Grammy. What what!<span class="tooltiptext">ماذا نفعل؟ فقط نسترخي مع جائزتنا</span></span>
+		<span class="tooltip">It think we can do better than this. Hello TEDxUSC.<span class="tooltiptext">أعتقد أننا نستطيع أداء أفضل. مرحبا تيد أكس يو إس سي</span></span>
+		<span class="tooltip">We are OK Go. Have you read the &quot;Natural Curiosity Cabinet?&quot;<span class="tooltiptext">نحن أوك جو. هل قرأتم &quot;دولاب الفضول الطبيعي؟&quot;ـ</span></span>
+		<span class="tooltip">I mean, &quot;Curiosity&quot; -- excuse me.<span class="tooltiptext">أعني، الفضول -- عفوا</span></span>
+		<span class="tooltip">Let me start again.<span class="tooltiptext">دعني أبدأ من جديد</span></span>
+		<span class="tooltip">We need some more ridiculous things besides &quot;The Cabinet of Natural Curiosities.&quot;<span class="tooltiptext">نحتاج إلى المزيد من الأومر السخيفة غير &quot;دولاب الفضول الطبيعي&quot;ـ</span></span>
+		<span class="tooltip">Tim&#39;s sundial hat.<span class="tooltiptext">قبعة تم الشمسية</span></span>
+		<span class="tooltip">Have you seen the new work they&#39;ve done to the Waltz Towers?<span class="tooltiptext">هلا رأيتم الأعمال الجديدة التي أقيمت على برج والتز؟</span></span>
+		<span class="tooltip">Sorry, start again.<span class="tooltiptext">عذرا، إبدأ من جديد</span></span>
+		<span class="tooltip">(Barking)<span class="tooltiptext">(نباح)</span></span>
+		<span class="tooltip">Dogs.<span class="tooltiptext">كلاب</span></span>
+		<span class="tooltip">Hello, TEDxUSC. We are OK Go,<span class="tooltiptext">مرحبا تيد أكس يو إس سي نحن أوك جو</span></span>
+		<span class="tooltip">and this our new video, &quot;This Too Shall Pass.&quot;<span class="tooltiptext">وهذا مقطعنا الجديد &quot;هذا أيضا سيمضي&quot;ـ</span></span>
+		<span class="tooltip">[unclear]<span class="tooltiptext">(غير واضح)</span></span>
+		<span class="tooltip">Kay, we can still do one better I think, yeah.<span class="tooltiptext">حسنا، أعتقد أننا لازلنا نستطيع تقديم واحد أفضل</span></span>
+		<span class="tooltip">That one&#39;s pretty good. It&#39;s getting better.<span class="tooltiptext">ذلك كان جيد جدا. أنها تتحسن</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Music)<span class="tooltiptext">(موسيقى)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ You know you can&#39;t keep letting it get you down ♫<span class="tooltiptext">♫ تعلم أنك لا يمكن أن تسمح لها أن تحبطك ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ And you can&#39;t keep dragging that dead weight around ♫<span class="tooltiptext">♫ ولا يمكنك سحب هذا الوزن الزائد في كل مكان ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ If there ain&#39;t all that much to lug around ♫<span class="tooltiptext">♫ لو لم يكن هناك الكثير للسحب ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ Better run like hell when you hit the ground ♫<span class="tooltiptext">♫ عليك الجري سريعا حين تصل إلى الأرض ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ When the morning comes ♫<span class="tooltiptext">♫ حين يأتي الصباح ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ When the morning comes ♫<span class="tooltiptext">♫ حين يأتي الصباح ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ You can&#39;t stop these kids from dancing ♫<span class="tooltiptext">♫ يمكنك منع هؤلاء الأطفال من الرقص ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ Why would you want to? ♫<span class="tooltiptext">♫ ولما سترغب بذلك ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ Especially when you&#39;re already getting yours ♫<span class="tooltiptext">♫ خصوصا وأنت تحصل على نصيبك ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ Cuz if your mind don&#39;t move and your knees don&#39;t bend ♫<span class="tooltiptext">♫ فإذا لم يتحرك عقلك ولم تنحني ركبك ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ Well don&#39;t go blaming the kids again ♫<span class="tooltiptext">♫ فلا تلون الأطفال مجددا ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ When the morning comes ♫<span class="tooltiptext">♫ حين يأتي الصباح ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ When the morning comes ♫<span class="tooltiptext">♫ حين يأتي الصباح ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ When the morning comes ♫<span class="tooltiptext">♫ حين يأتي الصباح ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ When the morning comes ♫<span class="tooltiptext">♫ حين يأتي الصباح ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ When the morning comes ♫<span class="tooltiptext">♫ حين يأتي الصباح ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ When the morning comes ♫<span class="tooltiptext">♫ حين يأتي الصباح ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ Let it go ♫<span class="tooltiptext">♫ دعها تذهب ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ This too shall pass ♫<span class="tooltiptext">♫ هذه أيضا ستمضي ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ Let it go ♫<span class="tooltiptext">♫ دعها تذهب ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ This too shall pass ♫<span class="tooltiptext">♫ هذه أيضا ستمضي ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ You know you can&#39;t keep letting it get you down ♫<span class="tooltiptext">♫ تعلم أنك لا يمكن أن تسمح لها أن تحبطك ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ No, you can&#39;t keep letting it get you down ♫<span class="tooltiptext">♫ لا، لا يمكن أن تسمح لها باحباطك ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ Let it go ♫<span class="tooltiptext">♫ دعها تذهب ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ This too shall pass ♫<span class="tooltiptext">♫ هذه أيضا ستمضي ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ When the morning comes ♫<span class="tooltiptext">♫ حين يأتي الصباح ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ When the morning comes ♫<span class="tooltiptext">♫ حين يأتي الصباح ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ When the morning comes ♫<span class="tooltiptext">♫ حين يأتي الصباح ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">♫ When the morning comes ♫<span class="tooltiptext">♫ حين يأتي الصباح ♫</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Cheering)<span class="tooltiptext">(هتاف)</span></span>
+	</p>
+
+	<div class="line"></div>
+	<p>Enjoying my website? Your donation helps maintain its ad-free experience and smooth operation. Your support is truly appreciated and helps me continue providing quality content. Thank you for considering a donation!</p>
+	<p>To donate, simply click the PayPal link below:<p/>
+	<p><a href="https://www.paypal.com/paypalme/otechai" target='_blank'>Donate via PayPal</a></p>
+	
+</div>
+<span onclick='topFunction()' id='gotop' title='Go to top'><svg width="32" height="32" viewBox="0 0 100 100">
+	   <path fill="white" d="m50 0c-13.262 0-25.98 5.2695-35.355 14.645s-14.645 22.094-14.645 35.355 5.2695 25.98 14.645 35.355 22.094 14.645 35.355 14.645 25.98-5.2695 35.355-14.645 14.645-22.094 14.645-35.355-5.2695-25.98-14.645-35.355-22.094-14.645-35.355-14.645zm20.832 62.5-20.832-22.457-20.625 22.457c-1.207 0.74219-2.7656 0.57812-3.7891-0.39844-1.0273-0.98047-1.2695-2.5273-0.58594-3.7695l22.918-25c0.60156-0.61328 1.4297-0.96094 2.2891-0.96094 0.86328 0 1.6914 0.34766 2.293 0.96094l22.918 25c0.88672 1.2891 0.6875 3.0352-0.47266 4.0898-1.1562 1.0508-2.9141 1.0859-4.1133 0.078125z"></path>
+	 </svg></span>
+
+	    <div class="footer">
+	        <div class="left"><a href='../../../index.html'>ReadingDB</a></div>
+	        <div class="center"><a href="https://twitter.com/readingdb" class="twitter-link">
+	    <svg class="twitter-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	        <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.58-2.11-9.96-5.02-.42.72-.66 1.56-.66 2.46 0 1.68.85 3.16 2.14 4.02-.79-.02-1.53-.24-2.18-.6v.06c0 2.35 1.67 4.31 3.88 4.76-.4.1-.83.16-1.27.16-.31 0-.62-.03-.92-.08.63 1.96 2.45 3.39 4.61 3.43-1.69 1.32-3.83 2.1-6.15 2.1-.4 0-.8-.02-1.19-.07 2.19 1.4 4.78 2.22 7.57 2.22 9.07 0 14.02-7.52 14.02-14.02 0-.21 0-.41-.01-.61.96-.69 1.79-1.56 2.45-2.55-.88.39-1.83.65-2.82.77z"/>
+	    </svg>
+	</a></div>
+	        <div class="right"><a href='https://www.paypal.com/paypalme/otechai'>Donate</a></div>
+	    </div>
+	<script>
+
+		var mybutton = document.getElementById('gotop');
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+			if (document.documentElement.scrollTop > 20 || document.body.scrollTop > 20) {
+				mybutton.style.display = 'block';
+			} else {
+				mybutton.style.display = 'none';
+			}
+		}
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<script src="../../../static/scripts/script.js"></script>
+</body>
+</html>
+	

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+	<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<meta name="description" content="Unlock your Spanish reading skills: Immerse yourself in a contextual and practical learning enhanced by high-quality instant translations.">
+      	<meta name="keywords" content="Spanish reading, Spanish language learning, instant translations, reading adventure, improve Spanish, improve reading skills, educational platform, spanish reading resources, online education, Spanish proficiency, learn Spanish, Spanish learning resources, bilingual education, language exchange, study Spanish online">
+		<link rel="apple-touch-icon" sizes="180x180" href="../../../static/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../../../static/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../../../static/favicons/favicon-16x16.png">
+		<link rel="manifest" href="../../../static/favicons/site.webmanifest">
+		<title>Joy Buolamwini : How I'm fighting bias in algorithms</title>
+		<link rel='stylesheet' href='../../../static/styles/styles.css'>
+		<script defer data-domain="readingdb.org" src="https://plausible.io/js/script.js"></script>
+	</head>
+	<body>
+
+	<h1 class='title'>How I'm fighting bias in algorithms</h1>
+	<h2 class='speaker'>Joy Buolamwini</h2>
+	<div class='transcript books'>
+	<p>Are you ready to improve your Spanish speaking skills, check <a href='https://referral.lingoda.com/6Dztrv'>Lingoda</a> today!</p>
+		<p>
+		<span class="tooltip">Hello, I&#39;m Joy, a poet of code,<span class="tooltiptext">مرحبا أُدعى (جوي)، 
+أَنظُم الشعر على الحاسوب</span></span>
+		<span class="tooltip">on a mission to stop
+an unseen force that&#39;s rising,<span class="tooltiptext">في مهمة لردع قوة ناشئة غير مرئية،</span></span>
+		<span class="tooltip">a force that I called &quot;the coded gaze,&quot;<span class="tooltiptext">قوة أسميتها &quot;النظرة المشفرَّة،&quot;</span></span>
+		<span class="tooltip">my term for algorithmic bias.<span class="tooltiptext">مصطلح أطلقه عن تحيز الخوارزمية.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Algorithmic bias, like human bias,
+results in unfairness.<span class="tooltiptext">تحيز الخوارزمية مثل تحيز البشر
+يؤدي إلى الإجحاف.</span></span>
+		<span class="tooltip">However, algorithms, like viruses,
+can spread bias on a massive scale<span class="tooltiptext">برغم ذلك، الخوارزميات مثل الفيروسات
+يتفشى فيها التحيز على مستوى واسع</span></span>
+		<span class="tooltip">at a rapid pace.<span class="tooltiptext">بخطى سريعة.</span></span>
+		<span class="tooltip">Algorithmic bias can also lead
+to exclusionary experiences<span class="tooltiptext">تحيز الخوارزمية قد يُفضِي إلى 
+وقوع حوادث إقصائية</span></span>
+		<span class="tooltip">and discriminatory practices.<span class="tooltiptext">و ممارسات تمييزية.</span></span>
+		<span class="tooltip">Let me show you what I mean.<span class="tooltiptext">دعوني أوضح ما أعنيه.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Video) Joy Buolamwini: Hi, camera.
+I&#39;ve got a face.<span class="tooltiptext">(فيديو): أهلا بالكاميرا.
+لدي وجه.</span></span>
+		<span class="tooltip">Can you see my face?<span class="tooltiptext">هل ترون وجهي؟</span></span>
+		<span class="tooltip">No-glasses face?<span class="tooltiptext">وجه بلا نظارات؟</span></span>
+		<span class="tooltip">You can see her face.<span class="tooltiptext">تستطيع رؤية وجهها.</span></span>
+		<span class="tooltip">What about my face?<span class="tooltiptext">ماذا عن وجهي؟</span></span>
+		<span class="tooltip">I&#39;ve got a mask. Can you see my mask?<span class="tooltiptext">لدي قناع. هل ترى قناعي؟</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Joy Buolamwini: So how did this happen?<span class="tooltiptext">إذن كيف حدث هذا؟</span></span>
+		<span class="tooltip">Why am I sitting in front of a computer<span class="tooltiptext">لمَ أجلس أمام حاسوب</span></span>
+		<span class="tooltip">in a white mask,<span class="tooltiptext">أضع قناعًا أبيض،</span></span>
+		<span class="tooltip">trying to be detected by a cheap webcam?<span class="tooltiptext">أحاول أن تكتشفني كاميرا ويب زهيدة؟</span></span>
+		<span class="tooltip">Well, when I&#39;m not fighting the coded gaze<span class="tooltiptext">حسنا عندما لا أقاوم النظرة المشفرة</span></span>
+		<span class="tooltip">as a poet of code,<span class="tooltiptext">بصفتي شاعرة أستخدم التشفير،</span></span>
+		<span class="tooltip">I&#39;m a graduate student
+at the MIT Media Lab,<span class="tooltiptext">أنا طالبة دراسات عليا في 
+إم آي تي ميديا لاب،</span></span>
+		<span class="tooltip">and there I have the opportunity to work
+on all sorts of whimsical projects,<span class="tooltiptext">و هناك لدي الفرصة للعمل على
+جميع أنواع المشروعات الغريبة،</span></span>
+		<span class="tooltip">including the Aspire Mirror,<span class="tooltiptext">بما في ذلك ( أسباير ميرور)،</span></span>
+		<span class="tooltip">a project I did so I could project
+digital masks onto my reflection.<span class="tooltiptext">مشروع قمت به لأرسم
+أقنعة رقْمية على انعكاسي.</span></span>
+		<span class="tooltip">So in the morning, if I wanted
+to feel powerful,<span class="tooltiptext">لذا في الصباح إذا أردت 
+الشعور بالقوة،</span></span>
+		<span class="tooltip">I could put on a lion.<span class="tooltiptext">أستطيع أن أضع قناع أسد.</span></span>
+		<span class="tooltip">If I wanted to be uplifted,
+I might have a quote.<span class="tooltiptext">إذا أردت أن أرفع معنوياتي،
+قد أحصل على اقتباس.</span></span>
+		<span class="tooltip">So I used generic
+facial recognition software<span class="tooltiptext">لذا استخدمت برمجة موسعة
+للتعرف على الوجه</span></span>
+		<span class="tooltip">to build the system,<span class="tooltiptext">لبناء النظام،</span></span>
+		<span class="tooltip">but found it was really hard to test it
+unless I wore a white mask.<span class="tooltiptext">لكني وجدت أنه من الصعب 
+اختباره مالم أضع قناعًا.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Unfortunately, I&#39;ve run
+into this issue before.<span class="tooltiptext">لسوء الحظ واجهتني هذه المسألة من قبل.</span></span>
+		<span class="tooltip">When I was an undergraduate
+at Georgia Tech studying computer science,<span class="tooltiptext">عندما كنت طالبة في جامعة جورجيا 
+التقنية أدرس علوم الحاسب،</span></span>
+		<span class="tooltip">I used to work on social robots,<span class="tooltiptext">اعتدت العمل على الروبوتات الاجتماعية،</span></span>
+		<span class="tooltip">and one of my tasks was to get a robot
+to play peek-a-boo,<span class="tooltiptext">و إحدى مهامي كانت أن أجعل روبوت 
+يلعب بيكابو (لعبة الاختفاء)،</span></span>
+		<span class="tooltip">a simple turn-taking game<span class="tooltiptext">لعبة بسيطة لتناوب الأدوار</span></span>
+		<span class="tooltip">where partners cover their face
+and then uncover it saying, &quot;Peek-a-boo!&quot;<span class="tooltiptext">حيث يغطي الشخص وجهه
+عن شريكه ثم يكشفه قائلا، &quot;بيكابو!&quot;</span></span>
+		<span class="tooltip">The problem is, peek-a-boo
+doesn&#39;t really work if I can&#39;t see you,<span class="tooltiptext">المشكلة أن هذه اللعبة لا تعمل
+حقيقةً إذا لم أستطع رؤيتك،</span></span>
+		<span class="tooltip">and my robot couldn&#39;t see me.<span class="tooltiptext">و روبوتي لا يستطيع رؤيتي.</span></span>
+		<span class="tooltip">But I borrowed my roommate&#39;s face
+to get the project done,<span class="tooltiptext">لكني استعنت بوجه زميلتي
+بالسكن لكي أنهي المشروع،</span></span>
+		<span class="tooltip">submitted the assignment,<span class="tooltiptext">وقدمت المَهًمّة،</span></span>
+		<span class="tooltip">and figured, you know what,
+somebody else will solve this problem.<span class="tooltiptext">ووجدت أن شخصا آخر قد حل هذه المشكلة.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Not too long after,<span class="tooltiptext">ليس بعد وقت طويل حينها،</span></span>
+		<span class="tooltip">I was in Hong Kong
+for an entrepreneurship competition.<span class="tooltiptext">كنت في هونغ كونغ لأجل
+مسابقة في ريادة الأعمال.</span></span>
+		<span class="tooltip">The organizers decided
+to take participants<span class="tooltiptext">قرر المنظمون أن يأخذوا المشاركين</span></span>
+		<span class="tooltip">on a tour of local start-ups.<span class="tooltiptext">في جولة للشركات الناشئة المحلية.</span></span>
+		<span class="tooltip">One of the start-ups had a social robot,<span class="tooltiptext">إحدى هذه الشركات
+كان لديها روبوت اجتماعي،</span></span>
+		<span class="tooltip">and they decided to do a demo.<span class="tooltiptext">و قرروا استخدام عرض توضيحي.</span></span>
+		<span class="tooltip">The demo worked on everybody
+until it got to me,<span class="tooltiptext">عمل العرض التوضيحي مع الجميع
+حتى جاء دوري،</span></span>
+		<span class="tooltip">and you can probably guess it.<span class="tooltiptext">ربما تستطيع تخيل الأمر.</span></span>
+		<span class="tooltip">It couldn&#39;t detect my face.<span class="tooltiptext">لم يتعرف على وجهي.</span></span>
+		<span class="tooltip">I asked the developers what was going on,<span class="tooltiptext">سألت المطورين عما يحدث،</span></span>
+		<span class="tooltip">and it turned out we had used the same
+generic facial recognition software.<span class="tooltiptext">واتضح أننا استخدمنا نفس البرمجة
+العامة للتعرف على الوجه.</span></span>
+		<span class="tooltip">Halfway around the world,<span class="tooltiptext">جبت نصف العالم،</span></span>
+		<span class="tooltip">I learned that algorithmic bias
+can travel as quickly<span class="tooltiptext">لأعلم أن تحيز الخوارزمية
+يستطيع الانتقال بسرعة</span></span>
+		<span class="tooltip">as it takes to download
+some files off of the internet.<span class="tooltiptext">قدر ما يأخذه الوقت لتحميل
+بعض الملفات من شبكة الانترنت.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So what&#39;s going on?
+Why isn&#39;t my face being detected?<span class="tooltiptext">إذن ما الذي يحدث؟
+لم لا يتعرف على وجهي؟</span></span>
+		<span class="tooltip">Well, we have to look
+at how we give machines sight.<span class="tooltiptext">حسنا، علينا أن ننظر إلى كيفية
+تفعيل حاسة البصر عند الآلات.</span></span>
+		<span class="tooltip">Computer vision uses
+machine learning techniques<span class="tooltiptext">يستخدم البصر الحاسوبي 
+تقنيات خاصة بتعلم الآلة</span></span>
+		<span class="tooltip">to do facial recognition.<span class="tooltiptext">للقيام بالتعرف على الوجه.</span></span>
+		<span class="tooltip">So how this works is, you create
+a training set with examples of faces.<span class="tooltiptext">إذن يتفعل هذا بإنشاء جهاز
+تدريب مزود بأمثلة للأوجه.</span></span>
+		<span class="tooltip">This is a face. This is a face.
+This is not a face.<span class="tooltiptext">هذا وجه. هذا وجه. 
+هذا ليس بوجه.</span></span>
+		<span class="tooltip">And over time, you can teach a computer
+how to recognize other faces.<span class="tooltiptext">وبمرور الوقت، يتعلم الحاسوب 
+كيف يتعرف على وجوه أخرى.</span></span>
+		<span class="tooltip">However, if the training sets
+aren&#39;t really that diverse,<span class="tooltiptext">برغم ذلك، إذا لم تكن أجهزة التدريب متنوعة،</span></span>
+		<span class="tooltip">any face that deviates too much
+from the established norm<span class="tooltiptext">ووجد وجه يختلف كثيرا عن النمط القائم</span></span>
+		<span class="tooltip">will be harder to detect,<span class="tooltiptext">سيكون أصعب في التعرف عليه،</span></span>
+		<span class="tooltip">which is what was happening to me.<span class="tooltiptext">الأمر الذي حدث معي.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">But don&#39;t worry -- there&#39;s some good news.<span class="tooltiptext">لكن لا تقلقوا -- هناك أخبار جيدة.</span></span>
+		<span class="tooltip">Training sets don&#39;t just
+materialize out of nowhere.<span class="tooltiptext">أجهزة التدريب لا تحقق إنجازًا من لاشيء.</span></span>
+		<span class="tooltip">We actually can create them.<span class="tooltiptext">نستطيع بالفعل أن ننشئهم.</span></span>
+		<span class="tooltip">So there&#39;s an opportunity to create
+full-spectrum training sets<span class="tooltiptext">إذن هناك فرصة لإنتاج أجهزة 
+تدريب تمسح الطيف الكامل</span></span>
+		<span class="tooltip">that reflect a richer
+portrait of humanity.<span class="tooltiptext">التي تعكس صورا تُثري الإنسانية أكثر.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Now you&#39;ve seen in my examples<span class="tooltiptext">الآن قد رأيتم في أمثلتي</span></span>
+		<span class="tooltip">how social robots<span class="tooltiptext">كيف أن الروبوتات الاجتماعية</span></span>
+		<span class="tooltip">was how I found out about exclusion
+with algorithmic bias.<span class="tooltiptext">كشفت لي الإقصاء المنتهج 
+في تحيز الخوارزمية.</span></span>
+		<span class="tooltip">But algorithmic bias can also lead
+to discriminatory practices.<span class="tooltiptext">لكن قد يؤدي تحيز الخوارزمية
+إلى الممارسات التمييزية أيضا.</span></span>
+		<span class="tooltip">Across the US,<span class="tooltiptext">عبر الولايات المتحدة،</span></span>
+		<span class="tooltip">police departments are starting to use
+facial recognition software<span class="tooltiptext">بدأت أقسام الشرطة في استخدام
+برمجة التعرف على الوجه</span></span>
+		<span class="tooltip">in their crime-fighting arsenal.<span class="tooltiptext">كسلاح لمكافحة الجريمة.</span></span>
+		<span class="tooltip">Georgetown Law published a report<span class="tooltiptext">نشرت كلية حقوق جورج تاون تقريراً</span></span>
+		<span class="tooltip">showing that one in two adults
+in the US -- that&#39;s 117 million people --<span class="tooltiptext">يظهر أن بالغاً من كل اثنين في الولايات 
+المتحدة -- حوالى 117 مليون نسمة --</span></span>
+		<span class="tooltip">have their faces
+in facial recognition networks.<span class="tooltiptext">توجد بصمة وجهه
+في شبكات التعرف على الوجه.</span></span>
+		<span class="tooltip">Police departments can currently look
+at these networks unregulated,<span class="tooltiptext">تتمكن أقسام الشرطة حالياً من تفحص
+هذه الشبكات بطريقة غير منظمة،</span></span>
+		<span class="tooltip">using algorithms that have not
+been audited for accuracy.<span class="tooltiptext">باستخدام خوارزميات لم يراع فيها الدقة.</span></span>
+		<span class="tooltip">Yet we know facial recognition
+is not fail proof,<span class="tooltiptext">حتى الآن لم يثبَت فشل التعرف على الوجه،</span></span>
+		<span class="tooltip">and labeling faces consistently
+remains a challenge.<span class="tooltiptext">ويظل تصنيف الوجوه تحدياً مستمراً.</span></span>
+		<span class="tooltip">You might have seen this on Facebook.<span class="tooltiptext">قد تكون رأيت هذا في فيسبوك.</span></span>
+		<span class="tooltip">My friends and I laugh all the time
+when we see other people<span class="tooltiptext">أضحك كثيرا أنا وأصدقائي 
+عندما نرى الآخرين</span></span>
+		<span class="tooltip">mislabeled in our photos.<span class="tooltiptext">غير مصنَّفين في صورنا.</span></span>
+		<span class="tooltip">But misidentifying a suspected criminal
+is no laughing matter,<span class="tooltiptext">لكن عدم تحديد مجرماً
+مشتبهاً به ليس أمراً مضحكاً،</span></span>
+		<span class="tooltip">nor is breaching civil liberties.<span class="tooltiptext">ولا انتهاكاً للحريات المدنية.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Machine learning is being used
+for facial recognition,<span class="tooltiptext">التعلم الآلي يستخدم في التعرف على الوجه،</span></span>
+		<span class="tooltip">but it&#39;s also extending beyond the realm
+of computer vision.<span class="tooltiptext">لكنه أيضا يتجاوز حدود رؤية الحاسوب.</span></span>
+		<span class="tooltip">In her book, &quot;Weapons
+of Math Destruction,&quot;<span class="tooltiptext">في كتابها، &quot;أسلحة الدمار الحسابيّ،&quot;</span></span>
+		<span class="tooltip">data scientist Cathy O&#39;Neil
+talks about the rising new WMDs --<span class="tooltiptext">تحدثت عالمة البيانات (كاثي أونيل) 
+عن هذه الأسلحة الصاعدة --</span></span>
+		<span class="tooltip">widespread, mysterious
+and destructive algorithms<span class="tooltiptext">الخوارزميات الرائجة والغامضة والمدمرة</span></span>
+		<span class="tooltip">that are increasingly being used
+to make decisions<span class="tooltiptext">التي تُستخدم بتزايد في اتخاذ القرارات</span></span>
+		<span class="tooltip">that impact more aspects of our lives.<span class="tooltiptext">التي تؤثر على نواحي أكثر في حياتنا.</span></span>
+		<span class="tooltip">So who gets hired or fired?<span class="tooltiptext">إذن من يُوظَّف أو يُطرَد؟</span></span>
+		<span class="tooltip">Do you get that loan?
+Do you get insurance?<span class="tooltiptext">هل تحصل على ذاك القرض؟
+هل تحصل على التأمين؟</span></span>
+		<span class="tooltip">Are you admitted into the college
+you wanted to get into?<span class="tooltiptext">هل قُبلت بالكلية التي أردتها؟</span></span>
+		<span class="tooltip">Do you and I pay the same price
+for the same product<span class="tooltiptext">هل يدفع الجميع نفس السعرعن نفس المنتج</span></span>
+		<span class="tooltip">purchased on the same platform?<span class="tooltiptext">الذي اشتُرِي من نفس المنصة؟</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Law enforcement is also starting
+to use machine learning<span class="tooltiptext">بدأ مسؤولو تطبيق القانون
+في استخدام التعلم الآلي</span></span>
+		<span class="tooltip">for predictive policing.<span class="tooltiptext">لغرض الفاعلية في حفظ الأمن.</span></span>
+		<span class="tooltip">Some judges use machine-generated
+risk scores to determine<span class="tooltiptext">بعض القضاة يحددون درجات
+الخطر باستخدام الآلة لمعرفة</span></span>
+		<span class="tooltip">how long an individual
+is going to spend in prison.<span class="tooltiptext">طول المدة التي سيقضيها الفرد في السجن.</span></span>
+		<span class="tooltip">So we really have to think
+about these decisions.<span class="tooltiptext">بالتالي علينا أن نفكر مليًّا
+في هذه القرارات.</span></span>
+		<span class="tooltip">Are they fair?<span class="tooltiptext">هل هي عادلة؟</span></span>
+		<span class="tooltip">And we&#39;ve seen that algorithmic bias<span class="tooltiptext">و لقد رأينا أن تحيز الخوارزمية</span></span>
+		<span class="tooltip">doesn&#39;t necessarily always
+lead to fair outcomes.<span class="tooltiptext">لا يؤدي بالضرورة إلى نتائج عادلة دائما.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So what can we do about it?<span class="tooltiptext">ما الذي يمكن فعله حيال هذا؟</span></span>
+		<span class="tooltip">Well, we can start thinking about
+how we create more inclusive code<span class="tooltiptext">حسنا، نستطيع البدء في 
+إنتاج تشفير أكثر تضميناً</span></span>
+		<span class="tooltip">and employ inclusive coding practices.<span class="tooltiptext">و نوظف ممارسات تشفير شاملة.</span></span>
+		<span class="tooltip">It really starts with people.<span class="tooltiptext">إن الناس هم من يبادروا.</span></span>
+		<span class="tooltip">So who codes matters.<span class="tooltiptext">لذا من يقوم بالتشفير له أهمية.</span></span>
+		<span class="tooltip">Are we creating full-spectrum teams
+with diverse individuals<span class="tooltiptext">هل ننتج مجموعات للطيف
+الكامل بها أفراد متنوعين</span></span>
+		<span class="tooltip">who can check each other&#39;s blind spots?<span class="tooltiptext">من يستطيع فحص النقاط
+غير المرئية لبعضهم البعض؟</span></span>
+		<span class="tooltip">On the technical side,
+how we code matters.<span class="tooltiptext">على الصعيد الفني،
+يوجد أهمية لكيفية التشفير.</span></span>
+		<span class="tooltip">Are we factoring in fairness
+as we&#39;re developing systems?<span class="tooltiptext">هل نصنّع بعَدْل بينما نطور النظام؟</span></span>
+		<span class="tooltip">And finally, why we code matters.<span class="tooltiptext">و في النهاية لمً نقوم بالتشفير.</span></span>
+		<span class="tooltip">We&#39;ve used tools of computational creation
+to unlock immense wealth.<span class="tooltiptext">لقد استخدمنا أدوات للإعداد الحاسوبي
+لكشف الثروة الهائلة.</span></span>
+		<span class="tooltip">We now have the opportunity
+to unlock even greater equality<span class="tooltiptext">لدينا الآن الفرصة لكشف جودة أكبر</span></span>
+		<span class="tooltip">if we make social change a priority<span class="tooltiptext">إذا جعلنا من التغير الاجتماعي أولوية</span></span>
+		<span class="tooltip">and not an afterthought.<span class="tooltiptext">و ليس كتفكير مؤجَّل.</span></span>
+		<span class="tooltip">And so these are the three tenets
+that will make up the &quot;incoding&quot; movement.<span class="tooltiptext">و هذه الركائز الثلاثة التي
+ستشعل حركة التشفير.</span></span>
+		<span class="tooltip">Who codes matters,<span class="tooltiptext">من يشفر له أهمية،</span></span>
+		<span class="tooltip">how we code matters<span class="tooltiptext">كيف نشفر مهم</span></span>
+		<span class="tooltip">and why we code matters.<span class="tooltiptext">ولمِاذا نشفر مهم أيضا.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So to go towards incoding,
+we can start thinking about<span class="tooltiptext">إذن لنتحول للتشفير 
+نستطيع البدء بالتفكير في</span></span>
+		<span class="tooltip">building platforms that can identify bias<span class="tooltiptext">بناء منصات تستطيع تحديد التحيز</span></span>
+		<span class="tooltip">by collecting people&#39;s experiences
+like the ones I shared,<span class="tooltiptext">بواسطة جمع خبرات الناس
+مثل تلك التي شاركتها،</span></span>
+		<span class="tooltip">but also auditing existing software.<span class="tooltiptext">أيضا التدقيق في البرمجة الحالية.</span></span>
+		<span class="tooltip">We can also start to create
+more inclusive training sets.<span class="tooltiptext">نستطيع أيضا إنشاء أدوات تدريب شاملة أكثر.</span></span>
+		<span class="tooltip">Imagine a &quot;Selfies for Inclusion&quot; campaign<span class="tooltiptext">تخيل حملة بعنوان&quot; سيلفي للتضمين&quot;</span></span>
+		<span class="tooltip">where you and I can help
+developers test and create<span class="tooltiptext">حيث نستطيع جميعا مساعدة 
+المطورين لاختبار و إنتاج</span></span>
+		<span class="tooltip">more inclusive training sets.<span class="tooltiptext">أجهزة تدريب أكثر شمولية.</span></span>
+		<span class="tooltip">And we can also start thinking
+more conscientiously<span class="tooltiptext">و نستطيع التفكير بطريقة أكثر وعياً</span></span>
+		<span class="tooltip">about the social impact
+of the technology that we&#39;re developing.<span class="tooltiptext">تجاه التأثير الاجتماعي
+للتكنولوجيا التي نطورها.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">To get the incoding movement started,<span class="tooltiptext">لكي نفعل حركة التشفير،</span></span>
+		<span class="tooltip">I&#39;ve launched the Algorithmic
+Justice League,<span class="tooltiptext">أطللقت رابطة باسم العدالة الخوارزمية،</span></span>
+		<span class="tooltip">where anyone who cares about fairness
+can help fight the coded gaze.<span class="tooltiptext">حيث يستطيع كل من يهتم بالعدل
+أن يكافح ضد النظرة المشفرة.</span></span>
+		<span class="tooltip">On codedgaze.com, you can report bias,<span class="tooltiptext">يمكنكم التبليغ عن التحيز على موقع
+codedgaze.com</span></span>
+		<span class="tooltip">request audits, become a tester<span class="tooltiptext">وتطالب بالتدقيق وتصبح مُختبِراً</span></span>
+		<span class="tooltip">and join the ongoing conversation,<span class="tooltiptext">و تنضم للمحادثة الدائرة،</span></span>
+		<span class="tooltip">#codedgaze.<span class="tooltiptext">على وسْم #codegaze.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So I invite you to join me<span class="tooltiptext">لذا أدعوكم للانضمام إليّ</span></span>
+		<span class="tooltip">in creating a world where technology
+works for all of us,<span class="tooltiptext">في إيجاد عالم حيث تعمل فيه
+التكنولوجيا من أجل الجميع،</span></span>
+		<span class="tooltip">not just some of us,<span class="tooltiptext">ليس البعض منا فحسب،</span></span>
+		<span class="tooltip">a world where we value inclusion
+and center social change.<span class="tooltiptext">عالم حيث نقدّر التضمين
+و نركز على التغير الاجتماعي.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Thank you.<span class="tooltiptext">شكرا لكم.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Applause)<span class="tooltiptext">(تصفيق)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">But I have one question:<span class="tooltiptext">لكن لدي سؤال واحد:</span></span>
+		<span class="tooltip">Will you join me in the fight?<span class="tooltiptext">هل ستنضمون إلي في الكفاح؟</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(ضحك)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Applause)<span class="tooltiptext">(تصفيق)</span></span>
+	</p>
+
+	<div class="line"></div>
+	<p>Enjoying my website? Your donation helps maintain its ad-free experience and smooth operation. Your support is truly appreciated and helps me continue providing quality content. Thank you for considering a donation!</p>
+	<p>To donate, simply click the PayPal link below:<p/>
+	<p><a href="https://www.paypal.com/paypalme/otechai" target='_blank'>Donate via PayPal</a></p>
+	
+</div>
+<span onclick='topFunction()' id='gotop' title='Go to top'><svg width="32" height="32" viewBox="0 0 100 100">
+	   <path fill="white" d="m50 0c-13.262 0-25.98 5.2695-35.355 14.645s-14.645 22.094-14.645 35.355 5.2695 25.98 14.645 35.355 22.094 14.645 35.355 14.645 25.98-5.2695 35.355-14.645 14.645-22.094 14.645-35.355-5.2695-25.98-14.645-35.355-22.094-14.645-35.355-14.645zm20.832 62.5-20.832-22.457-20.625 22.457c-1.207 0.74219-2.7656 0.57812-3.7891-0.39844-1.0273-0.98047-1.2695-2.5273-0.58594-3.7695l22.918-25c0.60156-0.61328 1.4297-0.96094 2.2891-0.96094 0.86328 0 1.6914 0.34766 2.293 0.96094l22.918 25c0.88672 1.2891 0.6875 3.0352-0.47266 4.0898-1.1562 1.0508-2.9141 1.0859-4.1133 0.078125z"></path>
+	 </svg></span>
+
+	    <div class="footer">
+	        <div class="left"><a href='../../../index.html'>ReadingDB</a></div>
+	        <div class="center"><a href="https://twitter.com/readingdb" class="twitter-link">
+	    <svg class="twitter-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	        <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.58-2.11-9.96-5.02-.42.72-.66 1.56-.66 2.46 0 1.68.85 3.16 2.14 4.02-.79-.02-1.53-.24-2.18-.6v.06c0 2.35 1.67 4.31 3.88 4.76-.4.1-.83.16-1.27.16-.31 0-.62-.03-.92-.08.63 1.96 2.45 3.39 4.61 3.43-1.69 1.32-3.83 2.1-6.15 2.1-.4 0-.8-.02-1.19-.07 2.19 1.4 4.78 2.22 7.57 2.22 9.07 0 14.02-7.52 14.02-14.02 0-.21 0-.41-.01-.61.96-.69 1.79-1.56 2.45-2.55-.88.39-1.83.65-2.82.77z"/>
+	    </svg>
+	</a></div>
+	        <div class="right"><a href='https://www.paypal.com/paypalme/otechai'>Donate</a></div>
+	    </div>
+	<script>
+
+		var mybutton = document.getElementById('gotop');
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+			if (document.documentElement.scrollTop > 20 || document.body.scrollTop > 20) {
+				mybutton.style.display = 'block';
+			} else {
+				mybutton.style.display = 'none';
+			}
+		}
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<script src="../../../static/scripts/script.js"></script>
+</body>
+</html>
+	

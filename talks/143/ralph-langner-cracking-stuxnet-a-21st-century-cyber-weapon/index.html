@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+	<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<meta name="description" content="Unlock your Spanish reading skills: Immerse yourself in a contextual and practical learning enhanced by high-quality instant translations.">
+      	<meta name="keywords" content="Spanish reading, Spanish language learning, instant translations, reading adventure, improve Spanish, improve reading skills, educational platform, spanish reading resources, online education, Spanish proficiency, learn Spanish, Spanish learning resources, bilingual education, language exchange, study Spanish online">
+		<link rel="apple-touch-icon" sizes="180x180" href="../../../static/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../../../static/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../../../static/favicons/favicon-16x16.png">
+		<link rel="manifest" href="../../../static/favicons/site.webmanifest">
+		<title>Ralph Langner : Cracking Stuxnet, a 21st-century cyber weapon</title>
+		<link rel='stylesheet' href='../../../static/styles/styles.css'>
+		<script defer data-domain="readingdb.org" src="https://plausible.io/js/script.js"></script>
+	</head>
+	<body>
+
+	<h1 class='title'>Cracking Stuxnet, a 21st-century cyber weapon</h1>
+	<h2 class='speaker'>Ralph Langner</h2>
+	<div class='transcript books'>
+	<p>Are you ready to improve your Spanish speaking skills, check <a href='https://referral.lingoda.com/6Dztrv'>Lingoda</a> today!</p>
+		<p>
+		<span class="tooltip">The idea behind the Stuxnet computer worm<span class="tooltiptext">ان الفكرة من وراء دودة ستوكسنت الحاسوبية</span></span>
+		<span class="tooltip">is actually quite simple.<span class="tooltiptext">هي بسيطةٌ جداً</span></span>
+		<span class="tooltip">We don&#39;t want Iran to get the bomb.<span class="tooltiptext">ان لا تحصل إيران على القنبلة النووية</span></span>
+		<span class="tooltip">Their major asset for developing nuclear weapons<span class="tooltiptext">ان المكان الاساسي الذي من المفترض ان يتم فيه تطوير الاسلحة النووية</span></span>
+		<span class="tooltip">is the Natanz uranium enrichment facility.<span class="tooltiptext">هو منشأة تخصيب اليورانيوم في منطقة &quot; ناتنز &quot;</span></span>
+		<span class="tooltip">The gray boxes that you see,<span class="tooltiptext">ان العلب الرمادية التي ترونها هنا</span></span>
+		<span class="tooltip">these are real-time control systems.<span class="tooltiptext">انها عبارة عن انظمة تحكم</span></span>
+		<span class="tooltip">Now if we manage to compromise these systems<span class="tooltiptext">وان استطعت ان تخرب هذه الانظمة</span></span>
+		<span class="tooltip">that control drive speeds and valves,<span class="tooltiptext">والتي تتحكم بسرعة و حركة الصمامات</span></span>
+		<span class="tooltip">we can actually cause a lot of problems<span class="tooltiptext">يمكن ان تسبب الكثير من المشاكل</span></span>
+		<span class="tooltip">with the centrifuge.<span class="tooltiptext">في اجهزة الطرد المركزي</span></span>
+		<span class="tooltip">The gray boxes don&#39;t run Windows software;<span class="tooltiptext">ان هذه العلب الرمادية لا تعمل حتماً على نظام ويندوز</span></span>
+		<span class="tooltip">they are a completely different technology.<span class="tooltiptext">انها تعمل على نظام مختلف جداً</span></span>
+		<span class="tooltip">But if we manage<span class="tooltiptext">ولكن ان استطعنا ..</span></span>
+		<span class="tooltip">to place a good Windows virus<span class="tooltiptext">ان نضع فيروس يهاجم نظام ويندوز</span></span>
+		<span class="tooltip">on a notebook<span class="tooltiptext">على جهاز اللابتوب</span></span>
+		<span class="tooltip">that is used by a maintenance engineer<span class="tooltiptext">الذي يستخدمه مهندسو ذلك الجهاز</span></span>
+		<span class="tooltip">to configure this gray box,<span class="tooltiptext">لضبط ذلك الجهاز</span></span>
+		<span class="tooltip">then we are in business.<span class="tooltiptext">فسنستطيع اختراقه</span></span>
+		<span class="tooltip">And this is the plot behind Stuxnet.<span class="tooltiptext">وهذه هي فكرة دودة ستوكسنت الالكترونية</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So we start with a Windows dropper.<span class="tooltiptext">كل ما نحتاجه نظام ويندوز يحوي الدودة</span></span>
+		<span class="tooltip">The payload goes onto the gray box,<span class="tooltiptext">ومن ثم يتم تحميله على الاجهزة الرمادية</span></span>
+		<span class="tooltip">damages the centrifuge,<span class="tooltiptext">لتعطيل اجهزة الطرد المركزي</span></span>
+		<span class="tooltip">and the Iranian nuclear program is delayed --<span class="tooltiptext">فيتأخر برنامج إيران النووي</span></span>
+		<span class="tooltip">mission accomplished.<span class="tooltiptext">وتنجح المهمة</span></span>
+		<span class="tooltip">That&#39;s easy, huh?<span class="tooltiptext">يبدو الامر سهلاً .. أليس كذلك ؟</span></span>
+		<span class="tooltip">I want to tell you how we found that out.<span class="tooltiptext">سأخبركم كيف استطعنا ان نكتشف هذه الدودة الالكترونية</span></span>
+		<span class="tooltip">When we started our research on Stuxnet six months ago,<span class="tooltiptext">عندما بدأنا البحث فيما يخص ستوكسنت منذ 6 اشهر</span></span>
+		<span class="tooltip">it was completely unknown what the purpose of this thing was.<span class="tooltiptext">كان الهدف الذي تستهدفه هذه الدودة مجهول تماما بالنسبة لنا</span></span>
+		<span class="tooltip">The only thing that was known<span class="tooltiptext">والشيء الوحيد الذي كنا نعيه ..</span></span>
+		<span class="tooltip">is it&#39;s very, very complex on the Windows part, the dropper part,<span class="tooltiptext">هو ان هذه الدودة تختبىء في جزء معقد جداً من نظام ويندوز وتستخدمه كناقل</span></span>
+		<span class="tooltip">used multiple zero-day vulnerabilities.<span class="tooltiptext">وتستخدم عدة نقاط ضعف في النظام لاختراقه</span></span>
+		<span class="tooltip">And it seemed to want to do something<span class="tooltiptext">وكان جلياً بالنسبة لنا انها - الدودة الالكترونية - تحاول القيام بشيء ما</span></span>
+		<span class="tooltip">with these gray boxes, these real-time control systems.<span class="tooltiptext">بخصوص هذه العلب الرمادية .. علب التحكم</span></span>
+		<span class="tooltip">So that got our attention,<span class="tooltiptext">وهذا ما جذب اهتمامنا ..</span></span>
+		<span class="tooltip">and we started a lab project<span class="tooltiptext">وقد بدأنا البحث المخبري</span></span>
+		<span class="tooltip">where we infected our environment with Stuxnet<span class="tooltiptext">حيث اطلقنا دودة ستوكسنت في انظمتنا</span></span>
+		<span class="tooltip">and checked this thing out.<span class="tooltiptext">اخذنا نراقب التبعات جراء ذلك</span></span>
+		<span class="tooltip">And then some very funny things happened.<span class="tooltiptext">وقد لاحظنا شيئاً مضحكاً ..</span></span>
+		<span class="tooltip">Stuxnet behaved like a lab rat<span class="tooltiptext">ان دودة ستوكسنت كانت تتصرف كـ فأر المختبر</span></span>
+		<span class="tooltip">that didn&#39;t like our cheese --<span class="tooltiptext">الذي لا يحب الجبنة التي نقدمها له ..</span></span>
+		<span class="tooltip">sniffed, but didn&#39;t want to eat.<span class="tooltiptext">كان يشتم هذه الجبنة .. ولكنه لا يأكلها</span></span>
+		<span class="tooltip">Didn&#39;t make sense to me.<span class="tooltiptext">لم يكن ذلك منطقيا بالنسبة لنا</span></span>
+		<span class="tooltip">And after we experimented with different flavors of cheese,<span class="tooltiptext">وبعد عدة نكهات من الجبن التي قدمناها للدودة - عدة انظمة -</span></span>
+		<span class="tooltip">I realized, well, this is a directed attack.<span class="tooltiptext">لاحظنا .. ان هذه الدودة ليست دودة هجوم عشوائية بل موجهة</span></span>
+		<span class="tooltip">It&#39;s completely directed.<span class="tooltiptext">موجهة تحديداً لهدف ما ..</span></span>
+		<span class="tooltip">The dropper is prowling actively<span class="tooltiptext">انها موجهة تماماً</span></span>
+		<span class="tooltip">on the gray box<span class="tooltiptext">تجاه العلب الرمادية</span></span>
+		<span class="tooltip">if a specific configuration is found,<span class="tooltiptext">وحتى ان وجدت هذه الدودة الانظمة المستهدفة ..</span></span>
+		<span class="tooltip">and even if the actual program code that it&#39;s trying to infect<span class="tooltiptext">فإن لم يكن هذا النظام يعمل بصورة واقعية</span></span>
+		<span class="tooltip">is actually running on that target.<span class="tooltiptext">ويعمل على اجهزة الطرد المركزي</span></span>
+		<span class="tooltip">And if not, Stuxnet does nothing.<span class="tooltiptext">فإن دودة ستوكسنت لن تقوم بشيء ما</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So that really got my attention,<span class="tooltiptext">وهذا فعلاً قد جذب اهتمامي</span></span>
+		<span class="tooltip">and we started to work on this<span class="tooltiptext">وقد بدأنا العمل على هذا الامر لفهم ماهيته</span></span>
+		<span class="tooltip">nearly around the clock,<span class="tooltiptext">على مدار الساعة</span></span>
+		<span class="tooltip">because I thought, &quot;Well, we don&#39;t know what the target is.<span class="tooltiptext">لاننا لم نكن نعرف ما هو الهدف</span></span>
+		<span class="tooltip">It could be, let&#39;s say for example,<span class="tooltiptext">فهو يمكن ان يكون .. على سبيل المثال</span></span>
+		<span class="tooltip">a U.S. power plant,<span class="tooltiptext">مصنع طاقة في الولايات المتحدة</span></span>
+		<span class="tooltip">or a chemical plant in Germany.<span class="tooltiptext">او مصنع كيميائي في ألمانيا</span></span>
+		<span class="tooltip">So we better find out what the target is soon.&quot;<span class="tooltiptext">لذا كان يتوجب علينا ان نعرف ما هو الهدف باسرع وقت ممكن</span></span>
+		<span class="tooltip">So we extracted and decompiled<span class="tooltiptext">لذا قمنا بفكه .. فرزه .. وقراءة برمجيته</span></span>
+		<span class="tooltip">the attack code,<span class="tooltiptext">وتحديداً كود الهجوم</span></span>
+		<span class="tooltip">and we discovered that it&#39;s structured in two digital bombs --<span class="tooltiptext">ولقد وجدنا انه مبرمج على نظامي هجوم - قنبلتين رقميتين -</span></span>
+		<span class="tooltip">a smaller one and a bigger one.<span class="tooltiptext">واحدة صغيرة .. وأخرى كبيرة</span></span>
+		<span class="tooltip">And we also saw that they are very professionally engineered<span class="tooltiptext">ولقد أدركنا على الفور انها - الدودة - مبرمجة بصورة عالية الاحتراف والتقنية</span></span>
+		<span class="tooltip">by people who obviously had all insider information.<span class="tooltiptext">بواسطة اشخاص لديهم كل المعلومات الكافية والوافية عن الهدف</span></span>
+		<span class="tooltip">They knew all the bits and bites<span class="tooltiptext">فقد تعرفوا كل &quot; البيتات &quot; الموجودة في برمجية الهدف</span></span>
+		<span class="tooltip">that they had to attack.<span class="tooltiptext">والتي يجب ان تُهاجم</span></span>
+		<span class="tooltip">They probably even know the shoe size of the operator.<span class="tooltiptext">ربما كانوا يعرفون حتى مقاس حذاء مشغل الجهاز</span></span>
+		<span class="tooltip">So they know everything.<span class="tooltiptext">إذا لقد كانوا يعلمون كل شيء</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And if you have heard that the dropper of Stuxnet<span class="tooltiptext">وان كنتم سمعتم ان دودة ستوكسنت وطريقة توجهها ودخولها الى النظام</span></span>
+		<span class="tooltip">is complex and high-tech,<span class="tooltiptext">هي معقدة وعالية التقنية</span></span>
+		<span class="tooltip">let me tell you this:<span class="tooltiptext">دعوني اخبركم</span></span>
+		<span class="tooltip">the payload is rocket science.<span class="tooltiptext">ان طريقة &quot; تحميل الدودة الى الجهاز &quot; تفوق برمجة الصواريخ</span></span>
+		<span class="tooltip">It&#39;s way above everything<span class="tooltiptext">انها متقدمة جداً اكثر من اي شيء</span></span>
+		<span class="tooltip">that we have ever seen before.<span class="tooltiptext">انها برمجية لم نرى مثيلاً لها من ذي قبل</span></span>
+		<span class="tooltip">Here you see a sample of this actual attack code.<span class="tooltiptext">سوف اريكم جزء من برمجية الهجوم</span></span>
+		<span class="tooltip">We are talking about --<span class="tooltiptext">نحن هنا نتحدث</span></span>
+		<span class="tooltip">around about 15,000 lines of code.<span class="tooltiptext">عن ما يقارب 1500 سطر من البرمجية الكلية</span></span>
+		<span class="tooltip">Looks pretty much like old-style assembly language.<span class="tooltiptext">تبدو تماما مثل لغة التجميع القديمة</span></span>
+		<span class="tooltip">And I want to tell you how we were able<span class="tooltiptext">واريد ان اخبركم كيف استطعنا ان نفك شيفرة</span></span>
+		<span class="tooltip">to make sense out of this code.<span class="tooltiptext">هذه البرمجية</span></span>
+		<span class="tooltip">So what we were looking for is, first of all, system function calls,<span class="tooltiptext">بداية كنا نبحث عن الدوال</span></span>
+		<span class="tooltip">because we know what they do.<span class="tooltiptext">لاننا كنا نعرف انها &quot; الموجهات &quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And then we were looking for timers and data structures<span class="tooltiptext">ومن ثم بدأنا نبحث عن العدادات .. وانظمة المعلومات</span></span>
+		<span class="tooltip">and trying to relate them to the real world --<span class="tooltiptext">وحاولنا ان نصل بين تلك المعلومات وبين الاهداف ..</span></span>
+		<span class="tooltip">to potential real world targets.<span class="tooltiptext">التي افترضناها من الواقع</span></span>
+		<span class="tooltip">So we do need target theories<span class="tooltiptext">لذا كنا نفترض مجموعة اهداف</span></span>
+		<span class="tooltip">that we can prove or disprove.<span class="tooltiptext">ونقوم بفحص الشيفرة هل موافقة ام لا</span></span>
+		<span class="tooltip">In order to get target theories,<span class="tooltiptext">ولكي نمايز بين فرضيات الاهداف</span></span>
+		<span class="tooltip">we remember<span class="tooltiptext">وضعنا نصب اعيُننا</span></span>
+		<span class="tooltip">that it&#39;s definitely hardcore sabotage,<span class="tooltiptext">ان الهدف من عملية التخريب هذه</span></span>
+		<span class="tooltip">it must be a high-value target<span class="tooltiptext">يجب ان يكون هدفاً عالي القيمة جداً</span></span>
+		<span class="tooltip">and it is most likely located in Iran,<span class="tooltiptext">وهو على الاغلب موجود في إيران</span></span>
+		<span class="tooltip">because that&#39;s where most of the infections had been reported.<span class="tooltiptext">لان معظم الاصابات بهذه الدودة بلغ عنها من تلك المنطقة</span></span>
+		<span class="tooltip">Now you don&#39;t find several thousand targets in that area.<span class="tooltiptext">وحتماً لا توجد في تلك المنطقة .. العديد من الاهداف</span></span>
+		<span class="tooltip">It basically boils down<span class="tooltiptext">وفي النهاية قلصت الاهداف المحتملة</span></span>
+		<span class="tooltip">to the Bushehr nuclear power plant<span class="tooltiptext">الى مجمع بوشهر النووي</span></span>
+		<span class="tooltip">and to the Natanz fuel enrichment plant.<span class="tooltiptext">ومركز تخصيب اليورانيوم في &quot; نتناز &quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So I told my assistant,<span class="tooltiptext">لذا اخبرت مساعدي ..</span></span>
+		<span class="tooltip">&quot;Get me a list of all centrifuge and power plant experts from our client base.&quot;<span class="tooltiptext">أحضر لي قائمة بالخبراء باجهزة الطرد المركزي والطاقة من مركز معلوماتنا &quot;</span></span>
+		<span class="tooltip">And I phoned them up and picked their brain<span class="tooltiptext">من ثم بدأنا بالاتصال بهم</span></span>
+		<span class="tooltip">in an effort to match their expertise<span class="tooltiptext">لكي نوفق بين ما وجدناه</span></span>
+		<span class="tooltip">with what we found in code and data.<span class="tooltiptext">وبين ما هو موجود في معلومات وكودات التي يعمل عليها هؤلاء الخبراء</span></span>
+		<span class="tooltip">And that worked pretty well.<span class="tooltiptext">وقد نجحنا بذلك</span></span>
+		<span class="tooltip">So we were able to associate<span class="tooltiptext">لقد وجدنا الرابط</span></span>
+		<span class="tooltip">the small digital warhead<span class="tooltiptext">انه رقم صغير يعمل كرأس حربي</span></span>
+		<span class="tooltip">with the rotor control.<span class="tooltiptext">يهاجم برمجية تتحكم بعنفة</span></span>
+		<span class="tooltip">The rotor is that moving part within the centrifuge,<span class="tooltiptext">تدور في نظام الطرد المركزي</span></span>
+		<span class="tooltip">that black object that you see.<span class="tooltiptext">العنصر الاسود الذي ترونه هنا</span></span>
+		<span class="tooltip">And if you manipulate the speed of this rotor,<span class="tooltiptext">وان استطعت ان تغير او تتلاعب بسرعة هذه العنفة</span></span>
+		<span class="tooltip">you are actually able to crack the rotor<span class="tooltiptext">يمكنك ان تدمرها</span></span>
+		<span class="tooltip">and eventually even have the centrifuge explode.<span class="tooltiptext">وهذا سيؤدي في النهاية الى تدمير \ انفجار اجهزة الطرد المركزي</span></span>
+		<span class="tooltip">What we also saw<span class="tooltiptext">وما لاحظناه أيضاً</span></span>
+		<span class="tooltip">is that the goal of the attack<span class="tooltiptext">ان الهدف من الهجوم</span></span>
+		<span class="tooltip">was really to do it slowly and creepy --<span class="tooltiptext">هو ان يتم بصورة بطيئة و مخادعة</span></span>
+		<span class="tooltip">obviously in an effort<span class="tooltiptext">بهدف</span></span>
+		<span class="tooltip">to drive maintenance engineers crazy,<span class="tooltiptext">جعل عمال الصيانة يصابون بالجنون</span></span>
+		<span class="tooltip">that they would not be able to figure this out quickly.<span class="tooltiptext">وان لا يستطيعوا ان يميزوا المشكلة بسرعة</span></span>
+	</p>
+	<p>
+		<span class="tooltip">The big digital warhead -- we had a shot at this<span class="tooltiptext">اما برمجية الهجوم الاكبر</span></span>
+		<span class="tooltip">by looking very closely<span class="tooltiptext">بعد النظر اليها جيداً</span></span>
+		<span class="tooltip">at data and data structures.<span class="tooltiptext">على برمجيتها و هيكليتها</span></span>
+		<span class="tooltip">So for example, the number 164<span class="tooltiptext">وجدنا رقم غريب هو 164</span></span>
+		<span class="tooltip">really stands out in that code;<span class="tooltiptext">كان جليٌ لنا انه مميز</span></span>
+		<span class="tooltip">you can&#39;t overlook it.<span class="tooltiptext">ولم نستطع ان نتجاهله</span></span>
+		<span class="tooltip">I started to research scientific literature<span class="tooltiptext">بدأنا نبحث في المحاضرات العلمية</span></span>
+		<span class="tooltip">on how these centrifuges<span class="tooltiptext">عن كيفية عمل أجهزة الطرد المركزي</span></span>
+		<span class="tooltip">are actually built in Natanz<span class="tooltiptext">والتي كانت مبنية في منشأة نتناز</span></span>
+		<span class="tooltip">and found they are structured<span class="tooltiptext">ولقد وجدنا انها مرتبة</span></span>
+		<span class="tooltip">in what is called a cascade,<span class="tooltiptext">بشكل متتالي</span></span>
+		<span class="tooltip">and each cascade holds 164 centrifuges.<span class="tooltiptext">وكل متتالية تحتوي على 164 من اجهزة الطرد المركزي</span></span>
+		<span class="tooltip">So that made sense, that was a match.<span class="tooltiptext">وكان هذا التوافق الاكبر الذي وجدناه</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And it even got better.<span class="tooltiptext">ولكن الامور تغدو أكثر إثارة</span></span>
+		<span class="tooltip">These centrifuges in Iran<span class="tooltiptext">فأجهزة الطرد المركزي في إيران</span></span>
+		<span class="tooltip">are subdivided into 15, what is called, stages.<span class="tooltiptext">مقسومة الى 15 .. يمكن ان نقول 15 مرحلة</span></span>
+		<span class="tooltip">And guess what we found in the attack code?<span class="tooltiptext">وتوقعوا مالذي وجدناه في شيفرة الهجوم ؟</span></span>
+		<span class="tooltip">An almost identical structure.<span class="tooltiptext">تطابقٌ تام</span></span>
+		<span class="tooltip">So again, that was a real good match.<span class="tooltiptext">مرة أخرى .. كان التطابق واضحٌ جداً</span></span>
+		<span class="tooltip">And this gave us very high confidence for what we were looking at.<span class="tooltiptext">وقد اعطانا ثقة تامة بأن هذا هو ما نبحث عنه</span></span>
+		<span class="tooltip">Now don&#39;t get me wrong here, it didn&#39;t go like this.<span class="tooltiptext">الان لا تفهموني بصورة خاطئة .. ان الامر ليس بهذه السهولة</span></span>
+		<span class="tooltip">These results have been obtained<span class="tooltiptext">لقد حصلنا على هذه النتائج</span></span>
+		<span class="tooltip">over several weeks of really hard labor.<span class="tooltiptext">بعد عدة اسابيع من العمل المضني</span></span>
+		<span class="tooltip">And we often went into just a dead end<span class="tooltiptext">وبعد ان وصلنا الى عدة نهايات مغلقة</span></span>
+		<span class="tooltip">and had to recover.<span class="tooltiptext">وكان علينا البدء من جديد مرة اخرى</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Anyway, so we figured out<span class="tooltiptext">حسناً .. لقد اكتشفنا إذا</span></span>
+		<span class="tooltip">that both digital warheads<span class="tooltiptext">ان شيفرتي الهجوم</span></span>
+		<span class="tooltip">were actually aiming at one and the same target,<span class="tooltiptext">كانتا تستهدفان نفس الهدف</span></span>
+		<span class="tooltip">but from different angles.<span class="tooltiptext">كل من زواية خاصة به</span></span>
+		<span class="tooltip">The small warhead is taking one cascade,<span class="tooltiptext">حيث تهاجم الاولى الصغيرة احد الشلالات &quot; التي تتوزع فيها اجهزة الطرد &quot;</span></span>
+		<span class="tooltip">and spinning up the rotors and slowing them down,<span class="tooltiptext">ويحاول ان يعبث بالعنفة و يقلل من سرعتها</span></span>
+		<span class="tooltip">and the big warhead<span class="tooltiptext">والثانية الكبيرة</span></span>
+		<span class="tooltip">is talking to six cascades<span class="tooltiptext">تهاجم المتتاليات الست</span></span>
+		<span class="tooltip">and manipulating valves.<span class="tooltiptext">وتتلاعب بالصمامات</span></span>
+		<span class="tooltip">So in all, we are very confident<span class="tooltiptext">لقد كنا واثقين جداً</span></span>
+		<span class="tooltip">that we have actually determined what the target is.<span class="tooltiptext">اننا قد عرفنا الهدف بصورة لا مجال للشك فيها</span></span>
+		<span class="tooltip">It is Natanz, and it is only Natanz.<span class="tooltiptext">انه في نتناز .. نتناز وحدها</span></span>
+		<span class="tooltip">So we don&#39;t have to worry<span class="tooltiptext">لذا لم يكن يتوجب علينا ان نقلق</span></span>
+		<span class="tooltip">that other targets<span class="tooltiptext">من وجود اهداف اخرى</span></span>
+		<span class="tooltip">might be hit by Stuxnet.<span class="tooltiptext">ربما قد تُضرب بواسطة دودة ستوكسنت</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Here&#39;s some very cool stuff that we saw --<span class="tooltiptext">وهناك شيء رائع مبدع وجدناه ايضاً</span></span>
+		<span class="tooltip">really knocked my socks off.<span class="tooltiptext">أطار لنا عقولنا من شدة إبداعه</span></span>
+		<span class="tooltip">Down there is the gray box,<span class="tooltiptext">في الاسفل ترون العلب الرمادية</span></span>
+		<span class="tooltip">and on the top you see the centrifuges.<span class="tooltiptext">وهناك في الاعلى ترون اجهزة الطرد المركزي</span></span>
+		<span class="tooltip">Now what this thing does<span class="tooltiptext">حسناً .. ماذا يفعل هذا الشيء ..</span></span>
+		<span class="tooltip">is it intercepts the input values from sensors --<span class="tooltiptext">انه يقوم باعتراض المعلومات التي تصدر من مجسات الصمامات</span></span>
+		<span class="tooltip">so for example, from pressure sensors<span class="tooltiptext">على سبيل المثال مجسات الضغط</span></span>
+		<span class="tooltip">and vibration sensors --<span class="tooltiptext">او مجسات الاهتزاز</span></span>
+		<span class="tooltip">and it provides legitimate program code,<span class="tooltiptext">ومن ثم يقوم تبعاً لبرمجية معينة</span></span>
+		<span class="tooltip">which is still running during the attack,<span class="tooltiptext">والتي تعمل أثناء الهجوم</span></span>
+		<span class="tooltip">with fake input data.<span class="tooltiptext">بإستبدال البيانات ببيانات خاطئة</span></span>
+		<span class="tooltip">And as a matter of fact, this fake input data<span class="tooltiptext">و في الحقيقة، إدخال بيانات وهمية</span></span>
+		<span class="tooltip">is actually prerecorded by Stuxnet.<span class="tooltiptext">تقوم دودة ستوكسنت بتسجيلها مسبقاً من نفس المجسات</span></span>
+		<span class="tooltip">So it&#39;s just like from the Hollywood movies<span class="tooltiptext">كما في افلام هوليود</span></span>
+		<span class="tooltip">where during the heist,<span class="tooltiptext">حيث أثناء سرقة،</span></span>
+		<span class="tooltip">the observation camera is fed with prerecorded video.<span class="tooltiptext">تقوم كاميرة المراقبة بعرض فلم مسبق التسجيل للموقع حتى لا يبدو هناك شيءٌ ما</span></span>
+		<span class="tooltip">That&#39;s cool, huh?<span class="tooltiptext">أمرٌ رائع .. أليس كذلك ؟</span></span>
+	</p>
+	<p>
+		<span class="tooltip">The idea here is obviously<span class="tooltiptext">الفكرة ليست فحسب</span></span>
+		<span class="tooltip">not only to fool the operators in the control room.<span class="tooltiptext">مخادعة للقائمين على المنشأة</span></span>
+		<span class="tooltip">It actually is much more dangerous and aggressive.<span class="tooltiptext">بل اكثر من هذا عدواة وخطورة ..</span></span>
+		<span class="tooltip">The idea<span class="tooltiptext">الفكرة</span></span>
+		<span class="tooltip">is to circumvent a digital safety system.<span class="tooltiptext">هي مخادعة أنظمة الامان الإلكترونية</span></span>
+		<span class="tooltip">We need digital safety systems<span class="tooltiptext">نحن عادة نحتاج انظمة الآمان الإلكترونية</span></span>
+		<span class="tooltip">where a human operator could not act quick enough.<span class="tooltiptext">لكي تتصرف أسرع من الانسان لمواكبة للأخطار</span></span>
+		<span class="tooltip">So for example, in a power plant,<span class="tooltiptext">فعلى سبير المثال في محطات الطاقة</span></span>
+		<span class="tooltip">when your big steam turbine gets too over speed,<span class="tooltiptext">عندما يقوم توربين بخاري بالدوران بسرعة اكبر من اللازم</span></span>
+		<span class="tooltip">you must open relief valves within a millisecond.<span class="tooltiptext">يجب على الفور وخلال جزء من الثانية ان يتم فتح صمامات الامان</span></span>
+		<span class="tooltip">Obviously, this cannot be done by a human operator.<span class="tooltiptext">وحتماً هذا لا يمكن القيام به بواسطة البشر</span></span>
+		<span class="tooltip">So this is where we need digital safety systems.<span class="tooltiptext">لهذا نحتاج أنظمة الآمان الإلكترونية</span></span>
+		<span class="tooltip">And when they are compromised,<span class="tooltiptext">وعندما يتم &quot; مخادعتها \ التحايل عليها &quot;</span></span>
+		<span class="tooltip">then real bad things can happen.<span class="tooltiptext">فإن مخاطر جمة قد تحدث ..</span></span>
+		<span class="tooltip">Your plant can blow up.<span class="tooltiptext">مثل انفجار المعمل \ المنشأة</span></span>
+		<span class="tooltip">And neither your operators nor your safety system will notice it.<span class="tooltiptext">والمشكلة ان لا مراقب المعمل ولا نظام الآمان سوف يلحظ هذا ..</span></span>
+		<span class="tooltip">That&#39;s scary.<span class="tooltiptext">ان هذا خطرٌ جداً</span></span>
+	</p>
+	<p>
+		<span class="tooltip">But it gets worse.<span class="tooltiptext">والامر يزداد سوءاً</span></span>
+		<span class="tooltip">And this is very important, what I&#39;m going to say.<span class="tooltiptext">وهذا أمرٌ مهم جداً .. واريدكم</span></span>
+		<span class="tooltip">Think about this:<span class="tooltiptext">ان تفكروا بهذا</span></span>
+		<span class="tooltip">this attack is generic.<span class="tooltiptext">تصورا هذا الهجوم بصورة عامة ..</span></span>
+		<span class="tooltip">It doesn&#39;t have anything to do, in specifics,<span class="tooltiptext">تصوروا .. ان لايكون الامر</span></span>
+		<span class="tooltip">with centrifuges,<span class="tooltiptext">متعلق بأجهزة الطرد المركزي</span></span>
+		<span class="tooltip">with uranium enrichment.<span class="tooltiptext">او بتخصيب اليورانيوم</span></span>
+		<span class="tooltip">So it would work as well, for example,<span class="tooltiptext">لان هذه الدودة قد تعمل بصورة ممتازة</span></span>
+		<span class="tooltip">in a power plant<span class="tooltiptext">على مصانع الطاقة</span></span>
+		<span class="tooltip">or in an automobile factory.<span class="tooltiptext">او مصانع السيارات</span></span>
+		<span class="tooltip">It is generic.<span class="tooltiptext">انها دودة تصيب كل شيء</span></span>
+		<span class="tooltip">And you don&#39;t have -- as an attacker --<span class="tooltiptext">وانت - كمهاجم -</span></span>
+		<span class="tooltip">you don&#39;t have to deliver this payload<span class="tooltiptext">لا يتوجب عليك ان تحمل هذه الدودة مباشرة</span></span>
+		<span class="tooltip">by a USB stick,<span class="tooltiptext">بواسطة &quot; USB &quot;</span></span>
+		<span class="tooltip">as we saw it in the case of Stuxnet.<span class="tooltiptext">كما رأينا في حالة دودة ستوكسنت الإلكترونية</span></span>
+		<span class="tooltip">You could also use conventional worm technology for spreading.<span class="tooltiptext">كل ما تريده هو ان تنشر هذه الدودة في فضاء الانترنت</span></span>
+		<span class="tooltip">Just spread it as wide as possible.<span class="tooltiptext">ان تنشرها بالقدر الكافي</span></span>
+		<span class="tooltip">And if you do that,<span class="tooltiptext">وان استطعت ان تقوم بهذا</span></span>
+		<span class="tooltip">what you end up with<span class="tooltiptext">سوف تحصل في النهاية</span></span>
+		<span class="tooltip">is a cyber weapon of mass destruction.<span class="tooltiptext">على سلاح دمار شامل &quot; إلكتروني &quot;</span></span>
+		<span class="tooltip">That&#39;s the consequence<span class="tooltiptext">ان عواقب هذا</span></span>
+		<span class="tooltip">that we have to face.<span class="tooltiptext">هو ما سنواجهه في المستقبل</span></span>
+		<span class="tooltip">So unfortunately,<span class="tooltiptext">ولسوء الحظ ..</span></span>
+		<span class="tooltip">the biggest number of targets for such attacks<span class="tooltiptext">ان الاهداف الاكبر لهكذا &quot; برمجيات &quot;</span></span>
+		<span class="tooltip">are not in the Middle East.<span class="tooltiptext">ليست في الشرق الاوسط</span></span>
+		<span class="tooltip">They&#39;re in the United States and Europe and in Japan.<span class="tooltiptext">انما هي في الولايات المتحدة .. والاتحاد الاوروبي .. وفي اليابان</span></span>
+		<span class="tooltip">So all of the green areas,<span class="tooltiptext">وكل تلك المناطق &quot; الخضراء &quot;</span></span>
+		<span class="tooltip">these are your target-rich environments.<span class="tooltiptext">التي هي غنية بالاهداف عالية التقنية .. !</span></span>
+		<span class="tooltip">We have to face the consequences,<span class="tooltiptext">علينا ان نواجه عواقب هذا في المستقبل</span></span>
+		<span class="tooltip">and we better start to prepare right now.<span class="tooltiptext">والافضل ان نبدأ بالاستعداد الآن</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Thanks.<span class="tooltiptext">شُكراً لكم</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Applause)<span class="tooltiptext">(تصفيق)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Chris Anderson: I&#39;ve got a question.<span class="tooltiptext">كريس أندرسون : لدي تساؤل</span></span>
+		<span class="tooltip">Ralph, it&#39;s been quite widely reported<span class="tooltiptext">رالف .. هناك الكثير من التقارير التي</span></span>
+		<span class="tooltip">that people assume that Mossad<span class="tooltiptext">تقول ان &quot; المُوساد الإسرائيلي &quot;</span></span>
+		<span class="tooltip">is the main entity behind this.<span class="tooltiptext">وراء هذه الدودة</span></span>
+		<span class="tooltip">Is that your opinion?<span class="tooltiptext">هل هذا هو رأيك ؟</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Ralph Langner: Okay, you really want to hear that?<span class="tooltiptext">رالف لانجير : حسناً .. هل تريد حقاً معرفة وجهة نظري ؟</span></span>
+		<span class="tooltip">Yeah. Okay.<span class="tooltiptext">حسناً .. نعم</span></span>
+		<span class="tooltip">My opinion is that the Mossad is involved,<span class="tooltiptext">ان رأي هو ان المُساد مشارك بهذه الدودة</span></span>
+		<span class="tooltip">but that the leading force is not Israel.<span class="tooltiptext">ولكن .. القوى العظمى في هذا الخصوص .. ليست إسرائيل</span></span>
+		<span class="tooltip">So the leading force behind that<span class="tooltiptext">ان القوى المحركة لهذه الدودة ..</span></span>
+		<span class="tooltip">is the cyber superpower.<span class="tooltiptext">هي قوى عظمى إلكترونياً</span></span>
+		<span class="tooltip">There is only one,<span class="tooltiptext">وهناك قوة واحدة فحسب في هذا العالم</span></span>
+		<span class="tooltip">and that&#39;s the United States --<span class="tooltiptext">وهي الولايات المتحدة الامريكية</span></span>
+		<span class="tooltip">fortunately, fortunately.<span class="tooltiptext">وهذا لحسن .. الحظ .. نعم لحسن الحظ</span></span>
+		<span class="tooltip">Because otherwise,<span class="tooltiptext">لانه لو كان الامر غير هذا</span></span>
+		<span class="tooltip">our problems would even be bigger.<span class="tooltiptext">فإن مشاكلنا سوف تكون أكبر مما يمكن تخيله</span></span>
+	</p>
+	<p>
+		<span class="tooltip">CA: Thank you for scaring the living daylights out of us. Thank you, Ralph.<span class="tooltiptext">كيس آندرسون : شكراً لإخافتنا رالف .. شكراً لك</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Applause)<span class="tooltiptext">(تصفيق)</span></span>
+	</p>
+
+	<div class="line"></div>
+	<p>Enjoying my website? Your donation helps maintain its ad-free experience and smooth operation. Your support is truly appreciated and helps me continue providing quality content. Thank you for considering a donation!</p>
+	<p>To donate, simply click the PayPal link below:<p/>
+	<p><a href="https://www.paypal.com/paypalme/otechai" target='_blank'>Donate via PayPal</a></p>
+	
+</div>
+<span onclick='topFunction()' id='gotop' title='Go to top'><svg width="32" height="32" viewBox="0 0 100 100">
+	   <path fill="white" d="m50 0c-13.262 0-25.98 5.2695-35.355 14.645s-14.645 22.094-14.645 35.355 5.2695 25.98 14.645 35.355 22.094 14.645 35.355 14.645 25.98-5.2695 35.355-14.645 14.645-22.094 14.645-35.355-5.2695-25.98-14.645-35.355-22.094-14.645-35.355-14.645zm20.832 62.5-20.832-22.457-20.625 22.457c-1.207 0.74219-2.7656 0.57812-3.7891-0.39844-1.0273-0.98047-1.2695-2.5273-0.58594-3.7695l22.918-25c0.60156-0.61328 1.4297-0.96094 2.2891-0.96094 0.86328 0 1.6914 0.34766 2.293 0.96094l22.918 25c0.88672 1.2891 0.6875 3.0352-0.47266 4.0898-1.1562 1.0508-2.9141 1.0859-4.1133 0.078125z"></path>
+	 </svg></span>
+
+	    <div class="footer">
+	        <div class="left"><a href='../../../index.html'>ReadingDB</a></div>
+	        <div class="center"><a href="https://twitter.com/readingdb" class="twitter-link">
+	    <svg class="twitter-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	        <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.58-2.11-9.96-5.02-.42.72-.66 1.56-.66 2.46 0 1.68.85 3.16 2.14 4.02-.79-.02-1.53-.24-2.18-.6v.06c0 2.35 1.67 4.31 3.88 4.76-.4.1-.83.16-1.27.16-.31 0-.62-.03-.92-.08.63 1.96 2.45 3.39 4.61 3.43-1.69 1.32-3.83 2.1-6.15 2.1-.4 0-.8-.02-1.19-.07 2.19 1.4 4.78 2.22 7.57 2.22 9.07 0 14.02-7.52 14.02-14.02 0-.21 0-.41-.01-.61.96-.69 1.79-1.56 2.45-2.55-.88.39-1.83.65-2.82.77z"/>
+	    </svg>
+	</a></div>
+	        <div class="right"><a href='https://www.paypal.com/paypalme/otechai'>Donate</a></div>
+	    </div>
+	<script>
+
+		var mybutton = document.getElementById('gotop');
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+			if (document.documentElement.scrollTop > 20 || document.body.scrollTop > 20) {
+				mybutton.style.display = 'block';
+			} else {
+				mybutton.style.display = 'none';
+			}
+		}
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<script src="../../../static/scripts/script.js"></script>
+</body>
+</html>
+	

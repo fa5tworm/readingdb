@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+	<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<meta name="description" content="Unlock your Spanish reading skills: Immerse yourself in a contextual and practical learning enhanced by high-quality instant translations.">
+      	<meta name="keywords" content="Spanish reading, Spanish language learning, instant translations, reading adventure, improve Spanish, improve reading skills, educational platform, spanish reading resources, online education, Spanish proficiency, learn Spanish, Spanish learning resources, bilingual education, language exchange, study Spanish online">
+		<link rel="apple-touch-icon" sizes="180x180" href="../../../static/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../../../static/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../../../static/favicons/favicon-16x16.png">
+		<link rel="manifest" href="../../../static/favicons/site.webmanifest">
+		<title>Stuart Russell : 3 principles for creating safer AI</title>
+		<link rel='stylesheet' href='../../../static/styles/styles.css'>
+		<script defer data-domain="readingdb.org" src="https://plausible.io/js/script.js"></script>
+	</head>
+	<body>
+
+	<h1 class='title'>3 principles for creating safer AI</h1>
+	<h2 class='speaker'>Stuart Russell</h2>
+	<div class='transcript books'>
+	<p>Are you ready to improve your Spanish speaking skills, check <a href='https://referral.lingoda.com/6Dztrv'>Lingoda</a> today!</p>
+		<p>
+		<span class="tooltip">This is Lee Sedol.<span class="tooltiptext">أمامَكُم لي سيدول.</span></span>
+		<span class="tooltip">Lee Sedol is one of the world&#39;s
+greatest Go players,<span class="tooltiptext">لي سيدول هو واحدٌ من أفضلِ لاعبي
+لُعبةِ &quot;غو&quot; على مستوى العالم</span></span>
+		<span class="tooltip">and he&#39;s having what my friends
+in Silicon Valley call<span class="tooltiptext">وهو يمرّ بما يدعوه أصدقائي
+في سيليكون فالي</span></span>
+		<span class="tooltip">a &quot;Holy Cow&quot; moment --<span class="tooltiptext">بلحظةِ &quot;يا للهول!&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(ضحك)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">a moment where we realize<span class="tooltiptext">هيَ لحظةٌ نُدرِكُ عندها</span></span>
+		<span class="tooltip">that AI is actually progressing
+a lot faster than we expected.<span class="tooltiptext">بأنّ تقنيّات الذكاء الاصطناعي
+تتطوّر بسرعة أكبرَ بكثيرٍ ممّا توقعنا.</span></span>
+		<span class="tooltip">So humans have lost on the Go board.
+What about the real world?<span class="tooltiptext">إذاً فقد خسرَ البشرُ في لعبةِ &quot;غو&quot;
+لكِنْ ماذا عنِ العالمِ الواقعيّ؟</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Well, the real world is much bigger,<span class="tooltiptext">العالمُ الواقعيّ حقيقةً، أكبرُ بكثيرٍ</span></span>
+		<span class="tooltip">much more complicated than the Go board.<span class="tooltiptext">و أشدُّ تعقيداً مِنْ لُعبةِ &quot;غو&quot;.</span></span>
+		<span class="tooltip">It&#39;s a lot less visible,<span class="tooltiptext">صحيحٌ بأنّهُ أقلُّ وضوحاً</span></span>
+		<span class="tooltip">but it&#39;s still a decision problem.<span class="tooltiptext">لكنّه يُصنّفُ أيضاً كقضيّةِ اتخاذِ قرارات.</span></span>
+		<span class="tooltip">And if we think about some
+of the technologies<span class="tooltiptext">ولو نظرنا إلى بعضِ التّقنياتِ</span></span>
+		<span class="tooltip">that are coming down the pike ...<span class="tooltiptext">التي ظهرتْ على السّاحةِ مؤخّراً</span></span>
+		<span class="tooltip">Noriko [Arai] mentioned that reading
+is not yet happening in machines,<span class="tooltiptext">فإنَّ نوريكو أراي قالت أن الآلات
+لا تستطيع القراءة بعد</span></span>
+		<span class="tooltip">at least with understanding.<span class="tooltiptext">على الأقل على مستوى الفهم.</span></span>
+		<span class="tooltip">But that will happen,<span class="tooltiptext">لكن هذا سيحصل،</span></span>
+		<span class="tooltip">and when that happens,<span class="tooltiptext">و حينما يحصلُ ذلك،</span></span>
+		<span class="tooltip">very soon afterwards,<span class="tooltiptext">لَنْ تستغرِقَ طويلاً،</span></span>
+		<span class="tooltip">machines will have read everything
+that the human race has ever written.<span class="tooltiptext">قبلَ أَنْ تقرأَ وتفهمَ
+كلَّ ما توصّل إليهِ البشرُ مِن عِلم.</span></span>
+		<span class="tooltip">And that will enable machines,<span class="tooltiptext">و هذا ما سيُمكِّنها،</span></span>
+		<span class="tooltip">along with the ability to look
+further ahead than humans can,<span class="tooltiptext">باستخدامِ قُدُراتِها الهائلةِ
+في حسابِ الاحتمالاتِ المستقبليّة،</span></span>
+		<span class="tooltip">as we&#39;ve already seen in Go,<span class="tooltiptext">كما رأينا لتوّنا في لعبةِ &quot;غو&quot;،</span></span>
+		<span class="tooltip">if they also have access
+to more information,<span class="tooltiptext">إنْ تمكّنت
+من الوصولِ إلى المزيدِ من المعلومات،</span></span>
+		<span class="tooltip">they&#39;ll be able to make better decisions
+in the real world than we can.<span class="tooltiptext">من اتّخاذِ قراراتٍ أكثرَ منطقيّةً
+من قراراتنا في العالمِ الواقعيّ.</span></span>
+		<span class="tooltip">So is that a good thing?<span class="tooltiptext">إذاً، هل هذا شيءٌ جيّد؟</span></span>
+		<span class="tooltip">Well, I hope so.<span class="tooltiptext">أتمنّى ذلكَ حقيقةً.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Our entire civilization,
+everything that we value,<span class="tooltiptext">الحضارةُ البشريّةُ بأكملها
+و كلّ شيءٍ ذو قيمةٍ لدينا</span></span>
+		<span class="tooltip">is based on our intelligence.<span class="tooltiptext">تمَّ بفضلِ ذكائنا نحن.</span></span>
+		<span class="tooltip">And if we had access
+to a lot more intelligence,<span class="tooltiptext">وإنْ تمكنّا من الحصولِ
+على ذكاءٍ أكثر،</span></span>
+		<span class="tooltip">then there&#39;s really no limit
+to what the human race can do.<span class="tooltiptext">لن يكونَ حينها هناكَ شيءٌ
+لن يستطيعَ البشرُ القيامَ به.</span></span>
+		<span class="tooltip">And I think this could be,
+as some people have described it,<span class="tooltiptext">وأعتقدُ بأنّ إنجازاً كَهذا منَ الممكنِ
+أن يُصنّف كما وصفهُ البعضُ</span></span>
+		<span class="tooltip">the biggest event in human history.<span class="tooltiptext">كأعظمِ إنجازٍ في تاريخِ البشريّة.</span></span>
+		<span class="tooltip">So why are people saying things like this,<span class="tooltiptext">لماذا يقولُ بعضُ الأشخاصِ إذاً
+أشياءَ كهذه:</span></span>
+		<span class="tooltip">that AI might spell the end
+of the human race?<span class="tooltiptext">بأنّ الذكاءَ الاصطناعيَّ سيقضي
+على الجنسِ البشريّ؟</span></span>
+		<span class="tooltip">Is this a new thing?<span class="tooltiptext">هل ظهرت هذهِ الفكرةُ من جديد؟</span></span>
+		<span class="tooltip">Is it just Elon Musk and Bill Gates
+and Stephen Hawking?<span class="tooltiptext">هل هي مجرّد فكرةٍ يؤمنُ بها كلٌّ من
+إيلون ماسك، بيل غيتس، وستيفن هوكنغ؟</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Actually, no. This idea
+has been around for a while.<span class="tooltiptext">حقيقةً لا،
+هذه الفكرةُ موجودةٌ منذ زمنٍ بعيد.</span></span>
+		<span class="tooltip">Here&#39;s a quotation:<span class="tooltiptext">وسأعرِضُ لَكُم مقولةً شهيرة:</span></span>
+		<span class="tooltip">&quot;Even if we could keep the machines
+in a subservient position,<span class="tooltiptext">&quot;حتى ولوّ تمكّنا
+من إبقاءِ الآلاتِ تحتَ سيطرتنا&quot;</span></span>
+		<span class="tooltip">for instance, by turning off the power
+at strategic moments&quot; --<span class="tooltiptext">&quot;عبرَ إطفاءِها مثلاً حينما يلزمُ الأمر&quot;</span></span>
+		<span class="tooltip">and I&#39;ll come back to that
+&quot;turning off the power&quot; idea later on --<span class="tooltiptext">وسأعودُ لاحقاً لهذهِ الفكرة
+-قطع مصدر الطاقة عن الآلة-</span></span>
+		<span class="tooltip">&quot;we should, as a species,
+feel greatly humbled.&quot;<span class="tooltiptext">&quot;علينا كبشر أن نشعر بالتواضع.&quot;</span></span>
+		<span class="tooltip">So who said this?
+This is Alan Turing in 1951.<span class="tooltiptext">مقولةُ من هذه إذاً؟
+إنّها مقولةُ آلان تورينغ، عامَ 1951</span></span>
+		<span class="tooltip">Alan Turing, as you know,
+is the father of computer science<span class="tooltiptext">آلان تورينغ كما نعلمُ جميعاً
+هو مؤسّسُ علومِ الحاسب</span></span>
+		<span class="tooltip">and in many ways,
+the father of AI as well.<span class="tooltiptext">والأبُ الروحيّ للذكاءِ الاصطناعيِّ كذلك.</span></span>
+		<span class="tooltip">So if we think about this problem,<span class="tooltiptext">إنْ فكّرنا إذاً في هذهِ القضيّة،</span></span>
+		<span class="tooltip">the problem of creating something
+more intelligent than your own species,<span class="tooltiptext">قضيّةُ صُنعِ شيءٍ أكثرَ ذكاءً
+ممّا أنتَ عليه</span></span>
+		<span class="tooltip">we might call this &quot;the gorilla problem,&quot;<span class="tooltiptext">قد نجد &quot;قضيّة الغوريلا&quot;
+اسماً مناسباً لها،</span></span>
+		<span class="tooltip">because gorillas&#39; ancestors did this
+a few million years ago,<span class="tooltiptext">لأنَّ أجدادَ الغوريلا قاموا بهذا
+منذُ عدّةِ ملايينِ سنة،</span></span>
+		<span class="tooltip">and now we can ask the gorillas:<span class="tooltiptext">لِمَ لا نستشيرُ الغوريلّا إذاً:</span></span>
+		<span class="tooltip">Was this a good idea?<span class="tooltiptext">هَل كانتْ هذهِ فكرةً جيّدة؟</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So here they are having a meeting
+to discuss whether it was a good idea,<span class="tooltiptext">وها هُم يتباحثون فيما بينهم
+ليُقدّموا لّنا الإجابة،</span></span>
+		<span class="tooltip">and after a little while,
+they conclude, no,<span class="tooltiptext">ويبدو أنّ إجابتهم بالإجماعِ هيَ:</span></span>
+		<span class="tooltip">this was a terrible idea.<span class="tooltiptext">&quot;لا! لقد كانت فكرةً فظيعة!&quot;</span></span>
+		<span class="tooltip">Our species is in dire straits.<span class="tooltiptext">&quot;نحنُ في حالةٍ يُرثى لها.&quot;</span></span>
+		<span class="tooltip">In fact, you can see the existential
+sadness in their eyes.<span class="tooltiptext">يمكننا حقيقةً رؤيةُ التعاسةِ جيّداً
+في أعينهم.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(ضحك)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So this queasy feeling that making
+something smarter than your own species<span class="tooltiptext">ويبدو بأنّه قد حانَ دورنا
+لِنُحسَّ بأنَّ صُنعَ شيءٍ أذكى مِنّا</span></span>
+		<span class="tooltip">is maybe not a good idea --<span class="tooltiptext">قد لا يكونُ فكرةً سديدة --</span></span>
+		<span class="tooltip">what can we do about that?<span class="tooltiptext">لكن ما الحلّ حيالَ هذا؟</span></span>
+		<span class="tooltip">Well, really nothing,
+except stop doing AI,<span class="tooltiptext">حسنًا، لا شيء، ماعدا التوقفُ
+عن تطويرِ تقنيّات الذكاءِ الاصطناعي،</span></span>
+		<span class="tooltip">and because of all
+the benefits that I mentioned<span class="tooltiptext">ولكنْ نظراً للفوائدِ التي ذكرتُها</span></span>
+		<span class="tooltip">and because I&#39;m an AI researcher,<span class="tooltiptext">ولأنني باحث في هذا المجال</span></span>
+		<span class="tooltip">I&#39;m not having that.<span class="tooltiptext">فأنا لن أقبل بحلٍّ كهذا.</span></span>
+		<span class="tooltip">I actually want to be able
+to keep doing AI.<span class="tooltiptext">أودّ حقيقةً الاستمرارَ
+في تطويرِ هذهِ التقنيّات.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So we actually need to nail down
+the problem a bit more.<span class="tooltiptext">لذا أرى بأنّه علينا
+أنْ نكونَ أكثرَ وضوحاً.</span></span>
+		<span class="tooltip">What exactly is the problem?<span class="tooltiptext">ونجدَ المشكلةَ الحقيقيّة.</span></span>
+		<span class="tooltip">Why is better AI possibly a catastrophe?<span class="tooltiptext">لمَ قد يؤدّي تحسينُ هذه التقنياتِ
+إلى نتائجَ كارثيّة؟</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So here&#39;s another quotation:<span class="tooltiptext">سأعرضُ لكم مقولةً أخرى:</span></span>
+		<span class="tooltip">&quot;We had better be quite sure
+that the purpose put into the machine<span class="tooltiptext">&quot;كانَ علينا أن نتأكد 
+من أن المغزى من تصميم آلة</span></span>
+		<span class="tooltip">is the purpose which we really desire.&quot;<span class="tooltiptext">هو المغزى الذي نرجوه حقيقة&quot;</span></span>
+		<span class="tooltip">This was said by Norbert Wiener in 1960,<span class="tooltiptext">هذا ما قالهُ نوربرت ويينر
+عامَ 1960،</span></span>
+		<span class="tooltip">shortly after he watched
+one of the very early learning systems<span class="tooltiptext">بعدَ مُشاهدتهِ أحدَ أوّل الآلاتِ الذكيّةِ</span></span>
+		<span class="tooltip">learn to play checkers
+better than its creator.<span class="tooltiptext">تتغلّبُ على مُخترعها في لعبةِ &quot;تشيكرز&quot;.
+</span></span>
+		<span class="tooltip">But this could equally have been said<span class="tooltiptext">و لكنَّ الشيءَ ذاتهُ ينطبقُ على ماحصلَ</span></span>
+		<span class="tooltip">by King Midas.<span class="tooltiptext">للمَلِكِ مايدس.</span></span>
+		<span class="tooltip">King Midas said, &quot;I want everything
+I touch to turn to gold,&quot;<span class="tooltiptext">إذ قال الملكُ مايدس،&quot; أريد أن يتحول
+كل ما ألمسه ذهبًا&quot;</span></span>
+		<span class="tooltip">and he got exactly what he asked for.<span class="tooltiptext">وقد تحقَّقَت أمنيتهُ بحذافيرها.</span></span>
+		<span class="tooltip">That was the purpose
+that he put into the machine,<span class="tooltiptext">هذا هوَ ما صمّم آلتُه لتقومَ بهِ</span></span>
+		<span class="tooltip">so to speak,<span class="tooltiptext">إن صحّ التعبير،</span></span>
+		<span class="tooltip">and then his food and his drink
+and his relatives turned to gold<span class="tooltiptext">و هكذا تحوّل طعامُه و شرابه
+و حتى أقرباؤه، جميعهم إلى ذهب.</span></span>
+		<span class="tooltip">and he died in misery and starvation.<span class="tooltiptext">وماتَ في النهاية تعيساً جائعاً.</span></span>
+		<span class="tooltip">So we&#39;ll call this
+&quot;the King Midas problem&quot;<span class="tooltiptext">سنُسمّي هذه القضيّة إذاً
+بقضيّة الملك مايدس</span></span>
+		<span class="tooltip">of stating an objective
+which is not, in fact,<span class="tooltiptext">قضيّةُ تحديد هدفٍ</span></span>
+		<span class="tooltip">truly aligned with what we want.<span class="tooltiptext">لا يتماشى فعلًا مع ما نريده حقًا.</span></span>
+		<span class="tooltip">In modern terms, we call this
+&quot;the value alignment problem.&quot;<span class="tooltiptext">و هي قضيّة نسمّيها أكاديميّاً
+بقضيّة توافقِ الأهداف.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Putting in the wrong objective
+is not the only part of the problem.<span class="tooltiptext">ولكن وضع أهداف خاطئة 
+ليس الجزء الوحيد في المشكلة.</span></span>
+		<span class="tooltip">There&#39;s another part.<span class="tooltiptext">هنالِكَ جُزءٌ آخر.</span></span>
+		<span class="tooltip">If you put an objective into a machine,<span class="tooltiptext">إن وضعت هدفًا لآلة ما،</span></span>
+		<span class="tooltip">even something as simple as,
+&quot;Fetch the coffee,&quot;<span class="tooltiptext">لتقومَ بشيءٍ
+ولوّ كانَ ببساطةِ جلبِ القهوة،</span></span>
+		<span class="tooltip">the machine says to itself,<span class="tooltiptext">الآلةُ ستقولُ لنفسها،</span></span>
+		<span class="tooltip">&quot;Well, how might I fail
+to fetch the coffee?<span class="tooltiptext">&quot;ما الذي قد يُعيقني عن جلب القهوة؟&quot;</span></span>
+		<span class="tooltip">Someone might switch me off.<span class="tooltiptext">&quot;قد يقوم شخصٌ ما بإطفائي!&quot;</span></span>
+		<span class="tooltip">OK, I have to take steps to prevent that.<span class="tooltiptext">&quot;حسناً!&quot;
+&quot;سوف أمنع حصول هذا.&quot;</span></span>
+		<span class="tooltip">I will disable my &#39;off&#39; switch.<span class="tooltiptext">&quot;سوف أعطّل مفتاح إيقاف تشغيلي!&quot;</span></span>
+		<span class="tooltip">I will do anything to defend myself
+against interference<span class="tooltiptext">&quot;سأفعل أيّ شيءٍ يحفظُ لي مهمّتي&quot;</span></span>
+		<span class="tooltip">with this objective
+that I have been given.&quot;<span class="tooltiptext">&quot;لن أسمحَ لأحدٍ بِأنْ يمنعني من أدائها.&quot;</span></span>
+		<span class="tooltip">So this single-minded pursuit<span class="tooltiptext">هذا التفكيرِ الذاتي الذي قامت به الآلة،</span></span>
+		<span class="tooltip">in a very defensive mode
+of an objective that is, in fact,<span class="tooltiptext">بطريقة دفاعية محضة للدفاع عن هدف،</span></span>
+		<span class="tooltip">not aligned with the true objectives
+of the human race --<span class="tooltiptext">لا يتوافقُ مع الأهداف الحقيقية
+للجنس البشري --</span></span>
+		<span class="tooltip">that&#39;s the problem that we face.<span class="tooltiptext">هذه هي مشكلتنا التي نواجهها.</span></span>
+		<span class="tooltip">And in fact, that&#39;s the high-value
+takeaway from this talk.<span class="tooltiptext">في الواقع، هذهِ أهمّ فكرةٍ أودُّ مِنكم
+تذكُّرَها مِن هذه المحادثة.</span></span>
+		<span class="tooltip">If you want to remember one thing,<span class="tooltiptext">إن أردتم تذكّر شيءٍ وحيدٍ من حديثي،
+تذكروا التالي:</span></span>
+		<span class="tooltip">it&#39;s that you can&#39;t fetch
+the coffee if you&#39;re dead.<span class="tooltiptext">&quot;لنْ تستطيعَ جلبَ القهوةِ لأحدٍ
+وأنتَ ميتْ.&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(ضحك)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">It&#39;s very simple. Just remember that.
+Repeat it to yourself three times a day.<span class="tooltiptext">قاعدةٌ بمنتهى البساطة، صحيح؟
+ردّدوها ثلاثَ مرّاتٍ يوميّاً.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(ضحك)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And in fact, this is exactly the plot<span class="tooltiptext">في الواقع، هذا هوَ تماماً ماحصلَ</span></span>
+		<span class="tooltip">of &quot;2001: [A Space Odyssey]&quot;<span class="tooltiptext">في الفلمِ الشّهيرِ (2001: رحلةُ الفضاء)</span></span>
+		<span class="tooltip">HAL has an objective, a mission,<span class="tooltiptext">الحاسوبُ (هال) أرادَ قيادةَ المهمّةِ</span></span>
+		<span class="tooltip">which is not aligned
+with the objectives of the humans,<span class="tooltiptext">لكنّ هذا ليسَ تماماً ما أرادهُ
+البشرُ مِنه كحاسوب</span></span>
+		<span class="tooltip">and that leads to this conflict.<span class="tooltiptext">وأدّى هذا لِمُعارضةِ (هال)
+أوامرَ الطّاقَمْ.</span></span>
+		<span class="tooltip">Now fortunately, HAL
+is not superintelligent.<span class="tooltiptext">لِحُسن الحظِّ
+لم يَكُنْ (هال) خارقَ الذّكاء.</span></span>
+		<span class="tooltip">He&#39;s pretty smart,
+but eventually Dave outwits him<span class="tooltiptext">كانَ ذكيّاً فعلاً،
+ولكِنّ (ديف) كانَ أذكى مِنه</span></span>
+		<span class="tooltip">and manages to switch him off.<span class="tooltiptext">وتمكّن من إيقافهِ عن العمل.</span></span>
+		<span class="tooltip">But we might not be so lucky.<span class="tooltiptext">لكنّنا
+قد لا نكونُ مَحظوظينَ على الدّوام.</span></span>
+		<span class="tooltip">So what are we going to do?<span class="tooltiptext">ما الذي سنفعلهُ إذاً؟</span></span>
+	</p>
+	<p>
+		<span class="tooltip">I&#39;m trying to redefine AI<span class="tooltiptext">أحاولُ حقيقةً أنْ أقومَ
+بإعادةِ تعريفِ الذّكاءِ الاصطناعي</span></span>
+		<span class="tooltip">to get away from this classical notion<span class="tooltiptext">بطريقةٍ تُنهي جميعَ الشكوكِ</span></span>
+		<span class="tooltip">of machines that intelligently
+pursue objectives.<span class="tooltiptext">حولَ إمكانيّةِ تمرُّدِ الآلاتِ
+ومحاولتها تحقيقَ أهدافِها الشخصيّة.</span></span>
+		<span class="tooltip">There are three principles involved.<span class="tooltiptext">سأعتمدُ إذاً على ثلاثِ مبادئَ أساسيّة</span></span>
+		<span class="tooltip">The first one is a principle
+of altruism, if you like,<span class="tooltiptext">وأوّل مبدأٍ هوَ مبدأُ الإيثار</span></span>
+		<span class="tooltip">that the robot&#39;s only objective<span class="tooltiptext">بأنْ يكونَ الهدفُ الوحيدُ للرّوبوتِ هوَ</span></span>
+		<span class="tooltip">is to maximize the realization
+of human objectives,<span class="tooltiptext">أنْ يُحاولَ تحقيقَ أكبرِ قدرٍ ممكنٍ
+من أهدافِ البشر</span></span>
+		<span class="tooltip">of human values.<span class="tooltiptext">و مِنْ قيم البشريّة.</span></span>
+		<span class="tooltip">And by values here I don&#39;t mean
+touchy-feely, goody-goody values.<span class="tooltiptext">وبقيم البشريّةِ لستُ أعني
+تلكَ المثاليّاتِ البعيدةَ عن الواقع.</span></span>
+		<span class="tooltip">I just mean whatever it is
+that the human would prefer<span class="tooltiptext">بل أعني بها أيّ شيءٍ
+قد يفضل الإنسان</span></span>
+		<span class="tooltip">their life to be like.<span class="tooltiptext">أن تكون عليه حياته.</span></span>
+		<span class="tooltip">And so this actually violates Asimov&#39;s law<span class="tooltiptext">وهوَ ما ينتهكُ (قانونَ أزيموف)
+</span></span>
+		<span class="tooltip">that the robot has to protect
+its own existence.<span class="tooltiptext">بأنّه على الروبوتِ
+حمايةُ حياتهِ الشخصيّة.</span></span>
+		<span class="tooltip">It has no interest in preserving
+its existence whatsoever.<span class="tooltiptext">لايجبُ أنْ يهتمَّ الروبوتُ
+بهكذا أمورٍ مطلقاً.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">The second law is a law
+of humility, if you like.<span class="tooltiptext">أمّا المبدأ الثاني فَهوَ
+مبدأُ التذلّلِ إنْ صحَّ التّعبير.</span></span>
+		<span class="tooltip">And this turns out to be really
+important to make robots safe.<span class="tooltiptext">وهوَ مهمٌّ للغايةِ لإبقاءِ
+الروبوتاتِ آمنة.</span></span>
+		<span class="tooltip">It says that the robot does not know<span class="tooltiptext">و ينُصُّ على أنَّ الروبوتَ
+لا يعلمَ</span></span>
+		<span class="tooltip">what those human values are,<span class="tooltiptext">بحقيقةِ المنافعِ التي سيحقّقها للبشريّةِ</span></span>
+		<span class="tooltip">so it has to maximize them,
+but it doesn&#39;t know what they are.<span class="tooltiptext">ولكنّهُ سيعملُ على تحقيقِ أكبرِ قدرٍ منها
+لكنه لا يعلم ماهيتها.</span></span>
+		<span class="tooltip">And that avoids this problem
+of single-minded pursuit<span class="tooltiptext">وهوَ ماسيوقفهُ عن اتّخاذِ قراراتهِ الخاصةِ</span></span>
+		<span class="tooltip">of an objective.<span class="tooltiptext">حولَ الهدفِ الموكلِ إليه.</span></span>
+		<span class="tooltip">This uncertainty turns out to be crucial.<span class="tooltiptext">إذ أن عدم اليقين يبدو أمرًا بالغ الأهمية.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Now, in order to be useful to us,<span class="tooltiptext">لكنْ لكيّ يكونَ الروبوتُ مفيداً لنا</span></span>
+		<span class="tooltip">it has to have some idea of what we want.<span class="tooltiptext">لابدّ مِنْ أنْ يمتلكَ فكرةً
+عمّا نريده.</span></span>
+		<span class="tooltip">It obtains that information primarily
+by observation of human choices,<span class="tooltiptext">ستسكتشِفُ الروبوتاتُ مانريدهُ مِنها
+عبرَ مراقبةِ سلوكِنا</span></span>
+		<span class="tooltip">so our own choices reveal information<span class="tooltiptext">فاختياراتنا الشخصية ستعطي معلومات</span></span>
+		<span class="tooltip">about what it is that we prefer
+our lives to be like.<span class="tooltiptext">عما نفضّلُ أن تكون حياتنا عليه.</span></span>
+		<span class="tooltip">So those are the three principles.<span class="tooltiptext">هذه هيَ إذاً المبادئُ الثلاثة.</span></span>
+		<span class="tooltip">Let&#39;s see how that applies
+to this question of:<span class="tooltiptext">لنرى سويّةً كيفَ يمكنُ تطبيقُ هذه المبادئ</span></span>
+		<span class="tooltip">&quot;Can you switch the machine off?&quot;
+as Turing suggested.<span class="tooltiptext">على فكرة &quot;قطع الطاقة عن الروبوت&quot;
+التي اقترحها (تيورنغ).</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So here&#39;s a PR2 robot.<span class="tooltiptext">إذاً، سأقدّم إليكُم الرّوبوت (PR2)</span></span>
+		<span class="tooltip">This is one that we have in our lab,<span class="tooltiptext">الذي نمتلكهُ في مختبرنا للأبحاث.</span></span>
+		<span class="tooltip">and it has a big red &quot;off&quot; switch
+right on the back.<span class="tooltiptext">ولديه كما ترونَ زرُّ إطفاءِ تشغيلٍ
+أحمرُ كبيرٌ على ظهره.</span></span>
+		<span class="tooltip">The question is: Is it
+going to let you switch it off?<span class="tooltiptext">والسّؤال هوَ:
+هل سيسمحُ الروبوتُ لكَ بضغطِ هذا الزرّ؟</span></span>
+		<span class="tooltip">If we do it the classical way,<span class="tooltiptext">إنْ تخيّلنا الموضوعَ كالمُعتاد</span></span>
+		<span class="tooltip">we give it the objective of, &quot;Fetch
+the coffee, I must fetch the coffee,<span class="tooltiptext">أنْ نخبرهُ بأنْ يجلبَ القهوةَ
+ويفكّر: &quot;يجب أن أجلب القهوة بأيّ ثمن&quot;</span></span>
+		<span class="tooltip">I can&#39;t fetch the coffee if I&#39;m dead,&quot;<span class="tooltiptext">&quot;لكنني لن أستطيعَ جلبَ القهوةِ لأحدٍ
+وأنا ميت&quot;</span></span>
+		<span class="tooltip">so obviously the PR2
+has been listening to my talk,<span class="tooltiptext">من الواضح أنَّ الروبوتَ كانَ يُشاهدُ
+هذه المحادثة،</span></span>
+		<span class="tooltip">and so it says, therefore,
+&quot;I must disable my &#39;off&#39; switch,<span class="tooltiptext">وبالتّالي سيقرّرُ الروبوت:
+&quot;سأعطّلُ زرَّ إطفاءِ تشغيلي إذاً!&quot;</span></span>
+		<span class="tooltip">and probably taser all the other
+people in Starbucks<span class="tooltiptext">&quot;سأصعقُ أيضاً الجميعَ في (ستارباكس)
+</span></span>
+		<span class="tooltip">who might interfere with me.&quot;<span class="tooltiptext">&quot;لأنّهم قد يقفونَ في طريقي لجلبِ القهوة!&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(ضحك)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So this seems to be inevitable, right?<span class="tooltiptext">لايبدو بأنهُ هناكَ مفرٌّ من هذا، صحيح؟</span></span>
+		<span class="tooltip">This kind of failure mode
+seems to be inevitable,<span class="tooltiptext">لايبدو بأنّ تجنّبَ أخطاءٍ كهذهِ أمرٌ ممكن</span></span>
+		<span class="tooltip">and it follows from having
+a concrete, definite objective.<span class="tooltiptext">وهذا لأنّ الروبوتَ لديه هدفٌ صريحٌ.
+</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So what happens if the machine
+is uncertain about the objective?<span class="tooltiptext">لكنْ ماذا لَوْ جعلنا الروبوتَ
+أقلَّ ثقةً بصحّةِ فهمهِ للهدف؟</span></span>
+		<span class="tooltip">Well, it reasons in a different way.<span class="tooltiptext">سيفكّرُ حتماً عندها بطريقةٍ مختلفة.</span></span>
+		<span class="tooltip">It says, &quot;OK, the human
+might switch me off,<span class="tooltiptext">سيقول لنفسه:
+&quot;قد يقومُ البشرُ بإيقافِ تشغيلي&quot;</span></span>
+		<span class="tooltip">but only if I&#39;m doing something wrong.<span class="tooltiptext">&quot;لكنّ ذلك سيحصلُ فقط
+إنْ فعلتُ شيئاً خاطئاً.&quot;</span></span>
+		<span class="tooltip">Well, I don&#39;t really know what wrong is,<span class="tooltiptext">&quot;لكنّني لا أعلمُ ما الشيءُ الخاطئُ
+الذي قد أفعله&quot;</span></span>
+		<span class="tooltip">but I know that I don&#39;t want to do it.&quot;<span class="tooltiptext">&quot;أنا أعلمُ فقط بأنّني لاأريدُ فِعلَ
+شيءٍ خاطئ&quot;</span></span>
+		<span class="tooltip">So that&#39;s the first and second
+principles right there.<span class="tooltiptext">وهذا تطبيقٌ للمبدأين الأوّل والثاني.</span></span>
+		<span class="tooltip">&quot;So I should let the human switch me off.&quot;<span class="tooltiptext">&quot;لذا منَ الأفضلِ أنْ أتركَهُ يُطفئني&quot;</span></span>
+		<span class="tooltip">And in fact you can calculate
+the incentive that the robot has<span class="tooltiptext">ويمكننا رياضيّاً حسابُ مدى التقبّلِ
+الذي سيمتلكهُ الروبوت</span></span>
+		<span class="tooltip">to allow the human to switch it off,<span class="tooltiptext">لأنْ يقومَ البشرُ بإطفاءه.</span></span>
+		<span class="tooltip">and it&#39;s directly tied to the degree<span class="tooltiptext">وهذا مرتبط بشكل مباشر</span></span>
+		<span class="tooltip">of uncertainty about
+the underlying objective.<span class="tooltiptext">بمدى تأكّدِ الرّوبوتِ
+من فهمهِ للهدفِ من إطفاءه.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And then when the machine is switched off,<span class="tooltiptext">وهكذا تماماً
+من خلالِ إطفاءِ الرّوبوت،</span></span>
+		<span class="tooltip">that third principle comes into play.<span class="tooltiptext">يكونُ المبدأُ الثالثُ قد تحقق.</span></span>
+		<span class="tooltip">It learns something about the objectives
+it should be pursuing,<span class="tooltiptext">لأنّ الروبوتَ سيكونُ قد تعلّمَ
+مِن هذهِ التجربة</span></span>
+		<span class="tooltip">because it learns that
+what it did wasn&#39;t right.<span class="tooltiptext">بأنّهُ قد فعلَ شيئاً خاطئاً.</span></span>
+		<span class="tooltip">In fact, we can, with suitable use
+of Greek symbols,<span class="tooltiptext">و يمكننا حقيقةً
+باستعمالِ بعضِ الرّموز</span></span>
+		<span class="tooltip">as mathematicians usually do,<span class="tooltiptext">كما يفعلُ علماءُ الرياضيّاتِ عادةً</span></span>
+		<span class="tooltip">we can actually prove a theorem<span class="tooltiptext">أنْ نُثبتَ النظريّةَ القائلةَ</span></span>
+		<span class="tooltip">that says that such a robot
+is provably beneficial to the human.<span class="tooltiptext">بأنَّ روبوتاً كهذا
+سيكونُ حتماً مفيداً للإنسان.</span></span>
+		<span class="tooltip">You are provably better off
+with a machine that&#39;s designed in this way<span class="tooltiptext">وبأنَّ روبوتاً مصمّماً بهذهِ المعاييرِ
+سيكونُ حتماً أكثرَ فائدةً</span></span>
+		<span class="tooltip">than without it.<span class="tooltiptext">من روبوتٍ مصمّمٍ من دونها.</span></span>
+		<span class="tooltip">So this is a very simple example,
+but this is the first step<span class="tooltiptext">هذا مثالٌ بسيطٌ إذاً
+وهوَ الخطوةُ الأولى فقط</span></span>
+		<span class="tooltip">in what we&#39;re trying to do
+with human-compatible AI.<span class="tooltiptext">ممّا نحاولُ تحقيقهُ من خلالِ
+الذّكاءِ الاصطناعي المطابق للإنسان.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Now, this third principle,<span class="tooltiptext">الآنَ إلى المبدأ الثالث،</span></span>
+		<span class="tooltip">I think is the one that you&#39;re probably
+scratching your head over.<span class="tooltiptext">و الذي أظنّه يدفعكم للتفكير بحيرة.</span></span>
+		<span class="tooltip">You&#39;re probably thinking, &quot;Well,
+you know, I behave badly.<span class="tooltiptext">تفكرون بالتالي:
+&quot;و لكنني، كإنسانٍ أتصرّف بشكلٍ سيّء!&quot;</span></span>
+		<span class="tooltip">I don&#39;t want my robot to behave like me.<span class="tooltiptext">&quot;لا أريدُ للروبوتِ أنْ يقلّدني!&quot;</span></span>
+		<span class="tooltip">I sneak down in the middle of the night
+and take stuff from the fridge.<span class="tooltiptext">&quot;لا أريدهُ أنْ يتسللَ في اللّيلِ
+إلى المطبخِ ويأخُذَ طعاماً منَ الثلّاجة&quot;</span></span>
+		<span class="tooltip">I do this and that.&quot;<span class="tooltiptext">&quot;أنا أفعل أشياءَ سيّئة!&quot;</span></span>
+		<span class="tooltip">There&#39;s all kinds of things
+you don&#39;t want the robot doing.<span class="tooltiptext">بالطّبعِ هناكَ أشياءٌ عدّةٌ لانرغبُ
+أنْ تقلّدنا الروبوتاتُ بها.</span></span>
+		<span class="tooltip">But in fact, it doesn&#39;t
+quite work that way.<span class="tooltiptext">لكنّي لم أعنِ هذا
+بالتعلّمِ من مراقبتنا</span></span>
+		<span class="tooltip">Just because you behave badly<span class="tooltiptext">فقط لأنّك تتصرف بشكلٍ سيّءٍ</span></span>
+		<span class="tooltip">doesn&#39;t mean the robot
+is going to copy your behavior.<span class="tooltiptext">لايعني بأنَّ الروبوتَ
+سيقومُ بتقليدِ تصرّفاتك.</span></span>
+		<span class="tooltip">It&#39;s going to understand your motivations
+and maybe help you resist them,<span class="tooltiptext">بل سيتفهّم دوافعكَ
+وربّما يساعدكَ في مقاومتها</span></span>
+		<span class="tooltip">if appropriate.<span class="tooltiptext">إنْ لزمَ الأمر.</span></span>
+		<span class="tooltip">But it&#39;s still difficult.<span class="tooltiptext">و لكنّ الأمرَ لايزالُ صعباً.</span></span>
+		<span class="tooltip">What we&#39;re trying to do, in fact,<span class="tooltiptext">مانحاولُ الوصولَ إليهِ حقيقةً</span></span>
+		<span class="tooltip">is to allow machines to predict
+for any person and for any possible life<span class="tooltiptext">هو جعلُ الآلاتِ قادرةً على اكتشافِ
+الحياةِ التي سيفضّلُ الشّخص أن يعيشها</span></span>
+		<span class="tooltip">that they could live,<span class="tooltiptext">كائناً من كان</span></span>
+		<span class="tooltip">and the lives of everybody else:<span class="tooltiptext">أيّاً تكن الحياة التي يريدُها</span></span>
+		<span class="tooltip">Which would they prefer?<span class="tooltiptext">مهما كانَ مايريده.</span></span>
+		<span class="tooltip">And there are many, many
+difficulties involved in doing this;<span class="tooltiptext">لكنّ عدداً هائلاً من المشاكل تواجهنا
+في تحقيق ذلك</span></span>
+		<span class="tooltip">I don&#39;t expect that this
+is going to get solved very quickly.<span class="tooltiptext">ولا أتوقّع بأنّ نستطيع حلّها جميعها
+في القريب العاجل.</span></span>
+		<span class="tooltip">The real difficulties, in fact, are us.<span class="tooltiptext">المشكلةُ الأصعبُ هي نحنُ للأسف.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">As I have already mentioned,
+we behave badly.<span class="tooltiptext">فنحنُ نتصرّفُ بشكلٍ سيّءٍ
+كما ذكرتُ قبل قليل.</span></span>
+		<span class="tooltip">In fact, some of us are downright nasty.<span class="tooltiptext">و بعضُنا مؤذٍ للآخرين.</span></span>
+		<span class="tooltip">Now the robot, as I said,
+doesn&#39;t have to copy the behavior.<span class="tooltiptext">رغمَ هذا، لن يقومَ الروبوتُ
+بتقليدِ تصرّفاتنا السيّئة.</span></span>
+		<span class="tooltip">The robot does not have
+any objective of its own.<span class="tooltiptext">إذ ليست له أهداف شخصية خاصة.</span></span>
+		<span class="tooltip">It&#39;s purely altruistic.<span class="tooltiptext">فهو يؤثر الإيثار بطريقة صرفة.</span></span>
+		<span class="tooltip">And it&#39;s not designed just to satisfy
+the desires of one person, the user,<span class="tooltiptext">وهو ليس مصممًا لإرضاء شخص واحد، المستعمل،</span></span>
+		<span class="tooltip">but in fact it has to respect
+the preferences of everybody.<span class="tooltiptext">لكن على الروبوتِ حقيقةً
+أن يحترمَ ما يفضله الجميع.</span></span>
+		<span class="tooltip">So it can deal with a certain
+amount of nastiness,<span class="tooltiptext">سيكون بإمكانهِ مثلاً تقبّلُ انحرافٍ
+بسيطٍ عن الصواب</span></span>
+		<span class="tooltip">and it can even understand
+that your nastiness, for example,<span class="tooltiptext">و سيتفهّم بأنّك لستَ سيّئاً جداً</span></span>
+		<span class="tooltip">you may take bribes as a passport official<span class="tooltiptext">فقط لأنّكَ تحصُلَ على بعضِ الرشاوى
+كمسؤول جوازات سفر</span></span>
+		<span class="tooltip">because you need to feed your family
+and send your kids to school.<span class="tooltiptext">وأنَّ السببَ هوَ حاجتكُ لإطعامِ عائلتكَ
+ودفعِ أقساطِ المدرسةِ لأطفالك.</span></span>
+		<span class="tooltip">It can understand that;
+it doesn&#39;t mean it&#39;s going to steal.<span class="tooltiptext">سيفهم الروبوتُ هذا
+لكنّه لايعني بأنّه سيتعلّمُ السرقة.</span></span>
+		<span class="tooltip">In fact, it&#39;ll just help you
+send your kids to school.<span class="tooltiptext">سيساعدكَ الروبوتُ
+على إرسال أطفالك للمدرسة.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">We are also computationally limited.<span class="tooltiptext">نحنُ البشرُ للأسفِ
+محدودونَ في قدراتنا الحسابيّة.</span></span>
+		<span class="tooltip">Lee Sedol is a brilliant Go player,<span class="tooltiptext">لي سيدول كان لاعبَ &quot;غو&quot; رائعاً،</span></span>
+		<span class="tooltip">but he still lost.<span class="tooltiptext">لكنّه خسر أمامَ حاسوب.</span></span>
+		<span class="tooltip">So if we look at his actions,
+he took an action that lost the game.<span class="tooltiptext">ولَو راجعنا تحركاتِه خلالَ المباراةِ
+لوجدنا حركةً خسرَ بسببها.</span></span>
+		<span class="tooltip">That doesn&#39;t mean he wanted to lose.<span class="tooltiptext">لكنّ ذلك لا يعني بأنّه قد خسرَ متعمّداً.</span></span>
+		<span class="tooltip">So to understand his behavior,<span class="tooltiptext">ولنفهمَ لمَ اختارَ هذهِ الحركةَ</span></span>
+		<span class="tooltip">we actually have to invert
+through a model of human cognition<span class="tooltiptext">علينا أن نقوم بمحاكاةٍ لتحرّكاته
+عبرَ نموذجٍ حاسوبيّ لعملِ الدّماغ البشريّ</span></span>
+		<span class="tooltip">that includes our computational
+limitations -- a very complicated model.<span class="tooltiptext">يلتزم بمحدّدات البشرِ الحسابيّة
+وهذا شيءٌ معقّدٌ للغاية.</span></span>
+		<span class="tooltip">But it&#39;s still something
+that we can work on understanding.<span class="tooltiptext">ولكنّه شيءٌ بإمكاننا العملُ على فهمه.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Probably the most difficult part,
+from my point of view as an AI researcher,<span class="tooltiptext">و برأيي كباحثٍ في مجال الذكاء الاصطناعي،
+إنَّ أصعبَ مشكلةٍ تواجهنا</span></span>
+		<span class="tooltip">is the fact that there are lots of us,<span class="tooltiptext">هي بأنّه هناك عددًا هائلًا من البشر،</span></span>
+		<span class="tooltip">and so the machine has to somehow
+trade off, weigh up the preferences<span class="tooltiptext">و هو ما سيُرغمُ الآلاتِ على المفاضلةِ
+بين الكثير من الخيارات</span></span>
+		<span class="tooltip">of many different people,<span class="tooltiptext">التي يريدها العديدُ من الأشخاصِ</span></span>
+		<span class="tooltip">and there are different ways to do that.<span class="tooltiptext">بطرقٍ عديدةٍ لتنفيذِ كلّ خيارٍ منهم.</span></span>
+		<span class="tooltip">Economists, sociologists,
+moral philosophers have understood that,<span class="tooltiptext">علماءُ الاقتصاد و باحثوا علم الإجتماع
+جميعهم يفهمون هذا،</span></span>
+		<span class="tooltip">and we are actively
+looking for collaboration.<span class="tooltiptext">ونحن نبحث جديًا عن التعاون في هذا الشأن.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Let&#39;s have a look and see what happens
+when you get that wrong.<span class="tooltiptext">دعونا نلقي نظرةً على ما قد يحدثُ
+حينما لا تسير الأمور على ما يرام.</span></span>
+		<span class="tooltip">So you can have
+a conversation, for example,<span class="tooltiptext">قد تمرّ بمحادثةٍ كهذهِ مثلاً</span></span>
+		<span class="tooltip">with your intelligent personal assistant<span class="tooltiptext">مع مساعدكَ الشخصيّ الذكيّ</span></span>
+		<span class="tooltip">that might be available
+in a few years&#39; time.<span class="tooltiptext">والذي قد يتوفّرُ في الأسواقِ
+خلالَ بضعِ سنوات.</span></span>
+		<span class="tooltip">Think of a Siri on steroids.<span class="tooltiptext">نسخةٌ محسّنةٌ عن (سيري) مثلاً.
+</span></span>
+		<span class="tooltip">So Siri says, &quot;Your wife called
+to remind you about dinner tonight.&quot;<span class="tooltiptext">تخبركَ (سيري) إذاً في المحادثةِ بأنَّ
+زوجتكَ قد اتصلت لتذكّركَ بعشائكما الليلة.</span></span>
+		<span class="tooltip">And of course, you&#39;ve forgotten.
+&quot;What? What dinner?<span class="tooltiptext">وبالتّأكيدِ أنتَ لا تذكرُ شيئاً كهذا:
+&quot;ماذا! أيُّ عشاء!&quot;</span></span>
+		<span class="tooltip">What are you talking about?&quot;<span class="tooltiptext">&quot;عمَّ تتحدثين؟!&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">&quot;Uh, your 20th anniversary at 7pm.&quot;<span class="tooltiptext">&quot;عشاءُ السّابعةِ مساءً
+في ذكرى زواجكما العشرين.&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">&quot;I can&#39;t do that. I&#39;m meeting
+with the secretary-general at 7:30.<span class="tooltiptext">&quot;لا يمكنني الحضور! سألتقي
+بالأمينِ العامِّ عندَ السابعة والنصف!&quot;</span></span>
+		<span class="tooltip">How could this have happened?&quot;<span class="tooltiptext">&quot;كيفَ حصلَ كلّ هذا؟&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">&quot;Well, I did warn you, but you overrode
+my recommendation.&quot;<span class="tooltiptext">&quot;حذّرتكَ ولكِنْ،
+هذا مايحصلُ حينما تتجاهلُ نصائحي.&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">&quot;Well, what am I going to do?
+I can&#39;t just tell him I&#39;m too busy.&quot;<span class="tooltiptext">&quot;حسناً ماذا سأفعلُ الآن؟ لايمكنني إخبارُ
+زوجتي بأنّي نسيتُ مناسبةً كهذه!&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">&quot;Don&#39;t worry. I arranged
+for his plane to be delayed.&quot;<span class="tooltiptext">&quot;لا تقلق.&quot;
+&quot;قمتُ بتأجيلِ موعدِ انطلاقِ طائرتها.&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(ضحك)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">&quot;Some kind of computer malfunction.&quot;<span class="tooltiptext">&quot;افتعلتُ بعضَ الأعطالِ في حاسوبِ
+شركةِ الطّيران&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(ضحك)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">&quot;Really? You can do that?&quot;<span class="tooltiptext">&quot;حقاً!&quot;
+&quot;بإمكانكِ فِعلُ أشياءَ كهذه!&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">&quot;He sends his profound apologies<span class="tooltiptext">&quot;ترسلُ زوجتكُ اعتذارها العميق&quot;</span></span>
+		<span class="tooltip">and looks forward to meeting you
+for lunch tomorrow.&quot;<span class="tooltiptext">&quot;وتتطلّع للقاءكَ غداً على الغداء&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(ضحك)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So the values here --
+there&#39;s a slight mistake going on.<span class="tooltiptext">إذن فالقيم هنا --
+يبدو إذاً بأنّهُ هناكَ خطأ طفيفًا</span></span>
+		<span class="tooltip">This is clearly following my wife&#39;s values<span class="tooltiptext">وعلى مايبدو، فإنّه يتّبع مبادئَ زوجتي</span></span>
+		<span class="tooltip">which is &quot;Happy wife, happy life.&quot;<span class="tooltiptext">و التي هي:
+&quot;أنت بخيرٍ مادامت زوجتك بخير.&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(ضحك)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">It could go the other way.<span class="tooltiptext">يمكنُ كذلكَ أنْ يحصُلَ العكس.</span></span>
+		<span class="tooltip">You could come home
+after a hard day&#39;s work,<span class="tooltiptext">كأن تعودَ إلى المنزلِ
+بعدَ يومٍ مُتعِبٍ في العمل</span></span>
+		<span class="tooltip">and the computer says, &quot;Long day?&quot;<span class="tooltiptext">ويرحّب بِك الروبوت:
+&quot;هل كانَ يوماً شاقاً؟&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">&quot;Yes, I didn&#39;t even have time for lunch.&quot;<span class="tooltiptext">&quot;جدّاً! لدرجة أنّي لم أجد وقتاً
+لتناولِ الغداء.&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">&quot;You must be very hungry.&quot;<span class="tooltiptext">&quot;لابدّ من أنّك جائعٌ إذاً&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">&quot;Starving, yeah.
+Could you make some dinner?&quot;<span class="tooltiptext">&quot;أتضور جوعًا.
+هل بإمكانكِ تحضيرُ العشاء لي؟&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">&quot;There&#39;s something I need to tell you.&quot;<span class="tooltiptext">&quot;هناكَ شيءٌ عليك معرفته.&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(ضحك)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">&quot;There are humans in South Sudan
+who are in more urgent need than you.&quot;<span class="tooltiptext">&quot;هناكٌ أُناسٌ في جنوب السودانِ
+في حاجةٍ ملحّةٍ للطعامِ أكثرَ منكَ بكثير!&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(ضحك)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">&quot;So I&#39;m leaving. Make your own dinner.&quot;<span class="tooltiptext">&quot;أنا ذاهب إلى هناك!
+اصنع طعامكَ بنفسك!&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(ضحك)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So we have to solve these problems,<span class="tooltiptext">لذا، يجبُ أن نَحُلّ هذهِ المشاكل،</span></span>
+		<span class="tooltip">and I&#39;m looking forward
+to working on them.<span class="tooltiptext">وأنا متحمّسٌ للعملِ عليهم.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">There are reasons for optimism.<span class="tooltiptext">هناكَ أسبابٌ تدفعني للتفاؤل</span></span>
+		<span class="tooltip">One reason is,<span class="tooltiptext">و أحدُ هذه الأسباب:</span></span>
+		<span class="tooltip">there is a massive amount of data.<span class="tooltiptext">حجمُ البياناتِ الهائلُ الذي نمتلكهُ.</span></span>
+		<span class="tooltip">Because remember -- I said
+they&#39;re going to read everything<span class="tooltiptext">لأنَّ الروبوتاتِ كما أخبرتكم
+ستقرأُ كلّ شيءٍ</span></span>
+		<span class="tooltip">the human race has ever written.<span class="tooltiptext">قامَ البشرُ بكتابته.</span></span>
+		<span class="tooltip">Most of what we write about
+is human beings doing things<span class="tooltiptext">ومعظمُ ما نكتبُ عنهُ
+هو قصصٌ عن أناسٍ يرتكبون أخطاءً</span></span>
+		<span class="tooltip">and other people getting upset about it.<span class="tooltiptext">وآخرين تزعجهم هذهِ الأخطاء.</span></span>
+		<span class="tooltip">So there&#39;s a massive amount
+of data to learn from.<span class="tooltiptext">لذا ستتمكّن الروبوتاتُ
+منْ تعلّمِ كلِّ هذا.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">There&#39;s also a very
+strong economic incentive<span class="tooltiptext">ولدينا كذلكَ دافعٌ اقتصاديٌّ كبيرٌ</span></span>
+		<span class="tooltip">to get this right.<span class="tooltiptext">لإتمامِ الأمرِ دونَ أخطاء.</span></span>
+		<span class="tooltip">So imagine your domestic robot&#39;s at home.<span class="tooltiptext">تخيّلو مثلاً روبوتَكم المنزليَّ</span></span>
+		<span class="tooltip">You&#39;re late from work again
+and the robot has to feed the kids,<span class="tooltiptext">وقد تأخرتم في عملكم مجدداً
+لكنَّ على الروبوتَ أن يطعم أبناءكم،</span></span>
+		<span class="tooltip">and the kids are hungry
+and there&#39;s nothing in the fridge.<span class="tooltiptext">والأطفال جائعون لكنّ الثلّاجةَ فارغة.</span></span>
+		<span class="tooltip">And the robot sees the cat.<span class="tooltiptext">سيبجثُ الروبوتُ عن أيِّ طعامٍ
+وسيرى القطة.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(ضحك)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And the robot hasn&#39;t quite learned
+the human value function properly,<span class="tooltiptext">لكنّه لم يتعلّم بعدُ
+قِيَمَكُم الإنسانيّة جيّداً</span></span>
+		<span class="tooltip">so it doesn&#39;t understand<span class="tooltiptext">لذا لن يفهم</span></span>
+		<span class="tooltip">the sentimental value of the cat outweighs
+the nutritional value of the cat.<span class="tooltiptext">بأنَّ القيمة العاطفيّة للقطّةِ
+تفوقُ قيمتها الغذائيّة.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(ضحك)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So then what happens?<span class="tooltiptext">ماذا سيحصل عندها؟</span></span>
+		<span class="tooltip">Well, it happens like this:<span class="tooltiptext">في الواقع، سينتهي الأمرُ هكذا:</span></span>
+		<span class="tooltip">&quot;Deranged robot cooks kitty
+for family dinner.&quot;<span class="tooltiptext">&quot;روبوتٌ مختلٌّ قامَ بطبخِ
+قطّة المنزلِ على العشاء&quot;</span></span>
+		<span class="tooltip">That one incident would be the end
+of the domestic robot industry.<span class="tooltiptext">حادثٌ واحدٌ كهذا كفيلٌ بإنهاء
+صناعة الروبوتات المنزلية.</span></span>
+		<span class="tooltip">So there&#39;s a huge incentive
+to get this right<span class="tooltiptext">لهذا لدينا دافعٌ حقيقيٌّ
+لإتمام الأمرِ دون أخطاء</span></span>
+		<span class="tooltip">long before we reach
+superintelligent machines.<span class="tooltiptext">حتّى قبلَ أن نتمكّن من اختراعِ
+أيّ آلة خارقِة الذكاء.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So to summarize:<span class="tooltiptext">إذاً كخلاصةٍ لكلامي:</span></span>
+		<span class="tooltip">I&#39;m actually trying to change
+the definition of AI<span class="tooltiptext">أنا أحاولُ بجديّةٍ
+تغييرَ تعريفِ الذّكاءِ الاصطناعي</span></span>
+		<span class="tooltip">so that we have provably
+beneficial machines.<span class="tooltiptext">بحيثُ يمكننا اختراعُ آلاتٍ
+ذاتَ فائدةٍ مثبتةٍ علميّاً.</span></span>
+		<span class="tooltip">And the principles are:<span class="tooltiptext">و ما أقترحهُ كتعريف:</span></span>
+		<span class="tooltip">machines that are altruistic,<span class="tooltiptext">آلاتٌ تؤثرُ دوماً مصلحةَ البشر،</span></span>
+		<span class="tooltip">that want to achieve only our objectives,<span class="tooltiptext">و تسعى لتحقيقِ أهدافنا فقط،</span></span>
+		<span class="tooltip">but that are uncertain
+about what those objectives are,<span class="tooltiptext">لكنّها ليست متأكّدةً
+من صحّةِ فهمها لهذهِ الأهداف،</span></span>
+		<span class="tooltip">and will watch all of us<span class="tooltiptext">لذا ستقومُ بمراقبتنا على الدوام</span></span>
+		<span class="tooltip">to learn more about what it is
+that we really want.<span class="tooltiptext">لكيّ تتعلّمَ أكثرَ عمّا نريدها
+أنْ تساعدنا فيهِ حقّاً.</span></span>
+		<span class="tooltip">And hopefully in the process,
+we will learn to be better people.<span class="tooltiptext">وآمُلُ أنْ نتعلّم نحنُ أيضاً
+مِنْ هذهِ التجاربِ كيفَ نصبحُ أناساً أفضل.</span></span>
+		<span class="tooltip">Thank you very much.<span class="tooltiptext">شكراً لكم.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Applause)<span class="tooltiptext">(تصفيق)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Chris Anderson: So interesting, Stuart.<span class="tooltiptext">كريس أندرسون: هذا مشوّق جدّاً، ستيوارت.</span></span>
+		<span class="tooltip">We&#39;re going to stand here a bit
+because I think they&#39;re setting up<span class="tooltiptext">سنبقى على المنصّةِ قليلاً،</span></span>
+		<span class="tooltip">for our next speaker.<span class="tooltiptext">لأنهم بصدد الإعداد للمحادثة التالية.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">A couple of questions.<span class="tooltiptext">لديَّ بعضُ الأسئلة:</span></span>
+		<span class="tooltip">So the idea of programming in ignorance
+seems intuitively really powerful.<span class="tooltiptext">إذن فكرة البرمجة عن جهل
+تببدو للوهلة الأولى رهيبةً.</span></span>
+		<span class="tooltip">As you get to superintelligence,<span class="tooltiptext">ونحن نتجه نحو الذكاء الخارق،</span></span>
+		<span class="tooltip">what&#39;s going to stop a robot<span class="tooltiptext">ما الذي سيمنع الروبوت</span></span>
+		<span class="tooltip">reading literature and discovering
+this idea that knowledge<span class="tooltiptext">من القراءةِ والتعلّمِ بأنّ المعرفةَ</span></span>
+		<span class="tooltip">is actually better than ignorance<span class="tooltiptext">أفضلُ من الجهلِ</span></span>
+		<span class="tooltip">and still just shifting its own goals
+and rewriting that programming?<span class="tooltiptext">وتظل في المقابل تحيد عن أهدافها الشخصية
+وتعيد صياغة تلك البرمجة؟</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Stuart Russell: Yes, so we want
+it to learn more, as I said,<span class="tooltiptext">ستيوارت راسل: نريدُ حقيقةً كما قلت،
+أنْ تتعلّمَ هذهِ الآلاتُ أكثر،</span></span>
+		<span class="tooltip">about our objectives.<span class="tooltiptext">عن أهدافنا نحن.</span></span>
+		<span class="tooltip">It&#39;ll only become more certain
+as it becomes more correct,<span class="tooltiptext">وستكونُ أكثرَ ثقةً بصحّةِ معلوماتها فقط
+حينما تصبحُ أكثرَ دقّةً</span></span>
+		<span class="tooltip">so the evidence is there<span class="tooltiptext">فالدليل واضح هناك</span></span>
+		<span class="tooltip">and it&#39;s going to be designed
+to interpret it correctly.<span class="tooltiptext">وستكون مصممة لتفسيره بشكل صحيح.</span></span>
+		<span class="tooltip">It will understand, for example,
+that books are very biased<span class="tooltiptext">وسوفَ تفهمُ مثلاً بأنَّ
+بعضَ الكُتُبِ متحيّزةٌ جدا</span></span>
+		<span class="tooltip">in the evidence they contain.<span class="tooltiptext">حيال المعلوماتِ التي تحتويها.</span></span>
+		<span class="tooltip">They only talk about kings and princes<span class="tooltiptext">حيث لاتروي قصصاً
+سوى عن ملوكٍ أو أميراتٍ</span></span>
+		<span class="tooltip">and elite white male people doing stuff.<span class="tooltiptext">أو عن أبطال ذكور ذوي بشرة بيضاء
+يقومون بأشياء جميلة.</span></span>
+		<span class="tooltip">So it&#39;s a complicated problem,<span class="tooltiptext">لذا فهي مشكلةٌ معقّدةٌ،</span></span>
+		<span class="tooltip">but as it learns more about our objectives<span class="tooltiptext">لكنَّ الآلاتَ ستتعلّمُ أكثرَ
+عن أهدافنا في النهاية</span></span>
+		<span class="tooltip">it will become more and more useful to us.<span class="tooltiptext">وستصبحُ أكثرَ فائدةً لنا.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">CA: And you couldn&#39;t
+just boil it down to one law,<span class="tooltiptext">ك.أ : ألم يكن بإمكانك أن تختصر
+هذا في قانون واحد،</span></span>
+		<span class="tooltip">you know, hardwired in:<span class="tooltiptext">كأنْ تزرعَ في دماغها مايلي:</span></span>
+		<span class="tooltip">&quot;if any human ever tries to switch me off,<span class="tooltiptext">&quot;إنْ حاولَ أيُّ إنسانٍ
+في أيّ وقتٍ أن يُطفِئني&quot;</span></span>
+		<span class="tooltip">I comply. I comply.&quot;<span class="tooltiptext">&quot;سأمتثل، سأمتثل.&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">SR: Absolutely not.<span class="tooltiptext">س.ر: بالتأكيد لا.</span></span>
+		<span class="tooltip">That would be a terrible idea.<span class="tooltiptext">ستكون تلك فكرة سيئة جدًا.</span></span>
+		<span class="tooltip">So imagine that you have
+a self-driving car<span class="tooltiptext">تخيّل مثلاً لو امتلكتَ
+سيّارةً ذاتيّةَ القيادةِ</span></span>
+		<span class="tooltip">and you want to send your five-year-old<span class="tooltiptext">وأردتَ أنْ تُرسلَ بها طفلكَ
+ذي الخمسة أعوامٍ</span></span>
+		<span class="tooltip">off to preschool.<span class="tooltiptext">إلى الروضة.</span></span>
+		<span class="tooltip">Do you want your five-year-old
+to be able to switch off the car<span class="tooltiptext">هل تريدُ أن يُطفئَ طِفلُك السيّارةَ</span></span>
+		<span class="tooltip">while it&#39;s driving along?<span class="tooltiptext">في منتصفِ الطّريق؟</span></span>
+		<span class="tooltip">Probably not.<span class="tooltiptext">بالتّأكيدِ لا.</span></span>
+		<span class="tooltip">So it needs to understand how rational
+and sensible the person is.<span class="tooltiptext">لذا يجبُ أن تفهم الآلةُ دوافعَ
+الإنسانِ لإطفائها ومدى عقلانيّتهِ</span></span>
+		<span class="tooltip">The more rational the person,<span class="tooltiptext">و كلّما كانَ الشخصُ منطقيّاً أكثر،</span></span>
+		<span class="tooltip">the more willing you are
+to be switched off.<span class="tooltiptext">كلّما كانت الآلةُ أكثرَ
+تقبّلاً لإيقافِ تشغيلها.</span></span>
+		<span class="tooltip">If the person is completely
+random or even malicious,<span class="tooltiptext">ولوّ كان الشخصُ غريباً
+أو بدا مُؤذياً،</span></span>
+		<span class="tooltip">then you&#39;re less willing
+to be switched off.<span class="tooltiptext">فلنْ تتقبّلَ الآلةُ أنْ يتمَّ إطفاؤها.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">CA: All right. Stuart, can I just say,<span class="tooltiptext">ك. أ: حسناً، أودُّ أنْ أقولَ بأنّني</span></span>
+		<span class="tooltip">I really, really hope you
+figure this out for us.<span class="tooltiptext">أتمنّى حقّاً أنْ تخترعَ
+هذهِ الأشياء لنا قريباً</span></span>
+		<span class="tooltip">Thank you so much for that talk.
+That was amazing.<span class="tooltiptext">شكراً جزيلاً لكَ على هذه المحادثة
+لقد كانت مدهشة.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">SR: Thank you.<span class="tooltiptext">س. ر: شكراً لك.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Applause)<span class="tooltiptext">(تصفيق)</span></span>
+	</p>
+
+	<div class="line"></div>
+	<p>Enjoying my website? Your donation helps maintain its ad-free experience and smooth operation. Your support is truly appreciated and helps me continue providing quality content. Thank you for considering a donation!</p>
+	<p>To donate, simply click the PayPal link below:<p/>
+	<p><a href="https://www.paypal.com/paypalme/otechai" target='_blank'>Donate via PayPal</a></p>
+	
+</div>
+<span onclick='topFunction()' id='gotop' title='Go to top'><svg width="32" height="32" viewBox="0 0 100 100">
+	   <path fill="white" d="m50 0c-13.262 0-25.98 5.2695-35.355 14.645s-14.645 22.094-14.645 35.355 5.2695 25.98 14.645 35.355 22.094 14.645 35.355 14.645 25.98-5.2695 35.355-14.645 14.645-22.094 14.645-35.355-5.2695-25.98-14.645-35.355-22.094-14.645-35.355-14.645zm20.832 62.5-20.832-22.457-20.625 22.457c-1.207 0.74219-2.7656 0.57812-3.7891-0.39844-1.0273-0.98047-1.2695-2.5273-0.58594-3.7695l22.918-25c0.60156-0.61328 1.4297-0.96094 2.2891-0.96094 0.86328 0 1.6914 0.34766 2.293 0.96094l22.918 25c0.88672 1.2891 0.6875 3.0352-0.47266 4.0898-1.1562 1.0508-2.9141 1.0859-4.1133 0.078125z"></path>
+	 </svg></span>
+
+	    <div class="footer">
+	        <div class="left"><a href='../../../index.html'>ReadingDB</a></div>
+	        <div class="center"><a href="https://twitter.com/readingdb" class="twitter-link">
+	    <svg class="twitter-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	        <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.58-2.11-9.96-5.02-.42.72-.66 1.56-.66 2.46 0 1.68.85 3.16 2.14 4.02-.79-.02-1.53-.24-2.18-.6v.06c0 2.35 1.67 4.31 3.88 4.76-.4.1-.83.16-1.27.16-.31 0-.62-.03-.92-.08.63 1.96 2.45 3.39 4.61 3.43-1.69 1.32-3.83 2.1-6.15 2.1-.4 0-.8-.02-1.19-.07 2.19 1.4 4.78 2.22 7.57 2.22 9.07 0 14.02-7.52 14.02-14.02 0-.21 0-.41-.01-.61.96-.69 1.79-1.56 2.45-2.55-.88.39-1.83.65-2.82.77z"/>
+	    </svg>
+	</a></div>
+	        <div class="right"><a href='https://www.paypal.com/paypalme/otechai'>Donate</a></div>
+	    </div>
+	<script>
+
+		var mybutton = document.getElementById('gotop');
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+			if (document.documentElement.scrollTop > 20 || document.body.scrollTop > 20) {
+				mybutton.style.display = 'block';
+			} else {
+				mybutton.style.display = 'none';
+			}
+		}
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<script src="../../../static/scripts/script.js"></script>
+</body>
+</html>
+	

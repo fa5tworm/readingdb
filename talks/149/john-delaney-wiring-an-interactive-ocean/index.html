@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+	<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<meta name="description" content="Unlock your Spanish reading skills: Immerse yourself in a contextual and practical learning enhanced by high-quality instant translations.">
+      	<meta name="keywords" content="Spanish reading, Spanish language learning, instant translations, reading adventure, improve Spanish, improve reading skills, educational platform, spanish reading resources, online education, Spanish proficiency, learn Spanish, Spanish learning resources, bilingual education, language exchange, study Spanish online">
+		<link rel="apple-touch-icon" sizes="180x180" href="../../../static/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../../../static/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../../../static/favicons/favicon-16x16.png">
+		<link rel="manifest" href="../../../static/favicons/site.webmanifest">
+		<title>John Delaney : Wiring an interactive ocean</title>
+		<link rel='stylesheet' href='../../../static/styles/styles.css'>
+		<script defer data-domain="readingdb.org" src="https://plausible.io/js/script.js"></script>
+	</head>
+	<body>
+
+	<h1 class='title'>Wiring an interactive ocean</h1>
+	<h2 class='speaker'>John Delaney</h2>
+	<div class='transcript books'>
+	<p>Are you ready to improve your Spanish speaking skills, check <a href='https://referral.lingoda.com/6Dztrv'>Lingoda</a> today!</p>
+		<p>
+		<span class="tooltip">For a moment, what I need to do<span class="tooltiptext">لبرهة, ما أريد عمله هو</span></span>
+		<span class="tooltip">is project something on the screen of your imagination.<span class="tooltiptext">عرض شيء على شاشة خيالكم</span></span>
+		<span class="tooltip">We&#39;re in 17th century Japan<span class="tooltiptext">نحن في اليابان في القرن السابع عشر</span></span>
+		<span class="tooltip">on the west coast,<span class="tooltiptext">على الساحل الغربي</span></span>
+		<span class="tooltip">and a little, wizened monk<span class="tooltiptext">هناك راهب ضئيل ذابل</span></span>
+		<span class="tooltip">is hurrying along, near midnight,<span class="tooltiptext">يسرع قرابة منتصف الليل</span></span>
+		<span class="tooltip">to the crest of a small hill.<span class="tooltiptext">إلى قمة تل صغير</span></span>
+		<span class="tooltip">He arrives on the small hill,<span class="tooltiptext">يصل إلى التل</span></span>
+		<span class="tooltip">dripping with water.<span class="tooltiptext">يقطر منه الماء</span></span>
+		<span class="tooltip">He stands there,<span class="tooltiptext">يقف هناك</span></span>
+		<span class="tooltip">and he looks across at the island, Sado.<span class="tooltiptext">وينظر عبر جزيرة سادو</span></span>
+		<span class="tooltip">And he scans across the ocean, and he looks at the sky.<span class="tooltiptext">يمسح بنظره المحيط , وينظر إلى السماء</span></span>
+		<span class="tooltip">Then he says to himself, very quietly,<span class="tooltiptext">عندها يقول لنفسه بهدوء بالغ</span></span>
+		<span class="tooltip">&quot;[Turbulent the sea,]<span class="tooltiptext">البحر متمرد</span></span>
+		<span class="tooltip">[Stretching across to Sado]<span class="tooltiptext">متمددة عبر جزيرة سادو</span></span>
+		<span class="tooltip">[The Milky Way].&quot;<span class="tooltiptext">مجرة درب التبانة</span></span>
+		<span class="tooltip">Basho was a brilliant man.<span class="tooltiptext">كان باشو عبقريا</span></span>
+		<span class="tooltip">He said more with less<span class="tooltiptext">قال الكثير عبر القليل</span></span>
+		<span class="tooltip">than any human<span class="tooltiptext">أكثر من أي إنسان</span></span>
+		<span class="tooltip">that I have ever read or talked to.<span class="tooltiptext">قرأت له أو تحدثت معه</span></span>
+		<span class="tooltip">Basho, in 17 syllables,<span class="tooltiptext">باشو في سبعة عشر بيتا</span></span>
+		<span class="tooltip">juxtaposed<span class="tooltiptext">وضع جنبا إلى جنب</span></span>
+		<span class="tooltip">a turbulent ocean<span class="tooltiptext">تمرد محيط</span></span>
+		<span class="tooltip">driven by a storm now past,<span class="tooltiptext">قادته عاصفة مضت</span></span>
+		<span class="tooltip">and captured the almost<span class="tooltiptext">ووصف الجمال</span></span>
+		<span class="tooltip">impossible beauty<span class="tooltiptext">شبه المستحيل</span></span>
+		<span class="tooltip">of our home galaxy<span class="tooltiptext">لمجرتنا</span></span>
+		<span class="tooltip">with millions of stars,<span class="tooltiptext">مع ملايين النجوم</span></span>
+		<span class="tooltip">probably hundreds and hundreds of -- who knows how many -- planets,<span class="tooltiptext">وربما المئات و المئات من الكواكب - لا أحد يعلم عددها-</span></span>
+		<span class="tooltip">maybe even an ocean<span class="tooltiptext">وربما حتى المحيط</span></span>
+		<span class="tooltip">that we will probably call Sylvia in time.<span class="tooltiptext">الذي غالبا ما سينادي &quot;سيلفيا&quot; مع مرور الزمن</span></span>
+		<span class="tooltip">As he was nearing his death,<span class="tooltiptext">لأنه كان يقترب من موته</span></span>
+		<span class="tooltip">his disciples and followers<span class="tooltiptext">ظل حواريوه وأتباعه</span></span>
+		<span class="tooltip">kept asking him,<span class="tooltiptext">يسألونه,</span></span>
+		<span class="tooltip">&quot;What&#39;s the secret?<span class="tooltiptext">ما هو السر؟</span></span>
+		<span class="tooltip">How can you<span class="tooltiptext">كيف استطعت</span></span>
+		<span class="tooltip">make haiku poems so beautiful so easily?&quot;<span class="tooltiptext">كتابة قصائد هايكو – نوع من القصائد اليابانية- بهذا الجمال بتلك السهولة؟</span></span>
+		<span class="tooltip">And toward the end, he said,<span class="tooltiptext">وقرابة النهاية, قال</span></span>
+		<span class="tooltip">&quot;If you would know the pine tree,<span class="tooltiptext">&quot;إذا أردت أن تعرف شجرة الصنوبر,</span></span>
+		<span class="tooltip">go to the pine tree.&quot;<span class="tooltiptext">فاذهب إلى شجرة الصنوبر&quot;</span></span>
+		<span class="tooltip">That was it.<span class="tooltiptext">هذا كل ما قاله</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">(ضحك)</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Sylvia has said we must use<span class="tooltiptext">قالت سيلفيا أنه يجب أن نستخدم</span></span>
+		<span class="tooltip">every capacity we have<span class="tooltiptext">كل القدرات التي نملكها</span></span>
+		<span class="tooltip">in order to know the oceans.<span class="tooltiptext">لمحاولة معرفة المحيط</span></span>
+		<span class="tooltip">If we would know the oceans,<span class="tooltiptext">لو أردنا أن نعرف المحيطات</span></span>
+		<span class="tooltip">we must go to the oceans.<span class="tooltiptext">يجب أن نذهب إلى المحيطات</span></span>
+		<span class="tooltip">And what I&#39;d like to talk to you today about, a little bit,<span class="tooltiptext">وما أريد أن أحدثكم قليلا عنه اليوم</span></span>
+		<span class="tooltip">is really transforming<span class="tooltiptext">هو حقيقة تحويل</span></span>
+		<span class="tooltip">the relationship, or the interplay,<span class="tooltiptext">العلاقة أو التفاعل</span></span>
+		<span class="tooltip">between humans and oceans<span class="tooltiptext">بين البشر والمحيطات</span></span>
+		<span class="tooltip">with a new capability<span class="tooltiptext">بإمكانات جديدة</span></span>
+		<span class="tooltip">that is not at all routine yet.<span class="tooltiptext">لم تصبح معتادة بعد</span></span>
+		<span class="tooltip">I hope it will be.<span class="tooltiptext">أتمنى أن تصبح كذلك</span></span>
+		<span class="tooltip">There are a few key points.<span class="tooltiptext">هناك بضع نقاط مفتاحية</span></span>
+		<span class="tooltip">One of them is the oceans are central<span class="tooltiptext">إحداها أن المحيطات أساسية</span></span>
+		<span class="tooltip">to the quality of life on earth.<span class="tooltiptext">لجودة الحياة على الأرض</span></span>
+		<span class="tooltip">Another is that there are bold, new ways<span class="tooltiptext">وأخرى أنه هناك طرق جريئة وجديدة</span></span>
+		<span class="tooltip">of studying oceans<span class="tooltiptext">لدراسة المحيطات</span></span>
+		<span class="tooltip">that we have not used well yet.<span class="tooltiptext">لم نستخدمها بشكل جيد بعد</span></span>
+		<span class="tooltip">And the last is that these bold, new ways<span class="tooltiptext">والنقطة الأخيرة هي أن هذه الطرق الجريئة والجديدة</span></span>
+		<span class="tooltip">that we are exploring<span class="tooltiptext">التي نستكشفها</span></span>
+		<span class="tooltip">as a community<span class="tooltiptext">كمجتمع</span></span>
+		<span class="tooltip">will transform the way we look at our planet, our oceans,<span class="tooltiptext">ستغير طريقة نظرنا نحو كوكبنا ومحيطاتنا</span></span>
+		<span class="tooltip">and eventually how we manage<span class="tooltiptext">وفي نهاية المطاف كيف ندير</span></span>
+		<span class="tooltip">probably the entire planet, for what it&#39;s worth.<span class="tooltiptext">ربما كل الكوكب لما هو أهل له</span></span>
+		<span class="tooltip">So what scientists do when they begin<span class="tooltiptext">إذاً ما يفعله العلماء عندما يبدأون</span></span>
+		<span class="tooltip">is to start with the system.<span class="tooltiptext">هو البدء بالنظام</span></span>
+		<span class="tooltip">They define what the system is.<span class="tooltiptext">يعرّفون ما هو النظام</span></span>
+		<span class="tooltip">The system isn&#39;t Chesapeake Bay.<span class="tooltiptext">النظام ليس ساحل تشيزابيك (أكبر مصبات الأنهار في الولايات المتحدة)</span></span>
+		<span class="tooltip">It&#39;s not the Kuril arc. It&#39;s not even the entire Pacific.<span class="tooltiptext">وهو ليس قوس كارو ولا هو حتى المحيط الهادئ كله</span></span>
+		<span class="tooltip">It&#39;s the whole planet,<span class="tooltiptext">إنه الكوكب ككل</span></span>
+		<span class="tooltip">the entire planet, continents and oceans together.<span class="tooltiptext">كل الكوكب, القارات والمحيطات معا</span></span>
+		<span class="tooltip">That&#39;s the system.<span class="tooltiptext">هذا هو النظام</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And basically, our challenge<span class="tooltiptext">وفي الأساس, تحدينا هو</span></span>
+		<span class="tooltip">is to optimize the benefits<span class="tooltiptext">رفع الفوائد لأعلى حد</span></span>
+		<span class="tooltip">and mitigate the risks<span class="tooltiptext">وتقليل المخاطر</span></span>
+		<span class="tooltip">of living on a planet that&#39;s driven by only two processes,<span class="tooltiptext">بالعيش على كوكب تقوده عمليتان فقط</span></span>
+		<span class="tooltip">two sources of energy,<span class="tooltiptext">مصدران للطاقة</span></span>
+		<span class="tooltip">one of which is solar,<span class="tooltiptext">أحداهما الشمسية</span></span>
+		<span class="tooltip">that drives the winds, the waves,<span class="tooltiptext">التي تحرك الرياح والأمواج</span></span>
+		<span class="tooltip">the clouds, the storms and photosynthesis.<span class="tooltiptext">والسحب والعواصف والتركيب الضوئي</span></span>
+		<span class="tooltip">The second one is internal energy.<span class="tooltiptext">والثانية هي الطاقة الداخلية</span></span>
+		<span class="tooltip">And these two war against one another<span class="tooltiptext">وهاتان الطاقتان تتحاربان ضد بعض</span></span>
+		<span class="tooltip">almost continuously.<span class="tooltiptext">دائما تقريبا</span></span>
+		<span class="tooltip">Mountain ranges, plate tectonics,<span class="tooltiptext">السلاسل الجبلية, والصفائح التكتونية</span></span>
+		<span class="tooltip">moves the continents around, forms ore deposits.<span class="tooltiptext">تحرك القارات, تشكل مستودعات الخام</span></span>
+		<span class="tooltip">Volcanoes erupt.<span class="tooltiptext">تثور البراكين</span></span>
+		<span class="tooltip">That&#39;s the planet that we live on.<span class="tooltiptext">هذا هو الكوكب الذي نعيش عليه</span></span>
+		<span class="tooltip">It&#39;s immensely complex.<span class="tooltiptext">إنه معقد بشكل هائل</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Now I don&#39;t expect all of you to see all the details here,<span class="tooltiptext">والآن لا أعتقد أنكم جميعا ستشاهدون التفاصيل هنا</span></span>
+		<span class="tooltip">but what I want you to see is<span class="tooltiptext">لكن ما أريدكم أن تروه</span></span>
+		<span class="tooltip">this is about 10 percent<span class="tooltiptext">هذه حوالي عشرة بالمئة</span></span>
+		<span class="tooltip">of the processes that operate within<span class="tooltiptext">من العمليات التي تحدث داخل</span></span>
+		<span class="tooltip">the oceans almost continuously,<span class="tooltiptext">المحيطات بشكل شبه دائم</span></span>
+		<span class="tooltip">and have for the last 4 billion years.<span class="tooltiptext">واستمرت منذ أربعة مليارات سنة</span></span>
+		<span class="tooltip">This is a system that&#39;s been around a very long time.<span class="tooltiptext">هذا نظام مستمرفي العمل منذ فترة طويلة جدا</span></span>
+		<span class="tooltip">And these have all co-evolved.<span class="tooltiptext">وكل هذه شاركت في التطور</span></span>
+		<span class="tooltip">What do I mean by that?<span class="tooltiptext">مالذي أقصده بهذا؟</span></span>
+		<span class="tooltip">They interact with one another constantly.<span class="tooltiptext">أنهم يتفاعلون مع بعضهم دائما</span></span>
+		<span class="tooltip">All of them interact with one another.<span class="tooltiptext">كلهم يتفاعلون مع بعضهم</span></span>
+		<span class="tooltip">So the complexity of this system that we&#39;re looking at,<span class="tooltiptext">إذاً تعقيد هذا النظام الذي نشاهده ,</span></span>
+		<span class="tooltip">the one driven by the sun --<span class="tooltiptext">الذي قادته الشمس--</span></span>
+		<span class="tooltip">upper portion, mostly --<span class="tooltiptext">معظم الجزء العلوي</span></span>
+		<span class="tooltip">and the lower portion is partly driven<span class="tooltiptext">والجزء السفلي تقوده جزئيا</span></span>
+		<span class="tooltip">by the input from heat below<span class="tooltiptext">الحرارة المدخلة من الأسفل</span></span>
+		<span class="tooltip">and by other processes.<span class="tooltiptext">وعمليات أخرى</span></span>
+		<span class="tooltip">This is very, very important<span class="tooltiptext">هذا مهم للغاية</span></span>
+		<span class="tooltip">because this is the system, this is the crucible,<span class="tooltiptext">لأنه هذا هو النظام, هذه هي البوتقة</span></span>
+		<span class="tooltip">out of which life on the planet came,<span class="tooltiptext">التي منها ظهرت الحياة على الكوكب</span></span>
+		<span class="tooltip">and it&#39;s now time for us to understand it.<span class="tooltiptext">وآن الوقت لنا لفهمها</span></span>
+		<span class="tooltip">We must understand it.<span class="tooltiptext">يجب أن نفهمها</span></span>
+		<span class="tooltip">That&#39;s one of the themes that Sylvia reminds us about:<span class="tooltiptext">هذه إحدى السمات التي تذكرنا بها سيلفيا</span></span>
+		<span class="tooltip">understand this ocean of ours,<span class="tooltiptext">فهم المحيط الذي يخصنا</span></span>
+		<span class="tooltip">this basic life support system,<span class="tooltiptext">نظام دعم الحياة الأساسي هذا</span></span>
+		<span class="tooltip">the dominant life support system on the planet.<span class="tooltiptext">نظام دعم الحياة المسيطر على هذا الكوكب</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Look at this complexity here.<span class="tooltiptext">إنظروا لهذا التعقيد هنا</span></span>
+		<span class="tooltip">This is only one variable.<span class="tooltiptext">هذا مجرد متغير واحد</span></span>
+		<span class="tooltip">If you can see the complexity,<span class="tooltiptext">إن إستطعتم رؤية هذا التعقيد</span></span>
+		<span class="tooltip">you can see how<span class="tooltiptext">لرأيتم كيف</span></span>
+		<span class="tooltip">tiny, little eddies<span class="tooltiptext">دوامات صغيرة جدا</span></span>
+		<span class="tooltip">and large eddies and the motion --<span class="tooltiptext">ودوامات كبيرة والحركة</span></span>
+		<span class="tooltip">this is just sea surface temperature,<span class="tooltiptext">هذه فقط درجة حرارة سطح البحر</span></span>
+		<span class="tooltip">but it&#39;s immensely complicated.<span class="tooltiptext">لكنها معقدة بشكل هائل</span></span>
+		<span class="tooltip">Now a layer in,<span class="tooltiptext">وبإضافة طبقات</span></span>
+		<span class="tooltip">the other two or three hundred processes<span class="tooltiptext">المئتان أو الثلاثمئة عملية أخرى</span></span>
+		<span class="tooltip">that are all interacting,<span class="tooltiptext">المتفاعلة معا جميعا</span></span>
+		<span class="tooltip">partly as a function of temperature, partly as a function of all the other factors,<span class="tooltiptext">جزئيا كعملية للحرارة, وجزئيا كعملية لكل العوامل الأخرى</span></span>
+		<span class="tooltip">and you&#39;ve got a really complicated system.<span class="tooltiptext">وتجدون نظاما معقدا جدا</span></span>
+		<span class="tooltip">That&#39;s our challenge, is to understand,<span class="tooltiptext">هذا هو تحدينا أن نفهم</span></span>
+		<span class="tooltip">understand this system in new and phenomenal ways.<span class="tooltiptext">نفهم النظام وطرق الظواهر</span></span>
+		<span class="tooltip">And there&#39;s an urgency to this.<span class="tooltiptext">وهناك ضرورة ملحة لذلك</span></span>
+		<span class="tooltip">Part of the urgency comes from the fact<span class="tooltiptext">جزء من هذه الضرورة ياتي من حقيقة</span></span>
+		<span class="tooltip">that, of order, a billion people on the planet currently<span class="tooltiptext">أنه خارج النظام يوجد مليار شخص على الكوكب حاليا</span></span>
+		<span class="tooltip">are undernourished or starving.<span class="tooltiptext">ضعيف التغذية أو يتضور جوعا</span></span>
+		<span class="tooltip">And part of the issue<span class="tooltiptext">وجزء من المسألة</span></span>
+		<span class="tooltip">is for Cody --<span class="tooltiptext">بالنسبة لكودي--</span></span>
+		<span class="tooltip">who&#39;s here,<span class="tooltiptext">الذي هو هنا</span></span>
+		<span class="tooltip">16 years old --<span class="tooltiptext">وعمره ستة عشر عاما</span></span>
+		<span class="tooltip">and I have permission to relay this number.<span class="tooltiptext">وعندي التصريح لتبديل هذا الرقم</span></span>
+		<span class="tooltip">When he, 40 years from now,<span class="tooltiptext">أنه, بعد أربعين عاما من الآن,</span></span>
+		<span class="tooltip">is the age of Nancy Brown,<span class="tooltiptext">بعمر نانسي براون,</span></span>
+		<span class="tooltip">there are going to be<span class="tooltiptext">سيكون هناك</span></span>
+		<span class="tooltip">another two and a half billion people on the planet.<span class="tooltiptext">مليارين ونصف شخص آخر على الكوكب</span></span>
+		<span class="tooltip">We can&#39;t solve all the problems<span class="tooltiptext">لن نستطيع حل جميع المشكلات</span></span>
+		<span class="tooltip">by looking only at the oceans,<span class="tooltiptext">بالبحث فقط في المحيط</span></span>
+		<span class="tooltip">but if we don&#39;t understand<span class="tooltiptext">لكننا إذا لم نفهم</span></span>
+		<span class="tooltip">the fundamental life support system of this planet<span class="tooltiptext">نظام دعم الحياة الأساسي لهذا الكوكب</span></span>
+		<span class="tooltip">much more thoroughly than we do now,<span class="tooltiptext">بشكل شامل أكثر مما نفهمه الآن</span></span>
+		<span class="tooltip">then the stresses that we will face,<span class="tooltiptext">عندئذ تكون الضغوط التي سنواجهها</span></span>
+		<span class="tooltip">and that Cody will face,<span class="tooltiptext">والتي سيواجهها كودي</span></span>
+		<span class="tooltip">and even Nancy, who&#39;s going to live till she&#39;s 98,<span class="tooltiptext">وحتى نانسي التي ستعيش حتى ثمانية وتسعون عاما</span></span>
+		<span class="tooltip">will have really problems coping.<span class="tooltiptext">سنواجه مشاكل حقيقية في التأقلم</span></span>
+	</p>
+	<p>
+		<span class="tooltip">All right, let&#39;s talk about another perspective<span class="tooltiptext">حسنا, لنتحدث عن وجهة نظر أخرى</span></span>
+		<span class="tooltip">on the importance of the oceans.<span class="tooltiptext">عن أهمية المحيطات</span></span>
+		<span class="tooltip">Look at this diagram, which is showing<span class="tooltiptext">انظروا الى الرسم البياني هذا, الذي يبين</span></span>
+		<span class="tooltip">warm waters in red,<span class="tooltiptext">المياه الدافئة باللون الأحمر</span></span>
+		<span class="tooltip">cool waters in blue,<span class="tooltiptext">المياة الباردة باللون الأزرق</span></span>
+		<span class="tooltip">and on the continents, what you&#39;re seeing in bright green,<span class="tooltiptext">وعلى القارات, ما ترونه بالون الأخضر الفاتح</span></span>
+		<span class="tooltip">is the growth of vegetation,<span class="tooltiptext">يمثّل نمو النباتات</span></span>
+		<span class="tooltip">and in olive green, the dieback of vegetation.<span class="tooltiptext">وباللون الأخضر الزيتوني, إنحسار نمو النباتات</span></span>
+		<span class="tooltip">And in the lower left hand corner there&#39;s a clock ticking away<span class="tooltiptext">وفي الركن الأسفل الأيسر توجد ساعة تمضي</span></span>
+		<span class="tooltip">from 1982 to 1998<span class="tooltiptext">منذ العام 1982 حتى العام 1998</span></span>
+		<span class="tooltip">and then cycling again.<span class="tooltiptext">وتعود لتدور مجددا</span></span>
+		<span class="tooltip">What you&#39;ll see is that the rhythms<span class="tooltiptext">ما الذي سترونه هو أن النغمات</span></span>
+		<span class="tooltip">of growth, of vegetation --<span class="tooltiptext">في النمو, في نمو النباتات--</span></span>
+		<span class="tooltip">a subset of which is food on the continents --<span class="tooltiptext">التي يعتبر الطعام قائمة فرعية منه على القارات</span></span>
+		<span class="tooltip">is directly tied to the rhythms<span class="tooltiptext">مرتبطة مباشرة لنغمات</span></span>
+		<span class="tooltip">of the sea surface temperatures.<span class="tooltiptext">لحرارة سطح البحر</span></span>
+		<span class="tooltip">The oceans control,<span class="tooltiptext">إن المحيطات تتحكم</span></span>
+		<span class="tooltip">or at least significantly influence,<span class="tooltiptext">أو على الأقل تؤثر بشدة</span></span>
+		<span class="tooltip">correlate with,<span class="tooltiptext">مرتبطة مع</span></span>
+		<span class="tooltip">the growth patterns and the drought patterns<span class="tooltiptext">أنماط النمو وأنماط الجفاف</span></span>
+		<span class="tooltip">and the rain patterns on the continents.<span class="tooltiptext">وأنماط الأمطار على القارات</span></span>
+		<span class="tooltip">So people in Kansas, in a wheat field in Kansas,<span class="tooltiptext">إذاً فالناس في كانساس, في حقل قمح في كانساس</span></span>
+		<span class="tooltip">need to understand that the oceans<span class="tooltiptext">يجب أن يفهموا أن المحيطات</span></span>
+		<span class="tooltip">are central to them as well.<span class="tooltiptext">هي مركزية لهم أيضا</span></span>
+		<span class="tooltip">Another complexity: this is the age of the oceans.<span class="tooltiptext">تعقيد آخر: هذا هو عمر المحيطات</span></span>
+		<span class="tooltip">I&#39;m going to layer in on top of this<span class="tooltiptext">سأضع فوق هذا طبقة</span></span>
+		<span class="tooltip">the tectonic plates.<span class="tooltiptext">الصفائح التكتونية</span></span>
+		<span class="tooltip">The age of the ocean, the tectonic plates,<span class="tooltiptext">عمر المحيط , والصفائح التكتونية</span></span>
+		<span class="tooltip">gives rise to a totally new phenomenon<span class="tooltiptext">تظهر ظاهرة جديدة كليا</span></span>
+		<span class="tooltip">that we have heard about<span class="tooltiptext">سمعنا عنها</span></span>
+		<span class="tooltip">in this conference.<span class="tooltiptext">في هذا المؤتمر</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And I share with you some very high-definition video<span class="tooltiptext">وأشارك معكم بعض الفيديوهات فائقة الجودة</span></span>
+		<span class="tooltip">that we collected in real time.<span class="tooltiptext">التي جمعناها في الزمن الحقيقي (مباشرة)</span></span>
+		<span class="tooltip">Seconds after this video was taken,<span class="tooltiptext">بعد ثوان من أخذ هذا الفيديو</span></span>
+		<span class="tooltip">people in Beijing,<span class="tooltiptext">أناس في بكين</span></span>
+		<span class="tooltip">people in Sydney, people in Amsterdam,<span class="tooltiptext">وأناس في سيدني, وأناس في أمستردام</span></span>
+		<span class="tooltip">people in Washington D.C. were watching this.<span class="tooltiptext">وأناس في واشنطون العاصمة كانو يشاهدون هذا</span></span>
+		<span class="tooltip">Now you&#39;ve heard of hydrothermal vents,<span class="tooltiptext">الآن قد سمعتم بشقوق الماء الهيدروحرارية (الساخنة)</span></span>
+		<span class="tooltip">but the other discovery<span class="tooltiptext">لكن الإكتشاف الآخر</span></span>
+		<span class="tooltip">is that deep below the sea floor,<span class="tooltiptext">أنه في العمق تحت قاع البحر</span></span>
+		<span class="tooltip">there is vast reservoir of microbial activity,<span class="tooltiptext">يوجد مستودع هائل للنشاط الجرثومي (الميكروبي)</span></span>
+		<span class="tooltip">which we have only just discovered<span class="tooltiptext">الذي إكتشفناه لتونا</span></span>
+		<span class="tooltip">and we have almost no way to study.<span class="tooltiptext">والذي قد لا يكون لنا أية طريقة لدراسته</span></span>
+		<span class="tooltip">Some people have estimated<span class="tooltiptext">بعض الناس قدروا</span></span>
+		<span class="tooltip">that the biomass<span class="tooltiptext">أن الكتلة الحية</span></span>
+		<span class="tooltip">tied up in these microbes<span class="tooltiptext">المرتبطة بتلك الميكروبات</span></span>
+		<span class="tooltip">living in the pours and the cracks<span class="tooltiptext">التي تعيش في المصبات والشقوق</span></span>
+		<span class="tooltip">of the sea floor and below<span class="tooltiptext">في قاع البحر وأسفل منه</span></span>
+		<span class="tooltip">rival the total amount of living biomass<span class="tooltiptext">تعادل مجموع الكتلة الحية</span></span>
+		<span class="tooltip">at the surface of the planet.<span class="tooltiptext">على سطح الكوكب</span></span>
+		<span class="tooltip">It&#39;s an astonishing insight,<span class="tooltiptext">إنها لمحة مذهلة</span></span>
+		<span class="tooltip">and we have only found out about this recently.<span class="tooltiptext">وقد عرفنا عنها مؤخرا فقط</span></span>
+		<span class="tooltip">This is very, very exciting.<span class="tooltiptext">إنه مثير جدا</span></span>
+		<span class="tooltip">It may be the next rainforest,<span class="tooltiptext">قد تكون الغابة المطيرة القادمة</span></span>
+		<span class="tooltip">in terms of pharmaceuticals.<span class="tooltiptext">في المصطلح الصيدلاني</span></span>
+		<span class="tooltip">We know little or nothing about it.<span class="tooltiptext">نعرف القليل أو لاشيء عنها</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Well, Marcel Proust has this wonderful saying<span class="tooltiptext">حسنا, لدى مارسيل بروست هذة المقولة الجميلة</span></span>
+		<span class="tooltip">that, &quot;The real voyage of discovery<span class="tooltiptext">&quot;الرحلة الحقيقية للإستكشاف</span></span>
+		<span class="tooltip">consists not so much in seeking new territory,<span class="tooltiptext">لا تتكون بشكل كيبرمن البحث عن مناطق جديدة</span></span>
+		<span class="tooltip">but possibly in having new sets of eyes,&quot;<span class="tooltiptext">ولكن بإمكانية الحصول على أعين جديدة&quot;</span></span>
+		<span class="tooltip">new ways of seeing things,<span class="tooltiptext">طرق جديدة لرؤية الأشياء</span></span>
+		<span class="tooltip">a new mindset.<span class="tooltiptext">عقل جديد</span></span>
+		<span class="tooltip">And many of you remember<span class="tooltiptext">كثير منكم يتذكروا</span></span>
+		<span class="tooltip">the early stages of oceanography,<span class="tooltiptext">المراحل الأولية لعلم المحيطات,</span></span>
+		<span class="tooltip">when we had to use what we had at our fingertips.<span class="tooltiptext">عندما كنا مضطرين لإستخدام ما في متناول أيدينا</span></span>
+		<span class="tooltip">And it wasn&#39;t easy. It wasn&#39;t easy in those days.<span class="tooltiptext">ولم يكن الأمر سهلا. لم يكن سهلا تلك الأيام</span></span>
+		<span class="tooltip">Some of you remember this, I&#39;m sure.<span class="tooltiptext">بعضكم يتذكر هذا, إنني متأكد</span></span>
+		<span class="tooltip">And now, we have an entire suite of tools<span class="tooltiptext">والآن, أصبحنا نمتلك طقما كاملا من المعدات</span></span>
+		<span class="tooltip">that are really pretty powerful --<span class="tooltiptext">التي هي حقا قوية</span></span>
+		<span class="tooltip">ships, satellites, moorings.<span class="tooltiptext">بواخر, أقمار صناعية, مراسي</span></span>
+		<span class="tooltip">But they don&#39;t quite cut it. They don&#39;t quite give us what we need.<span class="tooltiptext">ولكنها لا تنجز المهمة تماما. لا تعطينا ما نحتاجه تماما</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And the program that I wanted to talk to you about<span class="tooltiptext">والبرنامج الذي أردت أن أحدثكم عنه</span></span>
+		<span class="tooltip">just a little bit here,<span class="tooltiptext">بشكل بسيط هنا</span></span>
+		<span class="tooltip">was funded, and it involves autonomous vehicles<span class="tooltiptext">تم تمويله, وقد تضمن آليات مستقلة</span></span>
+		<span class="tooltip">like the one running across the base of this image.<span class="tooltiptext">كتلك التي تمر عبر أسفل الصورة</span></span>
+		<span class="tooltip">Modeling: on the right hand side,<span class="tooltiptext">النمذجة: على الجانب الأيمن</span></span>
+		<span class="tooltip">there&#39;s a very complex computational model.<span class="tooltiptext">نموذج محوسب مركب</span></span>
+		<span class="tooltip">On the left hand side, there&#39;s a new type of mooring,<span class="tooltiptext">على الجانب الأيسر, يوجد نوع جديد من المراسي</span></span>
+		<span class="tooltip">which I&#39;ll show you in just a second.<span class="tooltiptext">التي سأوضحها بعد قليل</span></span>
+		<span class="tooltip">And on the basis<span class="tooltiptext">وعلى القواعد</span></span>
+		<span class="tooltip">of several points,<span class="tooltiptext">لعدة نقاط,</span></span>
+		<span class="tooltip">the oceans are complex, and they&#39;re central to the life on earth.<span class="tooltiptext">المحيطات معقدة, وهي مركزية للحياة على الأرض</span></span>
+		<span class="tooltip">They are changing rapidly, but not predictably.<span class="tooltiptext">وهي تتغير سريعا, ولكن بشكل لايمكن التنبؤ به</span></span>
+		<span class="tooltip">And the models that we need to predict the future<span class="tooltiptext">والنماذج التي نحتاجها للتنبؤ بالمستقبل</span></span>
+		<span class="tooltip">do not have enough data to refine them.<span class="tooltiptext">لا تمتلك البيانات الكافية لتصقلها</span></span>
+		<span class="tooltip">The computational power<span class="tooltiptext">الطاقة الحاسوبية</span></span>
+		<span class="tooltip">is amazing.<span class="tooltiptext">مدهشة</span></span>
+		<span class="tooltip">But without data, those models<span class="tooltiptext">لكن دون البيانات, هذه النماذج</span></span>
+		<span class="tooltip">will never ever be predicted.<span class="tooltiptext">لن يتنبأ بها أبدا</span></span>
+		<span class="tooltip">And that&#39;s what we really need.<span class="tooltiptext">وهذا هو ما نحتاجه حقا</span></span>
+		<span class="tooltip">For a variety of reasons they&#39;re dangerous,<span class="tooltiptext">لأسباب متعددة هي خطيرة</span></span>
+		<span class="tooltip">but we feel that OOI,<span class="tooltiptext">لكننا نحس أن مبادرة مرصد المحيط (OOI),</span></span>
+		<span class="tooltip">this Ocean Observatory Initiative,<span class="tooltiptext">مبادرة مرصد المحيط هذه</span></span>
+		<span class="tooltip">which the National Science Foundation<span class="tooltiptext">التي قامت منظمة العلوم الوطنية</span></span>
+		<span class="tooltip">has begun to fund,<span class="tooltiptext">بالبدء في إنشائها</span></span>
+		<span class="tooltip">has the potential to really transform things.<span class="tooltiptext">تمتلك إمكانية تحويل الأشياء حقا</span></span>
+		<span class="tooltip">And the goal of the program is to<span class="tooltiptext">والهدف من هذا البرنامج هو</span></span>
+		<span class="tooltip">launch an era of scientific discovery<span class="tooltiptext">الإنطلاق بعصر من الإستكشاف العلمي</span></span>
+		<span class="tooltip">and understanding<span class="tooltiptext">والفهم</span></span>
+		<span class="tooltip">across and within the ocean basins,<span class="tooltiptext">عبر وداخل أحواض المحيطات</span></span>
+		<span class="tooltip">utilizing widely accessible,<span class="tooltiptext">موظفة محاضرات</span></span>
+		<span class="tooltip">interactive telepresence.<span class="tooltiptext">تفاعلية عن بُعد وذات إمكانية وصول واسعة</span></span>
+		<span class="tooltip">It&#39;s a new world.<span class="tooltiptext">إنه عالم جديد</span></span>
+	</p>
+	<p>
+		<span class="tooltip">We will be present throughout<span class="tooltiptext">سنكون حاضرين عبر</span></span>
+		<span class="tooltip">the volume of the ocean, at will,<span class="tooltiptext">كتلة المحيط, إن رغبنا بذلك</span></span>
+		<span class="tooltip">communicating in real time.<span class="tooltiptext">متصلين معا مباشرة</span></span>
+		<span class="tooltip">And this is what the system involves,<span class="tooltiptext">وهذا هو ما يتضمنه النظام</span></span>
+		<span class="tooltip">a number of sites in the southern hemisphere,<span class="tooltiptext">مجموعة من المواقع في نصف الكرة الأرضية الجنوبي</span></span>
+		<span class="tooltip">shown in those circles.<span class="tooltiptext">الظاهرة في تلك الدوائر</span></span>
+		<span class="tooltip">And in the northern hemisphere there are four sites.<span class="tooltiptext">وفي نصف الكرة الأرضية الشمالي توجد أربعة مواقع</span></span>
+		<span class="tooltip">I won&#39;t talk a lot about most of them right here,<span class="tooltiptext">لن أتحدث كثيرا عن معظمها هنا</span></span>
+		<span class="tooltip">but the one on the west coast, that&#39;s in the box,<span class="tooltiptext">ولكن الموقع الذي على الساحل الغربي, ذلك الذي في المربع</span></span>
+		<span class="tooltip">is called the regional scale nodes.<span class="tooltiptext">يدعى روابط المقياس المحلي</span></span>
+		<span class="tooltip">It was once called Neptune.<span class="tooltiptext">وكان يدعى نبتون سابقا</span></span>
+		<span class="tooltip">And let me show you what&#39;s behind it.<span class="tooltiptext">ودعوني أريكم ماذا خلفه</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Fiber: next-generation way of communicating.<span class="tooltiptext">ألياف ضوئية, طريقة الجيل التالي للإتصال</span></span>
+		<span class="tooltip">You can see the copper tips on these things.<span class="tooltiptext">ترون الأطراف النحاسية على هذه الأشياء</span></span>
+		<span class="tooltip">You can transmit power,<span class="tooltiptext">يمكنكم نقل الطاقة</span></span>
+		<span class="tooltip">but the bandwidth is in those tiny, little threads<span class="tooltiptext">لكن السعة الموجية في تلك الخيوط الصغيرة جدا</span></span>
+		<span class="tooltip">smaller than the hair on your head in diameter.<span class="tooltiptext">أصغر من شعر رؤوسكم في الُقطر</span></span>
+		<span class="tooltip">And this particular set here<span class="tooltiptext">وهذا الطقم المحدد هنا</span></span>
+		<span class="tooltip">can transmit something of the order of<span class="tooltiptext">يستطيع نقل ما يقارب</span></span>
+		<span class="tooltip">three to five terabits per second.<span class="tooltiptext">ثلاثة إلى خمسة تيرابيت في الثانية</span></span>
+		<span class="tooltip">This is phenomenal bandwidth.<span class="tooltiptext">هذه السعة الموجية ظاهرة</span></span>
+		<span class="tooltip">And this is what the planet looks like.<span class="tooltiptext">وهذا هو ما يبدو عليه الكوكب</span></span>
+		<span class="tooltip">We are already laced up<span class="tooltiptext">قد ربطنا بالفعل</span></span>
+		<span class="tooltip">as if we&#39;re in a fiber optic corset, if you like.<span class="tooltiptext">بالألياف الضوئية مشدات إن أردتم</span></span>
+		<span class="tooltip">This is what it looks like.<span class="tooltiptext">هذا ما يبدو عليه</span></span>
+		<span class="tooltip">And the cables go really continent to continent.<span class="tooltiptext">والكابلات تمر حقا من قارة لأخرى</span></span>
+		<span class="tooltip">It&#39;s a very powerful system,<span class="tooltiptext">إنه نظام قوي جدا</span></span>
+		<span class="tooltip">and most of our communications consist of it.<span class="tooltiptext">ومعظم إتصالاتنا تتكون منه</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So this is the system that I&#39;m talking about,<span class="tooltiptext">إذاً هذا هو النظام الذي أتحدث عنه</span></span>
+		<span class="tooltip">off the west coast. It&#39;s coincident with the tectonic plate,<span class="tooltiptext">من الساحل الغربي – متوافقا مع الصفيحة التكتونية</span></span>
+		<span class="tooltip">the Juan de Fuca tectonic plate.<span class="tooltiptext">صفيحة خوان دي فوكا التكتونية</span></span>
+		<span class="tooltip">And it&#39;s going to deliver abundant power<span class="tooltiptext">والتي ستوفر طاقة بغزرة</span></span>
+		<span class="tooltip">and unprecedented bandwidth<span class="tooltiptext">وسعة موجية غير معهودة</span></span>
+		<span class="tooltip">across this entire volume --<span class="tooltiptext">عبر كل هذه الكتلة--</span></span>
+		<span class="tooltip">in the overlying ocean,<span class="tooltiptext">في المحيط الجاسم فوقها,</span></span>
+		<span class="tooltip">on the sea floor and below the sea floor.<span class="tooltiptext">على قاع البحر وأسفل من قاع البحر</span></span>
+		<span class="tooltip">Bandwidth and power<span class="tooltiptext">السعة الموجية والطاقة</span></span>
+		<span class="tooltip">and a wide variety of processes<span class="tooltiptext">ومجموعة عمليات واسعة التعدد</span></span>
+		<span class="tooltip">that will be operating.<span class="tooltiptext">التي ستشتغل</span></span>
+		<span class="tooltip">This is what one of those primary nodes looks like,<span class="tooltiptext">هذا هو ما تبدو عليه إحدى تلك الروابط الأساسية</span></span>
+		<span class="tooltip">and it&#39;s like a sub station with power and bandwidth<span class="tooltiptext">وهي كمحطة فرعية مع طاقة وسعة موجية</span></span>
+		<span class="tooltip">that can spread out over an area the size of Seattle.<span class="tooltiptext">تستطيع الإنتشار فوق مساحة بحجم سياتل</span></span>
+		<span class="tooltip">And the kind of science that can be done<span class="tooltiptext">ونوع العلوم التي يمكن عملها</span></span>
+		<span class="tooltip">will be determined by a variety of scientists who want to be involved<span class="tooltiptext">ستحدد من مجموعة متعددة من العلماء يريدون أن ينضموا</span></span>
+		<span class="tooltip">and can bring the instrumentation to the table.<span class="tooltiptext">ويستطيعون إستخدام الآلات على أرض الواقع</span></span>
+		<span class="tooltip">They will bring it and link it in.<span class="tooltiptext">سيأتون بها ويوصلونها</span></span>
+		<span class="tooltip">It&#39;ll be, in a sense, like having time on a telescope,<span class="tooltiptext">ستكون مثل الحصول على الوقت على تلسكوب</span></span>
+		<span class="tooltip">except you&#39;ll have your own port.<span class="tooltiptext">بإستثناء إنه ستكون لك بوابة منفصلة</span></span>
+		<span class="tooltip">Climate change, ocean acidification,<span class="tooltiptext">التغير المناخي, تحمض المحيط</span></span>
+		<span class="tooltip">dissolved oxygen,<span class="tooltiptext">الأكسجين المذاب</span></span>
+		<span class="tooltip">carbon cycle, coastal upwelling,<span class="tooltiptext">الدورة الكربونية, تغير المياه على السواحل</span></span>
+		<span class="tooltip">fishing dynamics --<span class="tooltiptext">تحركات الأسماك</span></span>
+		<span class="tooltip">the full spectrum of<span class="tooltiptext">كل طيف</span></span>
+		<span class="tooltip">earth science and ocean science<span class="tooltiptext">علم الأرض وعلم المحيط</span></span>
+		<span class="tooltip">simultaneously in the same volume.<span class="tooltiptext">لحظيا على نفس الكتلة</span></span>
+		<span class="tooltip">So anyone coming along later<span class="tooltiptext">فيتمكن أي شخص يأتي لاحقا</span></span>
+		<span class="tooltip">simply accesses the database<span class="tooltiptext">ببساطة الولوج لقاعدة البيانات</span></span>
+		<span class="tooltip">and can draw down the information they need<span class="tooltiptext">ويستطيع جلب المعلومات التي يحتاج إليها</span></span>
+		<span class="tooltip">about anything that has taken place.<span class="tooltiptext">تقريبا كل ما حدث</span></span>
+		<span class="tooltip">And this is just the first of these.<span class="tooltiptext">وهذا هو أول هذه الأشياء فقط</span></span>
+		<span class="tooltip">In conjunction with our Canadian colleagues, we&#39;ve set this up.<span class="tooltiptext">بالإقتران مع زملائنا الكنديين, أنشأنا هذا</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Now I want to take you into the caldera.<span class="tooltiptext">والآن أريد أن آخذكم للإنهيار البركاني</span></span>
+		<span class="tooltip">On the left hand side there<span class="tooltiptext">على الناحية اليسرى هنا</span></span>
+		<span class="tooltip">is a large volcano called Axial Seamount.<span class="tooltiptext">يوجد بركان كبير يدعى آكسيال سيماونت</span></span>
+		<span class="tooltip">And we&#39;re going to go down into the Axial Seamount<span class="tooltiptext">ونحن سندخل إلى داخل آكسيال سيماونت</span></span>
+		<span class="tooltip">using animation.<span class="tooltiptext">بإستخدام الرسوم المتحركة</span></span>
+		<span class="tooltip">Here&#39;s what this system is going to look like<span class="tooltiptext">هذا ما سيبدو عليه النظام</span></span>
+		<span class="tooltip">that we are funded to build at this point.<span class="tooltiptext">الذي مولنا لبنائه حتى هذه النقطة</span></span>
+		<span class="tooltip">Very powerful.<span class="tooltiptext">قوي جدا</span></span>
+		<span class="tooltip">That&#39;s an elevator that&#39;s constantly moving up and down,<span class="tooltiptext">هذا مصعد يتحرك دائما للأعلى والأسفل</span></span>
+		<span class="tooltip">but it can be controlled by the folks on land<span class="tooltiptext">ولكن يمكن التحكم به بالأشخاص على الأرض</span></span>
+		<span class="tooltip">who are responsible for it.<span class="tooltiptext">المسئولين عنه</span></span>
+		<span class="tooltip">Or they can transfer control<span class="tooltiptext">ويمكنهم نقل التحكم</span></span>
+		<span class="tooltip">to someone in India or China<span class="tooltiptext">لشخص ما في الهند أو الصين</span></span>
+		<span class="tooltip">who can take over for a while,<span class="tooltiptext">يمكنه أن يحل في التحكم لفترة</span></span>
+		<span class="tooltip">because it&#39;s all going to be directly connected<span class="tooltiptext">لأنه سيكون كله متصل مباشرة</span></span>
+		<span class="tooltip">through the Internet.<span class="tooltiptext">عبر الإنترنت</span></span>
+		<span class="tooltip">There will be massive amounts of data flowing ashore,<span class="tooltiptext">سيكون هناك فيض كمي هائل من البيانات</span></span>
+		<span class="tooltip">all available to anyone who has any interest in using it.<span class="tooltiptext">كله متاح لأي شخص يملك أي رغبة في إستخدامه</span></span>
+		<span class="tooltip">This is going to be much more powerful<span class="tooltiptext">سيكون هذا أقوى بكثير</span></span>
+		<span class="tooltip">than having a single ship<span class="tooltiptext">من الحصول على باخرة واحدة</span></span>
+		<span class="tooltip">in a single location,<span class="tooltiptext">في موقع واحد</span></span>
+		<span class="tooltip">then move to a new location.<span class="tooltiptext">ثم التحرك الى موقع جديد</span></span>
+	</p>
+	<p>
+		<span class="tooltip">We&#39;re flying across the caldera floor.<span class="tooltiptext">نحن نطير عبر أرضية الإنهيار البركاني</span></span>
+		<span class="tooltip">There is a number of robotic systems.<span class="tooltiptext">هناك عدد من الأنظمة الروبوتية</span></span>
+		<span class="tooltip">There&#39;s cameras that can be turned on and off at your will,<span class="tooltiptext">هناك كاميرات يمكن تشغيلها وأيقافها برغبتكم</span></span>
+		<span class="tooltip">if those are your experiments.<span class="tooltiptext">إن كانت تلك تجاربكم</span></span>
+		<span class="tooltip">The kinds of systems that will be down there,<span class="tooltiptext">نوع الأنظمة التي ستكون بالأسفل هناك</span></span>
+		<span class="tooltip">the kinds of instruments that will be on the sea floor,<span class="tooltiptext">نوع الآليات التي ستكون على قاع البحر</span></span>
+		<span class="tooltip">consist of -- if you can read them there --<span class="tooltiptext">تتكون من – إن إستطعتم قرائتها هناك</span></span>
+		<span class="tooltip">there&#39;s cameras, there&#39;s pressure sensors,<span class="tooltiptext">هناك كاميرات, حساسات ضغط</span></span>
+		<span class="tooltip">fluorometers, there&#39;s seismometers.<span class="tooltiptext">أدوات قياس الضوء, هناك أدوات قياس التحرك</span></span>
+		<span class="tooltip">It&#39;s a full spectrum of tools.<span class="tooltiptext">إنها سلسلة كاملة من الأدوات</span></span>
+		<span class="tooltip">Now, that mound right there<span class="tooltiptext">والآن, هذه الربوة هناك</span></span>
+		<span class="tooltip">actually looks like this.<span class="tooltiptext">تبدو في الحقيقة هكذا</span></span>
+		<span class="tooltip">This is what it actually looks like.<span class="tooltiptext">هذا ما تبدو عليه حقيقة</span></span>
+		<span class="tooltip">And this is the kind of activity<span class="tooltiptext">وهذا النوع من النشاطات</span></span>
+		<span class="tooltip">that we can see with high-definition video,<span class="tooltiptext">التي نستطيع مشاهدتها بفيديو شديد الوضوح</span></span>
+		<span class="tooltip">because the bandwidth of these cables<span class="tooltiptext">لأن السعة الموجية لهذه الكابلات</span></span>
+		<span class="tooltip">is so huge<span class="tooltiptext">هائلة</span></span>
+		<span class="tooltip">that we could have five to 10<span class="tooltiptext">لدرجة أننا نستطيع تشغيل من خمسة الى عشرة</span></span>
+		<span class="tooltip">stereo HD systems<span class="tooltiptext">أنظمة التصويرالستيريو (الصوتية) HD</span></span>
+		<span class="tooltip">running continuously<span class="tooltiptext">تعمل دائما</span></span>
+		<span class="tooltip">and, again, directed through robotic techniques from land.<span class="tooltiptext">وأيضا, تدارعبر تقنيات روبوتية من الأرض</span></span>
+		<span class="tooltip">Very, very powerful.<span class="tooltiptext">قوي جدا, جدا</span></span>
+		<span class="tooltip">And these are the things that we&#39;re funded to do today.<span class="tooltiptext">وهذه هي الأشياء التي تم تمويلنا لإنشائها اليوم</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So what can we actually do tomorrow?<span class="tooltiptext">إذاً ما الذي نستطيع عمله في الغد؟</span></span>
+		<span class="tooltip">We&#39;re about to ride the wave<span class="tooltiptext">نحن على وشك أن نركب موجة</span></span>
+		<span class="tooltip">of technological opportunity.<span class="tooltiptext">من الإمكانات التكنولوجية</span></span>
+		<span class="tooltip">There are emerging technologies throughout<span class="tooltiptext">هنك تكنولوجيا ناشئة من</span></span>
+		<span class="tooltip">the field around oceanography,<span class="tooltiptext">حول مجال علم المحيطات</span></span>
+		<span class="tooltip">which we will incorporate into oceanography,<span class="tooltiptext">سنشركها في علم المحيطات</span></span>
+		<span class="tooltip">and through that convergence,<span class="tooltiptext">ومن هذا التلاقي</span></span>
+		<span class="tooltip">we will transform oceanography into something even more magical.<span class="tooltiptext">سنحول علم المحيطات لشيء أكثر سحرا مما هو عليه</span></span>
+		<span class="tooltip">Robotics systems are just incredible these days,<span class="tooltiptext">الأنظمة الروبوتية أصبحت مذهلة هذه الأيام</span></span>
+		<span class="tooltip">absolutely incredible.<span class="tooltiptext">مذهلة تماما</span></span>
+		<span class="tooltip">And we will be bringing robotics of all sorts<span class="tooltiptext">ونحن نجلب الروبوتية بكل أنواعها</span></span>
+		<span class="tooltip">into the ocean.<span class="tooltiptext">إلى داخل المحيط</span></span>
+		<span class="tooltip">Nanotechnology: this is a small generator.<span class="tooltiptext">تكنولوجيا النانو(فائقة الصغر) : هذا مولد طاقة صغير</span></span>
+		<span class="tooltip">It&#39;s smaller than a postage stamp,<span class="tooltiptext">أصغر من طابع البريد</span></span>
+		<span class="tooltip">and it can generate power just by being<span class="tooltiptext">ويستطيع توليد الطاقة فقط من كونه</span></span>
+		<span class="tooltip">attached to your shirt as you move.<span class="tooltiptext">معلقا بقميصك بينما تتحرك</span></span>
+		<span class="tooltip">Just as you move, it generates power.<span class="tooltiptext">بمجرد تحركك, ينتج الطاقة</span></span>
+		<span class="tooltip">There are many kinds of things that can be used in the ocean, continuously.<span class="tooltiptext">هناك العديد من أنواع الأشياء التي يمكن إستخدامها في المحيط, دائما</span></span>
+		<span class="tooltip">Imaging: Many of you know a good deal more about this type of thing than I,<span class="tooltiptext">التصوير: الكثير منكم يعرفون عن هذا النوع من الأشياء أكثر مني</span></span>
+		<span class="tooltip">but stereo imaging at four times the definition<span class="tooltiptext">لكن التصوير الاستريو (الصوتي) أدق أكثر بأربعة مرات</span></span>
+		<span class="tooltip">that we have in HD<span class="tooltiptext">مما نحصل عليه ب الجودة الفائقة HD</span></span>
+		<span class="tooltip">will be routine within five years.<span class="tooltiptext">ستكون معتادة خلال خمس سنوات</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And this is the magic one.<span class="tooltiptext">وهذه هي السحرية</span></span>
+		<span class="tooltip">As a result of the human genome process,<span class="tooltiptext">كنتيجة لعملية الجينات البشرية</span></span>
+		<span class="tooltip">we are in a situation where<span class="tooltiptext">نحن في وضعية تمكننا من</span></span>
+		<span class="tooltip">events that take place in the ocean --<span class="tooltiptext">مراقبة الأحداث التي تحدث في المحيط</span></span>
+		<span class="tooltip">like an erupting volcano, or something of that sort --<span class="tooltiptext">كثورة بركان, أو شيء من هذا القبيل--</span></span>
+		<span class="tooltip">can actually be sampled.<span class="tooltiptext">يمكن حقا أن تعاين</span></span>
+		<span class="tooltip">We pump the fluid through one of these systems,<span class="tooltiptext">نضخ السائل عبر أحد هذه الأنظمة,</span></span>
+		<span class="tooltip">and we press the button,<span class="tooltiptext">ونضغط على الزر,</span></span>
+		<span class="tooltip">and it&#39;s analyzed for the genomic character.<span class="tooltiptext">ويتم تحليله لمعرفة صفاته الجينية</span></span>
+		<span class="tooltip">And that&#39;s transmitted back to land immediately.<span class="tooltiptext">وهذا ينقل للأرض مباشرة</span></span>
+		<span class="tooltip">So in the volume of the ocean,<span class="tooltiptext">حيث أنه في كتلة المحيط</span></span>
+		<span class="tooltip">we will know, not just the physics and the chemistry,<span class="tooltiptext">سنعرف, ليس فقط الفيزياء والكيمياء</span></span>
+		<span class="tooltip">but the base of the food chain<span class="tooltiptext">ولكن قاعدة السلسلة الغذائية</span></span>
+		<span class="tooltip">will be transparent to us<span class="tooltiptext">ستكون شفافة لنا</span></span>
+		<span class="tooltip">with data on a continuous basis.<span class="tooltiptext">بالبيانات بشكل مستمر</span></span>
+		<span class="tooltip">Grid computing: the power of grid computers<span class="tooltiptext">الحوسبة الشبكية: قدرة الحواسيب الشبكية</span></span>
+		<span class="tooltip">is going to be just amazing here.<span class="tooltiptext">ستكون أروع ما يكون هنا</span></span>
+		<span class="tooltip">We will soon be using grid computing<span class="tooltiptext">سنستخدم قريبا الحوسبة الشبكية</span></span>
+		<span class="tooltip">to do pretty much everything, like adjust the data<span class="tooltiptext">لعمل كل شيء تقريبا, كتعديل البيانات</span></span>
+		<span class="tooltip">and everything<span class="tooltiptext">وكل شيء</span></span>
+		<span class="tooltip">that goes with the data.<span class="tooltiptext">يأتي مع البيانات</span></span>
+		<span class="tooltip">The power generation will come from the ocean itself.<span class="tooltiptext">إنتاج الطاقة سيأتي من المحيط نفسه</span></span>
+		<span class="tooltip">And the next generation fiber<span class="tooltiptext">والجيل القادم من الألياف</span></span>
+		<span class="tooltip">will be simply magic.<span class="tooltiptext">سيكون ببساطة سحريا</span></span>
+		<span class="tooltip">It&#39;s far beyond what we currently have.<span class="tooltiptext">إنه أبعد بكثير مما نملك حاليا</span></span>
+		<span class="tooltip">So the presence of the power<span class="tooltiptext">فبوجود الطاقة</span></span>
+		<span class="tooltip">and the bandwidth in the environment<span class="tooltiptext">والسعة الموجية في البيئة</span></span>
+		<span class="tooltip">will allow all of these new technologies<span class="tooltiptext">ستسمح لكل هذه التكنولوجيا الجديدة</span></span>
+		<span class="tooltip">to converge in a manner that is just unprecedented.<span class="tooltiptext">لتلتقي بشكل لم يكن له مثيل قبلا</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So within five to seven years,<span class="tooltiptext">إذاً خلال خمسة إلى سبعة سنوات من الآن</span></span>
+		<span class="tooltip">I see us having<span class="tooltiptext">أرى أننا نملك</span></span>
+		<span class="tooltip">a capacity to be completely present<span class="tooltiptext">أهلية أن نكون حاضرين تماما</span></span>
+		<span class="tooltip">throughout the ocean<span class="tooltiptext">عبر المحيط</span></span>
+		<span class="tooltip">and have all of that connected to the Internet,<span class="tooltiptext">وبربط هذا كله بالإنترنت</span></span>
+		<span class="tooltip">so we can reach many, many folks.<span class="tooltiptext">بإمكاننا أن نتصل بالعديد والعديد من الأشخاص</span></span>
+		<span class="tooltip">Delivering the power and the bandwidth into the ocean<span class="tooltiptext">بتوصيل الطاقة والسعة الموجية إلى المحيط</span></span>
+		<span class="tooltip">will dramatically accelerate adaptation.<span class="tooltiptext">ستسرع التقبل بشكل هائل</span></span>
+		<span class="tooltip">Here&#39;s an example.<span class="tooltiptext">مثال لذلك</span></span>
+		<span class="tooltip">When earthquakes take place, massive amounts<span class="tooltiptext">عند حدوث هزة أرضية, كميات هائلة</span></span>
+		<span class="tooltip">of these new microbes we&#39;ve never seen before<span class="tooltiptext">من الميكروبات الجديدة التي لم نرها من قبل</span></span>
+		<span class="tooltip">come out of the sea floor.<span class="tooltiptext">تخرج من قاع البحر</span></span>
+		<span class="tooltip">We have a way of addressing that,<span class="tooltiptext">لدينا طريق لمواجهة ذلك</span></span>
+		<span class="tooltip">a new way of addressing that.<span class="tooltiptext">طريق جديدة لمواجهة ذلك</span></span>
+		<span class="tooltip">We&#39;ve determined from the earthquake activity that you&#39;re seeing here<span class="tooltiptext">حددنا من نشاط الهزة الأرضية التي ترونها هنا</span></span>
+		<span class="tooltip">that the top of that volcano is erupting,<span class="tooltiptext">أن قمة هذا البركان تثور</span></span>
+		<span class="tooltip">so we deploy the troops.<span class="tooltiptext">فننشر كشافتنا</span></span>
+		<span class="tooltip">What are the troops? The troops are the autonomous vehicles, of course.<span class="tooltiptext">ما هي الكشافة؟ الكشافة آلات مستقلة, طبعا</span></span>
+		<span class="tooltip">And they fly into the erupting volcano.<span class="tooltiptext">وهي تسرع إلى البركان الثائر</span></span>
+		<span class="tooltip">They sample the fluids coming out of the sea floor<span class="tooltiptext">تأخذ عينة من السوائل الخارجة من قاع البحر</span></span>
+		<span class="tooltip">during an eruption,<span class="tooltiptext">أثناء الثوران</span></span>
+		<span class="tooltip">which have the microbes that have never been<span class="tooltiptext">التي تحوي الميكروبات التي لم يحدث من قبل</span></span>
+		<span class="tooltip">to the surface of the planet before.<span class="tooltiptext">أن كانت على سطح الكوكب</span></span>
+		<span class="tooltip">They eject it to the surface where it floats,<span class="tooltiptext">تطلقها نحو السطح حيث تطفو</span></span>
+		<span class="tooltip">and it is picked up<span class="tooltiptext">وتلتقطها</span></span>
+		<span class="tooltip">by an autonomous airplane,<span class="tooltiptext">طائرات مستقلة</span></span>
+		<span class="tooltip">and it&#39;s brought back to the laboratory<span class="tooltiptext">وتجلبها عائدة إلى المختبر</span></span>
+		<span class="tooltip">within 24 hours of the eruption.<span class="tooltiptext">خلال 24 ساعة من حدوث الثوران</span></span>
+		<span class="tooltip">This is doable. All the pieces are there.<span class="tooltiptext">هذا يمكن عمله كل القطع موجودة هنا</span></span>
+	</p>
+	<p>
+		<span class="tooltip">A laboratory: many of you heard what happened<span class="tooltiptext">مختبر: الكثير منكم سمع بما حدث</span></span>
+		<span class="tooltip">on 9/7.<span class="tooltiptext">في 7/9</span></span>
+		<span class="tooltip">Some doctors in New York City removed<span class="tooltiptext">قام بعض الأطباء في نيويورك بإستئصال</span></span>
+		<span class="tooltip">the gallbladder of a woman in France.<span class="tooltiptext">المرارة لامرأة في فرنسا</span></span>
+		<span class="tooltip">We could do work on the sea floor that would be stunning,<span class="tooltiptext">نستطيع القيام بأعمال في قاع البحر ستكون صاعقة</span></span>
+		<span class="tooltip">and it would be on live TV,<span class="tooltiptext">وستكون على التلفاز مباشرة</span></span>
+		<span class="tooltip">if we have interesting things to show.<span class="tooltiptext">لو كان لنا أشياء مثيرة لعرضها</span></span>
+		<span class="tooltip">So we can bring an entirely new telepresence<span class="tooltiptext">سنأتي بجلسات حضور عن بعد جديدة كليا</span></span>
+		<span class="tooltip">to the world, throughout the ocean.<span class="tooltiptext">إلى العالم من المحيط</span></span>
+		<span class="tooltip">This -- I&#39;ve shown you sea floor --<span class="tooltiptext">هذا— أريتكم قاع البحر</span></span>
+		<span class="tooltip">but so the goal here is real time interaction<span class="tooltiptext">لكن الهدف هنا هو تفاعلات الزمن الحقيقي</span></span>
+		<span class="tooltip">with the oceans from anywhere on earth.<span class="tooltiptext">مع المحيطات في أي مكان في العالم</span></span>
+		<span class="tooltip">It&#39;s going to be amazing.<span class="tooltiptext">ستكون مثيرة</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And as I go here,<span class="tooltiptext">وبينما أمضي هنا,</span></span>
+		<span class="tooltip">I just want to show you what we can bring into classrooms,<span class="tooltiptext">أريد فقط أن نشاهد ما الذي يمكن جلبه للفصول الدراسية</span></span>
+		<span class="tooltip">and indeed, what we can bring into your pocket.<span class="tooltiptext">وبالتأكيد ما الذي يمكننا جلبه لجيبك</span></span>
+		<span class="tooltip">Many of you don&#39;t think of this yet,<span class="tooltiptext">الكثير منكم لا يفكر بهذا الآن</span></span>
+		<span class="tooltip">but the ocean will be in your pocket.<span class="tooltiptext">لكن المحيط سيكون في جيبكم</span></span>
+		<span class="tooltip">It won&#39;t be long. It won&#39;t be long.<span class="tooltiptext">لن يكون بعيدا. لن يكون بعيدا</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So let me leave you then<span class="tooltiptext">إذاً دعوني أترككم بعد ذلك</span></span>
+		<span class="tooltip">with a few words<span class="tooltiptext">مع بعض الكلمات</span></span>
+		<span class="tooltip">from another poet, if you&#39;ll forgive me.<span class="tooltiptext">من شاعر آخر, إن عذرتموني</span></span>
+		<span class="tooltip">In 1943,<span class="tooltiptext">في عام 1943</span></span>
+		<span class="tooltip">T.S. Eliot wrote the &quot;Four Quartets.&quot;<span class="tooltiptext">كتب تي. إس. إليوت ال &quot;رباعيات الأربع&quot;</span></span>
+		<span class="tooltip">He won the Nobel Prize for literature<span class="tooltiptext">وفاز بجائزة نوبل للآداب</span></span>
+		<span class="tooltip">in 1948.<span class="tooltiptext">في عام 1948</span></span>
+		<span class="tooltip">In &quot;Little Gidding&quot; he says --<span class="tooltiptext">في &quot;جيدينج الصغيرة&quot; يقول</span></span>
+		<span class="tooltip">speaking I think for the human race,<span class="tooltiptext">متحدثا فيما أعتقد للعرق البشري</span></span>
+		<span class="tooltip">but certainly for the TED Conference and Sylvia --<span class="tooltiptext">وبالتأكيد لمؤتمر تيد ولسيلفيا</span></span>
+		<span class="tooltip">&quot;We shall not cease from exploration,<span class="tooltiptext">&quot;يجب أن لا نتوقف عن الإستكشاف</span></span>
+		<span class="tooltip">and the end of all our exploring<span class="tooltiptext">وفي نهاية كل إستكشافنا</span></span>
+		<span class="tooltip">will be to arrive where we started<span class="tooltiptext">ستكون بالوصول لحيث بدأنا</span></span>
+		<span class="tooltip">and know the place for the first time,<span class="tooltiptext">ومعرفة المكان لأول مرة</span></span>
+		<span class="tooltip">arrive through the unknown remembered gate<span class="tooltiptext">الوصول عبر بوابة مجهولة متذكرة</span></span>
+		<span class="tooltip">where the last of earth left to discover<span class="tooltiptext">حيث نهاية العالم بقيت لتكتشف</span></span>
+		<span class="tooltip">is that which was the beginning.<span class="tooltiptext">هي التي كانت منها البداية</span></span>
+		<span class="tooltip">At the source of the longest river<span class="tooltiptext">في منبع النهر الأطول</span></span>
+		<span class="tooltip">the voice of a hidden waterfall<span class="tooltiptext">صوت شلال مخفي</span></span>
+		<span class="tooltip">not known because not looked for,<span class="tooltiptext">لم يعرف لأنه لم يبحث عنه</span></span>
+		<span class="tooltip">but heard, half heard<span class="tooltiptext">ولكن سمع, نصف إستماع</span></span>
+		<span class="tooltip">in the stillness beneath the waves of the sea.&quot;<span class="tooltiptext">في الجمود تحت أمواج البحر&quot;</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Thank you.<span class="tooltiptext">شكرا لكم</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Applause)<span class="tooltiptext">(تصفيق)</span></span>
+	</p>
+
+	<div class="line"></div>
+	<p>Enjoying my website? Your donation helps maintain its ad-free experience and smooth operation. Your support is truly appreciated and helps me continue providing quality content. Thank you for considering a donation!</p>
+	<p>To donate, simply click the PayPal link below:<p/>
+	<p><a href="https://www.paypal.com/paypalme/otechai" target='_blank'>Donate via PayPal</a></p>
+	
+</div>
+<span onclick='topFunction()' id='gotop' title='Go to top'><svg width="32" height="32" viewBox="0 0 100 100">
+	   <path fill="white" d="m50 0c-13.262 0-25.98 5.2695-35.355 14.645s-14.645 22.094-14.645 35.355 5.2695 25.98 14.645 35.355 22.094 14.645 35.355 14.645 25.98-5.2695 35.355-14.645 14.645-22.094 14.645-35.355-5.2695-25.98-14.645-35.355-22.094-14.645-35.355-14.645zm20.832 62.5-20.832-22.457-20.625 22.457c-1.207 0.74219-2.7656 0.57812-3.7891-0.39844-1.0273-0.98047-1.2695-2.5273-0.58594-3.7695l22.918-25c0.60156-0.61328 1.4297-0.96094 2.2891-0.96094 0.86328 0 1.6914 0.34766 2.293 0.96094l22.918 25c0.88672 1.2891 0.6875 3.0352-0.47266 4.0898-1.1562 1.0508-2.9141 1.0859-4.1133 0.078125z"></path>
+	 </svg></span>
+
+	    <div class="footer">
+	        <div class="left"><a href='../../../index.html'>ReadingDB</a></div>
+	        <div class="center"><a href="https://twitter.com/readingdb" class="twitter-link">
+	    <svg class="twitter-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	        <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.58-2.11-9.96-5.02-.42.72-.66 1.56-.66 2.46 0 1.68.85 3.16 2.14 4.02-.79-.02-1.53-.24-2.18-.6v.06c0 2.35 1.67 4.31 3.88 4.76-.4.1-.83.16-1.27.16-.31 0-.62-.03-.92-.08.63 1.96 2.45 3.39 4.61 3.43-1.69 1.32-3.83 2.1-6.15 2.1-.4 0-.8-.02-1.19-.07 2.19 1.4 4.78 2.22 7.57 2.22 9.07 0 14.02-7.52 14.02-14.02 0-.21 0-.41-.01-.61.96-.69 1.79-1.56 2.45-2.55-.88.39-1.83.65-2.82.77z"/>
+	    </svg>
+	</a></div>
+	        <div class="right"><a href='https://www.paypal.com/paypalme/otechai'>Donate</a></div>
+	    </div>
+	<script>
+
+		var mybutton = document.getElementById('gotop');
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+			if (document.documentElement.scrollTop > 20 || document.body.scrollTop > 20) {
+				mybutton.style.display = 'block';
+			} else {
+				mybutton.style.display = 'none';
+			}
+		}
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<script src="../../../static/scripts/script.js"></script>
+</body>
+</html>
+	

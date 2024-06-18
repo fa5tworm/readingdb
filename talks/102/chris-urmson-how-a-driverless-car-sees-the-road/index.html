@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+	<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<meta name="description" content="Unlock your Spanish reading skills: Immerse yourself in a contextual and practical learning enhanced by high-quality instant translations.">
+      	<meta name="keywords" content="Spanish reading, Spanish language learning, instant translations, reading adventure, improve Spanish, improve reading skills, educational platform, spanish reading resources, online education, Spanish proficiency, learn Spanish, Spanish learning resources, bilingual education, language exchange, study Spanish online">
+		<link rel="apple-touch-icon" sizes="180x180" href="../../../static/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../../../static/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../../../static/favicons/favicon-16x16.png">
+		<link rel="manifest" href="../../../static/favicons/site.webmanifest">
+		<title>Chris Urmson : How a driverless car sees the road</title>
+		<link rel='stylesheet' href='../../../static/styles/styles.css'>
+		<script defer data-domain="readingdb.org" src="https://plausible.io/js/script.js"></script>
+	</head>
+	<body>
+
+	<h1 class='title'>How a driverless car sees the road</h1>
+	<h2 class='speaker'>Chris Urmson</h2>
+	<div class='transcript books'>
+	<p>Are you ready to improve your Spanish speaking skills, check <a href='https://referral.lingoda.com/6Dztrv'>Lingoda</a> today!</p>
+		<p>
+		<span class="tooltip">So in 1885, Karl Benz
+invented the automobile.<span class="tooltiptext">في عام 1885 ، اخترع كارل بينز السيارة</span></span>
+		<span class="tooltip">Later that year, he took it out
+for the first public test drive,<span class="tooltiptext">لاحقا في تلك السنة ، أخذها لأول
+أختبار للقيادة أمام العامة ،</span></span>
+		<span class="tooltip">and -- true story --
+crashed into a wall.<span class="tooltiptext">و -- قصة حقيقة -- 
+أصطدم بحائط .</span></span>
+		<span class="tooltip">For the last 130 years,<span class="tooltiptext">على مدى 130 سنة مضت</span></span>
+		<span class="tooltip">we&#39;ve been working around that least
+reliable part of the car, the driver.<span class="tooltiptext">عملنا على ذلك الجانب الأقل 
+إعتمادية في السيارة ، السائق</span></span>
+		<span class="tooltip">We&#39;ve made the car stronger.<span class="tooltiptext">جعلنا السيارة أكثر قوة .</span></span>
+		<span class="tooltip">We&#39;ve added seat belts,
+we&#39;ve added air bags,<span class="tooltiptext">أضفنا للسيارة أحزمة أمان ، 
+أكياس هوائية ،</span></span>
+		<span class="tooltip">and in the last decade, we&#39;ve actually
+started trying to make the car smarter<span class="tooltiptext">و العقد الماضي ، في الحقيقة حاولنا
+أن نجعل السيارة أكثر ذكاء</span></span>
+		<span class="tooltip">to fix that bug, the driver.<span class="tooltiptext">لإصلاح ذلك الخلل وهو السائق .</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Now, today I&#39;m going to talk to you
+a little bit about the difference<span class="tooltiptext">اليوم سأحاول أن أتكلم لكم قليلاً عن الفرق</span></span>
+		<span class="tooltip">between patching around the problem
+with driver assistance systems<span class="tooltiptext">بين ترقيع المشكلة عن طريق 
+نظام القيادة المساعد</span></span>
+		<span class="tooltip">and actually having fully
+self-driving cars<span class="tooltiptext">و حقيقة الحصول على سيارات 
+لديها قدرة القيادة الألية</span></span>
+		<span class="tooltip">and what they can do for the world.<span class="tooltiptext">وماذا تستطيع أن تفعل للعالم .</span></span>
+		<span class="tooltip">I&#39;m also going to talk to you
+a little bit about our car<span class="tooltiptext">أيضا سأقوم بالتحدث قليلاً عن سياراتنا</span></span>
+		<span class="tooltip">and allow you to see how it sees the world
+and how it reacts and what it does,<span class="tooltiptext">ونريك كيف ترى العالم 
+وكيف تتفاعل معه وماذا تفعل ،</span></span>
+		<span class="tooltip">but first I&#39;m going to talk
+a little bit about the problem.<span class="tooltiptext">لكن في البداية 
+سأتحدث قليلاً عن المشكلة .</span></span>
+		<span class="tooltip">And it&#39;s a big problem:<span class="tooltiptext">وهي مشكلة كبيرة:</span></span>
+		<span class="tooltip">1.2 million people are killed
+on the world&#39;s roads every year.<span class="tooltiptext">1.2 مليون شخص يموت على طرق
+العالم كل سنة .</span></span>
+		<span class="tooltip">In America alone, 33,000 people
+are killed each year.<span class="tooltiptext">في أمريكا وحدها ، 33000
+شخص يموت كل سنة .</span></span>
+		<span class="tooltip">To put that in perspective,<span class="tooltiptext">لتقريب الصورة ،</span></span>
+		<span class="tooltip">that&#39;s the same as a 737
+falling out of the sky every working day.<span class="tooltiptext">هذا نفس طائرة 737 تسقط 
+من السماء كل يوم عمل .</span></span>
+		<span class="tooltip">It&#39;s kind of unbelievable.<span class="tooltiptext">في الحقيقة شيء لا يصدق .</span></span>
+		<span class="tooltip">Cars are sold to us like this,<span class="tooltiptext">السيارة تباع لنا هكذا ،</span></span>
+		<span class="tooltip">but really, this is what driving&#39;s like.<span class="tooltiptext">لكن في الحقيقة ، 
+هكذا تبدو القيادة .</span></span>
+		<span class="tooltip">Right? It&#39;s not sunny, it&#39;s rainy,<span class="tooltiptext">صحيح ؟ 
+الطقس غير مشمس ولكن ممطر .</span></span>
+		<span class="tooltip">and you want to do anything
+other than drive.<span class="tooltiptext">وتريد أن تفعل أي شيء عدا أن تقود .</span></span>
+		<span class="tooltip">And the reason why is this:<span class="tooltiptext">والسبب في هذا</span></span>
+		<span class="tooltip">Traffic is getting worse.<span class="tooltiptext">حركة السير أصبحت أسوء .</span></span>
+		<span class="tooltip">In America, between 1990 and 2010,<span class="tooltiptext">في أمريكا ، بين 
+1990 و 2010 ،</span></span>
+		<span class="tooltip">the vehicle miles traveled
+increased by 38 percent.<span class="tooltiptext">المسافة التي تقطعها المركبة 
+بالميل زادت بنسبة 38 في المئة .</span></span>
+		<span class="tooltip">We grew by six percent of roads,<span class="tooltiptext">حيث قمنا بزيادة الطرقات 
+بنسبة ستة في المئة،</span></span>
+		<span class="tooltip">so it&#39;s not in your brains.<span class="tooltiptext">لذا ليست فقط في خيالك .</span></span>
+		<span class="tooltip">Traffic really is substantially worse
+than it was not very long ago.<span class="tooltiptext">حركة السير حقاً أصبحت 
+أسوء عما كانت عليه من قبل</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And all of this has a very human cost.<span class="tooltiptext">وكل هذا له تكلفة بشرية .</span></span>
+		<span class="tooltip">So if you take the average commute time
+in America, which is about 50 minutes,<span class="tooltiptext">لذا لو أخذت متوسط وقت التنقل للعمل في 
+أمريكا ، وهو ما يعادل 50 دقيقة تقريبا ،</span></span>
+		<span class="tooltip">you multiply that by the 120 million
+workers we have,<span class="tooltiptext">تضرب هذا بما لدينا وهو 120 مليون عامل ،</span></span>
+		<span class="tooltip">that turns out to be
+about six billion minutes<span class="tooltiptext">سيصبح لدينا تقريبا 6 مليار دقيقة .</span></span>
+		<span class="tooltip">wasted in commuting every day.<span class="tooltiptext">ضائعة في التنقل كل يوم .</span></span>
+		<span class="tooltip">Now, that&#39;s a big number,
+so let&#39;s put it in perspective.<span class="tooltiptext">هذا رقم كبير ، لنضع هذا في عين الاعتبار .</span></span>
+		<span class="tooltip">You take that six billion minutes<span class="tooltiptext">نأخذ هذه 6 مليار دقيقة</span></span>
+		<span class="tooltip">and you divide it by the average
+life expectancy of a person,<span class="tooltiptext">ونقسمها على المعدل المتوقع لحياة شخص ،</span></span>
+		<span class="tooltip">that turns out to be 162 lifetimes<span class="tooltiptext">يصبح لدينا 162 حياة .</span></span>
+		<span class="tooltip">spent every day, wasted,<span class="tooltiptext">تنقضي كل يوم ، ضائعة ،</span></span>
+		<span class="tooltip">just getting from A to B.<span class="tooltiptext">فقط للإنتقال من نقطة أ إلى ب .</span></span>
+		<span class="tooltip">It&#39;s unbelievable.<span class="tooltiptext">شيء لا يصدق .</span></span>
+		<span class="tooltip">And then, there are those of us
+who don&#39;t have the privilege<span class="tooltiptext">وهناك أيضا ، من منا 
+والذين ليس لديهم القدرة</span></span>
+		<span class="tooltip">of sitting in traffic.<span class="tooltiptext">على الجلوس في حركة السير .</span></span>
+		<span class="tooltip">So this is Steve.<span class="tooltiptext">هذا ستيف .</span></span>
+		<span class="tooltip">He&#39;s an incredibly capable guy,<span class="tooltiptext">شاب قادر بشكل كبير ،</span></span>
+		<span class="tooltip">but he just happens to be blind,<span class="tooltiptext">لكنه أعمى ،</span></span>
+		<span class="tooltip">and that means instead of a 30-minute
+drive to work in the morning,<span class="tooltiptext">هذا يعني أنه عوضا عن 30 دقيقة 
+للإنتقال للعمل في الصباح،</span></span>
+		<span class="tooltip">it&#39;s a two-hour ordeal
+of piecing together bits of public transit<span class="tooltiptext">ستصبح محنة لمدة ساعتين للتنقل بين 
+عدة وسائل النقل العمومية</span></span>
+		<span class="tooltip">or asking friends and family for a ride.<span class="tooltiptext">أو يطلب من الأصدقاء و العائلة
+أن يوصليه لغايته</span></span>
+		<span class="tooltip">He doesn&#39;t have that same freedom
+that you and I have to get around.<span class="tooltiptext">هو ليس لديه الحرية 
+التي نملكها أنا وأنت للتنقل .</span></span>
+		<span class="tooltip">We should do something about that.<span class="tooltiptext">يجب أن نفعل شيء ما بخصوص ذلك .</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Now, conventional wisdom would say<span class="tooltiptext">الآن ، الحكمة التقلدية ستقول</span></span>
+		<span class="tooltip">that we&#39;ll just take
+these driver assistance systems<span class="tooltiptext">بأننا سنأخذ فقط أنظمة القيادة المساعدة.</span></span>
+		<span class="tooltip">and we&#39;ll kind of push them
+and incrementally improve them,<span class="tooltiptext">و نوعا ما نشجع عليها 
+ونزيد من كفاءتها،</span></span>
+		<span class="tooltip">and over time, they&#39;ll turn
+into self-driving cars.<span class="tooltiptext">ومع مرور الوقت ستتحول 
+إلى سيارات ذات قيادة آلية.</span></span>
+		<span class="tooltip">Well, I&#39;m here to tell you
+that&#39;s like me saying<span class="tooltiptext">حسنا ، أنا هنا لأخبركم
+مثلا عندما أقول</span></span>
+		<span class="tooltip">that if I work really hard at jumping,
+one day I&#39;ll be able to fly.<span class="tooltiptext">إذا عملت بإستمرار على القفز كل يوم
+سيأتي اليوم الذي يمكنني الطيران .</span></span>
+		<span class="tooltip">We actually need to do
+something a little different.<span class="tooltiptext">نحن في الحقيقة 
+يجب أن نعمل شيء مختلف.</span></span>
+		<span class="tooltip">And so I&#39;m going to talk to you
+about three different ways<span class="tooltiptext">لذا سأتحدث اليوم عن ثلاث طرق مختلفة</span></span>
+		<span class="tooltip">that self-driving systems are different
+than driver assistance systems.<span class="tooltiptext">تبين أن أنظمة القيادة الآلية تختلف 
+عن أنظمة القيادة المساعدة .</span></span>
+		<span class="tooltip">And I&#39;m going to start
+with some of our own experience.<span class="tooltiptext">وسأبدأ ببعض الأمور من واقع تجربتنا.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So back in 2013,<span class="tooltiptext">في عام 2013</span></span>
+		<span class="tooltip">we had the first test
+of a self-driving car<span class="tooltiptext">قمنا بأول اختبار للسيارة آلية القيادة</span></span>
+		<span class="tooltip">where we let regular people use it.<span class="tooltiptext">بحيث سمحنا لعامة الناس بتجربتها.</span></span>
+		<span class="tooltip">Well, almost regular --
+they were 100 Googlers,<span class="tooltiptext">كانوا تقريبا من عامة الناس--
+100 شخص من غوغل</span></span>
+		<span class="tooltip">but they weren&#39;t working on the project.<span class="tooltiptext">لكنهم لم يكونوا جزءا من المشروع.</span></span>
+		<span class="tooltip">And we gave them the car and we allowed
+them to use it in their daily lives.<span class="tooltiptext">و قمنا بإعطائهم السيارة وسمحنا لهم 
+بقيادتها في نشاطاتهم اليومية.</span></span>
+		<span class="tooltip">But unlike a real self-driving car,
+this one had a big asterisk with it:<span class="tooltiptext">لكن على عكس السيارة ذات القيادة الآلية،
+هذه عليها علامة كبيرة:</span></span>
+		<span class="tooltip">They had to pay attention,<span class="tooltiptext">كان يجب عليهم الإنتباه،</span></span>
+		<span class="tooltip">because this was an experimental vehicle.<span class="tooltiptext">لأن هذه كانت سيارة تجريبية.</span></span>
+		<span class="tooltip">We tested it a lot,
+but it could still fail.<span class="tooltiptext">اختبرنها كثيرا لكن 
+هناك نسبة للفشل.</span></span>
+		<span class="tooltip">And so we gave them two hours of training,<span class="tooltiptext">حينها قمنا بتدريبهم لمدة ساعتين،</span></span>
+		<span class="tooltip">we put them in the car,
+we let them use it,<span class="tooltiptext">وضعناهم في السيارة،
+وسمحنا لهم بإستخدامها،</span></span>
+		<span class="tooltip">and what we heard back
+was something awesome,<span class="tooltiptext">وما سمعنا لاحقا كان شيء عظيم،</span></span>
+		<span class="tooltip">as someone trying
+to bring a product into the world.<span class="tooltiptext">كشخص يحاول إحضار منتج للعالم.</span></span>
+		<span class="tooltip">Every one of them told us they loved it.<span class="tooltiptext">كل شخص منهم 
+أخبرنا أنه أحبها.</span></span>
+		<span class="tooltip">In fact, we had a Porsche driver
+who came in and told us on the first day,<span class="tooltiptext">في الحقيقة، أحضرنا سائق بورش
+والذي قال لنا في أول يوم،</span></span>
+		<span class="tooltip">&quot;This is completely stupid.
+What are we thinking?&quot;<span class="tooltiptext">&quot; هذه فكرة غبية تماما
+بماذا كنا نفكر؟ &quot;</span></span>
+		<span class="tooltip">But at the end of it, he said,
+&quot;Not only should I have it,<span class="tooltiptext">لكن في النهاية، قال،
+&quot; لست أنا فقط من يجب أن يمتلكها،</span></span>
+		<span class="tooltip">everyone else should have it,
+because people are terrible drivers.&quot;<span class="tooltiptext">ولكن كل الناس يجب أن يملكوها،والسبب
+هو أن الجميع سيئون في السياقة.&quot;</span></span>
+		<span class="tooltip">So this was music to our ears,<span class="tooltiptext">لذا كان كانسياب الموسيقى إلى آذاننا،</span></span>
+		<span class="tooltip">but then we started to look at what
+the people inside the car were doing,<span class="tooltiptext">ولكن عندما قمنا بمشاهدة ما 
+يفعله الناس داخل السيارة،</span></span>
+		<span class="tooltip">and this was eye-opening.<span class="tooltiptext">وهذا فتح أعيننا.</span></span>
+		<span class="tooltip">Now, my favorite story is this gentleman<span class="tooltiptext">وهذا يذكرني بقصتي المفضلة 
+عن رجل محترم</span></span>
+		<span class="tooltip">who looks down at his phone
+and realizes the battery is low,<span class="tooltiptext">الذي كان ينظر إلى جواله
+ولا حظ أن البطارية منخفضة ،</span></span>
+		<span class="tooltip">so he turns around like this in the car
+and digs around in his backpack,<span class="tooltiptext">لذا قرر الإلتفاف للخلف 
+وبدأ البحث في حقيبة الظهر،</span></span>
+		<span class="tooltip">pulls out his laptop,<span class="tooltiptext">سحب كمبيوتره المحمول،</span></span>
+		<span class="tooltip">puts it on the seat,<span class="tooltiptext">وضعه على المقعد،</span></span>
+		<span class="tooltip">goes in the back again,<span class="tooltiptext">ذهب للخلف مرة أخرى،</span></span>
+		<span class="tooltip">digs around, pulls out
+the charging cable for his phone,<span class="tooltiptext">يبحث، يسحب سلك الشاحن لجواله ،</span></span>
+		<span class="tooltip">futzes around, puts it into the laptop,
+puts it on the phone.<span class="tooltiptext">يضعه في الكمبيوتر المحمول، 
+يضعه على الجوال.</span></span>
+		<span class="tooltip">Sure enough, the phone is charging.<span class="tooltiptext">يتأكد أن الجوال بدأ بالشحن .</span></span>
+		<span class="tooltip">All the time he&#39;s been doing
+65 miles per hour down the freeway.<span class="tooltiptext">كل هذا الوقت كان يقود بسرعة 65 ميل
+في الساعة على الطريق السريع.</span></span>
+		<span class="tooltip">Right? Unbelievable.<span class="tooltiptext">بالفعل؟ 
+لا يصدق</span></span>
+		<span class="tooltip">So we thought about this and we said,
+it&#39;s kind of obvious, right?<span class="tooltiptext">لذا فكرنا بذلك وقلنا،
+أنه نوعا ما واضح، صحيح ؟</span></span>
+		<span class="tooltip">The better the technology gets,<span class="tooltiptext">كلما كانت التقنية أفضل،</span></span>
+		<span class="tooltip">the less reliable
+the driver is going to get.<span class="tooltiptext">كلما كان الإعتماد على السائق أقل.</span></span>
+		<span class="tooltip">So by just making the cars
+incrementally smarter,<span class="tooltiptext">لذا فقط بجعل السيارة أكثر ذكاء،</span></span>
+		<span class="tooltip">we&#39;re probably not going to see
+the wins we really need.<span class="tooltiptext">لن يمكننا أن نرى الفوز الذي نريده بالفعل.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Let me talk about something
+a little technical for a moment here.<span class="tooltiptext">أسمحو لي أن أتكلم قليل عن
+بعض الأمور التقنية لمدة وجيزة.</span></span>
+		<span class="tooltip">So we&#39;re looking at this graph,
+and along the bottom<span class="tooltiptext">عند مشاهد هذا الرسم البياني،
+ويبين الجزء السفلي</span></span>
+		<span class="tooltip">is how often does the car
+apply the brakes when it shouldn&#39;t.<span class="tooltiptext">كم من مرة تقوم السيارة بتفعيل 
+الفرامل رغم عدم الحاجة لها.</span></span>
+		<span class="tooltip">You can ignore most of that axis,<span class="tooltiptext">يمكنك أن تتجاهل كل تلك المحاور،</span></span>
+		<span class="tooltip">because if you&#39;re driving around town,
+and the car starts stopping randomly,<span class="tooltiptext">لأنه عندما تقوم بالقيادة حول المدينة،
+وتبدأ السيارة بالتوقف بشكل عشوائي،</span></span>
+		<span class="tooltip">you&#39;re never going to buy that car.<span class="tooltiptext">لن تقوم أبدا بشراء تلك السيارة.</span></span>
+		<span class="tooltip">And the vertical axis is how often
+the car is going to apply the brakes<span class="tooltiptext">والمحول العمودي يرمز لعدد المرات 
+التي ستقوم فيها السيارة بتفعيل الفرامل</span></span>
+		<span class="tooltip">when it&#39;s supposed to
+to help you avoid an accident.<span class="tooltiptext">عتد الحاجة لها 
+لتتفادى التعرض لحادث.</span></span>
+		<span class="tooltip">Now, if we look at
+the bottom left corner here,<span class="tooltiptext">الآن ، اذا نظرنا للزاوية السفلى
+اليسرى هنا،</span></span>
+		<span class="tooltip">this is your classic car.<span class="tooltiptext">ترمز لسيارتك التقليدية.</span></span>
+		<span class="tooltip">It doesn&#39;t apply the brakes for you,
+it doesn&#39;t do anything goofy,<span class="tooltiptext">لا تقوم بتفعيل الفرامل بدون تدخلك،
+لا تقوم نهائيا بعمل شيء غبي،</span></span>
+		<span class="tooltip">but it also doesn&#39;t get you
+out of an accident.<span class="tooltiptext">لكن أيضا لا تقوم 
+بحمايتك من الحوادث.</span></span>
+		<span class="tooltip">Now, if we want to bring
+a driver assistance system into a car,<span class="tooltiptext">الآن، لو قمنا بإحضار 
+نظام القيادة المساعد،</span></span>
+		<span class="tooltip">say with collision mitigation braking,<span class="tooltiptext">ولنقل مع تخفيف كابح الفرامل،</span></span>
+		<span class="tooltip">we&#39;re going to put some package
+of technology on there,<span class="tooltiptext">سنقوم بوضع بعض الأمور 
+التقنية فيها،</span></span>
+		<span class="tooltip">and that&#39;s this curve, and it&#39;s going
+to have some operating properties,<span class="tooltiptext">وهذا هو المنحنى، وسوف يحتوي
+على بعض الخاصيات التشغيلية،</span></span>
+		<span class="tooltip">but it&#39;s never going to avoid
+all of the accidents,<span class="tooltiptext">لكن لن يقوم بتفادي كل الحوادث،</span></span>
+		<span class="tooltip">because it doesn&#39;t have that capability.<span class="tooltiptext">لأنه لا يملك تلك القدرة.</span></span>
+		<span class="tooltip">But we&#39;ll pick some place
+along the curve here,<span class="tooltiptext">ولكننا سنقوم بتحديد بعض 
+النقاط على المنحنى،</span></span>
+		<span class="tooltip">and maybe it avoids half of accidents
+that the human driver misses,<span class="tooltiptext">ومن الممكن أن يتفادى نصف الحوادث 
+والتي يتغافل عنها السائق،</span></span>
+		<span class="tooltip">and that&#39;s amazing, right?<span class="tooltiptext">وهذا يعتبر أمر رائع، صحيح؟</span></span>
+		<span class="tooltip">We just reduced accidents on our roads
+by a factor of two.<span class="tooltiptext">بحيث قللنا الحوادث على الطرق 
+بمعامل اثنين ( نصف ).</span></span>
+		<span class="tooltip">There are now 17,000 less people
+dying every year in America.<span class="tooltiptext">الآن، ينخض معدل الوفيات سنويا في أمريكا
+بما يعادل 17000 شخصا</span></span>
+	</p>
+	<p>
+		<span class="tooltip">But if we want a self-driving car,<span class="tooltiptext">لكن إذا أردنا السيارة ذات القيادة الآلية،</span></span>
+		<span class="tooltip">we need a technology curve
+that looks like this.<span class="tooltiptext">سوف نحتاح لمنحنى تقني يشبه ذلك.</span></span>
+		<span class="tooltip">We&#39;re going to have to put
+more sensors in the vehicle,<span class="tooltiptext">سنحتاج لوض عددا أكبر من
+أجهزة الاستشعار على المركبة.</span></span>
+		<span class="tooltip">and we&#39;ll pick some
+operating point up here<span class="tooltiptext">وسنقوم باختيار بعض نقاط
+التشغيل هنا</span></span>
+		<span class="tooltip">where it basically never
+gets into a crash.<span class="tooltiptext">بحيث لن تتعرض السيارة لحادث
+تقريبا .</span></span>
+		<span class="tooltip">They&#39;ll happen, but very low frequency.<span class="tooltiptext">سيحدث، لكن بمعدل منخفض جدا .</span></span>
+		<span class="tooltip">Now you and I could look at this
+and we could argue<span class="tooltiptext">الآن أنا وأنت يمكن أن ننظر 
+لهذا ومن ثم نبدأ في جدال</span></span>
+		<span class="tooltip">about whether it&#39;s incremental, and
+I could say something like &quot;80-20 rule,&quot;<span class="tooltiptext">هل هو في تدرج ، ويمكن أن أقول 
+شيء مثل &quot;قاعدة 20-80&quot;</span></span>
+		<span class="tooltip">and it&#39;s really hard to move up
+to that new curve.<span class="tooltiptext">وفي الحقيقة من الصعب جدا 
+الوصول لذلك المستوى.</span></span>
+		<span class="tooltip">But let&#39;s look at it
+from a different direction for a moment.<span class="tooltiptext">لكن لننظر لها من زاوية مختلفة.</span></span>
+		<span class="tooltip">So let&#39;s look at how often
+the technology has to do the right thing.<span class="tooltiptext">لننظر كم في العادة يمكن أن 
+تقوم التقنية صحيحة بالفعل.</span></span>
+		<span class="tooltip">And so this green dot up here
+is a driver assistance system.<span class="tooltiptext">لذا النقطة الخضراء في الأعلى هنا 
+هي نظام القيادة المساعد.</span></span>
+		<span class="tooltip">It turns out that human drivers<span class="tooltiptext">يتضح بأن السائقين البشر</span></span>
+		<span class="tooltip">make mistakes that lead
+to traffic accidents<span class="tooltiptext">يرتكبون أخطاء تؤدي لوقوع حوادث المرور</span></span>
+		<span class="tooltip">about once every 100,000 miles in America.<span class="tooltiptext">تقريبا مرة كل 100000 ميل في أمريكا .</span></span>
+		<span class="tooltip">In contrast, a self-driving system
+is probably making decisions<span class="tooltiptext">على عكس انظمة القيادة الألية 
+والتي من المحتمل أن تتخذ قرارات</span></span>
+		<span class="tooltip">about 10 times per second,<span class="tooltiptext">تقريبا 10 مرات في الثانية،</span></span>
+		<span class="tooltip">so order of magnitude,<span class="tooltiptext">والذي يبلغ</span></span>
+		<span class="tooltip">that&#39;s about 1,000 times per mile.<span class="tooltiptext">تقريبا 1000 مرة كل ميل.</span></span>
+		<span class="tooltip">So if you compare the distance
+between these two,<span class="tooltiptext">لذا اذا قارنت المسافة بين الإثنين،</span></span>
+		<span class="tooltip">it&#39;s about 10 to the eighth, right?<span class="tooltiptext">تصل تقريبا إلى 10 أس ثمانية ، صحيح ؟</span></span>
+		<span class="tooltip">Eight orders of magnitude.<span class="tooltiptext">بمقدار ثمانية .</span></span>
+		<span class="tooltip">That&#39;s like comparing how fast I run<span class="tooltiptext">انها مثل مقارنة كم سرعتي</span></span>
+		<span class="tooltip">to the speed of light.<span class="tooltiptext">بالنسبة لسرعة الضوء.</span></span>
+		<span class="tooltip">It doesn&#39;t matter how hard I train,
+I&#39;m never actually going to get there.<span class="tooltiptext">لا يهم كم من الوقت أتمرن،
+لن يمكنني أن أصل لذلك المستوى.</span></span>
+		<span class="tooltip">So there&#39;s a pretty big gap there.<span class="tooltiptext">لذا يوجد فجوة كبيرة هنا.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">And then finally, there&#39;s how
+the system can handle uncertainty.<span class="tooltiptext">وفي النهاية ، هناك كيف يمكن 
+للنظام التعامل مع المجهول.</span></span>
+		<span class="tooltip">So this pedestrian here might be
+stepping into the road, might not be.<span class="tooltiptext">مثل هذا المترجل هنا، يمكن أن يعبر 
+الطريق، ويمكن أن لا يعبره.</span></span>
+		<span class="tooltip">I can&#39;t tell,
+nor can any of our algorithms,<span class="tooltiptext">لا يمكن أن أعرف، ولا حتى 
+أي من خوارزمياتنا يمكن أن تعرف،</span></span>
+		<span class="tooltip">but in the case of
+a driver assistance system,<span class="tooltiptext">لكن في هذه الحالة 
+في نظام القيادة المساعدة،</span></span>
+		<span class="tooltip">that means it can&#39;t take action,
+because again,<span class="tooltiptext">هذا يعني لا يمكن أن تقوم 
+بفعل شيء ، لأن مرة أخرى ،</span></span>
+		<span class="tooltip">if it presses the brakes unexpectedly,
+that&#39;s completely unacceptable.<span class="tooltiptext">اذا قامت بضغط الفرامل بشكل 
+مفاجئ، هذا لا يمكن تقبّله.</span></span>
+		<span class="tooltip">Whereas a self-driving system
+can look at that pedestrian and say,<span class="tooltiptext">بحيث نظام القيادة الآلية يمكن 
+أن ينظر لهذا المترجّل ويقول،</span></span>
+		<span class="tooltip">I don&#39;t know what they&#39;re about to do,<span class="tooltiptext">لا أعرف ماذا سيفعل،</span></span>
+		<span class="tooltip">slow down, take a better look,
+and then react appropriately after that.<span class="tooltiptext">خفّف من السرعة، ألقي نظرة أفضل ،
+ثم تصرف بشكل مناسب بعد ذلك.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So it can be much safer than
+a driver assistance system can ever be.<span class="tooltiptext">لذا يمكن أن يكون نظام القيادة المساعدة
+أكثر أمانا من أي وقت مضى.</span></span>
+		<span class="tooltip">So that&#39;s enough about
+the differences between the two.<span class="tooltiptext">هذا يكفي لتوضيح الفروق بين الإثنين.</span></span>
+		<span class="tooltip">Let&#39;s spend some time talking about
+how the car sees the world.<span class="tooltiptext">لنتكلم قليلا عن كيف تنظر السيارة للعالم .</span></span>
+	</p>
+	<p>
+		<span class="tooltip">So this is our vehicle.<span class="tooltiptext">هذه مركبتنا.</span></span>
+		<span class="tooltip">It starts by understanding
+where it is in the world,<span class="tooltiptext">تبدأ أولا بتحديد مكانها في العالم،</span></span>
+		<span class="tooltip">by taking a map and its sensor data
+and aligning the two,<span class="tooltiptext">بأخذ المعلومات من الحساس 
+والخريطة و وصل الأثنين معا،</span></span>
+		<span class="tooltip">and then we layer on top of that
+what it sees in the moment.<span class="tooltiptext">ونضيف على ذلك
+ما تراه في تلك اللحظة .</span></span>
+		<span class="tooltip">So here, all the purple boxes you can see
+are other vehicles on the road,<span class="tooltiptext">هنا ، كل الصناديق البنفسجية التي تراها
+هي عبارة عن السيارات الأخرى في الطريق</span></span>
+		<span class="tooltip">and the red thing on the side
+over there is a cyclist,<span class="tooltiptext">والشيء الأحمر على الجنب 
+هناك راكب للدراجة الهوائية ،</span></span>
+		<span class="tooltip">and up in the distance,
+if you look really closely,<span class="tooltiptext">وعلى بعد مسافة 
+إذا أمعنت النظر ،</span></span>
+		<span class="tooltip">you can see some cones.<span class="tooltiptext">يمكنك أن ترى بعض المخاريط .</span></span>
+		<span class="tooltip">Then we know where the car
+is in the moment,<span class="tooltiptext">حينها نعلم أين مكان السيارة 
+في هذه اللحظة ،</span></span>
+		<span class="tooltip">but we have to do better than that:
+we have to predict what&#39;s going to happen.<span class="tooltiptext">لكن يجب أن نفعل أفضل من ذلك:
+يجب أن نتبأ بما قد يحدث.</span></span>
+		<span class="tooltip">So here the pickup truck in top right
+is about to make a left lane change<span class="tooltiptext">في الأعلى على اليمين يمكن أن ترى 
+شاحنة نقل ستذهب إلى اليسار</span></span>
+		<span class="tooltip">because the road in front of it is closed,<span class="tooltiptext">والسبب أن الطريق أمامها مغلق،</span></span>
+		<span class="tooltip">so it needs to get out of the way.<span class="tooltiptext">لذا يجب أن تخرج عن الطريق.</span></span>
+		<span class="tooltip">Knowing that one pickup truck is great,<span class="tooltiptext">معرفة أن هذه شاحنة نقل، رائع،</span></span>
+		<span class="tooltip">but we really need to know
+what everybody&#39;s thinking,<span class="tooltiptext">لكن ما يجب حقا أن نعرفه هو 
+ما يفكر به كل شخص،</span></span>
+		<span class="tooltip">so it becomes quite a complicated problem.<span class="tooltiptext">لذا أصبحت مشكلة معقدة.</span></span>
+		<span class="tooltip">And then given that, we can figure out
+how the car should respond in the moment,<span class="tooltiptext">ومع هذه المعطيات، يمكن أن نعرف 
+كيف يمكن للسيارة أن تتفاعل في هذه اللحظة</span></span>
+		<span class="tooltip">so what trajectory it should follow, how
+quickly it should slow down or speed up.<span class="tooltiptext">ماهو المسار الذي يجب أن تتبعه، كم 
+تحتاجه لتهدئة السرعة أو زيادتها.</span></span>
+		<span class="tooltip">And then that all turns into
+just following a path:<span class="tooltiptext">ومن ثم يتحول فقط لإتباع المسار :</span></span>
+		<span class="tooltip">turning the steering wheel left or right,
+pressing the brake or gas.<span class="tooltiptext">لف المقود يسار أو يمين،
+ضغط الفرامل أو ضخّ البنزين.</span></span>
+		<span class="tooltip">It&#39;s really just two numbers
+at the end of the day.<span class="tooltiptext">هي في نهاية المطاف عبارة عن رقمين فقط.</span></span>
+		<span class="tooltip">So how hard can it really be?<span class="tooltiptext">كم يمكن أن تكون صعوبة هذا؟</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Back when we started in 2009,<span class="tooltiptext">سابقا عندما بدأنا في 2009،</span></span>
+		<span class="tooltip">this is what our system looked like.<span class="tooltiptext">هكذا كان يبدو نظامنا.</span></span>
+		<span class="tooltip">So you can see our car in the middle
+and the other boxes on the road,<span class="tooltiptext">يمكنك أن تشاهد سيارتنا في الوسط
+وتوجد صناديق آخرى على الطريق،</span></span>
+		<span class="tooltip">driving down the highway.<span class="tooltiptext">تقود على الطريق السريع.</span></span>
+		<span class="tooltip">The car needs to understand where it is
+and roughly where the other vehicles are.<span class="tooltiptext">السيارة تحتاج أن تفهم مكانها
+و مكان السيارات الأخرى.</span></span>
+		<span class="tooltip">It&#39;s really a geometric
+understanding of the world.<span class="tooltiptext">انها حقا فهم لهندسية العالم.</span></span>
+		<span class="tooltip">Once we started driving
+on neighborhood and city streets,<span class="tooltiptext">عندما بدأنا القيادة في الحي
+و شوراع المدينة،</span></span>
+		<span class="tooltip">the problem becomes a whole
+new level of difficulty.<span class="tooltiptext">المشكلة أصبحت في وجود
+مستوى مختلف تماما.</span></span>
+		<span class="tooltip">You see pedestrians crossing in front
+of us, cars crossing in front of us,<span class="tooltiptext">يمكنك أن تشاهد المشاة يعبرون من أمامنا،
+وكذلك السيارات تعبر من أمامنا</span></span>
+		<span class="tooltip">going every which way,<span class="tooltiptext">تذهب في عدة اتجاهات،</span></span>
+		<span class="tooltip">the traffic lights, crosswalks.<span class="tooltiptext">اشارات المرور، التقاطعات.</span></span>
+		<span class="tooltip">It&#39;s an incredibly complicated
+problem by comparison.<span class="tooltiptext">انها حقا مشكلة معقدة بشكل 
+لا يصدق عند المقارنة.</span></span>
+		<span class="tooltip">And then once you have
+that problem solved,<span class="tooltiptext">وفقط عندما تقوم بإيجاد 
+حل للمشكلة،</span></span>
+		<span class="tooltip">the vehicle has to be able
+to deal with construction.<span class="tooltiptext">المركبة يجب عليها أن تتعامل
+مع المنشاءات،</span></span>
+		<span class="tooltip">So here are the cones on the left
+forcing it to drive to the right,<span class="tooltiptext">هنا المخاريط على اليسار 
+تجبرها على القيادة لليمين</span></span>
+		<span class="tooltip">but not just construction
+in isolation, of course.<span class="tooltiptext">لكن ليس فقط منشاءات
+في العزلة، بطبيعة الحال.</span></span>
+		<span class="tooltip">It has to deal with other people moving
+through that construction zone as well.<span class="tooltiptext">يجب أن تتعامل مع الناس الذين 
+يمشون داخل منطقة المنشاءات.</span></span>
+		<span class="tooltip">And of course, if anyone&#39;s
+breaking the rules, the police are there<span class="tooltiptext">وطبعا ، اذا قام أي أحد بمخالفة 
+النظام، ستكون الشرطة هناك</span></span>
+		<span class="tooltip">and the car has to understand that
+that flashing light on the top of the car<span class="tooltiptext">والسيارة يجب أن تتعرف على الضوء 
+المشع الموجود أعلى السيارة</span></span>
+		<span class="tooltip">means that it&#39;s not just a car,
+it&#39;s actually a police officer.<span class="tooltiptext">والذي يعني أنها ليست 
+سيارة فقط ولكن سيارة شرطة.</span></span>
+		<span class="tooltip">Similarly, the orange box
+on the side here,<span class="tooltiptext">نفس الشيء ، المربع البرتقالي 
+على الجنب هنا ،</span></span>
+		<span class="tooltip">it&#39;s a school bus,<span class="tooltiptext">هو عبارة عن باص مدرسة،</span></span>
+		<span class="tooltip">and we have to treat that
+differently as well.<span class="tooltiptext">ويجب أن نتعامل مع هذا بشكل مختلف أيضا</span></span>
+	</p>
+	<p>
+		<span class="tooltip">When we&#39;re out on the road,
+other people have expectations:<span class="tooltiptext">بينما نحن على الطريق 
+الأشخاص الأخرين لديهم توقعات:</span></span>
+		<span class="tooltip">So, when a cyclist puts up their arm,<span class="tooltiptext">بحيث لو قام راكب دراجة برفع ذراعه،</span></span>
+		<span class="tooltip">it means they&#39;re expecting the car
+to yield to them and make room for them<span class="tooltiptext">هذا يعنى بأنهم يتوقعون من 
+السيارة فسح المجال لهم</span></span>
+		<span class="tooltip">to make a lane change.<span class="tooltiptext">لتغير مسارهم.</span></span>
+		<span class="tooltip">And when a police officer
+stood in the road,<span class="tooltiptext">وعندما يقف شرطي المرور في الطريق،</span></span>
+		<span class="tooltip">our vehicle should understand
+that this means stop,<span class="tooltiptext">يتوجب على مركبتنا أن تفهم
+أن هذا يعني توقف،</span></span>
+		<span class="tooltip">and when they signal to go,
+we should continue.<span class="tooltiptext">وعندما يشير لنا بالتحرك، 
+يجب أن تتابع السير.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Now, the way we accomplish this
+is by sharing data between the vehicles.<span class="tooltiptext">الآن ، لتحقيق ذلك يجب أن 
+تتشارك المركبات البيانات فيما بينها.</span></span>
+		<span class="tooltip">The first, most crude model of this<span class="tooltiptext">الأول، يعتبر أكثر النماذج صعوبة</span></span>
+		<span class="tooltip">is when one vehicle
+sees a construction zone,<span class="tooltiptext">هو عندما ترى مركبة 
+منطقة إنشاءات،</span></span>
+		<span class="tooltip">having another know about it
+so it can be in the correct lane<span class="tooltiptext">تسعى لإعلام اخرى 
+لتكون على الطريق الصحيح</span></span>
+		<span class="tooltip">to avoid some of the difficulty.<span class="tooltiptext">لتجنب حصول بعض الصعوبات.</span></span>
+		<span class="tooltip">But we actually have a much
+deeper understanding of this.<span class="tooltiptext">لكن في الحقيقة لدينا فهم 
+عميق لهذا</span></span>
+		<span class="tooltip">We could take all of the data
+that the cars have seen over time,<span class="tooltiptext">يمكن أن نأخذ كل البيانات التي
+احتفظت بها السيارات مع مرور الوقت،</span></span>
+		<span class="tooltip">the hundreds of thousands
+of pedestrians, cyclists,<span class="tooltiptext">مئات الألاف من المترجلين، والراكاب
+والدراجات ،</span></span>
+		<span class="tooltip">and vehicles that have been out there<span class="tooltiptext">والمركبات التي كانت هناك،</span></span>
+		<span class="tooltip">and understand what they look like<span class="tooltiptext">وفهم كيف تبدو عليه</span></span>
+		<span class="tooltip">and use that to infer
+what other vehicles should look like<span class="tooltiptext">واستخدام هذا لتحديد
+ما يجب أن تكون عليه</span></span>
+		<span class="tooltip">and other pedestrians should look like.<span class="tooltiptext">وكيف يبدو عليه المشاة الأخرين.</span></span>
+		<span class="tooltip">And then, even more importantly,
+we could take from that a model<span class="tooltiptext">والأهم من ذلك ، يمكن أن نستخلص 
+من هذا النموذج</span></span>
+		<span class="tooltip">of how we expect them
+to move through the world.<span class="tooltiptext">كيف نتوقع منهم التنقل حول العالم.</span></span>
+		<span class="tooltip">So here the yellow box is a pedestrian
+crossing in front of us.<span class="tooltiptext">هنا الصناديق الصفراء تمثل المشاة 
+الذين يعبرون من أمامنا.</span></span>
+		<span class="tooltip">Here the blue box is a cyclist
+and we anticipate<span class="tooltiptext">يمثل الصندوق الأزرق
+سائق الدراجة ونحن نتبأ</span></span>
+		<span class="tooltip">that they&#39;re going to nudge out
+and around the car to the right.<span class="tooltiptext">بأنه سيوصل طريقه للأمام 
+ويمر بجانب السيارة على اليمين .</span></span>
+		<span class="tooltip">Here there&#39;s a cyclist
+coming down the road<span class="tooltiptext">وهنا الدراج يقوم بالنزول للطريق</span></span>
+		<span class="tooltip">and we know they&#39;re going to continue
+to drive down the shape of the road.<span class="tooltiptext">و نحن نعلم اذا كان سيكمل 
+القيادة على امتداد الطريق .</span></span>
+		<span class="tooltip">Here somebody makes a right turn,<span class="tooltiptext">هنا شخص يقوم بالإلتفاف لليمين،</span></span>
+		<span class="tooltip">and in a moment here, somebody&#39;s
+going to make a U-turn in front of us,<span class="tooltiptext">وفي لحظة هنا، شخص ما 
+سوف يقوم بالدوران أمامنا،</span></span>
+		<span class="tooltip">and we can anticipate that behavior
+and respond safely.<span class="tooltiptext">ويمكننا أن نتنبأ بذلك التصرف 
+ونتجاوب بطريقة آمنة.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Now, that&#39;s all well and good
+for things that we&#39;ve seen,<span class="tooltiptext">الآن، تعتبرالأشياء 
+التي شاهدناها جيد ونافعة،</span></span>
+		<span class="tooltip">but of course, you encounter
+lots of things that you haven&#39;t<span class="tooltiptext">لكن، توجد العديد من الأشياء 
+والتي لم تكن قد</span></span>
+		<span class="tooltip">seen in the world before.<span class="tooltiptext">رأيناها من قبل في العالم.</span></span>
+		<span class="tooltip">And so just a couple of months ago,<span class="tooltiptext">لذا ومنذ عدة أشهر،</span></span>
+		<span class="tooltip">our vehicles were driving
+through Mountain View,<span class="tooltiptext">كانت مركبتنا تقود وسط 
+منطقة جبلية،</span></span>
+		<span class="tooltip">and this is what we encountered.<span class="tooltiptext">وهذا ما واجهناه.</span></span>
+		<span class="tooltip">This is a woman in an electric wheelchair<span class="tooltiptext">هذه إمرأة في كرسي كهربائي متحرك</span></span>
+		<span class="tooltip">chasing a duck in circles on the road.
+(Laughter)<span class="tooltiptext">تطارد بطة في دوائر على الطريق.
+( ضحك )</span></span>
+		<span class="tooltip">Now it turns out, there is nowhere
+in the DMV handbook<span class="tooltiptext">يتضح هنا، بأنه لا يوجد 
+في كتيب المركبات</span></span>
+		<span class="tooltip">that tells you how to deal with that,<span class="tooltiptext">ما يخبرك كيف تتعامل في هذه الحالة،</span></span>
+		<span class="tooltip">but our vehicles were able
+to encounter that,<span class="tooltiptext">لكن مركبتنا استطاعت 
+أن تواجه هذه الحالة،</span></span>
+		<span class="tooltip">slow down, and drive safely.<span class="tooltiptext">بتهدئة السرعة، والقيادة بسلامة.</span></span>
+		<span class="tooltip">Now, we don&#39;t have to deal
+with just ducks.<span class="tooltiptext">ليس علينا فقط أن نتعامل 
+مع البط.</span></span>
+		<span class="tooltip">Watch this bird fly across in front of us.
+The car reacts to that.<span class="tooltiptext">شاهد هذا الطير الذي يطير أمامنا.
+السيارة تتفاعل مع ذلك.</span></span>
+		<span class="tooltip">Here we&#39;re dealing with a cyclist<span class="tooltiptext">هنا نتعامل مع سائق دراجة</span></span>
+		<span class="tooltip">that you would never expect to see
+anywhere other than Mountain View.<span class="tooltiptext">والذين لن تتوقع أن تراه في منظر الجبل.</span></span>
+		<span class="tooltip">And of course, we have
+to deal with drivers,<span class="tooltiptext">وطبعا ، يجب أن نتعامل مع السائقين،</span></span>
+		<span class="tooltip">even the very small ones.<span class="tooltiptext">حتى صغار الحجم منهم.</span></span>
+		<span class="tooltip">Watch to the right as someone
+jumps out of this truck at us.<span class="tooltiptext">شاهد على اليمين شخص 
+قفزأمامنا من الشاحنة</span></span>
+		<span class="tooltip">And now, watch the left as the car
+with the green box decides<span class="tooltiptext">والآن، شاهد على اليسار
+الصندوق الأخضر الذي قرر</span></span>
+		<span class="tooltip">he needs to make a right turn
+at the last possible moment.<span class="tooltiptext">أنه بحاجة لأن يلتف لليمين في أخر لحظة.</span></span>
+		<span class="tooltip">Here, as we make a lane change,
+the car to our left decides<span class="tooltiptext">هنا، عند قيامنا بانعطاف بسيط، 
+تقررالسيارة على يسارنا</span></span>
+		<span class="tooltip">it wants to as well.<span class="tooltiptext">أنها تريد القيام بنفس الشيء .</span></span>
+		<span class="tooltip">And here, we watch a car
+blow through a red light<span class="tooltiptext">وهنا، سيارة تمر عند الإشارة الحمراء</span></span>
+		<span class="tooltip">and yield to it.<span class="tooltiptext">وتخضع لذلك .</span></span>
+		<span class="tooltip">And similarly, here, a cyclist
+blowing through that light as well.<span class="tooltiptext">وأمر مشابه، هنا، دراج
+يقطع الإشارة أيضا.</span></span>
+		<span class="tooltip">And of course,
+the vehicle responds safely.<span class="tooltiptext">وطبعا ، السيارة تستجيب 
+مع الموقف بشكل سليم .</span></span>
+		<span class="tooltip">And of course, we have people
+who do I don&#39;t know what<span class="tooltiptext">وهناك طبعا، الأشخاص والذين 
+لا أعلم بما أصفهم.</span></span>
+		<span class="tooltip">sometimes on the road, like this guy
+pulling out between two self-driving cars.<span class="tooltiptext">في بعض الأحيان على الطريق، مثل هذا الشخص
+يمر بين سيارتين ذات قيادة آلية .</span></span>
+		<span class="tooltip">You have to ask, &quot;What are you thinking?&quot;<span class="tooltiptext">لا بد أن تسأل &quot; بماذا تفكر؟ &quot;</span></span>
+		<span class="tooltip">(Laughter)<span class="tooltiptext">( ضحك )</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Now, I just fire-hosed you
+with a lot of stuff there,<span class="tooltiptext">حتى الآن، قمت بإعطائكم العديد
+من الآمور الموجودة هناك،</span></span>
+		<span class="tooltip">so I&#39;m going to break one of these
+down pretty quickly.<span class="tooltiptext">لذا سأقوم بتحليل واحد 
+من هذه بشكل سريع.</span></span>
+		<span class="tooltip">So what we&#39;re looking at is the scene
+with the cyclist again,<span class="tooltiptext">ما نشاهده هنا هو مشهد 
+ساق الدراجة مرة أخرى،</span></span>
+		<span class="tooltip">and you might notice in the bottom,
+we can&#39;t actually see the cyclist yet,<span class="tooltiptext">وكما تلاحظ في الأسفل، 
+لا يمكننا رؤية الدراجة بعد،</span></span>
+		<span class="tooltip">but the car can: it&#39;s that little
+blue box up there,<span class="tooltiptext">لكن السيارة يمكنها: انه المربع 
+الأزرق الأعلى هناك،</span></span>
+		<span class="tooltip">and that comes from the laser data.<span class="tooltiptext">وهذا يأتي من معلومات الليزر .</span></span>
+		<span class="tooltip">And that&#39;s not actually
+really easy to understand,<span class="tooltiptext">وهذا ليس سهل 
+في الحقيقة لفهمه،</span></span>
+		<span class="tooltip">so what I&#39;m going to do is I&#39;m going
+to turn that laser data and look at it,<span class="tooltiptext">ولكن ما سأفعله وهو بأنني سوف 
+أقوم بتحويل بيانات الليزر وأتفحصها،</span></span>
+		<span class="tooltip">and if you&#39;re really good at looking
+at laser data, you can see<span class="tooltiptext">وإذا كنت جيد حقا في فهم بيانات الليزر،
+يمكنك أن ترى</span></span>
+		<span class="tooltip">a few dots on the curve there,<span class="tooltiptext">بعض النقاط على المنحنى هناك،</span></span>
+		<span class="tooltip">right there, and that blue box
+is that cyclist.<span class="tooltiptext">هنا تحديدا، المربع الأزرق هو سائق الدراجة.</span></span>
+		<span class="tooltip">Now as our light is red,<span class="tooltiptext">الآن و بينما الضوء أحمر،</span></span>
+		<span class="tooltip">the cyclist&#39;s light
+has turned yellow already,<span class="tooltiptext">وإشارة سائق الدراجة تغيرت للأصفر،</span></span>
+		<span class="tooltip">and if you squint, you can see that
+in the imagery.<span class="tooltiptext">واذا أمعنت النظر، يمكنك أن ترى ذلك
+في الصورة.</span></span>
+		<span class="tooltip">But the cyclist, we see, is going
+to proceed through the intersection.<span class="tooltiptext">لكن سائق الدراجة، كم نرى،
+سيتابع طريقه في التقاطع.</span></span>
+		<span class="tooltip">Our light has now turned green,
+his is solidly red,<span class="tooltiptext">اشارتنا الآن أصبحت خضراء،
+واشارته حمراء،</span></span>
+		<span class="tooltip">and we now anticipate that this bike
+is going to come all the way across.<span class="tooltiptext">والآن يمكن أن نتبأ بأن 
+دراجته ستقطع الطريق.</span></span>
+		<span class="tooltip">Unfortunately the other drivers next to us
+were not paying as much attention.<span class="tooltiptext">لسوء الحظ السائقين بجانبنا 
+لم يعطوننا الإنتباه الكافي.</span></span>
+		<span class="tooltip">They started to pull forward,
+and fortunately for everyone,<span class="tooltiptext">بدأوا بالتقدم للأمام 
+و لحسن الحظ الجميع،</span></span>
+		<span class="tooltip">this cyclists reacts, avoids,<span class="tooltiptext">قام بردة فعل،و تفادى ذلك،</span></span>
+		<span class="tooltip">and makes it through the intersection.<span class="tooltiptext">و استطاع المتابعة خلال التقاطع.</span></span>
+		<span class="tooltip">And off we go.<span class="tooltiptext">وبعدها انطلقنا.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Now, as you can see, we&#39;ve made
+some pretty exciting progress,<span class="tooltiptext">الآن كما تشاهدون، 
+قمنا بتقدم جي ،</span></span>
+		<span class="tooltip">and at this point we&#39;re pretty convinced<span class="tooltiptext">وفي هذه المرحلة نحن مقتنعين حقا</span></span>
+		<span class="tooltip">this technology is going
+to come to market.<span class="tooltiptext">بأن هذه التقنية سوف تصل للسوق.</span></span>
+		<span class="tooltip">We do three million miles of testing
+in our simulators every single day,<span class="tooltiptext">ونحن نقوم بإختبار 3 مليون ميل 
+كل يوم على أنظمة المحاكاة لدينا،</span></span>
+		<span class="tooltip">so you can imagine the experience
+that our vehicles have.<span class="tooltiptext">لذا يمكنك أن تتخيل عدد التجارب 
+التي تمر بها مركبتنا.</span></span>
+		<span class="tooltip">We are looking forward to having
+this technology on the road,<span class="tooltiptext">نحن متحمسون لنزول هذه التقنية للطريق،</span></span>
+		<span class="tooltip">and we think the right path
+is to go through the self-driving<span class="tooltiptext">ونعتقد أن المسار الصحيح هو 
+أن نذهب مع أنظمة القيادة الآلية</span></span>
+		<span class="tooltip">rather than driver assistance approach<span class="tooltiptext">بدل أنظمة القيادة المساعدة.</span></span>
+		<span class="tooltip">because the urgency is so large.<span class="tooltiptext">والسبب أن الرغبة كبيرة جدا.</span></span>
+		<span class="tooltip">In the time I have given this talk today,<span class="tooltiptext">في هذا الوقت والذي تحدثت 
+فيه لديكم اليوم،</span></span>
+		<span class="tooltip">34 people have died on America&#39;s roads.<span class="tooltiptext">34 شخص ماتوا في طرق أمريكا.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">How soon can we bring it out?<span class="tooltiptext">متى يمكن أن نأتي بها؟</span></span>
+		<span class="tooltip">Well, it&#39;s hard to say because
+it&#39;s a really complicated problem,<span class="tooltiptext">حسنا، يصعب الحكم والسبب
+أنها مشكلة معقدة جدا،</span></span>
+		<span class="tooltip">but these are my two boys.<span class="tooltiptext">لكن هذان الاثنان ولدايّ.</span></span>
+		<span class="tooltip">My oldest son is 11, and that means
+in four and a half years,<span class="tooltiptext">أبني الأكبر عمره 11 ، وهذا يعني
+آنه بعد أربع سنوات ونصف،</span></span>
+		<span class="tooltip">he&#39;s going to be able
+to get his driver&#39;s license.<span class="tooltiptext">سيصبح بإمكانه الحصول على رخصة قيادة.</span></span>
+		<span class="tooltip">My team and I are committed
+to making sure that doesn&#39;t happen.<span class="tooltiptext">أنا وفريقي ملتزمون 
+بعدم حصول هذا.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Thank you.<span class="tooltiptext">شكرا .</span></span>
+	</p>
+	<p>
+		<span class="tooltip">(Laughter) (Applause)<span class="tooltiptext">( ضحك ) ( تصفيق )</span></span>
+		<span class="tooltip">Chris Anderson: Chris,
+I&#39;ve got a question for you.<span class="tooltiptext">كريس انديرسون : كريس 
+لدي سؤال لك.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">Chris Urmson: Sure.<span class="tooltiptext">كريس ارمسون : بالتأكيد.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">CA: So certainly, the mind of your cars
+is pretty mind-boggling.<span class="tooltiptext">بالتأكيد ، عقلية سياراتك بكل تأكيد
+شيء لا يوصف.</span></span>
+		<span class="tooltip">On this debate between
+driver-assisted and fully driverless --<span class="tooltiptext">في هذا النقاش القائم بين القيادة المساعدة 
+و القيادة بالكامل بدون سائق --</span></span>
+		<span class="tooltip">I mean, there&#39;s a real debate
+going on out there right now.<span class="tooltiptext">أنا أعني، هل هناك جدال حقيقي 
+قائم حول هذا الموضوع الآن.</span></span>
+		<span class="tooltip">So some of the companies,
+for example, Tesla,<span class="tooltiptext">بعض الشركات، 
+على سبيل المثال، تيسلا،</span></span>
+		<span class="tooltip">are going the driver-assisted route.<span class="tooltiptext">تسلك طريق القيادة بمساعدة سائق.</span></span>
+		<span class="tooltip">What you&#39;re saying is that
+that&#39;s kind of going to be a dead end<span class="tooltiptext">وما تقوله بأن هذا الطريق 
+سيكون في النهاية طريق مسدود</span></span>
+		<span class="tooltip">because you can&#39;t just keep improving
+that route and get to fully driverless<span class="tooltiptext">لأنه لا يمكنك مواصلة تطوير ذلك 
+و الحصول على قيادة كاملة بدون سائق</span></span>
+		<span class="tooltip">at some point, and then a driver
+is going to say, &quot;This feels safe,&quot;<span class="tooltiptext">وفي نقطة ما، والسائق سيقول 
+هذا ، &quot; يشعرني بالأمان&quot;</span></span>
+		<span class="tooltip">and climb into the back,
+and something ugly will happen.<span class="tooltiptext">وتلتفت للخلف ومن ثم أمر سيء يحدث.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">CU: Right. No, that&#39;s exactly right,
+and it&#39;s not to say<span class="tooltiptext">صحيح، لا هذا بالتأكيد صحيح 
+ولا يجدر القول</span></span>
+		<span class="tooltip">that the driver assistance systems
+aren&#39;t going to be incredibly valuable.<span class="tooltiptext">بأن القيادة المساعدة لن تكون 
+ذات قيمة وفائدة.</span></span>
+		<span class="tooltip">They can save a lot of lives
+in the interim,<span class="tooltiptext">يمكنها أن تنقذ العديد من الأرواح،</span></span>
+		<span class="tooltip">but to see the transformative opportunity
+to help someone like Steve get around,<span class="tooltiptext">لكن لنراها تتحول لفرصة لمساعدة أحد ما 
+مثل ستيف للتنقل في الأرجاء ،</span></span>
+		<span class="tooltip">to really get to the end case in safety,<span class="tooltiptext">للوصول بأمان،</span></span>
+		<span class="tooltip">to have the opportunity
+to change our cities<span class="tooltiptext">للحصول على الفرصة 
+لتغيير مدننا</span></span>
+		<span class="tooltip">and move parking out and get rid of
+these urban craters we call parking lots,<span class="tooltiptext">ونقل المآوي للخارج والتخلص من الحفر
+التي نسميها مواقف سيارات .</span></span>
+		<span class="tooltip">it&#39;s the only way to go.<span class="tooltiptext">انها الوسيلة الوحيدة.</span></span>
+	</p>
+	<p>
+		<span class="tooltip">CA: We will be tracking your progress
+with huge interest.<span class="tooltiptext">سوف نتابع تقدمك 
+بحماس كبير .</span></span>
+		<span class="tooltip">Thanks so much, Chris.
+CU: Thank you. (Applause)<span class="tooltiptext">شكرا جزيلا، كريس 
+شكرا. ( تصفيق )</span></span>
+	</p>
+
+	<div class="line"></div>
+	<p>Enjoying my website? Your donation helps maintain its ad-free experience and smooth operation. Your support is truly appreciated and helps me continue providing quality content. Thank you for considering a donation!</p>
+	<p>To donate, simply click the PayPal link below:<p/>
+	<p><a href="https://www.paypal.com/paypalme/otechai" target='_blank'>Donate via PayPal</a></p>
+	
+</div>
+<span onclick='topFunction()' id='gotop' title='Go to top'><svg width="32" height="32" viewBox="0 0 100 100">
+	   <path fill="white" d="m50 0c-13.262 0-25.98 5.2695-35.355 14.645s-14.645 22.094-14.645 35.355 5.2695 25.98 14.645 35.355 22.094 14.645 35.355 14.645 25.98-5.2695 35.355-14.645 14.645-22.094 14.645-35.355-5.2695-25.98-14.645-35.355-22.094-14.645-35.355-14.645zm20.832 62.5-20.832-22.457-20.625 22.457c-1.207 0.74219-2.7656 0.57812-3.7891-0.39844-1.0273-0.98047-1.2695-2.5273-0.58594-3.7695l22.918-25c0.60156-0.61328 1.4297-0.96094 2.2891-0.96094 0.86328 0 1.6914 0.34766 2.293 0.96094l22.918 25c0.88672 1.2891 0.6875 3.0352-0.47266 4.0898-1.1562 1.0508-2.9141 1.0859-4.1133 0.078125z"></path>
+	 </svg></span>
+
+	    <div class="footer">
+	        <div class="left"><a href='../../../index.html'>ReadingDB</a></div>
+	        <div class="center"><a href="https://twitter.com/readingdb" class="twitter-link">
+	    <svg class="twitter-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	        <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.58-2.11-9.96-5.02-.42.72-.66 1.56-.66 2.46 0 1.68.85 3.16 2.14 4.02-.79-.02-1.53-.24-2.18-.6v.06c0 2.35 1.67 4.31 3.88 4.76-.4.1-.83.16-1.27.16-.31 0-.62-.03-.92-.08.63 1.96 2.45 3.39 4.61 3.43-1.69 1.32-3.83 2.1-6.15 2.1-.4 0-.8-.02-1.19-.07 2.19 1.4 4.78 2.22 7.57 2.22 9.07 0 14.02-7.52 14.02-14.02 0-.21 0-.41-.01-.61.96-.69 1.79-1.56 2.45-2.55-.88.39-1.83.65-2.82.77z"/>
+	    </svg>
+	</a></div>
+	        <div class="right"><a href='https://www.paypal.com/paypalme/otechai'>Donate</a></div>
+	    </div>
+	<script>
+
+		var mybutton = document.getElementById('gotop');
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+			if (document.documentElement.scrollTop > 20 || document.body.scrollTop > 20) {
+				mybutton.style.display = 'block';
+			} else {
+				mybutton.style.display = 'none';
+			}
+		}
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<script src="../../../static/scripts/script.js"></script>
+</body>
+</html>
+	
