@@ -1,40 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="Unlock your French reading skills: Immerse yourself in a contextual and practical learning enhanced by high-quality instant translations.">
-      <meta name="keywords" content="French reading, French language learning, instant translations, reading adventure, improve French, improve reading skills, educational platform, French reading resources, online education, French proficiency, learn French, French learning resources, bilingual education, language exchange, study French online">
-      <link rel="apple-touch-icon" sizes="180x180" href="./static/favicons/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="./static/favicons/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="./static/favicons/favicon-16x16.png">
-      <link rel="manifest" href="./static/favicons/site.webmanifest">
-      <title>ReadingDB: A different approach to learn French</title>
-      <link rel="stylesheet" href="./static/styles/styles.css">
-      <script defer data-domain="readingdb.org" src="https://plausible.io/js/script.js"></script>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Unlock your English reading skills with ReadingDB, a platform that offers contextual and practical learning enhanced by high-quality instant translations, perfect for French speakers looking to improve their English proficiency.">
+        <meta name="keywords" content="English reading, English language learning, instant translations, reading adventure, improve English, improve reading skills, educational platform, English reading resources, online education, English proficiency, learn English, English learning resources, bilingual education, language exchange, study English online, French speakers, English for French speakers">
+        <link rel="apple-touch-icon" sizes="180x180" href="./static/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./static/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./static/favicons/favicon-16x16.png">
+        <link rel="manifest" href="./static/favicons/site.webmanifest">
+        <title>ReadingDB: Learn English with Instant Translations for French Speakers</title>
+    </head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fbf4ea;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header nav ul li {
+            margin-right: 20px;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #d3eee0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .container p {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .get-started {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+        .get-started:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-section {
+            width: 30%;
+            margin: 20px;
+        }
+
+        .footer-section h3 {
+            margin-top: 0;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer-section li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Responsive design */
+
+        @media (max-width: 768px) {
+            main {
+                height: auto;
+                padding: 20px;
+            }
+            .container {
+                margin: 0 20px;
+            }
+            footer {
+                flex-direction: column;
+            }
+            .footer-section {
+                width: 100%;
+                margin: 20px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header nav ul {
+                flex-direction: column;
+            }
+            header nav ul li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
 </head>
-
 <body>
-
-<div class="flex-container">
-    <div class="landing">
-        <div class="ad-container">
-            <div class="ad-text">
-                Unlock your French reading skills: Immerse yourself in a contextual and practical learning enhanced by high-quality instant translations.
-            </div>
-            <a href="./pages/1/index.html" class="button">Get Started</a>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://readingdb.org/index.html">ReadingDB</a></li>
+                <li><a href="#">Simple | Practical | Engaging | Not Boring</a></li>
+                <li><a href='https://www.paypal.com/paypalme/otechai'>Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <p>Unlock your English reading skills: Immerse yourself in a contextual and practical learning enhanced by high-quality instant translations. No prior knowledge of English is required, just a proficiency in French to get started.</p>
+            <a href="./pages/1/index.html" class="get-started">Get Started</a>
         </div>
-    </div>
-    <div class="footer">
-        <div class="left"><a href='./index.html'>ReadingDB</a></div>
-        <div class="center"><a href="https://twitter.com/readingdb" class="twitter-link">
-    <svg class="twitter-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.58-2.11-9.96-5.02-.42.72-.66 1.56-.66 2.46 0 1.68.85 3.16 2.14 4.02-.79-.02-1.53-.24-2.18-.6v.06c0 2.35 1.67 4.31 3.88 4.76-.4.1-.83.16-1.27.16-.31 0-.62-.03-.92-.08.63 1.96 2.45 3.39 4.61 3.43-1.69 1.32-3.83 2.1-6.15 2.1-.4 0-.8-.02-1.19-.07 2.19 1.4 4.78 2.22 7.57 2.22 9.07 0 14.02-7.52 14.02-14.02 0-.21 0-.41-.01-.61.96-.69 1.79-1.56 2.45-2.55-.88.39-1.83.65-2.82.77z"/>
-    </svg>
-</a></div>
-        <div class="right"><a href='https://www.paypal.com/paypalme/otechai'>Donate</a></div>
-    </div>
-</div>
-
+    </main>
+    <footer>
+        <div class="footer-section">
+            <h3>About ReadingDB</h3>
+            <p>ReadingDB is a platform designed to help you improve your English reading skills through contextual and practical learning. With high-quality instant translations, you can immerse yourself in the language and take your skills to the next level.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Me</h3>
+            <p>Phone: +212 0684206312</p>
+            <p>Email: <a href="mailto:sudotoo@protonmail.com">sudotoo@protonmail.com</a></p>
+        </div>
+    </footer>
 </body>
 </html>
