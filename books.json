@@ -1,0 +1,88 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "On Liberty",
+      "author": "John Stuart Mill",
+      "thumbnail": "https://m.media-amazon.com/images/I/81NA4cz8+NL._SL1500_.jpg",
+      "url": "https://www.gutenberg.org/files/34901/34901-pdf.pdf"
+    },
+    {
+      "id": 2,
+      "title": "Civil Disobedience",
+      "author": "Henry David Thoreau",
+      "thumbnail": "https://via.placeholder.com/300x400/DC143C/FFFFFF?text=CIVIL+DISOBEDIENCE",
+      "url": "https://www.gutenberg.org/files/71/71-pdf.pdf"
+    },
+    {
+      "id": 3,
+      "title": "The Rights of Man",
+      "author": "Thomas Paine",
+      "thumbnail": "https://via.placeholder.com/300x400/1E3A8A/FFFFFF?text=RIGHTS+OF+MAN",
+      "url": "https://www.gutenberg.org/files/3755/3755-pdf.pdf"
+    },
+    {
+      "id": 4,
+      "title": "A Vindication of the Rights of Woman",
+      "author": "Mary Wollstonecraft",
+      "thumbnail": "https://via.placeholder.com/300x400/FF6B35/FFFFFF?text=RIGHTS+OF+WOMAN",
+      "url": "https://www.gutenberg.org/files/3420/3420-pdf.pdf"
+    },
+    {
+      "id": 5,
+      "title": "Common Sense",
+      "author": "Thomas Paine",
+      "thumbnail": "https://via.placeholder.com/300x400/DC143C/FFFFFF?text=COMMON+SENSE",
+      "url": "https://www.gutenberg.org/files/147/147-pdf.pdf"
+    },
+    {
+      "id": 6,
+      "title": "The Communist Manifesto",
+      "author": "Karl Marx & Friedrich Engels",
+      "thumbnail": "https://via.placeholder.com/300x400/1E3A8A/FFFFFF?text=COMMUNIST+MANIFESTO",
+      "url": "https://www.gutenberg.org/files/61/61-pdf.pdf"
+    },
+    {
+      "id": 7,
+      "title": "The Republic",
+      "author": "Plato",
+      "thumbnail": "https://via.placeholder.com/300x400/FF6B35/FFFFFF?text=THE+REPUBLIC",
+      "url": "https://www.gutenberg.org/files/1497/1497-pdf.pdf"
+    },
+    {
+      "id": 8,
+      "title": "Areopagitica",
+      "author": "John Milton",
+      "thumbnail": "https://via.placeholder.com/300x400/DC143C/FFFFFF?text=AREOPAGITICA",
+      "url": "https://www.gutenberg.org/files/608/608-pdf.pdf"
+    },
+    {
+      "id": 9,
+      "title": "Letter from Birmingham Jail",
+      "author": "Martin Luther King Jr.",
+      "thumbnail": "https://via.placeholder.com/300x400/1E3A8A/FFFFFF?text=BIRMINGHAM+JAIL",
+      "url": "https://web.archive.org/web/20130321005807/http://abacus.bates.edu/admin/offices/dos/mlk/letter.html"
+    },
+    {
+      "id": 10,
+      "title": "The Age of Reason",
+      "author": "Thomas Paine",
+      "thumbnail": "https://via.placeholder.com/300x400/FF6B35/FFFFFF?text=AGE+OF+REASON",
+      "url": "https://www.gutenberg.org/files/3743/3743-pdf.pdf"
+    },
+    {
+      "id": 11,
+      "title": "Discourse on Inequality",
+      "author": "Jean-Jacques Rousseau",
+      "thumbnail": "https://via.placeholder.com/300x400/DC143C/FFFFFF?text=DISCOURSE+INEQUALITY",
+      "url": "https://www.gutenberg.org/files/11136/11136-pdf.pdf"
+    },
+    {
+      "id": 12,
+      "title": "The Second Sex",
+      "author": "Simone de Beauvoir",
+      "thumbnail": "https://via.placeholder.com/300x400/1E3A8A/FFFFFF?text=THE+SECOND+SEX",
+      "url": "https://archive.org/details/secondsex00beau"
+    }
+  ]
+}
